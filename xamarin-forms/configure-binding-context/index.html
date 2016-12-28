@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <meta name="author" content="Matthew Robbins">
+  <link rel="shortcut icon" href="../../images/favicon.ico">
+  
+  <title>Configure Binding Context - mfractor docs</title>
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="../../css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../css/theme_extra.css" type="text/css" />
+  <link rel="stylesheet" href="../../css/highlight.css">
+  <link href="../../css/breadcrumbs.css" rel="stylesheet">
+  <link href="../../css/code.css" rel="stylesheet">
+  <link href="../../css/fabric.css" rel="stylesheet">
+  <link href="../../css/sidenav.css" rel="stylesheet">
+  <link href="../../css/mfractor.css" rel="stylesheet">
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "Configure Binding Context";
+    var mkdocs_page_input_path = "xamarin-forms/configure-binding-context.md";
+    var mkdocs_page_url = "/xamarin-forms/configure-binding-context/";
+  </script>
+  
+  <script src="../../js/jquery-2.1.1.min.js"></script>
+  <script src="../../js/modernizr-2.8.3.min.js"></script>
+  <script type="text/javascript" src="../../js/highlight.pack.js"></script> 
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+      <div class="wy-side-nav-search">
+        <a href="../.." class="icon icon-home"> mfractor docs</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+	<ul class="current">
+          
+            <li>
+<li class="toctree-l1 ">
+  <a class="" href="../..">Home</a>
+  
+</li>
+<li>
+          
+            <li>
+<ul class="subnav">
+  <li><span>Getting Started</span></li>
+  
+  
+<li class="toctree-l1 ">
+  <a class="" href="../../setup/">Setup</a>
+  
+</li>
+
+  
+  
+<ul class="subnav">
+  <li><span>Xamarin.Forms</span></li>
+  
+  
+<li class="toctree-l1 ">
+  <a class="" href="../quickstart/">Quickstart</a>
+  
+</li>
+
+  
+  
+<li class="toctree-l1 current">
+  <a class="current" href="./">Configure Binding Context</a>
+  
+  <ul>
+    
+      
+    
+  </ul>
+  
+</li>
+
+  
+  
+<li class="toctree-l1 ">
+  <a class="" href="../navigation/">Navigation</a>
+  
+</li>
+
+  
+  
+<li class="toctree-l1 ">
+  <a class="" href="../analysis/">Analysis</a>
+  
+</li>
+
+  
+  
+<li class="toctree-l1 ">
+  <a class="" href="../refactoring-and-code-generation/">Refactoring And Code Generation</a>
+  
+</li>
+
+  
+  
+<ul class="subnav">
+  <li><span>Tools In-Depth</span></li>
+  
+  
+<li class="toctree-l1 ">
+  <a class="" href="../tools-in-depth/analysers/">Analysers</a>
+  
+</li>
+
+  
+  
+<li class="toctree-l1 ">
+  <a class="" href="../tools-in-depth/refactorings/">Refactorings</a>
+  
+</li>
+
+  
+  
+<li class="toctree-l1 ">
+  <a class="" href="../tools-in-depth/fixes/">Fixes</a>
+  
+</li>
+
+  
+</ul>
+
+  
+</ul>
+
+  
+  
+<ul class="subnav">
+  <li><span>Android</span></li>
+  
+  
+<li class="toctree-l1 ">
+  <a class="" href="../../xamarin-android/quickstart/">Quickstart</a>
+  
+</li>
+
+  
+  
+<li class="toctree-l1 ">
+  <a class="" href="../../xamarin-android/navigation/">Navigation</a>
+  
+</li>
+
+  
+  
+<li class="toctree-l1 ">
+  <a class="" href="../../xamarin-android/analysis/">Analysis</a>
+  
+</li>
+
+  
+  
+<li class="toctree-l1 ">
+  <a class="" href="../../xamarin-android/refactoring-and-code-generation/">Refactoring And Code Generation</a>
+  
+</li>
+
+  
+  
+<ul class="subnav">
+  <li><span>Tools In-Depth</span></li>
+  
+  
+<li class="toctree-l1 ">
+  <a class="" href="../../xamarin-android/tools-in-depth/analysers/">Analysers</a>
+  
+</li>
+
+  
+  
+<li class="toctree-l1 ">
+  <a class="" href="../../xamarin-android/tools-in-depth/refactorings/">Refactorings</a>
+  
+</li>
+
+  
+  
+<li class="toctree-l1 ">
+  <a class="" href="../../xamarin-android/tools-in-depth/fixes/">Fixes</a>
+  
+</li>
+
+  
+</ul>
+
+  
+</ul>
+
+  
+</ul>
+<li>
+          
+            <li>
+<ul class="subnav">
+  <li><span>Tutorials</span></li>
+  
+  
+<ul class="subnav">
+  <li><span>Xamarin.Android</span></li>
+  
+  
+<li class="toctree-l1 ">
+  <a class="" href="../../tutorials/xamarin-android/resource-expressions-and-code-navigation/">Resource Expressions And Code Navigation</a>
+  
+</li>
+
+  
+</ul>
+
+  
+</ul>
+<li>
+          
+            <li>
+<ul class="subnav">
+  <li><span>Release Notes</span></li>
+  
+  
+<ul class="subnav">
+  <li><span>Version 2</span></li>
+  
+  
+<li class="toctree-l1 ">
+  <a class="" href="../../release-notes/v2-7/">2.7</a>
+  
+</li>
+
+  
+  
+<li class="toctree-l1 ">
+  <a class="" href="../../release-notes/v2-6/">2.6</a>
+  
+</li>
+
+  
+  
+<li class="toctree-l1 ">
+  <a class="" href="../../release-notes/v2-5/">2.5</a>
+  
+</li>
+
+  
+</ul>
+
+  
+</ul>
+<li>
+          
+        </ul>
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="../..">mfractor docs</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../..">Docs</a> &raquo;</li>
+    
+      
+        
+          <li>Getting Started &raquo;</li>
+        
+      
+        
+          <li>Xamarin.Forms &raquo;</li>
+        
+      
+    
+    <li>Configure Binding Context</li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <h2 id="configuring-a-binding-context">Configuring A Binding Context</h2>
+<p>In Mvvm architected applications, views use a <strong>Binding Context</strong> to display and transfer data between the application logic layer and the view layer with minimal dependencies. This is accomplished through <strong>data binding</strong>; properties on a view are bound to properties on a backing object through binding mechanisms allowing two-way data transfer between the UI and application logic. For a full tutorial on Mvvm architecture, please Microsofts <a href="https://msdn.microsoft.com/en-us/library/hh848246.aspx"><strong>The Mvvm Pattern</strong></a> article.</p>
+<p>When using MFractor for Xamarin.Forms, we can specify a binding context to get the most out of MFractors xaml analyser. If MFractor can resolve a binding context for a Xaml view, it will consume binding expressions and analyse them. This is tremendously beneficial as MFractor will pickup runtime errors and high-light them directly within the Xaml editor.</p>
+<p>We can specify a binding context <em>explicitly</em> via in inline Xaml expression or <em>implicitly</em> through the use of common MVVM naming conventions.</p>
+<h3 id="explicit-binding-context-resolution">Explicit Binding Context Resolution</h3>
+<p>Let's start with explicitly providing a binding context to MFractor.</p>
+<p>In Xamarin.Forms, all views have the property <code>BindingContext</code>; this specifies the object that a view should data-bind with. When coding with Xaml, we can use the <code>x:Static</code> markup extension to reference a static C# property and explicitly provide an instance of a C# class as the binding context:</p>
+<pre><code> &lt;Entry BindingContext=&quot;{x:Static local:MyStaticClass.MyStaticProperty}&quot;/&gt;
+</code></pre>
+
+<p>This is known as the <em>View Model Locator Pattern</em>. We implement a static class named <code>ViewModelLocator</code> and use a static, readonly property to return an instance of the object we want our Xaml view to data-bind with. Historically the <em>View Model Locator Pattern</em> has been used to provide design time data to the Xamarin.Forms Xaml previewer. For a deeper insight into this pattern, read James Montemagnos excellent <a href="http://motzcod.es/post/143702671962/xamarinforms-xaml-previewer-design-time-data">View Model Locator</a> article.</p>
+<p>For example, given a Xaml page named <code>LoginPage</code>, we could explicitly provide an instance of <code>LoginViewModel</code> as the binding context like so:</p>
+<p><strong>View Model Locator</strong></p>
+<pre><code>public namespace MyApp
+{
+  public static class ViewModelLocator
+  {
+      public static readonly LoginViewModel LoginViewModel = new LoginViewModel();
+  }
+}
+</code></pre>
+
+<p><strong>LoginPage.xaml</strong></p>
+<pre><code>&lt;ContentPage
+  xmlns:local=&quot;clr-namespace:MyApp;assembly=MyApp&quot;
+  BindingContext=&quot;{x:Static local:ViewModelLocator.LoginViewModel}&quot;/&gt;
+</code></pre>
+
+<p>When MFractor begins analysis on LoginPage.xaml it will check if any <code>BindingContext</code> properties have been assigned to. As the root <code>ContentPage</code> assigns a binding context, it will inspect the value component of the <code>BindingContext</code> attribute, check if it is a Xaml expression and then evaluate it for the return type.</p>
+<p>For the <code>{x:Static local:ViewModelLocator.LoginViewModel}</code> expression, MFractor will resolve the <code>ViewModelLocator</code> class in the <code>local</code> namespace and then grab the C# type of the <code>LoginViewModel</code> property. This informs MFractor that the page will be bound to a <code>LoginViewModel</code> instance and therefore to analyse all <code>Binding</code> expressions against the <code>LoginViewModel</code> type.</p>
+<p>Explicit binding context resolution will also work when referencing another element using <code>x:Reference</code> expressions. For example, we can bind the on/off state of a switch to the visibility of a text label like so:</p>
+<pre><code>  &lt;Switch x:Name=&quot;mySwitch&quot; /&gt;
+  &lt;Label BindingContext=&quot;{x:Reference mySwitch}&quot; IsVisible=&quot;{Binding IsToggled}&quot;/&gt;
+</code></pre>
+
+<p>When MFractor analyses the <code>{Binding IsToggled}</code> expression, it will evaluate the <code>{x:Reference mySwitch}</code> expression and use the type of mySwitch as the BindingContext (Xamarin.Forms.Switch).</p>
+<h3 id="implicit-binding-context-resolution">Implicit Binding Context Resolution</h3>
+<p>In addition to explicit binding context resolution, MFractor will attempt to infer the relationship between your view models and xaml views via <em>implicit binding context resolution</em>. This is done by looking for classes and Xaml views that share a common naming convention.</p>
+<p>Let's consider the following files:</p>
+<ul>
+<li><strong>LoginPage.xaml</strong> - The xaml view.</li>
+<li><strong>LoginPage.xaml.cs</strong> - The code behind for the xaml view.</li>
+<li><strong>LoginViewModel</strong> - The a C# class that is the view model for the LoginPage view.</li>
+</ul>
+<p><img alt="mvvm relationships" src="../images/forms/implicit-mvvm-relationship.png" /></p>
+<p>Because these pages share the prefix <strong>Login</strong> and each has a distinct file extension or suffix, we can infer the following relationships:</p>
+<ul>
+<li>The <em>.xaml</em> extension denotes that <strong>LoginPage.xaml</strong> is a xaml view.</li>
+<li>The <em>.xaml.cs</em> extension and the <em>LoginPage</em> component denotes that <strong>LoginPage.xaml.cs</strong> is the code behind implementation <strong>LoginPage</strong> view.</li>
+<li>The <strong>ViewModel</strong> suffix implies that <strong>LoginViewModel</strong> is a view model. When <em>ViewModel</em> is removed from <em>LoginViewModel</em> and <em>Page</em> is removed from <em>LoginPage</em>, the <strong>Login</strong> component implies that the <strong>LoginViewModel</strong> is related to the <strong>LoginPage</strong> xaml view and it's code behind file.</li>
+</ul>
+<p>MFractor uses these common naming conventions of Page.xaml, Page.xaml.cs and ViewModel to decide that <strong>LoginViewModel</strong> will probably be the BindingContext for <strong>LoginPage</strong>. It will then</p>
+<p>The following suffixes are supported for Xaml views:</p>
+<ul>
+<li><strong>Page</strong>: EG LoginPage.xaml &lt;-&gt; LoginViewModel</li>
+<li><strong>View</strong>: EG LoginView.xaml &lt;-&gt; LoginViewModel</li>
+</ul>
+<p>Explicit binding context resolution will <strong>always</strong> override implicit binding context resolution. If your xaml views are named using the conventions listed above but your page or a view explicitly assigns the <code>BindingContext</code> property then MFractor will use the <code>BindingContext</code> return type instead of the implicit Mvvm relationship.</p>
+<h3 id="data-template-binding-context-resolution">Data Template Binding Context Resolution</h3>
+<p>Data templates are used to provide a nested Xaml view to a view that displays many occurances of that view. For example, a ListView uses a <code>DataTemplate</code> to specify the view appearance of each instance provided through the <code>ItemsSource</code> property.</p>
+<p>MFractor will attempt to infer the BindingContext for a data templates view by resolving the <code>ItemsSource</code> property on the wrapping view.</p>
+<p>Consider the following code:</p>
+<pre><code>  &lt;ListView ItemsSource=&quot;{Binding Contacts}&quot;&gt;
+    &lt;ListView.ItemTemplate&gt;
+      &lt;ListView.ItemTemplate&gt;
+        &lt;DataTemplate&gt;
+          &lt;TextCell Text=&quot;{Binding DisplayName}&quot; /&gt;
+        &lt;/DataTemplate&gt;
+      &lt;/ListView.ItemTemplate&gt;
+  &lt;/ListView&gt;
+</code></pre>
+
+<p>The inner <code>DataTemplate</code> has a <code>TextCell</code> where the <code>Text</code> property is provided by the binding expression <code>{Binding DisplayName}</code>. To analyse this expression, MFractor requires a binding context; MFractor will walk out the wrapping view (ListView), locate the <code>ItemsSource</code> property and evaluate the expression. When the return type is a IEnumerable or array, MFractor unwraps the generic or array and grabs the inner type. This provides the C# type of the binding context for all binding expressions used within the data template.</p>
+<h3 id="summary">Summary</h3>
+<p>In summary, we've learnt that MFractor will use the binding context to power the Xaml analyser and navigation improvements.</p>
+<ul>
+<li>Binding expressions require a binding context to be analysed.</li>
+<li>We can explicitly specify a binding context by assigning the <code>BindingContext</code> property of any Xaml element.</li>
+<li>When we name our code files using the Page.xaml, Page.xaml.cs and ViewModel convention, MFractor will assume an implicit MVVM relationship.</li>
+<li>Data templates use the return type of the wrapping views <code>ItemSource</code> property.</li>
+</ul>
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../navigation/" class="btn btn-neutral float-right" title="Navigation">Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="../quickstart/" class="btn btn-neutral" title="Quickstart"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div class="fastlane" role="contentinfo">
+    <p>
+      <a href="https://www.mfractor.com" target="_blank">
+        <img src="/images/logo-horizontal.png" width="200" />
+      </a>
+    </p>
+  </div>
+
+  Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a> - Copyright &copy; 2016 <a href="https://www.mfractor.com">MFractor</a>
+</footer>
+	  
+        </div>
+      </div>
+
+    </section>
+    
+  </div>
+
+  <div class="rst-versions" role="note" style="cursor: pointer">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+          <a href="https://github.com/matthewrdev/mfractor-documentation" class="icon icon-github" style="float: left; color: #fcfcfc"> GitHub</a>
+      
+      
+        <span><a href="../quickstart/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+      
+      
+        <span style="margin-left: 15px"><a href="../navigation/" style="color: #fcfcfc">Next &raquo;</a></span>
+      
+    </span>
+</div>
+    <script src="../../js/theme.js"></script>
+
+</body>
+</html>

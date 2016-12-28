@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <meta name="author" content="Matthew Robbins">
+  <link rel="shortcut icon" href="../../images/favicon.ico">
+  
+  <title>Refactoring And Code Generation - mfractor docs</title>
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="../../css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../css/theme_extra.css" type="text/css" />
+  <link rel="stylesheet" href="../../css/highlight.css">
+  <link href="../../css/breadcrumbs.css" rel="stylesheet">
+  <link href="../../css/code.css" rel="stylesheet">
+  <link href="../../css/fabric.css" rel="stylesheet">
+  <link href="../../css/sidenav.css" rel="stylesheet">
+  <link href="../../css/mfractor.css" rel="stylesheet">
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "Refactoring And Code Generation";
+    var mkdocs_page_input_path = "xamarin-android/refactoring-and-code-generation.md";
+    var mkdocs_page_url = "/xamarin-android/refactoring-and-code-generation/";
+  </script>
+  
+  <script src="../../js/jquery-2.1.1.min.js"></script>
+  <script src="../../js/modernizr-2.8.3.min.js"></script>
+  <script type="text/javascript" src="../../js/highlight.pack.js"></script> 
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+      <div class="wy-side-nav-search">
+        <a href="../.." class="icon icon-home"> mfractor docs</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+	<ul class="current">
+          
+            <li>
+<li class="toctree-l1 ">
+  <a class="" href="../..">Home</a>
+  
+</li>
+<li>
+          
+            <li>
+<ul class="subnav">
+  <li><span>Getting Started</span></li>
+  
+  
+<li class="toctree-l1 ">
+  <a class="" href="../../setup/">Setup</a>
+  
+</li>
+
+  
+  
+<ul class="subnav">
+  <li><span>Xamarin.Forms</span></li>
+  
+  
+<li class="toctree-l1 ">
+  <a class="" href="../../xamarin-forms/quickstart/">Quickstart</a>
+  
+</li>
+
+  
+  
+<li class="toctree-l1 ">
+  <a class="" href="../../xamarin-forms/configure-binding-context/">Configure Binding Context</a>
+  
+</li>
+
+  
+  
+<li class="toctree-l1 ">
+  <a class="" href="../../xamarin-forms/navigation/">Navigation</a>
+  
+</li>
+
+  
+  
+<li class="toctree-l1 ">
+  <a class="" href="../../xamarin-forms/analysis/">Analysis</a>
+  
+</li>
+
+  
+  
+<li class="toctree-l1 ">
+  <a class="" href="../../xamarin-forms/refactoring-and-code-generation/">Refactoring And Code Generation</a>
+  
+</li>
+
+  
+  
+<ul class="subnav">
+  <li><span>Tools In-Depth</span></li>
+  
+  
+<li class="toctree-l1 ">
+  <a class="" href="../../xamarin-forms/tools-in-depth/analysers/">Analysers</a>
+  
+</li>
+
+  
+  
+<li class="toctree-l1 ">
+  <a class="" href="../../xamarin-forms/tools-in-depth/refactorings/">Refactorings</a>
+  
+</li>
+
+  
+  
+<li class="toctree-l1 ">
+  <a class="" href="../../xamarin-forms/tools-in-depth/fixes/">Fixes</a>
+  
+</li>
+
+  
+</ul>
+
+  
+</ul>
+
+  
+  
+<ul class="subnav">
+  <li><span>Android</span></li>
+  
+  
+<li class="toctree-l1 ">
+  <a class="" href="../quickstart/">Quickstart</a>
+  
+</li>
+
+  
+  
+<li class="toctree-l1 ">
+  <a class="" href="../navigation/">Navigation</a>
+  
+</li>
+
+  
+  
+<li class="toctree-l1 ">
+  <a class="" href="../analysis/">Analysis</a>
+  
+</li>
+
+  
+  
+<li class="toctree-l1 current">
+  <a class="current" href="./">Refactoring And Code Generation</a>
+  
+  <ul>
+    
+  </ul>
+  
+</li>
+
+  
+  
+<ul class="subnav">
+  <li><span>Tools In-Depth</span></li>
+  
+  
+<li class="toctree-l1 ">
+  <a class="" href="../tools-in-depth/analysers/">Analysers</a>
+  
+</li>
+
+  
+  
+<li class="toctree-l1 ">
+  <a class="" href="../tools-in-depth/refactorings/">Refactorings</a>
+  
+</li>
+
+  
+  
+<li class="toctree-l1 ">
+  <a class="" href="../tools-in-depth/fixes/">Fixes</a>
+  
+</li>
+
+  
+</ul>
+
+  
+</ul>
+
+  
+</ul>
+<li>
+          
+            <li>
+<ul class="subnav">
+  <li><span>Tutorials</span></li>
+  
+  
+<ul class="subnav">
+  <li><span>Xamarin.Android</span></li>
+  
+  
+<li class="toctree-l1 ">
+  <a class="" href="../../tutorials/xamarin-android/resource-expressions-and-code-navigation/">Resource Expressions And Code Navigation</a>
+  
+</li>
+
+  
+</ul>
+
+  
+</ul>
+<li>
+          
+            <li>
+<ul class="subnav">
+  <li><span>Release Notes</span></li>
+  
+  
+<ul class="subnav">
+  <li><span>Version 2</span></li>
+  
+  
+<li class="toctree-l1 ">
+  <a class="" href="../../release-notes/v2-7/">2.7</a>
+  
+</li>
+
+  
+  
+<li class="toctree-l1 ">
+  <a class="" href="../../release-notes/v2-6/">2.6</a>
+  
+</li>
+
+  
+  
+<li class="toctree-l1 ">
+  <a class="" href="../../release-notes/v2-5/">2.5</a>
+  
+</li>
+
+  
+</ul>
+
+  
+</ul>
+<li>
+          
+        </ul>
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="../..">mfractor docs</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../..">Docs</a> &raquo;</li>
+    
+      
+        
+          <li>Getting Started &raquo;</li>
+        
+      
+        
+          <li>Android &raquo;</li>
+        
+      
+    
+    <li>Refactoring And Code Generation</li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../tools-in-depth/analysers/" class="btn btn-neutral float-right" title="Analysers">Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="../analysis/" class="btn btn-neutral" title="Analysis"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div class="fastlane" role="contentinfo">
+    <p>
+      <a href="https://www.mfractor.com" target="_blank">
+        <img src="/images/logo-horizontal.png" width="200" />
+      </a>
+    </p>
+  </div>
+
+  Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a> - Copyright &copy; 2016 <a href="https://www.mfractor.com">MFractor</a>
+</footer>
+	  
+        </div>
+      </div>
+
+    </section>
+    
+  </div>
+
+  <div class="rst-versions" role="note" style="cursor: pointer">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+          <a href="https://github.com/matthewrdev/mfractor-documentation" class="icon icon-github" style="float: left; color: #fcfcfc"> GitHub</a>
+      
+      
+        <span><a href="../analysis/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+      
+      
+        <span style="margin-left: 15px"><a href="../tools-in-depth/analysers/" style="color: #fcfcfc">Next &raquo;</a></span>
+      
+    </span>
+</div>
+    <script src="../../js/theme.js"></script>
+
+</body>
+</html>
