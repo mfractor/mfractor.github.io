@@ -1,5 +1,5 @@
 
-##Configuring A Binding Context
+#Configuring A Binding Context
 
 *Power the refactoring engine and xaml analyser by targeting a binding context*
 
@@ -92,7 +92,6 @@ Consider the following code:
 
 ```
   <ListView ItemsSource="{Binding Contacts}">
-    <ListView.ItemTemplate>
       <ListView.ItemTemplate>
         <DataTemplate>
           <TextCell Text="{Binding DisplayName}" />
@@ -101,7 +100,9 @@ Consider the following code:
   </ListView>
 ```
 
-The inner `DataTemplate` has a `TextCell` where the `Text` property is provided by the binding expression `{Binding DisplayName}`. To analyse this expression, MFractor requires a binding context; MFractor will walk out the wrapping view (ListView), locate the `ItemsSource` property and evaluate the expression. When the return type is a IEnumerable or array, MFractor unwraps the generic or array and grabs the inner type. This provides the C# type of the binding context for all binding expressions used within the data template.
+The inner `DataTemplate` has a `TextCell` where the `Text` property is provided by the binding expression `{Binding DisplayName}`. To analyse this expression, MFractor requires a binding context; MFractor will walk out to the encapsulating view (ListView), locate the `ItemsSource` property and evaluate the expression.
+
+When the return type is an `IEnumerable` or array, MFractor unwraps the generic or array and grabs the inner type. This provides the binding context type for the binding expressions used within the data template.
 
 ##Summary
 In summary, we've learnt that MFractor will use the binding context to power the Xaml analyser and navigation improvements.

@@ -1,4 +1,5 @@
-#Quick Start
+
+##Xamarin.Forms Quick Start
 
 *Learn to use the most handy features in MFractor for Xamarin.Forms*
 

@@ -3,13 +3,13 @@
 *Use the Xaml analyser to spend less time debugging and see Xaml errors in-editor*
 
 ##Introduction
-It's common that xaml issues in Xamarin.Forms applications are undetected until runtime or worse, when sent out to a client. Mractor solves this by detecting Xaml issues *immediately* and then marking them inside the xaml editor with a concise error message.
+It's common that xaml issues in Xamarin.Forms applications are undetected until runtime or worse, when sent out to a client. MFractor solves this by detecting Xaml issues *immediately* and then marking them inside the xaml editor with a concise error message.
 
 Bye bye Xaml bugs! 👋
 
 ##Under The Hood
 
-Let's take a look at the
+Let's take a look at what happens "under the hood" in MFractor when you open a Xaml document:
 
 ![xaml analysis flow](/img/forms/xaml-analysis-flow.png)
 
@@ -17,7 +17,7 @@ When you open a Xaml file that's part of a .NET project, Xamarin Studio notifies
 
 Once MFractor has a copy of the Xaml DOM, it *symbolicates* the xaml document. In this step all Xaml nodes are resolved to their corresponding .NET class, all attributes are resolved to properties, fields or methods and all markup extension expressions are parsed.
 
-It may take a little while for MFractor to parse and symbolicate the Xaml DOM the first time a solution opens, you might see a tooltip informing you that MFractor is not quite ready to analyse the document:
+It may take a little while for MFractor to parse and symbolicate the Xaml DOM the first time a solution opens. While it's consuming the Xaml document, you might see a tooltip informing you that MFractor is not quite ready to analyse the document:
 
 ![xaml document parsing](/img/forms/doc-parsing.png)
 

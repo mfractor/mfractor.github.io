@@ -33,13 +33,17 @@ pages:
     - Refactorings: xamarin-forms/tools-in-depth/refactorings.md
     - Fixes: xamarin-forms/tools-in-depth/fixes.md
 - Xamarin.Android:
+  - Project Resource Indexing: xamarin-android/project-resource-indexing.md
   - Navigation: xamarin-android/navigation.md
   - Analysis: xamarin-android/analysis.md
   - Refactoring And Code Generation: xamarin-android/refactoring-and-code-generation.md
+  - .NET Code Analysis: xamarin-android/dotnet-code-analysis.md
+  - Resource IntelliSense: xamarin-android/resource-intellisense.md
   - Tools In-Depth:
     - Analysers: xamarin-android/tools-in-depth/analysers.md
     - Refactorings: xamarin-android/tools-in-depth/refactorings.md
     - Fixes: xamarin-android/tools-in-depth/fixes.md
+    - IntelliSense: xamarin-android/tools-in-depth/intellisense.md
 - Tutorials:
     - Xamarin.Android:
       - Resource Expressions And Code Navigation: tutorials/xamarin-android/resource-expressions-and-code-navigation.md
