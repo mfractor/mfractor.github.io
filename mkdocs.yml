@@ -20,25 +20,26 @@ pages:
 - Home: index.md
 - Getting Started:
   - Setup: setup.md
-  - Xamarin.Forms:
-    - Quickstart: xamarin-forms/quickstart.md
-    - Configure Binding Context: xamarin-forms/configure-binding-context.md
-    - Navigation: xamarin-forms/navigation.md
-    - Analysis: xamarin-forms/analysis.md
-    - Refactoring And Code Generation: xamarin-forms/refactoring-and-code-generation.md
-    - Tools In-Depth:
-      - Analysers: xamarin-forms/tools-in-depth/analysers.md
-      - Refactorings: xamarin-forms/tools-in-depth/refactorings.md
-      - Fixes: xamarin-forms/tools-in-depth/fixes.md
-  - Android:
-    - Quickstart: xamarin-android/quickstart.md
-    - Navigation: xamarin-android/navigation.md
-    - Analysis: xamarin-android/analysis.md
-    - Refactoring And Code Generation: xamarin-android/refactoring-and-code-generation.md
-    - Tools In-Depth:
-      - Analysers: xamarin-android/tools-in-depth/analysers.md
-      - Refactorings: xamarin-android/tools-in-depth/refactorings.md
-      - Fixes: xamarin-android/tools-in-depth/fixes.md
+  - Support: support.md
+  - Xamarin.Forms Quickstart: xamarin-forms-quickstart.md
+  - Xamarin.Android Quickstart: xamarin-android-quickstart.md
+- Xamarin.Forms:
+  - Configure Binding Context: xamarin-forms/configure-binding-context.md
+  - Navigation: xamarin-forms/navigation.md
+  - Analysis: xamarin-forms/analysis.md
+  - Refactoring And Code Generation: xamarin-forms/refactoring-and-code-generation.md
+  - Tools In-Depth:
+    - Analysers: xamarin-forms/tools-in-depth/analysers.md
+    - Refactorings: xamarin-forms/tools-in-depth/refactorings.md
+    - Fixes: xamarin-forms/tools-in-depth/fixes.md
+- Xamarin.Android:
+  - Navigation: xamarin-android/navigation.md
+  - Analysis: xamarin-android/analysis.md
+  - Refactoring And Code Generation: xamarin-android/refactoring-and-code-generation.md
+  - Tools In-Depth:
+    - Analysers: xamarin-android/tools-in-depth/analysers.md
+    - Refactorings: xamarin-android/tools-in-depth/refactorings.md
+    - Fixes: xamarin-android/tools-in-depth/fixes.md
 - Tutorials:
     - Xamarin.Android:
       - Resource Expressions And Code Navigation: tutorials/xamarin-android/resource-expressions-and-code-navigation.md

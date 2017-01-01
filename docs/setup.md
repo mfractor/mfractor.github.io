@@ -1,9 +1,10 @@
+
+#Setup
+
+*Installing, activating and updating MFractor*
+
 ##Introduction
-In order to start using MFractor, we'll first want to install it.
-
-This section outlines how we can install and activate MFractor after installation.
-
-Additionally, we'll learn how to update and uninstall MFractor.
+This document covers how to install, activate and update MFractor for Xamarin Studio.
 
 ##Install MFractor
 The simplest way to install MFractor into Xamarin Studio is by using the MFractor.Installer helper addin.
@@ -38,7 +39,7 @@ To activate MFractor, enter you email and then click **Activate**.
 
 ![activation dialog](img/setup/mfractor-activation-dialog.png)
 
-Tada! You are now ready to rock. Why not learn how to use MFractor for [Xamarin.Forms](xamarin-forms/quickstart.md) or [Xamarin.Android](xamarin-android/quickstart.md) next?
+Tada! You are now ready to rock. Why not learn how to use MFractor for [Xamarin.Forms](xamarin-forms-quickstart.md) or [Xamarin.Android](xamarin-android-quickstart.md) next?
 
 ##Updating
 MFractor will receive regular updates adding sweet new features and bug fixes so it's important to keep up to date!

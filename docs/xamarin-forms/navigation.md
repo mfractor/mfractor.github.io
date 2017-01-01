@@ -11,7 +11,9 @@ MFractor enriches the navigation between C# and Xaml code by adding a few handy 
  * Preview images through image tooltips when we hover over an image source value.
 
 ###Mvvm Navigation
-A common
+When MFractor can [implicitly resolve the View - Code Behind Class - ViewModel relationship](configure-binding-context.md#implicit-binding-context-resolution), the Mvvm navigation shortcut suite is activatated.
+
+We can access these shortcuts by right clicking
 
 ###Go-To Symbol
 
