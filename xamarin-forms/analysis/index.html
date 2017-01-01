@@ -81,15 +81,32 @@
 
   
   
-<ul class="subnav">
-  <li><span>Xamarin.Forms</span></li>
-  
-  
 <li class="toctree-l1 ">
-  <a class="" href="../quickstart/">Quickstart</a>
+  <a class="" href="../../support/">Support</a>
   
 </li>
 
+  
+  
+<li class="toctree-l1 ">
+  <a class="" href="../../xamarin-forms-quickstart/">Xamarin.Forms Quickstart</a>
+  
+</li>
+
+  
+  
+<li class="toctree-l1 ">
+  <a class="" href="../../xamarin-android-quickstart/">Xamarin.Android Quickstart</a>
+  
+</li>
+
+  
+</ul>
+<li>
+          
+            <li>
+<ul class="subnav">
+  <li><span>Xamarin.Forms</span></li>
   
   
 <li class="toctree-l1 ">
@@ -111,6 +128,26 @@
   
   <ul>
     
+      
+    
+      
+      <li class="toctree-l3"><a href="#introduction">Introduction</a></li>
+      
+    
+      
+      <li class="toctree-l3"><a href="#under-the-hood">Under The Hood</a></li>
+      
+    
+      
+      <li class="toctree-l3"><a href="#code-fixes">Code Fixes</a></li>
+      
+    
+      
+      <li class="toctree-l3"><a href="#expression-analysis">Expression Analysis</a></li>
+      
+    
+      
+      <li class="toctree-l3"><a href="#binding-expression-analysis">Binding Expression Analysis</a></li>
       
     
   </ul>
@@ -154,15 +191,15 @@
 
   
 </ul>
-
-  
-  
+<li>
+          
+            <li>
 <ul class="subnav">
-  <li><span>Android</span></li>
+  <li><span>Xamarin.Android</span></li>
   
   
 <li class="toctree-l1 ">
-  <a class="" href="../../xamarin-android/quickstart/">Quickstart</a>
+  <a class="" href="../../xamarin-android/project-resource-indexing/">Project Resource Indexing</a>
   
 </li>
 
@@ -184,6 +221,20 @@
   
 <li class="toctree-l1 ">
   <a class="" href="../../xamarin-android/refactoring-and-code-generation/">Refactoring And Code Generation</a>
+  
+</li>
+
+  
+  
+<li class="toctree-l1 ">
+  <a class="" href="../../xamarin-android/dotnet-code-analysis/">.NET Code Analysis</a>
+  
+</li>
+
+  
+  
+<li class="toctree-l1 ">
+  <a class="" href="../../xamarin-android/resource-intellisense/">Resource IntelliSense</a>
   
 </li>
 
@@ -213,7 +264,11 @@
 </li>
 
   
-</ul>
+  
+<li class="toctree-l1 ">
+  <a class="" href="../../xamarin-android/tools-in-depth/intellisense/">IntelliSense</a>
+  
+</li>
 
   
 </ul>
@@ -233,6 +288,20 @@
   
 <li class="toctree-l1 ">
   <a class="" href="../../tutorials/xamarin-android/resource-expressions-and-code-navigation/">Resource Expressions And Code Navigation</a>
+  
+</li>
+
+  
+</ul>
+
+  
+  
+<ul class="subnav">
+  <li><span>Xamarin.Forms</span></li>
+  
+  
+<li class="toctree-l1 ">
+  <a class="" href="../../tutorials/xamarin-forms/mvvm-navigation/">Mvvm Navigation</a>
   
 </li>
 
@@ -300,10 +369,6 @@
     
       
         
-          <li>Getting Started &raquo;</li>
-        
-      
-        
           <li>Xamarin.Forms &raquo;</li>
         
       
@@ -316,26 +381,26 @@
             <div class="section">
               
                 <h2 id="xaml-analysis">Xaml Analysis</h2>
-<p>It's common that xaml issues in Xamarin.Forms applications are undetected until runtime or worse, when sent out to a client. Mractor solves this by detecting Xaml issues <em>immediately</em> and then marking them inside the xaml editor with a concise error message.</p>
+<p><em>Use the Xaml analyser to spend less time debugging and see Xaml errors in-editor</em></p>
+<h2 id="introduction">Introduction</h2>
+<p>It's common that xaml issues in Xamarin.Forms applications are undetected until runtime or worse, when sent out to a client. MFractor solves this by detecting Xaml issues <em>immediately</em> and then marking them inside the xaml editor with a concise error message.</p>
 <p>Bye bye Xaml bugs! 👋</p>
-<p>Let's take a look at the</p>
-<p><img alt="xaml analysis flow" src="../img/forms/xaml-analysis-flow.png" /></p>
-<p>When you open a Xaml file that's part of a .NET project, Xamarin Studio will notify MFractor that a new Xaml document has been opened for editing. MFractor will then inject it's Xaml analyser into the xaml editor and consume the xaml document.</p>
+<h2 id="under-the-hood">Under The Hood</h2>
+<p>Let's take a look at what happens "under the hood" in MFractor when you open a Xaml document:</p>
+<p><img alt="xaml analysis flow" src="../../img/forms/xaml-analysis-flow.png" /></p>
+<p>When you open a Xaml file that's part of a .NET project, Xamarin Studio notifies MFractor that a new Xaml document was opened for editing. MFractor will  inject the Xaml analyser into the Xaml editor and consume the Xaml document.</p>
 <p>Once MFractor has a copy of the Xaml DOM, it <em>symbolicates</em> the xaml document. In this step all Xaml nodes are resolved to their corresponding .NET class, all attributes are resolved to properties, fields or methods and all markup extension expressions are parsed.</p>
-<p>It may take a little while for MFractor to parse and symbolicate the Xaml DOM the first time a solution opens, you might see a tooltip informing you that MFractor is not quite ready to analyse the document:</p>
-<p><img alt="xaml document parsing" src="../img/forms/doc-parsing.png" /></p>
+<p>It may take a little while for MFractor to parse and symbolicate the Xaml DOM the first time a solution opens. While it's consuming the Xaml document, you might see a tooltip informing you that MFractor is not quite ready to analyse the document:</p>
+<p><img alt="xaml document parsing" src="../../img/forms/doc-parsing.png" /></p>
 <p>When the Xaml document has been parsed and symbolicated, MFractor will analyse the document for a range of code issues. Any issues that are found are marked as either</p>
-<p>A full list of available Xaml analysers can be found at:</p>
-<ul>
-<li><a href="../tools-in-depth/analysers/">Xamarin.Forms Analysers</a></li>
-</ul>
+<p>A full list of available Xaml analysers can be found at <a href="../tools-in-depth/analysers/">Xamarin.Forms Analysers</a>.</p>
 <p>Whenever you edit a Xaml code file, MFractor will cancel any running analysis, re-parse and symbolicate the document and then re-run the xaml analyser against your xaml.</p>
-<h3 id="code-fixes">Code Fixes</h3>
+<h2 id="code-fixes">Code Fixes</h2>
 <p>When MFractor detects a code issue, it is usually able to suggest a fix as well. When MFractor can fix an issue, the squiggle beneath that issue will be yellow like so:</p>
 <p>You can action this fix by right clicking on the text area marked by the yellow squiggle</p>
 <p>See <a href="../refactoring-and-code-generation/">Refactoring Code Generation</a> for further documentation on using Xaml to C# code generation.</p>
-<h3 id="expression-analysis">Expression Analysis</h3>
-<h3 id="binding-expression-analysis">Binding Expression Analysis</h3>
+<h2 id="expression-analysis">Expression Analysis</h2>
+<h2 id="binding-expression-analysis">Binding Expression Analysis</h2>
               
             </div>
           </div>

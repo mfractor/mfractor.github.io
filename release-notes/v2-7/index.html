@@ -81,15 +81,32 @@
 
   
   
-<ul class="subnav">
-  <li><span>Xamarin.Forms</span></li>
-  
-  
 <li class="toctree-l1 ">
-  <a class="" href="../../xamarin-forms/quickstart/">Quickstart</a>
+  <a class="" href="../../support/">Support</a>
   
 </li>
 
+  
+  
+<li class="toctree-l1 ">
+  <a class="" href="../../xamarin-forms-quickstart/">Xamarin.Forms Quickstart</a>
+  
+</li>
+
+  
+  
+<li class="toctree-l1 ">
+  <a class="" href="../../xamarin-android-quickstart/">Xamarin.Android Quickstart</a>
+  
+</li>
+
+  
+</ul>
+<li>
+          
+            <li>
+<ul class="subnav">
+  <li><span>Xamarin.Forms</span></li>
   
   
 <li class="toctree-l1 ">
@@ -148,15 +165,15 @@
 
   
 </ul>
-
-  
-  
+<li>
+          
+            <li>
 <ul class="subnav">
-  <li><span>Android</span></li>
+  <li><span>Xamarin.Android</span></li>
   
   
 <li class="toctree-l1 ">
-  <a class="" href="../../xamarin-android/quickstart/">Quickstart</a>
+  <a class="" href="../../xamarin-android/project-resource-indexing/">Project Resource Indexing</a>
   
 </li>
 
@@ -178,6 +195,20 @@
   
 <li class="toctree-l1 ">
   <a class="" href="../../xamarin-android/refactoring-and-code-generation/">Refactoring And Code Generation</a>
+  
+</li>
+
+  
+  
+<li class="toctree-l1 ">
+  <a class="" href="../../xamarin-android/dotnet-code-analysis/">.NET Code Analysis</a>
+  
+</li>
+
+  
+  
+<li class="toctree-l1 ">
+  <a class="" href="../../xamarin-android/resource-intellisense/">Resource IntelliSense</a>
   
 </li>
 
@@ -207,7 +238,11 @@
 </li>
 
   
-</ul>
+  
+<li class="toctree-l1 ">
+  <a class="" href="../../xamarin-android/tools-in-depth/intellisense/">IntelliSense</a>
+  
+</li>
 
   
 </ul>
@@ -227,6 +262,20 @@
   
 <li class="toctree-l1 ">
   <a class="" href="../../tutorials/xamarin-android/resource-expressions-and-code-navigation/">Resource Expressions And Code Navigation</a>
+  
+</li>
+
+  
+</ul>
+
+  
+  
+<ul class="subnav">
+  <li><span>Xamarin.Forms</span></li>
+  
+  
+<li class="toctree-l1 ">
+  <a class="" href="../../tutorials/xamarin-forms/mvvm-navigation/">Mvvm Navigation</a>
   
 </li>
 
@@ -254,11 +303,19 @@
       
     
       
+      <li class="toctree-l3"><a href="#introduction">Introduction</a></li>
+      
+    
+      
+      <li class="toctree-l3"><a href="#features">Features</a></li>
+      
+    
+      
       <li class="toctree-l3"><a href="#enhancements">Enhancements</a></li>
       
     
       
-      <li class="toctree-l3"><a href="#bug-fixes">Bug Fixes:</a></li>
+      <li class="toctree-l3"><a href="#bug-fixes">Bug Fixes</a></li>
       
     
   </ul>
@@ -323,37 +380,38 @@
           <div role="main">
             <div class="section">
               
-                <p>﻿# Release Notes - v2.7.0</p>
-<p><strong>-- TODO: Date Here --</strong></p>
+                <h2 id="release-notes-v270">Release Notes - v2.7.0</h2>
+<p><strong>8th January 2017</strong></p>
 <p><strong><a href="http://addins.mfractor.com/releases/2.07.00/MFractor.MFractor_2.07.00.mpack">Download MFractor 2.7.0</a></strong></p>
-<p><a href="http://www.mfractor.com"><img alt="www.mfractor.com" src="http://www.mfractor.com/wp-content/uploads/2016/06/logo-horizontal.png" /></a></p>
+<p><a href="http://www.mfractor.com"><img alt="www.mfractor.com" src="../../img/logo-horizontal.png" /></a></p>
+<h2 id="introduction">Introduction</h2>
 <p>This is a summary of the changes introduced in v2.7.0 of MFractor for Xamarin Studio.</p>
 <p>You already love being able to generate bindings but I've taken it to the next level this release...</p>
 <p><strong>Introducing View Model generation:</strong></p>
-<p>TODO: View model generation gif here
-<a href="http://www.mfractor.com"><img alt="www.mfractor.com" src="http://www.mfractor.com/wp-content/uploads/2016/06/logo-horizontal.png" /></a></p>
+<p><a href="http://www.mfractor.com"><img alt="www.mfractor.com" src="../../img/releases/v2-7/implement-viewmodel.gif" /></a></p>
 <p>Got a heap of unimplemented bindings? Right click anywhere in your Xaml document and select <strong>Refactor</strong> -&gt; <strong>Implement View Model</strong>.</p>
 <p>MFractor will collect all the missing bindings and then generate a new class with <strong>all</strong> of those properties into the "MyDefaultNamespace.ViewModels".</p>
 <p>Does the view model already exist? Then MFractor simply inserts the new bindings into the existing view model.</p>
-<p>I think it'll save you enough time during the week that you may just get to Friday beers a few hours early ;)</p>
-<h2 id="features">Features:</h2>
+<p>I think it'll save you enough time during the week that you may just get to Friday beers a few hours early 🍻</p>
+<h2 id="features">Features</h2>
 <ul>
 <li>By right clicking anywhere in a Xaml document, implement all missing bindings as a new or into an existing view model:<ul>
-<li>Implement view model as</li>
+<li>Implement view model</li>
 </ul>
 </li>
+<li>ICommands</li>
 <li><em>New Xaml Analysers:</em><ul>
 <li>Validate that elements declared inside a resource dictionary have an x:Key.</li>
 <li>Validate that elements declared inside a resource dictionary have a unique x:Key value.</li>
 <li>Detect when an x:TypeArguments is used on a non-generic type and warn of incorrect usage.</li>
-<li>Detect when a property setter node (<MyClass.MyProperty/>) references a non-existant member on the parent class.</li>
+<li>Detect when a property setter node (<code>&lt;MyClass.MyProperty/&gt;</code>) references a non-existant member on the parent class.</li>
 <li>Detect when a property setter attribute is empty.</li>
-<li>Detect when an undefined static resource is referenced by a StaticResource expression.</li>
-<li>Detect when the value returned by a StaticResource expression causes a type mismatch.</li>
-<li>Detect when an unknown type is being provided to a x:TypeArguments attribute.</li>
-<li>Validate that OnIdiom elements return the correct type for the outer property setter.</li>
-<li>Validate that OnPlatform elements return the correct type for the outer property setter.</li>
-<li>Detect when a developer has misused a property setter inside another xaml element. For example, OnIdiom.Phone doesn't make any sense when wrapped by the outer element OnPlatform.</li>
+<li>Detect when an undefined static resource is referenced by a <code>StaticResource</code> expression.</li>
+<li>Detect when the value returned by a <code>StaticResource</code> expression causes a type mismatch.</li>
+<li>Detect when an unknown type is being provided to a <code>x:TypeArguments</code> attribute.</li>
+<li>Validate that <code>OnIdiom</code> elements return the correct type for the outer property setter.</li>
+<li>Validate that <code>OnPlatform</code> elements return the correct type for the outer property setter.</li>
+<li>Detect when a developer has misused a property setter inside another xaml element. For example, <code>OnIdiom.Phone</code> doesn't make any sense when wrapped by the outer element <code>OnPlatform</code>.</li>
 </ul>
 </li>
 <li><em>New Xaml Fixes:</em><ul>
@@ -362,7 +420,7 @@
 </ul>
 </li>
 <li><em>New Simplify Refactorings:</em><ul>
-<li>Attributes that use a static instance to initialise the property (eg VerticalOptions="LayoutOptions.CentreAndExpand") can now be simplified to just the instance name (eg VerticalOptions="CentreAndExpand").</li>
+<li>Attributes that use a static instance to initialise the property (eg <code>VerticalOptions="LayoutOptions.CentreAndExpand"</code>) can now be simplified to just the instance name (eg <code>VerticalOptions="CentreAndExpand"</code>).</li>
 </ul>
 </li>
 </ul>
@@ -372,7 +430,7 @@
 <li>This release introduces the framework for an Xml refactoring engine. Over time, I'll be adding Xml and Xaml refactoring operations to make code cleanup a breeze.</li>
 <li>Annotating value converters with a ValueConversion(input, output) attribute will trigger the conversion information to render into tooltip.</li>
 </ul>
-<h2 id="bug-fixes">Bug Fixes:</h2>
+<h2 id="bug-fixes">Bug Fixes</h2>
 <ul>
 <li>Sometimes the Xaml document analyser would fail to load and bring down the Xaml editor. This has been fixed.</li>
 <li>Fixed a bug that caused View &lt; - &gt; Code Behind navigation shortcuts to break when an AST parse was in progress. View &lt; - &gt; Code Behind shortcuts should now always be active.</li>
@@ -392,7 +450,7 @@
         <a href="../v2-6/" class="btn btn-neutral float-right" title="2.6">Next <span class="icon icon-circle-arrow-right"></span></a>
       
       
-        <a href="../../tutorials/xamarin-android/resource-expressions-and-code-navigation/" class="btn btn-neutral" title="Resource Expressions And Code Navigation"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../../tutorials/xamarin-forms/mvvm-navigation/" class="btn btn-neutral" title="Mvvm Navigation"><span class="icon icon-circle-arrow-left"></span> Previous</a>
       
     </div>
   
@@ -423,7 +481,7 @@
           <a href="https://github.com/matthewrdev/mfractor-documentation" class="icon icon-github" style="float: left; color: #fcfcfc"> GitHub</a>
       
       
-        <span><a href="../../tutorials/xamarin-android/resource-expressions-and-code-navigation/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+        <span><a href="../../tutorials/xamarin-forms/mvvm-navigation/" style="color: #fcfcfc;">&laquo; Previous</a></span>
       
       
         <span style="margin-left: 15px"><a href="../v2-6/" style="color: #fcfcfc">Next &raquo;</a></span>

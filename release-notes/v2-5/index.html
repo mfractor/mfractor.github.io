@@ -81,15 +81,32 @@
 
   
   
-<ul class="subnav">
-  <li><span>Xamarin.Forms</span></li>
-  
-  
 <li class="toctree-l1 ">
-  <a class="" href="../../xamarin-forms/quickstart/">Quickstart</a>
+  <a class="" href="../../support/">Support</a>
   
 </li>
 
+  
+  
+<li class="toctree-l1 ">
+  <a class="" href="../../xamarin-forms-quickstart/">Xamarin.Forms Quickstart</a>
+  
+</li>
+
+  
+  
+<li class="toctree-l1 ">
+  <a class="" href="../../xamarin-android-quickstart/">Xamarin.Android Quickstart</a>
+  
+</li>
+
+  
+</ul>
+<li>
+          
+            <li>
+<ul class="subnav">
+  <li><span>Xamarin.Forms</span></li>
   
   
 <li class="toctree-l1 ">
@@ -148,15 +165,15 @@
 
   
 </ul>
-
-  
-  
+<li>
+          
+            <li>
 <ul class="subnav">
-  <li><span>Android</span></li>
+  <li><span>Xamarin.Android</span></li>
   
   
 <li class="toctree-l1 ">
-  <a class="" href="../../xamarin-android/quickstart/">Quickstart</a>
+  <a class="" href="../../xamarin-android/project-resource-indexing/">Project Resource Indexing</a>
   
 </li>
 
@@ -178,6 +195,20 @@
   
 <li class="toctree-l1 ">
   <a class="" href="../../xamarin-android/refactoring-and-code-generation/">Refactoring And Code Generation</a>
+  
+</li>
+
+  
+  
+<li class="toctree-l1 ">
+  <a class="" href="../../xamarin-android/dotnet-code-analysis/">.NET Code Analysis</a>
+  
+</li>
+
+  
+  
+<li class="toctree-l1 ">
+  <a class="" href="../../xamarin-android/resource-intellisense/">Resource IntelliSense</a>
   
 </li>
 
@@ -207,7 +238,11 @@
 </li>
 
   
-</ul>
+  
+<li class="toctree-l1 ">
+  <a class="" href="../../xamarin-android/tools-in-depth/intellisense/">IntelliSense</a>
+  
+</li>
 
   
 </ul>
@@ -227,6 +262,20 @@
   
 <li class="toctree-l1 ">
   <a class="" href="../../tutorials/xamarin-android/resource-expressions-and-code-navigation/">Resource Expressions And Code Navigation</a>
+  
+</li>
+
+  
+</ul>
+
+  
+  
+<ul class="subnav">
+  <li><span>Xamarin.Forms</span></li>
+  
+  
+<li class="toctree-l1 ">
+  <a class="" href="../../tutorials/xamarin-forms/mvvm-navigation/">Mvvm Navigation</a>
   
 </li>
 
@@ -264,6 +313,20 @@
   <a class="current" href="./">2.5</a>
   
   <ul>
+    
+      
+    
+      
+      <li class="toctree-l3"><a href="#introduction">Introduction</a></li>
+      
+    
+      
+      <li class="toctree-l3"><a href="#features">Features</a></li>
+      
+    
+      
+      <li class="toctree-l3"><a href="#bug-fixes">Bug Fixes</a></li>
+      
     
   </ul>
   
@@ -313,16 +376,23 @@
           <div role="main">
             <div class="section">
               
-                <p>﻿# Release Notes 2.5.3</p>
-<p>10th of October 2016</p>
-<p>This is a summary of the changes introduction in Version 2.5.3 of MFractor for Xamarin Studio.</p>
+                <h2 id="release-notes-v253">Release Notes - v2.5.3</h2>
+<p><strong>10th of October 2016</strong></p>
+<p><strong><a href="http://addins.mfractor.com/releases/2.06.00/MFractor.MFractor_2.06.00.mpack">Download MFractor 2.5.0</a></strong></p>
+<p><a href="http://www.mfractor.com"><img alt="www.mfractor.com" src="../../img/logo-horizontal.png" /></a></p>
+<h2 id="introduction">Introduction</h2>
+<p>This is a summary of the changes introduced in v2.5.3 of MFractor for Xamarin Studio.</p>
 <p>This release adds support for native view declaration and property generation for missing view attributes.</p>
-<p>Features:
- - Generate properties and bindable properties onto classes that implement Xamarin.Forms.ObservableObject.
- - Full support for native view declaration. Tooltips, go-to declaration, xaml analysis and code generation enabled on native views used in Xaml.</p>
-<p>Bug Fixes:
- - Xaml expressions now parsed on attributes that are unresolveable to a .NEt symbol. This enables Tooltips, go-to declaration, xaml analysis and code generation.
- - The analysis engine no longer assumes that the Xamarin.Forms and Microsoft schemas are the implicit and 'x' namespaces. This means that Xamarin.Forms could be remapped to xmlns:xf etc and the analyser would still function correctly.</p>
+<h2 id="features">Features</h2>
+<ul>
+<li>Generate properties and bindable properties onto classes that implement Xamarin.Forms.ObservableObject.</li>
+<li>Full support for native view declaration. Tooltips, go-to declaration, xaml analysis and code generation enabled on native views used in Xaml.</li>
+</ul>
+<h2 id="bug-fixes">Bug Fixes</h2>
+<ul>
+<li>Xaml expressions now parsed on attributes that cannot be resolved to a .NET symbol. This enables Tooltips, go-to declaration, xaml analysis and code generation.</li>
+<li>The analysis engine no longer assumes that the Xamarin.Forms and Microsoft schemas are the implicit and 'x' namespaces. This means that Xamarin.Forms could be remapped to xmlns:xf etc and the xaml analyser will still function correctly.</li>
+</ul>
               
             </div>
           </div>

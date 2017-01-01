@@ -81,15 +81,32 @@
 
   
   
-<ul class="subnav">
-  <li><span>Xamarin.Forms</span></li>
-  
-  
 <li class="toctree-l1 ">
-  <a class="" href="../quickstart/">Quickstart</a>
+  <a class="" href="../../support/">Support</a>
   
 </li>
 
+  
+  
+<li class="toctree-l1 ">
+  <a class="" href="../../xamarin-forms-quickstart/">Xamarin.Forms Quickstart</a>
+  
+</li>
+
+  
+  
+<li class="toctree-l1 ">
+  <a class="" href="../../xamarin-android-quickstart/">Xamarin.Android Quickstart</a>
+  
+</li>
+
+  
+</ul>
+<li>
+          
+            <li>
+<ul class="subnav">
+  <li><span>Xamarin.Forms</span></li>
   
   
 <li class="toctree-l1 current">
@@ -154,15 +171,15 @@
 
   
 </ul>
-
-  
-  
+<li>
+          
+            <li>
 <ul class="subnav">
-  <li><span>Android</span></li>
+  <li><span>Xamarin.Android</span></li>
   
   
 <li class="toctree-l1 ">
-  <a class="" href="../../xamarin-android/quickstart/">Quickstart</a>
+  <a class="" href="../../xamarin-android/project-resource-indexing/">Project Resource Indexing</a>
   
 </li>
 
@@ -184,6 +201,20 @@
   
 <li class="toctree-l1 ">
   <a class="" href="../../xamarin-android/refactoring-and-code-generation/">Refactoring And Code Generation</a>
+  
+</li>
+
+  
+  
+<li class="toctree-l1 ">
+  <a class="" href="../../xamarin-android/dotnet-code-analysis/">.NET Code Analysis</a>
+  
+</li>
+
+  
+  
+<li class="toctree-l1 ">
+  <a class="" href="../../xamarin-android/resource-intellisense/">Resource IntelliSense</a>
   
 </li>
 
@@ -213,7 +244,11 @@
 </li>
 
   
-</ul>
+  
+<li class="toctree-l1 ">
+  <a class="" href="../../xamarin-android/tools-in-depth/intellisense/">IntelliSense</a>
+  
+</li>
 
   
 </ul>
@@ -233,6 +268,20 @@
   
 <li class="toctree-l1 ">
   <a class="" href="../../tutorials/xamarin-android/resource-expressions-and-code-navigation/">Resource Expressions And Code Navigation</a>
+  
+</li>
+
+  
+</ul>
+
+  
+  
+<ul class="subnav">
+  <li><span>Xamarin.Forms</span></li>
+  
+  
+<li class="toctree-l1 ">
+  <a class="" href="../../tutorials/xamarin-forms/mvvm-navigation/">Mvvm Navigation</a>
   
 </li>
 
@@ -300,10 +349,6 @@
     
       
         
-          <li>Getting Started &raquo;</li>
-        
-      
-        
           <li>Xamarin.Forms &raquo;</li>
         
       
@@ -315,11 +360,14 @@
           <div role="main">
             <div class="section">
               
-                <h2 id="configuring-a-binding-context">Configuring A Binding Context</h2>
+                <h1 id="configuring-a-binding-context">Configuring A Binding Context</h1>
+<p><em>Power the refactoring engine and xaml analyser by targeting a binding context</em></p>
+<h2 id="introduction">Introduction</h2>
 <p>In Mvvm architected applications, views use a <strong>Binding Context</strong> to display and transfer data between the application logic layer and the view layer with minimal dependencies. This is accomplished through <strong>data binding</strong>; properties on a view are bound to properties on a backing object through binding mechanisms allowing two-way data transfer between the UI and application logic. For a full tutorial on Mvvm architecture, please Microsofts <a href="https://msdn.microsoft.com/en-us/library/hh848246.aspx"><strong>The Mvvm Pattern</strong></a> article.</p>
-<p>When using MFractor for Xamarin.Forms, we can specify a binding context to get the most out of MFractors xaml analyser. If MFractor can resolve a binding context for a Xaml view, it will consume binding expressions and analyse them. This is tremendously beneficial as MFractor will pickup runtime errors and high-light them directly within the Xaml editor.</p>
+<p>When working with Xaml, we can specify a binding context to activate . If MFractor can resolve a binding context for a Xaml view, it will consume binding expressions and analyse them.</p>
+<p>This is tremendously beneficial as MFractor will pickup runtime errors and high-light them directly within the Xaml editor.</p>
 <p>We can specify a binding context <em>explicitly</em> via in inline Xaml expression or <em>implicitly</em> through the use of common MVVM naming conventions.</p>
-<h3 id="explicit-binding-context-resolution">Explicit Binding Context Resolution</h3>
+<h2 id="explicit-binding-context-resolution">Explicit Binding Context Resolution</h2>
 <p>Let's start with explicitly providing a binding context to MFractor.</p>
 <p>In Xamarin.Forms, all views have the property <code>BindingContext</code>; this specifies the object that a view should data-bind with. When coding with Xaml, we can use the <code>x:Static</code> markup extension to reference a static C# property and explicitly provide an instance of a C# class as the binding context:</p>
 <pre><code> &lt;Entry BindingContext=&quot;{x:Static local:MyStaticClass.MyStaticProperty}&quot;/&gt;
@@ -328,7 +376,7 @@
 <p>This is known as the <em>View Model Locator Pattern</em>. We implement a static class named <code>ViewModelLocator</code> and use a static, readonly property to return an instance of the object we want our Xaml view to data-bind with. Historically the <em>View Model Locator Pattern</em> has been used to provide design time data to the Xamarin.Forms Xaml previewer. For a deeper insight into this pattern, read James Montemagnos excellent <a href="http://motzcod.es/post/143702671962/xamarinforms-xaml-previewer-design-time-data">View Model Locator</a> article.</p>
 <p>For example, given a Xaml page named <code>LoginPage</code>, we could explicitly provide an instance of <code>LoginViewModel</code> as the binding context like so:</p>
 <p><strong>View Model Locator</strong></p>
-<pre><code>public namespace MyApp
+<pre><code class="cs">public namespace MyApp
 {
   public static class ViewModelLocator
   {
@@ -338,7 +386,7 @@
 </code></pre>
 
 <p><strong>LoginPage.xaml</strong></p>
-<pre><code>&lt;ContentPage
+<pre><code class="cs">&lt;ContentPage
   xmlns:local=&quot;clr-namespace:MyApp;assembly=MyApp&quot;
   BindingContext=&quot;{x:Static local:ViewModelLocator.LoginViewModel}&quot;/&gt;
 </code></pre>
@@ -351,7 +399,7 @@
 </code></pre>
 
 <p>When MFractor analyses the <code>{Binding IsToggled}</code> expression, it will evaluate the <code>{x:Reference mySwitch}</code> expression and use the type of mySwitch as the BindingContext (Xamarin.Forms.Switch).</p>
-<h3 id="implicit-binding-context-resolution">Implicit Binding Context Resolution</h3>
+<h2 id="implicit-binding-context-resolution">Implicit Binding Context Resolution</h2>
 <p>In addition to explicit binding context resolution, MFractor will attempt to infer the relationship between your view models and xaml views via <em>implicit binding context resolution</em>. This is done by looking for classes and Xaml views that share a common naming convention.</p>
 <p>Let's consider the following files:</p>
 <ul>
@@ -359,7 +407,7 @@
 <li><strong>LoginPage.xaml.cs</strong> - The code behind for the xaml view.</li>
 <li><strong>LoginViewModel</strong> - The a C# class that is the view model for the LoginPage view.</li>
 </ul>
-<p><img alt="mvvm relationships" src="../img/forms/implicit-mvvm-relationship.png" /></p>
+<p><img alt="mvvm relationships" src="../../img/forms/implicit-mvvm-relationship.png" /></p>
 <p>Because these pages share the prefix <strong>Login</strong> and each has a distinct file extension or suffix, we can infer the following relationships:</p>
 <ul>
 <li>The <em>.xaml</em> extension denotes that <strong>LoginPage.xaml</strong> is a xaml view.</li>
@@ -373,12 +421,11 @@
 <li><strong>View</strong>: EG LoginView.xaml &lt;-&gt; LoginViewModel</li>
 </ul>
 <p>Explicit binding context resolution will <strong>always</strong> override implicit binding context resolution. If your xaml views are named using the conventions listed above but your page or a view explicitly assigns the <code>BindingContext</code> property then MFractor will use the <code>BindingContext</code> return type instead of the implicit Mvvm relationship.</p>
-<h3 id="data-template-binding-context-resolution">Data Template Binding Context Resolution</h3>
+<h2 id="data-template-binding-context-resolution">Data Template Binding Context Resolution</h2>
 <p>Data templates are used to provide a nested Xaml view to a view that displays many occurances of that view. For example, a ListView uses a <code>DataTemplate</code> to specify the view appearance of each instance provided through the <code>ItemsSource</code> property.</p>
 <p>MFractor will attempt to infer the BindingContext for a data templates view by resolving the <code>ItemsSource</code> property on the wrapping view.</p>
 <p>Consider the following code:</p>
 <pre><code>  &lt;ListView ItemsSource=&quot;{Binding Contacts}&quot;&gt;
-    &lt;ListView.ItemTemplate&gt;
       &lt;ListView.ItemTemplate&gt;
         &lt;DataTemplate&gt;
           &lt;TextCell Text=&quot;{Binding DisplayName}&quot; /&gt;
@@ -387,8 +434,9 @@
   &lt;/ListView&gt;
 </code></pre>
 
-<p>The inner <code>DataTemplate</code> has a <code>TextCell</code> where the <code>Text</code> property is provided by the binding expression <code>{Binding DisplayName}</code>. To analyse this expression, MFractor requires a binding context; MFractor will walk out the wrapping view (ListView), locate the <code>ItemsSource</code> property and evaluate the expression. When the return type is a IEnumerable or array, MFractor unwraps the generic or array and grabs the inner type. This provides the C# type of the binding context for all binding expressions used within the data template.</p>
-<h3 id="summary">Summary</h3>
+<p>The inner <code>DataTemplate</code> has a <code>TextCell</code> where the <code>Text</code> property is provided by the binding expression <code>{Binding DisplayName}</code>. To analyse this expression, MFractor requires a binding context; MFractor will walk out to the encapsulating view (ListView), locate the <code>ItemsSource</code> property and evaluate the expression.</p>
+<p>When the return type is an <code>IEnumerable</code> or array, MFractor unwraps the generic or array and grabs the inner type. This provides the binding context type for the binding expressions used within the data template.</p>
+<h2 id="summary">Summary</h2>
 <p>In summary, we've learnt that MFractor will use the binding context to power the Xaml analyser and navigation improvements.</p>
 <ul>
 <li>Binding expressions require a binding context to be analysed.</li>
@@ -406,7 +454,7 @@
         <a href="../navigation/" class="btn btn-neutral float-right" title="Navigation">Next <span class="icon icon-circle-arrow-right"></span></a>
       
       
-        <a href="../quickstart/" class="btn btn-neutral" title="Quickstart"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../../xamarin-android-quickstart/" class="btn btn-neutral" title="Xamarin.Android Quickstart"><span class="icon icon-circle-arrow-left"></span> Previous</a>
       
     </div>
   
@@ -437,7 +485,7 @@
           <a href="https://github.com/matthewrdev/mfractor-documentation" class="icon icon-github" style="float: left; color: #fcfcfc"> GitHub</a>
       
       
-        <span><a href="../quickstart/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+        <span><a href="../../xamarin-android-quickstart/" style="color: #fcfcfc;">&laquo; Previous</a></span>
       
       
         <span style="margin-left: 15px"><a href="../navigation/" style="color: #fcfcfc">Next &raquo;</a></span>

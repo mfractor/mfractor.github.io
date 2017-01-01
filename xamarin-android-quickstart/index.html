@@ -9,7 +9,7 @@
   <meta name="author" content="Matthew Robbins">
   <link rel="shortcut icon" href="../img/favicon.ico">
   
-  <title>Setup - mfractor docs</title>
+  <title>Xamarin.Android Quickstart - mfractor docs</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="../css/theme.css" type="text/css" />
@@ -23,9 +23,9 @@
   
   <script>
     // Current page data
-    var mkdocs_page_name = "Setup";
-    var mkdocs_page_input_path = "setup.md";
-    var mkdocs_page_url = "/setup/";
+    var mkdocs_page_name = "Xamarin.Android Quickstart";
+    var mkdocs_page_input_path = "xamarin-android-quickstart.md";
+    var mkdocs_page_url = "/xamarin-android-quickstart/";
   </script>
   
   <script src="../js/jquery-2.1.1.min.js"></script>
@@ -74,34 +74,8 @@
   <li><span>Getting Started</span></li>
   
   
-<li class="toctree-l1 current">
-  <a class="current" href="./">Setup</a>
-  
-  <ul>
-    
-      
-    
-      
-      <li class="toctree-l3"><a href="#introduction">Introduction</a></li>
-      
-    
-      
-      <li class="toctree-l3"><a href="#install-mfractor">Install MFractor</a></li>
-      
-    
-      
-      <li class="toctree-l3"><a href="#activation">Activation</a></li>
-      
-    
-      
-      <li class="toctree-l3"><a href="#updating">Updating</a></li>
-      
-    
-      
-      <li class="toctree-l3"><a href="#uninstalling-mfractor">Uninstalling MFractor</a></li>
-      
-    
-  </ul>
+<li class="toctree-l1 ">
+  <a class="" href="../setup/">Setup</a>
   
 </li>
 
@@ -121,8 +95,46 @@
 
   
   
-<li class="toctree-l1 ">
-  <a class="" href="../xamarin-android-quickstart/">Xamarin.Android Quickstart</a>
+<li class="toctree-l1 current">
+  <a class="current" href="./">Xamarin.Android Quickstart</a>
+  
+  <ul>
+    
+      
+    
+      
+      <li class="toctree-l3"><a href="#introduction">Introduction</a></li>
+      
+    
+      
+      <li class="toctree-l3"><a href="#project-resource-indexing">Project Resource Indexing</a></li>
+      
+    
+      
+      <li class="toctree-l3"><a href="#resource-tooltips">Resource tooltips</a></li>
+      
+    
+      
+      <li class="toctree-l3"><a href="#go-to-resource-declaration">Go-To Resource Declaration</a></li>
+      
+    
+      
+      <li class="toctree-l3"><a href="#resource-intellisense">Resource IntelliSense</a></li>
+      
+    
+      
+      <li class="toctree-l3"><a href="#resource-analysis">Resource Analysis</a></li>
+      
+    
+      
+      <li class="toctree-l3"><a href="#find-all-resource-references">Find All Resource References</a></li>
+      
+    
+      
+      <li class="toctree-l3"><a href="#c-code-analysis-for-android">C# Code Analysis For Android</a></li>
+      
+    
+  </ul>
   
 </li>
 
@@ -373,48 +385,24 @@
         
       
     
-    <li>Setup</li>
+    <li>Xamarin.Android Quickstart</li>
   </ul>
   <hr/>
 </div>
           <div role="main">
             <div class="section">
               
-                <h2 id="setup">Setup</h2>
-<p><em>Installing, activating and updating MFractor</em></p>
+                <p><strong>WORK IN PROGRESS</strong></p>
+<h2 id="xamarinandroid-quickstart">Xamarin.Android Quickstart</h2>
+<p><em>Learn to use the most handy features in MFractor for Xamarin.Android</em></p>
 <h2 id="introduction">Introduction</h2>
-<p>This document covers how to install, activate and update MFractor for Xamarin Studio.</p>
-<h2 id="install-mfractor">Install MFractor</h2>
-<p>The simplest way to install MFractor into Xamarin Studio is by using the MFractor.Installer helper addin.</p>
-<p>This addin lives inside the Addin Manager in Xamarin Studio, under <strong>Gallery</strong> -&gt; <strong>IDE extensions</strong>.</p>
-<p>Open up Xamarin Studio and click on the <strong>Xamarin Studio</strong> then <strong>Addins...</strong></p>
-<p><img alt="addin manager location" src="../img/setup/addin-manager-menu.png" /></p>
-<p>Once the Addin Manager opens, click <strong>Gallery</strong> and under <strong>IDE extensions</strong> locate <strong>MFractor.Installer</strong>. If this isn't present, hit the <strong>Refresh</strong> button to update the Gallery listings.</p>
-<p><img alt="addin manager location" src="../img/setup/mfractor-installer-location.png" /></p>
-<p>Once you've located <strong>MFractor.Installer</strong>, left click on it to select it. In the right hand detail view, click <strong>Install</strong>. Xamarin Studio will prompt you for confirmation, click <strong>Install</strong></p>
-<p><img alt="install mfractor.installer" src="../img/setup/install-mfractor-installer.png" /></p>
-<p>You will then see a download dialog appear and MFractor will download and install!</p>
-<p><img alt="mfractor.installer download window" src="../img/setup/mfractor-installer-download-window.png" /></p>
-<p>Next we need to activate MFractor.</p>
-<h2 id="activation">Activation</h2>
-<p>After installing MFractor, you'll need activate it using your email address.</p>
-<p>First things first, <strong>close the Addin Manager</strong>. There is a known bug that blocks the email entry field from receiving keyboard when the Addin Manager is open. It's a pain and we are working on fixing this.</p>
-<p>To activate MFractor, enter you email and then click <strong>Activate</strong>.</p>
-<p><img alt="activation dialog" src="../img/setup/mfractor-activation-dialog.png" /></p>
-<p>Tada! You are now ready to rock. Why not learn how to use MFractor for <a href="../xamarin-forms-quickstart/">Xamarin.Forms</a> or <a href="../xamarin-android-quickstart/">Xamarin.Android</a> next?</p>
-<h2 id="updating">Updating</h2>
-<p>MFractor will receive regular updates adding sweet new features and bug fixes so it's important to keep up to date!</p>
-<p>When MFractor installs into Xamarin Studio, it'll register itself into Xamarin Studios addin updater.</p>
-<p>This means that Xamarin Studio <strong>should</strong> automatically prompt you that an update is available.</p>
-<p>However, you can check for udpate at any time by opening the <strong>Xamarin Studio</strong> main menu and selecting <strong>Check for Updates...</strong></p>
-<p><img alt="update mfractor" src="../img/setup/update-mfractor.png" /></p>
-<p>Xamarin Studio will check the MFractor addin server for updates and prompt you to update if there is a new version!</p>
-<h2 id="uninstalling-mfractor">Uninstalling MFractor</h2>
-<p>You can uninstall MFractor through the addin manager at any time. We'll be sad to see you go!</p>
-<p>Select the <strong>Xamarin Studio</strong> main menu and then <strong>Addins</strong></p>
-<p>Under <strong>Gallery</strong> then <strong>IDE extensions</strong> select the MFractor addin list item and then click <strong>Uninstall</strong></p>
-<p>You will be prompted to uninstall the addin, confirm uninstallation by clicking <strong>Uninstall</strong></p>
-<p><img alt="uninstall mfractor " src="../img/setup/uninstall-mfractor.png" /></p>
+<h2 id="project-resource-indexing">Project Resource Indexing</h2>
+<h2 id="resource-tooltips">Resource tooltips</h2>
+<h2 id="go-to-resource-declaration">Go-To Resource Declaration</h2>
+<h2 id="resource-intellisense">Resource IntelliSense</h2>
+<h2 id="resource-analysis">Resource Analysis</h2>
+<h2 id="find-all-resource-references">Find All Resource References</h2>
+<h2 id="c-code-analysis-for-android">C# Code Analysis For Android</h2>
               
             </div>
           </div>
@@ -422,10 +410,10 @@
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="../support/" class="btn btn-neutral float-right" title="Support">Next <span class="icon icon-circle-arrow-right"></span></a>
+        <a href="../xamarin-forms/configure-binding-context/" class="btn btn-neutral float-right" title="Configure Binding Context">Next <span class="icon icon-circle-arrow-right"></span></a>
       
       
-        <a href=".." class="btn btn-neutral" title="Home"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../xamarin-forms-quickstart/" class="btn btn-neutral" title="Xamarin.Forms Quickstart"><span class="icon icon-circle-arrow-left"></span> Previous</a>
       
     </div>
   
@@ -456,10 +444,10 @@
           <a href="https://github.com/matthewrdev/mfractor-documentation" class="icon icon-github" style="float: left; color: #fcfcfc"> GitHub</a>
       
       
-        <span><a href=".." style="color: #fcfcfc;">&laquo; Previous</a></span>
+        <span><a href="../xamarin-forms-quickstart/" style="color: #fcfcfc;">&laquo; Previous</a></span>
       
       
-        <span style="margin-left: 15px"><a href="../support/" style="color: #fcfcfc">Next &raquo;</a></span>
+        <span style="margin-left: 15px"><a href="../xamarin-forms/configure-binding-context/" style="color: #fcfcfc">Next &raquo;</a></span>
       
     </span>
 </div>

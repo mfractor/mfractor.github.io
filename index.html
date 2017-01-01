@@ -70,10 +70,6 @@
     
       
     
-      
-      <li class="toctree-l3"><a href="#introduction">Introduction</a></li>
-      
-    
   </ul>
   
 </li>
@@ -91,15 +87,32 @@
 
   
   
-<ul class="subnav">
-  <li><span>Xamarin.Forms</span></li>
-  
-  
 <li class="toctree-l1 ">
-  <a class="" href="xamarin-forms/quickstart/">Quickstart</a>
+  <a class="" href="support/">Support</a>
   
 </li>
 
+  
+  
+<li class="toctree-l1 ">
+  <a class="" href="xamarin-forms-quickstart/">Xamarin.Forms Quickstart</a>
+  
+</li>
+
+  
+  
+<li class="toctree-l1 ">
+  <a class="" href="xamarin-android-quickstart/">Xamarin.Android Quickstart</a>
+  
+</li>
+
+  
+</ul>
+<li>
+          
+            <li>
+<ul class="subnav">
+  <li><span>Xamarin.Forms</span></li>
   
   
 <li class="toctree-l1 ">
@@ -158,15 +171,15 @@
 
   
 </ul>
-
-  
-  
+<li>
+          
+            <li>
 <ul class="subnav">
-  <li><span>Android</span></li>
+  <li><span>Xamarin.Android</span></li>
   
   
 <li class="toctree-l1 ">
-  <a class="" href="xamarin-android/quickstart/">Quickstart</a>
+  <a class="" href="xamarin-android/project-resource-indexing/">Project Resource Indexing</a>
   
 </li>
 
@@ -188,6 +201,20 @@
   
 <li class="toctree-l1 ">
   <a class="" href="xamarin-android/refactoring-and-code-generation/">Refactoring And Code Generation</a>
+  
+</li>
+
+  
+  
+<li class="toctree-l1 ">
+  <a class="" href="xamarin-android/dotnet-code-analysis/">.NET Code Analysis</a>
+  
+</li>
+
+  
+  
+<li class="toctree-l1 ">
+  <a class="" href="xamarin-android/resource-intellisense/">Resource IntelliSense</a>
   
 </li>
 
@@ -217,7 +244,11 @@
 </li>
 
   
-</ul>
+  
+<li class="toctree-l1 ">
+  <a class="" href="xamarin-android/tools-in-depth/intellisense/">IntelliSense</a>
+  
+</li>
 
   
 </ul>
@@ -237,6 +268,20 @@
   
 <li class="toctree-l1 ">
   <a class="" href="tutorials/xamarin-android/resource-expressions-and-code-navigation/">Resource Expressions And Code Navigation</a>
+  
+</li>
+
+  
+</ul>
+
+  
+  
+<ul class="subnav">
+  <li><span>Xamarin.Forms</span></li>
+  
+  
+<li class="toctree-l1 ">
+  <a class="" href="tutorials/xamarin-forms/mvvm-navigation/">Mvvm Navigation</a>
   
 </li>
 
@@ -314,21 +359,19 @@
                 <p><img alt="mfractor logo" src="./img/logo-horizontal.png" /></p>
 <h2 id="welcome">Welcome</h2>
 <p>Hey there fellow Xamarin developer!</p>
-<p>Welcome to the documentation for MFractor, the essential productivity tool for Xamarin Studio.</p>
-<p>Have you ever...</p>
+<p>Welcome to the documentation for MFractor, incredible Xamarin tools.</p>
+<p>MFractor adds several features so you can make great Xamarin.Forms apps faster:</p>
 <ul>
-<li>Hit runtime issues so obvious you were scratching your head over why code analysis didn't pick it up?</li>
-<li>Been frustrated by continuously writing the same boilerplate code?</li>
-<li>Felt you're doing a LOT of text searching when a class <strong>should</strong> just be a keystroke away?</li>
-</ul>
-<p>As a seasoned Xamarin developer, these problems bit me many times over the years... And they irked me so much that I started building MFractor to solve these issues.</p>
-<p>MFractor gives you several features so you can make great apps faster:</p>
-<ul>
-<li>A comprehensive code analyser turns runtime crashes into in-editor code warnings.</li>
+<li>A xaml analyser turns runtime crashes into in-editor code warnings.</li>
 <li>A code generation engine auto-magically creates boilerplate code in a few clicks instead of a few hundred keystrokes.</li>
-<li>A few dozen of navigation improvements remove the friction of navigating your apps source code.</li>
+<li>Several navigation improvements remove the friction of navigating your apps source code.</li>
 </ul>
 <p>Slowly, I am building the ReSharper for Xamarin Studio and I'm thrilled that you have joined me on the journey.</p>
+<p>To get started, checkout:</p>
+<ul>
+<li><a href="xamarin-forms-quickstart/">The Xamarin.Forms Quickstart Guide</a></li>
+<li><a href="xamarin-android-quickstart/">The Xamarin.Android Quickstart Guide</a></li>
+</ul>
 <p>If something doesn't work quite right or you'd like a sweet new feature added, be patient and contact me:</p>
 <ul>
 <li>Via Twitter: Give me a holla at <a href="https://twitter.com/matthewrdev">@matthewrdev</a></li>
@@ -337,30 +380,6 @@
 </ul>
 <p>Finally, thank you for installing and using MFractor. It means the world to me.</p>
 <p>Matthew Robbins - Creator of MFractor. ✌️</p>
-<h2 id="introduction">Introduction</h2>
-<p>MFractor is a comprehensive suite of productivity tools for Xamarin Studio to enable developers to make great apps faster.</p>
-<p><strong>With MFractor for Xamarin.Forms, you can:</strong></p>
-<p>Navigate from Xaml to C# faster with Xaml tooltips, go-to symbol and Mvvm shortcuts.</p>
-<p><img alt="xaml navigation demo" src="./img/intro/xaml-navigation.gif" /></p>
-<p>Write less Xaml bugs with a Xaml analyser detecting code issues at design time... Then fix those issue in just a few clicks.</p>
-<p><img alt="xaml code analysis demo" src="./img/intro/xaml-analysis.gif" /></p>
-<p>Generate C# code from Xaml such as binding context properties, commands, bindable properties and much, much more.</p>
-<p><img alt="xaml code generation demo" src="./img/intro/xaml-code-generation.gif" /></p>
-<p><strong>With MFractor for Xamarin.Android, you can:</strong></p>
-<p>Navigate app resources fluently with resource tooltips, go-to resource declaration and find all reference support.</p>
-<p><img alt="android navigation demo" src="./img/intro/android-navigation.gif" /></p>
-<p>Quickly create xml resources with IntelliSense for <strong>all</strong> resource types (not just layouts).</p>
-<p><img alt="android intellisense demo" src="./img/intro/android-intellisense.gif" /></p>
-<p>Build bug free layouts and app resources with Android resource analysis.</p>
-<p><img alt="android analysis demo" src="./img/intro/android-analysis.gif" /></p>
-<p>Avoid Android specific runtime issues with C# code analysis.</p>
-<p><img alt="android dotnet analysis demo" src="./img/intro/android-dotnet-analysis.gif" /></p>
-<p>In these docs, you'll learn how to install MFractor, use MFractor for Xamarin.Forms and use MFractor for Xamarin.Android. By the end of this documentation you'll be a master at leveraging MFractors feature suite to build great apps faster.</p>
-<p>If you run into an issue along the way, support for MFractor is available via the following ways:
- - Tweet to @matthewrdev at any time on Twitter.
- - The Xamarin Slack channel has an #mfractor sub-channel. Drop in and chat.
- - Email hello@mfractor.com to contact support.</p>
-<p>Let's get started by <a href="setup/">Installing MFractor for Xamarin Studio</a></p>
               
             </div>
           </div>
@@ -412,5 +431,5 @@
 
 <!--
 MkDocs version : 0.16.1
-Build Date UTC : 2017-01-01 03:04:46
+Build Date UTC : 2017-01-01 21:35:54
 -->

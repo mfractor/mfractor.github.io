@@ -9,7 +9,7 @@
   <meta name="author" content="Matthew Robbins">
   <link rel="shortcut icon" href="../../../img/favicon.ico">
   
-  <title>Resource Expressions And Code Navigation - mfractor docs</title>
+  <title>Mvvm Navigation - mfractor docs</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="../../../css/theme.css" type="text/css" />
@@ -23,9 +23,9 @@
   
   <script>
     // Current page data
-    var mkdocs_page_name = "Resource Expressions And Code Navigation";
-    var mkdocs_page_input_path = "tutorials/xamarin-android/resource-expressions-and-code-navigation.md";
-    var mkdocs_page_url = "/tutorials/xamarin-android/resource-expressions-and-code-navigation/";
+    var mkdocs_page_name = "Mvvm Navigation";
+    var mkdocs_page_input_path = "tutorials/xamarin-forms/mvvm-navigation.md";
+    var mkdocs_page_url = "/tutorials/xamarin-forms/mvvm-navigation/";
   </script>
   
   <script src="../../../js/jquery-2.1.1.min.js"></script>
@@ -260,14 +260,8 @@
   <li><span>Xamarin.Android</span></li>
   
   
-<li class="toctree-l1 current">
-  <a class="current" href="./">Resource Expressions And Code Navigation</a>
-  
-  <ul>
-    
-      
-    
-  </ul>
+<li class="toctree-l1 ">
+  <a class="" href="../../xamarin-android/resource-expressions-and-code-navigation/">Resource Expressions And Code Navigation</a>
   
 </li>
 
@@ -280,8 +274,30 @@
   <li><span>Xamarin.Forms</span></li>
   
   
-<li class="toctree-l1 ">
-  <a class="" href="../../xamarin-forms/mvvm-navigation/">Mvvm Navigation</a>
+<li class="toctree-l1 current">
+  <a class="current" href="./">Mvvm Navigation</a>
+  
+  <ul>
+    
+      
+    
+      
+      <li class="toctree-l3"><a href="#overview">Overview</a></li>
+      
+    
+      
+      <li class="toctree-l3"><a href="#views-code-behind-classes-and-viewmodels">Views, Code Behind classes and ViewModels</a></li>
+      
+    
+      
+      <li class="toctree-l3"><a href="#fluid-mvvm-navigation">Fluid Mvvm Navigation</a></li>
+      
+    
+      
+      <li class="toctree-l3"><a href="#summary">Summary</a></li>
+      
+    
+  </ul>
   
 </li>
 
@@ -353,85 +369,91 @@
         
       
         
-          <li>Xamarin.Android &raquo;</li>
+          <li>Xamarin.Forms &raquo;</li>
         
       
     
-    <li>Resource Expressions And Code Navigation</li>
+    <li>Mvvm Navigation</li>
   </ul>
   <hr/>
 </div>
           <div role="main">
             <div class="section">
               
-                <h1 id="resource-expressions-and-code-navigation">Resource Expressions And Code Navigation</h1>
-<p><em>Learn the C# and xml expressions that activate tooltips and go-to declaration in MFractor for Android</em></p>
+                <h2 id="mvvm-navigation">Mvvm Navigation</h2>
+<p><em>Quickly move between Xamarin.Forms Views, View Models and Code behind classes using Mvvm navigation shortcuts.</em></p>
 <h2 id="overview">Overview</h2>
-<p>If you’re a Xamarin.Android developer building apps using the native APIs then chances are you spend a lot of time navigating resource code.</p>
-<p>This becomes tedious when you are constantly doing manual searches for your target, browsing through the find results and then clicking the search result to jump to it. What’s more, using go-to declaration on a C# resource symbol takes you to its integer id! It’s tremendously frustrating and a massive time-waster.</p>
-<p>And this problem gets worse the bigger your project is; large Android applications can have dozens to hundreds of xml resources that need to be scanned each time a search takes place.</p>
-<p>MFractor addresses these navigation issues by overriding the default “go to declaration” keyboard shortcuts when you are in the context of a resource expression.</p>
-<p>These expressions come in 2 flavours:</p>
+<p>Xamarin.Forms is cross platform toolkit that allows developers to build iOS, Android and Windows apps and maximise code reuse across platforms. Xamarin.Forms also facilitates shared UI code through the use of an xml based view markup langauge named Xaml.</p>
+<p>Developers build their UI views in Xaml and Xamarin.Forms then inflate the view into it’s native implementation.</p>
+<p>Alongside shared UI code, Xamarin.Forms uses the Model – View – View Model (Mvvm) design pattern to seperate a UI definition it’s from state/behaviour code.</p>
+<p>The Mvvm design pattern is a great for maintainabilty and code clarity however developers can spend a lot of time manually nagivating between Xaml views and an associated view model.</p>
+<p>MFractor adds several navigation shortcuts to speed up developers.</p>
+<p>Getting Started
+In this article we will use MFractor to navigate between a Xaml UI definition, it’s code behind class and its associated view model.</p>
+<p>We assume the following:</p>
 <ul>
-<li>C#: Code expressions within C# that access the generated Resources class contained in the Resources.Designer.cs file. For instance; Resource.Layout.myLayout.</li>
-<li>XML: Code expressions within Android xml resources that point to another resource. For instance; @layout/myLayout.</li>
+<li>A Xamarin Studio 6.0 installation.</li>
+<li>MFractor 2 installed into Xamarin Studio. Install it here: www.mfractor.com/download</li>
+<li>A familarity with the Xamarin.Forms; particularly building UIs with Xaml and the Model – View – View Model design pattern.</li>
+<li>The MFractor For Xamarin.Forms sample project downloaded and open in Xamarin Studio.</li>
 </ul>
-<p>When MFractor detects the cursor is within one of these expressions, resource tooltips and go-to-declaration become active. This enables fast and efficient code navigation.</p>
-<p>It looks a little like this when in action:</p>
-<p>That is much faster than manual searching! Now lets go over each of these expression types.</p>
-<h2 id="c-resource-expressions">C# Resource Expressions</h2>
-<p>For C#, resource expressions are always resolved against the Resource.Designer.cs file that is generated alongside a project. This section assumes a basic familiarity of the Resource.Designer.cs file; if this is a new concept I suggested reading the <a href="https://developer.xamarin.com/guides/android/application_fundamentals/resources_in_android/part_1_-_android_resource_basics/">Android Resource Basics</a> page in Xamarins documentation.</p>
-<p>The components of a supported resource expression are formatted like so:</p>
-<pre><code>[Project Namespace].[Resource].[ResourceType].[ResourceName]
+<h2 id="views-code-behind-classes-and-viewmodels">Views, Code Behind classes and ViewModels</h2>
+<p>Let’s start by examining the MFractor For Xamarin.Forms sample project. Open it up in Xamarin Studio and take a look at the project structure:</p>
+<p>MFractor For Xamarin.Forms Project</p>
+<p>The project itself is trivial; it has a single xaml page with a code behind class and 2 view view models; WelcomeViewModel and GoodbyeViewModel. Notice that this project appends Xaml views with with “Page” and view models with “ViewModel”.</p>
+<p>Before we get started learning how to use the Mvvm navigation shortcuts, let’s understand the conventions that MFractor uses to drive the navigation.</p>
+<h3 id="the-pageview-and-viewmodel-naming-convention">The “Page/View" and "ViewModel" naming convention</h3>
+<p>In Xamarin.Forms, the de-facto naming convention is to append views with Page or View and view models are appended with ViewModel.</p>
+<p>This naming standard implies that the WelcomePage and the WelcomeViewModel are associated; if we stripped off Page and ViewModel from the file names then both would be named Welcome. This implicit relationship makes the codebase easier to understand by conforming to industry standards.</p>
+<p>MFractor notices this implicit relationship; if a view and a view model within the same assembly are named like this, a MFractor activates shortcuts between the view, it’s code behind and the associated view model.</p>
+<p>If developers don’t want this implicit relationship or their Views/View Models are in seperate assemblies, they may explicitly specify the binding context in the view’s Xaml using the View Model Locator pattern.</p>
+<h3 id="the-viewmodellocator-pattern">The ViewModelLocator Pattern</h3>
+<p>The ViewModelLocator pattern is a static class used to specify the BindingContext of a Xaml view for design time previewing. James Montemagno re-introduced this concept in his blog post for the Xaml Previewer.</p>
+<p>Developers implement a static class named ViewModelLocator that exposes a static instance of their view models:</p>
+<pre><code>public static class ViewModelLocator
+{
+    static MyViewModel _myViewModel;
+    public static MyViewModel MyViewModel =&gt; _myViewModel ?? (_myViewModel = new MyViewModel());
+}
 </code></pre>
 
-<p>Where:</p>
-<ul>
-<li>[Project Namespace] is the project namespace that the Resources designer class resides. This component is either:</li>
-<li>Implicit: The encapsulating namespace is the same as the resource designers namespace or a using statement provides the resource designer class.</li>
-<li>Explicit: The expression explicitly uses the namespace that owns the resource class.</li>
-<li>Resource is the constant Resource class that wraps the declarations of the ResourceType sub-classes.</li>
-<li>ResourceType is the nested resource type class.</li>
-<li>ResourceName is the name of the resource being referenced. MFractor will only trigger its behaviour when your caret or mouse cursor is over this component of the c# resource expression.</li>
-</ul>
-<p>An example of a valid expression would be:</p>
-<pre><code>Resources.String.my_string;
+<p>This static instance is then bound to the Xaml’s binding context via an x:Static expression:</p>
+<pre><code>    xmlns:design=&quot;clr-namespace:MyAppNamespace;assembly=MyApp&quot;
+    BindingContext=&quot;{x:Static design:ViewModelLocator.MyViewModel}&quot;
 </code></pre>
 
-<p>When your cursor is over the my_string component of this expression, MFractor will attempt to resolve a string resource named my_string.</p>
-<h2 id="xml-resource-expressions">Xml Resource Expressions</h2>
-<p>Xml resource expressions come in 3 different categories:</p>
-<ul>
-<li>Reference expressions point directly to a resource. They begin with the ‘@’ character.</li>
-<li>Declarative expressions declare a new resource. These are only used with ids. They begin with a ‘@+’ character sequence.</li>
-<li>Theme expression point to a component of the currently scoped theme. They begin with a ‘?’ character.</li>
-</ul>
-<p>Reference and declarative expression are structured with the following syntax:</p>
-<pre><code>@[+][PackageName:]resourceType/resourceName
+<p>When the BindingContext for a view is explicitly defined, MFractor will honor this relationship and route all Mvvm navigation to the view model class declaration defined by the ViewModelLocator.</p>
+<p>For the sample project, we could retarget the WecomePage to link with the GoodbyeViewModel by exposing a static instance through the ViewModelLocator and referencing it using the BindingContext:</p>
+<p><strong>C#</strong></p>
+<pre><code>public static class ViewModelLocator
+{
+    static GoodbyeViewModel _goodebye;
+    public static GoodbyeViewModel GoodbyeViewModel =&gt; _goodebye ?? (_goodebye = new GoodbyeViewModel());
+}
 </code></pre>
 
-<p>Where:</p>
-<ul>
-<li>@[+] is the resource reference symbol.</li>
-<li>PackageName is an optional component that points to the package the resource is within.</li>
-<li>resourceType is the resource type.</li>
-<li>resourceName is the name of the resource.</li>
-</ul>
-<p>An example of this would be:</p>
-<pre><code>@string/my_string
+<p><strong>Xaml</strong></p>
+<pre><code>    xmlns:design=&quot;clr-namespace:MFractorForForms;assembly=MFractorForForms&quot;
+    BindingContext=&quot;{x:Static design:ViewModelLocator.GoodbyeViewModel}&quot;
 </code></pre>
 
-<p>When your cursor is any component of this expression, MFractor will attempt to resolve a pre-existing string resource named my_string.</p>
-<p>Lastly, theme resource expressions point to a component of the current theme. These are structured with the following syntax:</p>
-<pre><code>?[PackageName:][ResourceType/]themeItemName
-</code></pre>
-
-<p>Where:</p>
+<h2 id="fluid-mvvm-navigation">Fluid Mvvm Navigation</h2>
+<p>Now that we understand how MFractor links the Mvvm code files, let’s get to know the Mvvm navigation shortcuts.</p>
+<p>Open up the WelcomePage.xaml and right click in the middle of the editor:</p>
+<h3 id="mvvm-shortcuts">Mvvm Shortcuts</h3>
+<p>There are 3 Mvvm navigation shortcuts in MFractor:</p>
 <ul>
-<li>PackageName is the optional package name the theme component resides within.</li>
-<li>ResourceType is the optional resource type of the theme component. This is typically inferred.</li>
-<li>themeItemName the name of the theme item.</li>
+<li>Go To Code-Behind Class: Jumps you to the code behind class related to a view or view model</li>
+<li>Go To View Model: Jumps you to the view model related to a view or code behind class.</li>
+<li>Go To Xaml View: Jumps you to the xaml view related to a view model or code behind class.</li>
 </ul>
+<p>We can use these short-cuts to quickly navigate around these 3 files:</p>
+<p>Or we can use an xStatic expression that uses the ViewModelLocator to target a different view model implementation:</p>
+<h3 id="custom-binding-context">Custom Binding Context</h3>
+<p>Now the Go To View Model shortcut will instead jump to the class type used by the BindingContext rather than the implicit association.</p>
+<h2 id="summary">Summary</h2>
+<p>We’ve learnt how to use MFractors Mvvm navigation shortcuts to quickly move between the View, Code Behind Class and View Model</p>
+<p>To continue learning to use MFractor, visit our documentation page.</p>
               
             </div>
           </div>
@@ -439,10 +461,10 @@
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="../../xamarin-forms/mvvm-navigation/" class="btn btn-neutral float-right" title="Mvvm Navigation">Next <span class="icon icon-circle-arrow-right"></span></a>
+        <a href="../../../release-notes/v2-7/" class="btn btn-neutral float-right" title="2.7">Next <span class="icon icon-circle-arrow-right"></span></a>
       
       
-        <a href="../../../xamarin-android/tools-in-depth/intellisense/" class="btn btn-neutral" title="IntelliSense"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../../xamarin-android/resource-expressions-and-code-navigation/" class="btn btn-neutral" title="Resource Expressions And Code Navigation"><span class="icon icon-circle-arrow-left"></span> Previous</a>
       
     </div>
   
@@ -473,10 +495,10 @@
           <a href="https://github.com/matthewrdev/mfractor-documentation" class="icon icon-github" style="float: left; color: #fcfcfc"> GitHub</a>
       
       
-        <span><a href="../../../xamarin-android/tools-in-depth/intellisense/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+        <span><a href="../../xamarin-android/resource-expressions-and-code-navigation/" style="color: #fcfcfc;">&laquo; Previous</a></span>
       
       
-        <span style="margin-left: 15px"><a href="../../xamarin-forms/mvvm-navigation/" style="color: #fcfcfc">Next &raquo;</a></span>
+        <span style="margin-left: 15px"><a href="../../../release-notes/v2-7/" style="color: #fcfcfc">Next &raquo;</a></span>
       
     </span>
 </div>
