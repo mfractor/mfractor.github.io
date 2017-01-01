@@ -3,8 +3,10 @@ theme: readthedocs
 copyright: Copyright &copy; 2016 <a href="https://www.mfractor.com">MFractor</a>
 site_author: "Matthew Robbins"
 site_description: "Documentation for MFractor for Mac, incredible Xamarin tools"
-site_favicon: "images/favicon.ico"
+site_favicon: "img/favicon.ico"
 repo_url: "https://github.com/matthewrdev/mfractor-documentation"
+remote_branch: "master"
+google_analytics: ['UA-71910290-3', 'docs.mfractor.com']
 strict: true
 theme_dir: theme
 extra_css:

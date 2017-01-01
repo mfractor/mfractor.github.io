@@ -12,19 +12,19 @@ This addin lives inside the Addin Manager in Xamarin Studio, under **Gallery** -
 
 Open up Xamarin Studio and click on the **Xamarin Studio** then **Addins...**
 
-![addin manager location](images/setup/addin-manager-menu.png)
+![addin manager location](img/setup/addin-manager-menu.png)
 
 Once the Addin Manager opens, click **Gallery** and under **IDE extensions** locate **MFractor.Installer**. If this isn't present, hit the **Refresh** button to update the Gallery listings.
 
-![addin manager location](images/setup/mfractor-installer-location.png)
+![addin manager location](img/setup/mfractor-installer-location.png)
 
 Once you've located **MFractor.Installer**, left click on it to select it. In the right hand detail view, click **Install**. Xamarin Studio will prompt you for confirmation, click **Install**
 
-![install mfractor.installer](images/setup/install-mfractor-installer.png)
+![install mfractor.installer](img/setup/install-mfractor-installer.png)
 
 You will then see a download dialog appear and MFractor will download and install!
 
-![mfractor.installer download window](images/setup/mfractor-installer-download-window.png)
+![mfractor.installer download window](img/setup/mfractor-installer-download-window.png)
 
 Next we need to activate MFractor.
 
@@ -36,7 +36,7 @@ First things first, **close the Addin Manager**. There is a known bug that block
 
 To activate MFractor, enter you email and then click **Activate**.
 
-![activation dialog](images/setup/mfractor-activation-dialog.png)
+![activation dialog](img/setup/mfractor-activation-dialog.png)
 
 Tada! You are now ready to rock. Why not learn how to use MFractor for [Xamarin.Forms](xamarin-forms/quickstart.md) or [Xamarin.Android](xamarin-android/quickstart.md) next?
 
@@ -49,7 +49,7 @@ This means that Xamarin Studio **should** automatically prompt you that an updat
 
 However, you can check for udpate at any time by opening the **Xamarin Studio** main menu and selecting **Check for Updates...**
 
-![update mfractor](images/setup/update-mfractor.png)
+![update mfractor](img/setup/update-mfractor.png)
 
 Xamarin Studio will check the MFractor addin server for updates and prompt you to update if there is a new version!
 
@@ -62,4 +62,4 @@ Under **Gallery** then **IDE extensions** select the MFractor addin list item an
 
 You will be prompted to uninstall the addin, confirm uninstallation by clicking **Uninstall**
 
-![uninstall mfractor ](images/setup/uninstall-mfractor.png)
+![uninstall mfractor ](img/setup/uninstall-mfractor.png)

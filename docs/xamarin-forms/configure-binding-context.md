@@ -58,7 +58,7 @@ Let's consider the following files:
  * **LoginPage.xaml.cs** - The code behind for the xaml view.
  * **LoginViewModel** - The a C# class that is the view model for the LoginPage view.
 
-![mvvm relationships](images/forms/implicit-mvvm-relationship.png)
+![mvvm relationships](img/forms/implicit-mvvm-relationship.png)
 
 Because these pages share the prefix **Login** and each has a distinct file extension or suffix, we can infer the following relationships:
 

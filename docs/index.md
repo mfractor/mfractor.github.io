@@ -1,4 +1,4 @@
-![mfractor logo](images/logo-horizontal.png)
+![mfractor logo](img/logo-horizontal.png)
 
 ##Welcome
 
@@ -39,33 +39,33 @@ MFractor is a comprehensive suite of productivity tools for Xamarin Studio to en
 
 Navigate from Xaml to C# faster with Xaml tooltips, go-to symbol and Mvvm shortcuts.
 
-![xaml navigation demo](images/intro/xaml-navigation.gif)
+![xaml navigation demo](img/intro/xaml-navigation.gif)
 
 Write less Xaml bugs with a Xaml analyser detecting code issues at design time... Then fix those issue in just a few clicks.
 
-![xaml code analysis demo](images/intro/xaml-analysis.gif)
+![xaml code analysis demo](img/intro/xaml-analysis.gif)
 
 Generate C# code from Xaml such as binding context properties, commands, bindable properties and much, much more.
 
-![xaml code generation demo](images/intro/xaml-code-generation.gif)
+![xaml code generation demo](img/intro/xaml-code-generation.gif)
 
 **With MFractor for Xamarin.Android, you can:**
 
 Navigate app resources fluently with resource tooltips, go-to resource declaration and find all reference support.
 
-![android navigation demo](images/intro/android-navigation.gif)
+![android navigation demo](img/intro/android-navigation.gif)
 
 Quickly create xml resources with IntelliSense for **all** resource types (not just layouts).
 
-![android intellisense demo](images/intro/android-intellisense.gif)
+![android intellisense demo](img/intro/android-intellisense.gif)
 
 Build bug free layouts and app resources with Android resource analysis.
 
-![android analysis demo](images/intro/android-analysis.gif)
+![android analysis demo](img/intro/android-analysis.gif)
 
 Avoid Android specific runtime issues with C# code analysis.
 
-![android dotnet analysis demo](images/intro/android-dotnet-analysis.gif)
+![android dotnet analysis demo](img/intro/android-dotnet-analysis.gif)
 
 In these docs, you'll learn how to install MFractor, use MFractor for Xamarin.Forms and use MFractor for Xamarin.Android. By the end of this documentation you'll be a master at leveraging MFractors feature suite to build great apps faster.
 
