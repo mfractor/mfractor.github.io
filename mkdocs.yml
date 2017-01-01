@@ -42,6 +42,8 @@ pages:
 - Tutorials:
     - Xamarin.Android:
       - Resource Expressions And Code Navigation: tutorials/xamarin-android/resource-expressions-and-code-navigation.md
+    - Xamarin.Forms:
+      - Mvvm Navigation: tutorials/xamarin-forms/mvvm-navigation.md
 - Release Notes:
   - Version 2:
       - 2.7: release-notes/v2-7.md

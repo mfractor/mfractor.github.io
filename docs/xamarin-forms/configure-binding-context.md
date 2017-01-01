@@ -1,11 +1,19 @@
+
 ##Configuring A Binding Context
+
+*Power the refactoring engine and xaml analyser by targeting a binding context*
+
+##Introduction
 In Mvvm architected applications, views use a **Binding Context** to display and transfer data between the application logic layer and the view layer with minimal dependencies. This is accomplished through **data binding**; properties on a view are bound to properties on a backing object through binding mechanisms allowing two-way data transfer between the UI and application logic. For a full tutorial on Mvvm architecture, please Microsofts [**The Mvvm Pattern**](https://msdn.microsoft.com/en-us/library/hh848246.aspx) article.
 
-When using MFractor for Xamarin.Forms, we can specify a binding context to get the most out of MFractors xaml analyser. If MFractor can resolve a binding context for a Xaml view, it will consume binding expressions and analyse them. This is tremendously beneficial as MFractor will pickup runtime errors and high-light them directly within the Xaml editor.
+When working with Xaml, we can specify a binding context to activate . If MFractor can resolve a binding context for a Xaml view, it will consume binding expressions and analyse them.
+
+
+This is tremendously beneficial as MFractor will pickup runtime errors and high-light them directly within the Xaml editor.
 
 We can specify a binding context *explicitly* via in inline Xaml expression or *implicitly* through the use of common MVVM naming conventions.
 
-###Explicit Binding Context Resolution
+##Explicit Binding Context Resolution
 Let's start with explicitly providing a binding context to MFractor.
 
 In Xamarin.Forms, all views have the property `BindingContext`; this specifies the object that a view should data-bind with. When coding with Xaml, we can use the `x:Static` markup extension to reference a static C# property and explicitly provide an instance of a C# class as the binding context:
@@ -19,7 +27,7 @@ This is known as the *View Model Locator Pattern*. We implement a static class n
 For example, given a Xaml page named `LoginPage`, we could explicitly provide an instance of `LoginViewModel` as the binding context like so:
 
 **View Model Locator**
-```
+```cs
 public namespace MyApp
 {
   public static class ViewModelLocator
@@ -30,7 +38,7 @@ public namespace MyApp
 ```
 
 **LoginPage.xaml**
-```
+```cs
 <ContentPage
   xmlns:local="clr-namespace:MyApp;assembly=MyApp"
   BindingContext="{x:Static local:ViewModelLocator.LoginViewModel}"/>
@@ -49,7 +57,7 @@ Explicit binding context resolution will also work when referencing another elem
 
 When MFractor analyses the `{Binding IsToggled}` expression, it will evaluate the `{x:Reference mySwitch}` expression and use the type of mySwitch as the BindingContext (Xamarin.Forms.Switch).
 
-###Implicit Binding Context Resolution
+##Implicit Binding Context Resolution
 In addition to explicit binding context resolution, MFractor will attempt to infer the relationship between your view models and xaml views via *implicit binding context resolution*. This is done by looking for classes and Xaml views that share a common naming convention.
 
 Let's consider the following files:
@@ -75,7 +83,7 @@ The following suffixes are supported for Xaml views:
 
 Explicit binding context resolution will **always** override implicit binding context resolution. If your xaml views are named using the conventions listed above but your page or a view explicitly assigns the `BindingContext` property then MFractor will use the `BindingContext` return type instead of the implicit Mvvm relationship.
 
-###Data Template Binding Context Resolution
+##Data Template Binding Context Resolution
 Data templates are used to provide a nested Xaml view to a view that displays many occurances of that view. For example, a ListView uses a `DataTemplate` to specify the view appearance of each instance provided through the `ItemsSource` property.
 
 MFractor will attempt to infer the BindingContext for a data templates view by resolving the `ItemsSource` property on the wrapping view.
@@ -95,7 +103,7 @@ Consider the following code:
 
 The inner `DataTemplate` has a `TextCell` where the `Text` property is provided by the binding expression `{Binding DisplayName}`. To analyse this expression, MFractor requires a binding context; MFractor will walk out the wrapping view (ListView), locate the `ItemsSource` property and evaluate the expression. When the return type is a IEnumerable or array, MFractor unwraps the generic or array and grabs the inner type. This provides the C# type of the binding context for all binding expressions used within the data template.
 
-###Summary
+##Summary
 In summary, we've learnt that MFractor will use the binding context to power the Xaml analyser and navigation improvements.
 
  * Binding expressions require a binding context to be analysed.

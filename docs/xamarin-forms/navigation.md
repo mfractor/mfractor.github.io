@@ -1,4 +1,8 @@
-##Xaml Navigation
+##Navigation
+
+*Move efficiently through a Xamarin.Forms project with rich Xaml code navigation*
+
+##Introduction
 MFractor enriches the navigation between C# and Xaml code by adding a few handy shortcuts. We can:
 
  * Quickly cycle between views, code behind classes and view models with the Mvvm shortcuts.
