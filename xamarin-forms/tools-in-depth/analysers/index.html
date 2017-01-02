@@ -146,6 +146,8 @@
   
   <ul>
     
+      
+    
   </ul>
   
 </li>
@@ -154,13 +156,6 @@
   
 <li class="toctree-l1 ">
   <a class="" href="../refactorings/">Refactorings</a>
-  
-</li>
-
-  
-  
-<li class="toctree-l1 ">
-  <a class="" href="../fixes/">Fixes</a>
   
 </li>
 
@@ -231,13 +226,6 @@
   
 <li class="toctree-l1 ">
   <a class="" href="../../../xamarin-android/tools-in-depth/refactorings/">Refactorings</a>
-  
-</li>
-
-  
-  
-<li class="toctree-l1 ">
-  <a class="" href="../../../xamarin-android/tools-in-depth/fixes/">Fixes</a>
   
 </li>
 
@@ -362,7 +350,162 @@
           <div role="main">
             <div class="section">
               
-                
+                <h1 id="xamarinforms-xaml-analysis">Xamarin.Forms Xaml Analysis</h1>
+<p><strong>MFractor Version 2.07.00</strong></p>
+<h2 id="about">About</h2>
+<p>This document lists all analysis routines used by MFractors Xamarin.Forms Xaml analyser.</p>
+<h2 id="analysis-routines">Analysis Routines</h2>
+<p><em>40 total routines</em></p>
+<h3 id="attribute-maps-to-member-in-parent-type">Attribute Maps To Member In Parent Type</h3>
+<p>Checks that an attribute resolves to a member within its parent type.</p>
+<p><strong>Available Fixes</strong></p>
+<ul>
+<li><strong>Generate property onto parent type</strong>: This fix generates a property with a getter and setter onto the parent type.</li>
+<li><strong>Generate bindable property on type</strong>: This fix generates a bindable property onto the targetted .</li>
+<li><strong>Replace attribute with closely named member</strong>: Looks for members on a C# class that are named closely to an unresolved xml attribute and then suggest near matches.</li>
+</ul>
+<h3 id="binding-expressions-resolve">Binding Expressions Resolve</h3>
+<p>Inspects binding expressions and validates that the symbol referred to in the binding context exists. This analyser requires an explict or implicit binding context to be present for the document.</p>
+<p><strong>Available Fixes</strong></p>
+<ul>
+<li><strong>Autocorrect property | Generate property</strong>: When the symbol referenced inside a binding expression is unresolved, this fix can either apply an auto-correcet or generate a property on elements the BindingContext</li>
+</ul>
+<h3 id="check-c-symbosl-inside-xaml-expressions-resolve">Check C# symbosl inside xaml expressions resolve</h3>
+<p>Inspects a .net symbol reference (eg local:MyClass.MyProperty) and validates that the symbol portion ('MyClass.MyProerty') resolves to a .NET symbol within the current project and it's references.</p>
+<p><strong>Available Fixes</strong></p>
+<ul>
+<li><strong>Autocorrect class or property</strong>: When a c# symbol reference expression does not resolve, this fix applies an auto-corrected suggestion from the class/property.</li>
+<li><strong>Generate class and static member</strong>: When a c# symbol reference expression does not resolve, this fix generates a stub class declaration with a default, readonly static member.</li>
+<li><strong>Generate class</strong>: When a c# symbol reference expression does not resolve, this fix generates an implementation for the missing class.</li>
+<li><strong>Generate property</strong>: Generate a static or constant variable onto the targetted class</li>
+</ul>
+<h3 id="check-namespaces-inside-xaml-expressions-resolve">Check namespaces inside xaml expressions resolve</h3>
+<p>Inspects a .net symbol reference (eg local:MyClass.MyProperty) and validates that the namespace portion ('local') resolves to a xmlns declaration in the current document.</p>
+<p><strong>Available Fixes</strong></p>
+<ul>
+<li><strong>Import namespace and assembly</strong>: When the namespace inside c# symbol reference expression can be resolved to a .NET symbol in the project or its references this fix generates an 'xmlns' import statement in the root xaml element.</li>
+</ul>
+<h3 id="check-root-element-defines-code-behind-class">Check Root Element Defines Code Behind Class</h3>
+<p>Checks that the root xaml node defines a code behind class using the 'x:Class' directive</p>
+<h3 id="check-xaml-nodes-is-not-abstract">Check Xaml Nodes Is Not Abstract</h3>
+<p>Checks that an xml node resolves to a non-abstract, concrete class implementation.</p>
+<h3 id="check-xaml-nodes-resolve">Check Xaml Nodes Resolve</h3>
+<p>Checks that xml nodes map to a .NET symbol and can be either compiled or inflated.</p>
+<p><strong>Available Fixes</strong></p>
+<ul>
+<li><strong>Generate Missing Value Converter</strong>: When a Xaml node cannot be resolved and it ends with '[cC]onverter', this fix will create a new implemenation of IValueConverter.</li>
+<li><strong>Generate Missing View</strong>: When a Xaml node cannot be resolved, this fix will create a new implemenation of that class deriving from 'Xamarin.Forms.View'.</li>
+<li><strong>Generate Missing Class</strong>: When a Xaml node cannot be resolved, this fix will create a new implementation of that class.</li>
+<li><strong>Replace node with auto-corrected match</strong>: This fix action replaces a mispelt xaml node that can be resolved in an assembly with its correct .NET symbol name.</li>
+</ul>
+<h3 id="class-does-not-have-attached-property">Class does not have attached property</h3>
+<p>Checks that attached properties (for example 'Grid.Row') exist in the class that they are attempting to use.</p>
+<p><strong>Available Fixes</strong></p>
+<ul>
+<li><strong>Replace with correct attached property name</strong>: Replaces an incorrect attached property with an auto-corrected value.</li>
+</ul>
+<h3 id="duplicate-code-behind-field-declarations">Duplicate Code Behind Field Declarations</h3>
+<p>Checks that the value assigned to an x:Name attribute for a Xaml element is unique within the scope of the document.</p>
+<h3 id="duplicate-resource-dictionary-keys">Duplicate resource dictionary keys</h3>
+<p>Validates the each resource entry within a resource dictionary has a unique key</p>
+<h3 id="event-handler-exists-in-code-behind-class">Event Handler Exists In Code Behind Class</h3>
+<p>Checks that an event callback reference as an attribute value within a xaml document exists in the code behind class.</p>
+<p><strong>Available Fixes</strong></p>
+<ul>
+<li><strong>Generate event handler method</strong>: Generates a method body for an event handler that does not exist in the xaml files code-behind class.</li>
+</ul>
+<h3 id="event-handler-signature-matches">Event Handler Signature Matches</h3>
+<p>Checks that the signature for the event callback in a code behind class matches the expected signature for the property it is assigned to.</p>
+<h3 id="find-xtypearguments-misuse">Find x:TypeArguments misuse</h3>
+<p>Inspects for usages of x:TypeArguments on elements that look like they resolve to non-generic classes</p>
+<h3 id="generic-has-xtypearguments-supplied">Generic has x:TypeArguments supplied.</h3>
+<p>Inspects generic classes being instantiated through Xaml and validates that an x:TypeArguments attribute or property assignment node is present.</p>
+<p><strong>Available Fixes</strong></p>
+<ul>
+<li><strong>Create x:TypeArguments attribute.</strong>: Generates an x:TypeArguments attribute, resolving the potential argument types if possible.</li>
+<li><strong>Create x:TypeArguments property setter</strong>: Generates a child 'x:TypeArguments' property setter node, resolving the potential argument types if possible.</li>
+</ul>
+<h3 id="obsolete-property-used">Obsolete Property Used</h3>
+<p>Checks for attributes that are marked as obsolete/deprecated.</p>
+<h3 id="onidiom-return-type-mismatch">OnIdiom Return Type Mismatch</h3>
+<p>Checks the type returned by a Xamarin.Forms.OnIdiom element is valid with the parent property type</p>
+<h3 id="onplatform-return-type-mismatch">OnPlatform Return Type Mismatch</h3>
+<p>Checks the type returned by a Xamarin.Forms.OnPlatform element is valid with the parent property type</p>
+<h3 id="property-node-maps-to-member-in-parent-type">Property Node Maps To Member In Parent Type</h3>
+<p>Checks that a property node resolves to a member within its parent type.</p>
+<h3 id="property-setter-attribute-has-value">Property Setter Attribute Has Value</h3>
+<p>Checks that a value has been provided to an attribute Property. This check is skipped if the property type is a string or a valueconverter is in use.</p>
+<h3 id="property-setter-attribute-has-value_1">Property Setter Attribute Has Value</h3>
+<p>Checks that a value has been provided to a node Property setter (MyClass.MyProperty).</p>
+<h3 id="property-setter-node-misuse">Property Setter Node Misuse</h3>
+<p>Inspects for property setters that don't apply to the outer class. For example, if a developer used OnIdiom.Phone inside a OnPlatform element, the OnIdiom.Phone property setter makes no sense within the given context.</p>
+<h3 id="property-setter-type-mismatch">Property Setter Type Mismatch</h3>
+<p>When using MyClass.MyProperty node setter syntax, validate that the inner child node returns a .NET object of the correct type for the property.</p>
+<h3 id="resource-entry-does-not-define-a-key">Resource entry does not define a key</h3>
+<p>Validates the elements provided to a resource dictionary supply an x:Key attribute</p>
+<p><strong>Available Fixes</strong></p>
+<ul>
+<li><strong>Remove unused xmlns declaration</strong>: Removes the unused xmlns declaration.</li>
+</ul>
+<h3 id="undefined-static-resource-usage">Undefined Static Resource Usage</h3>
+<p>Validates that a static resource lookup resolves to a resource defined in the xaml file.</p>
+<p><strong>Available Fixes</strong></p>
+<ul>
+<li><strong>Autocorrect static resource reference</strong>: When a static resource reference does not exist in the current document but a closely named symbol exists, this fix allows </li>
+</ul>
+<h3 id="unknown-static-property-value">Unknown Static Property Value</h3>
+<p>Checks that the literal value provided to xml attributes which accept a class object maps to a static property or field in the class type. For example, the LayoutOptions class has static fields such as Fill or CentreAndExpand that can be used a literal attribute values. If CentreAndFill was provided, this analyser would inspect 'LayoutOptions' for a static field named 'CentreAndFill' and trigger an analysis error when it couldn't be found.</p>
+<p><strong>Available Fixes</strong></p>
+<ul>
+<li><strong>Replace unknown property value with autocorrection</strong>: When a xaml element property attempts to reference a static field (for instance LayoutOptions.Center), this fix finds the nearest named member and replaces the incorrect value with an auto-correction.</li>
+</ul>
+<h3 id="unknown-type-provided-to-generic">Unknown type provided to generic</h3>
+<p>Inspects usages of x:TypeArguments and validates that the type provided exists</p>
+<h3 id="unused-code-behind-field">Unused Code Behind Field</h3>
+<p>Checks that a code behind field declaration (x:Name) is used within the project in either C# or Xaml.</p>
+<h3 id="validate-binding-expression-return-type">Validate Binding Expression Return Type</h3>
+<p>Validates that the .NET symbol returned by a binding expression matches the expected type for the property.</p>
+<h3 id="validate-binding-expressions-return-a-property">Validate Binding Expressions Return A Property</h3>
+<p>Evaluates a binding expression and validates that it points to property within the binding context.</p>
+<p><strong>Available Fixes</strong></p>
+<ul>
+<li><strong>Replace field or method reference with property.</strong>: Replaces a field or method symbol within a binding expression with a suggested property name.</li>
+</ul>
+<h3 id="validate-staticresource-return-type">Validate StaticResource Return Type</h3>
+<p>Validates that the symbol returned by an StaticResource matches the expected type for the property.</p>
+<h3 id="validate-value-types">Validate Value Types</h3>
+<p>Inspects the input provided to attributes that expect value types (int, bool, double etc) and validates that the input is valid.</p>
+<h3 id="validate-xstatic-return-type">Validate x:Static return type</h3>
+<p>Validates that the .NET symbol returned by an x:Static matches the expected type for the property.</p>
+<h3 id="validate-xmlns-declarations-are-used">Validate xmlns declarations are used.</h3>
+<p>Validates that an xmlns attribute that declares a namespace and assembly is used within the current document.</p>
+<p><strong>Available Fixes</strong></p>
+<ul>
+<li><strong>Remove unused xmlns declaration</strong>: Removes the unused xmlns declaration.</li>
+</ul>
+<h3 id="value-converter-input-type-mismatch">Value Converter Input Type Mismatch</h3>
+<p>Inspects the Converter property of a Binding expression and validates that the input type is correct.</p>
+<h3 id="value-converter-output-type-mismatch">Value Converter Output Type Mismatch</h3>
+<p>The Converter component of a Binding expression and validates that the returned output type is valid for the parent attribute.</p>
+<h3 id="xname-has-invalid-characters">x:Name Has Invalid Characters</h3>
+<p>Checks that x:Name expressions define a valid code-behind variable name. An value declared by an x:Name attribute must start with a @, _ or a-Z character followed by underscores or alpha-numeric characters.</p>
+<h3 id="xreference-element-exists">x:Reference element exists</h3>
+<p>Checks that the element referenced by a 'x:Reference' xaml expression exists within the current document.</p>
+<p><strong>Available Fixes</strong></p>
+<ul>
+<li><strong>Replace x:Name with closely named member</strong>: Replaces an invalid x:Name reference with a similiarly named x:Name declared in the current document.</li>
+</ul>
+<h3 id="xml-namespace-does-not-resolve">Xml Namespace Does Not Resolve</h3>
+<p>Checks that the namespace used on the xml nodes is defined within the current document.</p>
+<p><strong>Available Fixes</strong></p>
+<ul>
+<li><strong>Import namespace and assembly</strong>: When an xaml node can be resolved to a .NET symbol in the project or its references this fix generates an 'xmlns' import statement in the root xaml element.</li>
+<li><strong>Replace xml namespace with auto-correction</strong>: Replaces an xml namespace prefix with the auto-corrected xml namespace.</li>
+</ul>
+<h3 id="xmlns-assembly-does-not-resolve">Xmlns Assembly Does Not Resolve</h3>
+<p>Checks that the 'assembly' component of an xmlns statement resolves to an assembly referenced by the project.</p>
+<h3 id="xmlns-declaration-is-malformed">Xmlns declaration is malformed</h3>
+<p>Verifies that a 'xmlns' attribute has both a clr-namespace and an assembly component</p>
               
             </div>
           </div>

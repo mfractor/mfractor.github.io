@@ -116,10 +116,6 @@
       
     
       
-      <li class="toctree-l3"><a href="#fixing-code-issues">Fixing Code Issues</a></li>
-      
-    
-      
       <li class="toctree-l3"><a href="#generating-viewmodel-bindings">Generating ViewModel Bindings</a></li>
       
     
@@ -192,13 +188,6 @@
 </li>
 
   
-  
-<li class="toctree-l1 ">
-  <a class="" href="../xamarin-forms/tools-in-depth/fixes/">Fixes</a>
-  
-</li>
-
-  
 </ul>
 
   
@@ -265,13 +254,6 @@
   
 <li class="toctree-l1 ">
   <a class="" href="../xamarin-android/tools-in-depth/refactorings/">Refactorings</a>
-  
-</li>
-
-  
-  
-<li class="toctree-l1 ">
-  <a class="" href="../xamarin-android/tools-in-depth/fixes/">Fixes</a>
   
 </li>
 
@@ -396,11 +378,11 @@
 <p><em>Learn to use the most handy features in MFractor for Xamarin.Forms</em></p>
 <h2 id="introduction">Introduction</h2>
 <p>Welcome to the quickstart guide for using MFractor with Xamarin.Forms.</p>
-<p>This document is a short reference of the most useful features of MFractor for Xamarin.Forms.</p>
+<p>This document explains the most useful features of MFractor for Xamarin.Forms.</p>
 <h2 id="configuring-a-binding-context">Configuring A Binding Context</h2>
 <p>When the <code>BindingContext</code> property is explicitly set for a Xaml view, MFractor can analyse binding expressions and perform refactoring from Xaml to the binding context.</p>
 <p>We explicitly configure the binding context using a view model locator:</p>
-<p><strong>View Model Locator</strong></p>
+<p><strong>ViewModelLocator.cs</strong></p>
 <pre><code class="cs">public namespace MyApp
 {
   public static class ViewModelLocator
@@ -434,11 +416,35 @@
 <h2 id="using-mvvm-navigation">Using Mvvm Navigation</h2>
 <p>We can quickly navigate between Views, Code Behind Class and ViewModel when we use the <a href="#-mvvm-naming-conventions">Mvvm naming conventions</a>.</p>
 <p>Right click and select:</p>
-<hr />
+<ul>
+<li><strong>Go-To ViewModel</strong> when in a Xaml view or code behind class to jump to the ViewModel.</li>
+<li><strong>Go-To Code Behind Class</strong> when in a Xaml view or ViewModel to jump to the code behind class.</li>
+<li><strong>Go-To Xaml View</strong> when in a code behind class or view model to jump to the Xaml view.</li>
+</ul>
+<p>For more detail, see <a href="../xamarin-forms/navigation/#mvvm-navigation">Mvvm Navigation</a>.</p>
 <h2 id="xaml-analysis">Xaml Analysis</h2>
-<h2 id="fixing-code-issues">Fixing Code Issues</h2>
+<p>The Xaml analyser inspects Xaml files for code issues and underlines the issue in either red or yellow.</p>
+<ul>
+<li>Hover over a xaml issue to view more information on the</li>
+<li>Code issues underlined in yellow are <em>fixable</em>. Right click on the issue region, browse to <strong>Fix</strong> and select the fix you'd like to apply.</li>
+</ul>
+<p>For more detail, see:</p>
+<ul>
+<li><a href="../xamarin-forms/analysis/">Xaml Analysis</a></li>
+<li><a href="../xamarin-forms/tools-in-depth/analysers/">Full List of Xaml Analysers</a></li>
+</ul>
 <h2 id="generating-viewmodel-bindings">Generating ViewModel Bindings</h2>
+<p>When a binding context is specified for a xaml view (<a href="../xamarin-forms/configure-binding-context/">Configuring A Binding Context</a>), MFractor provides code fixes to implement missing bindings.</p>
+<p>Right click on the value component of a binding expression, browse to  <strong>Fix</strong> and then select <strong>Generate property...</strong>:</p>
+<p>For example:</p>
+<p><img alt="Generating a missing binding" src="../img/forms/generate-binding.gif" /></p>
+<p>For more detail, see <a href="../xamarin-forms/refactoring-and-code-generation/#implementing-missing-bindings">Implementing Missing Bindings</a>.</p>
 <h2 id="implementing-viewmodels">Implementing ViewModels</h2>
+<p>When a xaml view has binding expressions but the binding context is not <a href="../xamarin-forms/configure-binding-context/#explicit-binding-context-resolution">explicitly</a> or <a href="../xamarin-forms/configure-binding-context/#implicit-binding-context-resolution">implicitly</a> defined, MFractor can collect all binding expressions and generate an implementation of the binding context as a ViewModel.</p>
+<p>Right click on anywhere in a document, browse to <strong>Refactor</strong> and then select <strong>Implement View Model</strong>:</p>
+<p>For example:</p>
+<p><img alt="Implementing a view model" src="../img/forms/implement-view-model.gif" /></p>
+<p>For more detail, see <a href="../xamarin-forms/refactoring-and-code-generation/#implementing-a-viewmodel">Implementing a ViewModel</a>.</p>
               
             </div>
           </div>

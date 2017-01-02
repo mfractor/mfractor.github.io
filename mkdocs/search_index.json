@@ -57,7 +57,7 @@
         }, 
         {
             "location": "/xamarin-forms-quickstart/", 
-            "text": "Xamarin.Forms Quick Start\n\n\nLearn to use the most handy features in MFractor for Xamarin.Forms\n\n\nIntroduction\n\n\nWelcome to the quickstart guide for using MFractor with Xamarin.Forms.\n\n\nThis document is a short reference of the most useful features of MFractor for Xamarin.Forms.\n\n\nConfiguring A Binding Context\n\n\nWhen the \nBindingContext\n property is explicitly set for a Xaml view, MFractor can analyse binding expressions and perform refactoring from Xaml to the binding context.\n\n\nWe explicitly configure the binding context using a view model locator:\n\n\nView Model Locator\n\n\npublic namespace MyApp\n{\n  public static class ViewModelLocator\n  {\n      public static readonly LoginViewModel LoginViewModel = new LoginViewModel();\n  }\n}\n\n\n\n\nLoginPage.xaml\n\n\nContentPage\n  xmlns:local=\nclr-namespace:MyApp;assembly=MyApp\n\n  BindingContext=\n{x:Static local:ViewModelLocator.LoginViewModel}\n/\n\n\n\n\n\nFor more detail, see \nConfigure Binding Context\n.\n\n\nMvvm Naming Conventions\n\n\nImplicitly associate a view to a ViewModel using these naming conventions:\n\n\n\n\nClasses that end with \nViewModel\n are assumed to be a view model for a Xaml view.\n\n\nXaml files that end with \nPage\n or \nView\n are assumed to be a xaml view for a view model.\n\n\nWhen a view and view model share the same name without \nPage\n, \nView\n or \nViewModel\n, MFractor assumes an implicit association.\n\n\n\n\nConsider \nLoginPage.xaml\n, \nLoginPage.xaml.cs\n and \nLoginViewMode.cs\n:\n\n\n\n\nLoginPage.xaml\n is considered a xaml view.\n\n\nLoginPage.xaml.cs\n is considered the code behind class.\n\n\nLoginViewModel.cs\n is considered the view model.\n\n\n\n\nFor more detail, see \nImplicit Binding Context Resolution\n.\n\n\nUsing Mvvm Navigation\n\n\nWe can quickly navigate between Views, Code Behind Class and ViewModel when we use the \nMvvm naming conventions\n.\n\n\nRight click and select:\n\n\n\n\nXaml Analysis\n\n\nFixing Code Issues\n\n\nGenerating ViewModel Bindings\n\n\nImplementing ViewModels", 
+            "text": "Xamarin.Forms Quick Start\n\n\nLearn to use the most handy features in MFractor for Xamarin.Forms\n\n\nIntroduction\n\n\nWelcome to the quickstart guide for using MFractor with Xamarin.Forms.\n\n\nThis document explains the most useful features of MFractor for Xamarin.Forms.\n\n\nConfiguring A Binding Context\n\n\nWhen the \nBindingContext\n property is explicitly set for a Xaml view, MFractor can analyse binding expressions and perform refactoring from Xaml to the binding context.\n\n\nWe explicitly configure the binding context using a view model locator:\n\n\nViewModelLocator.cs\n\n\npublic namespace MyApp\n{\n  public static class ViewModelLocator\n  {\n      public static readonly LoginViewModel LoginViewModel = new LoginViewModel();\n  }\n}\n\n\n\n\nLoginPage.xaml\n\n\nContentPage\n  xmlns:local=\nclr-namespace:MyApp;assembly=MyApp\n\n  BindingContext=\n{x:Static local:ViewModelLocator.LoginViewModel}\n/\n\n\n\n\n\nFor more detail, see \nConfigure Binding Context\n.\n\n\nMvvm Naming Conventions\n\n\nImplicitly associate a view to a ViewModel using these naming conventions:\n\n\n\n\nClasses that end with \nViewModel\n are assumed to be a view model for a Xaml view.\n\n\nXaml files that end with \nPage\n or \nView\n are assumed to be a xaml view for a view model.\n\n\nWhen a view and view model share the same name without \nPage\n, \nView\n or \nViewModel\n, MFractor assumes an implicit association.\n\n\n\n\nConsider \nLoginPage.xaml\n, \nLoginPage.xaml.cs\n and \nLoginViewMode.cs\n:\n\n\n\n\nLoginPage.xaml\n is considered a xaml view.\n\n\nLoginPage.xaml.cs\n is considered the code behind class.\n\n\nLoginViewModel.cs\n is considered the view model.\n\n\n\n\nFor more detail, see \nImplicit Binding Context Resolution\n.\n\n\nUsing Mvvm Navigation\n\n\nWe can quickly navigate between Views, Code Behind Class and ViewModel when we use the \nMvvm naming conventions\n.\n\n\nRight click and select:\n\n\n\n\nGo-To ViewModel\n when in a Xaml view or code behind class to jump to the ViewModel.\n\n\nGo-To Code Behind Class\n when in a Xaml view or ViewModel to jump to the code behind class.\n\n\nGo-To Xaml View\n when in a code behind class or view model to jump to the Xaml view.\n\n\n\n\nFor more detail, see \nMvvm Navigation\n.\n\n\nXaml Analysis\n\n\nThe Xaml analyser inspects Xaml files for code issues and underlines the issue in either red or yellow.\n\n\n\n\nHover over a xaml issue to view more information on the\n\n\nCode issues underlined in yellow are \nfixable\n. Right click on the issue region, browse to \nFix\n and select the fix you'd like to apply.\n\n\n\n\nFor more detail, see:\n\n\n\n\nXaml Analysis\n\n\nFull List of Xaml Analysers\n\n\n\n\nGenerating ViewModel Bindings\n\n\nWhen a binding context is specified for a xaml view (\nConfiguring A Binding Context\n), MFractor provides code fixes to implement missing bindings.\n\n\nRight click on the value component of a binding expression, browse to  \nFix\n and then select \nGenerate property...\n:\n\n\nFor example:\n\n\n\n\nFor more detail, see \nImplementing Missing Bindings\n.\n\n\nImplementing ViewModels\n\n\nWhen a xaml view has binding expressions but the binding context is not \nexplicitly\n or \nimplicitly\n defined, MFractor can collect all binding expressions and generate an implementation of the binding context as a ViewModel.\n\n\nRight click on anywhere in a document, browse to \nRefactor\n and then select \nImplement View Model\n:\n\n\nFor example:\n\n\n\n\nFor more detail, see \nImplementing a ViewModel\n.", 
             "title": "Xamarin.Forms Quickstart"
         }, 
         {
@@ -67,12 +67,12 @@
         }, 
         {
             "location": "/xamarin-forms-quickstart/#introduction", 
-            "text": "Welcome to the quickstart guide for using MFractor with Xamarin.Forms.  This document is a short reference of the most useful features of MFractor for Xamarin.Forms.", 
+            "text": "Welcome to the quickstart guide for using MFractor with Xamarin.Forms.  This document explains the most useful features of MFractor for Xamarin.Forms.", 
             "title": "Introduction"
         }, 
         {
             "location": "/xamarin-forms-quickstart/#configuring-a-binding-context", 
-            "text": "When the  BindingContext  property is explicitly set for a Xaml view, MFractor can analyse binding expressions and perform refactoring from Xaml to the binding context.  We explicitly configure the binding context using a view model locator:  View Model Locator  public namespace MyApp\n{\n  public static class ViewModelLocator\n  {\n      public static readonly LoginViewModel LoginViewModel = new LoginViewModel();\n  }\n}  LoginPage.xaml  ContentPage\n  xmlns:local= clr-namespace:MyApp;assembly=MyApp \n  BindingContext= {x:Static local:ViewModelLocator.LoginViewModel} /   For more detail, see  Configure Binding Context .", 
+            "text": "When the  BindingContext  property is explicitly set for a Xaml view, MFractor can analyse binding expressions and perform refactoring from Xaml to the binding context.  We explicitly configure the binding context using a view model locator:  ViewModelLocator.cs  public namespace MyApp\n{\n  public static class ViewModelLocator\n  {\n      public static readonly LoginViewModel LoginViewModel = new LoginViewModel();\n  }\n}  LoginPage.xaml  ContentPage\n  xmlns:local= clr-namespace:MyApp;assembly=MyApp \n  BindingContext= {x:Static local:ViewModelLocator.LoginViewModel} /   For more detail, see  Configure Binding Context .", 
             "title": "Configuring A Binding Context"
         }, 
         {
@@ -82,27 +82,22 @@
         }, 
         {
             "location": "/xamarin-forms-quickstart/#using-mvvm-navigation", 
-            "text": "We can quickly navigate between Views, Code Behind Class and ViewModel when we use the  Mvvm naming conventions .  Right click and select:", 
+            "text": "We can quickly navigate between Views, Code Behind Class and ViewModel when we use the  Mvvm naming conventions .  Right click and select:   Go-To ViewModel  when in a Xaml view or code behind class to jump to the ViewModel.  Go-To Code Behind Class  when in a Xaml view or ViewModel to jump to the code behind class.  Go-To Xaml View  when in a code behind class or view model to jump to the Xaml view.   For more detail, see  Mvvm Navigation .", 
             "title": "Using Mvvm Navigation"
         }, 
         {
             "location": "/xamarin-forms-quickstart/#xaml-analysis", 
-            "text": "", 
+            "text": "The Xaml analyser inspects Xaml files for code issues and underlines the issue in either red or yellow.   Hover over a xaml issue to view more information on the  Code issues underlined in yellow are  fixable . Right click on the issue region, browse to  Fix  and select the fix you'd like to apply.   For more detail, see:   Xaml Analysis  Full List of Xaml Analysers", 
             "title": "Xaml Analysis"
         }, 
         {
-            "location": "/xamarin-forms-quickstart/#fixing-code-issues", 
-            "text": "", 
-            "title": "Fixing Code Issues"
-        }, 
-        {
             "location": "/xamarin-forms-quickstart/#generating-viewmodel-bindings", 
-            "text": "", 
+            "text": "When a binding context is specified for a xaml view ( Configuring A Binding Context ), MFractor provides code fixes to implement missing bindings.  Right click on the value component of a binding expression, browse to   Fix  and then select  Generate property... :  For example:   For more detail, see  Implementing Missing Bindings .", 
             "title": "Generating ViewModel Bindings"
         }, 
         {
             "location": "/xamarin-forms-quickstart/#implementing-viewmodels", 
-            "text": "", 
+            "text": "When a xaml view has binding expressions but the binding context is not  explicitly  or  implicitly  defined, MFractor can collect all binding expressions and generate an implementation of the binding context as a ViewModel.  Right click on anywhere in a document, browse to  Refactor  and then select  Implement View Model :  For example:   For more detail, see  Implementing a ViewModel .", 
             "title": "Implementing ViewModels"
         }, 
         {
@@ -262,7 +257,7 @@
         }, 
         {
             "location": "/xamarin-forms/refactoring-and-code-generation/", 
-            "text": "Refactoring And Code Generation\n\n\nGenerate C# code from Xaml in just a few clicks\n\n\nIntroduction\n\n\nFor a full list of available refactoring and code generation actions, see the \nTools In-Depth - Refactoring\n article.\n\n\nFixing Code Issues\n\n\nImplementing a ViewModel\n\n\nImplementing Missing Bindings\n\n\nGenerating Missing Classes\n\n\nGenerating Views\n\n\nGenerating Bindable Properties", 
+            "text": "Refactoring And Code Generation\n\n\nGenerate C# code from Xaml in just a few clicks\n\n\nIntroduction\n\n\nFor a full list of available refactoring and code generation actions, see the \nTools In-Depth - Refactoring\n article.\n\n\nFixing Code Issues\n\n\nImplementing A ViewModel\n\n\nImplementing Missing Bindings\n\n\nGenerating Missing Classes\n\n\nGenerating Views\n\n\nGenerating Bindable Properties", 
             "title": "Refactoring And Code Generation"
         }, 
         {
@@ -283,7 +278,7 @@
         {
             "location": "/xamarin-forms/refactoring-and-code-generation/#implementing-a-viewmodel", 
             "text": "", 
-            "title": "Implementing a ViewModel"
+            "title": "Implementing A ViewModel"
         }, 
         {
             "location": "/xamarin-forms/refactoring-and-code-generation/#implementing-missing-bindings", 
@@ -307,18 +302,228 @@
         }, 
         {
             "location": "/xamarin-forms/tools-in-depth/analysers/", 
-            "text": "", 
+            "text": "Xamarin.Forms Xaml Analysis\n\n\nMFractor Version 2.07.00\n\n\nAbout\n\n\nThis document lists all analysis routines used by MFractors Xamarin.Forms Xaml analyser.\n\n\nAnalysis Routines\n\n\n40 total routines\n\n\nAttribute Maps To Member In Parent Type\n\n\nChecks that an attribute resolves to a member within its parent type.\n\n\nAvailable Fixes\n\n\n\n\nGenerate property onto parent type\n: This fix generates a property with a getter and setter onto the parent type.\n\n\nGenerate bindable property on type\n: This fix generates a bindable property onto the targetted .\n\n\nReplace attribute with closely named member\n: Looks for members on a C# class that are named closely to an unresolved xml attribute and then suggest near matches.\n\n\n\n\nBinding Expressions Resolve\n\n\nInspects binding expressions and validates that the symbol referred to in the binding context exists. This analyser requires an explict or implicit binding context to be present for the document.\n\n\nAvailable Fixes\n\n\n\n\nAutocorrect property | Generate property\n: When the symbol referenced inside a binding expression is unresolved, this fix can either apply an auto-correcet or generate a property on elements the BindingContext\n\n\n\n\nCheck C# symbosl inside xaml expressions resolve\n\n\nInspects a .net symbol reference (eg local:MyClass.MyProperty) and validates that the symbol portion ('MyClass.MyProerty') resolves to a .NET symbol within the current project and it's references.\n\n\nAvailable Fixes\n\n\n\n\nAutocorrect class or property\n: When a c# symbol reference expression does not resolve, this fix applies an auto-corrected suggestion from the class/property.\n\n\nGenerate class and static member\n: When a c# symbol reference expression does not resolve, this fix generates a stub class declaration with a default, readonly static member.\n\n\nGenerate class\n: When a c# symbol reference expression does not resolve, this fix generates an implementation for the missing class.\n\n\nGenerate property\n: Generate a static or constant variable onto the targetted class\n\n\n\n\nCheck namespaces inside xaml expressions resolve\n\n\nInspects a .net symbol reference (eg local:MyClass.MyProperty) and validates that the namespace portion ('local') resolves to a xmlns declaration in the current document.\n\n\nAvailable Fixes\n\n\n\n\nImport namespace and assembly\n: When the namespace inside c# symbol reference expression can be resolved to a .NET symbol in the project or its references this fix generates an 'xmlns' import statement in the root xaml element.\n\n\n\n\nCheck Root Element Defines Code Behind Class\n\n\nChecks that the root xaml node defines a code behind class using the 'x:Class' directive\n\n\nCheck Xaml Nodes Is Not Abstract\n\n\nChecks that an xml node resolves to a non-abstract, concrete class implementation.\n\n\nCheck Xaml Nodes Resolve\n\n\nChecks that xml nodes map to a .NET symbol and can be either compiled or inflated.\n\n\nAvailable Fixes\n\n\n\n\nGenerate Missing Value Converter\n: When a Xaml node cannot be resolved and it ends with '[cC]onverter', this fix will create a new implemenation of IValueConverter.\n\n\nGenerate Missing View\n: When a Xaml node cannot be resolved, this fix will create a new implemenation of that class deriving from 'Xamarin.Forms.View'.\n\n\nGenerate Missing Class\n: When a Xaml node cannot be resolved, this fix will create a new implementation of that class.\n\n\nReplace node with auto-corrected match\n: This fix action replaces a mispelt xaml node that can be resolved in an assembly with its correct .NET symbol name.\n\n\n\n\nClass does not have attached property\n\n\nChecks that attached properties (for example 'Grid.Row') exist in the class that they are attempting to use.\n\n\nAvailable Fixes\n\n\n\n\nReplace with correct attached property name\n: Replaces an incorrect attached property with an auto-corrected value.\n\n\n\n\nDuplicate Code Behind Field Declarations\n\n\nChecks that the value assigned to an x:Name attribute for a Xaml element is unique within the scope of the document.\n\n\nDuplicate resource dictionary keys\n\n\nValidates the each resource entry within a resource dictionary has a unique key\n\n\nEvent Handler Exists In Code Behind Class\n\n\nChecks that an event callback reference as an attribute value within a xaml document exists in the code behind class.\n\n\nAvailable Fixes\n\n\n\n\nGenerate event handler method\n: Generates a method body for an event handler that does not exist in the xaml files code-behind class.\n\n\n\n\nEvent Handler Signature Matches\n\n\nChecks that the signature for the event callback in a code behind class matches the expected signature for the property it is assigned to.\n\n\nFind x:TypeArguments misuse\n\n\nInspects for usages of x:TypeArguments on elements that look like they resolve to non-generic classes\n\n\nGeneric has x:TypeArguments supplied.\n\n\nInspects generic classes being instantiated through Xaml and validates that an x:TypeArguments attribute or property assignment node is present.\n\n\nAvailable Fixes\n\n\n\n\nCreate x:TypeArguments attribute.\n: Generates an x:TypeArguments attribute, resolving the potential argument types if possible.\n\n\nCreate x:TypeArguments property setter\n: Generates a child 'x:TypeArguments' property setter node, resolving the potential argument types if possible.\n\n\n\n\nObsolete Property Used\n\n\nChecks for attributes that are marked as obsolete/deprecated.\n\n\nOnIdiom Return Type Mismatch\n\n\nChecks the type returned by a Xamarin.Forms.OnIdiom element is valid with the parent property type\n\n\nOnPlatform Return Type Mismatch\n\n\nChecks the type returned by a Xamarin.Forms.OnPlatform element is valid with the parent property type\n\n\nProperty Node Maps To Member In Parent Type\n\n\nChecks that a property node resolves to a member within its parent type.\n\n\nProperty Setter Attribute Has Value\n\n\nChecks that a value has been provided to an attribute Property. This check is skipped if the property type is a string or a valueconverter is in use.\n\n\nProperty Setter Attribute Has Value\n\n\nChecks that a value has been provided to a node Property setter (MyClass.MyProperty).\n\n\nProperty Setter Node Misuse\n\n\nInspects for property setters that don't apply to the outer class. For example, if a developer used OnIdiom.Phone inside a OnPlatform element, the OnIdiom.Phone property setter makes no sense within the given context.\n\n\nProperty Setter Type Mismatch\n\n\nWhen using MyClass.MyProperty node setter syntax, validate that the inner child node returns a .NET object of the correct type for the property.\n\n\nResource entry does not define a key\n\n\nValidates the elements provided to a resource dictionary supply an x:Key attribute\n\n\nAvailable Fixes\n\n\n\n\nRemove unused xmlns declaration\n: Removes the unused xmlns declaration.\n\n\n\n\nUndefined Static Resource Usage\n\n\nValidates that a static resource lookup resolves to a resource defined in the xaml file.\n\n\nAvailable Fixes\n\n\n\n\nAutocorrect static resource reference\n: When a static resource reference does not exist in the current document but a closely named symbol exists, this fix allows \n\n\n\n\nUnknown Static Property Value\n\n\nChecks that the literal value provided to xml attributes which accept a class object maps to a static property or field in the class type. For example, the LayoutOptions class has static fields such as Fill or CentreAndExpand that can be used a literal attribute values. If CentreAndFill was provided, this analyser would inspect 'LayoutOptions' for a static field named 'CentreAndFill' and trigger an analysis error when it couldn't be found.\n\n\nAvailable Fixes\n\n\n\n\nReplace unknown property value with autocorrection\n: When a xaml element property attempts to reference a static field (for instance LayoutOptions.Center), this fix finds the nearest named member and replaces the incorrect value with an auto-correction.\n\n\n\n\nUnknown type provided to generic\n\n\nInspects usages of x:TypeArguments and validates that the type provided exists\n\n\nUnused Code Behind Field\n\n\nChecks that a code behind field declaration (x:Name) is used within the project in either C# or Xaml.\n\n\nValidate Binding Expression Return Type\n\n\nValidates that the .NET symbol returned by a binding expression matches the expected type for the property.\n\n\nValidate Binding Expressions Return A Property\n\n\nEvaluates a binding expression and validates that it points to property within the binding context.\n\n\nAvailable Fixes\n\n\n\n\nReplace field or method reference with property.\n: Replaces a field or method symbol within a binding expression with a suggested property name.\n\n\n\n\nValidate StaticResource Return Type\n\n\nValidates that the symbol returned by an StaticResource matches the expected type for the property.\n\n\nValidate Value Types\n\n\nInspects the input provided to attributes that expect value types (int, bool, double etc) and validates that the input is valid.\n\n\nValidate x:Static return type\n\n\nValidates that the .NET symbol returned by an x:Static matches the expected type for the property.\n\n\nValidate xmlns declarations are used.\n\n\nValidates that an xmlns attribute that declares a namespace and assembly is used within the current document.\n\n\nAvailable Fixes\n\n\n\n\nRemove unused xmlns declaration\n: Removes the unused xmlns declaration.\n\n\n\n\nValue Converter Input Type Mismatch\n\n\nInspects the Converter property of a Binding expression and validates that the input type is correct.\n\n\nValue Converter Output Type Mismatch\n\n\nThe Converter component of a Binding expression and validates that the returned output type is valid for the parent attribute.\n\n\nx:Name Has Invalid Characters\n\n\nChecks that x:Name expressions define a valid code-behind variable name. An value declared by an x:Name attribute must start with a @, _ or a-Z character followed by underscores or alpha-numeric characters.\n\n\nx:Reference element exists\n\n\nChecks that the element referenced by a 'x:Reference' xaml expression exists within the current document.\n\n\nAvailable Fixes\n\n\n\n\nReplace x:Name with closely named member\n: Replaces an invalid x:Name reference with a similiarly named x:Name declared in the current document.\n\n\n\n\nXml Namespace Does Not Resolve\n\n\nChecks that the namespace used on the xml nodes is defined within the current document.\n\n\nAvailable Fixes\n\n\n\n\nImport namespace and assembly\n: When an xaml node can be resolved to a .NET symbol in the project or its references this fix generates an 'xmlns' import statement in the root xaml element.\n\n\nReplace xml namespace with auto-correction\n: Replaces an xml namespace prefix with the auto-corrected xml namespace.\n\n\n\n\nXmlns Assembly Does Not Resolve\n\n\nChecks that the 'assembly' component of an xmlns statement resolves to an assembly referenced by the project.\n\n\nXmlns declaration is malformed\n\n\nVerifies that a 'xmlns' attribute has both a clr-namespace and an assembly component", 
             "title": "Analysers"
+        }, 
+        {
+            "location": "/xamarin-forms/tools-in-depth/analysers/#xamarinforms-xaml-analysis", 
+            "text": "MFractor Version 2.07.00", 
+            "title": "Xamarin.Forms Xaml Analysis"
+        }, 
+        {
+            "location": "/xamarin-forms/tools-in-depth/analysers/#about", 
+            "text": "This document lists all analysis routines used by MFractors Xamarin.Forms Xaml analyser.", 
+            "title": "About"
+        }, 
+        {
+            "location": "/xamarin-forms/tools-in-depth/analysers/#analysis-routines", 
+            "text": "40 total routines", 
+            "title": "Analysis Routines"
+        }, 
+        {
+            "location": "/xamarin-forms/tools-in-depth/analysers/#attribute-maps-to-member-in-parent-type", 
+            "text": "Checks that an attribute resolves to a member within its parent type.  Available Fixes   Generate property onto parent type : This fix generates a property with a getter and setter onto the parent type.  Generate bindable property on type : This fix generates a bindable property onto the targetted .  Replace attribute with closely named member : Looks for members on a C# class that are named closely to an unresolved xml attribute and then suggest near matches.", 
+            "title": "Attribute Maps To Member In Parent Type"
+        }, 
+        {
+            "location": "/xamarin-forms/tools-in-depth/analysers/#binding-expressions-resolve", 
+            "text": "Inspects binding expressions and validates that the symbol referred to in the binding context exists. This analyser requires an explict or implicit binding context to be present for the document.  Available Fixes   Autocorrect property | Generate property : When the symbol referenced inside a binding expression is unresolved, this fix can either apply an auto-correcet or generate a property on elements the BindingContext", 
+            "title": "Binding Expressions Resolve"
+        }, 
+        {
+            "location": "/xamarin-forms/tools-in-depth/analysers/#check-c-symbosl-inside-xaml-expressions-resolve", 
+            "text": "Inspects a .net symbol reference (eg local:MyClass.MyProperty) and validates that the symbol portion ('MyClass.MyProerty') resolves to a .NET symbol within the current project and it's references.  Available Fixes   Autocorrect class or property : When a c# symbol reference expression does not resolve, this fix applies an auto-corrected suggestion from the class/property.  Generate class and static member : When a c# symbol reference expression does not resolve, this fix generates a stub class declaration with a default, readonly static member.  Generate class : When a c# symbol reference expression does not resolve, this fix generates an implementation for the missing class.  Generate property : Generate a static or constant variable onto the targetted class", 
+            "title": "Check C# symbosl inside xaml expressions resolve"
+        }, 
+        {
+            "location": "/xamarin-forms/tools-in-depth/analysers/#check-namespaces-inside-xaml-expressions-resolve", 
+            "text": "Inspects a .net symbol reference (eg local:MyClass.MyProperty) and validates that the namespace portion ('local') resolves to a xmlns declaration in the current document.  Available Fixes   Import namespace and assembly : When the namespace inside c# symbol reference expression can be resolved to a .NET symbol in the project or its references this fix generates an 'xmlns' import statement in the root xaml element.", 
+            "title": "Check namespaces inside xaml expressions resolve"
+        }, 
+        {
+            "location": "/xamarin-forms/tools-in-depth/analysers/#check-root-element-defines-code-behind-class", 
+            "text": "Checks that the root xaml node defines a code behind class using the 'x:Class' directive", 
+            "title": "Check Root Element Defines Code Behind Class"
+        }, 
+        {
+            "location": "/xamarin-forms/tools-in-depth/analysers/#check-xaml-nodes-is-not-abstract", 
+            "text": "Checks that an xml node resolves to a non-abstract, concrete class implementation.", 
+            "title": "Check Xaml Nodes Is Not Abstract"
+        }, 
+        {
+            "location": "/xamarin-forms/tools-in-depth/analysers/#check-xaml-nodes-resolve", 
+            "text": "Checks that xml nodes map to a .NET symbol and can be either compiled or inflated.  Available Fixes   Generate Missing Value Converter : When a Xaml node cannot be resolved and it ends with '[cC]onverter', this fix will create a new implemenation of IValueConverter.  Generate Missing View : When a Xaml node cannot be resolved, this fix will create a new implemenation of that class deriving from 'Xamarin.Forms.View'.  Generate Missing Class : When a Xaml node cannot be resolved, this fix will create a new implementation of that class.  Replace node with auto-corrected match : This fix action replaces a mispelt xaml node that can be resolved in an assembly with its correct .NET symbol name.", 
+            "title": "Check Xaml Nodes Resolve"
+        }, 
+        {
+            "location": "/xamarin-forms/tools-in-depth/analysers/#class-does-not-have-attached-property", 
+            "text": "Checks that attached properties (for example 'Grid.Row') exist in the class that they are attempting to use.  Available Fixes   Replace with correct attached property name : Replaces an incorrect attached property with an auto-corrected value.", 
+            "title": "Class does not have attached property"
+        }, 
+        {
+            "location": "/xamarin-forms/tools-in-depth/analysers/#duplicate-code-behind-field-declarations", 
+            "text": "Checks that the value assigned to an x:Name attribute for a Xaml element is unique within the scope of the document.", 
+            "title": "Duplicate Code Behind Field Declarations"
+        }, 
+        {
+            "location": "/xamarin-forms/tools-in-depth/analysers/#duplicate-resource-dictionary-keys", 
+            "text": "Validates the each resource entry within a resource dictionary has a unique key", 
+            "title": "Duplicate resource dictionary keys"
+        }, 
+        {
+            "location": "/xamarin-forms/tools-in-depth/analysers/#event-handler-exists-in-code-behind-class", 
+            "text": "Checks that an event callback reference as an attribute value within a xaml document exists in the code behind class.  Available Fixes   Generate event handler method : Generates a method body for an event handler that does not exist in the xaml files code-behind class.", 
+            "title": "Event Handler Exists In Code Behind Class"
+        }, 
+        {
+            "location": "/xamarin-forms/tools-in-depth/analysers/#event-handler-signature-matches", 
+            "text": "Checks that the signature for the event callback in a code behind class matches the expected signature for the property it is assigned to.", 
+            "title": "Event Handler Signature Matches"
+        }, 
+        {
+            "location": "/xamarin-forms/tools-in-depth/analysers/#find-xtypearguments-misuse", 
+            "text": "Inspects for usages of x:TypeArguments on elements that look like they resolve to non-generic classes", 
+            "title": "Find x:TypeArguments misuse"
+        }, 
+        {
+            "location": "/xamarin-forms/tools-in-depth/analysers/#generic-has-xtypearguments-supplied", 
+            "text": "Inspects generic classes being instantiated through Xaml and validates that an x:TypeArguments attribute or property assignment node is present.  Available Fixes   Create x:TypeArguments attribute. : Generates an x:TypeArguments attribute, resolving the potential argument types if possible.  Create x:TypeArguments property setter : Generates a child 'x:TypeArguments' property setter node, resolving the potential argument types if possible.", 
+            "title": "Generic has x:TypeArguments supplied."
+        }, 
+        {
+            "location": "/xamarin-forms/tools-in-depth/analysers/#obsolete-property-used", 
+            "text": "Checks for attributes that are marked as obsolete/deprecated.", 
+            "title": "Obsolete Property Used"
+        }, 
+        {
+            "location": "/xamarin-forms/tools-in-depth/analysers/#onidiom-return-type-mismatch", 
+            "text": "Checks the type returned by a Xamarin.Forms.OnIdiom element is valid with the parent property type", 
+            "title": "OnIdiom Return Type Mismatch"
+        }, 
+        {
+            "location": "/xamarin-forms/tools-in-depth/analysers/#onplatform-return-type-mismatch", 
+            "text": "Checks the type returned by a Xamarin.Forms.OnPlatform element is valid with the parent property type", 
+            "title": "OnPlatform Return Type Mismatch"
+        }, 
+        {
+            "location": "/xamarin-forms/tools-in-depth/analysers/#property-node-maps-to-member-in-parent-type", 
+            "text": "Checks that a property node resolves to a member within its parent type.", 
+            "title": "Property Node Maps To Member In Parent Type"
+        }, 
+        {
+            "location": "/xamarin-forms/tools-in-depth/analysers/#property-setter-attribute-has-value", 
+            "text": "Checks that a value has been provided to an attribute Property. This check is skipped if the property type is a string or a valueconverter is in use.", 
+            "title": "Property Setter Attribute Has Value"
+        }, 
+        {
+            "location": "/xamarin-forms/tools-in-depth/analysers/#property-setter-attribute-has-value_1", 
+            "text": "Checks that a value has been provided to a node Property setter (MyClass.MyProperty).", 
+            "title": "Property Setter Attribute Has Value"
+        }, 
+        {
+            "location": "/xamarin-forms/tools-in-depth/analysers/#property-setter-node-misuse", 
+            "text": "Inspects for property setters that don't apply to the outer class. For example, if a developer used OnIdiom.Phone inside a OnPlatform element, the OnIdiom.Phone property setter makes no sense within the given context.", 
+            "title": "Property Setter Node Misuse"
+        }, 
+        {
+            "location": "/xamarin-forms/tools-in-depth/analysers/#property-setter-type-mismatch", 
+            "text": "When using MyClass.MyProperty node setter syntax, validate that the inner child node returns a .NET object of the correct type for the property.", 
+            "title": "Property Setter Type Mismatch"
+        }, 
+        {
+            "location": "/xamarin-forms/tools-in-depth/analysers/#resource-entry-does-not-define-a-key", 
+            "text": "Validates the elements provided to a resource dictionary supply an x:Key attribute  Available Fixes   Remove unused xmlns declaration : Removes the unused xmlns declaration.", 
+            "title": "Resource entry does not define a key"
+        }, 
+        {
+            "location": "/xamarin-forms/tools-in-depth/analysers/#undefined-static-resource-usage", 
+            "text": "Validates that a static resource lookup resolves to a resource defined in the xaml file.  Available Fixes   Autocorrect static resource reference : When a static resource reference does not exist in the current document but a closely named symbol exists, this fix allows", 
+            "title": "Undefined Static Resource Usage"
+        }, 
+        {
+            "location": "/xamarin-forms/tools-in-depth/analysers/#unknown-static-property-value", 
+            "text": "Checks that the literal value provided to xml attributes which accept a class object maps to a static property or field in the class type. For example, the LayoutOptions class has static fields such as Fill or CentreAndExpand that can be used a literal attribute values. If CentreAndFill was provided, this analyser would inspect 'LayoutOptions' for a static field named 'CentreAndFill' and trigger an analysis error when it couldn't be found.  Available Fixes   Replace unknown property value with autocorrection : When a xaml element property attempts to reference a static field (for instance LayoutOptions.Center), this fix finds the nearest named member and replaces the incorrect value with an auto-correction.", 
+            "title": "Unknown Static Property Value"
+        }, 
+        {
+            "location": "/xamarin-forms/tools-in-depth/analysers/#unknown-type-provided-to-generic", 
+            "text": "Inspects usages of x:TypeArguments and validates that the type provided exists", 
+            "title": "Unknown type provided to generic"
+        }, 
+        {
+            "location": "/xamarin-forms/tools-in-depth/analysers/#unused-code-behind-field", 
+            "text": "Checks that a code behind field declaration (x:Name) is used within the project in either C# or Xaml.", 
+            "title": "Unused Code Behind Field"
+        }, 
+        {
+            "location": "/xamarin-forms/tools-in-depth/analysers/#validate-binding-expression-return-type", 
+            "text": "Validates that the .NET symbol returned by a binding expression matches the expected type for the property.", 
+            "title": "Validate Binding Expression Return Type"
+        }, 
+        {
+            "location": "/xamarin-forms/tools-in-depth/analysers/#validate-binding-expressions-return-a-property", 
+            "text": "Evaluates a binding expression and validates that it points to property within the binding context.  Available Fixes   Replace field or method reference with property. : Replaces a field or method symbol within a binding expression with a suggested property name.", 
+            "title": "Validate Binding Expressions Return A Property"
+        }, 
+        {
+            "location": "/xamarin-forms/tools-in-depth/analysers/#validate-staticresource-return-type", 
+            "text": "Validates that the symbol returned by an StaticResource matches the expected type for the property.", 
+            "title": "Validate StaticResource Return Type"
+        }, 
+        {
+            "location": "/xamarin-forms/tools-in-depth/analysers/#validate-value-types", 
+            "text": "Inspects the input provided to attributes that expect value types (int, bool, double etc) and validates that the input is valid.", 
+            "title": "Validate Value Types"
+        }, 
+        {
+            "location": "/xamarin-forms/tools-in-depth/analysers/#validate-xstatic-return-type", 
+            "text": "Validates that the .NET symbol returned by an x:Static matches the expected type for the property.", 
+            "title": "Validate x:Static return type"
+        }, 
+        {
+            "location": "/xamarin-forms/tools-in-depth/analysers/#validate-xmlns-declarations-are-used", 
+            "text": "Validates that an xmlns attribute that declares a namespace and assembly is used within the current document.  Available Fixes   Remove unused xmlns declaration : Removes the unused xmlns declaration.", 
+            "title": "Validate xmlns declarations are used."
+        }, 
+        {
+            "location": "/xamarin-forms/tools-in-depth/analysers/#value-converter-input-type-mismatch", 
+            "text": "Inspects the Converter property of a Binding expression and validates that the input type is correct.", 
+            "title": "Value Converter Input Type Mismatch"
+        }, 
+        {
+            "location": "/xamarin-forms/tools-in-depth/analysers/#value-converter-output-type-mismatch", 
+            "text": "The Converter component of a Binding expression and validates that the returned output type is valid for the parent attribute.", 
+            "title": "Value Converter Output Type Mismatch"
+        }, 
+        {
+            "location": "/xamarin-forms/tools-in-depth/analysers/#xname-has-invalid-characters", 
+            "text": "Checks that x:Name expressions define a valid code-behind variable name. An value declared by an x:Name attribute must start with a @, _ or a-Z character followed by underscores or alpha-numeric characters.", 
+            "title": "x:Name Has Invalid Characters"
+        }, 
+        {
+            "location": "/xamarin-forms/tools-in-depth/analysers/#xreference-element-exists", 
+            "text": "Checks that the element referenced by a 'x:Reference' xaml expression exists within the current document.  Available Fixes   Replace x:Name with closely named member : Replaces an invalid x:Name reference with a similiarly named x:Name declared in the current document.", 
+            "title": "x:Reference element exists"
+        }, 
+        {
+            "location": "/xamarin-forms/tools-in-depth/analysers/#xml-namespace-does-not-resolve", 
+            "text": "Checks that the namespace used on the xml nodes is defined within the current document.  Available Fixes   Import namespace and assembly : When an xaml node can be resolved to a .NET symbol in the project or its references this fix generates an 'xmlns' import statement in the root xaml element.  Replace xml namespace with auto-correction : Replaces an xml namespace prefix with the auto-corrected xml namespace.", 
+            "title": "Xml Namespace Does Not Resolve"
+        }, 
+        {
+            "location": "/xamarin-forms/tools-in-depth/analysers/#xmlns-assembly-does-not-resolve", 
+            "text": "Checks that the 'assembly' component of an xmlns statement resolves to an assembly referenced by the project.", 
+            "title": "Xmlns Assembly Does Not Resolve"
+        }, 
+        {
+            "location": "/xamarin-forms/tools-in-depth/analysers/#xmlns-declaration-is-malformed", 
+            "text": "Verifies that a 'xmlns' attribute has both a clr-namespace and an assembly component", 
+            "title": "Xmlns declaration is malformed"
         }, 
         {
             "location": "/xamarin-forms/tools-in-depth/refactorings/", 
             "text": "", 
             "title": "Refactorings"
-        }, 
-        {
-            "location": "/xamarin-forms/tools-in-depth/fixes/", 
-            "text": "", 
-            "title": "Fixes"
         }, 
         {
             "location": "/xamarin-android/project-resource-indexing/", 
@@ -367,18 +572,188 @@
         }, 
         {
             "location": "/xamarin-android/tools-in-depth/analysers/", 
-            "text": "", 
+            "text": "Xamarin.Android Resource Analysis\n\n\nMFractor Version 2.07.00\n\n\nAbout\n\n\nThis document lists all analysis routines used by MFractors Xamarin.Android resource analyser.\n\n\nAnalysis Routines\n\n\n32 total routines\n\n\nAppWidget Layout Is Valid\n\n\nAnalyses the layout file referenced by the 'android:initialLayout' attribute for an AppWidget configuration and ensures that it only contains allowed view types.\n\n\nCheck for Duplicate Attributes.\n\n\nChecks for duplicate attributes on an xml node and then automatically removes the duplicates.\n\n\nAvailable Fixes\n\n\n\n\nFix Duplicate Attributes\n: Removes any duplicate attributes for an Xml node element.\n\n\n\n\nCheck For Invalid Android Xml Elements\n\n\nInspects an xml file for unknown elements. For example, a res/menu xml file may only contain 'menu', 'item' and 'group' elements.\n\n\nCheck For Invalid Characters In Value Resource Names\n\n\nChecks that the 'name' attribute for value based resources do not contain invalid characters. Any character apart for 0-9, a-z, A-Z, '.' and '_' are considered to be an invalid character. This check prevents characters that are also operators (such as +, * or \n) from being baked into the Resource.Designer.cs file when the resource ids are generated.\n\n\nCheck For Required Value\n\n\nChecks that the input argument for an XML attribute matches the required value for that attribute. For example, 'xmlns:android' must always be 'http://schemas.android.com/apk/res/android'.\n\n\nAvailable Fixes\n\n\n\n\nApply Required Value\n: Replaces an attributes value with the required value for xml element. For example, 'xmlns:android' must always be 'http://schemas.android.com/apk/res/android'.\n\n\n\n\nCheck NFC Tech-List for whitespace\n\n\nLooks at the 'tech' elements inside an nfc 'tech-list' definition and verifies that they do not containi whitespace. The loader for tech-list elements is very strict and will cause a runtime exception when this tech-list is used. See https://code.google.com/p/android/issues/detail?id=65351\n\n\nCheck Public Android Resource Usage\n\n\nInspects Android resource usages and ensure that the resource referenced has been declared as public.\n\n\nCheck Reference Type\n\n\nVerifies that an attribute that expects a resource reference is provided a reference expression (@type/value) rather than a literal value.\n\n\nCircular Resource Usage\n\n\nDetects when a resource usage (@type/value) that points to a file based resource (such as a layout or drawable) will generate a circular reference when it is inflated. A common example of this is using \ninclude\n or \nmerge\n tags inside a layout that also references other layouts via merging or including.\n\n\nClass Reference Exists\n\n\nChecks that a DotNet class referenced in xml exists in the current solution and its references.\n\n\nAvailable Fixes\n\n\n\n\nCorrect Unknown Class Reference\n: Replaces an invalid class reference with one that is closely named.\n\n\n\n\nDeclarative ID In Style\n\n\nDefining a style which sets android:id to a dynamically generated id can cause many versions of aapt, the resource packaging tool, to crash. To work around this, declare the id explicitly with \nitem type=\"id\" name=\"...\" /\n instead.\n\n\nDetect Duplicate Plurals Entries\n\n\nInspects a 'plurals' resource entry for 'item' elements that have the same 'quantity' value.\n\n\nDetect Resource Self Reference\n\n\nAnalyses resources usages to detect when a usage attempts to reference itself. This error is most likely to occur when using animations, drawables and particularly for layout includes.\n\n\nDrawable 9-patch reference check.\n\n\nChecks that a drawable reference does not end with '.9'.\n\n\nAvailable Fixes\n\n\n\n\nFix 9-patch drawable references\n: Replaces a nine patch drawable reference that includes the '.9' suffix with a reference that excludes the '.9' suffix.\n\n\n\n\nInconsistent Array Sizes\n\n\nChecks that 'array', 'string-array' and 'integer-array' resources with multiple declarations all have the same number of elements across all locales they are declared in.\n\n\nItem Value Resource Is Valid\n\n\nChecks that the content contained within an \n tag that declares a value resource declaration is a valid format for its type.\n\n\nLayout \n exists in configuration\n\n\nChecks that usages of 'include' tags within a Android layout reference a layout that is available within the current configuration.\n\n\nLayout Width And Height Required\n\n\nChecks that layout elements have both the 'android:layout_width' and 'android:layout_height' attributes declared. Elements that are missing these attributes will generate a runtime exception when the layout is inflated.\n\n\nMispelt Resource Type References\n\n\nChecks that the resource references (EG: @string/myString) have a valid resource type component and suggests an auto-correction if possible.\n\n\nAvailable Fixes\n\n\n\n\nFix Mispelt Resource Usages\n: Replaces unresolvable resource usages with an auto-suggested value based on the resources available in the project or its references.\n\n\n\n\nMultiple \n usages in manifest\n\n\nInspects the \n element within the Android manifest for multiple declarations of the \n element. Only a single \n element is allowed.\n\n\nNode Missing Required Attributes\n\n\nChecks that a given resource node has all the mandatory attributes.\n\n\nAvailable Fixes\n\n\n\n\nAdd Required Attributes\n: Adds any missing required attributes and their default values to an xml node.\n\n\n\n\nResource Value Format\n\n\nValidates that a resource value (such as a dimension, color or percentage) is entered in the correct format.\n\n\nAvailable Fixes\n\n\n\n\nFix Value Format\n: Fixes typeos for inline values such as dimensions, color or floats.\n\n\n\n\nScroll View Has Multiple Children\n\n\nVerifies that a ScrollView only has 1 direct child; multiple children will cause a runtime exception when the layout is inflated. If you want more children, encapsulate the child elements into a layout container.\n\n\nTextView 'textSize' uses non-sp dimension\n\n\nInspects 'textSize' attributes for usages of non-sp dimensions\n\n\nValid Keyword Input\n\n\nValidates that a keyword or sequence of flags provided to an xml attribute are valid. For instance, the installation location is doen by the 'android:installLocation' manifest attribute. This attribute only accepts 'internalOnly', 'auto' and 'preferExternal', any other value is a compilation error.\n\n\nAvailable Fixes\n\n\n\n\nFix Keywords\n: Replaces a mispelt keyword with an auto-corrected suggestion or suggests from a list of valid keywords.\n\n\n\n\nValidate Animated Vectors Reference Vector Drawables\n\n\nVerifies that the 'android:drawable' attribute on an 'animated-vector' drawable resource points to a 'vector' base drawable.\n\n\nValidate Flag Input\n\n\nValidates that any flags provided to an xml attribute are valid.\n\n\nAvailable Fixes\n\n\n\n\nFix Flags\n: Replaces a mispelt flag with an auto-corrected suggestion or suggests from a list of valid keywords.\n\n\n\n\nValidate quotations in \n elements.\n\n\nVerifies that quotation marks (' and \") are properly escaped when inside a string resource. For instance, single quotes (') must be escaped by a preceeding '\\' unless the whole string is wrapped within double quotes (\"). Furthermore, the use of double quotes must be escaped unless they enclose the entire string.\n\n\nValues Resource Is Valid\n\n\nChecks that the content contained within a value resource declaration is a valid format for its type.\n\n\nVerify Input Type\n\n\nChecks that a xml attribute accepts the resource type used in a reference expression (EG: @string/myString).\n\n\nVerify Max API Feature Usages\n\n\nChecks that xml resources use Android SDK features that are within the projects Target API level.\n\n\nVerify Resource Exists\n\n\nChecks that a resource used via a reference expression (EG: @string/myString) exists within the project or its references.", 
             "title": "Analysers"
+        }, 
+        {
+            "location": "/xamarin-android/tools-in-depth/analysers/#xamarinandroid-resource-analysis", 
+            "text": "MFractor Version 2.07.00", 
+            "title": "Xamarin.Android Resource Analysis"
+        }, 
+        {
+            "location": "/xamarin-android/tools-in-depth/analysers/#about", 
+            "text": "This document lists all analysis routines used by MFractors Xamarin.Android resource analyser.", 
+            "title": "About"
+        }, 
+        {
+            "location": "/xamarin-android/tools-in-depth/analysers/#analysis-routines", 
+            "text": "32 total routines", 
+            "title": "Analysis Routines"
+        }, 
+        {
+            "location": "/xamarin-android/tools-in-depth/analysers/#appwidget-layout-is-valid", 
+            "text": "Analyses the layout file referenced by the 'android:initialLayout' attribute for an AppWidget configuration and ensures that it only contains allowed view types.", 
+            "title": "AppWidget Layout Is Valid"
+        }, 
+        {
+            "location": "/xamarin-android/tools-in-depth/analysers/#check-for-duplicate-attributes", 
+            "text": "Checks for duplicate attributes on an xml node and then automatically removes the duplicates.  Available Fixes   Fix Duplicate Attributes : Removes any duplicate attributes for an Xml node element.", 
+            "title": "Check for Duplicate Attributes."
+        }, 
+        {
+            "location": "/xamarin-android/tools-in-depth/analysers/#check-for-invalid-android-xml-elements", 
+            "text": "Inspects an xml file for unknown elements. For example, a res/menu xml file may only contain 'menu', 'item' and 'group' elements.", 
+            "title": "Check For Invalid Android Xml Elements"
+        }, 
+        {
+            "location": "/xamarin-android/tools-in-depth/analysers/#check-for-invalid-characters-in-value-resource-names", 
+            "text": "Checks that the 'name' attribute for value based resources do not contain invalid characters. Any character apart for 0-9, a-z, A-Z, '.' and '_' are considered to be an invalid character. This check prevents characters that are also operators (such as +, * or  ) from being baked into the Resource.Designer.cs file when the resource ids are generated.", 
+            "title": "Check For Invalid Characters In Value Resource Names"
+        }, 
+        {
+            "location": "/xamarin-android/tools-in-depth/analysers/#check-for-required-value", 
+            "text": "Checks that the input argument for an XML attribute matches the required value for that attribute. For example, 'xmlns:android' must always be 'http://schemas.android.com/apk/res/android'.  Available Fixes   Apply Required Value : Replaces an attributes value with the required value for xml element. For example, 'xmlns:android' must always be 'http://schemas.android.com/apk/res/android'.", 
+            "title": "Check For Required Value"
+        }, 
+        {
+            "location": "/xamarin-android/tools-in-depth/analysers/#check-nfc-tech-list-for-whitespace", 
+            "text": "Looks at the 'tech' elements inside an nfc 'tech-list' definition and verifies that they do not containi whitespace. The loader for tech-list elements is very strict and will cause a runtime exception when this tech-list is used. See https://code.google.com/p/android/issues/detail?id=65351", 
+            "title": "Check NFC Tech-List for whitespace"
+        }, 
+        {
+            "location": "/xamarin-android/tools-in-depth/analysers/#check-public-android-resource-usage", 
+            "text": "Inspects Android resource usages and ensure that the resource referenced has been declared as public.", 
+            "title": "Check Public Android Resource Usage"
+        }, 
+        {
+            "location": "/xamarin-android/tools-in-depth/analysers/#check-reference-type", 
+            "text": "Verifies that an attribute that expects a resource reference is provided a reference expression (@type/value) rather than a literal value.", 
+            "title": "Check Reference Type"
+        }, 
+        {
+            "location": "/xamarin-android/tools-in-depth/analysers/#circular-resource-usage", 
+            "text": "Detects when a resource usage (@type/value) that points to a file based resource (such as a layout or drawable) will generate a circular reference when it is inflated. A common example of this is using  include  or  merge  tags inside a layout that also references other layouts via merging or including.", 
+            "title": "Circular Resource Usage"
+        }, 
+        {
+            "location": "/xamarin-android/tools-in-depth/analysers/#class-reference-exists", 
+            "text": "Checks that a DotNet class referenced in xml exists in the current solution and its references.  Available Fixes   Correct Unknown Class Reference : Replaces an invalid class reference with one that is closely named.", 
+            "title": "Class Reference Exists"
+        }, 
+        {
+            "location": "/xamarin-android/tools-in-depth/analysers/#declarative-id-in-style", 
+            "text": "Defining a style which sets android:id to a dynamically generated id can cause many versions of aapt, the resource packaging tool, to crash. To work around this, declare the id explicitly with  item type=\"id\" name=\"...\" /  instead.", 
+            "title": "Declarative ID In Style"
+        }, 
+        {
+            "location": "/xamarin-android/tools-in-depth/analysers/#detect-duplicate-plurals-entries", 
+            "text": "Inspects a 'plurals' resource entry for 'item' elements that have the same 'quantity' value.", 
+            "title": "Detect Duplicate Plurals Entries"
+        }, 
+        {
+            "location": "/xamarin-android/tools-in-depth/analysers/#detect-resource-self-reference", 
+            "text": "Analyses resources usages to detect when a usage attempts to reference itself. This error is most likely to occur when using animations, drawables and particularly for layout includes.", 
+            "title": "Detect Resource Self Reference"
+        }, 
+        {
+            "location": "/xamarin-android/tools-in-depth/analysers/#drawable-9-patch-reference-check", 
+            "text": "Checks that a drawable reference does not end with '.9'.  Available Fixes   Fix 9-patch drawable references : Replaces a nine patch drawable reference that includes the '.9' suffix with a reference that excludes the '.9' suffix.", 
+            "title": "Drawable 9-patch reference check."
+        }, 
+        {
+            "location": "/xamarin-android/tools-in-depth/analysers/#inconsistent-array-sizes", 
+            "text": "Checks that 'array', 'string-array' and 'integer-array' resources with multiple declarations all have the same number of elements across all locales they are declared in.", 
+            "title": "Inconsistent Array Sizes"
+        }, 
+        {
+            "location": "/xamarin-android/tools-in-depth/analysers/#item-value-resource-is-valid", 
+            "text": "Checks that the content contained within an   tag that declares a value resource declaration is a valid format for its type.", 
+            "title": "Item Value Resource Is Valid"
+        }, 
+        {
+            "location": "/xamarin-android/tools-in-depth/analysers/#layout-exists-in-configuration", 
+            "text": "Checks that usages of 'include' tags within a Android layout reference a layout that is available within the current configuration.", 
+            "title": "Layout  exists in configuration"
+        }, 
+        {
+            "location": "/xamarin-android/tools-in-depth/analysers/#layout-width-and-height-required", 
+            "text": "Checks that layout elements have both the 'android:layout_width' and 'android:layout_height' attributes declared. Elements that are missing these attributes will generate a runtime exception when the layout is inflated.", 
+            "title": "Layout Width And Height Required"
+        }, 
+        {
+            "location": "/xamarin-android/tools-in-depth/analysers/#mispelt-resource-type-references", 
+            "text": "Checks that the resource references (EG: @string/myString) have a valid resource type component and suggests an auto-correction if possible.  Available Fixes   Fix Mispelt Resource Usages : Replaces unresolvable resource usages with an auto-suggested value based on the resources available in the project or its references.", 
+            "title": "Mispelt Resource Type References"
+        }, 
+        {
+            "location": "/xamarin-android/tools-in-depth/analysers/#multiple-usages-in-manifest", 
+            "text": "Inspects the   element within the Android manifest for multiple declarations of the   element. Only a single   element is allowed.", 
+            "title": "Multiple  usages in manifest"
+        }, 
+        {
+            "location": "/xamarin-android/tools-in-depth/analysers/#node-missing-required-attributes", 
+            "text": "Checks that a given resource node has all the mandatory attributes.  Available Fixes   Add Required Attributes : Adds any missing required attributes and their default values to an xml node.", 
+            "title": "Node Missing Required Attributes"
+        }, 
+        {
+            "location": "/xamarin-android/tools-in-depth/analysers/#resource-value-format", 
+            "text": "Validates that a resource value (such as a dimension, color or percentage) is entered in the correct format.  Available Fixes   Fix Value Format : Fixes typeos for inline values such as dimensions, color or floats.", 
+            "title": "Resource Value Format"
+        }, 
+        {
+            "location": "/xamarin-android/tools-in-depth/analysers/#scroll-view-has-multiple-children", 
+            "text": "Verifies that a ScrollView only has 1 direct child; multiple children will cause a runtime exception when the layout is inflated. If you want more children, encapsulate the child elements into a layout container.", 
+            "title": "Scroll View Has Multiple Children"
+        }, 
+        {
+            "location": "/xamarin-android/tools-in-depth/analysers/#textview-textsize-uses-non-sp-dimension", 
+            "text": "Inspects 'textSize' attributes for usages of non-sp dimensions", 
+            "title": "TextView 'textSize' uses non-sp dimension"
+        }, 
+        {
+            "location": "/xamarin-android/tools-in-depth/analysers/#valid-keyword-input", 
+            "text": "Validates that a keyword or sequence of flags provided to an xml attribute are valid. For instance, the installation location is doen by the 'android:installLocation' manifest attribute. This attribute only accepts 'internalOnly', 'auto' and 'preferExternal', any other value is a compilation error.  Available Fixes   Fix Keywords : Replaces a mispelt keyword with an auto-corrected suggestion or suggests from a list of valid keywords.", 
+            "title": "Valid Keyword Input"
+        }, 
+        {
+            "location": "/xamarin-android/tools-in-depth/analysers/#validate-animated-vectors-reference-vector-drawables", 
+            "text": "Verifies that the 'android:drawable' attribute on an 'animated-vector' drawable resource points to a 'vector' base drawable.", 
+            "title": "Validate Animated Vectors Reference Vector Drawables"
+        }, 
+        {
+            "location": "/xamarin-android/tools-in-depth/analysers/#validate-flag-input", 
+            "text": "Validates that any flags provided to an xml attribute are valid.  Available Fixes   Fix Flags : Replaces a mispelt flag with an auto-corrected suggestion or suggests from a list of valid keywords.", 
+            "title": "Validate Flag Input"
+        }, 
+        {
+            "location": "/xamarin-android/tools-in-depth/analysers/#validate-quotations-in-elements", 
+            "text": "Verifies that quotation marks (' and \") are properly escaped when inside a string resource. For instance, single quotes (') must be escaped by a preceeding '\\' unless the whole string is wrapped within double quotes (\"). Furthermore, the use of double quotes must be escaped unless they enclose the entire string.", 
+            "title": "Validate quotations in  elements."
+        }, 
+        {
+            "location": "/xamarin-android/tools-in-depth/analysers/#values-resource-is-valid", 
+            "text": "Checks that the content contained within a value resource declaration is a valid format for its type.", 
+            "title": "Values Resource Is Valid"
+        }, 
+        {
+            "location": "/xamarin-android/tools-in-depth/analysers/#verify-input-type", 
+            "text": "Checks that a xml attribute accepts the resource type used in a reference expression (EG: @string/myString).", 
+            "title": "Verify Input Type"
+        }, 
+        {
+            "location": "/xamarin-android/tools-in-depth/analysers/#verify-max-api-feature-usages", 
+            "text": "Checks that xml resources use Android SDK features that are within the projects Target API level.", 
+            "title": "Verify Max API Feature Usages"
+        }, 
+        {
+            "location": "/xamarin-android/tools-in-depth/analysers/#verify-resource-exists", 
+            "text": "Checks that a resource used via a reference expression (EG: @string/myString) exists within the project or its references.", 
+            "title": "Verify Resource Exists"
         }, 
         {
             "location": "/xamarin-android/tools-in-depth/refactorings/", 
             "text": "", 
             "title": "Refactorings"
-        }, 
-        {
-            "location": "/xamarin-android/tools-in-depth/fixes/", 
-            "text": "", 
-            "title": "Fixes"
         }, 
         {
             "location": "/xamarin-android/tools-in-depth/intellisense/", 
@@ -462,7 +837,7 @@
         }, 
         {
             "location": "/release-notes/v2-7/", 
-            "text": "Release Notes - v2.7.0\n\n\n8th January 2017\n\n\nDownload MFractor 2.7.0\n\n\n\n\nIntroduction\n\n\nThis is a summary of the changes introduced in v2.7.0 of MFractor for Xamarin Studio.\n\n\nYou already love being able to generate bindings but I've taken it to the next level this release...\n\n\nIntroducing View Model generation:\n\n\n\n\nGot a heap of unimplemented bindings? Right click anywhere in your Xaml document and select \nRefactor\n -\n \nImplement View Model\n.\n\n\nMFractor will collect all the missing bindings and then generate a new class with \nall\n of those properties into the \"MyDefaultNamespace.ViewModels\".\n\n\nDoes the view model already exist? Then MFractor simply inserts the new bindings into the existing view model.\n\n\nI think it'll save you enough time during the week that you may just get to Friday beers a few hours early \ud83c\udf7b\n\n\nFeatures\n\n\n\n\nBy right clicking anywhere in a Xaml document, implement all missing bindings as a new or into an existing view model:\n\n\nImplement view model\n\n\n\n\n\n\nICommands\n\n\nNew Xaml Analysers:\n\n\nValidate that elements declared inside a resource dictionary have an x:Key.\n\n\nValidate that elements declared inside a resource dictionary have a unique x:Key value.\n\n\nDetect when an x:TypeArguments is used on a non-generic type and warn of incorrect usage.\n\n\nDetect when a property setter node (\nMyClass.MyProperty/\n) references a non-existant member on the parent class.\n\n\nDetect when a property setter attribute is empty.\n\n\nDetect when an undefined static resource is referenced by a \nStaticResource\n expression.\n\n\nDetect when the value returned by a \nStaticResource\n expression causes a type mismatch.\n\n\nDetect when an unknown type is being provided to a \nx:TypeArguments\n attribute.\n\n\nValidate that \nOnIdiom\n elements return the correct type for the outer property setter.\n\n\nValidate that \nOnPlatform\n elements return the correct type for the outer property setter.\n\n\nDetect when a developer has misused a property setter inside another xaml element. For example, \nOnIdiom.Phone\n doesn't make any sense when wrapped by the outer element \nOnPlatform\n.\n\n\n\n\n\n\nNew Xaml Fixes:\n\n\nGenerate missing resource dictionary keys.\n\n\nAuto-correct mispelt StaticResource references.\n\n\n\n\n\n\nNew Simplify Refactorings:\n\n\nAttributes that use a static instance to initialise the property (eg \nVerticalOptions=\"LayoutOptions.CentreAndExpand\"\n) can now be simplified to just the instance name (eg \nVerticalOptions=\"CentreAndExpand\"\n).\n\n\n\n\n\n\n\n\nEnhancements\n\n\n\n\nThe \"About MFractor\" dialog now contains a button to copy version and IDE information into the clipboard for bug reports.\n\n\nThis release introduces the framework for an Xml refactoring engine. Over time, I'll be adding Xml and Xaml refactoring operations to make code cleanup a breeze.\n\n\nAnnotating value converters with a ValueConversion(input, output) attribute will trigger the conversion information to render into tooltip.\n\n\n\n\nBug Fixes\n\n\n\n\nSometimes the Xaml document analyser would fail to load and bring down the Xaml editor. This has been fixed.\n\n\nFixed a bug that caused View \n - \n Code Behind navigation shortcuts to break when an AST parse was in progress. View \n - \n Code Behind shortcuts should now always be active.\n\n\nWhen property setter nodes are used (\n), the class component is now correctly validated.\n\n\nWhen importing a Xaml namespace, the element is inserted on a newline and formatted to align with other attributes.\n\n\nWhen resolving the binding context for nested DataTemplates, sometimes the binding context resolver would fail on generics or IEnumerables\n\n\nMore resilient Mvvm resolver to drive the 'Go To View Model', 'Go To Xaml View' and 'Go To Code Behind' shortcuts. MFractor will attempt to infer as best possible the associations between those 3 files.\n\n\nSave the project after adding a new file to it.", 
+            "text": "Release Notes - v2.7.0\n\n\n8th January 2017\n\n\nDownload MFractor 2.7.0\n\n\n\n\nIntroduction\n\n\nThis is a summary of the changes introduced in v2.7.0 of MFractor for Xamarin Studio.\n\n\nYou already love being able to generate bindings but I've taken it to the next level this release...\n\n\nIntroducing View Model generation:\n\n\n\n\nGot a heap of unimplemented bindings? Right click anywhere in your Xaml document and select \nRefactor\n -\n \nImplement View Model\n.\n\n\nMFractor will collect all the missing bindings and then generate a new class with \nall\n of those properties into the \"MyDefaultNamespace.ViewModels\".\n\n\nDoes the view model already exist? Then MFractor simply inserts the new bindings into the existing view model.\n\n\nI think it'll save you enough time during the week that you may just get to Friday beers a few hours early \ud83c\udf7b\n\n\nFeatures\n\n\n\n\nBy right clicking anywhere in a Xaml document, implement all missing bindings as a new or into an existing view model:\n\n\nImplement view model properties with a getter and setter.\n\n\n\n\n\n\nImplement view model properties with a backing field.\n\n\nBound properties that return \nICommand\n will have an empty \nXamarin.Forms.Command\n instance generated.\n\n\nNew Xaml Analysers:\n\n\nValidate that elements declared inside a resource dictionary have an x:Key.\n\n\nValidate that elements declared inside a resource dictionary have a unique x:Key value.\n\n\nDetect when an x:TypeArguments is used on a non-generic type and warn of incorrect usage.\n\n\nDetect when a property setter node (\nMyClass.MyProperty/\n) references a non-existant member on the parent class.\n\n\nDetect when a property setter attribute is empty.\n\n\nDetect when an undefined static resource is referenced by a \nStaticResource\n expression.\n\n\nDetect when the value returned by a \nStaticResource\n expression causes a type mismatch.\n\n\nDetect when an unknown type is being provided to a \nx:TypeArguments\n attribute.\n\n\nValidate that \nOnIdiom\n elements return the correct type for the outer property setter.\n\n\nValidate that \nOnPlatform\n elements return the correct type for the outer property setter.\n\n\nDetect when a developer has misused a property setter inside another xaml element. For example, \nOnIdiom.Phone\n doesn't make any sense when wrapped by the outer element \nOnPlatform\n.\n\n\n\n\n\n\nNew Xaml Fixes:\n\n\nGenerate missing resource dictionary keys.\n\n\nAuto-correct misspelt \nStaticResource\n references.\n\n\n\n\n\n\nNew Simplify Refactorings:\n\n\nAttributes that use a static instance to initialize the property (eg \nVerticalOptions=\"LayoutOptions.CentreAndExpand\"\n) can now be simplified to just the instance name (eg \nVerticalOptions=\"CentreAndExpand\"\n).\n\n\n\n\n\n\n\n\nEnhancements\n\n\n\n\nThe \"About MFractor\" dialog now contains a button to copy version and IDE information into the clipboard for bug reports.\n\n\nThis release introduces the framework for an Xml and Xaml refactoring engine. Over time, I'll be adding Xml and Xaml refactoring operations to make code cleanup a breeze.\n\n\nAnnotating value converters with a \nValueConversion(typeof(InputType), typeof(OutputType))\n attribute will trigger the conversion information to render into tooltip. See \nFormsCommunityToolkit.Converters\n for examples.\n\n\n\n\nBug Fixes\n\n\n\n\nSometimes the Xaml document analyser would fail to load and bring down the Xaml editor. This has been fixed.\n\n\nFixed a bug that caused View \n - \n Code Behind navigation shortcuts to break when an AST parse was in progress. View \n - \n Code Behind shortcuts should now always be active.\n\n\nWhen property setter nodes are used (\nMyClass.MyProperty/\n), the class component is now correctly validated.\n\n\nWhen importing a Xaml namespace, the element is inserted on a newline and formatted to align with other attributes.\n\n\nWhen resolving the binding context for nested DataTemplates, sometimes the binding context resolver would fail on generics or IEnumerables\n\n\nMore resilient Mvvm resolver to drive the 'Go To View Model', 'Go To Xaml View' and 'Go To Code Behind' shortcuts. MFractor will attempt to infer as best possible the associations between those 3 files.\n\n\nSave the project after adding a new file to it.", 
             "title": 2.7
         }, 
         {
@@ -477,22 +852,22 @@
         }, 
         {
             "location": "/release-notes/v2-7/#features", 
-            "text": "By right clicking anywhere in a Xaml document, implement all missing bindings as a new or into an existing view model:  Implement view model    ICommands  New Xaml Analysers:  Validate that elements declared inside a resource dictionary have an x:Key.  Validate that elements declared inside a resource dictionary have a unique x:Key value.  Detect when an x:TypeArguments is used on a non-generic type and warn of incorrect usage.  Detect when a property setter node ( MyClass.MyProperty/ ) references a non-existant member on the parent class.  Detect when a property setter attribute is empty.  Detect when an undefined static resource is referenced by a  StaticResource  expression.  Detect when the value returned by a  StaticResource  expression causes a type mismatch.  Detect when an unknown type is being provided to a  x:TypeArguments  attribute.  Validate that  OnIdiom  elements return the correct type for the outer property setter.  Validate that  OnPlatform  elements return the correct type for the outer property setter.  Detect when a developer has misused a property setter inside another xaml element. For example,  OnIdiom.Phone  doesn't make any sense when wrapped by the outer element  OnPlatform .    New Xaml Fixes:  Generate missing resource dictionary keys.  Auto-correct mispelt StaticResource references.    New Simplify Refactorings:  Attributes that use a static instance to initialise the property (eg  VerticalOptions=\"LayoutOptions.CentreAndExpand\" ) can now be simplified to just the instance name (eg  VerticalOptions=\"CentreAndExpand\" ).", 
+            "text": "By right clicking anywhere in a Xaml document, implement all missing bindings as a new or into an existing view model:  Implement view model properties with a getter and setter.    Implement view model properties with a backing field.  Bound properties that return  ICommand  will have an empty  Xamarin.Forms.Command  instance generated.  New Xaml Analysers:  Validate that elements declared inside a resource dictionary have an x:Key.  Validate that elements declared inside a resource dictionary have a unique x:Key value.  Detect when an x:TypeArguments is used on a non-generic type and warn of incorrect usage.  Detect when a property setter node ( MyClass.MyProperty/ ) references a non-existant member on the parent class.  Detect when a property setter attribute is empty.  Detect when an undefined static resource is referenced by a  StaticResource  expression.  Detect when the value returned by a  StaticResource  expression causes a type mismatch.  Detect when an unknown type is being provided to a  x:TypeArguments  attribute.  Validate that  OnIdiom  elements return the correct type for the outer property setter.  Validate that  OnPlatform  elements return the correct type for the outer property setter.  Detect when a developer has misused a property setter inside another xaml element. For example,  OnIdiom.Phone  doesn't make any sense when wrapped by the outer element  OnPlatform .    New Xaml Fixes:  Generate missing resource dictionary keys.  Auto-correct misspelt  StaticResource  references.    New Simplify Refactorings:  Attributes that use a static instance to initialize the property (eg  VerticalOptions=\"LayoutOptions.CentreAndExpand\" ) can now be simplified to just the instance name (eg  VerticalOptions=\"CentreAndExpand\" ).", 
             "title": "Features"
         }, 
         {
             "location": "/release-notes/v2-7/#enhancements", 
-            "text": "The \"About MFractor\" dialog now contains a button to copy version and IDE information into the clipboard for bug reports.  This release introduces the framework for an Xml refactoring engine. Over time, I'll be adding Xml and Xaml refactoring operations to make code cleanup a breeze.  Annotating value converters with a ValueConversion(input, output) attribute will trigger the conversion information to render into tooltip.", 
+            "text": "The \"About MFractor\" dialog now contains a button to copy version and IDE information into the clipboard for bug reports.  This release introduces the framework for an Xml and Xaml refactoring engine. Over time, I'll be adding Xml and Xaml refactoring operations to make code cleanup a breeze.  Annotating value converters with a  ValueConversion(typeof(InputType), typeof(OutputType))  attribute will trigger the conversion information to render into tooltip. See  FormsCommunityToolkit.Converters  for examples.", 
             "title": "Enhancements"
         }, 
         {
             "location": "/release-notes/v2-7/#bug-fixes", 
-            "text": "Sometimes the Xaml document analyser would fail to load and bring down the Xaml editor. This has been fixed.  Fixed a bug that caused View   -   Code Behind navigation shortcuts to break when an AST parse was in progress. View   -   Code Behind shortcuts should now always be active.  When property setter nodes are used ( ), the class component is now correctly validated.  When importing a Xaml namespace, the element is inserted on a newline and formatted to align with other attributes.  When resolving the binding context for nested DataTemplates, sometimes the binding context resolver would fail on generics or IEnumerables  More resilient Mvvm resolver to drive the 'Go To View Model', 'Go To Xaml View' and 'Go To Code Behind' shortcuts. MFractor will attempt to infer as best possible the associations between those 3 files.  Save the project after adding a new file to it.", 
+            "text": "Sometimes the Xaml document analyser would fail to load and bring down the Xaml editor. This has been fixed.  Fixed a bug that caused View   -   Code Behind navigation shortcuts to break when an AST parse was in progress. View   -   Code Behind shortcuts should now always be active.  When property setter nodes are used ( MyClass.MyProperty/ ), the class component is now correctly validated.  When importing a Xaml namespace, the element is inserted on a newline and formatted to align with other attributes.  When resolving the binding context for nested DataTemplates, sometimes the binding context resolver would fail on generics or IEnumerables  More resilient Mvvm resolver to drive the 'Go To View Model', 'Go To Xaml View' and 'Go To Code Behind' shortcuts. MFractor will attempt to infer as best possible the associations between those 3 files.  Save the project after adding a new file to it.", 
             "title": "Bug Fixes"
         }, 
         {
             "location": "/release-notes/v2-6/", 
-            "text": "Release Notes - v2.6.0\n\n\n31st October 2016\n\n\nDownload MFractor 2.6.0\n\n\n\n\nIntroduction\n\n\nThis is a summary of the changes introduced in v2.6.0 of MFractor for Xamarin Studio.\n\n\nAs a major release, this release adds several code generation capabilities to improve your Xaml workflow. Generate views, classes and value converters in only a few clicks...\n\n\nJust right click on that little yellow squiggle and use the fix to generate a whole lotta code:\n\n\nThere are also more xaml code checks to watch out for nasty Xaml issues and bug fixes galore.\n\n\nEnjoy!\n\n\nFeatures\n\n\n\n\nNew code generation capabilities:\n\n\nGenerate classes from \nmy_namespace:MyMissingClass\n in xaml.\n\n\nGenerate views from \nmy_namespace:MyMissingView\n in xaml.\n\n\nGenerate value converters when a missing xaml node ends with \"[cC]onverter] in xaml.\n\n\n\n\n\n\nNew Xaml analysers:\n\n\nFor generics, validate that an x:TypeArguments attribute or xml node setter exists.\n\n\nFor generics, validate that the count of parameters provided to x:TypeArguments matches the generics signature.\n\n\nValidate the root xaml node contains an x:Class directive to set the code behind class name and namespace.\n\n\n\n\n\n\n\n\nEnhancements\n\n\n\n\nThis release targets Xamarin Studio v6.1.1\n\n\n\n\nBug Fixes\n\n\n\n\nFix a bug in xaml namespace resolution that prevented the \"import new xmlns\" fix from triggering.\n\n\nAllow importing of xaml namespaces from x:Static symbols.\n\n\nFor Setters, don't validate TargetType property that the provided type is a static member of System.Type.\n\n\nWhen a symbol name matches but its in the wrong namespace, don't suggest it as a fix.\n\n\nRemove the MFractor settings panel to fix the Xamarin Studio preferences dialog from not opening when it didn't exist.\n\n\nWhen using native view declaration, the xaml symbolicator will now honor the targetPlatform flag and find the assembly for that platform. Previously this was a naive search that used the first assembly found; using the wrong symbols if a assembly of the same name existed in both an iOS and Android project.", 
+            "text": "Release Notes - v2.6.0\n\n\n31st October 2016\n\n\nDownload MFractor 2.6.0\n\n\n\n\nIntroduction\n\n\nThis is a summary of the changes introduced in v2.6.0 of MFractor for Xamarin Studio.\n\n\nAs a major release, this release adds several code generation capabilities to improve your Xaml workflow. Generate views, classes and value converters in only a few clicks...\n\n\nJust right click on that little yellow squiggle and use the fix to generate a whole lotta code.\n\n\nThere are also more xaml code checks to watch out for nasty Xaml issues and bug fixes galore.\n\n\nEnjoy!\n\n\nFeatures\n\n\n\n\nNew code generation actions:\n\n\nGenerate classes from \nmy_namespace:MyMissingClass\n in xaml.\n\n\nGenerate views from \nmy_namespace:MyMissingView\n in xaml.\n\n\nGenerate value converters when a missing xaml node ends with \"[cC]onverter] in xaml.\n\n\n\n\n\n\nNew Xaml analysers:\n\n\nFor generics, validate that an x:TypeArguments attribute or xml node setter exists.\n\n\nFor generics, validate that the count of parameters provided to x:TypeArguments matches the generics signature.\n\n\nValidate the root xaml node contains an x:Class directive to set the code behind class name and namespace.\n\n\n\n\n\n\n\n\nEnhancements\n\n\n\n\nThis release targets Xamarin Studio v6.1.1\n\n\n\n\nBug Fixes\n\n\n\n\nFix a bug in xaml namespace resolution that prevented the \"import new xmlns\" fix from triggering.\n\n\nAllow importing of xaml namespaces from x:Static symbols.\n\n\nFor Setters, don't validate TargetType property that the provided type is a static member of System.Type.\n\n\nWhen a symbol name matches but its in the wrong namespace, don't suggest it as a fix.\n\n\nRemove the MFractor settings panel to fix the Xamarin Studio preferences dialog from not opening when it didn't exist.\n\n\nWhen using native view declaration, the xaml symbolicator will now honor the targetPlatform flag and find the assembly for that platform. Previously this was a naive search that used the first assembly found; using the wrong symbols if a assembly of the same name existed in both an iOS and Android project.", 
             "title": 2.6
         }, 
         {
@@ -502,12 +877,12 @@
         }, 
         {
             "location": "/release-notes/v2-6/#introduction", 
-            "text": "This is a summary of the changes introduced in v2.6.0 of MFractor for Xamarin Studio.  As a major release, this release adds several code generation capabilities to improve your Xaml workflow. Generate views, classes and value converters in only a few clicks...  Just right click on that little yellow squiggle and use the fix to generate a whole lotta code:  There are also more xaml code checks to watch out for nasty Xaml issues and bug fixes galore.  Enjoy!", 
+            "text": "This is a summary of the changes introduced in v2.6.0 of MFractor for Xamarin Studio.  As a major release, this release adds several code generation capabilities to improve your Xaml workflow. Generate views, classes and value converters in only a few clicks...  Just right click on that little yellow squiggle and use the fix to generate a whole lotta code.  There are also more xaml code checks to watch out for nasty Xaml issues and bug fixes galore.  Enjoy!", 
             "title": "Introduction"
         }, 
         {
             "location": "/release-notes/v2-6/#features", 
-            "text": "New code generation capabilities:  Generate classes from  my_namespace:MyMissingClass  in xaml.  Generate views from  my_namespace:MyMissingView  in xaml.  Generate value converters when a missing xaml node ends with \"[cC]onverter] in xaml.    New Xaml analysers:  For generics, validate that an x:TypeArguments attribute or xml node setter exists.  For generics, validate that the count of parameters provided to x:TypeArguments matches the generics signature.  Validate the root xaml node contains an x:Class directive to set the code behind class name and namespace.", 
+            "text": "New code generation actions:  Generate classes from  my_namespace:MyMissingClass  in xaml.  Generate views from  my_namespace:MyMissingView  in xaml.  Generate value converters when a missing xaml node ends with \"[cC]onverter] in xaml.    New Xaml analysers:  For generics, validate that an x:TypeArguments attribute or xml node setter exists.  For generics, validate that the count of parameters provided to x:TypeArguments matches the generics signature.  Validate the root xaml node contains an x:Class directive to set the code behind class name and namespace.", 
             "title": "Features"
         }, 
         {

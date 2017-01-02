@@ -154,13 +154,6 @@
 </li>
 
   
-  
-<li class="toctree-l1 ">
-  <a class="" href="../../xamarin-forms/tools-in-depth/fixes/">Fixes</a>
-  
-</li>
-
-  
 </ul>
 
   
@@ -227,13 +220,6 @@
   
 <li class="toctree-l1 ">
   <a class="" href="../../xamarin-android/tools-in-depth/refactorings/">Refactorings</a>
-  
-</li>
-
-  
-  
-<li class="toctree-l1 ">
-  <a class="" href="../../xamarin-android/tools-in-depth/fixes/">Fixes</a>
   
 </li>
 
@@ -396,11 +382,12 @@
 <h2 id="features">Features</h2>
 <ul>
 <li>By right clicking anywhere in a Xaml document, implement all missing bindings as a new or into an existing view model:<ul>
-<li>Implement view model</li>
+<li>Implement view model properties with a getter and setter.</li>
 </ul>
 </li>
-<li>ICommands</li>
-<li><em>New Xaml Analysers:</em><ul>
+<li>Implement view model properties with a backing field.</li>
+<li>Bound properties that return <code>ICommand</code> will have an empty <code>Xamarin.Forms.Command</code> instance generated.</li>
+<li><strong>New Xaml Analysers:</strong><ul>
 <li>Validate that elements declared inside a resource dictionary have an x:Key.</li>
 <li>Validate that elements declared inside a resource dictionary have a unique x:Key value.</li>
 <li>Detect when an x:TypeArguments is used on a non-generic type and warn of incorrect usage.</li>
@@ -414,27 +401,27 @@
 <li>Detect when a developer has misused a property setter inside another xaml element. For example, <code>OnIdiom.Phone</code> doesn't make any sense when wrapped by the outer element <code>OnPlatform</code>.</li>
 </ul>
 </li>
-<li><em>New Xaml Fixes:</em><ul>
+<li><strong>New Xaml Fixes:</strong><ul>
 <li>Generate missing resource dictionary keys.</li>
-<li>Auto-correct mispelt StaticResource references.</li>
+<li>Auto-correct misspelt <code>StaticResource</code> references.</li>
 </ul>
 </li>
-<li><em>New Simplify Refactorings:</em><ul>
-<li>Attributes that use a static instance to initialise the property (eg <code>VerticalOptions="LayoutOptions.CentreAndExpand"</code>) can now be simplified to just the instance name (eg <code>VerticalOptions="CentreAndExpand"</code>).</li>
+<li><strong>New Simplify Refactorings:</strong><ul>
+<li>Attributes that use a static instance to initialize the property (eg <code>VerticalOptions="LayoutOptions.CentreAndExpand"</code>) can now be simplified to just the instance name (eg <code>VerticalOptions="CentreAndExpand"</code>).</li>
 </ul>
 </li>
 </ul>
 <h2 id="enhancements">Enhancements</h2>
 <ul>
 <li>The "About MFractor" dialog now contains a button to copy version and IDE information into the clipboard for bug reports.</li>
-<li>This release introduces the framework for an Xml refactoring engine. Over time, I'll be adding Xml and Xaml refactoring operations to make code cleanup a breeze.</li>
-<li>Annotating value converters with a ValueConversion(input, output) attribute will trigger the conversion information to render into tooltip.</li>
+<li>This release introduces the framework for an Xml and Xaml refactoring engine. Over time, I'll be adding Xml and Xaml refactoring operations to make code cleanup a breeze.</li>
+<li>Annotating value converters with a <code>ValueConversion(typeof(InputType), typeof(OutputType))</code> attribute will trigger the conversion information to render into tooltip. See <a href="https://github.com/FormsCommunityToolkit/Converters">FormsCommunityToolkit.Converters</a> for examples.</li>
 </ul>
 <h2 id="bug-fixes">Bug Fixes</h2>
 <ul>
 <li>Sometimes the Xaml document analyser would fail to load and bring down the Xaml editor. This has been fixed.</li>
 <li>Fixed a bug that caused View &lt; - &gt; Code Behind navigation shortcuts to break when an AST parse was in progress. View &lt; - &gt; Code Behind shortcuts should now always be active.</li>
-<li>When property setter nodes are used (<MyClass.MyProperty/>), the class component is now correctly validated.</li>
+<li>When property setter nodes are used (<code>&lt;MyClass.MyProperty/&gt;</code>), the class component is now correctly validated.</li>
 <li>When importing a Xaml namespace, the element is inserted on a newline and formatted to align with other attributes.</li>
 <li>When resolving the binding context for nested DataTemplates, sometimes the binding context resolver would fail on generics or IEnumerables</li>
 <li>More resilient Mvvm resolver to drive the 'Go To View Model', 'Go To Xaml View' and 'Go To Code Behind' shortcuts. MFractor will attempt to infer as best possible the associations between those 3 files.</li>
