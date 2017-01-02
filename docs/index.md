@@ -2,8 +2,6 @@
 
 ##Welcome
 
-Hey there fellow Xamarin developer!
-
 Welcome to the documentation for MFractor, incredible Xamarin tools.
 
 MFractor adds several features so you can make great Xamarin.Forms apps faster:

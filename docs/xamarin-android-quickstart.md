@@ -1,6 +1,5 @@
 **WORK IN PROGRESS**
 
-
 ##Xamarin.Android Quickstart
 
 *Learn to use the most handy features in MFractor for Xamarin.Android*
