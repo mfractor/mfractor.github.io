@@ -31,7 +31,6 @@ pages:
   - Tools In-Depth:
     - Analysers: xamarin-forms/tools-in-depth/analysers.md
     - Refactorings: xamarin-forms/tools-in-depth/refactorings.md
-    - Fixes: xamarin-forms/tools-in-depth/fixes.md
 - Xamarin.Android:
   - Project Resource Indexing: xamarin-android/project-resource-indexing.md
   - Navigation: xamarin-android/navigation.md
@@ -42,7 +41,6 @@ pages:
   - Tools In-Depth:
     - Analysers: xamarin-android/tools-in-depth/analysers.md
     - Refactorings: xamarin-android/tools-in-depth/refactorings.md
-    - Fixes: xamarin-android/tools-in-depth/fixes.md
     - IntelliSense: xamarin-android/tools-in-depth/intellisense.md
 - Tutorials:
     - Xamarin.Android:

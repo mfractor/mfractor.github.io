@@ -9,7 +9,7 @@ For a full list of available refactoring and code generation actions, see the [T
 
 ##Fixing Code Issues
 
-##Implementing a ViewModel
+##Implementing A ViewModel
 
 ##Implementing Missing Bindings
 
@@ -18,5 +18,3 @@ For a full list of available refactoring and code generation actions, see the [T
 ##Generating Views
 
 ##Generating Bindable Properties
-
-##
