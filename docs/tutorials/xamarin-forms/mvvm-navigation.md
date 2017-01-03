@@ -1,6 +1,6 @@
 ##Mvvm Navigation
 
-*Quickly move between Xamarin.Forms Views, View Models and Code behind classes using Mvvm navigation shortcuts.*
+*Quickly move between Xamarin.Forms Views, View Models and Code behind classes using Mvvm navigation shortcuts*
 
 ##Overview
 Xamarin.Forms is cross platform toolkit that allows developers to build iOS, Android and Windows apps and maximise code reuse across platforms. Xamarin.Forms also facilitates shared UI code through the use of an xml based view markup langauge named Xaml.
