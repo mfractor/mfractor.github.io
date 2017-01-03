@@ -284,10 +284,6 @@
   <li><span>Release Notes</span></li>
   
   
-<ul class="subnav">
-  <li><span>Version 2</span></li>
-  
-  
 <li class="toctree-l1 current">
   <a class="current" href="./">2.7</a>
   
@@ -331,9 +327,6 @@
 
   
 </ul>
-
-  
-</ul>
 <li>
           
         </ul>
@@ -359,10 +352,6 @@
       
         
           <li>Release Notes &raquo;</li>
-        
-      
-        
-          <li>Version 2 &raquo;</li>
         
       
     
@@ -398,7 +387,7 @@
 <li>Validate that elements declared inside a resource dictionary have an x:Key.</li>
 <li>Validate that elements declared inside a resource dictionary have a unique x:Key value.</li>
 <li>Detect when an x:TypeArguments is used on a non-generic type and warn of incorrect usage.</li>
-<li>Detect when a property setter node (<code>&lt;MyClass.MyProperty/&gt;</code>) references a non-existant member on the parent class.</li>
+<li>Detect when a property setter node (<code>&lt;MyClass.MyProperty/&gt;</code>) references a non-existent member on the parent class.</li>
 <li>Detect when a property setter attribute is empty.</li>
 <li>Detect when an undefined static resource is referenced by a <code>StaticResource</code> expression.</li>
 <li>Detect when the value returned by a <code>StaticResource</code> expression causes a type mismatch.</li>
@@ -408,6 +397,9 @@
 <li>Detect when a developer has misused a property setter inside another xaml element. For example, <code>OnIdiom.Phone</code> doesn't make any sense when wrapped by the outer element <code>OnPlatform</code>.</li>
 </ul>
 </li>
+<li>Detect when an incorrect input type is provided to a <code>Converter</code>. The value converter must have a <code>ValueConversion</code> attribute for this to trigger.</li>
+<li>Detect when an incorrect output type is returned by a <code>Converter</code> expression. The value converter must have a <code>ValueConversion</code> attribute for this to trigger.</li>
+<li>Detect when multiple occurrences of the same automation ID exists within a Xaml document.</li>
 <li><strong>New Xaml Fixes:</strong><ul>
 <li>Generate missing resource dictionary keys.</li>
 <li>Auto-correct misspelt <code>StaticResource</code> references.</li>
