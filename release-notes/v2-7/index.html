@@ -379,10 +379,10 @@
 <ul>
 <li>By right clicking anywhere in a Xaml document, implement all missing bindings as a new or into an existing view model:<ul>
 <li>Implement view model properties with a getter and setter.</li>
-</ul>
-</li>
 <li>Implement view model properties with a backing field.</li>
 <li>Bound properties that return <code>ICommand</code> will have an empty <code>Xamarin.Forms.Command</code> instance generated.</li>
+</ul>
+</li>
 <li><strong>New Xaml Analysers:</strong><ul>
 <li>Validate that elements declared inside a resource dictionary have an x:Key.</li>
 <li>Validate that elements declared inside a resource dictionary have a unique x:Key value.</li>
@@ -395,11 +395,11 @@
 <li>Validate that <code>OnIdiom</code> elements return the correct type for the outer property setter.</li>
 <li>Validate that <code>OnPlatform</code> elements return the correct type for the outer property setter.</li>
 <li>Detect when a developer has misused a property setter inside another xaml element. For example, <code>OnIdiom.Phone</code> doesn't make any sense when wrapped by the outer element <code>OnPlatform</code>.</li>
-</ul>
-</li>
 <li>Detect when an incorrect input type is provided to a <code>Converter</code>. The value converter must have a <code>ValueConversion</code> attribute for this to trigger.</li>
 <li>Detect when an incorrect output type is returned by a <code>Converter</code> expression. The value converter must have a <code>ValueConversion</code> attribute for this to trigger.</li>
 <li>Detect when multiple occurrences of the same automation ID exists within a Xaml document.</li>
+</ul>
+</li>
 <li><strong>New Xaml Fixes:</strong><ul>
 <li>Generate missing resource dictionary keys.</li>
 <li>Auto-correct misspelt <code>StaticResource</code> references.</li>
