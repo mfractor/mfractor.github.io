@@ -111,7 +111,7 @@
       
     
       
-      <li class="toctree-l3"><a href="#resource-tooltips">Resource tooltips</a></li>
+      <li class="toctree-l3"><a href="#resource-tooltips">Resource Tooltips</a></li>
       
     
       
@@ -389,9 +389,31 @@
 <h2 id="xamarinandroid-quickstart">Xamarin.Android Quickstart</h2>
 <p><em>Learn to use the most handy features in MFractor for Xamarin.Android</em></p>
 <h2 id="introduction">Introduction</h2>
+<p>Welcome to the quickstart guide for using MFractor with Xamarin.Android.</p>
+<p>This document explains the most useful features of MFractor for Xamarin.Android.</p>
 <h2 id="project-resource-indexing">Project Resource Indexing</h2>
-<h2 id="resource-tooltips">Resource tooltips</h2>
+<p>When an Android project is opened, MFractor needs to <em>index</em> the projects resources; this is all files and folders under <code>Resources\</code> including layouts, menus, drawables, strings, colors etc.</p>
+<p>When the indexing operation finishes, you might see a status message in the top toolbar:</p>
+<p><img alt="Android resource sync has finished message" src="../img/android/android-resource-sync-message.png" /></p>
+<p>The indexing will generate a SQL database under a folder named <strong>.droidres</strong>; this database contains relational information about each of the Android projects within the current solution which powers most features in MFractor for Xamarin.Android.</p>
+<p>Each time a resource document is edited, MFractor will re-index that particular file into .droidres database.</p>
+<p>At any time you can force a complete re-index of your solution by selecting <strong>Tools</strong> in the main menu and then <strong>MFractor - Resync Solution Resources</strong>.</p>
+<h2 id="resource-tooltips">Resource Tooltips</h2>
+<p>Hover over a resource expression to view a tooltip that lists all configurations of that resource.</p>
+<p><strong>C# Expression</strong></p>
+<pre><code>Resource.Layout.Toolbar
+</code></pre>
+
+<p><strong>Xml Expression</strong></p>
+<pre><code>@+id/toolbar
+</code></pre>
+
+<p>For example:</p>
+<p><img alt="Android tooltips" src="../img/android/android-tooltips.gif" /></p>
 <h2 id="go-to-resource-declaration">Go-To Resource Declaration</h2>
+<p>When the caret is inside a C# or Xml resource expression, you can press <code>Command+D</code> to jump to the implementation of that resource.</p>
+<p>When a resource has multiple configurations, a selector dialog is displayed where you can select the specific configuration to jump to:</p>
+<p><img alt="Android tooltips" src="../img/android/resource-goto-declaration.gif" /></p>
 <h2 id="resource-intellisense">Resource IntelliSense</h2>
 <h2 id="resource-analysis">Resource Analysis</h2>
 <h2 id="find-all-resource-references">Find All Resource References</h2>
