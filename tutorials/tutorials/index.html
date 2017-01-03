@@ -9,7 +9,7 @@
   <meta name="author" content="Matthew Robbins">
   <link rel="shortcut icon" href="../../img/favicon.ico">
   
-  <title>2.7 - mfractor docs</title>
+  <title>Tutorials - mfractor docs</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="../../css/theme.css" type="text/css" />
@@ -23,9 +23,9 @@
   
   <script>
     // Current page data
-    var mkdocs_page_name = 2.7;
-    var mkdocs_page_input_path = "release-notes/v2-7.md";
-    var mkdocs_page_url = "/release-notes/v2-7/";
+    var mkdocs_page_name = "Tutorials";
+    var mkdocs_page_input_path = "tutorials/tutorials.md";
+    var mkdocs_page_url = "/tutorials/tutorials/";
   </script>
   
   <script src="../../js/jquery-2.1.1.min.js"></script>
@@ -242,8 +242,26 @@
   <li><span>Tutorials</span></li>
   
   
-<li class="toctree-l1 ">
-  <a class="" href="../../tutorials/tutorials/">Tutorials</a>
+<li class="toctree-l1 current">
+  <a class="current" href="./">Tutorials</a>
+  
+  <ul>
+    
+      
+    
+      
+      <li class="toctree-l3"><a href="#introduction">Introduction</a></li>
+      
+    
+      
+      <li class="toctree-l3"><a href="#xamarinforms-tutorials">Xamarin.Forms Tutorials</a></li>
+      
+    
+      
+      <li class="toctree-l3"><a href="#xamarinandroid-tutorials">Xamarin.Android Tutorials:</a></li>
+      
+    
+  </ul>
   
 </li>
 
@@ -254,7 +272,7 @@
   
   
 <li class="toctree-l1 ">
-  <a class="" href="../../tutorials/xamarin-android/resource-expressions-and-code-navigation/">Resource Expressions And Code Navigation</a>
+  <a class="" href="../xamarin-android/resource-expressions-and-code-navigation/">Resource Expressions And Code Navigation</a>
   
 </li>
 
@@ -268,7 +286,7 @@
   
   
 <li class="toctree-l1 ">
-  <a class="" href="../../tutorials/xamarin-forms/mvvm-navigation/">Mvvm Navigation</a>
+  <a class="" href="../xamarin-forms/mvvm-navigation/">Mvvm Navigation</a>
   
 </li>
 
@@ -288,44 +306,22 @@
   <li><span>Version 2</span></li>
   
   
-<li class="toctree-l1 current">
-  <a class="current" href="./">2.7</a>
-  
-  <ul>
-    
-      
-    
-      
-      <li class="toctree-l3"><a href="#introduction">Introduction</a></li>
-      
-    
-      
-      <li class="toctree-l3"><a href="#features">Features</a></li>
-      
-    
-      
-      <li class="toctree-l3"><a href="#enhancements">Enhancements</a></li>
-      
-    
-      
-      <li class="toctree-l3"><a href="#bug-fixes">Bug Fixes</a></li>
-      
-    
-  </ul>
+<li class="toctree-l1 ">
+  <a class="" href="../../release-notes/v2-7/">2.7</a>
   
 </li>
 
   
   
 <li class="toctree-l1 ">
-  <a class="" href="../v2-6/">2.6</a>
+  <a class="" href="../../release-notes/v2-6/">2.6</a>
   
 </li>
 
   
   
 <li class="toctree-l1 ">
-  <a class="" href="../v2-5/">2.5</a>
+  <a class="" href="../../release-notes/v2-5/">2.5</a>
   
 </li>
 
@@ -358,81 +354,31 @@
     
       
         
-          <li>Release Notes &raquo;</li>
-        
-      
-        
-          <li>Version 2 &raquo;</li>
+          <li>Tutorials &raquo;</li>
         
       
     
-    <li>2.7</li>
+    <li>Tutorials</li>
   </ul>
   <hr/>
 </div>
           <div role="main">
             <div class="section">
               
-                <h2 id="release-notes-v270">Release Notes - v2.7.0</h2>
-<p><strong>8th January 2017</strong></p>
-<p><strong><a href="http://addins.mfractor.com/releases/2.07.00/MFractor.MFractor_2.07.00.mpack">Download MFractor 2.7.0</a></strong></p>
-<p><a href="http://www.mfractor.com"><img alt="www.mfractor.com" src="../../img/logo-horizontal.png" /></a></p>
+                <h2 id="tutorials">Tutorials</h2>
+<p><em>Read these tutorials to learn a feature in-depth</em></p>
 <h2 id="introduction">Introduction</h2>
-<p>This is a summary of the changes introduced in v2.7.0 of MFractor for Xamarin Studio.</p>
-<p>You already love being able to generate bindings but I've taken it to the next level this release...</p>
-<p><strong>Introducing View Model generation:</strong></p>
-<p><a href="http://www.mfractor.com"><img alt="www.mfractor.com" src="../../img/releases/v2-7/implement-viewmodel.gif" /></a></p>
-<p>Got a heap of unimplemented bindings? Right click anywhere in your Xaml document and select <strong>Refactor</strong> -&gt; <strong>Implement View Model</strong>.</p>
-<p>MFractor will collect all the missing bindings and then generate a new class with <strong>all</strong> of those properties into the "MyDefaultNamespace.ViewModels".</p>
-<p>Does the view model already exist? Then MFractor simply inserts the new bindings into the existing view model.</p>
-<p>I think it'll save you enough time during the week that you may just get to Friday beers a few hours early 🍻</p>
-<h2 id="features">Features</h2>
+<p>This document lists all the tutorials for MFractor.</p>
+<p>Each of the tutorials is an in-depth exploration of a feature from first concepts to practical use cases.</p>
+<h2 id="xamarinforms-tutorials">Xamarin.Forms Tutorials</h2>
+<p>MFractor for Xamarin.Forms has the following tutorials:</p>
 <ul>
-<li>By right clicking anywhere in a Xaml document, implement all missing bindings as a new or into an existing view model:<ul>
-<li>Implement view model properties with a getter and setter.</li>
+<li><a href="../xamarin-forms/mvvm-navigation/">Mvvm Navigation</a>: Teaches you to use the Mvvm navigation shortcuts.</li>
 </ul>
-</li>
-<li>Implement view model properties with a backing field.</li>
-<li>Bound properties that return <code>ICommand</code> will have an empty <code>Xamarin.Forms.Command</code> instance generated.</li>
-<li><strong>New Xaml Analysers:</strong><ul>
-<li>Validate that elements declared inside a resource dictionary have an x:Key.</li>
-<li>Validate that elements declared inside a resource dictionary have a unique x:Key value.</li>
-<li>Detect when an x:TypeArguments is used on a non-generic type and warn of incorrect usage.</li>
-<li>Detect when a property setter node (<code>&lt;MyClass.MyProperty/&gt;</code>) references a non-existant member on the parent class.</li>
-<li>Detect when a property setter attribute is empty.</li>
-<li>Detect when an undefined static resource is referenced by a <code>StaticResource</code> expression.</li>
-<li>Detect when the value returned by a <code>StaticResource</code> expression causes a type mismatch.</li>
-<li>Detect when an unknown type is being provided to a <code>x:TypeArguments</code> attribute.</li>
-<li>Validate that <code>OnIdiom</code> elements return the correct type for the outer property setter.</li>
-<li>Validate that <code>OnPlatform</code> elements return the correct type for the outer property setter.</li>
-<li>Detect when a developer has misused a property setter inside another xaml element. For example, <code>OnIdiom.Phone</code> doesn't make any sense when wrapped by the outer element <code>OnPlatform</code>.</li>
-</ul>
-</li>
-<li><strong>New Xaml Fixes:</strong><ul>
-<li>Generate missing resource dictionary keys.</li>
-<li>Auto-correct misspelt <code>StaticResource</code> references.</li>
-</ul>
-</li>
-<li><strong>New Simplify Refactorings:</strong><ul>
-<li>Attributes that use a static instance to initialize the property (eg <code>VerticalOptions="LayoutOptions.CentreAndExpand"</code>) can now be simplified to just the instance name (eg <code>VerticalOptions="CentreAndExpand"</code>).</li>
-</ul>
-</li>
-</ul>
-<h2 id="enhancements">Enhancements</h2>
+<h2 id="xamarinandroid-tutorials">Xamarin.Android Tutorials:</h2>
+<p>MFractor for Xamarin.Android has the following tutorials:</p>
 <ul>
-<li>The "About MFractor" dialog now contains a button to copy version and IDE information into the clipboard for bug reports.</li>
-<li>This release introduces the framework for an Xml and Xaml refactoring engine. Over time, I'll be adding Xml and Xaml refactoring operations to make code cleanup a breeze.</li>
-<li>Annotating value converters with a <code>ValueConversion(typeof(InputType), typeof(OutputType))</code> attribute will trigger the conversion information to render into tooltip. See <a href="https://github.com/FormsCommunityToolkit/Converters">FormsCommunityToolkit.Converters</a> for examples.</li>
-</ul>
-<h2 id="bug-fixes">Bug Fixes</h2>
-<ul>
-<li>Sometimes the Xaml document analyser would fail to load and bring down the Xaml editor. This has been fixed.</li>
-<li>Fixed a bug that caused View &lt; - &gt; Code Behind navigation shortcuts to break when an AST parse was in progress. View &lt; - &gt; Code Behind shortcuts should now always be active.</li>
-<li>When property setter nodes are used (<code>&lt;MyClass.MyProperty/&gt;</code>), the class component is now correctly validated.</li>
-<li>When importing a Xaml namespace, the element is inserted on a newline and formatted to align with other attributes.</li>
-<li>When resolving the binding context for nested DataTemplates, sometimes the binding context resolver would fail on generics or IEnumerables</li>
-<li>More resilient Mvvm resolver to drive the 'Go To View Model', 'Go To Xaml View' and 'Go To Code Behind' shortcuts. MFractor will attempt to infer as best possible the associations between those 3 files.</li>
-<li>Save the project after adding a new file to it.</li>
+<li><a href="../xamarin-android/resource-expressions-and-code-navigation/">Resource Expressions And Code Navigation</a>: A deep dive into how MFractor handles resource expressions in both C# and Xml.</li>
 </ul>
               
             </div>
@@ -441,10 +387,10 @@
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="../v2-6/" class="btn btn-neutral float-right" title="2.6">Next <span class="icon icon-circle-arrow-right"></span></a>
+        <a href="../xamarin-android/resource-expressions-and-code-navigation/" class="btn btn-neutral float-right" title="Resource Expressions And Code Navigation">Next <span class="icon icon-circle-arrow-right"></span></a>
       
       
-        <a href="../../tutorials/xamarin-forms/mvvm-navigation/" class="btn btn-neutral" title="Mvvm Navigation"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../../xamarin-android/tools-in-depth/intellisense/" class="btn btn-neutral" title="IntelliSense"><span class="icon icon-circle-arrow-left"></span> Previous</a>
       
     </div>
   
@@ -475,10 +421,10 @@
           <a href="https://github.com/matthewrdev/mfractor-documentation" class="icon icon-github" style="float: left; color: #fcfcfc"> GitHub</a>
       
       
-        <span><a href="../../tutorials/xamarin-forms/mvvm-navigation/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+        <span><a href="../../xamarin-android/tools-in-depth/intellisense/" style="color: #fcfcfc;">&laquo; Previous</a></span>
       
       
-        <span style="margin-left: 15px"><a href="../v2-6/" style="color: #fcfcfc">Next &raquo;</a></span>
+        <span style="margin-left: 15px"><a href="../xamarin-android/resource-expressions-and-code-navigation/" style="color: #fcfcfc">Next &raquo;</a></span>
       
     </span>
 </div>

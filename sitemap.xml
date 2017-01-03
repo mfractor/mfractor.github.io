@@ -120,6 +120,12 @@
     
         
     <url>
+     <loc>/tutorials/tutorials/</loc>
+     <lastmod>2017-01-03</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
      <loc></loc>
      <lastmod></lastmod>
      <changefreq>daily</changefreq>

@@ -47,13 +47,28 @@
         }, 
         {
             "location": "/support/", 
-            "text": "WORK IN PROGRESS\n\n\nSupport\n\n\nIf something doesn't work quite right or you'd like a sweet new feature added, be patient and contact me:\n\n\n\n\nVia Twitter: Give me a holla at \n@matthewrdev\n\n\nVia Slack: Drop in to chat anytime in the \n#mfractor Xamarin Slack sub-channel\n.\n\n\nVia Email: Shot an email to hello@mfractor.com", 
+            "text": "Support\n\n\nGeting help for MFractor when something's amiss or giving feedback\n\n\nProduct Support\n\n\nIf something doesn't work quite right or you'd like a sweet new feature added, be patient and contact me:\n\n\n\n\nVia Twitter: Give me a holla at \n@matthewrdev\n\n\nVia Slack: Drop in to chat anytime in the \n#mfractor Xamarin Slack sub-channel\n.\n\n\nVia Email: Shot an email to \nhello@mfractor.com\n\n\n\n\nLearning To Use MFractor\n\n\nMFractor does a lot so it may take a little while to learn its ins and outs. If you'd like to learn how to best use it, you have a few options:\n\n\n\n\nGet started by reading the \nXamarin.Forms Quickstart\n and \nXamarin.Android Quickstart\n; these are a quick overview of the most used features.\n\n\nRead the in-depth docs for both Xamarin.Forms and Xamarin.Android (se the menu to the left). Each article covers a feature in-depth and fully explains how to use it.\n\n\nRead the \ntutorials\n for and in-depth exploration of a feature from first concepts to practical use cases.\n\n\nDrop into the \n#mfractor Xamarin Slack sub-channel\n and start chatting to me (Matthew Robbins). I'm happy to answer any questions you have\n\n\n\n\nFiling A Bug Report\n\n\nIf you notice a bug while you are using MFractor, please file a bug report by taking the following steps:\n\n\n\n\nPrepare a short 2-3 sentence description of the bug, the steps you took that triggered it and the symptoms of the bug.\n\n\nCopy MFractors version information by opening the \nAbout\n dialog (\nHelp\n -\n \nMFractor\n -\n \nAbout\n) and click \nCopy Build Details Into Clipboard\n.\n\n\nEmail the description and build version to \nhello@mfractor.com\n.", 
             "title": "Support"
         }, 
         {
             "location": "/support/#support", 
-            "text": "If something doesn't work quite right or you'd like a sweet new feature added, be patient and contact me:   Via Twitter: Give me a holla at  @matthewrdev  Via Slack: Drop in to chat anytime in the  #mfractor Xamarin Slack sub-channel .  Via Email: Shot an email to hello@mfractor.com", 
+            "text": "Geting help for MFractor when something's amiss or giving feedback", 
             "title": "Support"
+        }, 
+        {
+            "location": "/support/#product-support", 
+            "text": "If something doesn't work quite right or you'd like a sweet new feature added, be patient and contact me:   Via Twitter: Give me a holla at  @matthewrdev  Via Slack: Drop in to chat anytime in the  #mfractor Xamarin Slack sub-channel .  Via Email: Shot an email to  hello@mfractor.com", 
+            "title": "Product Support"
+        }, 
+        {
+            "location": "/support/#learning-to-use-mfractor", 
+            "text": "MFractor does a lot so it may take a little while to learn its ins and outs. If you'd like to learn how to best use it, you have a few options:   Get started by reading the  Xamarin.Forms Quickstart  and  Xamarin.Android Quickstart ; these are a quick overview of the most used features.  Read the in-depth docs for both Xamarin.Forms and Xamarin.Android (se the menu to the left). Each article covers a feature in-depth and fully explains how to use it.  Read the  tutorials  for and in-depth exploration of a feature from first concepts to practical use cases.  Drop into the  #mfractor Xamarin Slack sub-channel  and start chatting to me (Matthew Robbins). I'm happy to answer any questions you have", 
+            "title": "Learning To Use MFractor"
+        }, 
+        {
+            "location": "/support/#filing-a-bug-report", 
+            "text": "If you notice a bug while you are using MFractor, please file a bug report by taking the following steps:   Prepare a short 2-3 sentence description of the bug, the steps you took that triggered it and the symptoms of the bug.  Copy MFractors version information by opening the  About  dialog ( Help  -   MFractor  -   About ) and click  Copy Build Details Into Clipboard .  Email the description and build version to  hello@mfractor.com .", 
+            "title": "Filing A Bug Report"
         }, 
         {
             "location": "/xamarin-forms-quickstart/", 
@@ -764,6 +779,31 @@
             "location": "/xamarin-android/tools-in-depth/intellisense/", 
             "text": "", 
             "title": "IntelliSense"
+        }, 
+        {
+            "location": "/tutorials/tutorials/", 
+            "text": "Tutorials\n\n\nRead these tutorials to learn a feature in-depth\n\n\nIntroduction\n\n\nThis document lists all the tutorials for MFractor.\n\n\nEach of the tutorials is an in-depth exploration of a feature from first concepts to practical use cases.\n\n\nXamarin.Forms Tutorials\n\n\nMFractor for Xamarin.Forms has the following tutorials:\n\n\n\n\nMvvm Navigation\n: Teaches you to use the Mvvm navigation shortcuts.\n\n\n\n\nXamarin.Android Tutorials:\n\n\nMFractor for Xamarin.Android has the following tutorials:\n\n\n\n\nResource Expressions And Code Navigation\n: A deep dive into how MFractor handles resource expressions in both C# and Xml.", 
+            "title": "Tutorials"
+        }, 
+        {
+            "location": "/tutorials/tutorials/#tutorials", 
+            "text": "Read these tutorials to learn a feature in-depth", 
+            "title": "Tutorials"
+        }, 
+        {
+            "location": "/tutorials/tutorials/#introduction", 
+            "text": "This document lists all the tutorials for MFractor.  Each of the tutorials is an in-depth exploration of a feature from first concepts to practical use cases.", 
+            "title": "Introduction"
+        }, 
+        {
+            "location": "/tutorials/tutorials/#xamarinforms-tutorials", 
+            "text": "MFractor for Xamarin.Forms has the following tutorials:   Mvvm Navigation : Teaches you to use the Mvvm navigation shortcuts.", 
+            "title": "Xamarin.Forms Tutorials"
+        }, 
+        {
+            "location": "/tutorials/tutorials/#xamarinandroid-tutorials", 
+            "text": "MFractor for Xamarin.Android has the following tutorials:   Resource Expressions And Code Navigation : A deep dive into how MFractor handles resource expressions in both C# and Xml.", 
+            "title": "Xamarin.Android Tutorials:"
         }, 
         {
             "location": "/tutorials/xamarin-android/resource-expressions-and-code-navigation/", 
