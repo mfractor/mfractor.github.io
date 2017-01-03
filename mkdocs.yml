@@ -43,10 +43,11 @@ pages:
     - Refactorings: xamarin-android/tools-in-depth/refactorings.md
     - IntelliSense: xamarin-android/tools-in-depth/intellisense.md
 - Tutorials:
-    - Xamarin.Android:
-      - Resource Expressions And Code Navigation: tutorials/xamarin-android/resource-expressions-and-code-navigation.md
-    - Xamarin.Forms:
-      - Mvvm Navigation: tutorials/xamarin-forms/mvvm-navigation.md
+  - Tutorials: tutorials/tutorials.md
+  - Xamarin.Android:
+    - Resource Expressions And Code Navigation: tutorials/xamarin-android/resource-expressions-and-code-navigation.md
+  - Xamarin.Forms:
+    - Mvvm Navigation: tutorials/xamarin-forms/mvvm-navigation.md
 - Release Notes:
   - Version 2:
       - 2.7: release-notes/v2-7.md
