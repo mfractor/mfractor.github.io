@@ -49,7 +49,6 @@ pages:
   - Xamarin.Forms:
     - Mvvm Navigation: tutorials/xamarin-forms/mvvm-navigation.md
 - Release Notes:
-  - Version 2:
-      - 2.7: release-notes/v2-7.md
-      - 2.6: release-notes/v2-6.md
-      - 2.5: release-notes/v2-5.md
+    - 2.7: release-notes/v2-7.md
+    - 2.6: release-notes/v2-6.md
+    - 2.5: release-notes/v2-5.md

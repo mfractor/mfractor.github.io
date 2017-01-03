@@ -3,7 +3,7 @@
 ## About
 This document lists all analysis routines used by MFractors Xamarin.Forms Xaml analyser.
 ## Analysis Routines
-*40 total routines*
+*41 total routines*
 ### Attribute Maps To Member In Parent Type
 Checks that an attribute resolves to a member within its parent type.
 
@@ -59,6 +59,9 @@ Checks that attached properties (for example 'Grid.Row') exist in the class that
 **Available Fixes**
 
  * **Replace with correct attached property name**: Replaces an incorrect attached property with an auto-corrected value.
+
+### Duplicate AutomationIds
+Inspects a Xaml document for duplicate AutomationId's
 
 ### Duplicate Code Behind Field Declarations
 Checks that the value assigned to an x:Name attribute for a Xaml element is unique within the scope of the document.
