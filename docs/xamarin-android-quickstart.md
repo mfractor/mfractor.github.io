@@ -45,7 +45,9 @@ For example:
 ##Go-To Resource Declaration
 When the caret is inside a C# or Xml resource expression, you can press `Command+D` to jump to the implementation of that resource.
 
-When a resource has multiple configurations, a selector dialog is displayed
+When a resource has multiple configurations, a selector dialog is displayed where you can select the specific configuration to jump to:
+
+![Android tooltips](/img/android/resource-goto-declaration.gif)
 
 ##Resource IntelliSense
 
