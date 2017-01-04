@@ -6,8 +6,9 @@
 In Xamarin.Forms developers can data bind
 
 ##The ValueConversion Attribute
-The first step to providing type-safety to 
+The first step to providing type-safety to
 
 ##Converter Type-Safety in Xaml
+When an `IValueConverter` implementation has been annotated with the `ValueConversion` attribute, MFractor will inspect the input and output types of `Converter` expressions.
 
 ##Summary

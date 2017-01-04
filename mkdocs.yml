@@ -48,6 +48,8 @@ pages:
     - Resource Expressions And Code Navigation: tutorials/xamarin-android/resource-expressions-and-code-navigation.md
   - Xamarin.Forms:
     - Mvvm Navigation: tutorials/xamarin-forms/mvvm-navigation.md
+    - Implementing View Models: tutorials/xamarin-forms/implementing-view-models.md
+    - Value Converter Type Safety: tutorials/xamarin-forms/value-converter-type-safety.md
 - Release Notes:
     - 2.7: release-notes/v2-7.md
     - 2.6: release-notes/v2-6.md

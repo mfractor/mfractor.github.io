@@ -1,4 +1,4 @@
-#Resource Expressions And Code Navigation
+##Resource Expressions And Code Navigation
 
 *Learn the C# and xml expressions that activate tooltips and go-to declaration in MFractor for Android*
 
@@ -17,9 +17,6 @@ These expressions come in 2 flavours:
  * XML: Code expressions within Android xml resources that point to another resource. For instance; @layout/myLayout.
 
 When MFractor detects the cursor is within one of these expressions, resource tooltips and go-to-declaration become active. This enables fast and efficient code navigation.
-
-It looks a little like this when in action:
-
 
 That is much faster than manual searching! Now lets go over each of these expression types.
 
