@@ -372,8 +372,8 @@
 <p><strong>Introducing View Model generation:</strong></p>
 <p><a href="http://www.mfractor.com"><img alt="www.mfractor.com" src="../../img/releases/v2-7/implement-viewmodel.gif" /></a></p>
 <p>Got a heap of unimplemented bindings? Right click anywhere in your Xaml document and select <strong>Refactor</strong> -&gt; <strong>Implement View Model</strong>.</p>
-<p>MFractor will collect all the missing bindings and then generate a new class with <strong>all</strong> of those properties into the "MyDefaultNamespace.ViewModels".</p>
-<p>Does the view model already exist? Then MFractor simply inserts the new bindings into the existing view model.</p>
+<p>MFractor will collect all the missing bindings and then generate a new class with <strong>all</strong> of those properties into a namespace named <code>MyDefaultNamespace.ViewModels</code>.</p>
+<p>Does the view model already exist? Then MFractor simply inserts the missing bindings into the existing view model.</p>
 <p>I think it'll save you enough time during the week that you may just get to Friday beers a few hours early 🍻</p>
 <h2 id="features">Features</h2>
 <ul>
@@ -412,14 +412,14 @@
 </ul>
 <h2 id="enhancements">Enhancements</h2>
 <ul>
-<li>The "About MFractor" dialog now contains a button to copy version and IDE information into the clipboard for bug reports.</li>
+<li>The <strong>About MFractor</strong> dialog now contains a button to copy version and IDE information into the clipboard for bug reports.</li>
 <li>This release introduces the framework for an Xml and Xaml refactoring engine. Over time, I'll be adding Xml and Xaml refactoring operations to make code cleanup a breeze.</li>
 <li>Annotating value converters with a <code>ValueConversion(typeof(InputType), typeof(OutputType))</code> attribute will trigger the conversion information to render into tooltip. See <a href="https://github.com/FormsCommunityToolkit/Converters">FormsCommunityToolkit.Converters</a> for examples.</li>
 </ul>
 <h2 id="bug-fixes">Bug Fixes</h2>
 <ul>
 <li>Sometimes the Xaml document analyser would fail to load and bring down the Xaml editor. This has been fixed.</li>
-<li>Fixed a bug that caused View &lt; - &gt; Code Behind navigation shortcuts to break when an AST parse was in progress. View &lt; - &gt; Code Behind shortcuts should now always be active.</li>
+<li>The View &lt; - &gt; Code Behind navigation shortcuts would break when an AST parse was in progress. View &lt; - &gt; Code Behind shortcuts should now always be active.</li>
 <li>When property setter nodes are used (<code>&lt;MyClass.MyProperty/&gt;</code>), the class component is now correctly validated.</li>
 <li>When importing a Xaml namespace, the element is inserted on a newline and formatted to align with other attributes.</li>
 <li>When resolving the binding context for nested DataTemplates, sometimes the binding context resolver would fail on generics or IEnumerables</li>
