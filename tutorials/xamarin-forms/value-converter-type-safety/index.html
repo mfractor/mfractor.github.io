@@ -478,7 +478,7 @@ public class BoolToTextColorConverter : IValueConverter
 
 <p>When analysing the <code>Binding</code> expression, MFractor will inspect for <code>Converter</code> expressions and then evaluate the inner converter for it's expected input and output type.</p>
 <p>As we have provided a <code>string</code> but <code>BoolToTextColorConverter</code> expects a <code>bool</code>, MFractor will mark this as an error within the Xaml editor:</p>
-<p><img alt="Value conversion warning" src="../../../img/tutorials/value-converter-type-safety/value-conversion-warning.png" /></p>
+<p><img alt="Value conversion warning" src="../../../img/tutorials/value-converter-type-safety/value-conversion-warning.gif" /></p>
 <p>Voila! We now have type-safety in our Xaml when using value converters! ✨✨</p>
 <p>Annotated value converters also allow the refactoring engine to correctly generate properties.</p>
 <p>For example, if the our binding context is missing the <code>Email</code> property, MFractor will extract the input type from the value converter and use that to generate the binding property:</p>
