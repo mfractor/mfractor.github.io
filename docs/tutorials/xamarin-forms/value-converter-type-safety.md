@@ -123,7 +123,7 @@ When analysing the `Binding` expression, MFractor will inspect for `Converter` e
 
 As we have provided a `string` but `BoolToTextColorConverter` expects a `bool`, MFractor will mark this as an error within the Xaml editor:
 
-![Value conversion warning](/img/tutorials/value-converter-type-safety/value-conversion-warning.gif)
+![Value conversion warning](/img/tutorials/value-converter-type-safety/value-conversion-warning.png)
 
 Voila! We now have type-safety in our Xaml when using value converters! ✨✨
 
@@ -132,7 +132,7 @@ Annotated value converters also allow the refactoring engine to correctly genera
 For example, if the our binding context is missing the `Email` property, MFractor will extract the input type from the value converter and use that to generate the binding property:
 
 
-![Value conversion warning](/img/tutorials/value-converter-type-safety/generate-binding.png)
+![Generating a binding with a value converter](/img/tutorials/value-converter-type-safety/generate-binding.gif)
 
 Instead of using the type of the `TextColor` property, MFractor could see that `BoolToTextColorConverter` expected a `bool` value and then generated the `Email` property with a `bool`.
 
