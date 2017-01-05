@@ -4,12 +4,20 @@
 
 ##Introduction
 
+An
+
 ##Binding Contexts in Xamarin.Forms
+
+Quick overview of binding contexts in Xamarin.Forms
 
 ##Binding Expression Analysis
 
-##Using Issue Fixing on Missing Bindings
+Binding expression analysis, how it works etc
 
-##Using The Implement ViewModel Refactoring
+##Issue Fixing on Missing Bindings
+
+How to generate properties from a missing binding.
+
+##The Implement ViewModel Refactoring
 
 ##Summary

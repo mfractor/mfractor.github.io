@@ -6,9 +6,10 @@ Welcome to the documentation for MFractor, incredible Xamarin tools.
 
 MFractor adds several features so you can make great Xamarin.Forms apps faster:
 
- * A xaml analyser turns runtime crashes into in-editor code warnings.
- * A code generation engine auto-magically creates boilerplate code in a few clicks instead of a few hundred keystrokes.
- * Several navigation improvements remove the friction of navigating your apps source code.
+ * Spend less time debugging with a comprehensive xaml analyser.
+ * Write great code faster with Xaml refactoring and code generation.
+ * Quickly explore Xamarin.Forms projects with rich xaml navigation.
+ * ... And much, much more!
 
 Slowly, I am building the ReSharper for Xamarin Studio and I'm thrilled that you have joined me on the journey.
 
