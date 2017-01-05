@@ -1,21 +1,16 @@
 
-#Configuring A Binding Context
+##Configuring A Binding Context
 
 *Power the refactoring engine and xaml analyser by targeting a binding context*
 
 ##Introduction
 In Mvvm architected applications, views use a **Binding Context** to display and transfer data between the application logic layer and the view layer with minimal dependencies. This is accomplished through **data binding**; properties on a view are bound to properties on a backing object through binding mechanisms allowing two-way data transfer between the UI and application logic. For a full tutorial on Mvvm architecture, please Microsofts [**The Mvvm Pattern**](https://msdn.microsoft.com/en-us/library/hh848246.aspx) article.
 
-When working with Xaml, we can specify a binding context to activate . If MFractor can resolve a binding context for a Xaml view, it will consume binding expressions and analyse them.
+When working with Xaml, we can specify a binding context to activate binding expression analysis and a variety of BindingContext specific refactorings.
 
-
-This is tremendously beneficial as MFractor will pickup runtime errors and high-light them directly within the Xaml editor.
-
-We can specify a binding context *explicitly* via in inline Xaml expression or *implicitly* through the use of common MVVM naming conventions.
+We can specify a binding context [*explicitly*](#explicit-binding-context-resolution) via in inline Xaml expression or [*implicitly*](#implicit-binding-context-resolution) through the use of common MVVM naming conventions.
 
 ##Explicit Binding Context Resolution
-Let's start with explicitly providing a binding context to MFractor.
-
 In Xamarin.Forms, all views have the property `BindingContext`; this specifies the object that a view should data-bind with. When coding with Xaml, we can use the `x:Static` markup extension to reference a static C# property and explicitly provide an instance of a C# class as the binding context:
 
 ```
@@ -24,9 +19,9 @@ In Xamarin.Forms, all views have the property `BindingContext`; this specifies t
 
 This is known as the *View Model Locator Pattern*. We implement a static class named `ViewModelLocator` and use a static, readonly property to return an instance of the object we want our Xaml view to data-bind with. Historically the *View Model Locator Pattern* has been used to provide design time data to the Xamarin.Forms Xaml previewer. For a deeper insight into this pattern, read James Montemagnos excellent [View Model Locator](http://motzcod.es/post/143702671962/xamarinforms-xaml-previewer-design-time-data) article.
 
-For example, given a Xaml page named `LoginPage`, we could explicitly provide an instance of `LoginViewModel` as the binding context like so:
+For example, given a Xaml page named `LoginPage`, we can explicitly provide an instance of `LoginViewModel` as the binding context like so:
 
-**View Model Locator**
+**ViewModelLocator.cs**
 ```cs
 public namespace MyApp
 {
