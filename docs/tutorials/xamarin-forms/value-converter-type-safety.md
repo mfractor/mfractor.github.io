@@ -1,4 +1,4 @@
-##Value Conversion Type Safety
+##Value Converter Type Safety
 
 *Annotating IValueConverter implementations with a ValueConversion attribute to provide type-safety in Xaml*
 
