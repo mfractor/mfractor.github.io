@@ -1,6 +1,6 @@
 ##Value Converter Type Safety
 
-*Annotating IValueConverter implementations with a ValueConversion attribute to provide type-safety in Xaml*
+*Provide Xaml type-safety by annotating IValueConverter's with the ValueConversion attribute*
 
 ##Introduction
 In Xamarin.Forms developers data bind properties in a control to properties on a binding context using the `Binding` markup extension.
