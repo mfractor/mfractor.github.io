@@ -402,11 +402,12 @@
 </code></pre>
 
 <p>And when used in our xaml:</p>
+<p><strong>LoginPage.xaml</strong></p>
 <pre><code>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;ContentPage
         xmlns=&quot;http://xamarin.com/schemas/2014/forms&quot;
         xmlns:x=&quot;http://schemas.microsoft.com/winfx/2009/xaml&quot;
-        x:Class=&quot;MyApp.MyPage&quot;
+        x:Class=&quot;MyApp.LoginPage&quot;
         xmlns:converters=&quot;clr-namespace:MyApp.Converters;assembly=MyApp&quot;&gt;
     &lt;ContentPage.Resources&gt;
         &lt;ResourceDictionary&gt;
@@ -417,7 +418,13 @@
 &lt;/ContentPage&gt;
 </code></pre>
 
-<p>This can be accomplished</p>
+<p>Now when the user enters an invalid email, the value converter will translate the <code>IsEmailValid</code> boolean property in a <code>Xamarin.Forms.Color</code>!</p>
+<p>But what if we accidentally provided a <code>string</code> to the <code>BoolToTextColorConverter</code>:</p>
+<pre><code>&lt;Entry TextColor=&quot;{Binding Email, Converter={StaticResource boolToTextColorConverter}}&quot;/&gt;
+</code></pre>
+
+<p>This creates a runtime bug we won't discover until we build, deploy and navigate to the <code>LoginPage</code>; we'll see a type cast exception without a clear indication of the problem.</p>
+<p>We can completely avoid this problem by declaring a value converters intent with an <code>ValueConversionAttribute</code> to hint to MFractor's Xaml analyser it's expected behaviour.</p>
 <h2 id="the-valueconversion-attribute">The ValueConversion Attribute</h2>
 <p>In WPF, Microsoft provides the <a href="https://msdn.microsoft.com/en-us/library/system.windows.data.valueconversionattribute(v=vs.110).aspx"><code>ValueConversionAttribute</code></a> that developers can use to describe the input, output and parameter type that an <code>IValueConverter</code> expects. This class level annotation declares the intent of a value converter to tools and to other developers using a converter.</p>
 <p>Unfortunately this attribute is in the <code>PresentationFramework</code> assembly, which we can't reference in a Xamarin.Forms PCL or shared project.</p>
@@ -440,7 +447,6 @@ public class ValueConversionAttribute : Attribute
 <li><code>Type output</code> is the expected <strong>output</strong> type for the value converter. This is the return type for the <code>Convert</code> method and the argument <code>object value</code> for the <code>ConvertBack</code> method.</li>
 <li>The property <code>Type ParameterType</code> is the expected <strong>paramter</strong> type for the value converter. This is the argument <code>object parameter</code> for the <code>Convert</code> and <code>ConvertBack</code> methods.</li>
 </ul>
-<p>To include the <code>ValueConversionAttribute</code> we can simply copy-paste the code into our code base. Alternatively, add a third party library like <a href="https://github.com/FormsCommunityToolkit/Converters">FormsCommunityToolkit.Converters</a> that has the <code>ValueConversionAttribute</code> defined.</p>
 <p>To use the <code>ValueConversionAttribute</code> in our source code, we annotate a value converter at the class level and use the <code>typeof</code> operator to provide input, output and parameter types:</p>
 <pre><code>[ValueConversion(typeof(bool), typeof(Xamarin.Forms.Color))]
 public class BoolToTextColorConverter : IValueConverter
@@ -457,11 +463,34 @@ public class BoolToTextColorConverter : IValueConverter
 }
 </code></pre>
 
-<p>The <code>BoolToTextColorConverter</code> now declares it's intent when converting values to both tooling and other developers.</p>
+<p>The <code>BoolToTextColorConverter</code> now declares it's intent when converting values to both tooling and other developers; it <strong>must</strong> have a <code>bool</code> as an input and it <strong>must</strong> return into a <code>Xamarin.Forms.Color</code> type.</p>
+<p>To include the <code>ValueConversionAttribute</code> we can simply copy-paste the code into our code base. Alternatively, add a third party library like <a href="https://github.com/FormsCommunityToolkit/Converters">FormsCommunityToolkit.Converters</a> that has the <code>ValueConversionAttribute</code> defined.</p>
 <h2 id="converter-type-safety-in-xaml">Converter Type-Safety in Xaml</h2>
-<p>When an <code>IValueConverter</code> implementation is annotated with the <code>ValueConversion</code> attribute, we declare to MFractor that our value converter wishes to enforce <strong>type safety</strong>.</p>
-<p>When an <code>IValueConverter</code> implementation has been annotated with the <code>ValueConversion</code> attribute, MFractor will inspect the input and output types of <code>Converter</code> expressions.</p>
+<p>When an <code>IValueConverter</code> is annotated with the <code>ValueConversion</code> attribute, we declare to MFractor that our value converter wishes to enforce <strong>type safety</strong>.</p>
+<p>This has a few benefits:</p>
+<ul>
+<li>MFractor can now verify the types passed into and returned by a <code>Converter</code> expression are correct in the given context.</li>
+<li>When MFractor is generating a property from a binding expression, it can now extract the type information for a converter and generate that property with the correct type information.</li>
+</ul>
+<p>Let's consider our previous example of a provided a string as the input to the <code>BoolToTextColorConverter</code>:</p>
+<pre><code>&lt;Entry TextColor=&quot;{Binding Email, Converter={StaticResource boolToTextColorConverter}}&quot;/&gt;
+</code></pre>
+
+<p>When analysing the <code>Binding</code> expression, MFractor will inspect for <code>Converter</code> expressions and then evaluate the inner converter for it's expected input and output type.</p>
+<p>As we have provided a <code>string</code> but <code>BoolToTextColorConverter</code> expects a <code>bool</code>, MFractor will mark this as an error within the Xaml editor:</p>
+<p><img alt="Value conversion warning" src="../../../img/tutorials/value-converter-type-safety/value-conversion-warning.png" /></p>
+<p>Voila! We now have type-safety in our Xaml when using value converters! ✨✨</p>
+<p>Annotated value converters also allow the refactoring engine to correctly generate properties.</p>
+<p>For example, if the our binding context is missing the <code>Email</code> property, MFractor will extract the input type from the value converter and use that to generate the binding property:</p>
+<p><img alt="Value conversion warning" src="../../../img/tutorials/value-converter-type-safety/generate-binding.png" /></p>
+<p>Instead of using the type of the <code>TextColor</code> property, MFractor could see that <code>BoolToTextColorConverter</code> expected a <code>bool</code> value and then generated the <code>Email</code> property with a <code>bool</code>.</p>
 <h2 id="summary">Summary</h2>
+<p>In this tutorial we learnt:</p>
+<ul>
+<li>We can annotate implementations of <code>IValueConverter</code> with a <code>ValueConversionAttribute</code> to declare it's value conversion intent.</li>
+<li>Annotated value converters enable MFractor's Xaml analyser to provide type-safety in the Xaml editor.</li>
+<li>Annotated value converters enable MFractor's refactoring engine to generate properties with the correct type information.</li>
+</ul>
               
             </div>
           </div>
