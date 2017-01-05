@@ -123,7 +123,7 @@ When analysing the `Binding` expression, MFractor will inspect for `Converter` e
 
 As we have provided a `string` but `BoolToTextColorConverter` expects a `bool`, MFractor will mark this as an error within the Xaml editor:
 
-![Value conversion warning](/img/tutorials/value-converter-type-safety/value-conversion-warning.png)
+![Value conversion warning](/img/tutorials/value-converter-type-safety/value-conversion-warning.gif)
 
 Voila! We now have type-safety in our Xaml when using value converters! ✨✨
 
