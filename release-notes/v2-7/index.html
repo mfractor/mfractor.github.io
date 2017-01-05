@@ -273,6 +273,20 @@
 </li>
 
   
+  
+<li class="toctree-l1 ">
+  <a class="" href="../../tutorials/xamarin-forms/implementing-view-models/">Implementing View Models</a>
+  
+</li>
+
+  
+  
+<li class="toctree-l1 ">
+  <a class="" href="../../tutorials/xamarin-forms/value-converter-type-safety/">Value Converter Type Safety</a>
+  
+</li>
+
+  
 </ul>
 
   
@@ -293,6 +307,10 @@
     
       
       <li class="toctree-l3"><a href="#introduction">Introduction</a></li>
+      
+    
+      
+      <li class="toctree-l3"><a href="#introducing-view-model-generation">Introducing View Model Generation</a></li>
       
     
       
@@ -365,11 +383,16 @@
                 <h2 id="release-notes-v270">Release Notes - v2.7.0</h2>
 <p><strong>8th January 2017</strong></p>
 <p><strong><a href="http://addins.mfractor.com/releases/2.07.00/MFractor.MFractor_2.07.00.mpack">Download MFractor 2.7.0</a></strong></p>
-<p><a href="http://www.mfractor.com"><img alt="www.mfractor.com" src="../../img/logo-horizontal.png" /></a></p>
 <h2 id="introduction">Introduction</h2>
 <p>This is a summary of the changes introduced in v2.7.0 of MFractor for Xamarin Studio.</p>
-<p>You already love being able to generate bindings but I've taken it to the next level this release...</p>
-<p><strong>Introducing View Model generation:</strong></p>
+<p>This release adds the ability implement entire view models, introduces a dozen xaml analysers and fixes many bugs.</p>
+<p>I recommend taking a moment to read these tutorials:</p>
+<ul>
+<li><a href="../../tutorials/xamarin-forms/implementing-view-models/">Implementing View Models</a>: Learn implement entire view models using the <strong>Implement View Model</strong> refactoring.</li>
+<li><a href="../../tutorials/xamarin-forms/value-converter-type-safety/">Value Converter Type Safety</a>: Learn to annotate <code>IValueConverter</code>s with value conversion attributes for <code>Converter</code> expression type-safety.</li>
+</ul>
+<h2 id="introducing-view-model-generation">Introducing View Model Generation</h2>
+<p>You already love being able to generate bindings but I've taken it to the next level this release 💪</p>
 <p><a href="http://www.mfractor.com"><img alt="www.mfractor.com" src="../../img/releases/v2-7/implement-viewmodel.gif" /></a></p>
 <p>Got a heap of unimplemented bindings? Right click anywhere in your Xaml document and select <strong>Refactor</strong> -&gt; <strong>Implement View Model</strong>.</p>
 <p>MFractor will collect all the missing bindings and then generate a new class with <strong>all</strong> of those properties into a namespace named <code>MyDefaultNamespace.ViewModels</code>.</p>
@@ -381,6 +404,8 @@
 <li>Implement view model properties with a getter and setter.</li>
 <li>Implement view model properties with a backing field.</li>
 <li>Bound properties that return <code>ICommand</code> will have an empty <code>Xamarin.Forms.Command</code> instance generated.</li>
+<li>When MFractor encounters binding expressions that use a <code>Converter</code>, it inspects the converter for a <code>ValueConversion</code> attribute to deduce the input typed required. If it can't resolve the converter or the converter does not have value conversion information, it will default to using <code>System.Object</code>.</li>
+<li>When implementing a new view model with getter and setters, MFractor will inspect for references to Fody's <code>ImplementPropertyChanged</code> and annotate the new class with it.</li>
 </ul>
 </li>
 <li><strong>New Xaml Analysers:</strong><ul>
@@ -419,7 +444,7 @@
 <h2 id="bug-fixes">Bug Fixes</h2>
 <ul>
 <li>Sometimes the Xaml document analyser would fail to load and bring down the Xaml editor. This has been fixed.</li>
-<li>The View &lt; - &gt; Code Behind navigation shortcuts would break when an AST parse was in progress. View &lt; - &gt; Code Behind shortcuts should now always be active.</li>
+<li>The View &lt; - &gt; Code Behind navigation shortcuts would break when an AST parse was in progress. View &lt; - &gt; Code Behind shortcuts will now always be active.</li>
 <li>When property setter nodes are used (<code>&lt;MyClass.MyProperty/&gt;</code>), the class component is now correctly validated.</li>
 <li>When importing a Xaml namespace, the element is inserted on a newline and formatted to align with other attributes.</li>
 <li>When resolving the binding context for nested DataTemplates, sometimes the binding context resolver would fail on generics or IEnumerables</li>
@@ -436,7 +461,7 @@
         <a href="../v2-6/" class="btn btn-neutral float-right" title="2.6">Next <span class="icon icon-circle-arrow-right"></span></a>
       
       
-        <a href="../../tutorials/xamarin-forms/mvvm-navigation/" class="btn btn-neutral" title="Mvvm Navigation"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../../tutorials/xamarin-forms/value-converter-type-safety/" class="btn btn-neutral" title="Value Converter Type Safety"><span class="icon icon-circle-arrow-left"></span> Previous</a>
       
     </div>
   
@@ -467,7 +492,7 @@
           <a href="https://github.com/matthewrdev/mfractor-documentation" class="icon icon-github" style="float: left; color: #fcfcfc"> GitHub</a>
       
       
-        <span><a href="../../tutorials/xamarin-forms/mvvm-navigation/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+        <span><a href="../../tutorials/xamarin-forms/value-converter-type-safety/" style="color: #fcfcfc;">&laquo; Previous</a></span>
       
       
         <span style="margin-left: 15px"><a href="../v2-6/" style="color: #fcfcfc">Next &raquo;</a></span>

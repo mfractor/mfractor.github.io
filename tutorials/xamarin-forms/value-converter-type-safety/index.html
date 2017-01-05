@@ -9,7 +9,7 @@
   <meta name="author" content="Matthew Robbins">
   <link rel="shortcut icon" href="../../../img/favicon.ico">
   
-  <title>Mvvm Navigation - mfractor docs</title>
+  <title>Value Converter Type Safety - mfractor docs</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="../../../css/theme.css" type="text/css" />
@@ -23,9 +23,9 @@
   
   <script>
     // Current page data
-    var mkdocs_page_name = "Mvvm Navigation";
-    var mkdocs_page_input_path = "tutorials/xamarin-forms/mvvm-navigation.md";
-    var mkdocs_page_url = "/tutorials/xamarin-forms/mvvm-navigation/";
+    var mkdocs_page_name = "Value Converter Type Safety";
+    var mkdocs_page_input_path = "tutorials/xamarin-forms/value-converter-type-safety.md";
+    var mkdocs_page_url = "/tutorials/xamarin-forms/value-converter-type-safety/";
   </script>
   
   <script src="../../../js/jquery-2.1.1.min.js"></script>
@@ -267,30 +267,8 @@
   <li><span>Xamarin.Forms</span></li>
   
   
-<li class="toctree-l1 current">
-  <a class="current" href="./">Mvvm Navigation</a>
-  
-  <ul>
-    
-      
-    
-      
-      <li class="toctree-l3"><a href="#overview">Overview</a></li>
-      
-    
-      
-      <li class="toctree-l3"><a href="#views-code-behind-classes-and-viewmodels">Views, Code Behind classes and ViewModels</a></li>
-      
-    
-      
-      <li class="toctree-l3"><a href="#fluid-mvvm-navigation">Fluid Mvvm Navigation</a></li>
-      
-    
-      
-      <li class="toctree-l3"><a href="#summary">Summary</a></li>
-      
-    
-  </ul>
+<li class="toctree-l1 ">
+  <a class="" href="../mvvm-navigation/">Mvvm Navigation</a>
   
 </li>
 
@@ -303,8 +281,30 @@
 
   
   
-<li class="toctree-l1 ">
-  <a class="" href="../value-converter-type-safety/">Value Converter Type Safety</a>
+<li class="toctree-l1 current">
+  <a class="current" href="./">Value Converter Type Safety</a>
+  
+  <ul>
+    
+      
+    
+      
+      <li class="toctree-l3"><a href="#introduction">Introduction</a></li>
+      
+    
+      
+      <li class="toctree-l3"><a href="#the-valueconversion-attribute">The ValueConversion Attribute</a></li>
+      
+    
+      
+      <li class="toctree-l3"><a href="#converter-type-safety-in-xaml">Converter Type-Safety in Xaml</a></li>
+      
+    
+      
+      <li class="toctree-l3"><a href="#summary">Summary</a></li>
+      
+    
+  </ul>
   
 </li>
 
@@ -373,87 +373,95 @@
         
       
     
-    <li>Mvvm Navigation</li>
+    <li>Value Converter Type Safety</li>
   </ul>
   <hr/>
 </div>
           <div role="main">
             <div class="section">
               
-                <h2 id="mvvm-navigation">Mvvm Navigation</h2>
-<p><em>Quickly move between Xamarin.Forms Views, View Models and Code behind classes using Mvvm navigation shortcuts</em></p>
-<h2 id="overview">Overview</h2>
-<p>Xamarin.Forms is cross platform toolkit that allows developers to build iOS, Android and Windows apps and maximise code reuse across platforms. Xamarin.Forms also facilitates shared UI code through the use of an xml based view markup langauge named Xaml.</p>
-<p>Developers build their UI views in Xaml and Xamarin.Forms then inflate the view into it’s native implementation.</p>
-<p>Alongside shared UI code, Xamarin.Forms uses the Model – View – View Model (Mvvm) design pattern to seperate a UI definition it’s from state/behaviour code.</p>
-<p>The Mvvm design pattern is a great for maintainabilty and code clarity however developers can spend a lot of time manually nagivating between Xaml views and an associated view model.</p>
-<p>MFractor adds several navigation shortcuts to speed up developers.</p>
-<p>Getting Started
-In this article we will use MFractor to navigate between a Xaml UI definition, it’s code behind class and its associated view model.</p>
-<p>We assume the following:</p>
-<ul>
-<li>A Xamarin Studio 6.0 installation.</li>
-<li>MFractor 2 installed into Xamarin Studio. Install it here: www.mfractor.com/download</li>
-<li>A familarity with the Xamarin.Forms; particularly building UIs with Xaml and the Model – View – View Model design pattern.</li>
-<li>The MFractor For Xamarin.Forms sample project downloaded and open in Xamarin Studio.</li>
-</ul>
-<h2 id="views-code-behind-classes-and-viewmodels">Views, Code Behind classes and ViewModels</h2>
-<p>Let’s start by examining the MFractor For Xamarin.Forms sample project. Open it up in Xamarin Studio and take a look at the project structure:</p>
-<p>MFractor For Xamarin.Forms Project</p>
-<p>The project itself is trivial; it has a single xaml page with a code behind class and 2 view view models; WelcomeViewModel and GoodbyeViewModel. Notice that this project appends Xaml views with with “Page” and view models with “ViewModel”.</p>
-<p>Before we get started learning how to use the Mvvm navigation shortcuts, let’s understand the conventions that MFractor uses to drive the navigation.</p>
-<h3 id="the-pageview-and-viewmodel-naming-convention">The “Page/View" and "ViewModel" naming convention</h3>
-<p>In Xamarin.Forms, the de-facto naming convention is to append views with Page or View and view models are appended with ViewModel.</p>
-<p>This naming standard implies that the WelcomePage and the WelcomeViewModel are associated; if we stripped off Page and ViewModel from the file names then both would be named Welcome. This implicit relationship makes the codebase easier to understand by conforming to industry standards.</p>
-<p>MFractor notices this implicit relationship; if a view and a view model within the same assembly are named like this, a MFractor activates shortcuts between the view, it’s code behind and the associated view model.</p>
-<p>If developers don’t want this implicit relationship or their Views/View Models are in seperate assemblies, they may explicitly specify the binding context in the view’s Xaml using the View Model Locator pattern.</p>
-<h3 id="the-viewmodellocator-pattern">The ViewModelLocator Pattern</h3>
-<p>The ViewModelLocator pattern is a static class used to specify the BindingContext of a Xaml view for design time previewing. James Montemagno re-introduced this concept in his blog post for the Xaml Previewer.</p>
-<p>Developers implement a static class named ViewModelLocator that exposes a static instance of their view models:</p>
-<pre><code>public static class ViewModelLocator
+                <h2 id="value-conversion-type-safety">Value Conversion Type Safety</h2>
+<p><em>Annotating IValueConverter implementations with a ValueConversion attribute to provide type-safety in Xaml</em></p>
+<h2 id="introduction">Introduction</h2>
+<p>In Xamarin.Forms developers data bind properties in a control to properties on a binding context using the <code>Binding</code> markup extension.</p>
+<p>Typically the type on the control's property will match the type on the binding context property but there are often cases we want to transform one property to another. For example, a screen may have a email entry that changes color depending if the user has entered a valid email.</p>
+<p>We can expose a boolean <code>IsEmailValid</code> on our binding context, bind the <code>TextColor</code> field of the entry to the <code>IsEmailValid</code> property and use an <code>IValueConverter</code> that converts a <code>True</code> value to black and a <code>False</code> value to red.</p>
+<p>Our converter would look like this:</p>
+<pre><code>public class BoolToTextColorConverter : IValueConverter
 {
-    static MyViewModel _myViewModel;
-    public static MyViewModel MyViewModel =&gt; _myViewModel ?? (_myViewModel = new MyViewModel());
+    public object Convert(object value, Type targetType, object parameter, CultureInfo culture)
+    {
+        return (bool)value ? Color.Black : Color.Red;
+    }
+
+    public object ConvertBack(object value, Type targetType, object parameter, CultureInfo culture)
+    {
+        throw new NotImplementedException();
+    }
 }
 </code></pre>
 
-<p>This static instance is then bound to the Xaml’s binding context via an x:Static expression:</p>
-<pre><code>    xmlns:design=&quot;clr-namespace:MyAppNamespace;assembly=MyApp&quot;
-    BindingContext=&quot;{x:Static design:ViewModelLocator.MyViewModel}&quot;
+<p>And when used in our xaml:</p>
+<pre><code>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;ContentPage
+        xmlns=&quot;http://xamarin.com/schemas/2014/forms&quot;
+        xmlns:x=&quot;http://schemas.microsoft.com/winfx/2009/xaml&quot;
+        x:Class=&quot;MyApp.MyPage&quot;
+        xmlns:converters=&quot;clr-namespace:MyApp.Converters;assembly=MyApp&quot;&gt;
+    &lt;ContentPage.Resources&gt;
+        &lt;ResourceDictionary&gt;
+            &lt;converters:BoolToTextColorConverter x:Key=&quot;boolToTextColorConverter&quot; /&gt;
+        &lt;/ResourceDictionary&gt;
+    &lt;/ContentPage.Resources&gt;
+    &lt;Entry TextColor=&quot;{Binding IsEmailValid, Converter={StaticResource boolToTextColorConverter}}&quot;/&gt;
+&lt;/ContentPage&gt;
 </code></pre>
 
-<p>When the BindingContext for a view is explicitly defined, MFractor will honor this relationship and route all Mvvm navigation to the view model class declaration defined by the ViewModelLocator.</p>
-<p>For the sample project, we could retarget the WecomePage to link with the GoodbyeViewModel by exposing a static instance through the ViewModelLocator and referencing it using the BindingContext:</p>
-<p><strong>C#</strong></p>
-<pre><code>public static class ViewModelLocator
+<p>This can be accomplished</p>
+<h2 id="the-valueconversion-attribute">The ValueConversion Attribute</h2>
+<p>In WPF, Microsoft provides the <a href="https://msdn.microsoft.com/en-us/library/system.windows.data.valueconversionattribute(v=vs.110).aspx"><code>ValueConversionAttribute</code></a> that developers can use to describe the input, output and parameter type that an <code>IValueConverter</code> expects. This class level annotation declares the intent of a value converter to tools and to other developers using a converter.</p>
+<p>Unfortunately this attribute is in the <code>PresentationFramework</code> assembly, which we can't reference in a Xamarin.Forms PCL or shared project.</p>
+<p>As the <code>ValueConversionAttribute</code> is simple in implementation, we can easily make our own:</p>
+<pre><code>[AttributeUsage(AttributeTargets.Class, AllowMultiple = true)]
+public class ValueConversionAttribute : Attribute
 {
-    static GoodbyeViewModel _goodebye;
-    public static GoodbyeViewModel GoodbyeViewModel =&gt; _goodebye ?? (_goodebye = new GoodbyeViewModel());
+  public ValueConversionAttribute(Type input, Type output)
+  {
+  }
+
+  public Type ParameterType { get; set; }
 }
 </code></pre>
 
-<p><strong>Xaml</strong></p>
-<pre><code>    xmlns:design=&quot;clr-namespace:MFractorForForms;assembly=MFractorForForms&quot;
-    BindingContext=&quot;{x:Static design:ViewModelLocator.GoodbyeViewModel}&quot;
+<p>Let's examine this attribute in detail:</p>
+<ul>
+<li>The constructor <code>ValueConversionAttribute(Type input, Type output)</code> declares the expected input and output types for a converter.</li>
+<li><code>Type input</code> is the expected <strong>input</strong> type for the value converter. This is the argument <code>object value</code> for the <code>Convert</code> method and the return type for the <code>ConvertBack</code> method.</li>
+<li><code>Type output</code> is the expected <strong>output</strong> type for the value converter. This is the return type for the <code>Convert</code> method and the argument <code>object value</code> for the <code>ConvertBack</code> method.</li>
+<li>The property <code>Type ParameterType</code> is the expected <strong>paramter</strong> type for the value converter. This is the argument <code>object parameter</code> for the <code>Convert</code> and <code>ConvertBack</code> methods.</li>
+</ul>
+<p>To include the <code>ValueConversionAttribute</code> we can simply copy-paste the code into our code base. Alternatively, add a third party library like <a href="https://github.com/FormsCommunityToolkit/Converters">FormsCommunityToolkit.Converters</a> that has the <code>ValueConversionAttribute</code> defined.</p>
+<p>To use the <code>ValueConversionAttribute</code> in our source code, we annotate a value converter at the class level and use the <code>typeof</code> operator to provide input, output and parameter types:</p>
+<pre><code>[ValueConversion(typeof(bool), typeof(Xamarin.Forms.Color))]
+public class BoolToTextColorConverter : IValueConverter
+{
+    public object Convert(object value, Type targetType, object parameter, CultureInfo culture)
+    {
+        return (bool)value ? Color.Black : Color.Red;
+    }
+
+    public object ConvertBack(object value, Type targetType, object parameter, CultureInfo culture)
+    {
+        throw new NotImplementedException();
+    }
+}
 </code></pre>
 
-<h2 id="fluid-mvvm-navigation">Fluid Mvvm Navigation</h2>
-<p>Now that we understand how MFractor links the Mvvm code files, let’s get to know the Mvvm navigation shortcuts.</p>
-<p>Open up the WelcomePage.xaml and right click in the middle of the editor:</p>
-<h3 id="mvvm-shortcuts">Mvvm Shortcuts</h3>
-<p>There are 3 Mvvm navigation shortcuts in MFractor:</p>
-<ul>
-<li>Go To Code-Behind Class: Jumps you to the code behind class related to a view or view model</li>
-<li>Go To View Model: Jumps you to the view model related to a view or code behind class.</li>
-<li>Go To Xaml View: Jumps you to the xaml view related to a view model or code behind class.</li>
-</ul>
-<p>We can use these short-cuts to quickly navigate around these 3 files:</p>
-<p>Or we can use an xStatic expression that uses the ViewModelLocator to target a different view model implementation:</p>
-<h3 id="custom-binding-context">Custom Binding Context</h3>
-<p>Now the Go To View Model shortcut will instead jump to the class type used by the BindingContext rather than the implicit association.</p>
+<p>The <code>BoolToTextColorConverter</code> now declares it's intent when converting values to both tooling and other developers.</p>
+<h2 id="converter-type-safety-in-xaml">Converter Type-Safety in Xaml</h2>
+<p>When an <code>IValueConverter</code> implementation is annotated with the <code>ValueConversion</code> attribute, we declare to MFractor that our value converter wishes to enforce <strong>type safety</strong>.</p>
+<p>When an <code>IValueConverter</code> implementation has been annotated with the <code>ValueConversion</code> attribute, MFractor will inspect the input and output types of <code>Converter</code> expressions.</p>
 <h2 id="summary">Summary</h2>
-<p>We’ve learnt how to use MFractors Mvvm navigation shortcuts to quickly move between the View, Code Behind Class and View Model</p>
-<p>To continue learning to use MFractor, visit our documentation page.</p>
               
             </div>
           </div>
@@ -461,10 +469,10 @@ In this article we will use MFractor to navigate between a Xaml UI definition, i
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="../implementing-view-models/" class="btn btn-neutral float-right" title="Implementing View Models">Next <span class="icon icon-circle-arrow-right"></span></a>
+        <a href="../../../release-notes/v2-7/" class="btn btn-neutral float-right" title="2.7">Next <span class="icon icon-circle-arrow-right"></span></a>
       
       
-        <a href="../../xamarin-android/resource-expressions-and-code-navigation/" class="btn btn-neutral" title="Resource Expressions And Code Navigation"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../implementing-view-models/" class="btn btn-neutral" title="Implementing View Models"><span class="icon icon-circle-arrow-left"></span> Previous</a>
       
     </div>
   
@@ -495,10 +503,10 @@ In this article we will use MFractor to navigate between a Xaml UI definition, i
           <a href="https://github.com/matthewrdev/mfractor-documentation" class="icon icon-github" style="float: left; color: #fcfcfc"> GitHub</a>
       
       
-        <span><a href="../../xamarin-android/resource-expressions-and-code-navigation/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+        <span><a href="../implementing-view-models/" style="color: #fcfcfc;">&laquo; Previous</a></span>
       
       
-        <span style="margin-left: 15px"><a href="../implementing-view-models/" style="color: #fcfcfc">Next &raquo;</a></span>
+        <span style="margin-left: 15px"><a href="../../../release-notes/v2-7/" style="color: #fcfcfc">Next &raquo;</a></span>
       
     </span>
 </div>

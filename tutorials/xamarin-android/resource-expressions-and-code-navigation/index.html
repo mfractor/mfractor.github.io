@@ -260,6 +260,18 @@
     
       
     
+      
+      <li class="toctree-l3"><a href="#overview">Overview</a></li>
+      
+    
+      
+      <li class="toctree-l3"><a href="#c-resource-expressions">C# Resource Expressions</a></li>
+      
+    
+      
+      <li class="toctree-l3"><a href="#xml-resource-expressions">Xml Resource Expressions</a></li>
+      
+    
   </ul>
   
 </li>
@@ -275,6 +287,20 @@
   
 <li class="toctree-l1 ">
   <a class="" href="../../xamarin-forms/mvvm-navigation/">Mvvm Navigation</a>
+  
+</li>
+
+  
+  
+<li class="toctree-l1 ">
+  <a class="" href="../../xamarin-forms/implementing-view-models/">Implementing View Models</a>
+  
+</li>
+
+  
+  
+<li class="toctree-l1 ">
+  <a class="" href="../../xamarin-forms/value-converter-type-safety/">Value Converter Type Safety</a>
   
 </li>
 
@@ -350,7 +376,7 @@
           <div role="main">
             <div class="section">
               
-                <h1 id="resource-expressions-and-code-navigation">Resource Expressions And Code Navigation</h1>
+                <h2 id="resource-expressions-and-code-navigation">Resource Expressions And Code Navigation</h2>
 <p><em>Learn the C# and xml expressions that activate tooltips and go-to declaration in MFractor for Android</em></p>
 <h2 id="overview">Overview</h2>
 <p>If you’re a Xamarin.Android developer building apps using the native APIs then chances are you spend a lot of time navigating resource code.</p>
@@ -363,7 +389,6 @@
 <li>XML: Code expressions within Android xml resources that point to another resource. For instance; @layout/myLayout.</li>
 </ul>
 <p>When MFractor detects the cursor is within one of these expressions, resource tooltips and go-to-declaration become active. This enables fast and efficient code navigation.</p>
-<p>It looks a little like this when in action:</p>
 <p>That is much faster than manual searching! Now lets go over each of these expression types.</p>
 <h2 id="c-resource-expressions">C# Resource Expressions</h2>
 <p>For C#, resource expressions are always resolved against the Resource.Designer.cs file that is generated alongside a project. This section assumes a basic familiarity of the Resource.Designer.cs file; if this is a new concept I suggested reading the <a href="https://developer.xamarin.com/guides/android/application_fundamentals/resources_in_android/part_1_-_android_resource_basics/">Android Resource Basics</a> page in Xamarins documentation.</p>
