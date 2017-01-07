@@ -5,7 +5,9 @@
 ##Introduction
 In Xamarin.Forms developers data bind properties in a control to properties on a binding context using the `Binding` markup extension.
 
-Typically the type on the control's property will match the type on the binding context property but there are often cases we want to transform one property to another. For example, a screen may have a email entry that changes color depending if the user has entered a valid email.
+Typically, the type on the control's property matches the type on the binding context property. But what if we had a screen with an email entry that needs to change color when the user enters a valid email?
+
+Enter the [IValueConverter interface](https://developer.xamarin.com/api/type/Xamarin.Forms.IValueConverter/); value converters implement
 
 We can expose a boolean `IsEmailValid` on our binding context, bind the `TextColor` field of the entry to the `IsEmailValid` property and use an `IValueConverter` that converts a `True` value to black and a `False` value to red.
 
