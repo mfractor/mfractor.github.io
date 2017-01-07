@@ -146,8 +146,31 @@ public class LoginViewModel
 }
 ```
 
-##Generating Commands
-MFraco
+##Generating Commands Implementations
+When MFractor encounters a property that expects the `System.Windows.Input.ICommand` interface, it will generate a property returning a empty command implementation.
+
+For example, we bind our login button to a `LoginCommand` property on our view model:
+
+```
+<Button Command="{Binding LoginCommand}"/>
+```
+
+When MFractor generates the property for `LoginCommand`, it creates an empty command implementation:
+
+```
+public System.Windows.Input.ICommand LoginCommand
+{
+    get
+    {
+        return new Xamarin.Forms.Command(() =>
+        {
+            throw new NotImplementedException();
+        }
+
+        );
+    }
+}
+```
 
 ##Binding Generation And Value Converters
 
