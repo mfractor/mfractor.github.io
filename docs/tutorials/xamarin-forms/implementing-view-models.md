@@ -93,7 +93,7 @@ The backing field fix is most useful when:
  * We occasionally want to manipulate the properties backing field without changes propagating to the UI.
 
 ##The Implement ViewModel Refactoring
-Another way to generate properties for a view model is to use the **Implement View Model** refactoring. This shortcut collects *all* missing binding expressions and generates them in bulk onto the binding context.
+Another way to generate properties for a view model is to use the **Implement View Model** refactoring. This shortcut collects *all* missing binding expressions (excluding bindings inside DataTemplates) and generates them in bulk onto the binding context.
 
 We can access this short cut by right clicking anywhere in a Xaml file, navigating to **Refactor** and then selecting the **Implement View Model** action:
 
@@ -101,8 +101,8 @@ We can access this short cut by right clicking anywhere in a Xaml file, navigati
 
 You'll notice that there are 2 actions:
 
- * **Generate a property named XXX in XXX** gathers all missing bindings increates a new public property with a public `get` and `set` accessor.
- * **Generate a property named XXX in XXX with backing fields** creates a new public property with a public `get` and `set` accessor that sets or gets a backing field.
+ * **Generate a property named XXX in XXX** gathers all missing bindings in the xaml document and implements them all as public properties with a public `get` and `set` accessor.
+ * **Generate a property named XXX in XXX with backing fields** gathers all missing bindings in the xaml document and implements them all as public properties with a public `get` and `set` accessor that sets or gets a backing field.
 
 There are often cases when a binding context isn't specified [explicitly ](/xamarin-forms/configure-binding-context.md#explicit-binding-context-resolution) and can't be inferred [implicitly](/xamarin-forms/configure-binding-context.md#implicit-binding-context-resolution). A common example of this is that you have just started to build a Xaml view and haven't yet got around to building the corresponding view model.
 
