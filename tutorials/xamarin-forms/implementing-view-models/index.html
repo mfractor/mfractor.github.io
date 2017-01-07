@@ -462,13 +462,13 @@ public string Password
 <li>We occasionally want to manipulate the properties backing field without changes propagating to the UI.</li>
 </ul>
 <h2 id="the-implement-viewmodel-refactoring">The Implement ViewModel Refactoring</h2>
-<p>Another way to generate properties for a view model is to use the <strong>Implement View Model</strong> refactoring. This shortcut collects <em>all</em> missing binding expressions and generates them in bulk onto the binding context.</p>
+<p>Another way to generate properties for a view model is to use the <strong>Implement View Model</strong> refactoring. This shortcut collects <em>all</em> missing binding expressions (excluding bindings inside DataTemplates) and generates them in bulk onto the binding context.</p>
 <p>We can access this short cut by right clicking anywhere in a Xaml file, navigating to <strong>Refactor</strong> and then selecting the <strong>Implement View Model</strong> action:</p>
 <p><img alt="" src="../../../img/tutorials/implementing-view-models/implement-view-model.gif" /></p>
 <p>You'll notice that there are 2 actions:</p>
 <ul>
-<li><strong>Generate a property named XXX in XXX</strong> gathers all missing bindings increates a new public property with a public <code>get</code> and <code>set</code> accessor.</li>
-<li><strong>Generate a property named XXX in XXX with backing fields</strong> creates a new public property with a public <code>get</code> and <code>set</code> accessor that sets or gets a backing field.</li>
+<li><strong>Generate a property named XXX in XXX</strong> gathers all missing bindings in the xaml document and implements them all as public properties with a public <code>get</code> and <code>set</code> accessor.</li>
+<li><strong>Generate a property named XXX in XXX with backing fields</strong> gathers all missing bindings in the xaml document and implements them all as public properties with a public <code>get</code> and <code>set</code> accessor that sets or gets a backing field.</li>
 </ul>
 <p>There are often cases when a binding context isn't specified <a href="../../../xamarin-forms/configure-binding-context/#explicit-binding-context-resolution">explicitly </a> and can't be inferred <a href="../../../xamarin-forms/configure-binding-context/#implicit-binding-context-resolution">implicitly</a>. A common example of this is that you have just started to build a Xaml view and haven't yet got around to building the corresponding view model.</p>
 <p>The <strong>Implement View Model</strong> action can also generate a view model class for the Xaml view if one is not already defined. Using Mvvm naming conventions, MFractor generates a view model class for your xaml view under the <code>MyDefaultNamespace.ViewModels</code> namespace.</p>
