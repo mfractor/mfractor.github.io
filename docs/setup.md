@@ -5,14 +5,14 @@
 
 ##Introduction
 
-This document covers how to install, activate and update MFractor for Xamarin Studio.
+This document covers how to install, activate, update and uninstall MFractor for Xamarin Studio.
 
 ##Install MFractor
 The simplest way to install MFractor into Xamarin Studio is by using the MFractor.Installer helper addin.
 
 This addin lives inside the Addin Manager in Xamarin Studio, under **Gallery** -> **IDE extensions**.
 
-Open up Xamarin Studio and click on the **Xamarin Studio** then **Addins...**
+Open up Xamarin Studio and click on the **Xamarin Studio** menu and then **Addins...**
 
 ![addin manager location](img/setup/addin-manager-menu.png)
 
@@ -24,15 +24,29 @@ Once you've located **MFractor.Installer**, left click on it to select it. In th
 
 ![install mfractor.installer](img/setup/install-mfractor-installer.png)
 
-You will then see a download dialog appear and MFractor will download and install!
+You will then see a download dialog appear and MFractor will download and install.
 
 ![mfractor.installer download window](img/setup/mfractor-installer-download-window.png)
 
-Next we need to activate MFractor.
+## Install MFractor Manually
+
+MFractor can be installed directly through the addin manager's **Install from file** button.
+
+Firstly, download the latest version of MFractor for Xamarin studio at [addins.mfractor.com/MFractor.mpack](addins.mfractor.com/MFractor.mpack)
+
+Open up Xamarin Studio and click on the **Xamarin Studio** menu and then **Addins...**
+
+![addin manager location](img/setup/addin-manager-menu.png)
+
+Within the Addin Manager, click the **Install from file** button in the bottom left of the Addin Manager.
+
+Browse to **MFractor.mpack** and then 
+
+![How to install MFractor](/img/setup/install-mfractor.gif)
 
 ##Activation
 
-After installing MFractor, you'll need activate it using your email address.
+To use MFractor, you'll need activate it using your email address.
 
 First things first, **close the Addin Manager**. There is a known bug that blocks the email entry field from receiving keyboard when the Addin Manager is open. It's a pain and we are working on fixing this.
 
@@ -44,11 +58,9 @@ Tada! You are now ready to rock. Why not learn how to use MFractor for [Xamarin.
 
 ##Updating
 
-MFractor will receive regular updates adding sweet new features and bug fixes so it's important to keep up to date!
-
 When MFractor installs into Xamarin Studio, it'll register itself into Xamarin Studios addin updater.
 
-This means that Xamarin Studio **should** automatically prompt you that an update is available.
+This means that Xamarin Studio will automatically prompt you that an update is available.
 
 However, you can check for udpate at any time by opening the **Xamarin Studio** main menu and selecting **Check for Updates...**
 
@@ -58,7 +70,7 @@ Xamarin Studio will check the MFractor addin server for updates and prompt you t
 
 ##Uninstalling MFractor
 
-You can uninstall MFractor through the addin manager at any time. We'll be sad to see you go!
+You can uninstall MFractor through the addin manager at any time.
 
 Select the **Xamarin Studio** main menu and then **Addins**
 
