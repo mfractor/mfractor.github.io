@@ -40,7 +40,7 @@ Open up Xamarin Studio and click on the **Xamarin Studio** menu and then **Addin
 
 Within the Addin Manager, click the **Install from file** button in the bottom left of the Addin Manager.
 
-Browse to **MFractor.mpack** and then 
+Browse to **MFractor.mpack** and then select **Open**:
 
 ![How to install MFractor](/img/setup/install-mfractor.gif)
 
