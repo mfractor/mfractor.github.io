@@ -7,8 +7,29 @@
 
 This document covers how to install, activate, update and uninstall MFractor for Xamarin Studio.
 
+##Get MFractor
+The latest version of MFractor for Xamarin Studio can be downloaded from the addin server, [addins.mfractor.com/MFractor.mpack](http://addins.mfractor.com/MFractor.mpack).
+
+If you'd like an older version of MFractor, these can be found under our old release archives. Simply navigate to [addins.mfractor.com/releases](http://addins.mfractor.com/releases), open the folder for the version you'd like and download the .mpack file.
+
+## Install MFractor Manually
+
+MFractor can be installed directly through the addin manager's **Install from file** button.
+
+Firstly, download the latest version of MFractor for Xamarin studio at [addins.mfractor.com/MFractor.mpack](addins.mfractor.com/MFractor.mpack)
+
+Open up Xamarin Studio and click on the **Xamarin Studio** menu and then **Addins...**
+
+![addin manager location](img/setup/addin-manager-menu.png)
+
+Within the Addin Manager, click the **Install from file** button in the bottom left of the Addin Manager.
+
+Browse to **MFractor.mpack** and then select **Open**:
+
+![How to install MFractor](/img/setup/install-mfractor.gif)
+
 ##Install MFractor
-The simplest way to install MFractor into Xamarin Studio is by using the MFractor.Installer helper addin.
+We can also install install MFractor into Xamarin Studio by using the MFractor.Installer helper addin.
 
 This addin lives inside the Addin Manager in Xamarin Studio, under **Gallery** -> **IDE extensions**.
 
@@ -28,21 +49,7 @@ You will then see a download dialog appear and MFractor will download and instal
 
 ![mfractor.installer download window](img/setup/mfractor-installer-download-window.png)
 
-## Install MFractor Manually
 
-MFractor can be installed directly through the addin manager's **Install from file** button.
-
-Firstly, download the latest version of MFractor for Xamarin studio at [addins.mfractor.com/MFractor.mpack](addins.mfractor.com/MFractor.mpack)
-
-Open up Xamarin Studio and click on the **Xamarin Studio** menu and then **Addins...**
-
-![addin manager location](img/setup/addin-manager-menu.png)
-
-Within the Addin Manager, click the **Install from file** button in the bottom left of the Addin Manager.
-
-Browse to **MFractor.mpack** and then select **Open**:
-
-![How to install MFractor](/img/setup/install-mfractor.gif)
 
 ##Activation
 
