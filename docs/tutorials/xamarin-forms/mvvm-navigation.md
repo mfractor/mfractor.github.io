@@ -19,8 +19,8 @@ In this article we will use MFractor to navigate between a Xaml UI definition, i
 We assume the following:
 
  * A Xamarin Studio 6.0 installation.
- * MFractor 2 installed into Xamarin Studio. Install it here: www.mfractor.com/download
- * A familarity with the Xamarin.Forms; particularly building UIs with Xaml and the Model – View – View Model design pattern.
+ * MFractor installed into Xamarin Studio. Install it here: www.mfractor.com/download
+ * A familiarity with the Xamarin.Forms; particularly building UIs with Xaml and the Model – View – View Model design pattern.
  * The MFractor For Xamarin.Forms sample project downloaded and open in Xamarin Studio.
 
 ##Views, Code Behind classes and ViewModels

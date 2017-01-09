@@ -101,8 +101,8 @@ We can access this short cut by right clicking anywhere in a Xaml file, navigati
 
 You'll notice that there are 2 actions:
 
- * **Generate a property named XXX in XXX** gathers all missing bindings in the xaml document and implements them all as public properties with a public `get` and `set` accessor.
- * **Generate a property named XXX in XXX with backing fields** gathers all missing bindings in the xaml document and implements them all as public properties with a public `get` and `set` accessor that sets or gets a backing field.
+ * **Implement View Model** gathers all missing bindings in the xaml document and implements them all as public properties with a public `get` and `set` accessor.
+ * **Implement View Model (Use Backing Fields)** gathers all missing bindings in the xaml document and implements them all as public properties with a public `get` and `set` accessor that sets or gets a backing field.
 
 There are often cases when a binding context isn't specified [explicitly ](/xamarin-forms/configure-binding-context.md#explicit-binding-context-resolution) and can't be inferred [implicitly](/xamarin-forms/configure-binding-context.md#implicit-binding-context-resolution). A common example of this is that you have just started to build a Xaml view and haven't yet got around to building the corresponding view model.
 
