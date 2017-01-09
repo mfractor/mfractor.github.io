@@ -467,8 +467,8 @@ public string Password
 <p><img alt="" src="../../../img/tutorials/implementing-view-models/implement-view-model.gif" /></p>
 <p>You'll notice that there are 2 actions:</p>
 <ul>
-<li><strong>Generate a property named XXX in XXX</strong> gathers all missing bindings in the xaml document and implements them all as public properties with a public <code>get</code> and <code>set</code> accessor.</li>
-<li><strong>Generate a property named XXX in XXX with backing fields</strong> gathers all missing bindings in the xaml document and implements them all as public properties with a public <code>get</code> and <code>set</code> accessor that sets or gets a backing field.</li>
+<li><strong>Implement View Model</strong> gathers all missing bindings in the xaml document and implements them all as public properties with a public <code>get</code> and <code>set</code> accessor.</li>
+<li><strong>Implement View Model (Use Backing Fields)</strong> gathers all missing bindings in the xaml document and implements them all as public properties with a public <code>get</code> and <code>set</code> accessor that sets or gets a backing field.</li>
 </ul>
 <p>There are often cases when a binding context isn't specified <a href="../../../xamarin-forms/configure-binding-context/#explicit-binding-context-resolution">explicitly </a> and can't be inferred <a href="../../../xamarin-forms/configure-binding-context/#implicit-binding-context-resolution">implicitly</a>. A common example of this is that you have just started to build a Xaml view and haven't yet got around to building the corresponding view model.</p>
 <p>The <strong>Implement View Model</strong> action can also generate a view model class for the Xaml view if one is not already defined. Using Mvvm naming conventions, MFractor generates a view model class for your xaml view under the <code>MyDefaultNamespace.ViewModels</code> namespace.</p>
