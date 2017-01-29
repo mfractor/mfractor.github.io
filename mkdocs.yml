@@ -51,6 +51,7 @@ pages:
     - Implementing View Models: tutorials/xamarin-forms/implementing-view-models.md
     - Value Converter Type Safety: tutorials/xamarin-forms/value-converter-type-safety.md
 - Release Notes:
+    - 2.8: release-notes/v2-8.md
     - 2.7: release-notes/v2-7.md
     - 2.6: release-notes/v2-6.md
     - 2.5: release-notes/v2-5.md
