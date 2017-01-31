@@ -6,7 +6,6 @@
 
 ##Introduction
 
-
 For a full list of available refactoring and code generation actions, see the [Tools In-Depth - Refactoring](tools-in-depth/refactorings.md) article.
 
 ##Fixing Code Issues
