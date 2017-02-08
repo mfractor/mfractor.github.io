@@ -395,26 +395,36 @@
 <li>Go To Xaml View: Jumps you to the xaml view related to a view model or code behind class.</li>
 </ul>
 <p>For example:</p>
+<p><img alt="Model - View - View Model navigation" src="../../img/forms/navigation-mvvm.gif" /></p>
 <h2 id="xaml-go-to-symbol">Xaml Go-To Symbol</h2>
 <p>Just like C#, we can jump to the declaration of a symbol when in our Xaml.</p>
-<p>To perform this, click onto a Xaml element (such as a node, attribute or expression) and press <code>Command + D</code>:</p>
+<p>To perform this, click onto a Xaml element (such as a node, attribute or expression) and press <code>Command + D</code>.</p>
 <p>We can also right click on any Xaml element and select the <code>Go-To Xaml Symbol</code> shortcut:</p>
+<p><img alt="Go-to Xaml Symbol" src="../../img/forms/navigation-go-to-symbol.gif" /></p>
 <h2 id="xaml-tooltips">Xaml Tooltips</h2>
 <p>When in a .xaml file, we can hover over any Xaml element to view a .NET style tooltip:</p>
+<p><img alt="Xaml tooltips" src="../../img/forms/navigation-tooltips.gif" /></p>
 <p>We can also hover over markup extension expressions to view the evaluation result:</p>
+<p><img alt="Expression tooltips" src="../../img/forms/navigation-expression-tooltips.png" /></p>
 <p>MFractor also supports the following additional types of tooltips.</p>
 <h3 id="binding-context-tooltips">Binding Context Tooltips</h3>
 <p>If you hover over a <code>Binding</code> markup extension expression that can be evaluated, MFractor will render the full .NET type of the binding context into the tooltip:</p>
+<p><img alt="Binding context tooltips" src="../../img/forms/navigation-binding-context-tooltips.png" /></p>
 <p>This is useful for understanding the behaviour of your View at runtime.</p>
 <h3 id="value-conversion-tooltips">Value Conversion Tooltips</h3>
+<p>When you have annotated implementations of <code>IValueConverter</code> with the value conversion attribute, MFractor supports rendering of input, output and parameter type into the tooltip window.</p>
+<p>When you hover over a Xaml element or markup extension expression that evaluates to a <code>IValueConverter</code>, MFractor will render out the input and output types when available:</p>
+<p><img alt="Value conversion tooltips" src="../../img/forms/navigation-value-conversion-tooltips.png" /></p>
 <h3 id="color-tooltips">Color Tooltips</h3>
 <p>When MFractor encounters a Xaml attribute that uses the <code>Xamarin.Forms.Color</code> or <code>System.Drawing.Color</code> type, it will attempt to evaluate the color hex or color literal.</p>
 <p>If successfully evaluated, it will render the color value into the resulting tooltip:</p>
+<p><img alt="Color tooltips" src="../../img/forms/navigation-color-tooltips.png" /></p>
 <h2 id="image-tooltips">Image Tooltips</h2>
 <p>MFractor supports inline image tooltips; these tooltips will display a preview of the image that you are referencing from within your Xaml:</p>
 <p>Image tooltips are activated when you hover over the value of a Xaml attribute whose type is <code>Xamarin.Forms.ImageSource</code>; when MFractor encounters a value that looks like an image reference to a bundled resource (IE: <code>logo.png</code>), it attempts to locate that image within any iOS or Android projects that reference the assembly.</p>
-<p>MFractor searches the <strong>Resources</strong> folder within any link</p>
-<p>When MFractor finds</p>
+<p>MFractor searches the <code>Resources</code> folder within linked iOS projects and the <code>Resources/drawable*</code> and <code>Resources/mipmap*</code> folders on Android.</p>
+<p>When MFractor finds an image that matches that image name, it will render it into the image into the tooltip window:</p>
+<p><img alt="Image tooltips" src="../../img/forms/navigation-image-tooltips.png" /></p>
               
             </div>
           </div>
