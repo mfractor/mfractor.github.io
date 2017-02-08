@@ -9,7 +9,7 @@
   <meta name="author" content="Matthew Robbins">
   <link rel="shortcut icon" href="../../img/favicon.ico">
   
-  <title>Analysis - mfractor docs</title>
+  <title>2.8 - mfractor docs</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="../../css/theme.css" type="text/css" />
@@ -23,9 +23,9 @@
   
   <script>
     // Current page data
-    var mkdocs_page_name = "Analysis";
-    var mkdocs_page_input_path = "xamarin-android/analysis.md";
-    var mkdocs_page_url = "/xamarin-android/analysis/";
+    var mkdocs_page_name = 2.8;
+    var mkdocs_page_input_path = "release-notes/v2-8.md";
+    var mkdocs_page_url = "/release-notes/v2-8/";
   </script>
   
   <script src="../../js/jquery-2.1.1.min.js"></script>
@@ -166,46 +166,42 @@
   
   
 <li class="toctree-l1 ">
-  <a class="" href="../project-resource-indexing/">Project Resource Indexing</a>
+  <a class="" href="../../xamarin-android/project-resource-indexing/">Project Resource Indexing</a>
   
 </li>
 
   
   
 <li class="toctree-l1 ">
-  <a class="" href="../navigation/">Navigation</a>
-  
-</li>
-
-  
-  
-<li class="toctree-l1 current">
-  <a class="current" href="./">Analysis</a>
-  
-  <ul>
-    
-  </ul>
+  <a class="" href="../../xamarin-android/navigation/">Navigation</a>
   
 </li>
 
   
   
 <li class="toctree-l1 ">
-  <a class="" href="../refactoring-and-code-generation/">Refactoring And Code Generation</a>
+  <a class="" href="../../xamarin-android/analysis/">Analysis</a>
   
 </li>
 
   
   
 <li class="toctree-l1 ">
-  <a class="" href="../dotnet-code-analysis/">.NET Code Analysis</a>
+  <a class="" href="../../xamarin-android/refactoring-and-code-generation/">Refactoring And Code Generation</a>
   
 </li>
 
   
   
 <li class="toctree-l1 ">
-  <a class="" href="../resource-intellisense/">Resource IntelliSense</a>
+  <a class="" href="../../xamarin-android/dotnet-code-analysis/">.NET Code Analysis</a>
+  
+</li>
+
+  
+  
+<li class="toctree-l1 ">
+  <a class="" href="../../xamarin-android/resource-intellisense/">Resource IntelliSense</a>
   
 </li>
 
@@ -216,21 +212,21 @@
   
   
 <li class="toctree-l1 ">
-  <a class="" href="../tools-in-depth/analysers/">Analysers</a>
+  <a class="" href="../../xamarin-android/tools-in-depth/analysers/">Analysers</a>
   
 </li>
 
   
   
 <li class="toctree-l1 ">
-  <a class="" href="../tools-in-depth/refactorings/">Refactorings</a>
+  <a class="" href="../../xamarin-android/tools-in-depth/refactorings/">Refactorings</a>
   
 </li>
 
   
   
 <li class="toctree-l1 ">
-  <a class="" href="../tools-in-depth/intellisense/">IntelliSense</a>
+  <a class="" href="../../xamarin-android/tools-in-depth/intellisense/">IntelliSense</a>
   
 </li>
 
@@ -302,29 +298,51 @@
   <li><span>Release Notes</span></li>
   
   
-<li class="toctree-l1 ">
-  <a class="" href="../../release-notes/v2-8/">2.8</a>
+<li class="toctree-l1 current">
+  <a class="current" href="./">2.8</a>
+  
+  <ul>
+    
+      
+    
+      
+      <li class="toctree-l3"><a href="#introduction">Introduction</a></li>
+      
+    
+      
+      <li class="toctree-l3"><a href="#features">Features</a></li>
+      
+    
+      
+      <li class="toctree-l3"><a href="#enhancements">Enhancements</a></li>
+      
+    
+      
+      <li class="toctree-l3"><a href="#bug-fixes">Bug Fixes</a></li>
+      
+    
+  </ul>
   
 </li>
 
   
   
 <li class="toctree-l1 ">
-  <a class="" href="../../release-notes/v2-7/">2.7</a>
+  <a class="" href="../v2-7/">2.7</a>
   
 </li>
 
   
   
 <li class="toctree-l1 ">
-  <a class="" href="../../release-notes/v2-6/">2.6</a>
+  <a class="" href="../v2-6/">2.6</a>
   
 </li>
 
   
   
 <li class="toctree-l1 ">
-  <a class="" href="../../release-notes/v2-5/">2.5</a>
+  <a class="" href="../v2-5/">2.5</a>
   
 </li>
 
@@ -354,18 +372,53 @@
     
       
         
-          <li>Xamarin.Android &raquo;</li>
+          <li>Release Notes &raquo;</li>
         
       
     
-    <li>Analysis</li>
+    <li>2.8</li>
   </ul>
   <hr/>
 </div>
           <div role="main">
             <div class="section">
               
-                <p><strong>WORK IN PROGRESS</strong></p>
+                <h2 id="release-notes-v280">Release Notes - v2.8.0</h2>
+<p><strong>TO BE DECIDED</strong></p>
+<p><strong><a href="http://addins.mfractor.com/releases/2.08.00/MFractor.MFractor_2.08.00.mpack">Download MFractor 2.8.0</a></strong></p>
+<h2 id="introduction">Introduction</h2>
+<p>This is a summary of the changes introduced in v2.8.0 of MFractor for Xamarin Studio.</p>
+<p>This release focuses on adding new refactoring and code generation actions into the Xaml editor.</p>
+<h2 id="features">Features</h2>
+<ul>
+<li><strong>New Refactorings</strong></li>
+<li>Right click on a xaml attribute property that's a <code>System.Drawing.Color</code> or a <code>Xamarin.Forms.Color</code> and edit it using the color selection dialog. This action won't be available if the attribute value is an expression.</li>
+<li>Right click on a xaml attribute property that has a literal value and extract it into a <code>Binding</code> expression. This action won't be available if the attribute value is an expression.</li>
+<li>Organise Xaml Nodes:<ul>
+<li>The <em>Collapse Xaml Attributes</em> refactoring will collapse all xaml attributes onto the same line as the parent xaml node.</li>
+<li>The <em>Expand Xaml Attributes</em> refactoring will expand all xaml attributes onto separate lines.</li>
+<li>The <em>Sort Xaml Attributes</em> refactoring will sort the attributes for a xaml node by namespace and name.</li>
+<li>The <em>Expand Node</em> refactoring takes a self-closing xaml node and generate a closing tag for it.</li>
+<li>The <em>Collapse Node</em> refactoring takes a xaml node with no children and a closing tag and removes the closing tag to make the node self-closing.</li>
+</ul>
+</li>
+<li><strong>New Code Generators</strong></li>
+<li>Right click on an xaml node that inherits from <code>Xamarin.Forms.VisualElement</code> or <code>Xamarin.Forms.Application</code> and select <strong>Add Resource Dictionary</strong> to generate a resource dictionary for that element.</li>
+<li><strong>New Xaml Analysers</strong></li>
+<li>Detect when an <code>x:Name</code> code-behind field declaration is empty.</li>
+</ul>
+<h2 id="enhancements">Enhancements</h2>
+<ul>
+<li>This release targets Xamarin Studio v6.1.5</li>
+<li>Hover over a xaml attribute property that's a <code>System.Drawing.Color</code> or a <code>Xamarin.Forms.Color</code> to see the color value inside the tooltip.</li>
+<li>The Android SDK meta-data has been removed from MFractor.mpack; you can download and update the sdk meta-data through the <strong>Help</strong> -&gt; <strong>MFractor</strong> -&gt; <strong>Install Android SDK Meta-Data</strong> menu item.</li>
+</ul>
+<h2 id="bug-fixes">Bug Fixes</h2>
+<ul>
+<li>Correctly validate the type provided to x:TypeArguments; there was a bug in the type checking algorithm.</li>
+<li>Don't allow the 'Simplify' refactoring to run against expressions.</li>
+<li>Fix multiple type conversion checking bugs in the ValueConversion attribute validation.</li>
+</ul>
               
             </div>
           </div>
@@ -373,10 +426,10 @@
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="../refactoring-and-code-generation/" class="btn btn-neutral float-right" title="Refactoring And Code Generation">Next <span class="icon icon-circle-arrow-right"></span></a>
+        <a href="../v2-7/" class="btn btn-neutral float-right" title="2.7">Next <span class="icon icon-circle-arrow-right"></span></a>
       
       
-        <a href="../navigation/" class="btn btn-neutral" title="Navigation"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../../tutorials/xamarin-forms/value-converter-type-safety/" class="btn btn-neutral" title="Value Converter Type Safety"><span class="icon icon-circle-arrow-left"></span> Previous</a>
       
     </div>
   
@@ -407,10 +460,10 @@
           <a href="https://github.com/matthewrdev/mfractor-documentation" class="icon icon-github" style="float: left; color: #fcfcfc"> GitHub</a>
       
       
-        <span><a href="../navigation/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+        <span><a href="../../tutorials/xamarin-forms/value-converter-type-safety/" style="color: #fcfcfc;">&laquo; Previous</a></span>
       
       
-        <span style="margin-left: 15px"><a href="../refactoring-and-code-generation/" style="color: #fcfcfc">Next &raquo;</a></span>
+        <span style="margin-left: 15px"><a href="../v2-7/" style="color: #fcfcfc">Next &raquo;</a></span>
       
     </span>
 </div>
