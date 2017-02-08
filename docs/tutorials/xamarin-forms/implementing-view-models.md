@@ -95,7 +95,7 @@ The backing field fix is most useful when:
 ##The Implement ViewModel Refactoring
 Another way to generate properties for a view model is to use the **Implement View Model** refactoring. This shortcut collects *all* missing binding expressions (excluding bindings inside DataTemplates) and generates them in bulk onto the binding context.
 
-We can access this short cut by right clicking anywhere in a Xaml file, navigating to **Refactor** and then selecting the **Implement View Model** action:
+We can access this short cut by right clicking anywhere in a Xaml file, navigating to **Generate** and then selecting the **Implement View Model** action:
 
 ![](/img/tutorials/implementing-view-models/implement-view-model.gif)
 

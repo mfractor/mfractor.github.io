@@ -13,7 +13,12 @@ The refactoring menus can be accessed by right clicking on particular areas with
 
 ![Accessing the refactoring menus](/img/forms/refactoring-menus.gif)
 
-MFractor will populate this
+MFractor will populate the context with 4 types of refactorings:
+
+ - **Fix**: Fixes code issues detected by the Xaml analyser.
+ - **Generate**: Generates common xaml and C# code.
+ - **Refactor**: Rename C# and Xaml symbols from your Xaml document.
+ - **Organise**: Tidy up and organise your xaml.
 
 The areas a refactoring activates depends on it's scope:
 
@@ -29,6 +34,8 @@ Code issue fixes are available when an analyser from the [Xaml Analysis Engine](
 
 You can action a code fix by right-clicking on the yellow-underlined code section, opening the **Fix** menu and then selecting the fix you'd like to action:
 
+![Using Fix Refactorings](/img/xamarin-forms/refactoring-fix.gif)
+
 To view a complete list of available code issue fixes, visit the [analysers](/xamarin-forms/tools-in-depth/analysers.md) document.
 
 ##Code Generation
@@ -38,20 +45,24 @@ Code generation operations allow you to quickly build boilerplate code that you'
 For example, you could:
 
  - Generate resource dictionaries for view elements.
- -
+ - Implement all missing bindings in bulk using the **Implement View Model** code generator.
+
+![Using Generate Refactorings](/img/xamarin-forms/refactoring-generate.gif)
 
 To view a complete list of available code generation refactorings, visit [Refactorings - Generate](/xamarin-forms/tools-in-depth/refactorings.md#generate).
 
 ##Code Refactoring
 
-Code refactoring operations allow you to manipulate the names of symbols in both  your Xaml file in ; sometimes these refactoring operations can
+Code refactoring operations allow you to manipulate Xaml and .NET symbols while within your Xaml document. These refactorings typically take user input and rename a symbol (such as a xaml namespace) or change a properties value.
 
-
+![Using Refactor Refactorings](/img/xamarin-forms/refactoring-refactor.gif)
 
 To view a complete list of available refactoring operations, visit [Refactorings - Refactor](/xamarin-forms/tools-in-depth/refactorings.md#refactor).
 
 ##Code Organisation
 
-The refactorings suggested within the  the
+The refactorings suggested within the **Organise**
+
+![Using Organise Refactorings](/img/xamarin-forms/refactoring-organise.gif)
 
 To view a complete list of available code organisation operations, visit [Refactorings - Organise](/xamarin-forms/tools-in-depth/refactorings.md#refactor).
