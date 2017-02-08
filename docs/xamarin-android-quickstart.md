@@ -6,13 +6,13 @@
 
 ##Introduction
 
-Welcome to the quickstart guide for using MFractor with Xamarin.Android.
+Welcome to the quick start guide for using MFractor with Xamarin.Android!
 
 This document explains the most useful features of MFractor for Xamarin.Android.
 
 ##Project Resource Indexing
 
-When an Android project is opened, MFractor needs to *index* the projects resources; this is all files and folders under `Resources\` including layouts, menus, drawables, strings, colors etc.
+When an Android project is opened, MFractor needs to **index** the projects resources; this is all files and folders under `Resources\` including layouts, menus, drawables, strings, colors etc.
 
 When the indexing operation finishes, you might see a status message in the top toolbar:
 
@@ -50,9 +50,16 @@ When a resource has multiple configurations, a selector dialog is displayed wher
 ![Android tooltips](/img/android/resource-goto-declaration.gif)
 
 ##Resource IntelliSense
+MFractor adds IntelliSense support for **all** Android resources.
 
-##Resource Analysis
+To use resource IntelliSense, simply open a `.axml` or `.xml` file within your projects `Resources` folder and start typing.
+
+A full list of supported resource IntelliSense modules can be found  
+
+##Resource Code Analysis
+
 
 ##Find All Resource References
+
 
 ##C# Code Analysis For Android

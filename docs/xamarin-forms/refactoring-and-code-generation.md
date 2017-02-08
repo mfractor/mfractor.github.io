@@ -2,7 +2,7 @@
 
 ##Refactoring And Code Generation
 
-*Generate C# code from Xaml in just a few clicks*
+*Fix issues, tidy up code and generate C# from your Xaml in just a few clicks*
 
 ##Introduction
 
@@ -18,7 +18,7 @@ MFractor will populate this
 The areas a refactoring activates depends on it's scope:
 
  - **Document**: Document scoped refactorings appear when you click anywhere in the document. The *Implement View Model* refactoring is an example of a document level refactoring.
- - **Xml Node**: Xml node scoped refactorings appear when you click on an Xml node declaration; for example `<MyNode/>`. The *Sort Attributes* organise refactoring is an example of a xml node level refactoring.
+ - **Xml Node**: Xml node scoped refactorings appear when you click on an Xml node declaration; for example `<MyNode/>`. The *Sort Attributes* organize refactoring is an example of a xml node level refactoring.
  - **Xml Attributes**: Xml attribute scoped refactorings appear when you click on an Xml attribute declaration or value; for example `MyAttribute="MyValue"`. The *Extract Into Property Binding* refactoring is an example of a xml attribute level refactoring.
 
 Each refactoring within the [Refactorings](/xamarin-forms/tools-in-depth/refactorings.md) article lists the **Scope** it will execute in and then describes the conditions the operation activates within.
@@ -44,7 +44,9 @@ To view a complete list of available code generation refactorings, visit [Refact
 
 ##Code Refactoring
 
-Code refactoring operations allow you to manipulate your Xaml file in ; sometimes these refactoring operations can
+Code refactoring operations allow you to manipulate the names of symbols in both  your Xaml file in ; sometimes these refactoring operations can
+
+
 
 To view a complete list of available refactoring operations, visit [Refactorings - Refactor](/xamarin-forms/tools-in-depth/refactorings.md#refactor).
 
