@@ -20,6 +20,7 @@ pages:
 - Home: index.md
 - Getting Started:
   - Setup: setup.md
+  - FAQ: faq.md
   - Support: support.md
   - Xamarin.Forms Quickstart: xamarin-forms-quickstart.md
   - Xamarin.Android Quickstart: xamarin-android-quickstart.md
@@ -50,6 +51,7 @@ pages:
     - Mvvm Navigation: tutorials/xamarin-forms/mvvm-navigation.md
     - Implementing View Models: tutorials/xamarin-forms/implementing-view-models.md
     - Value Converter Type Safety: tutorials/xamarin-forms/value-converter-type-safety.md
+    - Organising Xaml Code: tutorials/xamarin-forms/organising-xaml-code.md
 - Release Notes:
     - 2.8: release-notes/v2-8.md
     - 2.7: release-notes/v2-7.md
