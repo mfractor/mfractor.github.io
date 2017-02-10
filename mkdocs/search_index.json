@@ -56,6 +56,31 @@
             "title": "Uninstalling MFractor"
         }, 
         {
+            "location": "/faq/", 
+            "text": "Frequently Asked Questions\n\n\nHow do I install or update the Android SDK meta-data bundle?\n\n\nWhat is the .droids folder?\n\n\nShould I check .droidres into source control?", 
+            "title": "FAQ"
+        }, 
+        {
+            "location": "/faq/#frequently-asked-questions", 
+            "text": "", 
+            "title": "Frequently Asked Questions"
+        }, 
+        {
+            "location": "/faq/#how-do-i-install-or-update-the-android-sdk-meta-data-bundle", 
+            "text": "", 
+            "title": "How do I install or update the Android SDK meta-data bundle?"
+        }, 
+        {
+            "location": "/faq/#what-is-the-droids-folder", 
+            "text": "", 
+            "title": "What is the .droids folder?"
+        }, 
+        {
+            "location": "/faq/#should-i-check-droidres-into-source-control", 
+            "text": "", 
+            "title": "Should I check .droidres into source control?"
+        }, 
+        {
             "location": "/support/", 
             "text": "Support\n\n\nGeting help for MFractor when something's amiss or giving feedback\n\n\nProduct Support\n\n\nIf something doesn't work quite right or you'd like a sweet new feature added, be patient and contact me:\n\n\n\n\nVia Twitter: Give me a holla at \n@matthewrdev\n\n\nVia Slack: Drop in to chat anytime in the \n#mfractor Xamarin Slack sub-channel\n.\n\n\nVia Email: Shot an email to \nhello@mfractor.com\n\n\n\n\nLearning To Use MFractor\n\n\nMFractor does a lot so it may take a little while to learn its ins and outs. If you'd like to learn how to best use it, you have a few options:\n\n\n\n\nGet started by reading the \nXamarin.Forms Quickstart\n and \nXamarin.Android Quickstart\n; these are a quick overview of the most used features.\n\n\nRead the in-depth docs for both Xamarin.Forms and Xamarin.Android (se the menu to the left). Each article covers a feature in-depth and fully explains how to use it.\n\n\nRead the \ntutorials\n for and in-depth exploration of a feature from first concepts to practical use cases.\n\n\nDrop into the \n#mfractor Xamarin Slack sub-channel\n and start chatting to me (Matthew Robbins). I'm happy to answer any questions you have\n\n\n\n\nFiling A Bug Report\n\n\nIf you notice a bug while you are using MFractor, please file a bug report by taking the following steps:\n\n\n\n\nPrepare a short 2-3 sentence description of the bug, the steps you took that triggered it and the symptoms of the bug.\n\n\nCopy MFractors version information by opening the \nAbout\n dialog (\nHelp\n -\n \nMFractor\n -\n \nAbout\n) and click \nCopy Build Details Into Clipboard\n.\n\n\nEmail the description and build version to \nhello@mfractor.com\n.", 
             "title": "Support"
@@ -1036,8 +1061,38 @@
             "title": "Summary"
         }, 
         {
+            "location": "/tutorials/xamarin-forms/organising-xaml-code/", 
+            "text": "Organising Xaml Code\n\n\nTidy up your Xaml code with the expand, collapse and sort tools\n\n\nIntroduction\n\n\nIn this tutorial we'll go over the most useful Xaml organising refactorings. We'll cover MFractors Xaml formatting conventions, how to sort attributes and how to expand and collapse attributes and nodes.\n\n\nThese refactorings make it very easy to keep your Xaml organised and thus easier to understand.\n\n\nSorting Attributes\n\n\nThe \nSort Attributes\n operation arranges a Xaml nodes attributes in order of namespace and name; this is great for keeping your Xaml tidy and easy to understand!\n\n\nMFractor uses the following rules when sorting:\n\n\n\n\nAttributes that declare an xml namespace are ordered first, sorted alphabetically ascending. For example \nxmlns:forms=\"http://xamarin.com/schemas/2014/forms\"\n will appear before \nxmlns:x=\"http://schemas.microsoft.com/winfx/2009/xaml\"\n.\n\n\nAttributes that belong to the Microsoft Xaml schema \nhttp://schemas.microsoft.com/winfx/2009/xaml\n are ordered next. For example, the \nx:Class\n or \nx:Name\n declaration.\n\n\nAttributes belonging to the default namespace are ordered next, sorted alphabetically ascending.\n\n\nAttributes belonging to the other namespaces are then ordered next, sorted by namespace ascending and then by attribute name ascending.\n\n\n\n\nTo access the \nsort\n operation, right click on a Xaml node definition, select \nOrganise\n and then \nSort Attributes\n:\n\n\n\n\nExpanding And Collapsing Attributes\n\n\nWe can use the following organise refactorings to arrange a xaml nodes attributes:\n\n\n\n\nSplit attributes onto separate lines\n will breakout each xaml attribute onto it's own line, aligning themselves with a slight indentation from their parent node.\n\n\nCollapse attributes onto same line\n will move all attributes onto the same line as their parents opening tag.\n\n\n\n\n\n\nExpanding And Collapsing Nodes\n\n\nWe can use the following organise refactorings to expand and collapse a Xaml node:\n\n\n\n\nExpand node into opening and clossing tag\n take a self-closing Xaml node (IE: \nLabel /\n) and generate a closing tag for it (IE: \nLabel\n/Label\n).\n\n\nCollapse closing tag\n takes an empty node with a closing tag (IE: \nLabel\n/Label\n) and remove the closing tag, making the node self-closing (IE: \nLabel /\n).", 
+            "title": "Organising Xaml Code"
+        }, 
+        {
+            "location": "/tutorials/xamarin-forms/organising-xaml-code/#organising-xaml-code", 
+            "text": "Tidy up your Xaml code with the expand, collapse and sort tools", 
+            "title": "Organising Xaml Code"
+        }, 
+        {
+            "location": "/tutorials/xamarin-forms/organising-xaml-code/#introduction", 
+            "text": "In this tutorial we'll go over the most useful Xaml organising refactorings. We'll cover MFractors Xaml formatting conventions, how to sort attributes and how to expand and collapse attributes and nodes.  These refactorings make it very easy to keep your Xaml organised and thus easier to understand.", 
+            "title": "Introduction"
+        }, 
+        {
+            "location": "/tutorials/xamarin-forms/organising-xaml-code/#sorting-attributes", 
+            "text": "The  Sort Attributes  operation arranges a Xaml nodes attributes in order of namespace and name; this is great for keeping your Xaml tidy and easy to understand!  MFractor uses the following rules when sorting:   Attributes that declare an xml namespace are ordered first, sorted alphabetically ascending. For example  xmlns:forms=\"http://xamarin.com/schemas/2014/forms\"  will appear before  xmlns:x=\"http://schemas.microsoft.com/winfx/2009/xaml\" .  Attributes that belong to the Microsoft Xaml schema  http://schemas.microsoft.com/winfx/2009/xaml  are ordered next. For example, the  x:Class  or  x:Name  declaration.  Attributes belonging to the default namespace are ordered next, sorted alphabetically ascending.  Attributes belonging to the other namespaces are then ordered next, sorted by namespace ascending and then by attribute name ascending.   To access the  sort  operation, right click on a Xaml node definition, select  Organise  and then  Sort Attributes :", 
+            "title": "Sorting Attributes"
+        }, 
+        {
+            "location": "/tutorials/xamarin-forms/organising-xaml-code/#expanding-and-collapsing-attributes", 
+            "text": "We can use the following organise refactorings to arrange a xaml nodes attributes:   Split attributes onto separate lines  will breakout each xaml attribute onto it's own line, aligning themselves with a slight indentation from their parent node.  Collapse attributes onto same line  will move all attributes onto the same line as their parents opening tag.", 
+            "title": "Expanding And Collapsing Attributes"
+        }, 
+        {
+            "location": "/tutorials/xamarin-forms/organising-xaml-code/#expanding-and-collapsing-nodes", 
+            "text": "We can use the following organise refactorings to expand and collapse a Xaml node:   Expand node into opening and clossing tag  take a self-closing Xaml node (IE:  Label / ) and generate a closing tag for it (IE:  Label /Label ).  Collapse closing tag  takes an empty node with a closing tag (IE:  Label /Label ) and remove the closing tag, making the node self-closing (IE:  Label / ).", 
+            "title": "Expanding And Collapsing Nodes"
+        }, 
+        {
             "location": "/release-notes/v2-8/", 
-            "text": "Release Notes - v2.8.0\n\n\nTO BE DECIDED\n\n\nDownload MFractor 2.8.0\n\n\nIntroduction\n\n\nThis is a summary of the changes introduced in v2.8.0 of MFractor for Xamarin Studio.\n\n\nThis release focuses on adding new refactoring and code generation actions into the Xaml editor.\n\n\nFeatures\n\n\n\n\nNew Refactorings\n\n\nRight click on a xaml attribute property that's a \nSystem.Drawing.Color\n or a \nXamarin.Forms.Color\n and edit it using the color selection dialog. This action won't be available if the attribute value is an expression.\n\n\nRight click on a xaml attribute property that has a literal value and extract it into a \nBinding\n expression. This action won't be available if the attribute value is an expression.\n\n\nOrganise Xaml Nodes:\n\n\nThe \nCollapse Xaml Attributes\n refactoring will collapse all xaml attributes onto the same line as the parent xaml node.\n\n\nThe \nExpand Xaml Attributes\n refactoring will expand all xaml attributes onto separate lines.\n\n\nThe \nSort Xaml Attributes\n refactoring will sort the attributes for a xaml node by namespace and name.\n\n\nThe \nExpand Node\n refactoring takes a self-closing xaml node and generate a closing tag for it.\n\n\nThe \nCollapse Node\n refactoring takes a xaml node with no children and a closing tag and removes the closing tag to make the node self-closing.\n\n\n\n\n\n\nNew Code Generators\n\n\nRight click on an xaml node that inherits from \nXamarin.Forms.VisualElement\n or \nXamarin.Forms.Application\n and select \nAdd Resource Dictionary\n to generate a resource dictionary for that element.\n\n\nNew Xaml Analysers\n\n\nDetect when an \nx:Name\n code-behind field declaration is empty.\n\n\n\n\nEnhancements\n\n\n\n\nThis release targets Xamarin Studio v6.1.5\n\n\nHover over a xaml attribute property that's a \nSystem.Drawing.Color\n or a \nXamarin.Forms.Color\n to see the color value inside the tooltip.\n\n\nThe Android SDK meta-data has been removed from MFractor.mpack; you can download and update the sdk meta-data through the \nHelp\n -\n \nMFractor\n -\n \nInstall Android SDK Meta-Data\n menu item.\n\n\n\n\nBug Fixes\n\n\n\n\nCorrectly validate the type provided to x:TypeArguments; there was a bug in the type checking algorithm.\n\n\nDon't allow the 'Simplify' refactoring to run against expressions.\n\n\nFix multiple type conversion checking bugs in the ValueConversion attribute validation.", 
+            "text": "Release Notes - v2.8.0\n\n\nTO BE DECIDED\n\n\nDownload MFractor 2.8.0\n\n\nIntroduction\n\n\nThis is a summary of the changes introduced in v2.8.0 of MFractor for Xamarin Studio.\n\n\nThis release focuses on adding new refactoring and code generation actions into the Xaml editor.\n\n\nYou can now sort your xaml, edit colors interactively, extract and replace values with binding expressions and more:\n\n\nFeatures\n\n\n\n\nNew Refactorings\n\n\nRight click on a xaml attribute property that's a \nSystem.Drawing.Color\n or a \nXamarin.Forms.Color\n and edit it using the color selection dialog. This action won't be available if the attribute value is an expression.\n\n\nRight click on a xaml attribute property that has a literal value and extract it into a \nBinding\n expression. This action won't be available if the attribute value is an expression.\n\n\nOrganise Refactorings:\n\n\nThe \nCollapse Xaml Attributes\n refactoring will collapse all xaml attributes onto the same line as the parent xaml node.\n\n\nThe \nExpand Xaml Attributes\n refactoring will expand all xaml attributes onto separate lines.\n\n\nThe \nSort Xaml Attributes\n refactoring will sort the attributes for a xaml node by namespace and name.\n\n\nThe \nExpand Node\n refactoring takes a self-closing xaml node and generate a closing tag for it.\n\n\nThe \nCollapse Node\n refactoring takes a xaml node with no children and a closing tag and removes the closing tag to make the node self-closing.\n\n\n\n\n\n\n\n\n\n\nNew Code Generators\n\n\nRight click on an xaml node that inherits from \nXamarin.Forms.VisualElement\n or \nXamarin.Forms.Application\n and select \nAdd Resource Dictionary\n to generate a resource dictionary for that element.\n\n\n\n\n\n\nNew Xaml Analysers\n\n\nDetect when an \nx:Name\n code-behind field declaration is empty.\n\n\n\n\n\n\n\n\nEnhancements\n\n\n\n\nThis release targets Xamarin Studio v6.1.5\n\n\nHover over a xaml attribute property that's a \nSystem.Drawing.Color\n or a \nXamarin.Forms.Color\n to see the color value inside the tooltip.\n\n\nThe Android SDK meta-data has been removed from MFractor.mpack; you can download and update the sdk meta-data through the \nHelp\n -\n \nMFractor\n -\n \nInstall Android SDK Meta-Data\n menu item.\n\n\n\n\nBug Fixes\n\n\n\n\nCorrectly validate the type provided to x:TypeArguments; there was a bug in the type checking algorithm.\n\n\nDon't allow the 'Simplify' refactoring to run against expressions.\n\n\nFix multiple type conversion checking bugs in the ValueConversion attribute validation.", 
             "title": 2.8
         }, 
         {
@@ -1047,12 +1102,12 @@
         }, 
         {
             "location": "/release-notes/v2-8/#introduction", 
-            "text": "This is a summary of the changes introduced in v2.8.0 of MFractor for Xamarin Studio.  This release focuses on adding new refactoring and code generation actions into the Xaml editor.", 
+            "text": "This is a summary of the changes introduced in v2.8.0 of MFractor for Xamarin Studio.  This release focuses on adding new refactoring and code generation actions into the Xaml editor.  You can now sort your xaml, edit colors interactively, extract and replace values with binding expressions and more:", 
             "title": "Introduction"
         }, 
         {
             "location": "/release-notes/v2-8/#features", 
-            "text": "New Refactorings  Right click on a xaml attribute property that's a  System.Drawing.Color  or a  Xamarin.Forms.Color  and edit it using the color selection dialog. This action won't be available if the attribute value is an expression.  Right click on a xaml attribute property that has a literal value and extract it into a  Binding  expression. This action won't be available if the attribute value is an expression.  Organise Xaml Nodes:  The  Collapse Xaml Attributes  refactoring will collapse all xaml attributes onto the same line as the parent xaml node.  The  Expand Xaml Attributes  refactoring will expand all xaml attributes onto separate lines.  The  Sort Xaml Attributes  refactoring will sort the attributes for a xaml node by namespace and name.  The  Expand Node  refactoring takes a self-closing xaml node and generate a closing tag for it.  The  Collapse Node  refactoring takes a xaml node with no children and a closing tag and removes the closing tag to make the node self-closing.    New Code Generators  Right click on an xaml node that inherits from  Xamarin.Forms.VisualElement  or  Xamarin.Forms.Application  and select  Add Resource Dictionary  to generate a resource dictionary for that element.  New Xaml Analysers  Detect when an  x:Name  code-behind field declaration is empty.", 
+            "text": "New Refactorings  Right click on a xaml attribute property that's a  System.Drawing.Color  or a  Xamarin.Forms.Color  and edit it using the color selection dialog. This action won't be available if the attribute value is an expression.  Right click on a xaml attribute property that has a literal value and extract it into a  Binding  expression. This action won't be available if the attribute value is an expression.  Organise Refactorings:  The  Collapse Xaml Attributes  refactoring will collapse all xaml attributes onto the same line as the parent xaml node.  The  Expand Xaml Attributes  refactoring will expand all xaml attributes onto separate lines.  The  Sort Xaml Attributes  refactoring will sort the attributes for a xaml node by namespace and name.  The  Expand Node  refactoring takes a self-closing xaml node and generate a closing tag for it.  The  Collapse Node  refactoring takes a xaml node with no children and a closing tag and removes the closing tag to make the node self-closing.      New Code Generators  Right click on an xaml node that inherits from  Xamarin.Forms.VisualElement  or  Xamarin.Forms.Application  and select  Add Resource Dictionary  to generate a resource dictionary for that element.    New Xaml Analysers  Detect when an  x:Name  code-behind field declaration is empty.", 
             "title": "Features"
         }, 
         {
