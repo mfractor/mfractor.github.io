@@ -4,7 +4,7 @@
     
     <url>
      <loc>/</loc>
-     <lastmod>2017-02-11</lastmod>
+     <lastmod>2017-02-12</lastmod>
      <changefreq>daily</changefreq>
     </url>
     
@@ -13,31 +13,25 @@
         
     <url>
      <loc>/setup/</loc>
-     <lastmod>2017-02-11</lastmod>
+     <lastmod>2017-02-12</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/faq/</loc>
-     <lastmod>2017-02-11</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-        
-    <url>
-     <loc>/support/</loc>
-     <lastmod>2017-02-11</lastmod>
+     <lastmod>2017-02-12</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/xamarin-forms-quickstart/</loc>
-     <lastmod>2017-02-11</lastmod>
+     <lastmod>2017-02-12</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/xamarin-android-quickstart/</loc>
-     <lastmod>2017-02-11</lastmod>
+     <lastmod>2017-02-12</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
@@ -47,25 +41,25 @@
         
     <url>
      <loc>/xamarin-forms/configure-binding-context/</loc>
-     <lastmod>2017-02-11</lastmod>
+     <lastmod>2017-02-12</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/xamarin-forms/navigation/</loc>
-     <lastmod>2017-02-11</lastmod>
+     <lastmod>2017-02-12</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/xamarin-forms/analysis/</loc>
-     <lastmod>2017-02-11</lastmod>
+     <lastmod>2017-02-12</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/xamarin-forms/refactoring-and-code-generation/</loc>
-     <lastmod>2017-02-11</lastmod>
+     <lastmod>2017-02-12</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
@@ -81,37 +75,37 @@
         
     <url>
      <loc>/xamarin-android/project-resource-indexing/</loc>
-     <lastmod>2017-02-11</lastmod>
+     <lastmod>2017-02-12</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/xamarin-android/navigation/</loc>
-     <lastmod>2017-02-11</lastmod>
+     <lastmod>2017-02-12</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/xamarin-android/analysis/</loc>
-     <lastmod>2017-02-11</lastmod>
+     <lastmod>2017-02-12</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/xamarin-android/refactoring-and-code-generation/</loc>
-     <lastmod>2017-02-11</lastmod>
+     <lastmod>2017-02-12</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/xamarin-android/dotnet-code-analysis/</loc>
-     <lastmod>2017-02-11</lastmod>
+     <lastmod>2017-02-12</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/xamarin-android/resource-intellisense/</loc>
-     <lastmod>2017-02-11</lastmod>
+     <lastmod>2017-02-12</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
@@ -127,7 +121,7 @@
         
     <url>
      <loc>/tutorials/tutorials/</loc>
-     <lastmod>2017-02-11</lastmod>
+     <lastmod>2017-02-12</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
@@ -149,25 +143,25 @@
         
     <url>
      <loc>/release-notes/v2-8/</loc>
-     <lastmod>2017-02-11</lastmod>
+     <lastmod>2017-02-12</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/release-notes/v2-7/</loc>
-     <lastmod>2017-02-11</lastmod>
+     <lastmod>2017-02-12</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/release-notes/v2-6/</loc>
-     <lastmod>2017-02-11</lastmod>
+     <lastmod>2017-02-12</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/release-notes/v2-5/</loc>
-     <lastmod>2017-02-11</lastmod>
+     <lastmod>2017-02-12</lastmod>
      <changefreq>daily</changefreq>
     </url>
         

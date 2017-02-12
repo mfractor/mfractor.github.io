@@ -89,13 +89,6 @@
   
   
 <li class="toctree-l1 ">
-  <a class="" href="../../support/">Support</a>
-  
-</li>
-
-  
-  
-<li class="toctree-l1 ">
   <a class="" href="../../xamarin-forms-quickstart/">Xamarin.Forms Quickstart</a>
   
 </li>
@@ -398,7 +391,7 @@
             <div class="section">
               
                 <h2 id="release-notes-v280">Release Notes - v2.8.0</h2>
-<p><strong>TO BE DECIDED</strong></p>
+<p><strong>12th February 2017</strong></p>
 <p><strong><a href="http://addins.mfractor.com/releases/2.08.00/MFractor.MFractor_2.08.00.mpack">Download MFractor 2.8.0</a></strong></p>
 <h2 id="introduction">Introduction</h2>
 <p>This is a summary of the changes introduced in v2.8.0 of MFractor for Xamarin Studio.</p>
@@ -408,7 +401,7 @@
 <ul>
 <li><strong>New Refactorings</strong><ul>
 <li>Right click on a xaml attribute property that's a <code>System.Drawing.Color</code> or a <code>Xamarin.Forms.Color</code> and edit it using the color selection dialog. This action won't be available if the attribute value is an expression.</li>
-<li>Right click on a xaml attribute property that has a literal value and extract it into a <code>Binding</code> expression. This action won't be available if the attribute value is an expression.</li>
+<li>Right click on a xaml attribute property that has a literal value and extract it into a <code>Binding</code> expression. This action is not available if the attribute value is an expression or the attribute does not have a corresponding bindable property.</li>
 <li><strong>Organise Refactorings:</strong><ul>
 <li>The <em>Collapse Xaml Attributes</em> refactoring will collapse all xaml attributes onto the same line as the parent xaml node.</li>
 <li>The <em>Expand Xaml Attributes</em> refactoring will expand all xaml attributes onto separate lines.</li>
