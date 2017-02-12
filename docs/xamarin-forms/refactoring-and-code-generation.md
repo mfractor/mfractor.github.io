@@ -1,5 +1,3 @@
-**WORK IN PROGRESS**
-
 ##Refactoring And Code Generation
 
 *Fix issues, tidy up code and generate C# from your Xaml in just a few clicks*
@@ -11,7 +9,7 @@ For a full list of available refactoring and code generation actions, see the [T
 ##Accessing Code Refactoring
 The refactoring menus can be accessed by right clicking on particular areas within the Xaml document:
 
-![Accessing the refactoring menus](/img/forms/refactoring-menus.gif)
+![Accessing the refactoring menus](/img/forms/refactoring-menu.png)
 
 MFractor will populate the context with 4 types of refactorings:
 
@@ -34,7 +32,7 @@ Code issue fixes are available when an analyser from the [Xaml Analysis Engine](
 
 You can action a code fix by right-clicking on the yellow-underlined code section, opening the **Fix** menu and then selecting the fix you'd like to action:
 
-![Using Fix Refactorings](/img/xamarin-forms/refactoring-fix.gif)
+![Using Fix Refactorings](/img/forms/refactoring-fix.gif)
 
 To view a complete list of available code issue fixes, visit the [analysers](/xamarin-forms/tools-in-depth/analysers.md) document.
 
@@ -47,7 +45,7 @@ For example, you could:
  - Generate resource dictionaries for view elements.
  - Implement all missing bindings in bulk using the **Implement View Model** code generator.
 
-![Using Generate Refactorings](/img/xamarin-forms/refactoring-generate.gif)
+![Using Generate Refactorings](/img/forms/refactoring-generate.gif)
 
 To view a complete list of available code generation refactorings, visit [Refactorings - Generate](/xamarin-forms/tools-in-depth/refactorings.md#generate).
 
@@ -60,7 +58,7 @@ For example, you could:
  - Take the attribute `Text="Hello Xamarin Forms!"` and extract the value `"Hello Xamarin Forms!"` into the views binding context; replacing the attribute with `Text="{Binding Message}"` and creating the C# property `public string Message { get; set; } = "Hello Xamarin Forms!"`.
  - Edit a color literal using the color picker dialog.
 
-![Using Refactor Refactorings](/img/xamarin-forms/refactoring-refactor.gif)
+![Using Refactor Refactorings](/img/forms/refactoring-refactor.gif)
 
 To view a complete list of available refactoring operations, visit [Refactorings - Refactor](/xamarin-forms/tools-in-depth/refactorings.md#refactor).
 
@@ -74,6 +72,6 @@ For example, you could:
  - Collapse or expand the attribute on a node onto separate or the same lines.
  - Expand or collapse the closing tag on a node.
 
-![Using Organise Refactorings](/img/xamarin-forms/refactoring-organise.gif)
+![Using Organise Refactorings](/img/forms/refactoring-organise.gif)
 
 To view a complete list of available code organisation operations, visit [Refactorings - Organise](/xamarin-forms/tools-in-depth/refactorings.md#refactor).
