@@ -53,7 +53,12 @@ To view a complete list of available code generation refactorings, visit [Refact
 
 ##Code Refactoring
 
-Code refactoring operations allow you to manipulate Xaml and .NET symbols while within your Xaml document. These refactorings typically take user input and rename a symbol (such as a xaml namespace) or change a properties value.
+The refactorings within the **Refactor** allow you to manipulate Xaml and .NET symbols while within your Xaml document. These refactorings typically take user input and perform a change on the Xaml and/or C# based on that input.
+
+For example, you could:
+
+ - Take the attribute `Text="Hello Xamarin Forms!"` and extract the value `"Hello Xamarin Forms!"` into the views binding context; replacing the attribute with `Text="{Binding Message}"` and creating the C# property `public string Message { get; set; } = "Hello Xamarin Forms!"`.
+ - Edit a color literal using the color picker dialog.
 
 ![Using Refactor Refactorings](/img/xamarin-forms/refactoring-refactor.gif)
 
@@ -61,7 +66,13 @@ To view a complete list of available refactoring operations, visit [Refactorings
 
 ##Code Organisation
 
-The refactorings suggested within the **Organise**
+The refactorings within the **Organise** are used to quickly format your xaml code. These refactorings are useful to keep your xaml tidy and easy to understand.
+
+For example, you could:
+
+ - Sort all attributes on a node by name and namespace.
+ - Collapse or expand the attribute on a node onto separate or the same lines.
+ - Expand or collapse the closing tag on a node.
 
 ![Using Organise Refactorings](/img/xamarin-forms/refactoring-organise.gif)
 

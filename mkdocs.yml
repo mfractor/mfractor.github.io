@@ -21,7 +21,6 @@ pages:
 - Getting Started:
   - Setup: setup.md
   - FAQ: faq.md
-  - Support: support.md
   - Xamarin.Forms Quickstart: xamarin-forms-quickstart.md
   - Xamarin.Android Quickstart: xamarin-android-quickstart.md
 - Xamarin.Forms:

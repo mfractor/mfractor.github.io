@@ -59,7 +59,7 @@ When MFractor encounters a Xaml attribute that uses the `Xamarin.Forms.Color` or
 
 If successfully evaluated, it will render the color value into the resulting tooltip:
 
-![Color tooltips](/img/forms/navigation-color-tooltips.png)
+![Color tooltips](/img/forms/navigation-color-tooltips.gif)
 
 ##Image Tooltips
 
