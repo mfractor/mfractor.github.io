@@ -398,14 +398,13 @@
           <div role="main">
             <div class="section">
               
-                <p><strong>WORK IN PROGRESS</strong></p>
-<h2 id="refactoring-and-code-generation">Refactoring And Code Generation</h2>
+                <h2 id="refactoring-and-code-generation">Refactoring And Code Generation</h2>
 <p><em>Fix issues, tidy up code and generate C# from your Xaml in just a few clicks</em></p>
 <h2 id="introduction">Introduction</h2>
 <p>For a full list of available refactoring and code generation actions, see the <a href="../tools-in-depth/refactorings/">Tools In-Depth - Refactoring</a> article.</p>
 <h2 id="accessing-code-refactoring">Accessing Code Refactoring</h2>
 <p>The refactoring menus can be accessed by right clicking on particular areas within the Xaml document:</p>
-<p><img alt="Accessing the refactoring menus" src="../../img/forms/refactoring-menus.gif" /></p>
+<p><img alt="Accessing the refactoring menus" src="../../img/forms/refactoring-menu.png" /></p>
 <p>MFractor will populate the context with 4 types of refactorings:</p>
 <ul>
 <li><strong>Fix</strong>: Fixes code issues detected by the Xaml analyser.</li>
@@ -423,7 +422,7 @@
 <h2 id="code-issue-fixes">Code Issue Fixes</h2>
 <p>Code issue fixes are available when an analyser from the <a href="../analysis/">Xaml Analysis Engine</a> detects a code issue and it marks that code section with a yellow underline.</p>
 <p>You can action a code fix by right-clicking on the yellow-underlined code section, opening the <strong>Fix</strong> menu and then selecting the fix you'd like to action:</p>
-<p><img alt="Using Fix Refactorings" src="../../img/xamarin-forms/refactoring-fix.gif" /></p>
+<p><img alt="Using Fix Refactorings" src="../../img/forms/refactoring-fix.gif" /></p>
 <p>To view a complete list of available code issue fixes, visit the <a href="../tools-in-depth/analysers/">analysers</a> document.</p>
 <h2 id="code-generation">Code Generation</h2>
 <p>Code generation operations allow you to quickly build boilerplate code that you'd otherwise have to hand code yourself.</p>
@@ -432,7 +431,7 @@
 <li>Generate resource dictionaries for view elements.</li>
 <li>Implement all missing bindings in bulk using the <strong>Implement View Model</strong> code generator.</li>
 </ul>
-<p><img alt="Using Generate Refactorings" src="../../img/xamarin-forms/refactoring-generate.gif" /></p>
+<p><img alt="Using Generate Refactorings" src="../../img/forms/refactoring-generate.gif" /></p>
 <p>To view a complete list of available code generation refactorings, visit <a href="../tools-in-depth/refactorings/#generate">Refactorings - Generate</a>.</p>
 <h2 id="code-refactoring">Code Refactoring</h2>
 <p>The refactorings within the <strong>Refactor</strong> allow you to manipulate Xaml and .NET symbols while within your Xaml document. These refactorings typically take user input and perform a change on the Xaml and/or C# based on that input.</p>
@@ -441,7 +440,7 @@
 <li>Take the attribute <code>Text="Hello Xamarin Forms!"</code> and extract the value <code>"Hello Xamarin Forms!"</code> into the views binding context; replacing the attribute with <code>Text="{Binding Message}"</code> and creating the C# property <code>public string Message { get; set; } = "Hello Xamarin Forms!"</code>.</li>
 <li>Edit a color literal using the color picker dialog.</li>
 </ul>
-<p><img alt="Using Refactor Refactorings" src="../../img/xamarin-forms/refactoring-refactor.gif" /></p>
+<p><img alt="Using Refactor Refactorings" src="../../img/forms/refactoring-refactor.gif" /></p>
 <p>To view a complete list of available refactoring operations, visit <a href="../tools-in-depth/refactorings/#refactor">Refactorings - Refactor</a>.</p>
 <h2 id="code-organisation">Code Organisation</h2>
 <p>The refactorings within the <strong>Organise</strong> are used to quickly format your xaml code. These refactorings are useful to keep your xaml tidy and easy to understand.</p>
@@ -451,7 +450,7 @@
 <li>Collapse or expand the attribute on a node onto separate or the same lines.</li>
 <li>Expand or collapse the closing tag on a node.</li>
 </ul>
-<p><img alt="Using Organise Refactorings" src="../../img/xamarin-forms/refactoring-organise.gif" /></p>
+<p><img alt="Using Organise Refactorings" src="../../img/forms/refactoring-organise.gif" /></p>
 <p>To view a complete list of available code organisation operations, visit <a href="../tools-in-depth/refactorings/#refactor">Refactorings - Organise</a>.</p>
               
             </div>
