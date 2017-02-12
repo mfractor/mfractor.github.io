@@ -1,5 +1,3 @@
-**WORK IN PROGRESS**
-
 ##Navigation
 
 *Move efficiently through a Xamarin.Forms project with rich Xaml code navigation*
