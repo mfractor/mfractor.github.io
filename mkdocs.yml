@@ -52,6 +52,7 @@ pages:
     - Value Converter Type Safety: tutorials/xamarin-forms/value-converter-type-safety.md
     - Organising Xaml Code: tutorials/xamarin-forms/organising-xaml-code.md
 - Release Notes:
+    - 2.9: release-notes/v2-9.md
     - 2.8: release-notes/v2-8.md
     - 2.7: release-notes/v2-7.md
     - 2.6: release-notes/v2-6.md
