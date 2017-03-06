@@ -4,19 +4,32 @@
 
 Welcome to the documentation for MFractor, incredible Xamarin tools.
 
-MFractor adds several features so you can make great Xamarin.Forms apps faster:
+Let's get you started:
 
- * Spend less time debugging with a comprehensive xaml analyser.
- * Write great code faster with Xaml refactoring and code generation.
- * Quickly explore Xamarin.Forms projects with rich xaml navigation.
- * ... And much, much more!
+###Get Started:
 
-Slowly, I am building the ReSharper for Xamarin Studio and I'm thrilled that you have joined me on the journey.
+ * [Download MFractor]()
+ * [Install MFractor]()
 
-To get started, checkout:
+###Xamarin.Forms Essentials:
 
- * [The Xamarin.Forms Quickstart Guide](xamarin-forms-quickstart.md)
- * [The Xamarin.Android Quickstart Guide](xamarin-android-quickstart.md)
+* [Quickstart Guide](xamarin-forms-quickstart.md)
+* [Xaml Analysis](xamarin-forms/analysis.md)
+* [Binding Context Configuration](xamarin-forms/configure-binding-context.md)
+* [Navigation](xamarin-forms/navigation.md)
+* [Code Actions](xamarin-forms/code-actions.md)
+
+###Xamarin.Android Essentials:
+
+* [Quickstart Guide](xamarin-android-quickstart.md)
+* [Resource Analysis](xamarin-android/analysis.md)
+* [C# Analysis](xamarin-android/dotnet-code-analysis.md)
+* [Resource IntelliSense](xamarin-android/resource-intellisense.md)
+* [Navigation](xamarin-android/navigation.md)
+* [Project Indexing](xamarin-android/project-resource-indexing.md)
+* [Code Actions](xamarin-android/code-actions.md)
+
+###Support
 
 If something doesn't work quite right or you'd like a sweet new feature added, be patient and contact me:
 
@@ -24,6 +37,10 @@ If something doesn't work quite right or you'd like a sweet new feature added, b
  * Via Slack: Drop in to chat anytime in the [#mfractor Xamarin Slack sub-channel](https://xamarinchat.slack.com/archives/mfractor).
  * Via Email: Shot an email to hello@mfractor.com
 
-Finally, thank you for installing and using MFractor. It means the world to me.
+###Thank You!
+
+Slowly, I am building the ReSharper for Xamarin Studio and I'm thrilled that you have joined me on the journey.
+
+Thank you for installing and using MFractor. It means the world to me.
 
 Matthew Robbins - Creator of MFractor. ✌️

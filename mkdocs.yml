@@ -27,20 +27,26 @@ pages:
   - Configure Binding Context: xamarin-forms/configure-binding-context.md
   - Navigation: xamarin-forms/navigation.md
   - Analysis: xamarin-forms/analysis.md
-  - Refactoring And Code Generation: xamarin-forms/refactoring-and-code-generation.md
+  - Using Code Actions: xamarin-forms/code-actions.md
   - Tools In-Depth:
     - Analysers: xamarin-forms/tools-in-depth/analysers.md
-    - Refactorings: xamarin-forms/tools-in-depth/refactorings.md
+    - Refactorings: xamarin-forms/tools-in-depth/refactor.md
+    - Code Generation: xamarin-forms/tools-in-depth/generate.md
+    - Xaml Organisation: xamarin-forms/tools-in-depth/organise.md
+    - Issue Fixing: xamarin-forms/tools-in-depth/fix.md
 - Xamarin.Android:
   - Project Resource Indexing: xamarin-android/project-resource-indexing.md
   - Navigation: xamarin-android/navigation.md
   - Analysis: xamarin-android/analysis.md
-  - Refactoring And Code Generation: xamarin-android/refactoring-and-code-generation.md
+  - Using Code Actions: xamarin-android/code-actions.md
   - .NET Code Analysis: xamarin-android/dotnet-code-analysis.md
   - Resource IntelliSense: xamarin-android/resource-intellisense.md
   - Tools In-Depth:
     - Analysers: xamarin-android/tools-in-depth/analysers.md
-    - Refactorings: xamarin-android/tools-in-depth/refactorings.md
+    - Refactorings: xamarin-android/tools-in-depth/refactor.md
+    - Code Generation: xamarin-android/tools-in-depth/generate.md
+    - Organisation: xamarin-android/tools-in-depth/organise.md
+    - Issue Fixing: xamarin-android/tools-in-depth/fix.md
     - IntelliSense: xamarin-android/tools-in-depth/intellisense.md
 - Tutorials:
   - Tutorials: tutorials/tutorials.md
@@ -52,8 +58,9 @@ pages:
     - Value Converter Type Safety: tutorials/xamarin-forms/value-converter-type-safety.md
     - Organising Xaml Code: tutorials/xamarin-forms/organising-xaml-code.md
 - Release Notes:
-    - 2.9: release-notes/v2-9.md
-    - 2.8: release-notes/v2-8.md
-    - 2.7: release-notes/v2-7.md
-    - 2.6: release-notes/v2-6.md
-    - 2.5: release-notes/v2-5.md
+    - v2.10: release-notes/v2-10.md
+    - v2.9: release-notes/v2-9.md
+    - v2.8: release-notes/v2-8.md
+    - v2.7: release-notes/v2-7.md
+    - v2.6: release-notes/v2-6.md
+    - v2.5: release-notes/v2-5.md

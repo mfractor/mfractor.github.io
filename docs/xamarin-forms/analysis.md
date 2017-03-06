@@ -34,7 +34,7 @@ When MFractor detects a code issue, it is usually able to suggest a fix as well.
 
 You can action this fix by right clicking on the text area marked by the yellow squiggle
 
-See [Refactoring Code Generation](refactoring-and-code-generation.md) for further documentation on using Xaml to C# code generation.
+See [Code Actions](code-actions.md) for further documentation on using Xaml to C# code generation.
 
 ##Expression Analysis
 
