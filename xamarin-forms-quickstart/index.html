@@ -116,11 +116,7 @@
       
     
       
-      <li class="toctree-l3"><a href="#generating-viewmodel-bindings">Generating ViewModel Bindings</a></li>
-      
-    
-      
-      <li class="toctree-l3"><a href="#implementing-viewmodels">Implementing ViewModels</a></li>
+      <li class="toctree-l3"><a href="#accessing-code-actions">Accessing Code Actions</a></li>
       
     
   </ul>
@@ -165,7 +161,7 @@
   
   
 <li class="toctree-l1 ">
-  <a class="" href="../xamarin-forms/refactoring-and-code-generation/">Refactoring And Code Generation</a>
+  <a class="" href="../xamarin-forms/code-actions/">Using Code Actions</a>
   
 </li>
 
@@ -183,7 +179,28 @@
   
   
 <li class="toctree-l1 ">
-  <a class="" href="../xamarin-forms/tools-in-depth/refactorings/">Refactorings</a>
+  <a class="" href="../xamarin-forms/tools-in-depth/refactor/">Refactorings</a>
+  
+</li>
+
+  
+  
+<li class="toctree-l1 ">
+  <a class="" href="../xamarin-forms/tools-in-depth/generate/">Code Generation</a>
+  
+</li>
+
+  
+  
+<li class="toctree-l1 ">
+  <a class="" href="../xamarin-forms/tools-in-depth/organise/">Xaml Organisation</a>
+  
+</li>
+
+  
+  
+<li class="toctree-l1 ">
+  <a class="" href="../xamarin-forms/tools-in-depth/fix/">Issue Fixing</a>
   
 </li>
 
@@ -221,7 +238,7 @@
   
   
 <li class="toctree-l1 ">
-  <a class="" href="../xamarin-android/refactoring-and-code-generation/">Refactoring And Code Generation</a>
+  <a class="" href="../xamarin-android/code-actions/">Using Code Actions</a>
   
 </li>
 
@@ -253,7 +270,28 @@
   
   
 <li class="toctree-l1 ">
-  <a class="" href="../xamarin-android/tools-in-depth/refactorings/">Refactorings</a>
+  <a class="" href="../xamarin-android/tools-in-depth/refactor/">Refactorings</a>
+  
+</li>
+
+  
+  
+<li class="toctree-l1 ">
+  <a class="" href="../xamarin-android/tools-in-depth/generate/">Code Generation</a>
+  
+</li>
+
+  
+  
+<li class="toctree-l1 ">
+  <a class="" href="../xamarin-android/tools-in-depth/organise/">Organisation</a>
+  
+</li>
+
+  
+  
+<li class="toctree-l1 ">
+  <a class="" href="../xamarin-android/tools-in-depth/fix/">Issue Fixing</a>
   
 </li>
 
@@ -340,35 +378,42 @@
   
   
 <li class="toctree-l1 ">
-  <a class="" href="../release-notes/v2-9/">2.9</a>
+  <a class="" href="../release-notes/v2-10/">v2.10</a>
   
 </li>
 
   
   
 <li class="toctree-l1 ">
-  <a class="" href="../release-notes/v2-8/">2.8</a>
+  <a class="" href="../release-notes/v2-9/">v2.9</a>
   
 </li>
 
   
   
 <li class="toctree-l1 ">
-  <a class="" href="../release-notes/v2-7/">2.7</a>
+  <a class="" href="../release-notes/v2-8/">v2.8</a>
   
 </li>
 
   
   
 <li class="toctree-l1 ">
-  <a class="" href="../release-notes/v2-6/">2.6</a>
+  <a class="" href="../release-notes/v2-7/">v2.7</a>
   
 </li>
 
   
   
 <li class="toctree-l1 ">
-  <a class="" href="../release-notes/v2-5/">2.5</a>
+  <a class="" href="../release-notes/v2-6/">v2.6</a>
+  
+</li>
+
+  
+  
+<li class="toctree-l1 ">
+  <a class="" href="../release-notes/v2-5/">v2.5</a>
   
 </li>
 
@@ -437,7 +482,7 @@
 <h2 id="mvvm-naming-conventions">Mvvm Naming Conventions</h2>
 <p>Implicitly associate a view to a ViewModel using these naming conventions:</p>
 <ul>
-<li>Classes that end with <code>ViewModel</code> are assumed to be a view model for a Xaml view.</li>
+<li>Classes that end with <code>ViewModel</code>, <code>PageModel</code> and <code>Model</code> are assumed to be a view model for a Xaml view.</li>
 <li>Xaml files that end with <em>Page</em> or <em>View</em> are assumed to be a xaml view for a view model.</li>
 <li>When a view and view model share the same name without <em>Page</em>, <em>View</em> or <em>ViewModel</em>, MFractor assumes an implicit association.</li>
 </ul>
@@ -460,26 +505,19 @@
 <h2 id="xaml-analysis">Xaml Analysis</h2>
 <p>The Xaml analyser inspects Xaml files for code issues and underlines the issue in either red or yellow.</p>
 <ul>
-<li>Hover over a xaml issue to view more information on the</li>
-<li>Code issues underlined in yellow are <em>fixable</em>. Right click on the issue region, browse to <strong>Fix</strong> and select the fix you'd like to apply.</li>
+<li>Hover over a xaml issue to view more information on the code issue.</li>
+<li>Red underlined issues are compilation or runtime errors.</li>
+<li>Yellow underlined issues are compilation warnings.</li>
+<li>Blue underlined issues are code improvements.</li>
+<li>To fix an issueRight click on the issue region and browse to <strong>Fix</strong> and select the fix you'd like to apply.</li>
 </ul>
 <p>For more detail, see:</p>
 <ul>
 <li><a href="../xamarin-forms/analysis/">Xaml Analysis</a></li>
 <li><a href="../xamarin-forms/tools-in-depth/analysers/">Full List of Xaml Analysers</a></li>
 </ul>
-<h2 id="generating-viewmodel-bindings">Generating ViewModel Bindings</h2>
-<p>When a binding context is specified for a xaml view (<a href="../xamarin-forms/configure-binding-context/">Configuring A Binding Context</a>), MFractor provides code fixes to implement missing bindings.</p>
-<p>Right click on the value component of a binding expression, browse to  <strong>Fix</strong> and then select <strong>Generate property...</strong>:</p>
-<p>For example:</p>
-<p><img alt="Generating a missing binding" src="../img/forms/generate-binding.gif" /></p>
-<p>For more detail, see <a href="../xamarin-forms/refactoring-and-code-generation/#implementing-missing-bindings">Implementing Missing Bindings</a>.</p>
-<h2 id="implementing-viewmodels">Implementing ViewModels</h2>
-<p>When a xaml view has binding expressions but the binding context is not <a href="../xamarin-forms/configure-binding-context/#explicit-binding-context-resolution">explicitly</a> or <a href="../xamarin-forms/configure-binding-context/#implicit-binding-context-resolution">implicitly</a> defined, MFractor can collect all binding expressions and generate an implementation of the binding context as a ViewModel.</p>
-<p>Right click on anywhere in a document, browse to <strong>Refactor</strong> and then select <strong>Implement View Model</strong>:</p>
-<p>For example:</p>
-<p><img alt="Implementing a view model" src="../img/forms/implement-view-model.gif" /></p>
-<p>For more detail, see <a href="../xamarin-forms/refactoring-and-code-generation/#implementing-a-viewmodel">Implementing a ViewModel</a>.</p>
+<h2 id="accessing-code-actions">Accessing Code Actions</h2>
+<p>Press Alt+Return on</p>
               
             </div>
           </div>

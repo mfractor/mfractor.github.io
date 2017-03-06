@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <meta name="author" content="Matthew Robbins">
+  <link rel="shortcut icon" href="../../../img/favicon.ico">
+  
+  <title>Xaml Organisation - mfractor docs</title>
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="../../../css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../../css/theme_extra.css" type="text/css" />
+  <link rel="stylesheet" href="../../../css/highlight.css">
+  <link href="../../../css/breadcrumbs.css" rel="stylesheet">
+  <link href="../../../css/code.css" rel="stylesheet">
+  <link href="../../../css/fabric.css" rel="stylesheet">
+  <link href="../../../css/sidenav.css" rel="stylesheet">
+  <link href="../../../css/mfractor.css" rel="stylesheet">
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "Xaml Organisation";
+    var mkdocs_page_input_path = "xamarin-forms/tools-in-depth/organise.md";
+    var mkdocs_page_url = "/xamarin-forms/tools-in-depth/organise/";
+  </script>
+  
+  <script src="../../../js/jquery-2.1.1.min.js"></script>
+  <script src="../../../js/modernizr-2.8.3.min.js"></script>
+  <script type="text/javascript" src="../../../js/highlight.pack.js"></script> 
+  
+  <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-71910290-3', 'docs.mfractor.com');
+      ga('send', 'pageview');
+  </script>
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+      <div class="wy-side-nav-search">
+        <a href="../../.." class="icon icon-home"> mfractor docs</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+	<ul class="current">
+          
+            <li>
+<li class="toctree-l1 ">
+  <a class="" href="../../..">Home</a>
+  
+</li>
+<li>
+          
+            <li>
+<ul class="subnav">
+  <li><span>Getting Started</span></li>
+  
+  
+<li class="toctree-l1 ">
+  <a class="" href="../../../setup/">Setup</a>
+  
+</li>
+
+  
+  
+<li class="toctree-l1 ">
+  <a class="" href="../../../faq/">FAQ</a>
+  
+</li>
+
+  
+  
+<li class="toctree-l1 ">
+  <a class="" href="../../../xamarin-forms-quickstart/">Xamarin.Forms Quickstart</a>
+  
+</li>
+
+  
+  
+<li class="toctree-l1 ">
+  <a class="" href="../../../xamarin-android-quickstart/">Xamarin.Android Quickstart</a>
+  
+</li>
+
+  
+</ul>
+<li>
+          
+            <li>
+<ul class="subnav">
+  <li><span>Xamarin.Forms</span></li>
+  
+  
+<li class="toctree-l1 ">
+  <a class="" href="../../configure-binding-context/">Configure Binding Context</a>
+  
+</li>
+
+  
+  
+<li class="toctree-l1 ">
+  <a class="" href="../../navigation/">Navigation</a>
+  
+</li>
+
+  
+  
+<li class="toctree-l1 ">
+  <a class="" href="../../analysis/">Analysis</a>
+  
+</li>
+
+  
+  
+<li class="toctree-l1 ">
+  <a class="" href="../../code-actions/">Using Code Actions</a>
+  
+</li>
+
+  
+  
+<ul class="subnav">
+  <li><span>Tools In-Depth</span></li>
+  
+  
+<li class="toctree-l1 ">
+  <a class="" href="../analysers/">Analysers</a>
+  
+</li>
+
+  
+  
+<li class="toctree-l1 ">
+  <a class="" href="../refactor/">Refactorings</a>
+  
+</li>
+
+  
+  
+<li class="toctree-l1 ">
+  <a class="" href="../generate/">Code Generation</a>
+  
+</li>
+
+  
+  
+<li class="toctree-l1 current">
+  <a class="current" href="./">Xaml Organisation</a>
+  
+  <ul>
+    
+      
+    
+      
+      <li class="toctree-l3"><a href="#collapse-attributes-onto-same-line">Collapse Attributes Onto Same Line</a></li>
+      
+    
+      
+      <li class="toctree-l3"><a href="#collapse-node">Collapse Node</a></li>
+      
+    
+      
+      <li class="toctree-l3"><a href="#expand-attributes-onto-separate-lines">Expand Attributes Onto Separate Lines</a></li>
+      
+    
+      
+      <li class="toctree-l3"><a href="#expand-node">Expand Node</a></li>
+      
+    
+      
+      <li class="toctree-l3"><a href="#format-xaml-document">Format Xaml Document</a></li>
+      
+    
+      
+      <li class="toctree-l3"><a href="#simplify-static-member-assignment">Simplify Static Member Assignment</a></li>
+      
+    
+      
+      <li class="toctree-l3"><a href="#sort-xaml-attributes">Sort Xaml Attributes</a></li>
+      
+    
+  </ul>
+  
+</li>
+
+  
+  
+<li class="toctree-l1 ">
+  <a class="" href="../fix/">Issue Fixing</a>
+  
+</li>
+
+  
+</ul>
+
+  
+</ul>
+<li>
+          
+            <li>
+<ul class="subnav">
+  <li><span>Xamarin.Android</span></li>
+  
+  
+<li class="toctree-l1 ">
+  <a class="" href="../../../xamarin-android/project-resource-indexing/">Project Resource Indexing</a>
+  
+</li>
+
+  
+  
+<li class="toctree-l1 ">
+  <a class="" href="../../../xamarin-android/navigation/">Navigation</a>
+  
+</li>
+
+  
+  
+<li class="toctree-l1 ">
+  <a class="" href="../../../xamarin-android/analysis/">Analysis</a>
+  
+</li>
+
+  
+  
+<li class="toctree-l1 ">
+  <a class="" href="../../../xamarin-android/code-actions/">Using Code Actions</a>
+  
+</li>
+
+  
+  
+<li class="toctree-l1 ">
+  <a class="" href="../../../xamarin-android/dotnet-code-analysis/">.NET Code Analysis</a>
+  
+</li>
+
+  
+  
+<li class="toctree-l1 ">
+  <a class="" href="../../../xamarin-android/resource-intellisense/">Resource IntelliSense</a>
+  
+</li>
+
+  
+  
+<ul class="subnav">
+  <li><span>Tools In-Depth</span></li>
+  
+  
+<li class="toctree-l1 ">
+  <a class="" href="../../../xamarin-android/tools-in-depth/analysers/">Analysers</a>
+  
+</li>
+
+  
+  
+<li class="toctree-l1 ">
+  <a class="" href="../../../xamarin-android/tools-in-depth/refactor/">Refactorings</a>
+  
+</li>
+
+  
+  
+<li class="toctree-l1 ">
+  <a class="" href="../../../xamarin-android/tools-in-depth/generate/">Code Generation</a>
+  
+</li>
+
+  
+  
+<li class="toctree-l1 ">
+  <a class="" href="../../../xamarin-android/tools-in-depth/organise/">Organisation</a>
+  
+</li>
+
+  
+  
+<li class="toctree-l1 ">
+  <a class="" href="../../../xamarin-android/tools-in-depth/fix/">Issue Fixing</a>
+  
+</li>
+
+  
+  
+<li class="toctree-l1 ">
+  <a class="" href="../../../xamarin-android/tools-in-depth/intellisense/">IntelliSense</a>
+  
+</li>
+
+  
+</ul>
+
+  
+</ul>
+<li>
+          
+            <li>
+<ul class="subnav">
+  <li><span>Tutorials</span></li>
+  
+  
+<li class="toctree-l1 ">
+  <a class="" href="../../../tutorials/tutorials/">Tutorials</a>
+  
+</li>
+
+  
+  
+<ul class="subnav">
+  <li><span>Xamarin.Android</span></li>
+  
+  
+<li class="toctree-l1 ">
+  <a class="" href="../../../tutorials/xamarin-android/resource-expressions-and-code-navigation/">Resource Expressions And Code Navigation</a>
+  
+</li>
+
+  
+</ul>
+
+  
+  
+<ul class="subnav">
+  <li><span>Xamarin.Forms</span></li>
+  
+  
+<li class="toctree-l1 ">
+  <a class="" href="../../../tutorials/xamarin-forms/mvvm-navigation/">Mvvm Navigation</a>
+  
+</li>
+
+  
+  
+<li class="toctree-l1 ">
+  <a class="" href="../../../tutorials/xamarin-forms/implementing-view-models/">Implementing View Models</a>
+  
+</li>
+
+  
+  
+<li class="toctree-l1 ">
+  <a class="" href="../../../tutorials/xamarin-forms/value-converter-type-safety/">Value Converter Type Safety</a>
+  
+</li>
+
+  
+  
+<li class="toctree-l1 ">
+  <a class="" href="../../../tutorials/xamarin-forms/organising-xaml-code/">Organising Xaml Code</a>
+  
+</li>
+
+  
+</ul>
+
+  
+</ul>
+<li>
+          
+            <li>
+<ul class="subnav">
+  <li><span>Release Notes</span></li>
+  
+  
+<li class="toctree-l1 ">
+  <a class="" href="../../../release-notes/v2-10/">v2.10</a>
+  
+</li>
+
+  
+  
+<li class="toctree-l1 ">
+  <a class="" href="../../../release-notes/v2-9/">v2.9</a>
+  
+</li>
+
+  
+  
+<li class="toctree-l1 ">
+  <a class="" href="../../../release-notes/v2-8/">v2.8</a>
+  
+</li>
+
+  
+  
+<li class="toctree-l1 ">
+  <a class="" href="../../../release-notes/v2-7/">v2.7</a>
+  
+</li>
+
+  
+  
+<li class="toctree-l1 ">
+  <a class="" href="../../../release-notes/v2-6/">v2.6</a>
+  
+</li>
+
+  
+  
+<li class="toctree-l1 ">
+  <a class="" href="../../../release-notes/v2-5/">v2.5</a>
+  
+</li>
+
+  
+</ul>
+<li>
+          
+        </ul>
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="../../..">mfractor docs</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../../..">Docs</a> &raquo;</li>
+    
+      
+        
+          <li>Xamarin.Forms &raquo;</li>
+        
+      
+        
+          <li>Tools In-Depth &raquo;</li>
+        
+      
+    
+    <li>Xaml Organisation</li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <h2 id="code-organisation">Code Organisation</h2>
+<p><em>(Autogenerated by MFractor v2.10.0.0)</em>
+All available code organisation actions in MFractor for Xamarin.Forms</p>
+<p><em>7 Code Actions</em></p>
+<h2 id="collapse-attributes-onto-same-line">Collapse Attributes Onto Same Line</h2>
+<p>This refactoring will collapse all the attributes for a Xaml node onto the same line as the nodes name declaration.</p>
+<h2 id="collapse-node">Collapse Node</h2>
+<p>When a Xaml node has a closing tag and no children (eg: <code>&lt;MyNode&gt; &lt;/MyNode&gt;</code>), this refactoring allows the developer to remove the closing tag to make the node self-closing. For example, when applied to the node <code>&lt;MyNode&gt; ... &lt;/MyNode&gt;</code>, the closing tag <code>&lt;/MyNode&gt;</code> is removed and the element becomes self closing like so: <code>&lt;MyNode/&gt;</code>.</p>
+<h2 id="expand-attributes-onto-separate-lines">Expand Attributes Onto Separate Lines</h2>
+<p>This refactoring will expand all the attributes for a Xaml node onto a separate line for each attribute.</p>
+<p>For example, gi</p>
+<h2 id="expand-node">Expand Node</h2>
+<p>When a Xaml node is self-closing (EG <code>&lt;MyNode/&gt;</code>), this organise refactoring allows a developer to generate a closing tag for the node. For example, the node <code>&lt;MyNode/&gt;</code> would become <code>&lt;MyNode&gt; ... &lt;/MyNode&gt;</code> after applying this refactoring.</p>
+<h2 id="format-xaml-document">Format Xaml Document</h2>
+<p>Applies the xml formatting policy to the entire document. It will correctly indent nodes, sort attributes, align attributes under the parent node.</p>
+<h2 id="simplify-static-member-assignment">Simplify Static Member Assignment</h2>
+<p>Attributes that accept a class instance can be assigned long hand by using the type and instance name that will be used for the assignement.For example, when assigning VerticalOptions it's perfectly reasonable to use the long hand form of 'LayoutOptions.CentreAndExpand'.This refactoring action strips out the leading type specifier and reduces the assignment to just 'CentreAndExpand'</p>
+<h2 id="sort-xaml-attributes">Sort Xaml Attributes</h2>
+<p>This refactoring sorts the attributes for a Xaml node and regenerates the xaml node based on the IDE's xml formatting policy.
+MFractor uses the following rules when sorting:</p>
+<ul>
+<li>Attributes that declare an xml namespace are ordered first, sorted alphabetically ascending. For example <code>xmlns:forms="http://xamarin.com/schemas/2014/forms"</code> will appear before <code>xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"</code>.</li>
+<li>Attributes that belong to the Microsoft Xaml schema <code>http://schemas.microsoft.com/winfx/2009/xaml</code> are ordered next. For example, the <code>x:Class</code> or <code>x:Name</code> declaration.</li>
+<li>Attributes belonging to the default namespace are ordered next, sorted alphabetically ascending.</li>
+<li>Attributes belonging to the other namespaces are then ordered next, sorted by namespace ascending and then by attribute name ascending.</li>
+</ul>
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../fix/" class="btn btn-neutral float-right" title="Issue Fixing">Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="../generate/" class="btn btn-neutral" title="Code Generation"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div class="fastlane" role="contentinfo">
+    <p>
+      <a href="https://www.mfractor.com" target="_blank">
+        <img src="/img/logo-horizontal.png" width="200" />
+      </a>
+    </p>
+  </div>
+
+  Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a> - Copyright &copy; 2016 <a href="https://www.mfractor.com">MFractor</a>
+</footer>
+	  
+        </div>
+      </div>
+
+    </section>
+    
+  </div>
+
+  <div class="rst-versions" role="note" style="cursor: pointer">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+          <a href="https://github.com/matthewrdev/mfractor-documentation" class="icon icon-github" style="float: left; color: #fcfcfc"> GitHub</a>
+      
+      
+        <span><a href="../generate/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+      
+      
+        <span style="margin-left: 15px"><a href="../fix/" style="color: #fcfcfc">Next &raquo;</a></span>
+      
+    </span>
+</div>
+    <script src="../../../js/theme.js"></script>
+
+</body>
+</html>
