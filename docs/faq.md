@@ -9,6 +9,9 @@ If something doesn't work quite right or you'd like a sweet new feature added, b
  * Via Slack: Drop in to chat anytime in the [#mfractor Xamarin Slack sub-channel](https://xamarinchat.slack.com/archives/mfractor).
  * Via Email: Shot an email to [hello@mfractor.com](hello@mfractor.com)
 
+##What version of Xamarin Studio is MFractor compatible with?
+The latest version of MFractor always targets the current stable channel version of Xamarin Studio.
+
 ##How do I get started with MFractor?
 MFractor does a lot so it may take a little while to learn its ins and outs. If you'd like to learn how to best use it, you have a few options:
 
