@@ -2,7 +2,7 @@
     "docs": [
         {
             "location": "/", 
-            "text": "Welcome\n\n\nWelcome to the documentation for MFractor, incredible Xamarin tools.\n\n\nLet's get you started:\n\n\nGet Started:\n\n\n\n\nDownload MFractor\n\n\nInstall MFractor\n\n\n\n\nXamarin.Forms Essentials:\n\n\n\n\nQuickstart Guide\n\n\nXaml Analysis\n\n\nBinding Context Configuration\n\n\nNavigation\n\n\nCode Actions\n\n\n\n\nXamarin.Android Essentials:\n\n\n\n\nQuickstart Guide\n\n\nResource Analysis\n\n\nC# Analysis\n\n\nResource IntelliSense\n\n\nNavigation\n\n\nProject Indexing\n\n\nCode Actions\n\n\n\n\nSupport\n\n\nIf something doesn't work quite right or you'd like a sweet new feature added, be patient and contact me:\n\n\n\n\nVia Twitter: Give me a holla at \n@matthewrdev\n\n\nVia Slack: Drop in to chat anytime in the \n#mfractor Xamarin Slack sub-channel\n.\n\n\nVia Email: Shot an email to hello@mfractor.com\n\n\n\n\nThank You!\n\n\nSlowly, I am building the ReSharper for Xamarin Studio and I'm thrilled that you have joined me on the journey.\n\n\nThank you for installing and using MFractor. It means the world to me.\n\n\nMatthew Robbins - Creator of MFractor. \u270c\ufe0f", 
+            "text": "Welcome\n\n\nWelcome to the documentation for MFractor, incredible Xamarin tools.\n\n\nLet's get you started:\n\n\nInstallation\n\n\n\n\nSetup MFractor\n\n\nUsing Code Actions\n\n\n\n\nXamarin.Forms Essentials:\n\n\n\n\nQuickstart Guide\n\n\nXaml Analysis\n\n\nBinding Context Configuration\n\n\nNavigation\n\n\n\n\nXamarin.Android Essentials:\n\n\n\n\nQuickstart Guide\n\n\nResource Analysis\n\n\nC# Analysis\n\n\nResource IntelliSense\n\n\nNavigation\n\n\nProject Indexing\n\n\n\n\nSupport\n\n\nIf something doesn't work quite right or you'd like a sweet new feature added, be patient and contact me:\n\n\n\n\nVia Twitter: Give me a holla at \n@matthewrdev\n\n\nVia Slack: Drop in to chat anytime in the \n#mfractor Xamarin Slack sub-channel\n.\n\n\nVia Email: Shot an email to hello@mfractor.com\n\n\n\n\nThank You!\n\n\nSlowly, I am building the ReSharper for Xamarin Studio and I'm thrilled that you have joined me on the journey.\n\n\nThank you for installing and using MFractor. It means the world to me.\n\n\nMatthew Robbins - Creator of MFractor. \u270c\ufe0f", 
             "title": "Home"
         }, 
         {
@@ -11,18 +11,18 @@
             "title": "Welcome"
         }, 
         {
-            "location": "/#get-started", 
-            "text": "Download MFractor  Install MFractor", 
-            "title": "Get Started:"
+            "location": "/#installation", 
+            "text": "Setup MFractor  Using Code Actions", 
+            "title": "Installation"
         }, 
         {
             "location": "/#xamarinforms-essentials", 
-            "text": "Quickstart Guide  Xaml Analysis  Binding Context Configuration  Navigation  Code Actions", 
+            "text": "Quickstart Guide  Xaml Analysis  Binding Context Configuration  Navigation", 
             "title": "Xamarin.Forms Essentials:"
         }, 
         {
             "location": "/#xamarinandroid-essentials", 
-            "text": "Quickstart Guide  Resource Analysis  C# Analysis  Resource IntelliSense  Navigation  Project Indexing  Code Actions", 
+            "text": "Quickstart Guide  Resource Analysis  C# Analysis  Resource IntelliSense  Navigation  Project Indexing", 
             "title": "Xamarin.Android Essentials:"
         }, 
         {
@@ -124,6 +124,46 @@
             "location": "/faq/#should-i-check-droidres-into-source-control", 
             "text": "No, you should not check  .droidres  into your source control.  If you are using git, append the following text to the end of your  .gitignore  to exclude  .droidres :  # MFractor's Android resource meta-data cache\n*.droidres/", 
             "title": "Should I check .droidres into source control?"
+        }, 
+        {
+            "location": "/code-actions/", 
+            "text": "Code Actions\n\n\nFix issues, refactor, tidy up code and generate C# from your Xaml\n\n\nIntroduction\n\n\nCode actions are shortcuts that manipulate your Xaml or C# code (or both!); they enable you to fix issues, refactor xaml, generate C# code from your views and organise xaml code.\n\n\nThis article describes how to access and use code actions\n\n\nFor a full list of available xaml code actions, see the following articles:\n\n\n\n\nRefactoring Code Actions\n article.\n\n\nGeneration Code Actions\n article.\n\n\nOrganise Code Actions\n article.\n\n\nCode Issue Fixes\n article.\n\n\n\n\nUsing Code Actions\n\n\nMFractor has 4 types of code actions:\n\n\n\n\nFixes\n: Fixes code issues detected by the Xaml analyser.\n\n\nGenerate\n: Generates common xaml and C# code.\n\n\nRefactor\n: Rename C# and Xaml symbols from your Xaml document.\n\n\nOrganise\n: Tidy up and organise your xaml.\n\n\n\n\nMFractor exposes code actions through 2 methods:\n\n\n\n\nPressing the keyboard shortcut \nAlt\n+\nReturn\n:\n\n\n\n\n\n\n\n\nRight clicking within the document and selecting a menu action:\n\n\n\n\n\n\nCode Issue Fixes\n\n\nCode issue fixes are available when an analyser from the \nXaml Analysis Engine\n detects a code issue and it marks that code section with a yellow underline.\n\n\nYou can action a code fix by right-clicking on the yellow-underlined code section, opening the \nFix\n menu and then selecting the fix you'd like to action:\n\n\n\n\nTo view a complete list of available code issue fixes, visit the \nCode Issue Fix\n document.\n\n\nCode Generation\n\n\nCode generation operations allow you to quickly build boilerplate code that you'd otherwise have to hand code yourself.\n\n\nFor example, you could:\n\n\n\n\nGenerate resource dictionaries for view elements.\n\n\nImplement all missing bindings in bulk using the \nImplement View Model\n code generator.\n\n\n\n\n\n\nTo view a complete list of available code generation refactorings, visit \nRefactorings - Generate\n.\n\n\nCode Refactoring\n\n\nThe refactorings within the \nRefactor\n allow you to manipulate Xaml and .NET symbols while within your Xaml document. These refactorings typically take user input and perform a change on the Xaml and/or C# based on that input.\n\n\nFor example, you could:\n\n\n\n\nTake the attribute \nText=\"Hello Xamarin Forms!\"\n and extract the value \n\"Hello Xamarin Forms!\"\n into the views binding context; replacing the attribute with \nText=\"{Binding Message}\"\n and creating the C# property \npublic string Message { get; set; } = \"Hello Xamarin Forms!\"\n.\n\n\nEdit a color literal using the color picker dialog.\n\n\n\n\n\n\nTo view a complete list of available refactoring operations, visit \nRefactorings - Refactor\n.\n\n\nCode Organisation\n\n\nThe refactorings within the \nOrganise\n are used to quickly format your xaml code. These refactorings are useful to keep your xaml tidy and easy to understand.\n\n\nFor example, you could:\n\n\n\n\nSort all attributes on a node by name and namespace.\n\n\nCollapse or expand the attribute on a node onto separate or the same lines.\n\n\nExpand or collapse the closing tag on a node.\n\n\n\n\n\n\nTo view a complete list of available code organisation operations, visit \nRefactorings - Organise\n.", 
+            "title": "Using Code Actions"
+        }, 
+        {
+            "location": "/code-actions/#code-actions", 
+            "text": "Fix issues, refactor, tidy up code and generate C# from your Xaml", 
+            "title": "Code Actions"
+        }, 
+        {
+            "location": "/code-actions/#introduction", 
+            "text": "Code actions are shortcuts that manipulate your Xaml or C# code (or both!); they enable you to fix issues, refactor xaml, generate C# code from your views and organise xaml code.  This article describes how to access and use code actions  For a full list of available xaml code actions, see the following articles:   Refactoring Code Actions  article.  Generation Code Actions  article.  Organise Code Actions  article.  Code Issue Fixes  article.", 
+            "title": "Introduction"
+        }, 
+        {
+            "location": "/code-actions/#using-code-actions", 
+            "text": "MFractor has 4 types of code actions:   Fixes : Fixes code issues detected by the Xaml analyser.  Generate : Generates common xaml and C# code.  Refactor : Rename C# and Xaml symbols from your Xaml document.  Organise : Tidy up and organise your xaml.   MFractor exposes code actions through 2 methods:   Pressing the keyboard shortcut  Alt + Return :     Right clicking within the document and selecting a menu action:", 
+            "title": "Using Code Actions"
+        }, 
+        {
+            "location": "/code-actions/#code-issue-fixes", 
+            "text": "Code issue fixes are available when an analyser from the  Xaml Analysis Engine  detects a code issue and it marks that code section with a yellow underline.  You can action a code fix by right-clicking on the yellow-underlined code section, opening the  Fix  menu and then selecting the fix you'd like to action:   To view a complete list of available code issue fixes, visit the  Code Issue Fix  document.", 
+            "title": "Code Issue Fixes"
+        }, 
+        {
+            "location": "/code-actions/#code-generation", 
+            "text": "Code generation operations allow you to quickly build boilerplate code that you'd otherwise have to hand code yourself.  For example, you could:   Generate resource dictionaries for view elements.  Implement all missing bindings in bulk using the  Implement View Model  code generator.    To view a complete list of available code generation refactorings, visit  Refactorings - Generate .", 
+            "title": "Code Generation"
+        }, 
+        {
+            "location": "/code-actions/#code-refactoring", 
+            "text": "The refactorings within the  Refactor  allow you to manipulate Xaml and .NET symbols while within your Xaml document. These refactorings typically take user input and perform a change on the Xaml and/or C# based on that input.  For example, you could:   Take the attribute  Text=\"Hello Xamarin Forms!\"  and extract the value  \"Hello Xamarin Forms!\"  into the views binding context; replacing the attribute with  Text=\"{Binding Message}\"  and creating the C# property  public string Message { get; set; } = \"Hello Xamarin Forms!\" .  Edit a color literal using the color picker dialog.    To view a complete list of available refactoring operations, visit  Refactorings - Refactor .", 
+            "title": "Code Refactoring"
+        }, 
+        {
+            "location": "/code-actions/#code-organisation", 
+            "text": "The refactorings within the  Organise  are used to quickly format your xaml code. These refactorings are useful to keep your xaml tidy and easy to understand.  For example, you could:   Sort all attributes on a node by name and namespace.  Collapse or expand the attribute on a node onto separate or the same lines.  Expand or collapse the closing tag on a node.    To view a complete list of available code organisation operations, visit  Refactorings - Organise .", 
+            "title": "Code Organisation"
         }, 
         {
             "location": "/xamarin-forms-quickstart/", 
@@ -297,7 +337,7 @@
         }, 
         {
             "location": "/xamarin-forms/analysis/", 
-            "text": "WORK IN PROGRESS\n\n\nXaml Analysis\n\n\nUse the Xaml analyser to spend less time debugging and see Xaml errors in-editor\n\n\nIntroduction\n\n\nIt's common that xaml issues in Xamarin.Forms applications are undetected until runtime or worse, when sent out to a client. MFractor solves this by detecting Xaml issues \nimmediately\n and then marking them inside the xaml editor with a concise error message.\n\n\nBye bye Xaml bugs! \ud83d\udc4b\n\n\nUnder The Hood\n\n\nLet's take a look at what happens \"under the hood\" in MFractor when you open a Xaml document:\n\n\n\n\nWhen you open a Xaml file that's part of a .NET project, Xamarin Studio notifies MFractor that a new Xaml document was opened for editing. MFractor will  inject the Xaml analyser into the Xaml editor and consume the Xaml document.\n\n\nOnce MFractor has a copy of the Xaml DOM, it \nsymbolicates\n the xaml document. In this step all Xaml nodes are resolved to their corresponding .NET class, all attributes are resolved to properties, fields or methods and all markup extension expressions are parsed.\n\n\nIt may take a little while for MFractor to parse and symbolicate the Xaml DOM the first time a solution opens. While it's consuming the Xaml document, you might see a tooltip informing you that MFractor is not quite ready to analyse the document:\n\n\n\n\nWhen the Xaml document has been parsed and symbolicated, MFractor will analyse the document for a range of code issues. Any issues that are found are marked as either\n\n\nA full list of available Xaml analysers can be found at \nXamarin.Forms Analysers\n.\n\n\nWhenever you edit a Xaml code file, MFractor will cancel any running analysis, re-parse and symbolicate the document and then re-run the xaml analyser against your xaml.\n\n\nCode Fixes\n\n\nWhen MFractor detects a code issue, it is usually able to suggest a fix as well. When MFractor can fix an issue, the squiggle beneath that issue will be yellow like so:\n\n\nYou can action this fix by right clicking on the text area marked by the yellow squiggle\n\n\nSee \nCode Actions\n for further documentation on using Xaml to C# code generation.\n\n\nExpression Analysis\n\n\nBinding Expression Analysis", 
+            "text": "WORK IN PROGRESS\n\n\nXaml Analysis\n\n\nUse the Xaml analyser to spend less time debugging and see Xaml errors in-editor\n\n\nIntroduction\n\n\nIt's common that xaml issues in Xamarin.Forms applications are undetected until runtime or worse, when sent out to a client. MFractor solves this by detecting Xaml issues \nimmediately\n and then marking them inside the xaml editor with a concise error message.\n\n\nBye bye Xaml bugs! \ud83d\udc4b\n\n\nUnder The Hood\n\n\nLet's take a look at what happens \"under the hood\" in MFractor when you open a Xaml document:\n\n\n\n\nWhen you open a Xaml file that's part of a .NET project, Xamarin Studio notifies MFractor that a new Xaml document was opened for editing. MFractor will  inject the Xaml analyser into the Xaml editor and consume the Xaml document.\n\n\nOnce MFractor has a copy of the Xaml DOM, it \nsymbolicates\n the xaml document. In this step all Xaml nodes are resolved to their corresponding .NET class, all attributes are resolved to properties, fields or methods and all markup extension expressions are parsed.\n\n\nIt may take a little while for MFractor to parse and symbolicate the Xaml DOM the first time a solution opens. While it's consuming the Xaml document, you might see a tooltip informing you that MFractor is not quite ready to analyse the document:\n\n\n\n\nWhen the Xaml document has been parsed and symbolicated, MFractor will analyse the document for a range of code issues. Any issues that are found are marked as either\n\n\nA full list of available Xaml analysers can be found at \nXamarin.Forms Analysers\n.\n\n\nWhenever you edit a Xaml code file, MFractor will cancel any running analysis, re-parse and symbolicate the document and then re-run the xaml analyser against your xaml.\n\n\nCode Fixes\n\n\nWhen MFractor detects a code issue, it is usually able to suggest a fix as well. When MFractor can fix an issue, the squiggle beneath that issue will be yellow like so:\n\n\nYou can action this fix by right clicking on the text area marked by the yellow squiggle\n\n\nExpression Analysis\n\n\nBinding Expression Analysis", 
             "title": "Analysis"
         }, 
         {
@@ -317,7 +357,7 @@
         }, 
         {
             "location": "/xamarin-forms/analysis/#code-fixes", 
-            "text": "When MFractor detects a code issue, it is usually able to suggest a fix as well. When MFractor can fix an issue, the squiggle beneath that issue will be yellow like so:  You can action this fix by right clicking on the text area marked by the yellow squiggle  See  Code Actions  for further documentation on using Xaml to C# code generation.", 
+            "text": "When MFractor detects a code issue, it is usually able to suggest a fix as well. When MFractor can fix an issue, the squiggle beneath that issue will be yellow like so:  You can action this fix by right clicking on the text area marked by the yellow squiggle", 
             "title": "Code Fixes"
         }, 
         {
@@ -329,46 +369,6 @@
             "location": "/xamarin-forms/analysis/#binding-expression-analysis", 
             "text": "", 
             "title": "Binding Expression Analysis"
-        }, 
-        {
-            "location": "/xamarin-forms/code-actions/", 
-            "text": "Code Actions\n\n\nFix issues, refactor, tidy up code and generate C# from your Xaml\n\n\nIntroduction\n\n\nCode actions are shortcuts that manipulate your Xaml or C# code (or both!); they enable you to fix issues, refactor xaml, generate C# code from your views and organise xaml code.\n\n\nThis article describes how to access and use code actions\n\n\nFor a full list of available xaml code actions, see the following articles:\n\n\n\n\nRefactoring Code Actions\n article.\n\n\nGeneration Code Actions\n article.\n\n\nOrganise Code Actions\n article.\n\n\nCode Issue Fixes\n article.\n\n\n\n\nUsing Code Actions\n\n\nMFractor has 4 types of code actions:\n\n\n\n\nFixes\n: Fixes code issues detected by the Xaml analyser.\n\n\nGenerate\n: Generates common xaml and C# code.\n\n\nRefactor\n: Rename C# and Xaml symbols from your Xaml document.\n\n\nOrganise\n: Tidy up and organise your xaml.\n\n\n\n\nMFractor exposes code actions through 2 methods:\n\n\n\n\nPressing the keyboard shortcut \nAlt\n+\nReturn\n:\n\n\n\n\n\n\n\n\nRight clicking within the document and selecting a menu action:\n\n\n\n\n\n\nCode Issue Fixes\n\n\nCode issue fixes are available when an analyser from the \nXaml Analysis Engine\n detects a code issue and it marks that code section with a yellow underline.\n\n\nYou can action a code fix by right-clicking on the yellow-underlined code section, opening the \nFix\n menu and then selecting the fix you'd like to action:\n\n\n\n\nTo view a complete list of available code issue fixes, visit the \nCode Issue Fix\n document.\n\n\nCode Generation\n\n\nCode generation operations allow you to quickly build boilerplate code that you'd otherwise have to hand code yourself.\n\n\nFor example, you could:\n\n\n\n\nGenerate resource dictionaries for view elements.\n\n\nImplement all missing bindings in bulk using the \nImplement View Model\n code generator.\n\n\n\n\n\n\nTo view a complete list of available code generation refactorings, visit \nRefactorings - Generate\n.\n\n\nCode Refactoring\n\n\nThe refactorings within the \nRefactor\n allow you to manipulate Xaml and .NET symbols while within your Xaml document. These refactorings typically take user input and perform a change on the Xaml and/or C# based on that input.\n\n\nFor example, you could:\n\n\n\n\nTake the attribute \nText=\"Hello Xamarin Forms!\"\n and extract the value \n\"Hello Xamarin Forms!\"\n into the views binding context; replacing the attribute with \nText=\"{Binding Message}\"\n and creating the C# property \npublic string Message { get; set; } = \"Hello Xamarin Forms!\"\n.\n\n\nEdit a color literal using the color picker dialog.\n\n\n\n\n\n\nTo view a complete list of available refactoring operations, visit \nRefactorings - Refactor\n.\n\n\nCode Organisation\n\n\nThe refactorings within the \nOrganise\n are used to quickly format your xaml code. These refactorings are useful to keep your xaml tidy and easy to understand.\n\n\nFor example, you could:\n\n\n\n\nSort all attributes on a node by name and namespace.\n\n\nCollapse or expand the attribute on a node onto separate or the same lines.\n\n\nExpand or collapse the closing tag on a node.\n\n\n\n\n\n\nTo view a complete list of available code organisation operations, visit \nRefactorings - Organise\n.", 
-            "title": "Using Code Actions"
-        }, 
-        {
-            "location": "/xamarin-forms/code-actions/#code-actions", 
-            "text": "Fix issues, refactor, tidy up code and generate C# from your Xaml", 
-            "title": "Code Actions"
-        }, 
-        {
-            "location": "/xamarin-forms/code-actions/#introduction", 
-            "text": "Code actions are shortcuts that manipulate your Xaml or C# code (or both!); they enable you to fix issues, refactor xaml, generate C# code from your views and organise xaml code.  This article describes how to access and use code actions  For a full list of available xaml code actions, see the following articles:   Refactoring Code Actions  article.  Generation Code Actions  article.  Organise Code Actions  article.  Code Issue Fixes  article.", 
-            "title": "Introduction"
-        }, 
-        {
-            "location": "/xamarin-forms/code-actions/#using-code-actions", 
-            "text": "MFractor has 4 types of code actions:   Fixes : Fixes code issues detected by the Xaml analyser.  Generate : Generates common xaml and C# code.  Refactor : Rename C# and Xaml symbols from your Xaml document.  Organise : Tidy up and organise your xaml.   MFractor exposes code actions through 2 methods:   Pressing the keyboard shortcut  Alt + Return :     Right clicking within the document and selecting a menu action:", 
-            "title": "Using Code Actions"
-        }, 
-        {
-            "location": "/xamarin-forms/code-actions/#code-issue-fixes", 
-            "text": "Code issue fixes are available when an analyser from the  Xaml Analysis Engine  detects a code issue and it marks that code section with a yellow underline.  You can action a code fix by right-clicking on the yellow-underlined code section, opening the  Fix  menu and then selecting the fix you'd like to action:   To view a complete list of available code issue fixes, visit the  Code Issue Fix  document.", 
-            "title": "Code Issue Fixes"
-        }, 
-        {
-            "location": "/xamarin-forms/code-actions/#code-generation", 
-            "text": "Code generation operations allow you to quickly build boilerplate code that you'd otherwise have to hand code yourself.  For example, you could:   Generate resource dictionaries for view elements.  Implement all missing bindings in bulk using the  Implement View Model  code generator.    To view a complete list of available code generation refactorings, visit  Refactorings - Generate .", 
-            "title": "Code Generation"
-        }, 
-        {
-            "location": "/xamarin-forms/code-actions/#code-refactoring", 
-            "text": "The refactorings within the  Refactor  allow you to manipulate Xaml and .NET symbols while within your Xaml document. These refactorings typically take user input and perform a change on the Xaml and/or C# based on that input.  For example, you could:   Take the attribute  Text=\"Hello Xamarin Forms!\"  and extract the value  \"Hello Xamarin Forms!\"  into the views binding context; replacing the attribute with  Text=\"{Binding Message}\"  and creating the C# property  public string Message { get; set; } = \"Hello Xamarin Forms!\" .  Edit a color literal using the color picker dialog.    To view a complete list of available refactoring operations, visit  Refactorings - Refactor .", 
-            "title": "Code Refactoring"
-        }, 
-        {
-            "location": "/xamarin-forms/code-actions/#code-organisation", 
-            "text": "The refactorings within the  Organise  are used to quickly format your xaml code. These refactorings are useful to keep your xaml tidy and easy to understand.  For example, you could:   Sort all attributes on a node by name and namespace.  Collapse or expand the attribute on a node onto separate or the same lines.  Expand or collapse the closing tag on a node.    To view a complete list of available code organisation operations, visit  Refactorings - Organise .", 
-            "title": "Code Organisation"
         }, 
         {
             "location": "/xamarin-forms/tools-in-depth/analysers/", 
@@ -869,11 +869,6 @@
             "location": "/xamarin-android/analysis/", 
             "text": "WORK IN PROGRESS", 
             "title": "Analysis"
-        }, 
-        {
-            "location": "/xamarin-android/code-actions/", 
-            "text": "WORK IN PROGRESS", 
-            "title": "Using Code Actions"
         }, 
         {
             "location": "/xamarin-android/dotnet-code-analysis/", 
@@ -1424,6 +1419,36 @@
             "location": "/tutorials/xamarin-forms/organising-xaml-code/#expanding-and-collapsing-nodes", 
             "text": "We can use the following organise refactorings to expand and collapse a Xaml node:   Expand node into opening and clossing tag  take a self-closing Xaml node (IE:  Label / ) and generate a closing tag for it (IE:  Label /Label ).  Collapse closing tag  takes an empty node with a closing tag (IE:  Label /Label ) and remove the closing tag, making the node self-closing (IE:  Label / ).", 
             "title": "Expanding And Collapsing Nodes"
+        }, 
+        {
+            "location": "/release-notes/v2-11/", 
+            "text": "Release Notes - v2.11.0\n\n\nTO BE DECIDED\n\n\nDownload MFractor 2.11.0\n\n\nIntroduction\n\n\nThis is a summary of the changes introduced in v2.11.0 of MFractor for Xamarin Studio.\n\n\nThis release introduces the ability to configure MFractor through \nmfractor.config\n; this to change it's behaviour when refactoring, analysing and generating code. This\n\n\nFeatures\n\n\n\n\nThe new \nmfractor.config\n file alteration of the code generated by MFractor. Create a new file named \nmfractor.config\n at the root level of your project and influence MFractor's internals using the \nConfigure Id=\"com.mfractor.XXX\"/\n syntax. A full tutorial on \nmfractor.config\n\n\nNew Code Analysers\n\n\nDetect when a \nContentView\n has multiple child elements.\n\n\nDetect when a \nContentPage\n has multiple child elements.\n\n\n\n\n\n\nNew Code Generators\n\n\nWhen on a \nGrid.RowDefinitions\n element, the new code generator \nAdd RowDefinition\n will insert a new row definition element.\n\n\nWhen on a \nGrid.ColumnDefinitions\n element, the new code generator \nAdd ColumnDefinition\n will insert a new column definition element.\n\n\n\n\n\n\nNew Refactorings\n\n\n\n\n\n\n\n\n\n\nEnhancements\n\n\nBug Fixes", 
+            "title": "v2.11"
+        }, 
+        {
+            "location": "/release-notes/v2-11/#release-notes-v2110", 
+            "text": "TO BE DECIDED  Download MFractor 2.11.0", 
+            "title": "Release Notes - v2.11.0"
+        }, 
+        {
+            "location": "/release-notes/v2-11/#introduction", 
+            "text": "This is a summary of the changes introduced in v2.11.0 of MFractor for Xamarin Studio.  This release introduces the ability to configure MFractor through  mfractor.config ; this to change it's behaviour when refactoring, analysing and generating code. This", 
+            "title": "Introduction"
+        }, 
+        {
+            "location": "/release-notes/v2-11/#features", 
+            "text": "The new  mfractor.config  file alteration of the code generated by MFractor. Create a new file named  mfractor.config  at the root level of your project and influence MFractor's internals using the  Configure Id=\"com.mfractor.XXX\"/  syntax. A full tutorial on  mfractor.config  New Code Analysers  Detect when a  ContentView  has multiple child elements.  Detect when a  ContentPage  has multiple child elements.    New Code Generators  When on a  Grid.RowDefinitions  element, the new code generator  Add RowDefinition  will insert a new row definition element.  When on a  Grid.ColumnDefinitions  element, the new code generator  Add ColumnDefinition  will insert a new column definition element.    New Refactorings", 
+            "title": "Features"
+        }, 
+        {
+            "location": "/release-notes/v2-11/#enhancements", 
+            "text": "", 
+            "title": "Enhancements"
+        }, 
+        {
+            "location": "/release-notes/v2-11/#bug-fixes", 
+            "text": "", 
+            "title": "Bug Fixes"
         }, 
         {
             "location": "/release-notes/v2-10/", 
