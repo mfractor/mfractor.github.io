@@ -21,13 +21,13 @@ pages:
 - Getting Started:
   - Setup: setup.md
   - FAQ: faq.md
+  - Using Code Actions: code-actions.md
   - Xamarin.Forms Quickstart: xamarin-forms-quickstart.md
   - Xamarin.Android Quickstart: xamarin-android-quickstart.md
 - Xamarin.Forms:
   - Configure Binding Context: xamarin-forms/configure-binding-context.md
   - Navigation: xamarin-forms/navigation.md
   - Analysis: xamarin-forms/analysis.md
-  - Using Code Actions: xamarin-forms/code-actions.md
   - Tools In-Depth:
     - Analysers: xamarin-forms/tools-in-depth/analysers.md
     - Refactorings: xamarin-forms/tools-in-depth/refactor.md
@@ -38,7 +38,6 @@ pages:
   - Project Resource Indexing: xamarin-android/project-resource-indexing.md
   - Navigation: xamarin-android/navigation.md
   - Analysis: xamarin-android/analysis.md
-  - Using Code Actions: xamarin-android/code-actions.md
   - .NET Code Analysis: xamarin-android/dotnet-code-analysis.md
   - Resource IntelliSense: xamarin-android/resource-intellisense.md
   - Tools In-Depth:
@@ -58,6 +57,7 @@ pages:
     - Value Converter Type Safety: tutorials/xamarin-forms/value-converter-type-safety.md
     - Organising Xaml Code: tutorials/xamarin-forms/organising-xaml-code.md
 - Release Notes:
+    - v2.11: release-notes/v2-11.md
     - v2.10: release-notes/v2-10.md
     - v2.9: release-notes/v2-9.md
     - v2.8: release-notes/v2-8.md

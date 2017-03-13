@@ -6,10 +6,10 @@ Welcome to the documentation for MFractor, incredible Xamarin tools.
 
 Let's get you started:
 
-###Get Started:
+###Installation
 
- * [Download MFractor]()
- * [Install MFractor]()
+ * [Setup MFractor](setup.md)
+ * [Using Code Actions](code-actions.md)
 
 ###Xamarin.Forms Essentials:
 
@@ -17,7 +17,6 @@ Let's get you started:
 * [Xaml Analysis](xamarin-forms/analysis.md)
 * [Binding Context Configuration](xamarin-forms/configure-binding-context.md)
 * [Navigation](xamarin-forms/navigation.md)
-* [Code Actions](xamarin-forms/code-actions.md)
 
 ###Xamarin.Android Essentials:
 
@@ -27,7 +26,6 @@ Let's get you started:
 * [Resource IntelliSense](xamarin-android/resource-intellisense.md)
 * [Navigation](xamarin-android/navigation.md)
 * [Project Indexing](xamarin-android/project-resource-indexing.md)
-* [Code Actions](xamarin-android/code-actions.md)
 
 ###Support
 
