@@ -71,7 +71,38 @@ When a c# symbol reference expression does not resolve, this fix generates a stu
 
 ##Generate Event Handler
 
-Generates a method body for an event handler that does not exist in the xaml files code-behind class.
+When an event handler Xaml attribute references a method that does not exist on the code behind class, the **Generate Missing Event Handler** code fix will generate a method on the code behind class.
+
+Consider the following code:
+
+
+**View: LoginPage.xaml**
+```
+<?xml version="1.0" encoding="utf-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+	xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+	x:Class="HelloMFractor.LoginPage">
+	<Button Clicked="OnButtonClicked"/>
+</ContentPage>
+```
+
+**Code Behind: LoginPage.xaml.cs**
+```
+public partial class LoginPage : ContentPage
+{
+    public LoginPage()
+    {
+        InitializeComponent();
+    }
+}
+```
+
+The referenced method `OnButtonClicked` does not exist in the views code behind class, `LoginPage`. The corresponding [analyser](http://docs.mfractor.com/xamarin-forms/tools-in-depth/analysers/#event-handler-exists-in-code-behind-class) will detect this issue and annotate it in your source code.
+
+From here, we can action the code fix to generate a method stub in `LoginPage.xaml.cs`:
+
+![Generating an event handler](/img/code-actions/forms/generate-event-handler.gif)
+
 
 ##Generate Missing Binding Command Stub
 
