@@ -592,7 +592,30 @@ All available code fixes in MFractor for Xamarin.Forms</p>
 <h2 id="generate-class-and-static-member">Generate class and static member</h2>
 <p>When a c# symbol reference expression does not resolve, this fix generates a stub class declaration with a default, readonly static member.</p>
 <h2 id="generate-event-handler">Generate Event Handler</h2>
-<p>Generates a method body for an event handler that does not exist in the xaml files code-behind class.</p>
+<p>When an event handler Xaml attribute references a method that does not exist on the code behind class, the <strong>Generate Missing Event Handler</strong> code fix will generate a method on the code behind class.</p>
+<p>Consider the following code:</p>
+<p><strong>View: LoginPage.xaml</strong></p>
+<pre><code>&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot;?&gt;
+&lt;ContentPage xmlns=&quot;http://xamarin.com/schemas/2014/forms&quot;
+    xmlns:x=&quot;http://schemas.microsoft.com/winfx/2009/xaml&quot;
+    x:Class=&quot;HelloMFractor.LoginPage&quot;&gt;
+    &lt;Button Clicked=&quot;OnButtonClicked&quot;/&gt;
+&lt;/ContentPage&gt;
+</code></pre>
+
+<p><strong>Code Behind: LoginPage.xaml.cs</strong></p>
+<pre><code>public partial class LoginPage : ContentPage
+{
+    public LoginPage()
+    {
+        InitializeComponent();
+    }
+}
+</code></pre>
+
+<p>The referenced method <code>OnButtonClicked</code> does not exist in the views code behind class, <code>LoginPage</code>. The corresponding <a href="http://docs.mfractor.com/xamarin-forms/tools-in-depth/analysers/#event-handler-exists-in-code-behind-class">analyser</a> will detect this issue and annotate it in your source code.</p>
+<p>From here, we can action the code fix to generate a method stub in <code>LoginPage.xaml.cs</code>:</p>
+<p><img alt="Generating an event handler" src="../../../img/code-actions/forms/generate-event-handler.gif" /></p>
 <h2 id="generate-missing-binding-command-stub">Generate Missing Binding Command Stub</h2>
 <p>When the symbol referenced inside a binding expression is unresolved, this fix can either apply an auto-correcet or generate a property on elements the BindingContext</p>
 <h2 id="generate-missing-class">Generate Missing Class</h2>
