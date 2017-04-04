@@ -137,6 +137,20 @@
 
   
   
+<li class="toctree-l1 ">
+  <a class="" href="../../xamarin-forms/implementing-view-models/">Implementing View Models</a>
+  
+</li>
+
+  
+  
+<li class="toctree-l1 ">
+  <a class="" href="../../xamarin-forms/value-converter-type-safety/">Value Converter Type Safety</a>
+  
+</li>
+
+  
+  
 <ul class="subnav">
   <li><span>Tools In-Depth</span></li>
   
@@ -187,14 +201,7 @@
   
   
 <li class="toctree-l1 ">
-  <a class="" href="../../xamarin-android/project-resource-indexing/">Project Resource Indexing</a>
-  
-</li>
-
-  
-  
-<li class="toctree-l1 ">
-  <a class="" href="../../xamarin-android/navigation/">Navigation</a>
+  <a class="" href="../../xamarin-android/resource-navigation/">Resource Navigation</a>
   
 </li>
 
@@ -262,69 +269,6 @@
   
 <li class="toctree-l1 ">
   <a class="" href="../../xamarin-android/tools-in-depth/intellisense/">IntelliSense</a>
-  
-</li>
-
-  
-</ul>
-
-  
-</ul>
-<li>
-          
-            <li>
-<ul class="subnav">
-  <li><span>Tutorials</span></li>
-  
-  
-<li class="toctree-l1 ">
-  <a class="" href="../../tutorials/tutorials/">Tutorials</a>
-  
-</li>
-
-  
-  
-<ul class="subnav">
-  <li><span>Xamarin.Android</span></li>
-  
-  
-<li class="toctree-l1 ">
-  <a class="" href="../../tutorials/xamarin-android/resource-expressions-and-code-navigation/">Resource Expressions And Code Navigation</a>
-  
-</li>
-
-  
-</ul>
-
-  
-  
-<ul class="subnav">
-  <li><span>Xamarin.Forms</span></li>
-  
-  
-<li class="toctree-l1 ">
-  <a class="" href="../../tutorials/xamarin-forms/mvvm-navigation/">Mvvm Navigation</a>
-  
-</li>
-
-  
-  
-<li class="toctree-l1 ">
-  <a class="" href="../../tutorials/xamarin-forms/implementing-view-models/">Implementing View Models</a>
-  
-</li>
-
-  
-  
-<li class="toctree-l1 ">
-  <a class="" href="../../tutorials/xamarin-forms/value-converter-type-safety/">Value Converter Type Safety</a>
-  
-</li>
-
-  
-  
-<li class="toctree-l1 ">
-  <a class="" href="../../tutorials/xamarin-forms/organising-xaml-code/">Organising Xaml Code</a>
   
 </li>
 
@@ -451,9 +395,10 @@
 <p><strong><a href="http://addins.mfractor.com/releases/2.11.00/MFractor.MFractor_2.11.00.mpack">Download MFractor 2.11.0</a></strong></p>
 <h2 id="introduction">Introduction</h2>
 <p>This is a summary of the changes introduced in v2.11.0 of MFractor for Xamarin Studio.</p>
-<p>This release introduces the ability to configure MFractor through <code>mfractor.config</code>; this enables developers to change MFractor's behaviour when refactoring, analysing and generating code.</p>
+<p>This release introduces the ability to controls MFractor through configuration files; this enables developers to change MFractor's behaviour when refactoring, analysing and generating code.</p>
 <p>The configuration engine allows you to customise the internals of MFractor to generate code specific to your project. Initially we are limiting the amount of options that are exposed but over time we will drastically increase the flexibility of MFractors code generation engine.</p>
 <p>How does it work? Let's consider the following configuration file:</p>
+<p><strong>myConfiguration.mfc.xml</strong></p>
 <pre><code>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; ?&gt;
 &lt;mfractor&gt;
     &lt;configure id=&quot;com.mfractor.code_gen.forms.csharp.instance_property&quot;&gt;
@@ -465,7 +410,8 @@
 &lt;/mfractor&gt;
 </code></pre>
 
-<p>Let's examine each of these elements:</p>
+<p>MFractor configuration files are xml based and end with the extentions <code>.mfc</code> (mfc stands for 'mf'ractor 'c'onfig) or <code>.mfc.xml</code> (if you'd like the IDEs default IntelliSense and xml highlighting). Conceptually, MFractor has <em>Configurables</em>, extensible components within MFractor itself that expose properties that can be edited by a configuration file.</p>
+<p>Let's examine each of the each element in the above configuration in depth:</p>
 <ul>
 <li>We open a configuration file with the <code>&lt;mfractor&gt;</code> tag; this is just ceremony to denote to MFractor this is it's config file.</li>
 <li>We <strong>target</strong> a configurable by using the <code>&lt;configure&gt;</code> element:<ul>
@@ -478,12 +424,12 @@
 </ul>
 </li>
 </ul>
-<p>Some configurables</p>
+<p>Some configurables expose a lots of properties, some expose none. If you want the behaviour for a code action or code generator to be customisable, please get in touch. It's trivial for us to expose new configuration settings so just ask! :)</p>
 <p>You might notice that the structure of docs.mfractor.com has drastically changed. This new site structure enables you to easily explore the code actions, analysis and code generation exposed by MFractor and is logically grouped in the same way the configuration engine groups elements. We now include the configuration identifier for <strong>all</strong> code actions and analysers as well as a list of the configurable properties for any element in MFractor.</p>
 <p>A full tutorial on the configuration engine can be found in the <strong>Customisation and Configuration</strong> page.</p>
 <h2 id="features">Features</h2>
 <ul>
-<li>The new <code>mfractor.config</code> config file enables customisation the code generated by MFractor. Create a new file named <code>mfractor.config</code> at the root level of your project and influence MFractor's internals using the <code>&lt;configure id="com.mfractor.XXX"/&gt;</code> and <code>&lt;property name="Name" value="Value"/&gt;</code> syntax. A full tutorial on <code>mfractor.config</code> is available here. (TODO: Add tutorial on configuration files)</li>
+<li>The new config file system enables customisation the code generated by MFractor. Create a new file with the extension <code>.mfc</code> or <code>.mfc.xml</code> in your project and influence MFractor's internals using the <code>&lt;configure id="com.mfractor.XXX"/&gt;</code> and <code>&lt;property name="Name" value="Value"/&gt;</code> syntax. A full tutorial on condfiguration is available here. (TODO: Add tutorial on configuration files)</li>
 <li><strong>New Code Analysers</strong><ul>
 <li>Detect when a <code>ContentView</code> has multiple child elements.</li>
 <li>Detect when a <code>ContentPage</code> has multiple child elements.</li>
@@ -532,7 +478,7 @@
         <a href="../v2-10/" class="btn btn-neutral float-right" title="v2.10">Next <span class="icon icon-circle-arrow-right"></span></a>
       
       
-        <a href="../../tutorials/xamarin-forms/organising-xaml-code/" class="btn btn-neutral" title="Organising Xaml Code"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../../xamarin-android/tools-in-depth/intellisense/" class="btn btn-neutral" title="IntelliSense"><span class="icon icon-circle-arrow-left"></span> Previous</a>
       
     </div>
   
@@ -563,7 +509,7 @@
           <a href="https://github.com/matthewrdev/mfractor-documentation" class="icon icon-github" style="float: left; color: #fcfcfc"> GitHub</a>
       
       
-        <span><a href="../../tutorials/xamarin-forms/organising-xaml-code/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+        <span><a href="../../xamarin-android/tools-in-depth/intellisense/" style="color: #fcfcfc;">&laquo; Previous</a></span>
       
       
         <span style="margin-left: 15px"><a href="../v2-10/" style="color: #fcfcfc">Next &raquo;</a></span>
