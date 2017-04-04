@@ -49,10 +49,10 @@ Inspects generic classes that are instantiated through Xaml and validates that a
 Inspects the inner element(s) of a `MyView.ResourceDictionary` property setter node  and checks that a resource dictionary is the inner element. It is common to forget to use a resource dictionary before adding resources
 
 ## IValueConverter Input Type Mismatch
-Inspects the `Converter` property of a `Binding `expression and validates that the input type is correct. This analyser requires that the `IValueConverter` implementation uses the [`ValueConversion`](/tutorials/xamarin-forms/value-converter-type-safety.md) attribute to declare it input type.
+Inspects the `Converter` property of a `Binding `expression and validates that the input type is correct. This analyser requires that the `IValueConverter` implementation uses the [`ValueConversion`](/xamarin-forms/value-converter-type-safety.md) attribute to declare it input type.
 
 ## IValueConverter Output Type Mismatch
-Inspects the `Converter` component of a `Binding` expression and validates that the returned output type is valid for the parent attribute. This analyser requires that the `IValueConverter` implementation uses the [`ValueConversion`](/tutorials/xamarin-forms/value-converter-type-safety.md) attribute to declare it input type.
+Inspects the `Converter` component of a `Binding` expression and validates that the returned output type is valid for the parent attribute. This analyser requires that the `IValueConverter` implementation uses the [`ValueConversion`](/xamarin-forms/value-converter-type-safety.md) attribute to declare it input type.
 
 ## Missing Microsoft Schema
 Inspects at the root xaml node and verifies that it references the Microsoft Xaml schema: `http://schemas.microsoft.com/winfx/2009/xaml`. This schema is required for Xamarin Forms Xaml documents.

@@ -30,9 +30,9 @@ A full list of available Xaml analysers can be found at [Xamarin.Forms Analysers
 Whenever you edit a Xaml code file, MFractor will cancel any running analysis, re-parse and symbolicate the document and then re-run the xaml analyser against your xaml.
 
 ##Code Fixes
-When MFractor detects a code issue, it is usually able to suggest a fix as well. When MFractor can fix an issue, the squiggle beneath that issue will be yellow like so:
+When MFractor detects a code issue, it is usually able to suggest a fix as well. When MFractor can fix an issue, 
 
-You can action this fix by right clicking on the text area marked by the yellow squiggle
+You can action this fix by right clicking on the text area marked by the coloured squiggle
 
 ##Expression Analysis
 

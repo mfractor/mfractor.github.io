@@ -174,7 +174,7 @@ public System.Windows.Input.ICommand LoginCommand
 
 ##Binding Generation And Value Converters
 
-When a binding expression uses a `Converter`, MFractor will attempt to resolve the input type of the referenced value converter and use that as the property type. We must have a value conversion attribute on the `IValueConverter` for MFractor to resolve the input type. Please read the [Value Conversion Type-Safety](/tutorials/xamarin-forms/value-converter-type-safety.md) tutorial to learn more.
+When a binding expression uses a `Converter`, MFractor will attempt to resolve the input type of the referenced value converter and use that as the property type. We must have a value conversion attribute on the `IValueConverter` for MFractor to resolve the input type. Please read the [Value Conversion Type-Safety](/xamarin-forms/value-converter-type-safety.md) tutorial to learn more.
 
 For example, we add a login button that is only enabled when the user has their password entered:
 

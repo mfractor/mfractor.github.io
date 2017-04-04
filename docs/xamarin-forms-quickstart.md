@@ -61,13 +61,13 @@ Right click and select:
 For more detail, see [Mvvm Navigation](xamarin-forms/navigation.md#mvvm-navigation).
 
 ##Xaml Analysis
-The Xaml analyser inspects Xaml files for code issues and underlines the issue in either red or yellow.
+The Xaml analyser inspects Xaml files for code issues and underlines the issue in either red, yellow or blue..
 
  * Hover over a xaml issue to view more information on the code issue.
  * Red underlined issues are compilation or runtime errors.
  * Yellow underlined issues are compilation warnings.
  * Blue underlined issues are code improvements.
- * To fix an issueRight click on the issue region and browse to **Fix** and select the fix you'd like to apply.
+ * To fix an issue, right click on the issue region and browse to **Fix** and select the fix you'd like to apply.
 
 For more detail, see:
 

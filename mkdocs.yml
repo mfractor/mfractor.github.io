@@ -28,6 +28,8 @@ pages:
   - Configure Binding Context: xamarin-forms/configure-binding-context.md
   - Navigation: xamarin-forms/navigation.md
   - Analysis: xamarin-forms/analysis.md
+  - Implementing View Models: xamarin-forms/implementing-view-models.md
+  - Value Converter Type Safety: xamarin-forms/value-converter-type-safety.md
   - Tools In-Depth:
     - Analysers: xamarin-forms/tools-in-depth/analysers.md
     - Refactorings: xamarin-forms/tools-in-depth/refactor.md
@@ -35,8 +37,7 @@ pages:
     - Xaml Organisation: xamarin-forms/tools-in-depth/organise.md
     - Issue Fixing: xamarin-forms/tools-in-depth/fix.md
 - Xamarin.Android:
-  - Project Resource Indexing: xamarin-android/project-resource-indexing.md
-  - Navigation: xamarin-android/navigation.md
+  - Resource Navigation: xamarin-android/resource-navigation.md
   - Analysis: xamarin-android/analysis.md
   - .NET Code Analysis: xamarin-android/dotnet-code-analysis.md
   - Resource IntelliSense: xamarin-android/resource-intellisense.md
@@ -47,15 +48,6 @@ pages:
     - Organisation: xamarin-android/tools-in-depth/organise.md
     - Issue Fixing: xamarin-android/tools-in-depth/fix.md
     - IntelliSense: xamarin-android/tools-in-depth/intellisense.md
-- Tutorials:
-  - Tutorials: tutorials/tutorials.md
-  - Xamarin.Android:
-    - Resource Expressions And Code Navigation: tutorials/xamarin-android/resource-expressions-and-code-navigation.md
-  - Xamarin.Forms:
-    - Mvvm Navigation: tutorials/xamarin-forms/mvvm-navigation.md
-    - Implementing View Models: tutorials/xamarin-forms/implementing-view-models.md
-    - Value Converter Type Safety: tutorials/xamarin-forms/value-converter-type-safety.md
-    - Organising Xaml Code: tutorials/xamarin-forms/organising-xaml-code.md
 - Release Notes:
     - v2.11: release-notes/v2-11.md
     - v2.10: release-notes/v2-10.md

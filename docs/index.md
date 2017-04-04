@@ -9,6 +9,8 @@ Let's get you started:
 ###Installation
 
  * [Setup MFractor](setup.md)
+
+###MFractor Essentials
  * [Using Code Actions](code-actions.md)
 
 ###Xamarin.Forms Essentials:
@@ -21,11 +23,10 @@ Let's get you started:
 ###Xamarin.Android Essentials:
 
 * [Quickstart Guide](xamarin-android-quickstart.md)
+* [Resource Navigation](xamarin-android/resource-navigation.md)
 * [Resource Analysis](xamarin-android/analysis.md)
 * [C# Analysis](xamarin-android/dotnet-code-analysis.md)
 * [Resource IntelliSense](xamarin-android/resource-intellisense.md)
-* [Navigation](xamarin-android/navigation.md)
-* [Project Indexing](xamarin-android/project-resource-indexing.md)
 
 ###Support
 

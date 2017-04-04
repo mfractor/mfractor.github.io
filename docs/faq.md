@@ -10,14 +10,16 @@ If something doesn't work quite right or you'd like a sweet new feature added, b
  * Via Email: Shot an email to [hello@mfractor.com](hello@mfractor.com)
 
 ##What version of Xamarin Studio is MFractor compatible with?
-The latest version of MFractor always targets the current stable channel version of Xamarin Studio.
+The latest version of MFractor always targets the current stable channel version of Xamarin Studio. Visual Studio for Mac support is under active development and is expected 1st of July 2017.
+
+##Does MFractor support Visual Studio Windows?
+MFractor **does not** support Visual Studio Windows. This is on our roadmap for the future but we have no concrete timelinen when we would deliver this. A news announcement will be published when we commence work on MFractor for Visual Studio Windows.
 
 ##How do I get started with MFractor?
 MFractor does a lot so it may take a little while to learn its ins and outs. If you'd like to learn how to best use it, you have a few options:
 
  * Get started by reading the [Xamarin.Forms Quickstart](xamarin-forms-quickstart.md) and [Xamarin.Android Quickstart](xamarin-android-quickstart.md); these are a quick overview of the most used features.
- * Read the in-depth docs for both Xamarin.Forms and Xamarin.Android (se the menu to the left). Each article covers a feature in-depth and fully explains how to use it.
- * Read the [tutorials](tutorials/tutorials.md) for and in-depth exploration of a feature from first concepts to practical use cases.
+ * Read the in-depth docs for both Xamarin.Forms and Xamarin.Android (see the menu to the left). Each article covers a feature in-depth and fully explains how to use it.
  * Drop into the [#mfractor Xamarin Slack sub-channel](https://xamarinchat.slack.com/archives/mfractor) and start chatting to me (Matthew Robbins). I'm happy to answer any questions you have.
 
 ##How do I file a bug report?
