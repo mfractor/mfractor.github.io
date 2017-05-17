@@ -4,7 +4,7 @@ copyright: Copyright &copy; 2016 <a href="https://www.mfractor.com">MFractor</a>
 site_author: "Matthew Robbins"
 site_description: "Documentation for MFractor for Mac, incredible Xamarin tools"
 site_favicon: "img/favicon.ico"
-repo_url: "https://github.com/matthewrdev/mfractor-documentation"
+repo_url: "https://github.com/mfractor/mfractor.github.io"
 remote_branch: "master"
 google_analytics: ['UA-71910290-3', 'docs.mfractor.com']
 strict: true
@@ -22,6 +22,7 @@ pages:
   - Setup: setup.md
   - FAQ: faq.md
   - Using Code Actions: code-actions.md
+  - Configuration: configuration.md
   - Xamarin.Forms Quickstart: xamarin-forms-quickstart.md
   - Xamarin.Android Quickstart: xamarin-android-quickstart.md
 - Xamarin.Forms:
@@ -30,26 +31,13 @@ pages:
   - Analysis: xamarin-forms/analysis.md
   - Implementing View Models: xamarin-forms/implementing-view-models.md
   - Value Converter Type Safety: xamarin-forms/value-converter-type-safety.md
-  - Tools In-Depth:
-    - Analysers: xamarin-forms/tools-in-depth/analysers.md
-    - Refactorings: xamarin-forms/tools-in-depth/refactor.md
-    - Code Generation: xamarin-forms/tools-in-depth/generate.md
-    - Xaml Organisation: xamarin-forms/tools-in-depth/organise.md
-    - Issue Fixing: xamarin-forms/tools-in-depth/fix.md
 - Xamarin.Android:
   - Resource Navigation: xamarin-android/resource-navigation.md
   - Analysis: xamarin-android/analysis.md
   - .NET Code Analysis: xamarin-android/dotnet-code-analysis.md
   - Resource IntelliSense: xamarin-android/resource-intellisense.md
-  - Tools In-Depth:
-    - Analysers: xamarin-android/tools-in-depth/analysers.md
-    - Refactorings: xamarin-android/tools-in-depth/refactor.md
-    - Code Generation: xamarin-android/tools-in-depth/generate.md
-    - Organisation: xamarin-android/tools-in-depth/organise.md
-    - Issue Fixing: xamarin-android/tools-in-depth/fix.md
-    - IntelliSense: xamarin-android/tools-in-depth/intellisense.md
 - Release Notes:
-    - v2.11: release-notes/v2-11.md
+    - v3.0: release-notes/v3-0.md
     - v2.10: release-notes/v2-10.md
     - v2.9: release-notes/v2-9.md
     - v2.8: release-notes/v2-8.md

@@ -1,84 +1,56 @@
-##Code Actions
+##Fix Declarative References
+*Configuration Id: com.mfractor.android.analysis.declarative_reference.fix*
+Replaces misused declarative resource references with an id reference.
 
-*Fix issues, refactor, tidy up code and generate C# from your Xaml*
+###Configurable Properties
+This element has no configurable properties.
 
-##Introduction
-Code actions are shortcuts that manipulate your Xaml or C# code (or both!); they enable you to fix issues, refactor xaml, generate C# code from your views and organise xaml code.
+##Apply Required Value
+*Configuration Id: com.mfractor.android.analysis.exact_value.fix*
+Replaces an attributes value with the required value for xml element. For example, 'xmlns:android' must always be 'http://schemas.android.com/apk/res/android'.
 
-This article describes how to access and use code actions
+###Configurable Properties
+This element has no configurable properties.
 
-For a full list of available xaml code actions, see the following articles:
+##Fix Mispelt Resource Usages
+*Configuration Id: com.mfractor.android.analysis.mispelt_resource_usage.fix*
+Replaces unresolvable resource usages with an auto-suggested value based on the resources available in the project or its references.
 
- * [Refactoring Code Actions](xamarin-forms/tools-in-depth/refactor.md) article.
- * [Generation Code Actions](xamarin-forms/tools-in-depth/generate.md) article.
- * [Organise Code Actions](xamarin-forms/tools-in-depth/organise.md) article.
- * [Code Issue Fixes](xamarin-forms/tools-in-depth/fix.md) article.
+###Configurable Properties
+This element has no configurable properties.
 
-##Using Code Actions
+##Add Required Attributes
+*Configuration Id: com.mfractor.android.analysis.missing_attributes.fix*
+Adds any missing required attributes and their default values to an xml node.
 
-MFractor has 4 types of code actions:
+###Configurable Properties
+This element has no configurable properties.
 
- - **Fixes**: Fixes code issues detected by the Xaml analyser.
- - **Generate**: Generates common xaml and C# code.
- - **Refactor**: Rename C# and Xaml symbols from your Xaml document.
- - **Organise**: Tidy up and organise your xaml.
+##Fix 9-patch drawable references
+*Configuration Id: com.mfractor.android.analysis.drawable_nine_patch_reference.fix*
+Replaces a nine patch drawable reference that includes the '.9' suffix with a reference that excludes the '.9' suffix.
 
-MFractor exposes code actions through 2 methods:
+###Configurable Properties
+This element has no configurable properties.
 
-1. Pressing the keyboard shortcut `Alt`+`Return`:
+##Fix Flags
+*Configuration Id: com.mfractor.android.analysis.valid_flags.fix*
+Replaces a mispelt flag with an auto-corrected suggestion or suggests from a list of valid keywords.
 
-![Accessing code actions using the quick fix menu](/img/forms/quick-fix-menu.gif)
+###Configurable Properties
+This element has no configurable properties.
 
-2. Right clicking within the document and selecting a menu action:
+##Fix Keywords
+*Configuration Id: com.mfractor.android.analysis.valid_keyword.fix*
+Replaces a mispelt keyword with an auto-corrected suggestion or suggests from a list of valid keywords.
 
-![Accessing code actions using the context menus](/img/forms/refactoring-menu.png)
+###Configurable Properties
+This element has no configurable properties.
 
-##Code Issue Fixes
+##Fix Value Format
+*Configuration Id: com.mfractor.android.analysis.value_format.fix*
+Fixes typeos for inline values such as dimensions, color or floats.
 
-Code issue fixes are available when an analyser from the [Xaml Analysis Engine](/xamarin-forms/analysis.md) detects a code issue and it marks that code section with a yellow underline.
+###Configurable Properties
+This element has no configurable properties.
 
-You can action a code fix by right-clicking on the yellow-underlined code section, opening the **Fix** menu and then selecting the fix you'd like to action:
-
-![Using Fix Refactorings](/img/forms/refactoring-fix.gif)
-
-To view a complete list of available code issue fixes, visit the [Code Issue Fix](/xamarin-forms/tools-in-depth/fix.md) document.
-
-##Code Generation
-
-Code generation operations allow you to quickly build boilerplate code that you'd otherwise have to hand code yourself.
-
-For example, you could:
-
- - Generate resource dictionaries for view elements.
- - Implement all missing bindings in bulk using the **Implement View Model** code generator.
-
-![Using Generate Refactorings](/img/forms/refactoring-generate.gif)
-
-To view a complete list of available code generation refactorings, visit [Refactorings - Generate](/xamarin-forms/tools-in-depth/generate.md).
-
-##Code Refactoring
-
-The refactorings within the **Refactor** allow you to manipulate Xaml and .NET symbols while within your Xaml document. These refactorings typically take user input and perform a change on the Xaml and/or C# based on that input.
-
-For example, you could:
-
- - Take the attribute `Text="Hello Xamarin Forms!"` and extract the value `"Hello Xamarin Forms!"` into the views binding context; replacing the attribute with `Text="{Binding Message}"` and creating the C# property `public string Message { get; set; } = "Hello Xamarin Forms!"`.
- - Edit a color literal using the color picker dialog.
-
-![Using Refactor Refactorings](/img/forms/refactoring-refactor.gif)
-
-To view a complete list of available refactoring operations, visit [Refactorings - Refactor](/xamarin-forms/tools-in-depth/refactor.md).
-
-##Code Organisation
-
-The refactorings within the **Organise** are used to quickly format your xaml code. These refactorings are useful to keep your xaml tidy and easy to understand.
-
-For example, you could:
-
- - Sort all attributes on a node by name and namespace.
- - Collapse or expand the attribute on a node onto separate or the same lines.
- - Expand or collapse the closing tag on a node.
-
-![Using Organise Refactorings](/img/forms/refactoring-organise.gif)
-
-To view a complete list of available code organisation operations, visit [Refactorings - Organise](/xamarin-forms/tools-in-depth/organise.md).

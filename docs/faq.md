@@ -1,9 +1,9 @@
 ## Frequently Asked Questions
 
-*Geting help for MFractor when something's amiss or giving feedback*
+*Answers to some commonly asked questions*
 
 ##How can I get help or support?
-If something doesn't work quite right or you'd like a sweet new feature added, be patient and contact me:
+If something doesn't work or you'd like a sweet new feature added, be patient and contact me:
 
  * Via Twitter: Give me a holla at [@matthewrdev](https://twitter.com/matthewrdev)
  * Via Slack: Drop in to chat anytime in the [#mfractor Xamarin Slack sub-channel](https://xamarinchat.slack.com/archives/mfractor).
@@ -13,12 +13,13 @@ If something doesn't work quite right or you'd like a sweet new feature added, b
 The latest version of MFractor always targets the current stable channel version of Xamarin Studio. Visual Studio for Mac support is under active development and is expected 1st of July 2017.
 
 ##Does MFractor support Visual Studio Windows?
-MFractor **does not** support Visual Studio Windows. This is on our roadmap for the future but we have no concrete timelinen when we would deliver this. A news announcement will be published when we commence work on MFractor for Visual Studio Windows.
+MFractor **does not** support Visual Studio Windows. This is on our roadmap for the future but we have no concrete timeline. A news announcement will be published when we commence work on MFractor for Visual Studio Windows.
 
-##How do I get started with MFractor?
+##How do I get started using MFractor?
 MFractor does a lot so it may take a little while to learn its ins and outs. If you'd like to learn how to best use it, you have a few options:
 
  * Get started by reading the [Xamarin.Forms Quickstart](xamarin-forms-quickstart.md) and [Xamarin.Android Quickstart](xamarin-android-quickstart.md); these are a quick overview of the most used features.
+ * Learn to use [code actions](code-actions.md); contextual actions that refactor xaml, generate c#, fix code issues or organise your views. These are the back-bone of MFractor!
  * Read the in-depth docs for both Xamarin.Forms and Xamarin.Android (see the menu to the left). Each article covers a feature in-depth and fully explains how to use it.
  * Drop into the [#mfractor Xamarin Slack sub-channel](https://xamarinchat.slack.com/archives/mfractor) and start chatting to me (Matthew Robbins). I'm happy to answer any questions you have.
 
@@ -31,7 +32,7 @@ If you notice a bug while you are using MFractor, please file a bug report by ta
 
 ##How do I install or update the Android SDK meta-data bundle?
 
-If you'd like to activate tooltips and go-to declaration support for Android SDK resources (for example: `@android:string/my_sting`), you can install MFractors Android SDK meta-data.
+If you'd like to activate tooltips and go-to declaration support for Android SDK resources (for example: `@android:string/my_string`), you can install MFractors Android SDK meta-data.
 
 To install, go to the **Help** main menu, select **MFractor** and then **Install Android SDK Meta-Data**:
 
@@ -59,6 +60,6 @@ No, you should not check `.droidres` into your source control.
 If you are using git, append the following text to the end of your `.gitignore` to exclude `.droidres`:
 
 ```
-# MFractor's Android resource meta-data cache
+# MFractor's Android meta-data cache
 *.droidres/
 ```
