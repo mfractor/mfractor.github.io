@@ -1,0 +1,732 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <meta name="author" content="Matthew Robbins">
+  <link rel="shortcut icon" href="../../../img/favicon.ico">
+  
+  <title>Issue Fixing - mfractor docs</title>
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="../../../css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../../css/theme_extra.css" type="text/css" />
+  <link rel="stylesheet" href="../../../css/highlight.css">
+  <link href="../../../css/breadcrumbs.css" rel="stylesheet">
+  <link href="../../../css/code.css" rel="stylesheet">
+  <link href="../../../css/fabric.css" rel="stylesheet">
+  <link href="../../../css/sidenav.css" rel="stylesheet">
+  <link href="../../../css/mfractor.css" rel="stylesheet">
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "Issue Fixing";
+    var mkdocs_page_input_path = "code-actions/xamarin-forms-xaml/fix.md";
+    var mkdocs_page_url = "/code-actions/xamarin-forms-xaml/fix/";
+  </script>
+  
+  <script src="../../../js/jquery-2.1.1.min.js"></script>
+  <script src="../../../js/modernizr-2.8.3.min.js"></script>
+  <script type="text/javascript" src="../../../js/highlight.pack.js"></script> 
+  
+  <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-71910290-3', 'docs.mfractor.com');
+      ga('send', 'pageview');
+  </script>
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+      <div class="wy-side-nav-search">
+        <a href="../../.." class="icon icon-home"> mfractor docs</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+	<ul class="current">
+          
+            <li>
+<li class="toctree-l1 ">
+  <a class="" href="../../..">Home</a>
+  
+</li>
+<li>
+          
+            <li>
+<ul class="subnav">
+  <li><span>Getting Started</span></li>
+  
+  
+<li class="toctree-l1 ">
+  <a class="" href="../../../installation-and-setup/">Installation And Setup</a>
+  
+</li>
+
+  
+  
+<li class="toctree-l1 ">
+  <a class="" href="../../../activate-mfractor-premium/">Activating MFractor Premium</a>
+  
+</li>
+
+  
+  
+<li class="toctree-l1 ">
+  <a class="" href="../../../faq/">FAQ</a>
+  
+</li>
+
+  
+  
+<li class="toctree-l1 ">
+  <a class="" href="../../../configuration/">Configuration</a>
+  
+</li>
+
+  
+  
+<li class="toctree-l1 ">
+  <a class="" href="../../../xamarin-forms-quickstart/">Xamarin.Forms Quickstart</a>
+  
+</li>
+
+  
+  
+<li class="toctree-l1 ">
+  <a class="" href="../../../xamarin-android-quickstart/">Xamarin.Android Quickstart</a>
+  
+</li>
+
+  
+</ul>
+<li>
+          
+            <li>
+<ul class="subnav">
+  <li><span>Xamarin.Forms</span></li>
+  
+  
+<li class="toctree-l1 ">
+  <a class="" href="../../../xamarin-forms/configure-binding-context/">Configuring A Binding Context</a>
+  
+</li>
+
+  
+  
+<li class="toctree-l1 ">
+  <a class="" href="../../../xamarin-forms/navigation/">Navigation Tools</a>
+  
+</li>
+
+  
+  
+<li class="toctree-l1 ">
+  <a class="" href="../../../xamarin-forms/analysis/">Analysis</a>
+  
+</li>
+
+  
+  
+<li class="toctree-l1 ">
+  <a class="" href="../../../xamarin-forms/implementing-view-models/">Implementing View Models</a>
+  
+</li>
+
+  
+  
+<li class="toctree-l1 ">
+  <a class="" href="../../../xamarin-forms/value-converter-type-safety/">Value Converter Type Safety</a>
+  
+</li>
+
+  
+</ul>
+<li>
+          
+            <li>
+<ul class="subnav">
+  <li><span>Xamarin.Android</span></li>
+  
+  
+<li class="toctree-l1 ">
+  <a class="" href="../../../xamarin-android/resource-navigation/">Resource Navigation</a>
+  
+</li>
+
+  
+  
+<li class="toctree-l1 ">
+  <a class="" href="../../../xamarin-android/analysis/">Analysis</a>
+  
+</li>
+
+  
+  
+<li class="toctree-l1 ">
+  <a class="" href="../../../xamarin-android/dotnet-code-analysis/">.NET Code Analysis</a>
+  
+</li>
+
+  
+  
+<li class="toctree-l1 ">
+  <a class="" href="../../../xamarin-android/resource-intellisense/">Resource IntelliSense</a>
+  
+</li>
+
+  
+</ul>
+<li>
+          
+            <li>
+<ul class="subnav">
+  <li><span>Code Actions</span></li>
+  
+  
+<li class="toctree-l1 ">
+  <a class="" href="../../csharp/">C# Code Actions</a>
+  
+</li>
+
+  
+  
+<ul class="subnav">
+  <li><span>Android Resource Code Actions</span></li>
+  
+  
+<li class="toctree-l1 ">
+  <a class="" href="../../android-resources/fix/">Issue Fixing</a>
+  
+</li>
+
+  
+</ul>
+
+  
+  
+<ul class="subnav">
+  <li><span>Xamarin.Forms Xaml Code Actions</span></li>
+  
+  
+<li class="toctree-l1 current">
+  <a class="current" href="./">Issue Fixing</a>
+  
+  <ul>
+    
+      
+    
+      
+      <li class="toctree-l3"><a href="#generate-bindable-property-on-type">Generate bindable property on type</a></li>
+      
+    
+      
+      <li class="toctree-l3"><a href="#replace-attribute-with-closely-named-member">Replace attribute with closely named member</a></li>
+      
+    
+      
+      <li class="toctree-l3"><a href="#replace-with-correct-attached-property-name">Replace with correct attached property name</a></li>
+      
+    
+      
+      <li class="toctree-l3"><a href="#auto-correct-event-handler-name">Auto-Correct Event Handler Name</a></li>
+      
+    
+      
+      <li class="toctree-l3"><a href="#generate-event-handler">Generate Event Handler</a></li>
+      
+    
+      
+      <li class="toctree-l3"><a href="#replace-field-or-method-reference-with-property">Replace Field Or Method Reference With Property</a></li>
+      
+    
+      
+      <li class="toctree-l3"><a href="#generate-binding-expression-property-implement">Generate Binding Expression Property Implement</a></li>
+      
+    
+      
+      <li class="toctree-l3"><a href="#autocorrect-class-or-property">Autocorrect class or property</a></li>
+      
+    
+      
+      <li class="toctree-l3"><a href="#import-namespace-and-assembly">Import namespace and assembly</a></li>
+      
+    
+      
+      <li class="toctree-l3"><a href="#generate-class-and-static-member">Generate class and static member</a></li>
+      
+    
+      
+      <li class="toctree-l3"><a href="#generate-class">Generate class</a></li>
+      
+    
+      
+      <li class="toctree-l3"><a href="#generate-property">Generate property</a></li>
+      
+    
+      
+      <li class="toctree-l3"><a href="#create-xtypearguments-attribute">Create x:TypeArguments attribute.</a></li>
+      
+    
+      
+      <li class="toctree-l3"><a href="#generate-missing-value-converter">Generate Missing Value Converter</a></li>
+      
+    
+      
+      <li class="toctree-l3"><a href="#generate-missing-view">Generate Missing View</a></li>
+      
+    
+      
+      <li class="toctree-l3"><a href="#generate-missing-class">Generate Missing Class</a></li>
+      
+    
+      
+      <li class="toctree-l3"><a href="#generate-resource-dictionary-key">Generate Resource Dictionary Key</a></li>
+      
+    
+      
+      <li class="toctree-l3"><a href="#replace-unknown-property-value-with-autocorrection">Replace unknown property value with autocorrection</a></li>
+      
+    
+      
+      <li class="toctree-l3"><a href="#replace-node-with-auto-corrected-match">Replace node with auto-corrected match</a></li>
+      
+    
+      
+      <li class="toctree-l3"><a href="#import-namespace-and-assembly_1">Import Namespace And Assembly</a></li>
+      
+    
+      
+      <li class="toctree-l3"><a href="#remove-unused-xmlns-declaration">Remove unused xmlns declaration</a></li>
+      
+    
+      
+      <li class="toctree-l3"><a href="#rename-duplicate-namespace-references">Rename Duplicate Namespace References</a></li>
+      
+    
+      
+      <li class="toctree-l3"><a href="#replace-xml-namespace-with-auto-correction">Replace xml namespace with auto-correction</a></li>
+      
+    
+      
+      <li class="toctree-l3"><a href="#replace-xname-with-closely-named-member">Replace x:Name with closely named member</a></li>
+      
+    
+      
+      <li class="toctree-l3"><a href="#generate-missing-binding-command-stub">Generate Missing Binding Command Stub</a></li>
+      
+    
+      
+      <li class="toctree-l3"><a href="#autocorrect-nearly-named-property-binding">Autocorrect Nearly Named Property Binding</a></li>
+      
+    
+      
+      <li class="toctree-l3"><a href="#encapsulate-with-resource-dictionary">Encapsulate With Resource Dictionary</a></li>
+      
+    
+      
+      <li class="toctree-l3"><a href="#import-value-converter-for-binding">Import Value Converter For Binding</a></li>
+      
+    
+      
+      <li class="toctree-l3"><a href="#create-value-converter-that-resolves-type-flow">Create Value Converter That Resolves Type Flow</a></li>
+      
+    
+  </ul>
+  
+</li>
+
+  
+  
+<li class="toctree-l1 ">
+  <a class="" href="../generate/">Code Generation</a>
+  
+</li>
+
+  
+  
+<li class="toctree-l1 ">
+  <a class="" href="../organise/">Xaml Organisation</a>
+  
+</li>
+
+  
+  
+<li class="toctree-l1 ">
+  <a class="" href="../refactor/">Refactoring</a>
+  
+</li>
+
+  
+</ul>
+
+  
+</ul>
+<li>
+          
+            <li>
+<ul class="subnav">
+  <li><span>Code Analysis</span></li>
+  
+  
+<li class="toctree-l1 ">
+  <a class="" href="../../../code-analysis/android-resources/">Android Resource Analysis</a>
+  
+</li>
+
+  
+  
+<li class="toctree-l1 ">
+  <a class="" href="../../../code-analysis/xamarin-forms-xaml/">Xamarin.Forms Xaml Analysis</a>
+  
+</li>
+
+  
+</ul>
+<li>
+          
+            <li>
+<ul class="subnav">
+  <li><span>Code Generation</span></li>
+  
+  
+<li class="toctree-l1 ">
+  <a class="" href="../../../code-generation/csharp/">C#</a>
+  
+</li>
+
+  
+  
+<li class="toctree-l1 ">
+  <a class="" href="../../../code-generation/xamarin-forms/">Xamarin.Forms - C#</a>
+  
+</li>
+
+  
+  
+<li class="toctree-l1 ">
+  <a class="" href="../../../code-generation/xaml/">Xaml</a>
+  
+</li>
+
+  
+</ul>
+<li>
+          
+            <li>
+<ul class="subnav">
+  <li><span>Release Notes</span></li>
+  
+  
+<li class="toctree-l1 ">
+  <a class="" href="../../../release-notes/v3-0/">v3.0</a>
+  
+</li>
+
+  
+  
+<li class="toctree-l1 ">
+  <a class="" href="../../../release-notes/v2/">v2</a>
+  
+</li>
+
+  
+</ul>
+<li>
+          
+        </ul>
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="../../..">mfractor docs</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../../..">Docs</a> &raquo;</li>
+    
+      
+        
+          <li>Code Actions &raquo;</li>
+        
+      
+        
+          <li>Xamarin.Forms Xaml Code Actions &raquo;</li>
+        
+      
+    
+    <li>Issue Fixing</li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <h2 id="generate-property-onto-parent-type">Generate property onto parent type</h2>
+<p><em>Configuration Id: com.mfractor.code_fixes.forms.generate_property</em></p>
+<p>This fix generates a property with a getter and setter onto the parent type.</p>
+<h3 id="uses">Uses:</h3>
+<ul>
+<li><a href="../../../code-generation/csharp/#generate-instance-property">Generate Instance Property</a></li>
+</ul>
+<h2 id="generate-bindable-property-on-type">Generate bindable property on type</h2>
+<p><em>Configuration Id: com.mfractor.code_fixes.forms.generate_bindable_property</em></p>
+<p>This fix generates a bindable property onto the targetted class.</p>
+<h3 id="uses_1">Uses:</h3>
+<ul>
+<li><a href="../../../code-generation/xamarin-forms/#generate-bindable-property">Generate Bindable Property</a></li>
+</ul>
+<h2 id="replace-attribute-with-closely-named-member">Replace attribute with closely named member</h2>
+<p><em>Configuration Id: com.mfractor.code_fixes.forms.autocorrect_member</em></p>
+<p>Looks for members on a C# class that are named closely to an unresolved xml attribute and then suggest near matches.</p>
+<h2 id="replace-with-correct-attached-property-name">Replace with correct attached property name</h2>
+<p><em>Configuration Id: com.mfractor.code_fixes.forms.no_attached_property</em></p>
+<p>Replaces an incorrect attached property with an auto-corrected value.</p>
+<h2 id="auto-correct-event-handler-name">Auto-Correct Event Handler Name</h2>
+<p><em>Configuration Id: com.mfractor.code_fixes.forms.autocorrect_event_handler</em></p>
+<p>Auto-corrects a missing event handler name with a closely named callback from the code behind class.</p>
+<h3 id="uses_2">Uses:</h3>
+<ul>
+<li><a href="../../../code-generation/csharp/#generate-event-handler-method-callback">Generate Event Handler Method Callback</a></li>
+</ul>
+<h2 id="generate-event-handler">Generate Event Handler</h2>
+<p><em>Configuration Id: com.mfractor.code_fixes.forms.generate_event_handler</em></p>
+<p>When an event handler Xaml attribute references a method that does not exist on the code behind class, the <strong>Generate Missing Event Handler</strong> code fix will generate a method on the code behind class.</p>
+<p>Consider the following code:</p>
+<p><strong>View: LoginPage.xaml</strong></p>
+<pre><code>&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot;?&gt;
+&lt;ContentPage xmlns=&quot;http://xamarin.com/schemas/2014/forms&quot;
+    xmlns:x=&quot;http://schemas.microsoft.com/winfx/2009/xaml&quot;
+    x:Class=&quot;HelloMFractor.LoginPage&quot;&gt;
+    &lt;Button Clicked=&quot;OnButtonClicked&quot;/&gt;
+&lt;/ContentPage&gt;
+</code></pre>
+
+<p><strong>Code Behind: LoginPage.xaml.cs</strong></p>
+<pre><code>public partial class LoginPage : ContentPage
+{
+    public LoginPage()
+    {
+        InitializeComponent();
+    }
+}
+</code></pre>
+
+<p>The referenced method <code>OnButtonClicked</code> does not exist in the views code behind class, <code>LoginPage</code>. The corresponding <a href="http://docs.mfractor.com/code-analysis/xamarin-forms-xaml.ms/#event-handler-exists-in-code-behind-class">analyser</a> will detect this issue and annotate it in your source code.</p>
+<p>From here, we can action the code fix to generate a method stub in <code>LoginPage.xaml.cs</code>:</p>
+<p><img alt="Generating an event handler" src="../../../img/code-actions/forms/generate-event-handler.gif" /></p>
+<h3 id="uses_3">Uses:</h3>
+<ul>
+<li><a href="../../../code-generation/csharp/#generate-event-handler-method-callback">Generate Event Handler Method Callback</a></li>
+</ul>
+<h2 id="replace-field-or-method-reference-with-property">Replace Field Or Method Reference With Property</h2>
+<p><em>Configuration Id: com.mfractor.code_fixes.forms.binding_expression_does_not_return_property</em></p>
+<p>Replaces a field or method symbol within a binding expression with a suggested property name.</p>
+<h2 id="generate-binding-expression-property-implement">Generate Binding Expression Property Implement</h2>
+<p><em>Configuration Id: com.mfractor.code_fixes.forms.generate_binding_property</em></p>
+<h3 id="uses_4">Uses:</h3>
+<ul>
+<li><a href="../../../code-generation/csharp/#generate-instance-property">Generate Instance Property</a></li>
+</ul>
+<h2 id="autocorrect-class-or-property">Autocorrect class or property</h2>
+<p><em>Configuration Id: com.mfractor.code_fixes.forms.autocorrect_csharp_symbol</em></p>
+<p>When a c# symbol reference expression does not resolve, this fix applies an auto-corrected suggestion from the class/property.</p>
+<h2 id="import-namespace-and-assembly">Import namespace and assembly</h2>
+<p><em>Configuration Id: com.mfractor.code_fixes.forms.resolve_csharp_symbol</em></p>
+<p>When the namespace inside c# symbol reference expression can be resolved to a .NET symbol in the project or its references this fix generates an 'xmlns' import statement in the root xaml element.</p>
+<h2 id="generate-class-and-static-member">Generate class and static member</h2>
+<p><em>Configuration Id: com.mfractor.code_fixes.forms.generate_class_and_member</em></p>
+<p>When a c# symbol reference expression does not resolve, this fix generates a stub class declaration with a default, readonly static member.</p>
+<h2 id="generate-class">Generate class</h2>
+<p><em>Configuration Id: com.mfractor.code_fixes.forms.generate_csharp_class</em></p>
+<p>When a c# symbol reference expression does not resolve, this fix generates an implementation for the missing class.</p>
+<h2 id="generate-property">Generate property</h2>
+<p><em>Configuration Id: com.mfractor.code_fixes.forms.generate_csharp_member</em></p>
+<p>Generate a static or constant variable onto the targetted class</p>
+<h2 id="create-xtypearguments-attribute">Create x:TypeArguments attribute.</h2>
+<p><em>Configuration Id: com.mfractor.code_fixes.forms.create_type_arguments_attribute</em></p>
+<p>Generates an x:TypeArguments attribute, resolving the potential argument types if possible.</p>
+<h2 id="generate-missing-value-converter">Generate Missing Value Converter</h2>
+<p><em>Configuration Id: com.mfractor.code_fixes.forms.generate_missing_class_as_value_converter</em></p>
+<p>When a Xaml node cannot be resolved and it ends with '[cC]onverter', this fix will create a new implemenation of IValueConverter.</p>
+<h3 id="uses_5">Uses:</h3>
+<ul>
+<li><a href="../../../code-generation/xamarin-forms/#generate-ivalueconverter-implementation">Generate IValueConverter Implementation</a></li>
+</ul>
+<h2 id="generate-missing-view">Generate Missing View</h2>
+<p><em>Configuration Id: com.mfractor.code_fixes.forms.generate_missing_class_as_view</em></p>
+<p>When a Xaml node cannot be resolved, this fix will create a new implemenation of that class deriving from 'Xamarin.Forms.View'.</p>
+<h2 id="generate-missing-class">Generate Missing Class</h2>
+<p><em>Configuration Id: com.mfractor.code_fixes.forms.generate_missing_class</em></p>
+<p>When a Xaml node cannot be resolved, this fix will create a new implementation of that class.</p>
+<h2 id="generate-resource-dictionary-key">Generate Resource Dictionary Key</h2>
+<p><em>Configuration Id: com.mfractor.code_fixes.forms.missing_resource_key</em></p>
+<p>When a Xaml node that is declared within a ResourceDictionary is missing the <code>x:Key</code> attribute, this fix will automatically create a new <code>x:Key</code> attribute for the node.</p>
+<h2 id="replace-unknown-property-value-with-autocorrection">Replace unknown property value with autocorrection</h2>
+<p><em>Configuration Id: com.mfractor.code_fixes.forms.unknown_static_property_value</em></p>
+<p>When a xaml element property attempts to reference a static field (for instance LayoutOptions.Center), this fix finds the nearest named member and replaces the incorrect value with an auto-correction.</p>
+<h2 id="replace-node-with-auto-corrected-match">Replace node with auto-corrected match</h2>
+<p><em>Configuration Id: com.mfractor.code_fixes.forms.autocorrect_unresolved_reference</em></p>
+<p>This fix action replaces a mispelt xaml node that can be resolved in an assembly with its correct .NET symbol name.</p>
+<h2 id="import-namespace-and-assembly_1">Import Namespace And Assembly</h2>
+<p><em>Configuration Id: com.mfractor.code_fixes.forms.import_reference</em></p>
+<p>When an xaml node can be resolved to a .NET symbol in the project or its references this fix generates an 'xmlns' import statement in the root xaml element.</p>
+<h2 id="remove-unused-xmlns-declaration">Remove unused xmlns declaration</h2>
+<p><em>Configuration Id: com.mfractor.code_fixes.forms.xml_namespace_is_unused</em></p>
+<p>Removes the unused xmlns declaration.</p>
+<h2 id="rename-duplicate-namespace-references">Rename Duplicate Namespace References</h2>
+<p><em>Configuration Id: com.mfractor.code_fixes.forms.multiple_namespace_assembly_references</em></p>
+<p>Replaces all occurances of a namespace with .</p>
+<h3 id="uses_6">Uses:</h3>
+<ul>
+<li><a href="../../../code-generation/xaml/#rename-xaml-namespace-generator">Rename Xaml Namespace Generator</a></li>
+</ul>
+<h2 id="replace-xml-namespace-with-auto-correction">Replace xml namespace with auto-correction</h2>
+<p><em>Configuration Id: com.mfractor.code_fixes.forms.xml_namespace_does_not_exist</em></p>
+<p>Replaces an xml namespace prefix with the auto-corrected xml namespace.</p>
+<h2 id="replace-xname-with-closely-named-member">Replace x:Name with closely named member</h2>
+<p><em>Configuration Id: com.mfractor.code_fixes.forms.xreference_does_not_exist</em></p>
+<p>Replaces an invalid x:Name reference with a similiarly named x:Name declared in the current document.</p>
+<h2 id="generate-missing-binding-command-stub">Generate Missing Binding Command Stub</h2>
+<p><em>Configuration Id: com.mfractor.code_fixes.forms.generate_binding_command_stub</em></p>
+<p>When the symbol referenced inside a binding expression is unresolved, this fix can either apply an auto-correcet or generate a property on elements the BindingContext</p>
+<h3 id="uses_7">Uses:</h3>
+<ul>
+<li><a href="../../../code-generation/xamarin-forms/#generate-icommand-implementation">Generate ICommand Implementation</a></li>
+</ul>
+<h2 id="autocorrect-nearly-named-property-binding">Autocorrect Nearly Named Property Binding</h2>
+<p><em>Configuration Id: com.mfractor.code_fixes.forms.autcorrect_property_binding</em></p>
+<h2 id="encapsulate-with-resource-dictionary">Encapsulate With Resource Dictionary</h2>
+<p><em>Configuration Id: com.mfractor.code_fixes.forms.encapsulate_with_resource_dictionary</em></p>
+<p>When declaring the resources for a page/view, it is common to accidentally put resources directly inside a <code>MyPage.Resources</code> rather than wrapping the elements with a <code>ResourceDictionary</code> declaration.</p>
+<p><strong>Example:</strong></p>
+<pre><code>&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot;?&gt;
+&lt;ContentPage xmlns=&quot;http://xamarin.com/schemas/2014/forms&quot;
+    xmlns:x=&quot;http://schemas.microsoft.com/winfx/2009/xaml&quot;
+    x:Class=&quot;HelloMFractor.HelloMFractorPage&quot;&gt;
+    &lt;ContentPage.Resources&gt;
+        &lt;x:String&gt;Hello World!&lt;/x:String&gt;
+    &lt;/ContentPage.Resources&gt;
+&lt;/ContentPage&gt;
+</code></pre>
+
+<p>In the above example, the declaration <code>&lt;x:String&gt;Hello World!&lt;/x:String&gt;</code> is declared directly inside the property setter, which will cause a type-mismatch exception at runtime.</p>
+<p>When actioned, the <strong>Encapsulate with resource dictionary</strong> fix will wrap elements inside a resources property setter node with a resource dictionary. This would correct the above sample to:</p>
+<pre><code>&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot;?&gt;
+&lt;ContentPage xmlns=&quot;http://xamarin.com/schemas/2014/forms&quot;
+    xmlns:x=&quot;http://schemas.microsoft.com/winfx/2009/xaml&quot;
+    x:Class=&quot;HelloMFractor.HelloMFractorPage&quot;&gt;
+    &lt;ContentPage.Resources&gt;
+    &lt;ResourceDictionary&gt;
+          &lt;x:String&gt;Hello World!&lt;/x:String&gt;
+    &lt;/ResourceDictionary&gt;
+    &lt;/ContentPage.Resources&gt;
+&lt;/ContentPage&gt;
+</code></pre>
+
+<h2 id="import-value-converter-for-binding">Import Value Converter For Binding</h2>
+<p><em>Configuration Id: com.mfractor.code_fixes.forms.import_resolving_value_converter</em></p>
+<p>Inspects for IValueConverter implementations within the project and it's references that match the value conversion flow for this binding type mismatch. IValueConverter implementations must be annotated with the <code>ValueConversionAttribute</code> to be detected by this fix.</p>
+<h2 id="create-value-converter-that-resolves-type-flow">Create Value Converter That Resolves Type Flow</h2>
+<p><em>Configuration Id: com.mfractor.code_fixes.forms.create_resolving_value_converter</em></p>
+<p>Using the input and output type for a value conversion path, this code fix will create a new value converter implementation for the input and output type.</p>
+<h3 id="configurable-properties">Configurable Properties</h3>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Defaults To</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>DefaultConverterNamespace</strong></td>
+<td>System.String</td>
+<td><code>"converters"</code></td>
+<td>The namespace name of the xmlns import statement for the newly created value converter</td>
+</tr>
+</tbody>
+</table>
+<h3 id="uses_8">Uses:</h3>
+<ul>
+<li><a href="../../../code-generation/xamarin-forms/#generate-ivalueconverter-implementation">Generate IValueConverter Implementation</a></li>
+</ul>
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../generate/" class="btn btn-neutral float-right" title="Code Generation">Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="../../android-resources/fix/" class="btn btn-neutral" title="Issue Fixing"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div class="fastlane" role="contentinfo">
+    <p>
+      <a href="https://www.mfractor.com" target="_blank">
+        <img src="/img/logo-horizontal.png" width="200" />
+      </a>
+    </p>
+  </div>
+
+  Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a> - Copyright &copy; 2016 <a href="https://www.mfractor.com">MFractor</a>
+</footer>
+	  
+        </div>
+      </div>
+
+    </section>
+    
+  </div>
+
+  <div class="rst-versions" role="note" style="cursor: pointer">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+          <a href="https://github.com/mfractor/mfractor.github.io" class="icon icon-github" style="float: left; color: #fcfcfc"> GitHub</a>
+      
+      
+        <span><a href="../../android-resources/fix/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+      
+      
+        <span style="margin-left: 15px"><a href="../generate/" style="color: #fcfcfc">Next &raquo;</a></span>
+      
+    </span>
+</div>
+    <script src="../../../js/theme.js"></script>
+
+</body>
+</html>

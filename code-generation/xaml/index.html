@@ -9,7 +9,7 @@
   <meta name="author" content="Matthew Robbins">
   <link rel="shortcut icon" href="../../img/favicon.ico">
   
-  <title>.NET Code Analysis - mfractor docs</title>
+  <title>Xaml - mfractor docs</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="../../css/theme.css" type="text/css" />
@@ -23,9 +23,9 @@
   
   <script>
     // Current page data
-    var mkdocs_page_name = ".NET Code Analysis";
-    var mkdocs_page_input_path = "xamarin-android/dotnet-code-analysis.md";
-    var mkdocs_page_url = "/xamarin-android/dotnet-code-analysis/";
+    var mkdocs_page_name = "Xaml";
+    var mkdocs_page_input_path = "code-generation/xaml.md";
+    var mkdocs_page_url = "/code-generation/xaml/";
   </script>
   
   <script src="../../js/jquery-2.1.1.min.js"></script>
@@ -166,32 +166,28 @@
   
   
 <li class="toctree-l1 ">
-  <a class="" href="../resource-navigation/">Resource Navigation</a>
+  <a class="" href="../../xamarin-android/resource-navigation/">Resource Navigation</a>
   
 </li>
 
   
   
 <li class="toctree-l1 ">
-  <a class="" href="../analysis/">Analysis</a>
-  
-</li>
-
-  
-  
-<li class="toctree-l1 current">
-  <a class="current" href="./">.NET Code Analysis</a>
-  
-  <ul>
-    
-  </ul>
+  <a class="" href="../../xamarin-android/analysis/">Analysis</a>
   
 </li>
 
   
   
 <li class="toctree-l1 ">
-  <a class="" href="../resource-intellisense/">Resource IntelliSense</a>
+  <a class="" href="../../xamarin-android/dotnet-code-analysis/">.NET Code Analysis</a>
+  
+</li>
+
+  
+  
+<li class="toctree-l1 ">
+  <a class="" href="../../xamarin-android/resource-intellisense/">Resource IntelliSense</a>
   
 </li>
 
@@ -289,21 +285,39 @@
   
   
 <li class="toctree-l1 ">
-  <a class="" href="../../code-generation/csharp/">C#</a>
+  <a class="" href="../csharp/">C#</a>
   
 </li>
 
   
   
 <li class="toctree-l1 ">
-  <a class="" href="../../code-generation/xamarin-forms/">Xamarin.Forms - C#</a>
+  <a class="" href="../xamarin-forms/">Xamarin.Forms - C#</a>
   
 </li>
 
   
   
-<li class="toctree-l1 ">
-  <a class="" href="../../code-generation/xaml/">Xaml</a>
+<li class="toctree-l1 current">
+  <a class="current" href="./">Xaml</a>
+  
+  <ul>
+    
+      
+    
+      
+      <li class="toctree-l3"><a href="#rename-xaml-namespace-generator">Rename Xaml Namespace Generator</a></li>
+      
+    
+      
+      <li class="toctree-l3"><a href="#generate-grid-column-definition">Generate Grid Column Definition</a></li>
+      
+    
+      
+      <li class="toctree-l3"><a href="#generate-grid-row-definition">Generate Grid Row Definition</a></li>
+      
+    
+  </ul>
   
 </li>
 
@@ -354,18 +368,67 @@
     
       
         
-          <li>Xamarin.Android &raquo;</li>
+          <li>Code Generation &raquo;</li>
         
       
     
-    <li>.NET Code Analysis</li>
+    <li>Xaml</li>
   </ul>
   <hr/>
 </div>
           <div role="main">
             <div class="section">
               
-                <p><strong>WORK IN PROGRESS</strong></p>
+                <h2 id="sort-xaml-attributes">Sort Xaml Attributes</h2>
+<p><em>Configuration Id: com.mfractor.code_gen.forms.xaml.sorted_attributes</em></p>
+<p>Given a collection of Xaml attributes this code generator sorts them by namespace and name.</p>
+<h2 id="rename-xaml-namespace-generator">Rename Xaml Namespace Generator</h2>
+<p><em>Configuration Id: com.mfractor.code_gen.forms.xaml.rename_xaml_namespace</em></p>
+<p>Generates a series of replace text fixes to rename a namespace</p>
+<h2 id="generate-grid-column-definition">Generate Grid Column Definition</h2>
+<p><em>Configuration Id: com.mfractor.code_gen.forms.xaml.grid_column_definition</em></p>
+<p>Generates a <code>ColumnDefinition</code> Xaml node that is used inside a <code>Grid.ColumnDefinitions</code> node.</p>
+<h3 id="configurable-properties">Configurable Properties</h3>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Defaults To</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>DefaultWidthValue</strong></td>
+<td>System.String</td>
+<td><code>"*"</code></td>
+<td>When creating a new <code>ColumnDefinition</code> for a grid, what is the</td>
+</tr>
+</tbody>
+</table>
+<h2 id="generate-grid-row-definition">Generate Grid Row Definition</h2>
+<p><em>Configuration Id: com.mfractor.code_gen.forms.xaml.grid_row_definition</em></p>
+<p>Generates a <code>RowDefinition</code> Xaml node that is used inside a <code>Grid.RowDefinitions</code> node.</p>
+<h3 id="configurable-properties_1">Configurable Properties</h3>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Defaults To</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>DefaultHeightValue</strong></td>
+<td>System.String</td>
+<td><code>"*"</code></td>
+<td>When creating a new <code>RowDefinition</code> for a grid, what is the default height of a newly created row?</td>
+</tr>
+</tbody>
+</table>
               
             </div>
           </div>
@@ -373,10 +436,10 @@
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="../resource-intellisense/" class="btn btn-neutral float-right" title="Resource IntelliSense">Next <span class="icon icon-circle-arrow-right"></span></a>
+        <a href="../../release-notes/v3-0/" class="btn btn-neutral float-right" title="v3.0">Next <span class="icon icon-circle-arrow-right"></span></a>
       
       
-        <a href="../analysis/" class="btn btn-neutral" title="Analysis"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../xamarin-forms/" class="btn btn-neutral" title="Xamarin.Forms - C#"><span class="icon icon-circle-arrow-left"></span> Previous</a>
       
     </div>
   
@@ -407,10 +470,10 @@
           <a href="https://github.com/mfractor/mfractor.github.io" class="icon icon-github" style="float: left; color: #fcfcfc"> GitHub</a>
       
       
-        <span><a href="../analysis/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+        <span><a href="../xamarin-forms/" style="color: #fcfcfc;">&laquo; Previous</a></span>
       
       
-        <span style="margin-left: 15px"><a href="../resource-intellisense/" style="color: #fcfcfc">Next &raquo;</a></span>
+        <span style="margin-left: 15px"><a href="../../release-notes/v3-0/" style="color: #fcfcfc">Next &raquo;</a></span>
       
     </span>
 </div>

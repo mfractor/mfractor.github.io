@@ -9,7 +9,7 @@
   <meta name="author" content="Matthew Robbins">
   <link rel="shortcut icon" href="../img/favicon.ico">
   
-  <title>Xamarin.Forms Quickstart - mfractor docs</title>
+  <title>Configuration - mfractor docs</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="../css/theme.css" type="text/css" />
@@ -23,9 +23,9 @@
   
   <script>
     // Current page data
-    var mkdocs_page_name = "Xamarin.Forms Quickstart";
-    var mkdocs_page_input_path = "xamarin-forms-quickstart.md";
-    var mkdocs_page_url = "/xamarin-forms-quickstart/";
+    var mkdocs_page_name = "Configuration";
+    var mkdocs_page_input_path = "configuration.md";
+    var mkdocs_page_url = "/configuration/";
   </script>
   
   <script src="../js/jquery-2.1.1.min.js"></script>
@@ -95,15 +95,8 @@
 
   
   
-<li class="toctree-l1 ">
-  <a class="" href="../configuration/">Configuration</a>
-  
-</li>
-
-  
-  
 <li class="toctree-l1 current">
-  <a class="current" href="./">Xamarin.Forms Quickstart</a>
+  <a class="current" href="./">Configuration</a>
   
   <ul>
     
@@ -114,26 +107,29 @@
       
     
       
-      <li class="toctree-l3"><a href="#configuring-a-binding-context">Configuring A Binding Context</a></li>
+      <li class="toctree-l3"><a href="#configuration-basics">Configuration Basics</a></li>
       
     
       
-      <li class="toctree-l3"><a href="#mvvm-naming-conventions">Mvvm Naming Conventions</a></li>
+      <li class="toctree-l3"><a href="#configuration-identifiers">Configuration Identifiers</a></li>
       
     
       
-      <li class="toctree-l3"><a href="#using-mvvm-navigation">Using Mvvm Navigation</a></li>
+      <li class="toctree-l3"><a href="#configurable-properties">Configurable properties</a></li>
       
     
       
-      <li class="toctree-l3"><a href="#xaml-analysis">Xaml Analysis</a></li>
-      
-    
-      
-      <li class="toctree-l3"><a href="#accessing-code-actions">Accessing Code Actions</a></li>
+      <li class="toctree-l3"><a href="#configuration-dependencies">Configuration Dependencies</a></li>
       
     
   </ul>
+  
+</li>
+
+  
+  
+<li class="toctree-l1 ">
+  <a class="" href="../xamarin-forms-quickstart/">Xamarin.Forms Quickstart</a>
   
 </li>
 
@@ -384,77 +380,52 @@
         
       
     
-    <li>Xamarin.Forms Quickstart</li>
+    <li>Configuration</li>
   </ul>
   <hr/>
 </div>
           <div role="main">
             <div class="section">
               
-                <h2 id="xamarinforms-quick-start">Xamarin.Forms Quick Start</h2>
-<p><em>Learn to use the most handy features in MFractor for Xamarin.Forms</em></p>
+                <h2 id="configuring-mfractor">Configuring MFractor</h2>
+<p><em>Changing</em></p>
 <h2 id="introduction">Introduction</h2>
-<p>Welcome to the quickstart guide for using MFractor with Xamarin.Forms.</p>
-<p>This document explains the most useful features of MFractor for Xamarin.Forms.</p>
-<h2 id="configuring-a-binding-context">Configuring A Binding Context</h2>
-<p>When the <code>BindingContext</code> property is explicitly set for a Xaml view, MFractor can analyse binding expressions and perform refactoring from Xaml to the binding context.</p>
-<p>We explicitly configure the binding context using a view model locator:</p>
-<p><strong>ViewModelLocator.cs</strong></p>
-<pre><code class="cs">public namespace MyApp
-{
-  public static class ViewModelLocator
-  {
-      public static readonly LoginViewModel LoginViewModel = new LoginViewModel();
-  }
-}
+<p>The configuration engine allows you to customise the internals of MFractor to generate code specific to your project. Initially the amount of options that are exposed will be limited but over time I will drastically increase the flexibility of MFractors code generation engine.</p>
+<h2 id="configuration-basics">Configuration Basics</h2>
+<p>How does it work? Let's consider the following configuration file:</p>
+<p><strong>config.mfc.xml</strong></p>
+<pre><code>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; ?&gt;
+&lt;mfractor&gt;
+    &lt;configure id=&quot;com.mfractor.code_gen.forms.csharp.instance_property&quot;&gt;
+        &lt;property name=&quot;CodeSnippet&quot; value=&quot;Snippets/property.txt&quot;/&gt;
+    &lt;/configure&gt;
+    &lt;configure id=&quot;com.mfractor.code_action.forms.implement_view_model&quot;&gt;
+            &lt;property name=&quot;BaseClass&quot; value=&quot;MyNamespace.ViewModels.ViewModelBase&quot;/&gt;
+    &lt;/configure&gt;
+&lt;/mfractor&gt;
 </code></pre>
 
-<p><strong>LoginPage.xaml</strong></p>
-<pre><code class="cs">&lt;ContentPage
-  xmlns:local=&quot;clr-namespace:MyApp;assembly=MyApp&quot;
-  BindingContext=&quot;{x:Static local:ViewModelLocator.LoginViewModel}&quot;/&gt;
-</code></pre>
-
-<p>For more detail, see <a href="../xamarin-forms/configure-binding-context/">Configure Binding Context</a>.</p>
-<h2 id="mvvm-naming-conventions">Mvvm Naming Conventions</h2>
-<p>Implicitly associate a view to a ViewModel using these naming conventions:</p>
+<p>MFractor configuration files are xml based and end with the extension <code>.mfc</code> or <code>.mfc.xml</code> (add <code>.xml</code> if you'd like the IDEs default IntelliSense and xml highlighting). Conceptually, MFractor has <em>Configurables</em>, extensible components within MFractor itself that expose properties that can be edited by a configuration file.</p>
+<p>Let's examine each of the each element in the above configuration in depth:</p>
 <ul>
-<li>Classes that end with <code>ViewModel</code>, <code>PageModel</code> and <code>Model</code> are assumed to be a view model for a Xaml view.</li>
-<li>Xaml files that end with <em>Page</em> or <em>View</em> are assumed to be a xaml view for a view model.</li>
-<li>When a view and view model share the same name without <em>Page</em>, <em>View</em> or <em>ViewModel</em>, MFractor assumes an implicit association.</li>
+<li>We open a configuration file with the <code>&lt;mfractor&gt;</code> tag; this is just ceremony to denote to MFractor this is it's config file.</li>
+<li>We <strong>target</strong> a configurable by using the <code>&lt;configure&gt;</code> element:<ul>
+<li>The <code>id</code> attribute specifies the unique identifier of the configurable we wish to modify. This could be a code action, a code generator or an analysis routine.</li>
 </ul>
-<p>Consider <em>LoginPage.xaml</em>, <em>LoginPage.xaml.cs</em> and <em>LoginViewMode.cs</em>:</p>
-<ul>
-<li><em>LoginPage.xaml</em> is considered a xaml view.</li>
-<li><em>LoginPage.xaml.cs</em> is considered the code behind class.</li>
-<li><em>LoginViewModel.cs</em> is considered the view model.</li>
+</li>
+<li>We <strong>modify</strong> a property using the <code>&lt;property&gt;</code> element:<ul>
+<li>The <code>name</code> attribute specifies the configurable property we wish to edit.</li>
+<li>The <code>value</code> attribute specifies the value we wish to set the property to.</li>
+<li>We <strong>group</strong> configurations within the <code>&lt;collection name="CollectionName"&gt;</code> element. These groups are hard coded into the product itself and relate to how the code actions, code generation and code analysis documentation folders are structured in this site.</li>
 </ul>
-<p>For more detail, see <a href="../xamarin-forms/configure-binding-context/#implicit-binding-context-resolution">Implicit Binding Context Resolution</a>.</p>
-<h2 id="using-mvvm-navigation">Using Mvvm Navigation</h2>
-<p>We can quickly navigate between Views, Code Behind Class and ViewModel when we use the <a href="#-mvvm-naming-conventions">Mvvm naming conventions</a>.</p>
-<p>Right click and select:</p>
-<ul>
-<li><strong>Go-To ViewModel</strong> when in a Xaml view or code behind class to jump to the ViewModel.</li>
-<li><strong>Go-To Code Behind Class</strong> when in a Xaml view or ViewModel to jump to the code behind class.</li>
-<li><strong>Go-To Xaml View</strong> when in a code behind class or view model to jump to the Xaml view.</li>
+</li>
 </ul>
-<p>For more detail, see <a href="../xamarin-forms/navigation/#mvvm-navigation">Mvvm Navigation</a>.</p>
-<h2 id="xaml-analysis">Xaml Analysis</h2>
-<p>The Xaml analyser inspects Xaml files for code issues and underlines the issue in either red, yellow or blue..</p>
-<ul>
-<li>Hover over a xaml issue to view more information on the code issue.</li>
-<li>Red underlined issues are compilation or runtime errors.</li>
-<li>Yellow underlined issues are compilation warnings.</li>
-<li>Blue underlined issues are code improvements.</li>
-<li>To fix an issue, right click on the issue region and browse to <strong>Fix</strong> and select the fix you'd like to apply.</li>
-</ul>
-<p>For more detail, see:</p>
-<ul>
-<li><a href="../xamarin-forms/analysis/">Xaml Analysis</a></li>
-<li><a href="../code-analysis/xamarin-forms-xaml/">Full List of Xaml Analysers</a></li>
-</ul>
-<h2 id="accessing-code-actions">Accessing Code Actions</h2>
-<p>Press Alt+Return on</p>
+<p>Some configurables expose lots of properties, some expose none. If you want the behaviour for a code action or code generator to be customisable, please get in touch. It's trivial to expose new configuration settings so just ask! :)</p>
+<p>You might notice that the structure of docs.mfractor.com has drastically changed. This new site structure enables you to easily explore the code actions, analysis and code generation exposed by MFractor; they are logically grouped in the same way the configuration engine groups elements. We now include the configuration identifier for <strong>all</strong> code actions, code generators and analysers and list the configurable properties for each element in MFractor.</p>
+<h2 id="configuration-identifiers">Configuration Identifiers</h2>
+<h2 id="configurable-properties">Configurable properties</h2>
+<h2 id="configuration-dependencies">Configuration Dependencies</h2>
+<p>L</p>
               
             </div>
           </div>
@@ -462,10 +433,10 @@
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="../xamarin-android-quickstart/" class="btn btn-neutral float-right" title="Xamarin.Android Quickstart">Next <span class="icon icon-circle-arrow-right"></span></a>
+        <a href="../xamarin-forms-quickstart/" class="btn btn-neutral float-right" title="Xamarin.Forms Quickstart">Next <span class="icon icon-circle-arrow-right"></span></a>
       
       
-        <a href="../configuration/" class="btn btn-neutral" title="Configuration"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../faq/" class="btn btn-neutral" title="FAQ"><span class="icon icon-circle-arrow-left"></span> Previous</a>
       
     </div>
   
@@ -496,10 +467,10 @@
           <a href="https://github.com/mfractor/mfractor.github.io" class="icon icon-github" style="float: left; color: #fcfcfc"> GitHub</a>
       
       
-        <span><a href="../configuration/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+        <span><a href="../faq/" style="color: #fcfcfc;">&laquo; Previous</a></span>
       
       
-        <span style="margin-left: 15px"><a href="../xamarin-android-quickstart/" style="color: #fcfcfc">Next &raquo;</a></span>
+        <span style="margin-left: 15px"><a href="../xamarin-forms-quickstart/" style="color: #fcfcfc">Next &raquo;</a></span>
       
     </span>
 </div>

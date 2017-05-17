@@ -9,7 +9,7 @@
   <meta name="author" content="Matthew Robbins">
   <link rel="shortcut icon" href="../../img/favicon.ico">
   
-  <title>.NET Code Analysis - mfractor docs</title>
+  <title>C# - mfractor docs</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="../../css/theme.css" type="text/css" />
@@ -23,9 +23,9 @@
   
   <script>
     // Current page data
-    var mkdocs_page_name = ".NET Code Analysis";
-    var mkdocs_page_input_path = "xamarin-android/dotnet-code-analysis.md";
-    var mkdocs_page_url = "/xamarin-android/dotnet-code-analysis/";
+    var mkdocs_page_name = "C#";
+    var mkdocs_page_input_path = "code-generation/csharp.md";
+    var mkdocs_page_url = "/code-generation/csharp/";
   </script>
   
   <script src="../../js/jquery-2.1.1.min.js"></script>
@@ -166,32 +166,28 @@
   
   
 <li class="toctree-l1 ">
-  <a class="" href="../resource-navigation/">Resource Navigation</a>
+  <a class="" href="../../xamarin-android/resource-navigation/">Resource Navigation</a>
   
 </li>
 
   
   
 <li class="toctree-l1 ">
-  <a class="" href="../analysis/">Analysis</a>
-  
-</li>
-
-  
-  
-<li class="toctree-l1 current">
-  <a class="current" href="./">.NET Code Analysis</a>
-  
-  <ul>
-    
-  </ul>
+  <a class="" href="../../xamarin-android/analysis/">Analysis</a>
   
 </li>
 
   
   
 <li class="toctree-l1 ">
-  <a class="" href="../resource-intellisense/">Resource IntelliSense</a>
+  <a class="" href="../../xamarin-android/dotnet-code-analysis/">.NET Code Analysis</a>
+  
+</li>
+
+  
+  
+<li class="toctree-l1 ">
+  <a class="" href="../../xamarin-android/resource-intellisense/">Resource IntelliSense</a>
   
 </li>
 
@@ -288,22 +284,48 @@
   <li><span>Code Generation</span></li>
   
   
-<li class="toctree-l1 ">
-  <a class="" href="../../code-generation/csharp/">C#</a>
+<li class="toctree-l1 current">
+  <a class="current" href="./">C#</a>
+  
+  <ul>
+    
+      
+    
+      
+      <li class="toctree-l3"><a href="#create-attributeusage-annotation">Create AttributeUsage Annotation</a></li>
+      
+    
+      
+      <li class="toctree-l3"><a href="#generate-event-handler-declaration">Generate Event Handler Declaration</a></li>
+      
+    
+      
+      <li class="toctree-l3"><a href="#generate-event-handler-method-callback">Generate Event Handler Method Callback</a></li>
+      
+    
+      
+      <li class="toctree-l3"><a href="#generate-instance-property">Generate Instance Property</a></li>
+      
+    
+      
+      <li class="toctree-l3"><a href="#generate-member-initialiser">Generate Member Initialiser</a></li>
+      
+    
+  </ul>
   
 </li>
 
   
   
 <li class="toctree-l1 ">
-  <a class="" href="../../code-generation/xamarin-forms/">Xamarin.Forms - C#</a>
+  <a class="" href="../xamarin-forms/">Xamarin.Forms - C#</a>
   
 </li>
 
   
   
 <li class="toctree-l1 ">
-  <a class="" href="../../code-generation/xaml/">Xaml</a>
+  <a class="" href="../xaml/">Xaml</a>
   
 </li>
 
@@ -354,18 +376,102 @@
     
       
         
-          <li>Xamarin.Android &raquo;</li>
+          <li>Code Generation &raquo;</li>
         
       
     
-    <li>.NET Code Analysis</li>
+    <li>C#</li>
   </ul>
   <hr/>
 </div>
           <div role="main">
             <div class="section">
               
-                <p><strong>WORK IN PROGRESS</strong></p>
+                <h2 id="generate-assignment-expression">Generate Assignment Expression</h2>
+<p><em>Configuration Id: com.mfractor.code_gen.csharp.member_assignment_expression</em></p>
+<p>Generates an assignment expresssion</p>
+<h3 id="configurable-properties">Configurable Properties</h3>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Defaults To</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>IncludeThisForMembers</strong></td>
+<td>System.Boolean</td>
+<td><code>False</code></td>
+<td>When assigning to a class member, should a <code>this.</code> be added to the variable being assigned?</td>
+</tr>
+</tbody>
+</table>
+<h2 id="create-attributeusage-annotation">Create AttributeUsage Annotation</h2>
+<p><em>Configuration Id: com.mfractor.code_gen.csharp.attribute_usage_annotation</em></p>
+<p>Create an <code>[System.AttributeUsage()]</code> annotation that can can be attached to a class declaration that derives from <code>System.Attribute</code>.</p>
+<h2 id="generate-event-handler-declaration">Generate Event Handler Declaration</h2>
+<p><em>Configuration Id: com.mfractor.code_gen.csharp.event_handler_declaration</em></p>
+<p>Generates an <code>event EventHandler&lt;EventArgs&gt;</code> declaration that can be bound against by a callback.</p>
+<h2 id="generate-event-handler-method-callback">Generate Event Handler Method Callback</h2>
+<p><em>Configuration Id: com.mfractor.code_gen.csharp.event_handler_method</em></p>
+<p>Generates a method that's compatible for registration with an <code>EventHandler&lt;EventArgs&gt;</code> as a callback.</p>
+<h2 id="generate-instance-property">Generate Instance Property</h2>
+<p><em>Configuration Id: com.mfractor.code_gen.csharp.instance_property</em></p>
+<p>Generates a instance property with a getter and setter.</p>
+<h3 id="configurable-properties_1">Configurable Properties</h3>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Defaults To</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>UseBackingFields</strong></td>
+<td>System.Boolean</td>
+<td><code>False</code></td>
+<td>When creating the implementation for a property with a public getter and setter, should the property generator create a backing field?</td>
+</tr>
+<tr>
+<td><strong>UnderscoreOnBackingField</strong></td>
+<td>System.Boolean</td>
+<td><code>False</code></td>
+<td>When creating a backing field for a property, should the field have an underscore appended to the start of the field name?</td>
+</tr>
+</tbody>
+</table>
+<h3 id="uses">Uses:</h3>
+<ul>
+<li><a href="./#generate-member-initialiser">Generate Member Initialiser</a></li>
+</ul>
+<h2 id="generate-member-initialiser">Generate Member Initialiser</h2>
+<p><em>Configuration Id: com.mfractor.code_gen.csharp.member_initialiser_expression</em></p>
+<p>Generates an initilisation expression for a class/struct member (such as a property or field).</p>
+<h3 id="configurable-properties_2">Configurable Properties</h3>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Defaults To</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>ForceStringLiteral</strong></td>
+<td>System.Boolean</td>
+<td><code>False</code></td>
+<td>Should the code generator always attempt to assign members with a string literal?</td>
+</tr>
+</tbody>
+</table>
               
             </div>
           </div>
@@ -373,10 +479,10 @@
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="../resource-intellisense/" class="btn btn-neutral float-right" title="Resource IntelliSense">Next <span class="icon icon-circle-arrow-right"></span></a>
+        <a href="../xamarin-forms/" class="btn btn-neutral float-right" title="Xamarin.Forms - C#">Next <span class="icon icon-circle-arrow-right"></span></a>
       
       
-        <a href="../analysis/" class="btn btn-neutral" title="Analysis"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../../code-analysis/xamarin-forms-xaml/" class="btn btn-neutral" title="Xamarin.Forms Xaml Analysis"><span class="icon icon-circle-arrow-left"></span> Previous</a>
       
     </div>
   
@@ -407,10 +513,10 @@
           <a href="https://github.com/mfractor/mfractor.github.io" class="icon icon-github" style="float: left; color: #fcfcfc"> GitHub</a>
       
       
-        <span><a href="../analysis/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+        <span><a href="../../code-analysis/xamarin-forms-xaml/" style="color: #fcfcfc;">&laquo; Previous</a></span>
       
       
-        <span style="margin-left: 15px"><a href="../resource-intellisense/" style="color: #fcfcfc">Next &raquo;</a></span>
+        <span style="margin-left: 15px"><a href="../xamarin-forms/" style="color: #fcfcfc">Next &raquo;</a></span>
       
     </span>
 </div>

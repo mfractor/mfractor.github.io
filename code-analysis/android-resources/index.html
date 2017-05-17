@@ -1,0 +1,603 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <meta name="author" content="Matthew Robbins">
+  <link rel="shortcut icon" href="../../img/favicon.ico">
+  
+  <title>Android Resource Analysis - mfractor docs</title>
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="../../css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../css/theme_extra.css" type="text/css" />
+  <link rel="stylesheet" href="../../css/highlight.css">
+  <link href="../../css/breadcrumbs.css" rel="stylesheet">
+  <link href="../../css/code.css" rel="stylesheet">
+  <link href="../../css/fabric.css" rel="stylesheet">
+  <link href="../../css/sidenav.css" rel="stylesheet">
+  <link href="../../css/mfractor.css" rel="stylesheet">
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "Android Resource Analysis";
+    var mkdocs_page_input_path = "code-analysis/android-resources.md";
+    var mkdocs_page_url = "/code-analysis/android-resources/";
+  </script>
+  
+  <script src="../../js/jquery-2.1.1.min.js"></script>
+  <script src="../../js/modernizr-2.8.3.min.js"></script>
+  <script type="text/javascript" src="../../js/highlight.pack.js"></script> 
+  
+  <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-71910290-3', 'docs.mfractor.com');
+      ga('send', 'pageview');
+  </script>
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+      <div class="wy-side-nav-search">
+        <a href="../.." class="icon icon-home"> mfractor docs</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+	<ul class="current">
+          
+            <li>
+<li class="toctree-l1 ">
+  <a class="" href="../..">Home</a>
+  
+</li>
+<li>
+          
+            <li>
+<ul class="subnav">
+  <li><span>Getting Started</span></li>
+  
+  
+<li class="toctree-l1 ">
+  <a class="" href="../../installation-and-setup/">Installation And Setup</a>
+  
+</li>
+
+  
+  
+<li class="toctree-l1 ">
+  <a class="" href="../../activate-mfractor-premium/">Activating MFractor Premium</a>
+  
+</li>
+
+  
+  
+<li class="toctree-l1 ">
+  <a class="" href="../../faq/">FAQ</a>
+  
+</li>
+
+  
+  
+<li class="toctree-l1 ">
+  <a class="" href="../../configuration/">Configuration</a>
+  
+</li>
+
+  
+  
+<li class="toctree-l1 ">
+  <a class="" href="../../xamarin-forms-quickstart/">Xamarin.Forms Quickstart</a>
+  
+</li>
+
+  
+  
+<li class="toctree-l1 ">
+  <a class="" href="../../xamarin-android-quickstart/">Xamarin.Android Quickstart</a>
+  
+</li>
+
+  
+</ul>
+<li>
+          
+            <li>
+<ul class="subnav">
+  <li><span>Xamarin.Forms</span></li>
+  
+  
+<li class="toctree-l1 ">
+  <a class="" href="../../xamarin-forms/configure-binding-context/">Configuring A Binding Context</a>
+  
+</li>
+
+  
+  
+<li class="toctree-l1 ">
+  <a class="" href="../../xamarin-forms/navigation/">Navigation Tools</a>
+  
+</li>
+
+  
+  
+<li class="toctree-l1 ">
+  <a class="" href="../../xamarin-forms/analysis/">Analysis</a>
+  
+</li>
+
+  
+  
+<li class="toctree-l1 ">
+  <a class="" href="../../xamarin-forms/implementing-view-models/">Implementing View Models</a>
+  
+</li>
+
+  
+  
+<li class="toctree-l1 ">
+  <a class="" href="../../xamarin-forms/value-converter-type-safety/">Value Converter Type Safety</a>
+  
+</li>
+
+  
+</ul>
+<li>
+          
+            <li>
+<ul class="subnav">
+  <li><span>Xamarin.Android</span></li>
+  
+  
+<li class="toctree-l1 ">
+  <a class="" href="../../xamarin-android/resource-navigation/">Resource Navigation</a>
+  
+</li>
+
+  
+  
+<li class="toctree-l1 ">
+  <a class="" href="../../xamarin-android/analysis/">Analysis</a>
+  
+</li>
+
+  
+  
+<li class="toctree-l1 ">
+  <a class="" href="../../xamarin-android/dotnet-code-analysis/">.NET Code Analysis</a>
+  
+</li>
+
+  
+  
+<li class="toctree-l1 ">
+  <a class="" href="../../xamarin-android/resource-intellisense/">Resource IntelliSense</a>
+  
+</li>
+
+  
+</ul>
+<li>
+          
+            <li>
+<ul class="subnav">
+  <li><span>Code Actions</span></li>
+  
+  
+<li class="toctree-l1 ">
+  <a class="" href="../../code-actions/csharp/">C# Code Actions</a>
+  
+</li>
+
+  
+  
+<ul class="subnav">
+  <li><span>Android Resource Code Actions</span></li>
+  
+  
+<li class="toctree-l1 ">
+  <a class="" href="../../code-actions/android-resources/fix/">Issue Fixing</a>
+  
+</li>
+
+  
+</ul>
+
+  
+  
+<ul class="subnav">
+  <li><span>Xamarin.Forms Xaml Code Actions</span></li>
+  
+  
+<li class="toctree-l1 ">
+  <a class="" href="../../code-actions/xamarin-forms-xaml/fix/">Issue Fixing</a>
+  
+</li>
+
+  
+  
+<li class="toctree-l1 ">
+  <a class="" href="../../code-actions/xamarin-forms-xaml/generate/">Code Generation</a>
+  
+</li>
+
+  
+  
+<li class="toctree-l1 ">
+  <a class="" href="../../code-actions/xamarin-forms-xaml/organise/">Xaml Organisation</a>
+  
+</li>
+
+  
+  
+<li class="toctree-l1 ">
+  <a class="" href="../../code-actions/xamarin-forms-xaml/refactor/">Refactoring</a>
+  
+</li>
+
+  
+</ul>
+
+  
+</ul>
+<li>
+          
+            <li>
+<ul class="subnav">
+  <li><span>Code Analysis</span></li>
+  
+  
+<li class="toctree-l1 current">
+  <a class="current" href="./">Android Resource Analysis</a>
+  
+  <ul>
+    
+      
+    
+      
+      <li class="toctree-l3"><a href="#check-public-android-resource-usage">Check Public Android Resource Usage</a></li>
+      
+    
+      
+      <li class="toctree-l3"><a href="#declarative-id-in-style">Declarative ID In Style</a></li>
+      
+    
+      
+      <li class="toctree-l3"><a href="#detect-duplicate-plurals-entries">Detect Duplicate Plurals Entries</a></li>
+      
+    
+      
+      <li class="toctree-l3"><a href="#check-for-required-value">Check For Required Value</a></li>
+      
+    
+      
+      <li class="toctree-l3"><a href="#check-for-invalid-characters-in-value-resource-names">Check For Invalid Characters In Value Resource Names</a></li>
+      
+    
+      
+      <li class="toctree-l3"><a href="#validate-flag-input">Validate Flag Input</a></li>
+      
+    
+      
+      <li class="toctree-l3"><a href="#valid-keyword-input">Valid Keyword Input</a></li>
+      
+    
+      
+      <li class="toctree-l3"><a href="#item-value-resource-is-valid">Item Value Resource Is Valid</a></li>
+      
+    
+      
+      <li class="toctree-l3"><a href="#mispelt-resource-type-references">Mispelt Resource Type References</a></li>
+      
+    
+      
+      <li class="toctree-l3"><a href="#multiple-usages-in-manifest">Multiple  usages in manifest</a></li>
+      
+    
+      
+      <li class="toctree-l3"><a href="#drawable-9-patch-reference-check">Drawable 9-patch reference check.</a></li>
+      
+    
+      
+      <li class="toctree-l3"><a href="#node-missing-required-attributes">Node Missing Required Attributes</a></li>
+      
+    
+      
+      <li class="toctree-l3"><a href="#check-reference-type">Check Reference Type</a></li>
+      
+    
+      
+      <li class="toctree-l3"><a href="#validate-quotations-in-elements">Validate quotations in  elements.</a></li>
+      
+    
+      
+      <li class="toctree-l3"><a href="#resource-value-format">Resource Value Format</a></li>
+      
+    
+      
+      <li class="toctree-l3"><a href="#values-resource-is-valid">Values Resource Is Valid</a></li>
+      
+    
+      
+      <li class="toctree-l3"><a href="#verify-input-type">Verify Input Type</a></li>
+      
+    
+      
+      <li class="toctree-l3"><a href="#verify-max-api-feature-usages">Verify Max API Feature Usages</a></li>
+      
+    
+      
+      <li class="toctree-l3"><a href="#verify-resource-exists">Verify Resource Exists</a></li>
+      
+    
+      
+      <li class="toctree-l3"><a href="#check-for-duplicate-attributes">Check for Duplicate Attributes.</a></li>
+      
+    
+      
+      <li class="toctree-l3"><a href="#textview-textsize-uses-non-sp-dimension">TextView 'textSize' uses non-sp dimension</a></li>
+      
+    
+      
+      <li class="toctree-l3"><a href="#validate-animated-vectors-reference-vector-drawables">Validate Animated Vectors Reference Vector Drawables</a></li>
+      
+    
+      
+      <li class="toctree-l3"><a href="#appwidget-layout-is-valid">AppWidget Layout Is Valid</a></li>
+      
+    
+      
+      <li class="toctree-l3"><a href="#circular-resource-usage">Circular Resource Usage</a></li>
+      
+    
+      
+      <li class="toctree-l3"><a href="#inconsistent-array-sizes">Inconsistent Array Sizes</a></li>
+      
+    
+      
+      <li class="toctree-l3"><a href="#layout-exists-in-configuration">Layout  exists in configuration</a></li>
+      
+    
+      
+      <li class="toctree-l3"><a href="#layout-width-and-height-required">Layout Width And Height Required</a></li>
+      
+    
+      
+      <li class="toctree-l3"><a href="#check-nfc-tech-list-for-whitespace">Check NFC Tech-List for whitespace</a></li>
+      
+    
+      
+      <li class="toctree-l3"><a href="#detect-resource-self-reference">Detect Resource Self Reference</a></li>
+      
+    
+      
+      <li class="toctree-l3"><a href="#scroll-view-has-multiple-children">Scroll View Has Multiple Children</a></li>
+      
+    
+  </ul>
+  
+</li>
+
+  
+  
+<li class="toctree-l1 ">
+  <a class="" href="../xamarin-forms-xaml/">Xamarin.Forms Xaml Analysis</a>
+  
+</li>
+
+  
+</ul>
+<li>
+          
+            <li>
+<ul class="subnav">
+  <li><span>Code Generation</span></li>
+  
+  
+<li class="toctree-l1 ">
+  <a class="" href="../../code-generation/csharp/">C#</a>
+  
+</li>
+
+  
+  
+<li class="toctree-l1 ">
+  <a class="" href="../../code-generation/xamarin-forms/">Xamarin.Forms - C#</a>
+  
+</li>
+
+  
+  
+<li class="toctree-l1 ">
+  <a class="" href="../../code-generation/xaml/">Xaml</a>
+  
+</li>
+
+  
+</ul>
+<li>
+          
+            <li>
+<ul class="subnav">
+  <li><span>Release Notes</span></li>
+  
+  
+<li class="toctree-l1 ">
+  <a class="" href="../../release-notes/v3-0/">v3.0</a>
+  
+</li>
+
+  
+  
+<li class="toctree-l1 ">
+  <a class="" href="../../release-notes/v2/">v2</a>
+  
+</li>
+
+  
+</ul>
+<li>
+          
+        </ul>
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="../..">mfractor docs</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../..">Docs</a> &raquo;</li>
+    
+      
+        
+          <li>Code Analysis &raquo;</li>
+        
+      
+    
+    <li>Android Resource Analysis</li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <h2 id="check-for-invalid-android-xml-elements">Check For Invalid Android Xml Elements</h2>
+<p>Inspects an xml file for unknown elements. For example, a res/menu xml file may only contain 'menu', 'item' and 'group' elements.</p>
+<h2 id="check-public-android-resource-usage">Check Public Android Resource Usage</h2>
+<p>Inspects Android resource usages and ensure that the resource referenced has been declared as public.</p>
+<h2 id="declarative-id-in-style">Declarative ID In Style</h2>
+<p>Defining a style which sets android:id to a dynamically generated id can cause many versions of aapt, the resource packaging tool, to crash. To work around this, declare the id explicitly with &lt;item type="id" name="..." /&gt; instead.</p>
+<h2 id="detect-duplicate-plurals-entries">Detect Duplicate Plurals Entries</h2>
+<p>Inspects a 'plurals' resource entry for 'item' elements that have the same 'quantity' value.</p>
+<h2 id="check-for-required-value">Check For Required Value</h2>
+<p>Checks that the input argument for an XML attribute matches the required value for that attribute. For example, 'xmlns:android' must always be 'http://schemas.android.com/apk/res/android'.</p>
+<h2 id="check-for-invalid-characters-in-value-resource-names">Check For Invalid Characters In Value Resource Names</h2>
+<p>Checks that the 'name' attribute for value based resources do not contain invalid characters. Any character apart for 0-9, a-z, A-Z, '.' and '_' are considered to be an invalid character. This check prevents characters that are also operators (such as +, * or &amp;) from being baked into the Resource.Designer.cs file when the resource ids are generated.</p>
+<h2 id="validate-flag-input">Validate Flag Input</h2>
+<p>Validates that any flags provided to an xml attribute are valid.</p>
+<h2 id="valid-keyword-input">Valid Keyword Input</h2>
+<p>Validates that a keyword or sequence of flags provided to an xml attribute are valid. For instance, the installation location is doen by the 'android:installLocation' manifest attribute. This attribute only accepts 'internalOnly', 'auto' and 'preferExternal', any other value is a compilation error.</p>
+<h2 id="item-value-resource-is-valid">Item Value Resource Is Valid</h2>
+<p>Checks that the content contained within an <item> tag that declares a value resource declaration is a valid format for its type.</p>
+<h2 id="mispelt-resource-type-references">Mispelt Resource Type References</h2>
+<p>Checks that the resource references (EG: @string/myString) have a valid resource type component and suggests an auto-correction if possible.</p>
+<h2 id="multiple-usages-in-manifest">Multiple <uses-sdk> usages in manifest</h2>
+<p>Inspects the <application> element within the Android manifest for multiple declarations of the <uses-sdk> element. Only a single <uses-sdk> element is allowed.</p>
+<h2 id="drawable-9-patch-reference-check">Drawable 9-patch reference check.</h2>
+<p>Checks that a drawable reference does not end with '.9'.</p>
+<h2 id="node-missing-required-attributes">Node Missing Required Attributes</h2>
+<p>Checks that a given resource node has all the mandatory attributes.</p>
+<h2 id="check-reference-type">Check Reference Type</h2>
+<p>Verifies that an attribute that expects a resource reference is provided a reference expression (@type/value) rather than a literal value.</p>
+<h2 id="validate-quotations-in-elements">Validate quotations in <string> elements.</h2>
+<p>Verifies that quotation marks (' and ") are properly escaped when inside a string resource. For instance, single quotes (') must be escaped by a preceeding '\' unless the whole string is wrapped within double quotes ("). Furthermore, the use of double quotes must be escaped unless they enclose the entire string.</p>
+<h2 id="resource-value-format">Resource Value Format</h2>
+<p>Validates that a resource value (such as a dimension, color or percentage) is entered in the correct format.</p>
+<h2 id="values-resource-is-valid">Values Resource Is Valid</h2>
+<p>Checks that the content contained within a value resource declaration is a valid format for its type.</p>
+<h2 id="verify-input-type">Verify Input Type</h2>
+<p>Checks that a xml attribute accepts the resource type used in a reference expression (EG: @string/myString).</p>
+<h2 id="verify-max-api-feature-usages">Verify Max API Feature Usages</h2>
+<p>Checks that xml resources use Android SDK features that are within the projects Target API level.</p>
+<h2 id="verify-resource-exists">Verify Resource Exists</h2>
+<p>Checks that a resource used via a reference expression (EG: @string/myString) exists within the project or its references.</p>
+<h2 id="check-for-duplicate-attributes">Check for Duplicate Attributes.</h2>
+<p>Checks for duplicate attributes on an xml node and then automatically removes the duplicates.</p>
+<h2 id="textview-textsize-uses-non-sp-dimension">TextView 'textSize' uses non-sp dimension</h2>
+<p>Inspects 'textSize' attributes for usages of non-sp dimensions</p>
+<h2 id="validate-animated-vectors-reference-vector-drawables">Validate Animated Vectors Reference Vector Drawables</h2>
+<p>Verifies that the 'android:drawable' attribute on an 'animated-vector' drawable resource points to a 'vector' base drawable.</p>
+<h2 id="appwidget-layout-is-valid">AppWidget Layout Is Valid</h2>
+<p>Analyses the layout file referenced by the 'android:initialLayout' attribute for an AppWidget configuration and ensures that it only contains allowed view types.</p>
+<h2 id="circular-resource-usage">Circular Resource Usage</h2>
+<p>Detects when a resource usage (@type/value) that points to a file based resource (such as a layout or drawable) will generate a circular reference when it is inflated. A common example of this is using &lt;include&gt; or &lt;merge&gt; tags inside a layout that also references other layouts via merging or including.</p>
+<h2 id="inconsistent-array-sizes">Inconsistent Array Sizes</h2>
+<p>Checks that 'array', 'string-array' and 'integer-array' resources with multiple declarations all have the same number of elements across all locales they are declared in.</p>
+<h2 id="layout-exists-in-configuration">Layout <include> exists in configuration</h2>
+<p>Checks that usages of 'include' tags within a Android layout reference a layout that is available within the current configuration.</p>
+<h2 id="layout-width-and-height-required">Layout Width And Height Required</h2>
+<p>Checks that layout elements have both the 'android:layout_width' and 'android:layout_height' attributes declared. Elements that are missing these attributes will generate a runtime exception when the layout is inflated.</p>
+<h2 id="check-nfc-tech-list-for-whitespace">Check NFC Tech-List for whitespace</h2>
+<p>Looks at the 'tech' elements inside an nfc 'tech-list' definition and verifies that they do not containi whitespace. The loader for tech-list elements is very strict and will cause a runtime exception when this tech-list is used. See https://code.google.com/p/android/issues/detail?id=65351</p>
+<h2 id="detect-resource-self-reference">Detect Resource Self Reference</h2>
+<p>Analyses resources usages to detect when a usage attempts to reference itself. This error is most likely to occur when using animations, drawables and particularly for layout includes.</p>
+<h2 id="scroll-view-has-multiple-children">Scroll View Has Multiple Children</h2>
+<p>Verifies that a ScrollView only has 1 direct child; multiple children will cause a runtime exception when the layout is inflated. If you want more children, encapsulate the child elements into a layout container.</p>
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../xamarin-forms-xaml/" class="btn btn-neutral float-right" title="Xamarin.Forms Xaml Analysis">Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="../../code-actions/xamarin-forms-xaml/refactor/" class="btn btn-neutral" title="Refactoring"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div class="fastlane" role="contentinfo">
+    <p>
+      <a href="https://www.mfractor.com" target="_blank">
+        <img src="/img/logo-horizontal.png" width="200" />
+      </a>
+    </p>
+  </div>
+
+  Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a> - Copyright &copy; 2016 <a href="https://www.mfractor.com">MFractor</a>
+</footer>
+	  
+        </div>
+      </div>
+
+    </section>
+    
+  </div>
+
+  <div class="rst-versions" role="note" style="cursor: pointer">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+          <a href="https://github.com/mfractor/mfractor.github.io" class="icon icon-github" style="float: left; color: #fcfcfc"> GitHub</a>
+      
+      
+        <span><a href="../../code-actions/xamarin-forms-xaml/refactor/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+      
+      
+        <span style="margin-left: 15px"><a href="../xamarin-forms-xaml/" style="color: #fcfcfc">Next &raquo;</a></span>
+      
+    </span>
+</div>
+    <script src="../../js/theme.js"></script>
+
+</body>
+</html>

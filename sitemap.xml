@@ -4,7 +4,7 @@
     
     <url>
      <loc>/</loc>
-     <lastmod>2017-04-04</lastmod>
+     <lastmod>2017-05-17</lastmod>
      <changefreq>daily</changefreq>
     </url>
     
@@ -12,32 +12,38 @@
     
         
     <url>
-     <loc>/setup/</loc>
-     <lastmod>2017-04-04</lastmod>
+     <loc>/installation-and-setup/</loc>
+     <lastmod>2017-05-17</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>/activate-mfractor-premium/</loc>
+     <lastmod>2017-05-17</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/faq/</loc>
-     <lastmod>2017-04-04</lastmod>
+     <lastmod>2017-05-17</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
-     <loc>/code-actions/</loc>
-     <lastmod>2017-04-04</lastmod>
+     <loc>/configuration/</loc>
+     <lastmod>2017-05-17</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/xamarin-forms-quickstart/</loc>
-     <lastmod>2017-04-04</lastmod>
+     <lastmod>2017-05-17</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/xamarin-android-quickstart/</loc>
-     <lastmod>2017-04-04</lastmod>
+     <lastmod>2017-05-17</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
@@ -47,37 +53,31 @@
         
     <url>
      <loc>/xamarin-forms/configure-binding-context/</loc>
-     <lastmod>2017-04-04</lastmod>
+     <lastmod>2017-05-17</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/xamarin-forms/navigation/</loc>
-     <lastmod>2017-04-04</lastmod>
+     <lastmod>2017-05-17</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/xamarin-forms/analysis/</loc>
-     <lastmod>2017-04-04</lastmod>
+     <lastmod>2017-05-17</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/xamarin-forms/implementing-view-models/</loc>
-     <lastmod>2017-04-04</lastmod>
+     <lastmod>2017-05-17</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/xamarin-forms/value-converter-type-safety/</loc>
-     <lastmod>2017-04-04</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-        
-    <url>
-     <loc></loc>
-     <lastmod></lastmod>
+     <lastmod>2017-05-17</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
@@ -87,25 +87,41 @@
         
     <url>
      <loc>/xamarin-android/resource-navigation/</loc>
-     <lastmod>2017-04-04</lastmod>
+     <lastmod>2017-05-17</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/xamarin-android/analysis/</loc>
-     <lastmod>2017-04-04</lastmod>
+     <lastmod>2017-05-17</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/xamarin-android/dotnet-code-analysis/</loc>
-     <lastmod>2017-04-04</lastmod>
+     <lastmod>2017-05-17</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/xamarin-android/resource-intellisense/</loc>
-     <lastmod>2017-04-04</lastmod>
+     <lastmod>2017-05-17</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    
+
+    
+        
+    <url>
+     <loc>/code-actions/csharp/</loc>
+     <lastmod>2017-05-17</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc></loc>
+     <lastmod></lastmod>
      <changefreq>daily</changefreq>
     </url>
         
@@ -120,44 +136,52 @@
     
         
     <url>
-     <loc>/release-notes/v2-11/</loc>
-     <lastmod>2017-04-04</lastmod>
+     <loc>/code-analysis/android-resources/</loc>
+     <lastmod>2017-05-17</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
-     <loc>/release-notes/v2-10/</loc>
-     <lastmod>2017-04-04</lastmod>
+     <loc>/code-analysis/xamarin-forms-xaml/</loc>
+     <lastmod>2017-05-17</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    
+
+    
+        
+    <url>
+     <loc>/code-generation/csharp/</loc>
+     <lastmod>2017-05-17</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
-     <loc>/release-notes/v2-9/</loc>
-     <lastmod>2017-04-04</lastmod>
+     <loc>/code-generation/xamarin-forms/</loc>
+     <lastmod>2017-05-17</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
-     <loc>/release-notes/v2-8/</loc>
-     <lastmod>2017-04-04</lastmod>
+     <loc>/code-generation/xaml/</loc>
+     <lastmod>2017-05-17</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    
+
+    
+        
+    <url>
+     <loc>/release-notes/v3-0/</loc>
+     <lastmod>2017-05-17</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
-     <loc>/release-notes/v2-7/</loc>
-     <lastmod>2017-04-04</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-        
-    <url>
-     <loc>/release-notes/v2-6/</loc>
-     <lastmod>2017-04-04</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-        
-    <url>
-     <loc>/release-notes/v2-5/</loc>
-     <lastmod>2017-04-04</lastmod>
+     <loc>/release-notes/v2/</loc>
+     <lastmod>2017-05-17</lastmod>
      <changefreq>daily</changefreq>
     </url>
         

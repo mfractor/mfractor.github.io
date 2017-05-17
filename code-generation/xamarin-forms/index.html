@@ -9,7 +9,7 @@
   <meta name="author" content="Matthew Robbins">
   <link rel="shortcut icon" href="../../img/favicon.ico">
   
-  <title>.NET Code Analysis - mfractor docs</title>
+  <title>Xamarin.Forms - C# - mfractor docs</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="../../css/theme.css" type="text/css" />
@@ -23,9 +23,9 @@
   
   <script>
     // Current page data
-    var mkdocs_page_name = ".NET Code Analysis";
-    var mkdocs_page_input_path = "xamarin-android/dotnet-code-analysis.md";
-    var mkdocs_page_url = "/xamarin-android/dotnet-code-analysis/";
+    var mkdocs_page_name = "Xamarin.Forms - C#";
+    var mkdocs_page_input_path = "code-generation/xamarin-forms.md";
+    var mkdocs_page_url = "/code-generation/xamarin-forms/";
   </script>
   
   <script src="../../js/jquery-2.1.1.min.js"></script>
@@ -166,32 +166,28 @@
   
   
 <li class="toctree-l1 ">
-  <a class="" href="../resource-navigation/">Resource Navigation</a>
+  <a class="" href="../../xamarin-android/resource-navigation/">Resource Navigation</a>
   
 </li>
 
   
   
 <li class="toctree-l1 ">
-  <a class="" href="../analysis/">Analysis</a>
-  
-</li>
-
-  
-  
-<li class="toctree-l1 current">
-  <a class="current" href="./">.NET Code Analysis</a>
-  
-  <ul>
-    
-  </ul>
+  <a class="" href="../../xamarin-android/analysis/">Analysis</a>
   
 </li>
 
   
   
 <li class="toctree-l1 ">
-  <a class="" href="../resource-intellisense/">Resource IntelliSense</a>
+  <a class="" href="../../xamarin-android/dotnet-code-analysis/">.NET Code Analysis</a>
+  
+</li>
+
+  
+  
+<li class="toctree-l1 ">
+  <a class="" href="../../xamarin-android/resource-intellisense/">Resource IntelliSense</a>
   
 </li>
 
@@ -289,21 +285,39 @@
   
   
 <li class="toctree-l1 ">
-  <a class="" href="../../code-generation/csharp/">C#</a>
+  <a class="" href="../csharp/">C#</a>
+  
+</li>
+
+  
+  
+<li class="toctree-l1 current">
+  <a class="current" href="./">Xamarin.Forms - C#</a>
+  
+  <ul>
+    
+      
+    
+      
+      <li class="toctree-l3"><a href="#generate-icommand-implementation">Generate ICommand Implementation</a></li>
+      
+    
+      
+      <li class="toctree-l3"><a href="#generate-value-conversion-attribute">Generate Value Conversion Attribute</a></li>
+      
+    
+      
+      <li class="toctree-l3"><a href="#generate-ivalueconverter-implementation">Generate IValueConverter Implementation</a></li>
+      
+    
+  </ul>
   
 </li>
 
   
   
 <li class="toctree-l1 ">
-  <a class="" href="../../code-generation/xamarin-forms/">Xamarin.Forms - C#</a>
-  
-</li>
-
-  
-  
-<li class="toctree-l1 ">
-  <a class="" href="../../code-generation/xaml/">Xaml</a>
+  <a class="" href="../xaml/">Xaml</a>
   
 </li>
 
@@ -354,18 +368,101 @@
     
       
         
-          <li>Xamarin.Android &raquo;</li>
+          <li>Code Generation &raquo;</li>
         
       
     
-    <li>.NET Code Analysis</li>
+    <li>Xamarin.Forms - C#</li>
   </ul>
   <hr/>
 </div>
           <div role="main">
             <div class="section">
               
-                <p><strong>WORK IN PROGRESS</strong></p>
+                <h2 id="generate-bindable-property">Generate Bindable Property</h2>
+<p><em>Configuration Id: com.mfractor.code_gen.forms.csharp.bindable_property</em></p>
+<p>Generates a Xamarin.Forms bindable property implementation and a proxy property that calls the <code>BindableProperty</code> implementation.</p>
+<h2 id="generate-icommand-implementation">Generate ICommand Implementation</h2>
+<p><em>Configuration Id: com.mfractor.code_gen.forms.csharp.command_implementation</em></p>
+<p>Generates a boilerplate implementation of ICommand using Xamarin.Forms.Command</p>
+<h3 id="configurable-properties">Configurable Properties</h3>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Defaults To</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>CommandType</strong></td>
+<td>System.String</td>
+<td><code>"Xamarin.Forms.Command"</code></td>
+<td>The fully qualified type to use as the command implementation. For example, using <code>Xamarin.Forms.Command</code> would cause the new expression to be <code>new Xamarin.Forms.Command</code></td>
+</tr>
+</tbody>
+</table>
+<h2 id="generate-value-conversion-attribute">Generate Value Conversion Attribute</h2>
+<p><em>Configuration Id: com.mfractor.code_gen.forms.csharp.value_conversion_attribute</em></p>
+<p>Generates an implementation of the <code>ValueConversionAttribute</code></p>
+<h2 id="generate-ivalueconverter-implementation">Generate IValueConverter Implementation</h2>
+<p><em>Configuration Id: com.mfractor.code_gen.forms.csharp.value_converter</em></p>
+<p>Generates an implementation of a value converter.</p>
+<h3 id="configurable-properties_1">Configurable Properties</h3>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Defaults To</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>IncludeValueConversionAttribute</strong></td>
+<td>System.Boolean</td>
+<td><code>False</code></td>
+<td>If the generated value converter should automatically have a ValueConversionAttribute added to it to denote it's input and output types.</td>
+</tr>
+<tr>
+<td><strong>CreateMissingValueConversionAttribute</strong></td>
+<td>System.Boolean</td>
+<td><code>False</code></td>
+<td>If an implementation of the ValueConversionAttribute class cannot be resolved within the project compilation, should MFractor automatically create the implementation?</td>
+</tr>
+<tr>
+<td><strong>Namespace</strong></td>
+<td>System.String</td>
+<td>NA</td>
+<td>The namespace to place new value converters inside. When empty, new value converters will be placed under the projects default namespace.</td>
+</tr>
+<tr>
+<td><strong>Folder</strong></td>
+<td>System.String</td>
+<td>NA</td>
+<td>The folder to place new value converters inside. When empty, new value converters will be placed inside the proejcts root folder.</td>
+</tr>
+<tr>
+<td><strong>ImplementConversionForConvert</strong></td>
+<td>System.Boolean</td>
+<td><code>False</code></td>
+<td>When creating the body of the <code>Convert</code> method, should a <code>var input = (InputType)value;* and</code>return default(OutputType)` be inserted instead of a not implemented exception?</td>
+</tr>
+<tr>
+<td><strong>ImplementConversionForConvertBack</strong></td>
+<td>System.Boolean</td>
+<td><code>False</code></td>
+<td>When creating the body of the <code>ConvertBack</code> method, should a <code>var input = (OutputType)value;* and</code>return default(InputType)` be inserted instead of a not implemented exception?</td>
+</tr>
+</tbody>
+</table>
+<h3 id="uses">Uses:</h3>
+<ul>
+<li><a href="./#generate-value-conversion-attribute">Generate Value Conversion Attribute</a></li>
+</ul>
               
             </div>
           </div>
@@ -373,10 +470,10 @@
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="../resource-intellisense/" class="btn btn-neutral float-right" title="Resource IntelliSense">Next <span class="icon icon-circle-arrow-right"></span></a>
+        <a href="../xaml/" class="btn btn-neutral float-right" title="Xaml">Next <span class="icon icon-circle-arrow-right"></span></a>
       
       
-        <a href="../analysis/" class="btn btn-neutral" title="Analysis"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../csharp/" class="btn btn-neutral" title="C#"><span class="icon icon-circle-arrow-left"></span> Previous</a>
       
     </div>
   
@@ -407,10 +504,10 @@
           <a href="https://github.com/mfractor/mfractor.github.io" class="icon icon-github" style="float: left; color: #fcfcfc"> GitHub</a>
       
       
-        <span><a href="../analysis/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+        <span><a href="../csharp/" style="color: #fcfcfc;">&laquo; Previous</a></span>
       
       
-        <span style="margin-left: 15px"><a href="../resource-intellisense/" style="color: #fcfcfc">Next &raquo;</a></span>
+        <span style="margin-left: 15px"><a href="../xaml/" style="color: #fcfcfc">Next &raquo;</a></span>
       
     </span>
 </div>
