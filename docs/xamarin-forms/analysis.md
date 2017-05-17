@@ -25,12 +25,12 @@ It may take a little while for MFractor to parse and symbolicate the Xaml DOM th
 
 When the Xaml document has been parsed and symbolicated, MFractor will analyse the document for a range of code issues. Any issues that are found are marked as either
 
-A full list of available Xaml analysers can be found at [Xamarin.Forms Analysers](tools-in-depth/analysers.md).
+A full list of available Xaml analysers can be found at [Xamarin.Forms Analysers](/code-analysis/xamarin-forms-xaml.md).
 
 Whenever you edit a Xaml code file, MFractor will cancel any running analysis, re-parse and symbolicate the document and then re-run the xaml analyser against your xaml.
 
 ##Code Fixes
-When MFractor detects a code issue, it is usually able to suggest a fix as well. When MFractor can fix an issue, 
+When MFractor detects a code issue, it is usually able to suggest a fix as well. When MFractor can fix an issue,
 
 You can action this fix by right clicking on the text area marked by the coloured squiggle
 

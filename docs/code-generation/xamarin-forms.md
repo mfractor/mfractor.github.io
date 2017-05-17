@@ -1,0 +1,46 @@
+## Generate Bindable Property
+
+*Configuration Id: com.mfractor.code_gen.forms.csharp.bindable_property*
+
+Generates a Xamarin.Forms bindable property implementation and a proxy property that calls the `BindableProperty` implementation.
+
+## Generate ICommand Implementation
+
+*Configuration Id: com.mfractor.code_gen.forms.csharp.command_implementation*
+
+Generates a boilerplate implementation of ICommand using Xamarin.Forms.Command
+
+### Configurable Properties
+
+| Name | Type | Defaults To | Description |
+|------|------|-------------|-------------|
+| **CommandType** | System.String | `"Xamarin.Forms.Command"` | The fully qualified type to use as the command implementation. For example, using `Xamarin.Forms.Command` would cause the new expression to be `new Xamarin.Forms.Command` |
+
+## Generate Value Conversion Attribute
+
+*Configuration Id: com.mfractor.code_gen.forms.csharp.value_conversion_attribute*
+
+Generates an implementation of the `ValueConversionAttribute`
+
+## Generate IValueConverter Implementation
+
+*Configuration Id: com.mfractor.code_gen.forms.csharp.value_converter*
+
+Generates an implementation of a value converter.
+
+### Configurable Properties
+
+| Name | Type | Defaults To | Description |
+|------|------|-------------|-------------|
+| **IncludeValueConversionAttribute** | System.Boolean | `False` | If the generated value converter should automatically have a ValueConversionAttribute added to it to denote it's input and output types. |
+| **CreateMissingValueConversionAttribute** | System.Boolean | `False` | If an implementation of the ValueConversionAttribute class cannot be resolved within the project compilation, should MFractor automatically create the implementation? |
+| **Namespace** | System.String | NA | The namespace to place new value converters inside. When empty, new value converters will be placed under the projects default namespace. |
+| **Folder** | System.String | NA | The folder to place new value converters inside. When empty, new value converters will be placed inside the proejcts root folder. |
+| **ImplementConversionForConvert** | System.Boolean | `False` | When creating the body of the `Convert` method, should a `var input = (InputType)value;* and `return default(OutputType)` be inserted instead of a not implemented exception? |
+| **ImplementConversionForConvertBack** | System.Boolean | `False` | When creating the body of the `ConvertBack` method, should a `var input = (OutputType)value;* and `return default(InputType)` be inserted instead of a not implemented exception? |
+
+### Uses:
+
+ * [Generate Value Conversion Attribute](/code-generation/xamarin-forms.md#generate-value-conversion-attribute)
+
+

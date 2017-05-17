@@ -72,7 +72,7 @@ The Xaml analyser inspects Xaml files for code issues and underlines the issue i
 For more detail, see:
 
  * [Xaml Analysis](xamarin-forms/analysis.md)
- * [Full List of Xaml Analysers](xamarin-forms/tools-in-depth/analysers.md)
+ * [Full List of Xaml Analysers](code-analysis/xamarin-forms-xaml.md)
 
 ##Accessing Code Actions
 Press Alt+Return on

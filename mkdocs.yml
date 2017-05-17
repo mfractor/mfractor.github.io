@@ -22,7 +22,6 @@ pages:
   - Installation And Setup: installation-and-setup.md
   - Activating MFractor Premium: activate-mfractor-premium.md
   - FAQ: faq.md
-  - Using Code Actions: code-actions.md
   - Configuration: configuration.md
   - Xamarin.Forms Quickstart: xamarin-forms-quickstart.md
   - Xamarin.Android Quickstart: xamarin-android-quickstart.md
@@ -37,6 +36,22 @@ pages:
   - Analysis: xamarin-android/analysis.md
   - .NET Code Analysis: xamarin-android/dotnet-code-analysis.md
   - Resource IntelliSense: xamarin-android/resource-intellisense.md
+- Code Actions:
+  - C# Code Actions: code-actions/csharp.md
+  - Android Resource Code Actions:
+    - Issue Fixing: code-actions/android-resources/fix.md
+  - Xamarin.Forms Xaml Code Actions:
+    - Issue Fixing: code-actions/xamarin-forms-xaml/fix.md
+    - Code Generation: code-actions/xamarin-forms-xaml/generate.md
+    - Xaml Organisation: code-actions/xamarin-forms-xaml/organise.md
+    - Refactoring: code-actions/xamarin-forms-xaml/refactor.md
+- Code Analysis:
+  - Android Resource Analysis: code-analysis/android-resources.md
+  - Xamarin.Forms Xaml Analysis: code-analysis/xamarin-forms-xaml.md
+- Code Generation:
+  - C#: code-generation/csharp.md
+  - Xamarin.Forms - C#: code-generation/xamarin-forms.md
+  - Xaml: code-generation/xaml.md
 - Release Notes:
     - v3.0: release-notes/v3-0.md
     - v2: release-notes/v2.md

@@ -19,7 +19,6 @@ MFractor **does not** support Visual Studio Windows. This is on our roadmap for 
 MFractor does a lot so it may take a little while to learn its ins and outs. If you'd like to learn how to best use it, you have a few options:
 
  * Get started by reading the [Xamarin.Forms Quickstart](xamarin-forms-quickstart.md) and [Xamarin.Android Quickstart](xamarin-android-quickstart.md); these are a quick overview of the most used features.
- * Learn to use [code actions](code-actions.md); contextual actions that refactor xaml, generate c#, fix code issues or organise your views. These are the back-bone of MFractor!
  * Read the in-depth docs for both Xamarin.Forms and Xamarin.Android (see the menu to the left). Each article covers a feature in-depth and fully explains how to use it.
  * Drop into the [#mfractor Xamarin Slack sub-channel](https://xamarinchat.slack.com/archives/mfractor) and start chatting to me (Matthew Robbins). I'm happy to answer any questions you have.
 

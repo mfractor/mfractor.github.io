@@ -8,10 +8,7 @@ Let's get you started:
 
 ###Installation
 
- * [Setup MFractor](setup.md)
-
-###MFractor Essentials
- * [Using Code Actions](code-actions.md)
+ * [Setup MFractor](installation-and-setup.md)
 
 ###Xamarin.Forms Essentials:
 
