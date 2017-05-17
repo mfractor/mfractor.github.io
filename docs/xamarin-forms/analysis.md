@@ -15,7 +15,7 @@ Let's take a look at what happens "under the hood" in MFractor when you open a X
 
 ![xaml analysis flow](/img/forms/xaml-analysis-flow.png)
 
-When you open a Xaml file that's part of a .NET project, Xamarin Studio notifies MFractor that a new Xaml document was opened for editing. MFractor will  inject the Xaml analyser into the Xaml editor and consume the Xaml document.
+When you open a Xaml file that's part of a .NET project, Visual Studio Mac notifies MFractor that a new Xaml document was opened for editing. MFractor will  inject the Xaml analyser into the Xaml editor and consume the Xaml document.
 
 Once MFractor has a copy of the Xaml DOM, it *symbolicates* the xaml document. In this step all Xaml nodes are resolved to their corresponding .NET class, all attributes are resolved to properties, fields or methods and all markup extension expressions are parsed.
 

@@ -19,15 +19,16 @@ extra_css:
 pages:
 - Home: index.md
 - Getting Started:
-  - Setup: setup.md
+  - Installation And Setup: installation-and-setup.md
+  - Activating MFractor Premium: activate-mfractor-premium.md
   - FAQ: faq.md
   - Using Code Actions: code-actions.md
   - Configuration: configuration.md
   - Xamarin.Forms Quickstart: xamarin-forms-quickstart.md
   - Xamarin.Android Quickstart: xamarin-android-quickstart.md
 - Xamarin.Forms:
-  - Configure Binding Context: xamarin-forms/configure-binding-context.md
-  - Navigation: xamarin-forms/navigation.md
+  - Configuring A Binding Context: xamarin-forms/configure-binding-context.md
+  - Navigation Tools: xamarin-forms/navigation.md
   - Analysis: xamarin-forms/analysis.md
   - Implementing View Models: xamarin-forms/implementing-view-models.md
   - Value Converter Type Safety: xamarin-forms/value-converter-type-safety.md
@@ -38,9 +39,4 @@ pages:
   - Resource IntelliSense: xamarin-android/resource-intellisense.md
 - Release Notes:
     - v3.0: release-notes/v3-0.md
-    - v2.10: release-notes/v2-10.md
-    - v2.9: release-notes/v2-9.md
-    - v2.8: release-notes/v2-8.md
-    - v2.7: release-notes/v2-7.md
-    - v2.6: release-notes/v2-6.md
-    - v2.5: release-notes/v2-5.md
+    - v2: release-notes/v2.md

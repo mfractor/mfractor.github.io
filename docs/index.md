@@ -38,7 +38,7 @@ If something doesn't work quite right or you'd like a sweet new feature added, b
 
 ###Thank You!
 
-Slowly, I am building the ReSharper for Xamarin Studio and I'm thrilled that you have joined me on the journey.
+Slowly, I am building the ReSharper for Visual Studio Mac and I'm thrilled that you have joined me on the journey.
 
 Thank you for installing and using MFractor. It means the world to me.
 

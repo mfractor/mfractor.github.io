@@ -1,14 +1,14 @@
 
-##Setup
+##Installation And Setup
 
 *Installing, activating and updating MFractor*
 
 ##Introduction
 
-This document covers how to install, activate, update and uninstall MFractor for Xamarin Studio.
+This document covers how to install, activate, update and uninstall MFractor for Visual Studio Mac.
 
 ##Get MFractor
-The latest version of MFractor for Xamarin Studio can be downloaded from the addin server, [addins.mfractor.com/MFractor.mpack](http://addins.mfractor.com/MFractor.mpack).
+The latest version of MFractor for Visual Studio Mac can be downloaded from the addin server, [addins.mfractor.com/MFractor.mpack](http://addins.mfractor.com/MFractor.mpack).
 
 If you'd like an older version of MFractor, these can be found under our old release archives. Simply navigate to [addins.mfractor.com/releases](http://addins.mfractor.com/releases), open the folder for the version you'd like and download the .mpack file.
 
@@ -16,9 +16,9 @@ If you'd like an older version of MFractor, these can be found under our old rel
 
 MFractor can be installed directly through the addin manager's **Install from file** button.
 
-Firstly, download the latest version of MFractor for Xamarin studio at [addins.mfractor.com/MFractor.mpack](addins.mfractor.com/MFractor.mpack)
+Firstly, download the latest version of MFractor for Visual Studio Mac at [addins.mfractor.com/MFractor.mpack](addins.mfractor.com/MFractor.mpack)
 
-Open up Xamarin Studio and click on the **Xamarin Studio** menu and then **Addins...**
+Open up Visual Studio Mac and click on the **Visual Studio Mac** menu and then **Addins...**
 
 ![addin manager location](img/setup/addin-manager-menu.png)
 
@@ -29,11 +29,11 @@ Browse to **MFractor.mpack** and then select **Open**:
 ![How to install MFractor](/img/setup/install-mfractor.gif)
 
 ##Install Using MFractor.Installer
-We can also install install MFractor into Xamarin Studio by using the MFractor.Installer helper addin.
+We can also install install MFractor into Visual Studio Mac by using the MFractor.Installer helper addin.
 
-This addin lives inside the Addin Manager in Xamarin Studio, under **Gallery** -> **IDE extensions**.
+This addin lives inside the Addin Manager in Visual Studio Mac, under **Gallery** -> **IDE extensions**.
 
-Open up Xamarin Studio and click on the **Xamarin Studio** menu and then **Addins...**
+Open up Visual Studio Mac and click on the **Visual Studio Mac** menu and then **Addins...**
 
 ![addin manager location](img/setup/addin-manager-menu.png)
 
@@ -41,7 +41,7 @@ Once the Addin Manager opens, click **Gallery** and under **IDE extensions** loc
 
 ![addin manager location](img/setup/mfractor-installer-location.png)
 
-Once you've located **MFractor.Installer**, left click on it to select it. In the right hand detail view, click **Install**. Xamarin Studio will prompt you for confirmation, click **Install**
+Once you've located **MFractor.Installer**, left click on it to select it. In the right hand detail view, click **Install**. Visual Studio Mac will prompt you for confirmation, click **Install**
 
 ![install mfractor.installer](img/setup/install-mfractor-installer.png)
 
@@ -63,21 +63,21 @@ Tada! You are now ready to rock. Why not learn how to use MFractor for [Xamarin.
 
 ##Updating
 
-When MFractor installs into Xamarin Studio, it'll register itself into Xamarin Studios addin updater.
+When MFractor installs into Visual Studio Mac, it'll register itself into Visual Studio Macs addin updater.
 
-This means that Xamarin Studio will automatically prompt you that an update is available.
+This means that Visual Studio Mac will automatically prompt you that an update is available.
 
-However, you can check for udpate at any time by opening the **Xamarin Studio** main menu and selecting **Check for Updates...**
+However, you can check for udpate at any time by opening the **Visual Studio Mac** main menu and selecting **Check for Updates...**
 
 ![update mfractor](img/setup/update-mfractor.png)
 
-Xamarin Studio will check the MFractor addin server for updates and prompt you to update if there is a new version!
+Visual Studio Mac will check the MFractor addin server for updates and prompt you to update if there is a new version!
 
 ##Uninstalling MFractor
 
 You can uninstall MFractor through the addin manager at any time.
 
-Select the **Xamarin Studio** main menu and then **Addins**
+Select the **Visual Studio Mac** main menu and then **Addins**
 
 Under **Gallery** then **IDE extensions** select the MFractor addin list item and then click **Uninstall**
 

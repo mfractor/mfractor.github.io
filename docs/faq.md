@@ -9,8 +9,8 @@ If something doesn't work or you'd like a sweet new feature added, be patient an
  * Via Slack: Drop in to chat anytime in the [#mfractor Xamarin Slack sub-channel](https://xamarinchat.slack.com/archives/mfractor).
  * Via Email: Shot an email to [hello@mfractor.com](hello@mfractor.com)
 
-##What version of Xamarin Studio is MFractor compatible with?
-The latest version of MFractor always targets the current stable channel version of Xamarin Studio. Visual Studio for Mac support is under active development and is expected 1st of July 2017.
+##What version of Visual Studio Mac is MFractor compatible with?
+The latest version of MFractor always targets the current stable channel version of Visual Studio Mac. Visual Studio for Mac support is under active development and is expected 1st of July 2017.
 
 ##Does MFractor support Visual Studio Windows?
 MFractor **does not** support Visual Studio Windows. This is on our roadmap for the future but we have no concrete timeline. A news announcement will be published when we commence work on MFractor for Visual Studio Windows.
@@ -46,7 +46,7 @@ MFractor will then download and install the latest meta-data bundle:
 
 ![Installing Android SDK Meta-Data Step 3](/img/faq/install-android-sdk-3.png)
 
-When the installation has completed, just close the installation success message; there is no need to restart Xamarin Studio.
+When the installation has completed, just close the installation success message; there is no need to restart Visual Studio Mac.
 
 ##What is the .droidres folder?
 The `.droidres` folder contains the meta-data that's generated when MFractor indexes your Android projects. This meta-data is used to power resource tooltips and resource go-to declaration for Android projets.
