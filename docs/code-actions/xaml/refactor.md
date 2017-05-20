@@ -1,6 +1,6 @@
 ## Extract Attribute Value Into Property Binding
 
-*Configuration Id: com.mfractor.code_actions.forms.extract_into_property_binding*
+**Configuration Id: com.mfractor.code_actions.forms.extract_into_property_binding**
 
 When a Xaml attribute is initialised by a literal value (rather than an expression), this refactoring action allows a developer to extract that literal value as a property into the binding context and replace the attribute initialiser with a binding expression.
 
@@ -15,7 +15,7 @@ For example, given the attribute initialiser `Text=\"Hello Xamarin.Forms!\"`, th
 
 ## Rename Xaml Namespace
 
-*Configuration Id: com.mfractor.code_actions.forms.rename_xaml_namespace*
+**Configuration Id: com.mfractor.code_actions.forms.rename_xaml_namespace**
 
 The **Rename Xaml Namespace** code action will perform a symbolic rename-refactor on a particular Xaml within your document.
 
@@ -39,7 +39,7 @@ Your new namespace will be applied across the document:
 
 ## Edit Color Declaration
 
-*Configuration Id: com.mfractor.code_actions.forms.edit_inline_color*
+**Configuration Id: com.mfractor.code_actions.forms.edit_inline_color**
 
 The **Edit Color Declaration** code actions allows visual editing of colors from your Xaml.
 

@@ -38,13 +38,14 @@ pages:
   - Android Resource Code Actions:
     - Issue Fixing: code-actions/android-resources/fix.md
   - Xamarin.Forms Xaml Code Actions:
-    - Issue Fixing: code-actions/xamarin-forms-xaml/fix.md
-    - Code Generation: code-actions/xamarin-forms-xaml/generate.md
-    - Xaml Organisation: code-actions/xamarin-forms-xaml/organise.md
-    - Refactoring: code-actions/xamarin-forms-xaml/refactor.md
+    - Issue Fixing: code-actions/xaml/fix.md
+    - Code Generation: code-actions/xaml/generate.md
+    - Xaml Organisation: code-actions/xaml/organise.md
+    - Refactoring: code-actions/xaml/refactor.md
 - Code Analysis:
+  - Android C# Analysis: code-analysis/android-csharp.md
   - Android Resource Analysis: code-analysis/android-resources.md
-  - Xamarin.Forms Xaml Analysis: code-analysis/xamarin-forms-xaml.md
+  - Xamarin.Forms Xaml Analysis: code-analysis/xaml.md
 - Code Generation:
   - C#: code-generation/csharp.md
   - Xamarin.Forms - C#: code-generation/xamarin-forms.md

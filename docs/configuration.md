@@ -48,7 +48,7 @@ You might notice that the structure of docs.mfractor.com has drastically changed
 
 Every element inside MFractor that can be configured has it's own unique **configuration identifier**. This a java-style, package based string that indicates the software, element type and element name inside the name.
 
-For example, the Xamarin.Forms [Implement View Model](/code-actions/xamarin-forms-xaml/generate.md#implement-view-model) code action has the configuration identifier `com.mfractor.code_actions.forms.implement_view_model`.
+For example, the Xamarin.Forms [Implement View Model](/code-actions/xaml/generate.md#implement-view-model) code action has the configuration identifier `com.mfractor.code_actions.forms.implement_view_model`.
 
 ## Configurable Properties
 

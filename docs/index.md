@@ -14,7 +14,7 @@ If something doesn't work quite right or you'd like a sweet new feature added, b
 
  * Via Twitter: Give me a holla at [@matthewrdev](https://twitter.com/matthewrdev)
  * Via Slack: Drop in to chat anytime in the [#mfractor Xamarin Slack sub-channel](https://xamarinchat.slack.com/archives/mfractor).
- * Via Email: Shot an email to hello@mfractor.com
+ * Via Email: Shoot an email to hello@mfractor.com
 
 Thank you for installing and using MFractor.
 

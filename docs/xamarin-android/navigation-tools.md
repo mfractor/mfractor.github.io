@@ -89,7 +89,7 @@ Where:
  * ResourceType is the optional resource type of the theme component. This is typically inferred.
  * themeItemName the name of the theme item.
 
-## Resource Go To declaration
+## Go To Resource Declaration
 
 ## Find All Resource Usages
 

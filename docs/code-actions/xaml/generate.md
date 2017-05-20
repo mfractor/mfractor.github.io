@@ -1,6 +1,6 @@
 ## Implement Missing Members
 
-*Configuration Id: com.mfractor.code_actions.forms.implement_missing_members*
+**Configuration Id: com.mfractor.code_actions.forms.implement_missing_members**
 
 When a control uses undefined members/properties in a Xaml view, this refactoring collects all missing properties, attempts to resolve their types and then generates them onto the control/class.
 
@@ -88,7 +88,7 @@ public class MyCustomSlider : Slider
 
 ## Generate Grid ColumnDefinitions
 
-*Configuration Id: com.mfractor.code_actions.forms.generate_grid_column_definitions*
+**Configuration Id: com.mfractor.code_actions.forms.generate_grid_column_definitions**
 
 This code generation action adds column definition setter to a Xamarin.Forms.Grid Xaml node with a single `<ColumnDefinition Width=\"*\"/>` element; this allows you to quickly setup a boilerplate grid.
 When this refactoring is used, the `<Grid>` node will have the following code injected:
@@ -107,7 +107,7 @@ When this refactoring is used, the `<Grid>` node will have the following code in
 
 ## Generate Grid RowDefinitions
 
-*Configuration Id: com.mfractor.code_actions.forms.generate_grid_row_definitions*
+**Configuration Id: com.mfractor.code_actions.forms.generate_grid_row_definitions**
 
 This code generation action adds row definition setter to a Xamarin.Forms.Grid Xaml node with a single `<RowDefinition Height="*"/>` element; this allows you to quickly setup a boilerplate grid.
 
@@ -134,7 +134,7 @@ When this refactoring is used, the `<Grid>` node will have the following code in
 
 ## Generate Grid Column Definition
 
-*Configuration Id: com.mfractor.code_actions.forms.generate_column_definition*
+**Configuration Id: com.mfractor.code_actions.forms.generate_column_definition**
 
 Adds a single `<ColumnDefinition Width=\"*\"/>` element to the `Grid.ColumnDefinitions` node.
 
@@ -145,7 +145,7 @@ Adds a single `<ColumnDefinition Width=\"*\"/>` element to the `Grid.ColumnDefin
 
 ## Generate Grid Row Definition
 
-*Configuration Id: com.mfractor.code_actions.forms.generate_row_definition*
+**Configuration Id: com.mfractor.code_actions.forms.generate_row_definition**
 
 Adds a single `<RowDefinition Height=\"*\"/>` element to the `Grid.RowDefinitions` node.
 
@@ -156,13 +156,13 @@ Adds a single `<RowDefinition Height=\"*\"/>` element to the `Grid.RowDefinition
 
 ## Generate Resource Dictionary
 
-*Configuration Id: com.mfractor.code_actions.forms.generate_resource_dictionary*
+**Configuration Id: com.mfractor.code_actions.forms.generate_resource_dictionary**
 
 The **Generate Resource Dictionary** code action adds a `MyView.ResourceDictionary` property with a nested resource dictionary to any Xaml node that derives from `Xamarin.Forms.VisualElement` or is the root application class. Developers can quickly add a resource dictionary in just a few keystrokes; this is especially useful when you need to add a resource dictionary to the root xaml node on a control or page.
 
 ## Implement View Model
 
-*Configuration Id: com.mfractor.code_actions.forms.implement_view_model*
+**Configuration Id: com.mfractor.code_actions.forms.implement_view_model**
 
 The **Implement View Model** code action detects when a xaml document has unimplemented bindings, gathers them all and then implements them in bulk into a new or existing view model.
 

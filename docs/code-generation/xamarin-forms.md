@@ -1,12 +1,12 @@
 ## Generate Bindable Property
 
-*Configuration Id: com.mfractor.code_gen.forms.csharp.bindable_property*
+**Configuration Id: com.mfractor.code_gen.forms.csharp.bindable_property**
 
 Generates a Xamarin.Forms bindable property implementation and a proxy property that calls the `BindableProperty` implementation.
 
 ## Generate ICommand Implementation
 
-*Configuration Id: com.mfractor.code_gen.forms.csharp.command_implementation*
+**Configuration Id: com.mfractor.code_gen.forms.csharp.command_implementation**
 
 Generates a boilerplate implementation of ICommand using Xamarin.Forms.Command
 
@@ -18,13 +18,13 @@ Generates a boilerplate implementation of ICommand using Xamarin.Forms.Command
 
 ## Generate Value Conversion Attribute
 
-*Configuration Id: com.mfractor.code_gen.forms.csharp.value_conversion_attribute*
+**Configuration Id: com.mfractor.code_gen.forms.csharp.value_conversion_attribute**
 
 Generates an implementation of the `ValueConversionAttribute`
 
 ## Generate IValueConverter Implementation
 
-*Configuration Id: com.mfractor.code_gen.forms.csharp.value_converter*
+**Configuration Id: com.mfractor.code_gen.forms.csharp.value_converter**
 
 Generates an implementation of a value converter.
 

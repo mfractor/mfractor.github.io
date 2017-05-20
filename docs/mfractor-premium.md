@@ -8,7 +8,7 @@ MFractor comes in both a free and a paid/premium version.
 
 The free version contains most features that are included in MFractor Premium; as a Xamarin developer you will find the free version will still help out your day-to-day Xamarin.Android and Xamarin.Forms development a heck of a lot!
 
-I stress this, **you are under no obligation to upgrade to the paid version of MFractor.** If you need C# support, mobile-specific code diagnostics or want to tweak the code that MFractor creates then you will need to pay for a MFractor Premium license.
+I stress this, **you are under no obligation to upgrade to the paid version of MFractor.** If you need C# code refactoring support, mobile-specific code diagnostics or want to tweak the code that MFractor creates then you will need to pay for a MFractor Premium license.
 
 ## Feature Map
 
@@ -17,9 +17,9 @@ I stress this, **you are under no obligation to upgrade to the paid version of M
 | [Configuration Support](/configuration.md) |  | **XXX** |
 | [MFracor Code Annotations](/annotations.md) |  | **XXX** |
 | **Xamarin.Forms Features** |  |  |
-| [Xaml Analysis](/code-analysis/xamarin-forms-xaml.md) |  **XXX** | **XXX** |
-| Navigation Tools |  **XXX** | **XXX** |
-| Xaml Refactoring |  **XXX** | **XXX** |
+| [Xaml Analysis](/code-analysis/xaml.md) |  **XXX** | **XXX** |
+| [Navigation Tools](/xamarin-forms/navigation.md) |  **XXX** | **XXX** |
+| [Xaml Refactoring](/code-actions/xaml/refactor.md) |  **XXX** | **XXX** |
 | Xaml To C# Code Generation |  **XXX** | **XXX** |
 | Xamarin.Forms C# Refactorings |   | **XXX** |
 | Xamarin.Forms C# Code Diagnostics |   | **XXX** |
@@ -42,6 +42,8 @@ Premium licenses:
  * Are issued against a single developer.
  * Can be used on up to 3 separate machines for a single developer.
  * Expired 366 days after being issued.
+ * Include 1 year of maintenance for premium features.
+ * Include priority for feature requests and bug fixes.
 
 To enquire about purchasing an MFractor Premium license, please email **matthew.ch.robbins@gmail.com**.
 
@@ -49,7 +51,7 @@ If you are a business who would like to purchase 5 or more licenses, contact me 
 
 ## Renewing A Premium License
 
-When your license is about to expire, you can purchase an updated lic
+When your license is about to expire, you can purchase a new license
 
 ## Refund Policy
 
@@ -61,4 +63,3 @@ Each purchase of MFractor comes with a 30 day refund period;If you would like a 
  2. An individual developer can activate MFractor Premium on up-to 3 separate machines.
  3. MFractor Premium licenses expire after 366 days.
  4. If an MFractor Premium license is not renewed, MFractor will automatically downgrade to the free license tier.
- 5. An MFractor p

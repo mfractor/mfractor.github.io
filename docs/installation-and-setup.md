@@ -1,35 +1,24 @@
 
 ##Installation And Setup
 
-*Installing, activating and updating MFractor*
-
-##Introduction
-
-This document covers how to install, activate, update and uninstall MFractor for Visual Studio Mac.
+*Installing, activating and updating MFractor for Visual Studio Mac*
 
 ## Install Using The Installer Script
 
 
+## Install Using MFractor.Installer Extension
 
-## Get MFractor
+We can also install install MFractor into Visual Studio Mac by using the MFractor.Installer helper extension.
 
-The latest version of MFractor for Visual Studio Mac can be downloaded from the addin server, [addins.mfractor.com/MFractor.mpack](http://addins.mfractor.com/MFractor.mpack).
+This extension lives inside the Extension Manager in Visual Studio Mac, under **Gallery** -> **IDE extensions**.
 
-If you'd like an older version of MFractor, these can be found under our old release archives. Simply navigate to [addins.mfractor.com/releases](http://addins.mfractor.com/releases), open the folder for the version you'd like and download the .mpack file.
+Open up Visual Studio Mac and click on the **Visual Studio** menu and then **Extensions...**
 
-##Install Using MFractor.Installer Addin
+![Extension manager location](img/setup/addin-manager-menu.png)
 
-We can also install install MFractor into Visual Studio Mac by using the MFractor.Installer helper addin.
+Once the Extension Manager opens, click **Gallery** and under **IDE extensions** locate **MFractor.Installer**. If this isn't present, hit the **Refresh** button to update the Gallery listings.
 
-This addin lives inside the Addin Manager in Visual Studio Mac, under **Gallery** -> **IDE extensions**.
-
-Open up Visual Studio Mac and click on the **Visual Studio Mac** menu and then **Addins...**
-
-![addin manager location](img/setup/addin-manager-menu.png)
-
-Once the Addin Manager opens, click **Gallery** and under **IDE extensions** locate **MFractor.Installer**. If this isn't present, hit the **Refresh** button to update the Gallery listings.
-
-![addin manager location](img/setup/mfractor-installer-location.png)
+![Extension Manager location](img/setup/mfractor-installer-location.png)
 
 Once you've located **MFractor.Installer**, left click on it to select it. In the right hand detail view, click **Install**. Visual Studio Mac will prompt you for confirmation, click **Install**
 
@@ -41,19 +30,19 @@ You will then see a download dialog appear and MFractor will download and instal
 
 ## Install MFractor Manually
 
-MFractor can be installed directly through the addin manager's **Install from file** button.
+MFractor can be installed directly through the Extension Manager's **Install from file** button.
 
 Firstly, download the latest version of MFractor for Visual Studio Mac at [addins.mfractor.com/MFractor.mpack](addins.mfractor.com/MFractor.mpack)
 
-Open up Visual Studio Mac and click on the **Visual Studio Mac** menu and then **Addins...**
+Open up Visual Studio Mac and click on the **Visual Studio** menu and then **Extensions...**
 
-![addin manager location](img/setup/addin-manager-menu.png)
+![Extension Manager location](img/setup/addin-manager-menu.png)
 
-Within the Addin Manager, click the **Install from file** button in the bottom left of the Addin Manager.
+Within the Extension Manager, click the **Install from file** button in the bottom left of the Extension Manager.
 
 Browse to **MFractor.mpack** and then select **Open**:
 
-![How to install MFractor](/img/setup/install-mfractor.gif)
+![MFractor](/img/setup/install-mfractor.gif)
 
 ## Activating MFractor Free
 
@@ -61,7 +50,7 @@ MFractor comes in both a free and a paid version. The free version of MFractor
 
 To use MFractor, you need activate it using your email address; this will enable the free version of MFractor only. To
 
-First things first, **close the Addin Manager**. There is a known bug that blocks the email entry field from receiving keyboard when the Addin Manager is open. It's a pain and we are working on fixing this.
+First things first, **close the Extension Manager**. There is a known bug that blocks the email entry field from receiving keyboard when the Extension Manager is open. It's a pain and we are working on fixing this.
 
 To activate MFractor, enter you email and then click **Activate**.
 
@@ -89,6 +78,8 @@ Next, click on the **Import License** button, browse to where our license is loc
 
 Voila, you now have a valid active MFractor Premium installation.
 
+**It is safe to delete the license file from it's original location. MFractor stores the license inside itself.**
+
 ![MFractor Premium License Information](/img/licensing/valid-license.png)
 
 The licensing window will list:
@@ -109,7 +100,7 @@ After removing a license, you will be automatically downgraded to a free MFracto
 
 ## Updating MFractor
 
-When MFractor installs into Visual Studio Mac, it'll register itself into Visual Studio Macs addin updater.
+When MFractor installs into Visual Studio Mac, it'll register itself into Visual Studio Macs extension updater.
 
 This means that Visual Studio Mac will automatically prompt you that an update is available.
 
@@ -117,16 +108,16 @@ However, you can check for update at any time by opening the **Visual Studio Mac
 
 ![update mfractor](img/setup/update-mfractor.png)
 
-Visual Studio Mac will check the MFractor addin server for updates and prompt you to update if there is a new version!
+Visual Studio Mac will check the MFractor extension server for updates and prompt you to update if there is a new version!
 
 ##Uninstalling MFractor
 
-You can uninstall MFractor through the addin manager at any time.
+You can uninstall MFractor through the Extension Manager at any time.
 
 Select the **Visual Studio Mac** main menu and then **Addins**
 
-Under **Gallery** then **IDE extensions** select the MFractor addin list item and then click **Uninstall**
+Under **Gallery** then **IDE extensions** select the MFractor extension list item and then click **Uninstall**
 
-You will be prompted to uninstall the addin, confirm uninstallation by clicking **Uninstall**
+You will be prompted to uninstall the extension, confirm uninstallation by clicking **Uninstall**
 
 ![uninstall mfractor ](img/setup/uninstall-mfractor.png)
