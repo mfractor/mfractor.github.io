@@ -9,7 +9,7 @@
   <meta name="author" content="Matthew Robbins">
   <link rel="shortcut icon" href="../../../img/favicon.ico">
   
-  <title>Refactoring - mfractor docs</title>
+  <title>Xaml Organisation - mfractor docs</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="../../../css/theme.css" type="text/css" />
@@ -23,9 +23,9 @@
   
   <script>
     // Current page data
-    var mkdocs_page_name = "Refactoring";
-    var mkdocs_page_input_path = "code-actions/xamarin-forms-xaml/refactor.md";
-    var mkdocs_page_url = "/code-actions/xamarin-forms-xaml/refactor/";
+    var mkdocs_page_name = "Xaml Organisation";
+    var mkdocs_page_input_path = "code-actions/xaml/organise.md";
+    var mkdocs_page_url = "/code-actions/xaml/organise/";
   </script>
   
   <script src="../../../js/jquery-2.1.1.min.js"></script>
@@ -82,7 +82,7 @@
   
   
 <li class="toctree-l1 ">
-  <a class="" href="../../../activate-mfractor-premium/">Activating MFractor Premium</a>
+  <a class="" href="../../../mfractor-premium/">About MFractor Premium</a>
   
 </li>
 
@@ -103,14 +103,7 @@
   
   
 <li class="toctree-l1 ">
-  <a class="" href="../../../xamarin-forms-quickstart/">Xamarin.Forms Quickstart</a>
-  
-</li>
-
-  
-  
-<li class="toctree-l1 ">
-  <a class="" href="../../../xamarin-android-quickstart/">Xamarin.Android Quickstart</a>
+  <a class="" href="../../../annotations/">Using MFractor.Annotations</a>
   
 </li>
 
@@ -166,21 +159,7 @@
   
   
 <li class="toctree-l1 ">
-  <a class="" href="../../../xamarin-android/resource-navigation/">Resource Navigation</a>
-  
-</li>
-
-  
-  
-<li class="toctree-l1 ">
-  <a class="" href="../../../xamarin-android/analysis/">Analysis</a>
-  
-</li>
-
-  
-  
-<li class="toctree-l1 ">
-  <a class="" href="../../../xamarin-android/dotnet-code-analysis/">.NET Code Analysis</a>
+  <a class="" href="../../../xamarin-android/navigation-tools/">Navigation Tools</a>
   
 </li>
 
@@ -239,29 +218,45 @@
 
   
   
-<li class="toctree-l1 ">
-  <a class="" href="../organise/">Xaml Organisation</a>
-  
-</li>
-
-  
-  
 <li class="toctree-l1 current">
-  <a class="current" href="./">Refactoring</a>
+  <a class="current" href="./">Xaml Organisation</a>
   
   <ul>
     
       
     
       
-      <li class="toctree-l3"><a href="#rename-xaml-namespace">Rename Xaml Namespace</a></li>
+      <li class="toctree-l3"><a href="#expand-attributes-onto-separate-lines">Expand Attributes Onto Separate Lines</a></li>
       
     
       
-      <li class="toctree-l3"><a href="#edit-color-declaration">Edit Color Declaration</a></li>
+      <li class="toctree-l3"><a href="#sort-xaml-attributes">Sort Xaml Attributes</a></li>
+      
+    
+      
+      <li class="toctree-l3"><a href="#format-xaml-document">Format Xaml Document</a></li>
+      
+    
+      
+      <li class="toctree-l3"><a href="#collapse-node">Collapse Node</a></li>
+      
+    
+      
+      <li class="toctree-l3"><a href="#expand-node">Expand Node</a></li>
+      
+    
+      
+      <li class="toctree-l3"><a href="#remove-unused-namespaces">Remove Unused Namespaces</a></li>
       
     
   </ul>
+  
+</li>
+
+  
+  
+<li class="toctree-l1 ">
+  <a class="" href="../refactor/">Refactoring</a>
   
 </li>
 
@@ -278,6 +273,13 @@
   
   
 <li class="toctree-l1 ">
+  <a class="" href="../../../code-analysis/android-csharp/">Android C# Analysis</a>
+  
+</li>
+
+  
+  
+<li class="toctree-l1 ">
   <a class="" href="../../../code-analysis/android-resources/">Android Resource Analysis</a>
   
 </li>
@@ -285,7 +287,7 @@
   
   
 <li class="toctree-l1 ">
-  <a class="" href="../../../code-analysis/xamarin-forms-xaml/">Xamarin.Forms Xaml Analysis</a>
+  <a class="" href="../../../code-analysis/xaml/">Xamarin.Forms Xaml Analysis</a>
   
 </li>
 
@@ -372,44 +374,73 @@
         
       
     
-    <li>Refactoring</li>
+    <li>Xaml Organisation</li>
   </ul>
   <hr/>
 </div>
           <div role="main">
             <div class="section">
               
-                <h2 id="extract-attribute-value-into-property-binding">Extract Attribute Value Into Property Binding</h2>
-<p><em>Configuration Id: com.mfractor.code_actions.forms.extract_into_property_binding</em></p>
-<p>When a Xaml attribute is initialised by a literal value (rather than an expression), this refactoring action allows a developer to extract that literal value as a property into the binding context and replace the attribute initialiser with a binding expression.</p>
-<p>For example, given the attribute initialiser <code>Text=\"Hello Xamarin.Forms!\"</code>, this refactoring would generate a user named property (EG: Message) in the binding context, initiliase it with the string literal <code>\"Message\"</code> and replace the attribute value with the binding expresion <code>{Binding Message}</code>.";</p>
-<p><img alt="Extract value into property binding" src="../../../img/code-actions/forms/extract-property-binding.gif" /></p>
+                <h2 id="collapse-attributes-onto-same-line">Collapse Attributes Onto Same Line</h2>
+<p><strong>Configuration Id: com.mfractor.code_actions.forms.collapse_attributes_onto_same_line</strong></p>
+<p>This code action collapses all the attributes for a Xaml node onto the same line as the nodes name declaration.</p>
+<h2 id="expand-attributes-onto-separate-lines">Expand Attributes Onto Separate Lines</h2>
+<p><strong>Configuration Id: com.mfractor.code_actions.forms.expand_attributes_onto_new_lines</strong></p>
+<p>This code action expands all the attributes for a Xaml node onto a separate line for each attribute.</p>
+<p>For example, gi</p>
+<h2 id="sort-xaml-attributes">Sort Xaml Attributes</h2>
+<p><strong>Configuration Id: com.mfractor.code_actions.forms.sort_attributes</strong></p>
+<p>This code action sorts the attributes for a Xaml node and regenerates the xaml node based on the IDE's xml formatting policy.
+MFractor uses the following rules when sorting:</p>
+<ul>
+<li>Attributes that declare an xml namespace are ordered first, sorted alphabetically ascending. For example <code>xmlns:forms="http://xamarin.com/schemas/2014/forms"</code> will appear before <code>xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"</code>.</li>
+<li>Attributes that belong to the Microsoft Xaml schema <code>http://schemas.microsoft.com/winfx/2009/xaml</code> are ordered next. For example, the <code>x:Class</code> or <code>x:Name</code> declaration.</li>
+<li>Attributes belonging to the default namespace are ordered next, sorted alphabetically ascending.</li>
+<li>Attributes belonging to the other namespaces are then ordered next, sorted by namespace ascending and then by attribute name ascending.</li>
+</ul>
 <h3 id="uses">Uses:</h3>
 <ul>
-<li><a href="../../../code-generation/csharp/#generate-instance-property">Generate Instance Property</a></li>
+<li><a href="../../../code-generation/xaml/#sort-xaml-attributes">Sort Xaml Attributes</a></li>
 </ul>
-<h2 id="rename-xaml-namespace">Rename Xaml Namespace</h2>
-<p><em>Configuration Id: com.mfractor.code_actions.forms.rename_xaml_namespace</em></p>
-<p>The <strong>Rename Xaml Namespace</strong> code action will perform a symbolic rename-refactor on a particular Xaml within your document.</p>
-<p>This is handy as you can then rename namespaces in a document without using a Find+Replace action; the rename xaml namespace action works against symbols so it will always rename only the namespace symbols.</p>
-<p>To action this refactoring:</p>
-<ul>
-<li>Within a Xaml document right click or <code>Alt+Return</code> on an <code>xmlns</code> attribute (EG: <code>xmlns:local="clr-namespace:myApp"</code>)</li>
-<li>Select <strong>Refactor</strong>.</li>
-<li>Then <strong>Rename Namespace</strong>.</li>
-<li>Enter a new namespace name when prompted and then click enter.</li>
-</ul>
-<p>Your new namespace will be applied across the document:</p>
-<p><img alt="Renaming a Xamarin.Forms Xaml namespace" src="../../../img/code-actions/forms/rename-xaml-namespace.gif" /></p>
+<h2 id="format-xaml-document">Format Xaml Document</h2>
+<p><strong>Configuration Id: com.mfractor.code_actions.forms.format_document</strong></p>
+<p>Applies the xml formatting policy to the entire document. It will correctly indent nodes, sort attributes, align attributes under the parent node.</p>
 <h3 id="uses_1">Uses:</h3>
 <ul>
-<li><a href="../../../code-generation/xaml/#rename-xaml-namespace-generator">Rename Xaml Namespace Generator</a></li>
+<li><a href="../../../code-generation/xaml/#sort-xaml-attributes">Sort Xaml Attributes</a></li>
 </ul>
-<h2 id="edit-color-declaration">Edit Color Declaration</h2>
-<p><em>Configuration Id: com.mfractor.code_actions.forms.edit_inline_color</em></p>
-<p>The <strong>Edit Color Declaration</strong> code actions allows visual editing of colors from your Xaml.</p>
-<p>Simply right click on a Xaml node that is a <code>System.Drawing.Color</code> or <code>Xamarin.Forms.Color</code> and select <strong>Edit Color</strong>. Then you can use the color picker dialog to select a new color value:</p>
-<p><img alt="Edit colour refactoring action" src="../../../img/code-actions/forms/edit-color.gif" /></p>
+<h2 id="collapse-node">Collapse Node</h2>
+<p><strong>Configuration Id: com.mfractor.code_actions.forms.collapse_node_closing_tag</strong></p>
+<p>When a Xaml node has a closing tag and no children (eg: <code>&lt;MyNode&gt; &lt;/MyNode&gt;</code>), this refactoring allows the developer to remove the closing tag to make the node self-closing. For example, when applied to the node <code>&lt;MyNode&gt; ... &lt;/MyNode&gt;</code>, the closing tag <code>&lt;/MyNode&gt;</code> is removed and the element becomes self closing like so: <code>&lt;MyNode/&gt;</code>.</p>
+<h2 id="expand-node">Expand Node</h2>
+<p><strong>Configuration Id: com.mfractor.code_actions.forms.expand_node_with_closing_tag</strong></p>
+<p>When a Xaml node is self-closing (EG <code>&lt;MyNode/&gt;</code>), this organise refactoring allows a developer to generate a closing tag for the node. For example, the node <code>&lt;MyNode/&gt;</code> would become <code>&lt;MyNode&gt; ... &lt;/MyNode&gt;</code> after applying this refactoring.</p>
+<h2 id="remove-unused-namespaces">Remove Unused Namespaces</h2>
+<p><strong>Configuration Id: com.mfractor.code_actions.forms.remove_unused_namespaces</strong></p>
+<p>When a xaml node has unused xml namespace declarations, this code action will remove all unused namespaces.</p>
+<h3 id="configurable-properties">Configurable Properties</h3>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Defaults To</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>ShouldSort</strong></td>
+<td>System.Boolean</td>
+<td><code>True</code></td>
+<td>If the attributes for this node should be sorted when the unused namespaces are removed</td>
+</tr>
+</tbody>
+</table>
+<h3 id="uses_2">Uses:</h3>
+<ul>
+<li><a href="../../../code-generation/xaml/#sort-xaml-attributes">Sort Xaml Attributes</a></li>
+</ul>
               
             </div>
           </div>
@@ -417,10 +448,10 @@
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="../../../code-analysis/android-resources/" class="btn btn-neutral float-right" title="Android Resource Analysis">Next <span class="icon icon-circle-arrow-right"></span></a>
+        <a href="../refactor/" class="btn btn-neutral float-right" title="Refactoring">Next <span class="icon icon-circle-arrow-right"></span></a>
       
       
-        <a href="../organise/" class="btn btn-neutral" title="Xaml Organisation"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../generate/" class="btn btn-neutral" title="Code Generation"><span class="icon icon-circle-arrow-left"></span> Previous</a>
       
     </div>
   
@@ -451,10 +482,10 @@
           <a href="https://github.com/mfractor/mfractor.github.io" class="icon icon-github" style="float: left; color: #fcfcfc"> GitHub</a>
       
       
-        <span><a href="../organise/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+        <span><a href="../generate/" style="color: #fcfcfc;">&laquo; Previous</a></span>
       
       
-        <span style="margin-left: 15px"><a href="../../../code-analysis/android-resources/" style="color: #fcfcfc">Next &raquo;</a></span>
+        <span style="margin-left: 15px"><a href="../refactor/" style="color: #fcfcfc">Next &raquo;</a></span>
       
     </span>
 </div>

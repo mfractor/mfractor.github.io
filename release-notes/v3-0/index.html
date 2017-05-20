@@ -82,7 +82,7 @@
   
   
 <li class="toctree-l1 ">
-  <a class="" href="../../activate-mfractor-premium/">Activating MFractor Premium</a>
+  <a class="" href="../../mfractor-premium/">About MFractor Premium</a>
   
 </li>
 
@@ -103,14 +103,7 @@
   
   
 <li class="toctree-l1 ">
-  <a class="" href="../../xamarin-forms-quickstart/">Xamarin.Forms Quickstart</a>
-  
-</li>
-
-  
-  
-<li class="toctree-l1 ">
-  <a class="" href="../../xamarin-android-quickstart/">Xamarin.Android Quickstart</a>
+  <a class="" href="../../annotations/">Using MFractor.Annotations</a>
   
 </li>
 
@@ -166,21 +159,7 @@
   
   
 <li class="toctree-l1 ">
-  <a class="" href="../../xamarin-android/resource-navigation/">Resource Navigation</a>
-  
-</li>
-
-  
-  
-<li class="toctree-l1 ">
-  <a class="" href="../../xamarin-android/analysis/">Analysis</a>
-  
-</li>
-
-  
-  
-<li class="toctree-l1 ">
-  <a class="" href="../../xamarin-android/dotnet-code-analysis/">.NET Code Analysis</a>
+  <a class="" href="../../xamarin-android/navigation-tools/">Navigation Tools</a>
   
 </li>
 
@@ -226,28 +205,28 @@
   
   
 <li class="toctree-l1 ">
-  <a class="" href="../../code-actions/xamarin-forms-xaml/fix/">Issue Fixing</a>
+  <a class="" href="../../code-actions/xaml/fix/">Issue Fixing</a>
   
 </li>
 
   
   
 <li class="toctree-l1 ">
-  <a class="" href="../../code-actions/xamarin-forms-xaml/generate/">Code Generation</a>
+  <a class="" href="../../code-actions/xaml/generate/">Code Generation</a>
   
 </li>
 
   
   
 <li class="toctree-l1 ">
-  <a class="" href="../../code-actions/xamarin-forms-xaml/organise/">Xaml Organisation</a>
+  <a class="" href="../../code-actions/xaml/organise/">Xaml Organisation</a>
   
 </li>
 
   
   
 <li class="toctree-l1 ">
-  <a class="" href="../../code-actions/xamarin-forms-xaml/refactor/">Refactoring</a>
+  <a class="" href="../../code-actions/xaml/refactor/">Refactoring</a>
   
 </li>
 
@@ -264,6 +243,13 @@
   
   
 <li class="toctree-l1 ">
+  <a class="" href="../../code-analysis/android-csharp/">Android C# Analysis</a>
+  
+</li>
+
+  
+  
+<li class="toctree-l1 ">
   <a class="" href="../../code-analysis/android-resources/">Android Resource Analysis</a>
   
 </li>
@@ -271,7 +257,7 @@
   
   
 <li class="toctree-l1 ">
-  <a class="" href="../../code-analysis/xamarin-forms-xaml/">Xamarin.Forms Xaml Analysis</a>
+  <a class="" href="../../code-analysis/xaml/">Xamarin.Forms Xaml Analysis</a>
   
 </li>
 
@@ -383,58 +369,17 @@
           <div role="main">
             <div class="section">
               
-                <h2 id="release-notes-v2110">Release Notes - v2.11.0</h2>
+                <h2 id="release-notes-v300">Release Notes - v3.0.0</h2>
 <p><strong>1st June 2017</strong></p>
-<p><strong><a href="http://addins.mfractor.com/releases/2.11.00/MFractor.MFractor_2.11.00.mpack">Download MFractor 2.11.0</a></strong></p>
+<p><strong><a href="http://addins.mfractor.com/releases/3.00.00/MFractor.MFractor_3.00.00.mpack">Download MFractor 3.0.0</a></strong></p>
 <h2 id="introduction">Introduction</h2>
-<p>This is a summary of the changes introduced in v2.11.0 of MFractor for Xamarin Studio.</p>
-<p>This release introduces the ability to control MFractor through configuration files; this enables developers to change MFractor's behaviour when refactoring, analysing and generating code.</p>
-<p>The configuration engine allows you to customise the internals of MFractor to generate code specific to your project. Initially we are limiting the amount of options that are exposed but over time we will drastically increase the flexibility of MFractors code generation engine.</p>
-<p>How does it work? Let's consider the following configuration file:</p>
-<p><strong>config.mfc.xml</strong></p>
-<pre><code>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; ?&gt;
-&lt;mfractor&gt;
-    &lt;configure id=&quot;com.mfractor.code_gen.forms.csharp.instance_property&quot;&gt;
-        &lt;property name=&quot;CodeSnippet&quot; value=&quot;Snippets/property.txt&quot;/&gt;
-    &lt;/configure&gt;
-        &lt;configure id=&quot;com.mfractor.code_gen.forms.csharp.instance_property_with_backing_fields&quot;&gt;
-            &lt;property name=&quot;CodeSnippet&quot;&gt;
-            private %type% _%name%;
-            public %type% %name% {
-                get { return _%name%; }
-                set {
-                    _%name% = value;
-                    NotifyChanged(nameof(%name%));
-                }
-            }&lt;/property&gt;
-        &lt;/configure&gt;
-    &lt;configure id=&quot;com.mfractor.code_action.forms.implement_view_model&quot;&gt;
-            &lt;property name=&quot;BaseClass&quot; value=&quot;MyNamespace.ViewModels.ViewModelBase&quot;/&gt;
-    &lt;/configure&gt;
-&lt;/mfractor&gt;
-</code></pre>
-
-<p>MFractor configuration files are xml based and end with the extension <code>.mfc</code> or <code>.mfc.xml</code> (add <code>.xml</code> if you'd like the IDEs default IntelliSense and xml highlighting). Conceptually, MFractor has <em>Configurables</em>, extensible components within MFractor itself that expose properties that can be edited by a configuration file.</p>
-<p>Let's examine each of the each element in the above configuration in depth:</p>
-<ul>
-<li>We open a configuration file with the <code>&lt;mfractor&gt;</code> tag; this is just ceremony to denote to MFractor this is it's config file.</li>
-<li>We <strong>target</strong> a configurable by using the <code>&lt;configure&gt;</code> element:<ul>
-<li>The <code>id</code> attribute specifies the unique identifier of the configurable we wish to modify. This could be a code action, a code generator or an analysis routine.</li>
-</ul>
-</li>
-<li>We <strong>modify</strong> a property using the <code>&lt;property&gt;</code> element:<ul>
-<li>The <code>name</code> attribute specifies the configurable property we wish to edit.</li>
-<li>The <code>value</code> attribute specifies the value we wish to set the property to.</li>
-<li>We <strong>group</strong> configurations within the <code>&lt;collection name="CollectionName"&gt;</code> element. These groups</li>
-</ul>
-</li>
-</ul>
-<p>Some configurables expose lots of properties, some expose none. If you want the behaviour for a code action or code generator to be customisable, please get in touch. It's trivial to expose new configuration settings so just ask! :)</p>
-<p>You might notice that the structure of docs.mfractor.com has drastically changed. This new site structure enables you to easily explore the code actions, analysis and code generation exposed by MFractor; they are logically grouped in the same way the configuration engine groups elements. We now include the configuration identifier for <strong>all</strong> code actions, code generators and analysers and list the configurable properties for each element in MFractor.</p>
-<p>A full tutorial on the configuration engine can be found in the <strong>Customisation and Configuration</strong> page.</p>
+<p>This is a summary of the changes introduced in v3.0.0 of MFractor for Visual Studio Mac.</p>
+<p><strong>This release supports Visual Studio for Mac.</strong></p>
+<p>This release adds the ability to control MFractor through configuration files; this enables developers to change MFractor's behavior when refactoring, analyzing and generating code.</p>
 <h2 id="features">Features</h2>
 <ul>
-<li>The new config file system enables customisation the code generated by MFractor. Create a new file with the extension <code>.mfc</code> or <code>.mfc.xml</code> in your project and influence MFractor's internals using the <code>&lt;configure id="com.mfractor.XXX"/&gt;</code> and <code>&lt;property name="Name" value="Value"/&gt;</code> syntax. A full tutorial on configuration is available here. (TODO: Add tutorial on configuration files)</li>
+<li><a href="https://www.mfractor.com/blogs/news/introducing-mfractor-for-visual-studio-mac">Visual Studio For Mac Support!</a></li>
+<li><strong>Premium Only</strong> The new config file system enables customization the code generated by MFractor. Create a new file with the extension <code>.mfc</code> or <code>.mfc.xml</code> in your project and influence MFractor's internals using the <code>&lt;configure id="com.mfractor.XXX"/&gt;</code> and <code>&lt;property name="Name" value="Value"/&gt;</code> syntax. A full tutorial on configuration is [available here].</li>
 <li><strong>New Code Analysers</strong><ul>
 <li>Detect when a <code>ContentView</code> has multiple child elements.</li>
 <li>Detect when a <code>ContentPage</code> has multiple child elements.</li>
@@ -446,9 +391,6 @@
 <li>When on a <code>&lt;Grid.ColumnDefinitions&gt;</code> element, the new code generator <strong>Add ColumnDefinition</strong> will insert a new column definition element.</li>
 </ul>
 </li>
-<li><strong>New Refactorings</strong>
-        - When you have multiple xaml elements highlighted as a selection, use the <strong>Encapsulate with Stack Layout</strong> refactoring to quickly group the elements inside the stack layout.
-        - When you have multiple xaml elements highlighted as a selection, use the <strong>Encapsulate with Grid</strong> refactoring to quickly group the elements inside a new grid.</li>
 <li><strong>New Code Organisation</strong><ul>
 <li>When the root xaml node has unused namespaces, activate <strong>Removed Unused Namespaces</strong> to cleanup all unused xaml namespaces.</li>
 </ul>
@@ -464,7 +406,7 @@
 </ul>
 <h2 id="enhancements">Enhancements</h2>
 <ul>
-<li>Android Layout analysis and IntelliSense has been disabled. It intefered with the stock Xamarin IntelliSense and regressed the UX. This will be revisited at a later date.</li>
+<li>Android Layout analysis and IntelliSense has been disabled. It interfered with the stock Xamarin IntelliSense and regressed the layout editors user experience. This will be revisited at a later date.</li>
 <li>Only show code fixes in the quick fix menu when it's activated over a code issue. This reduces noise and improves usability.</li>
 <li>In Xaml, color literals (EG: #AAA) are now underlined with the color value. This makes it easy to visually see the color at a glance.</li>
 <li>Press <code>Alt+Shift+1</code> to jump to the <strong>view model</strong> for a code behind or xaml view.</li>
@@ -476,11 +418,11 @@
 <h2 id="bug-fixes">Bug Fixes</h2>
 <ul>
 <li>Fixed: Passing <code>.</code> into a binding expression to reference the binding context would cause an analysis error. Using <code>.</code> will now correctly resolve to the binding context.</li>
+<li>Fixed: MFractor now detects when the <code>BindingContext</code> of a Xaml element is specified using a property setter node (<code>&lt;View.BindingContext&gt; &lt;vm:MyViewModel&gt; &lt;/View.BindingContext&gt;</code>).</li>
 <li>Fixed: Generate code files into shared projects when the source xaml is in a shared project.</li>
-<li>Fixed: Don't allow view model creation from the App.xaml</li>
+<li>Fixed: Don't allow view model creation from the App.xaml.</li>
 <li>Fixed: Don't check for x:Key attributes on <code>&lt;Style/&gt;</code> elements; no x:Key means the style is the implicit control style.</li>
 <li>Fixed: Detect .NET symbol references that are within attributes whose type is <code>System.Type</code> to include them in namespace refactoring and unused namespace detection.</li>
-<li>Fixed: Move <em>Implement View Model</em> to the root node to reduce code action noise.</li>
 </ul>
               
             </div>

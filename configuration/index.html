@@ -82,7 +82,7 @@
   
   
 <li class="toctree-l1 ">
-  <a class="" href="../activate-mfractor-premium/">Activating MFractor Premium</a>
+  <a class="" href="../mfractor-premium/">About MFractor Premium</a>
   
 </li>
 
@@ -115,11 +115,15 @@
       
     
       
-      <li class="toctree-l3"><a href="#configurable-properties">Configurable properties</a></li>
+      <li class="toctree-l3"><a href="#configurable-properties">Configurable Properties</a></li>
       
     
       
       <li class="toctree-l3"><a href="#configuration-dependencies">Configuration Dependencies</a></li>
+      
+    
+      
+      <li class="toctree-l3"><a href="#configuration-groups">Configuration Groups</a></li>
       
     
   </ul>
@@ -129,14 +133,7 @@
   
   
 <li class="toctree-l1 ">
-  <a class="" href="../xamarin-forms-quickstart/">Xamarin.Forms Quickstart</a>
-  
-</li>
-
-  
-  
-<li class="toctree-l1 ">
-  <a class="" href="../xamarin-android-quickstart/">Xamarin.Android Quickstart</a>
+  <a class="" href="../annotations/">Using MFractor.Annotations</a>
   
 </li>
 
@@ -192,21 +189,7 @@
   
   
 <li class="toctree-l1 ">
-  <a class="" href="../xamarin-android/resource-navigation/">Resource Navigation</a>
-  
-</li>
-
-  
-  
-<li class="toctree-l1 ">
-  <a class="" href="../xamarin-android/analysis/">Analysis</a>
-  
-</li>
-
-  
-  
-<li class="toctree-l1 ">
-  <a class="" href="../xamarin-android/dotnet-code-analysis/">.NET Code Analysis</a>
+  <a class="" href="../xamarin-android/navigation-tools/">Navigation Tools</a>
   
 </li>
 
@@ -252,28 +235,28 @@
   
   
 <li class="toctree-l1 ">
-  <a class="" href="../code-actions/xamarin-forms-xaml/fix/">Issue Fixing</a>
+  <a class="" href="../code-actions/xaml/fix/">Issue Fixing</a>
   
 </li>
 
   
   
 <li class="toctree-l1 ">
-  <a class="" href="../code-actions/xamarin-forms-xaml/generate/">Code Generation</a>
+  <a class="" href="../code-actions/xaml/generate/">Code Generation</a>
   
 </li>
 
   
   
 <li class="toctree-l1 ">
-  <a class="" href="../code-actions/xamarin-forms-xaml/organise/">Xaml Organisation</a>
+  <a class="" href="../code-actions/xaml/organise/">Xaml Organisation</a>
   
 </li>
 
   
   
 <li class="toctree-l1 ">
-  <a class="" href="../code-actions/xamarin-forms-xaml/refactor/">Refactoring</a>
+  <a class="" href="../code-actions/xaml/refactor/">Refactoring</a>
   
 </li>
 
@@ -290,6 +273,13 @@
   
   
 <li class="toctree-l1 ">
+  <a class="" href="../code-analysis/android-csharp/">Android C# Analysis</a>
+  
+</li>
+
+  
+  
+<li class="toctree-l1 ">
   <a class="" href="../code-analysis/android-resources/">Android Resource Analysis</a>
   
 </li>
@@ -297,7 +287,7 @@
   
   
 <li class="toctree-l1 ">
-  <a class="" href="../code-analysis/xamarin-forms-xaml/">Xamarin.Forms Xaml Analysis</a>
+  <a class="" href="../code-analysis/xaml/">Xamarin.Forms Xaml Analysis</a>
   
 </li>
 
@@ -388,9 +378,11 @@
             <div class="section">
               
                 <h2 id="configuring-mfractor">Configuring MFractor</h2>
-<p><em>Changing</em></p>
+<p><strong>Premium Only</strong></p>
+<p><em>Changing the behaviour of MFractor's code generation and code actions</em></p>
 <h2 id="introduction">Introduction</h2>
 <p>The configuration engine allows you to customise the internals of MFractor to generate code specific to your project. Initially the amount of options that are exposed will be limited but over time I will drastically increase the flexibility of MFractors code generation engine.</p>
+<p>If you have a</p>
 <h2 id="configuration-basics">Configuration Basics</h2>
 <p>How does it work? Let's consider the following configuration file:</p>
 <p><strong>config.mfc.xml</strong></p>
@@ -423,9 +415,11 @@
 <p>Some configurables expose lots of properties, some expose none. If you want the behaviour for a code action or code generator to be customisable, please get in touch. It's trivial to expose new configuration settings so just ask! :)</p>
 <p>You might notice that the structure of docs.mfractor.com has drastically changed. This new site structure enables you to easily explore the code actions, analysis and code generation exposed by MFractor; they are logically grouped in the same way the configuration engine groups elements. We now include the configuration identifier for <strong>all</strong> code actions, code generators and analysers and list the configurable properties for each element in MFractor.</p>
 <h2 id="configuration-identifiers">Configuration Identifiers</h2>
-<h2 id="configurable-properties">Configurable properties</h2>
+<p>Every element inside MFractor that can be configured has it's own unique <strong>configuration identifier</strong>. This a java-style, package based string that indicates the software, element type and element name inside the name.</p>
+<p>For example, the Xamarin.Forms <a href="../code-actions/xaml/generate/#implement-view-model">Implement View Model</a> code action has the configuration identifier <code>com.mfractor.code_actions.forms.implement_view_model</code>.</p>
+<h2 id="configurable-properties">Configurable Properties</h2>
 <h2 id="configuration-dependencies">Configuration Dependencies</h2>
-<p>L</p>
+<h2 id="configuration-groups">Configuration Groups</h2>
               
             </div>
           </div>
@@ -433,7 +427,7 @@
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="../xamarin-forms-quickstart/" class="btn btn-neutral float-right" title="Xamarin.Forms Quickstart">Next <span class="icon icon-circle-arrow-right"></span></a>
+        <a href="../annotations/" class="btn btn-neutral float-right" title="Using MFractor.Annotations">Next <span class="icon icon-circle-arrow-right"></span></a>
       
       
         <a href="../faq/" class="btn btn-neutral" title="FAQ"><span class="icon icon-circle-arrow-left"></span> Previous</a>
@@ -470,7 +464,7 @@
         <span><a href="../faq/" style="color: #fcfcfc;">&laquo; Previous</a></span>
       
       
-        <span style="margin-left: 15px"><a href="../xamarin-forms-quickstart/" style="color: #fcfcfc">Next &raquo;</a></span>
+        <span style="margin-left: 15px"><a href="../annotations/" style="color: #fcfcfc">Next &raquo;</a></span>
       
     </span>
 </div>

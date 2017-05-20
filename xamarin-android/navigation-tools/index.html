@@ -9,7 +9,7 @@
   <meta name="author" content="Matthew Robbins">
   <link rel="shortcut icon" href="../../img/favicon.ico">
   
-  <title>Resource Navigation - mfractor docs</title>
+  <title>Navigation Tools - mfractor docs</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="../../css/theme.css" type="text/css" />
@@ -23,9 +23,9 @@
   
   <script>
     // Current page data
-    var mkdocs_page_name = "Resource Navigation";
-    var mkdocs_page_input_path = "xamarin-android/resource-navigation.md";
-    var mkdocs_page_url = "/xamarin-android/resource-navigation/";
+    var mkdocs_page_name = "Navigation Tools";
+    var mkdocs_page_input_path = "xamarin-android/navigation-tools.md";
+    var mkdocs_page_url = "/xamarin-android/navigation-tools/";
   </script>
   
   <script src="../../js/jquery-2.1.1.min.js"></script>
@@ -82,7 +82,7 @@
   
   
 <li class="toctree-l1 ">
-  <a class="" href="../../activate-mfractor-premium/">Activating MFractor Premium</a>
+  <a class="" href="../../mfractor-premium/">About MFractor Premium</a>
   
 </li>
 
@@ -103,14 +103,7 @@
   
   
 <li class="toctree-l1 ">
-  <a class="" href="../../xamarin-forms-quickstart/">Xamarin.Forms Quickstart</a>
-  
-</li>
-
-  
-  
-<li class="toctree-l1 ">
-  <a class="" href="../../xamarin-android-quickstart/">Xamarin.Android Quickstart</a>
+  <a class="" href="../../annotations/">Using MFractor.Annotations</a>
   
 </li>
 
@@ -166,7 +159,7 @@
   
   
 <li class="toctree-l1 current">
-  <a class="current" href="./">Resource Navigation</a>
+  <a class="current" href="./">Navigation Tools</a>
   
   <ul>
     
@@ -184,21 +177,23 @@
       <li class="toctree-l3"><a href="#xml-resource-expressions">Xml Resource Expressions</a></li>
       
     
+      
+      <li class="toctree-l3"><a href="#go-to-resource-declaration">Go To Resource Declaration</a></li>
+      
+    
+      
+      <li class="toctree-l3"><a href="#find-all-resource-usages">Find All Resource Usages</a></li>
+      
+    
+      
+      <li class="toctree-l3"><a href="#resource-tooltips">Resource Tooltips</a></li>
+      
+    
+      
+      <li class="toctree-l3"><a href="#image-tooltips">Image Tooltips</a></li>
+      
+    
   </ul>
-  
-</li>
-
-  
-  
-<li class="toctree-l1 ">
-  <a class="" href="../analysis/">Analysis</a>
-  
-</li>
-
-  
-  
-<li class="toctree-l1 ">
-  <a class="" href="../dotnet-code-analysis/">.NET Code Analysis</a>
   
 </li>
 
@@ -244,28 +239,28 @@
   
   
 <li class="toctree-l1 ">
-  <a class="" href="../../code-actions/xamarin-forms-xaml/fix/">Issue Fixing</a>
+  <a class="" href="../../code-actions/xaml/fix/">Issue Fixing</a>
   
 </li>
 
   
   
 <li class="toctree-l1 ">
-  <a class="" href="../../code-actions/xamarin-forms-xaml/generate/">Code Generation</a>
+  <a class="" href="../../code-actions/xaml/generate/">Code Generation</a>
   
 </li>
 
   
   
 <li class="toctree-l1 ">
-  <a class="" href="../../code-actions/xamarin-forms-xaml/organise/">Xaml Organisation</a>
+  <a class="" href="../../code-actions/xaml/organise/">Xaml Organisation</a>
   
 </li>
 
   
   
 <li class="toctree-l1 ">
-  <a class="" href="../../code-actions/xamarin-forms-xaml/refactor/">Refactoring</a>
+  <a class="" href="../../code-actions/xaml/refactor/">Refactoring</a>
   
 </li>
 
@@ -282,6 +277,13 @@
   
   
 <li class="toctree-l1 ">
+  <a class="" href="../../code-analysis/android-csharp/">Android C# Analysis</a>
+  
+</li>
+
+  
+  
+<li class="toctree-l1 ">
   <a class="" href="../../code-analysis/android-resources/">Android Resource Analysis</a>
   
 </li>
@@ -289,7 +291,7 @@
   
   
 <li class="toctree-l1 ">
-  <a class="" href="../../code-analysis/xamarin-forms-xaml/">Xamarin.Forms Xaml Analysis</a>
+  <a class="" href="../../code-analysis/xaml/">Xamarin.Forms Xaml Analysis</a>
   
 </li>
 
@@ -372,7 +374,7 @@
         
       
     
-    <li>Resource Navigation</li>
+    <li>Navigation Tools</li>
   </ul>
   <hr/>
 </div>
@@ -426,8 +428,12 @@
 
 <p>Where:</p>
 <ul>
-<li>@[+] is the resource reference symbol.</li>
-<li>PackageName is an optional component that points to the package the resource is within.</li>
+<li>
+<p>@[+] is the resource reference symbol.</p>
+</li>
+<li>
+<p>PackageName is an optional component that points to the package the resource is within.</p>
+</li>
 <li>resourceType is the resource type.</li>
 <li>resourceName is the name of the resource.</li>
 </ul>
@@ -446,6 +452,10 @@
 <li>ResourceType is the optional resource type of the theme component. This is typically inferred.</li>
 <li>themeItemName the name of the theme item.</li>
 </ul>
+<h2 id="go-to-resource-declaration">Go To Resource Declaration</h2>
+<h2 id="find-all-resource-usages">Find All Resource Usages</h2>
+<h2 id="resource-tooltips">Resource Tooltips</h2>
+<h2 id="image-tooltips">Image Tooltips</h2>
               
             </div>
           </div>
@@ -453,7 +463,7 @@
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="../analysis/" class="btn btn-neutral float-right" title="Analysis">Next <span class="icon icon-circle-arrow-right"></span></a>
+        <a href="../resource-intellisense/" class="btn btn-neutral float-right" title="Resource IntelliSense">Next <span class="icon icon-circle-arrow-right"></span></a>
       
       
         <a href="../../xamarin-forms/value-converter-type-safety/" class="btn btn-neutral" title="Value Converter Type Safety"><span class="icon icon-circle-arrow-left"></span> Previous</a>
@@ -490,7 +500,7 @@
         <span><a href="../../xamarin-forms/value-converter-type-safety/" style="color: #fcfcfc;">&laquo; Previous</a></span>
       
       
-        <span style="margin-left: 15px"><a href="../analysis/" style="color: #fcfcfc">Next &raquo;</a></span>
+        <span style="margin-left: 15px"><a href="../resource-intellisense/" style="color: #fcfcfc">Next &raquo;</a></span>
       
     </span>
 </div>

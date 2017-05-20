@@ -24,8 +24,8 @@
   <script>
     // Current page data
     var mkdocs_page_name = "Code Generation";
-    var mkdocs_page_input_path = "code-actions/xamarin-forms-xaml/generate.md";
-    var mkdocs_page_url = "/code-actions/xamarin-forms-xaml/generate/";
+    var mkdocs_page_input_path = "code-actions/xaml/generate.md";
+    var mkdocs_page_url = "/code-actions/xaml/generate/";
   </script>
   
   <script src="../../../js/jquery-2.1.1.min.js"></script>
@@ -82,7 +82,7 @@
   
   
 <li class="toctree-l1 ">
-  <a class="" href="../../../activate-mfractor-premium/">Activating MFractor Premium</a>
+  <a class="" href="../../../mfractor-premium/">About MFractor Premium</a>
   
 </li>
 
@@ -103,14 +103,7 @@
   
   
 <li class="toctree-l1 ">
-  <a class="" href="../../../xamarin-forms-quickstart/">Xamarin.Forms Quickstart</a>
-  
-</li>
-
-  
-  
-<li class="toctree-l1 ">
-  <a class="" href="../../../xamarin-android-quickstart/">Xamarin.Android Quickstart</a>
+  <a class="" href="../../../annotations/">Using MFractor.Annotations</a>
   
 </li>
 
@@ -166,21 +159,7 @@
   
   
 <li class="toctree-l1 ">
-  <a class="" href="../../../xamarin-android/resource-navigation/">Resource Navigation</a>
-  
-</li>
-
-  
-  
-<li class="toctree-l1 ">
-  <a class="" href="../../../xamarin-android/analysis/">Analysis</a>
-  
-</li>
-
-  
-  
-<li class="toctree-l1 ">
-  <a class="" href="../../../xamarin-android/dotnet-code-analysis/">.NET Code Analysis</a>
+  <a class="" href="../../../xamarin-android/navigation-tools/">Navigation Tools</a>
   
 </li>
 
@@ -294,6 +273,13 @@
   
   
 <li class="toctree-l1 ">
+  <a class="" href="../../../code-analysis/android-csharp/">Android C# Analysis</a>
+  
+</li>
+
+  
+  
+<li class="toctree-l1 ">
   <a class="" href="../../../code-analysis/android-resources/">Android Resource Analysis</a>
   
 </li>
@@ -301,7 +287,7 @@
   
   
 <li class="toctree-l1 ">
-  <a class="" href="../../../code-analysis/xamarin-forms-xaml/">Xamarin.Forms Xaml Analysis</a>
+  <a class="" href="../../../code-analysis/xaml/">Xamarin.Forms Xaml Analysis</a>
   
 </li>
 
@@ -396,7 +382,7 @@
             <div class="section">
               
                 <h2 id="implement-missing-members">Implement Missing Members</h2>
-<p><em>Configuration Id: com.mfractor.code_actions.forms.implement_missing_members</em></p>
+<p><strong>Configuration Id: com.mfractor.code_actions.forms.implement_missing_members</strong></p>
 <p>When a control uses undefined members/properties in a Xaml view, this refactoring collects all missing properties, attempts to resolve their types and then generates them onto the control/class.</p>
 <p>The following <strong>must</strong> be satisfied for this refactoring to trigger:</p>
 <ul>
@@ -472,7 +458,7 @@ public class MyCustomSlider : Slider
 <li><a href="../../../code-generation/xamarin-forms/#generate-bindable-property">Generate Bindable Property</a></li>
 </ul>
 <h2 id="generate-grid-columndefinitions">Generate Grid ColumnDefinitions</h2>
-<p><em>Configuration Id: com.mfractor.code_actions.forms.generate_grid_column_definitions</em></p>
+<p><strong>Configuration Id: com.mfractor.code_actions.forms.generate_grid_column_definitions</strong></p>
 <p>This code generation action adds column definition setter to a Xamarin.Forms.Grid Xaml node with a single <code>&lt;ColumnDefinition Width=\"*\"/&gt;</code> element; this allows you to quickly setup a boilerplate grid.
 When this refactoring is used, the <code>&lt;Grid&gt;</code> node will have the following code injected:</p>
 <pre><code>&lt;Grid&gt;
@@ -487,7 +473,7 @@ When this refactoring is used, the <code>&lt;Grid&gt;</code> node will have the 
 <li><a href="../../../code-generation/xaml/#generate-grid-column-definition">Generate Grid Column Definition</a></li>
 </ul>
 <h2 id="generate-grid-rowdefinitions">Generate Grid RowDefinitions</h2>
-<p><em>Configuration Id: com.mfractor.code_actions.forms.generate_grid_row_definitions</em></p>
+<p><strong>Configuration Id: com.mfractor.code_actions.forms.generate_grid_row_definitions</strong></p>
 <p>This code generation action adds row definition setter to a Xamarin.Forms.Grid Xaml node with a single <code>&lt;RowDefinition Height="*"/&gt;</code> element; this allows you to quickly setup a boilerplate grid.</p>
 <p>When this refactoring is used, the <code>&lt;Grid&gt;</code> node will have the following code injected:</p>
 <pre><code>
@@ -508,24 +494,24 @@ When this refactoring is used, the <code>&lt;Grid&gt;</code> node will have the 
 <li><a href="../../../code-generation/xaml/#generate-grid-row-definition">Generate Grid Row Definition</a></li>
 </ul>
 <h2 id="generate-grid-column-definition">Generate Grid Column Definition</h2>
-<p><em>Configuration Id: com.mfractor.code_actions.forms.generate_column_definition</em></p>
+<p><strong>Configuration Id: com.mfractor.code_actions.forms.generate_column_definition</strong></p>
 <p>Adds a single <code>&lt;ColumnDefinition Width=\"*\"/&gt;</code> element to the <code>Grid.ColumnDefinitions</code> node.</p>
 <h3 id="uses_3">Uses:</h3>
 <ul>
 <li><a href="../../../code-generation/xaml/#generate-grid-column-definition">Generate Grid Column Definition</a></li>
 </ul>
 <h2 id="generate-grid-row-definition">Generate Grid Row Definition</h2>
-<p><em>Configuration Id: com.mfractor.code_actions.forms.generate_row_definition</em></p>
+<p><strong>Configuration Id: com.mfractor.code_actions.forms.generate_row_definition</strong></p>
 <p>Adds a single <code>&lt;RowDefinition Height=\"*\"/&gt;</code> element to the <code>Grid.RowDefinitions</code> node.</p>
 <h3 id="uses_4">Uses:</h3>
 <ul>
 <li><a href="../../../code-generation/xaml/#generate-grid-row-definition">Generate Grid Row Definition</a></li>
 </ul>
 <h2 id="generate-resource-dictionary">Generate Resource Dictionary</h2>
-<p><em>Configuration Id: com.mfractor.code_actions.forms.generate_resource_dictionary</em></p>
+<p><strong>Configuration Id: com.mfractor.code_actions.forms.generate_resource_dictionary</strong></p>
 <p>The <strong>Generate Resource Dictionary</strong> code action adds a <code>MyView.ResourceDictionary</code> property with a nested resource dictionary to any Xaml node that derives from <code>Xamarin.Forms.VisualElement</code> or is the root application class. Developers can quickly add a resource dictionary in just a few keystrokes; this is especially useful when you need to add a resource dictionary to the root xaml node on a control or page.</p>
 <h2 id="implement-view-model">Implement View Model</h2>
-<p><em>Configuration Id: com.mfractor.code_actions.forms.implement_view_model</em></p>
+<p><strong>Configuration Id: com.mfractor.code_actions.forms.implement_view_model</strong></p>
 <p>The <strong>Implement View Model</strong> code action detects when a xaml document has unimplemented bindings, gathers them all and then implements them in bulk into a new or existing view model.</p>
 <p>Consider the following Xaml code:</p>
 <p><strong>LoginPage.xaml</strong></p>

@@ -9,7 +9,7 @@
   <meta name="author" content="Matthew Robbins">
   <link rel="shortcut icon" href="../../img/favicon.ico">
   
-  <title>Analysis - mfractor docs</title>
+  <title>Android C# Analysis - mfractor docs</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="../../css/theme.css" type="text/css" />
@@ -23,9 +23,9 @@
   
   <script>
     // Current page data
-    var mkdocs_page_name = "Analysis";
-    var mkdocs_page_input_path = "xamarin-android/analysis.md";
-    var mkdocs_page_url = "/xamarin-android/analysis/";
+    var mkdocs_page_name = "Android C# Analysis";
+    var mkdocs_page_input_path = "code-analysis/android-csharp.md";
+    var mkdocs_page_url = "/code-analysis/android-csharp/";
   </script>
   
   <script src="../../js/jquery-2.1.1.min.js"></script>
@@ -82,7 +82,7 @@
   
   
 <li class="toctree-l1 ">
-  <a class="" href="../../activate-mfractor-premium/">Activating MFractor Premium</a>
+  <a class="" href="../../mfractor-premium/">About MFractor Premium</a>
   
 </li>
 
@@ -103,14 +103,7 @@
   
   
 <li class="toctree-l1 ">
-  <a class="" href="../../xamarin-forms-quickstart/">Xamarin.Forms Quickstart</a>
-  
-</li>
-
-  
-  
-<li class="toctree-l1 ">
-  <a class="" href="../../xamarin-android-quickstart/">Xamarin.Android Quickstart</a>
+  <a class="" href="../../annotations/">Using MFractor.Annotations</a>
   
 </li>
 
@@ -166,32 +159,14 @@
   
   
 <li class="toctree-l1 ">
-  <a class="" href="../resource-navigation/">Resource Navigation</a>
-  
-</li>
-
-  
-  
-<li class="toctree-l1 current">
-  <a class="current" href="./">Analysis</a>
-  
-  <ul>
-    
-  </ul>
+  <a class="" href="../../xamarin-android/navigation-tools/">Navigation Tools</a>
   
 </li>
 
   
   
 <li class="toctree-l1 ">
-  <a class="" href="../dotnet-code-analysis/">.NET Code Analysis</a>
-  
-</li>
-
-  
-  
-<li class="toctree-l1 ">
-  <a class="" href="../resource-intellisense/">Resource IntelliSense</a>
+  <a class="" href="../../xamarin-android/resource-intellisense/">Resource IntelliSense</a>
   
 </li>
 
@@ -230,28 +205,28 @@
   
   
 <li class="toctree-l1 ">
-  <a class="" href="../../code-actions/xamarin-forms-xaml/fix/">Issue Fixing</a>
+  <a class="" href="../../code-actions/xaml/fix/">Issue Fixing</a>
   
 </li>
 
   
   
 <li class="toctree-l1 ">
-  <a class="" href="../../code-actions/xamarin-forms-xaml/generate/">Code Generation</a>
+  <a class="" href="../../code-actions/xaml/generate/">Code Generation</a>
   
 </li>
 
   
   
 <li class="toctree-l1 ">
-  <a class="" href="../../code-actions/xamarin-forms-xaml/organise/">Xaml Organisation</a>
+  <a class="" href="../../code-actions/xaml/organise/">Xaml Organisation</a>
   
 </li>
 
   
   
 <li class="toctree-l1 ">
-  <a class="" href="../../code-actions/xamarin-forms-xaml/refactor/">Refactoring</a>
+  <a class="" href="../../code-actions/xaml/refactor/">Refactoring</a>
   
 </li>
 
@@ -267,15 +242,44 @@
   <li><span>Code Analysis</span></li>
   
   
-<li class="toctree-l1 ">
-  <a class="" href="../../code-analysis/android-resources/">Android Resource Analysis</a>
+<li class="toctree-l1 current">
+  <a class="current" href="./">Android C# Analysis</a>
+  
+  <ul>
+    
+      
+    
+      
+      <li class="toctree-l3"><a href="#check-views-exist-in-layout">Check Views Exist In Layout</a></li>
+      
+    
+      
+      <li class="toctree-l3"><a href="#validate-cheeseknife-attributes">Validate Cheeseknife Attributes</a></li>
+      
+    
+      
+      <li class="toctree-l3"><a href="#warn-of-static-context-references">Warn Of Static Context References</a></li>
+      
+    
+      
+      <li class="toctree-l3"><a href="#check-androidcontentresresources-usages">Check Android.Content.Res.Resources Usages</a></li>
+      
+    
+  </ul>
   
 </li>
 
   
   
 <li class="toctree-l1 ">
-  <a class="" href="../../code-analysis/xamarin-forms-xaml/">Xamarin.Forms Xaml Analysis</a>
+  <a class="" href="../android-resources/">Android Resource Analysis</a>
+  
+</li>
+
+  
+  
+<li class="toctree-l1 ">
+  <a class="" href="../xaml/">Xamarin.Forms Xaml Analysis</a>
   
 </li>
 
@@ -354,18 +358,37 @@
     
       
         
-          <li>Xamarin.Android &raquo;</li>
+          <li>Code Analysis &raquo;</li>
         
       
     
-    <li>Analysis</li>
+    <li>Android C# Analysis</li>
   </ul>
   <hr/>
 </div>
           <div role="main">
             <div class="section">
               
-                <p><strong>WORK IN PROGRESS</strong></p>
+                <h2 id="check-toast-maketext-has-show">Check Toast MakeText Has Show</h2>
+<p><strong>Premium Only</strong></p>
+<p><strong>Configuration Id: com.mfractor.analysis.android.validate_toast_usage</strong></p>
+<p>Sometimes when a Toast is created via MakeText, the Show method is accidently omitted. This analysis routine looks for invocations of Toast.MakeText() that don't then invoke the Show() method on the toast object in the same expression. If the MakeText() result is assigned into a variable or passed as a method argument then this check is skipped.</p>
+<h2 id="check-views-exist-in-layout">Check Views Exist In Layout</h2>
+<p><strong>Premium Only</strong></p>
+<p><strong>Configuration Id: com.mfractor.analysis.android.views_exist_in_layout</strong></p>
+<p>When using FindViewById() to retrieve views from a layout, sometimes a developer will attempt to retrieve a view that does not exist within the inflated layout. This analyser inspects a class for the MFractor.Annotations.Android.UsesLayoutAttribute annotation and then cross-checks that all FindViewById invocations provide a Resource.Id that exist within the targetted layout(s).</p>
+<h2 id="validate-cheeseknife-attributes">Validate Cheeseknife Attributes</h2>
+<p><strong>Premium Only</strong></p>
+<p><strong>Configuration Id: com.mfractor.analysis.android.validate_cheeseknife_attributes</strong></p>
+<p>This analyser inspect usages of attributes from the Cheeseknife view injection library; it validates that the Resource.Id.* exists in the layout provided into an MFractor.Annotations UsesLayout attribute.</p>
+<h2 id="warn-of-static-context-references">Warn Of Static Context References</h2>
+<p><strong>Premium Only</strong></p>
+<p><strong>Configuration Id: com.mfractor.analysis.android.detect_static_context_reference</strong></p>
+<p>This analyser inspects static variable declarations within classes and checks if the type derives from Android.Content.Context. Static context references have the potential to cause large memory leaks.</p>
+<h2 id="check-androidcontentresresources-usages">Check Android.Content.Res.Resources Usages</h2>
+<p><strong>Premium Only</strong></p>
+<p><strong>Configuration Id: com.mfractor.analysis.android.verify_resource_class_usage</strong></p>
+<p>When using the Android.Content.Res.Resources class, all Get* expressions expect the correct resource type identifier. For example, when using Resource.GetString(), a resource identifier of Resources.String.myString is expected. Passing any other resource identifier such as Resource.Color.myColor may result in unintended data being used or runtime exceptions. This code analyser validates that the correct resource type is being provided to the API call.</p>
               
             </div>
           </div>
@@ -373,10 +396,10 @@
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="../dotnet-code-analysis/" class="btn btn-neutral float-right" title=".NET Code Analysis">Next <span class="icon icon-circle-arrow-right"></span></a>
+        <a href="../android-resources/" class="btn btn-neutral float-right" title="Android Resource Analysis">Next <span class="icon icon-circle-arrow-right"></span></a>
       
       
-        <a href="../resource-navigation/" class="btn btn-neutral" title="Resource Navigation"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../../code-actions/xaml/refactor/" class="btn btn-neutral" title="Refactoring"><span class="icon icon-circle-arrow-left"></span> Previous</a>
       
     </div>
   
@@ -407,10 +430,10 @@
           <a href="https://github.com/mfractor/mfractor.github.io" class="icon icon-github" style="float: left; color: #fcfcfc"> GitHub</a>
       
       
-        <span><a href="../resource-navigation/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+        <span><a href="../../code-actions/xaml/refactor/" style="color: #fcfcfc;">&laquo; Previous</a></span>
       
       
-        <span style="margin-left: 15px"><a href="../dotnet-code-analysis/" style="color: #fcfcfc">Next &raquo;</a></span>
+        <span style="margin-left: 15px"><a href="../android-resources/" style="color: #fcfcfc">Next &raquo;</a></span>
       
     </span>
 </div>

@@ -82,7 +82,7 @@
   
   
 <li class="toctree-l1 ">
-  <a class="" href="../../activate-mfractor-premium/">Activating MFractor Premium</a>
+  <a class="" href="../../mfractor-premium/">About MFractor Premium</a>
   
 </li>
 
@@ -103,14 +103,7 @@
   
   
 <li class="toctree-l1 ">
-  <a class="" href="../../xamarin-forms-quickstart/">Xamarin.Forms Quickstart</a>
-  
-</li>
-
-  
-  
-<li class="toctree-l1 ">
-  <a class="" href="../../xamarin-android-quickstart/">Xamarin.Android Quickstart</a>
+  <a class="" href="../../annotations/">Using MFractor.Annotations</a>
   
 </li>
 
@@ -166,21 +159,7 @@
   
   
 <li class="toctree-l1 ">
-  <a class="" href="../../xamarin-android/resource-navigation/">Resource Navigation</a>
-  
-</li>
-
-  
-  
-<li class="toctree-l1 ">
-  <a class="" href="../../xamarin-android/analysis/">Analysis</a>
-  
-</li>
-
-  
-  
-<li class="toctree-l1 ">
-  <a class="" href="../../xamarin-android/dotnet-code-analysis/">.NET Code Analysis</a>
+  <a class="" href="../../xamarin-android/navigation-tools/">Navigation Tools</a>
   
 </li>
 
@@ -208,31 +187,11 @@
       
     
       
+      <li class="toctree-l3"><a href="#annotate-with-attribute-usage">Annotate With Attribute Usage</a></li>
+      
+    
+      
       <li class="toctree-l3"><a href="#make-class-inherit-from-systemattribute">Make Class Inherit From System.Attribute</a></li>
-      
-    
-      
-      <li class="toctree-l3"><a href="#assign-constructor-argument-to-member">Assign Constructor Argument To Member</a></li>
-      
-    
-      
-      <li class="toctree-l3"><a href="#create-immutable-constructor">Create Immutable Constructor</a></li>
-      
-    
-      
-      <li class="toctree-l3"><a href="#annotate-with-attribute-usage_1">Annotate With Attribute Usage</a></li>
-      
-    
-      
-      <li class="toctree-l3"><a href="#make-class-inherit-from-systemattribute_1">Make Class Inherit From System.Attribute</a></li>
-      
-    
-      
-      <li class="toctree-l3"><a href="#assign-constructor-argument-to-member_1">Assign Constructor Argument To Member</a></li>
-      
-    
-      
-      <li class="toctree-l3"><a href="#create-immutable-constructor_1">Create Immutable Constructor</a></li>
       
     
   </ul>
@@ -260,28 +219,28 @@
   
   
 <li class="toctree-l1 ">
-  <a class="" href="../xamarin-forms-xaml/fix/">Issue Fixing</a>
+  <a class="" href="../xaml/fix/">Issue Fixing</a>
   
 </li>
 
   
   
 <li class="toctree-l1 ">
-  <a class="" href="../xamarin-forms-xaml/generate/">Code Generation</a>
+  <a class="" href="../xaml/generate/">Code Generation</a>
   
 </li>
 
   
   
 <li class="toctree-l1 ">
-  <a class="" href="../xamarin-forms-xaml/organise/">Xaml Organisation</a>
+  <a class="" href="../xaml/organise/">Xaml Organisation</a>
   
 </li>
 
   
   
 <li class="toctree-l1 ">
-  <a class="" href="../xamarin-forms-xaml/refactor/">Refactoring</a>
+  <a class="" href="../xaml/refactor/">Refactoring</a>
   
 </li>
 
@@ -298,6 +257,13 @@
   
   
 <li class="toctree-l1 ">
+  <a class="" href="../../code-analysis/android-csharp/">Android C# Analysis</a>
+  
+</li>
+
+  
+  
+<li class="toctree-l1 ">
   <a class="" href="../../code-analysis/android-resources/">Android Resource Analysis</a>
   
 </li>
@@ -305,7 +271,7 @@
   
   
 <li class="toctree-l1 ">
-  <a class="" href="../../code-analysis/xamarin-forms-xaml/">Xamarin.Forms Xaml Analysis</a>
+  <a class="" href="../../code-analysis/xaml/">Xamarin.Forms Xaml Analysis</a>
   
 </li>
 
@@ -395,9 +361,17 @@
           <div role="main">
             <div class="section">
               
-                <h2 id="annotate-with-attribute-usage">Annotate With Attribute Usage</h2>
+                <h2 id="assign-constructor-argument-to-member">Assign Constructor Argument To Member</h2>
 <p><strong>Premium Only</strong></p>
-<p><em>Configuration Id: com.mfractor.code_actions.csharp.annotate_with_attribute_usage</em></p>
+<p><strong>Configuration Id: com.mfractor.code_actions.csharp.assign_constructor_argument_to_member</strong></p>
+<p>When a constructor argument matches a member that isn't assigned by the constructor, this code action will generate an expression that assigns the argument to the member.</p>
+<h3 id="uses">Uses:</h3>
+<ul>
+<li><a href="../../code-generation/csharp/#generate-assignment-expression">Generate Assignment Expression</a></li>
+</ul>
+<h2 id="annotate-with-attribute-usage">Annotate With Attribute Usage</h2>
+<p><strong>Premium Only</strong></p>
+<p><strong>Configuration Id: com.mfractor.code_actions.csharp.annotate_with_attribute_usage</strong></p>
 <p>Adds an <code>AttributeUsage</code> annotation to a class that derives directly or indirectly from <code>System.Attribute</code>.</p>
 <h3 id="configurable-properties">Configurable Properties</h3>
 <table>
@@ -418,67 +392,14 @@
 </tr>
 </tbody>
 </table>
-<h3 id="uses">Uses:</h3>
+<h3 id="uses_1">Uses:</h3>
 <ul>
 <li><a href="../../code-generation/csharp/#create-attributeusage-annotation">Create AttributeUsage Annotation</a></li>
 </ul>
 <h2 id="make-class-inherit-from-systemattribute">Make Class Inherit From System.Attribute</h2>
 <p><strong>Premium Only</strong></p>
-<p><em>Configuration Id: com.mfractor.code_actions.csharp.make_class_inherit_from_attribute</em></p>
+<p><strong>Configuration Id: com.mfractor.code_actions.csharp.make_class_inherit_from_attribute</strong></p>
 <p>When a class declaration ends with <code>Attribute</code> (EG: <code>MyCoolAttribute</code>) and does not derive from any class, this code action will make the class inherit from <code>System.Attribute</code>.</p>
-<h2 id="assign-constructor-argument-to-member">Assign Constructor Argument To Member</h2>
-<p><strong>Premium Only</strong></p>
-<p><em>Configuration Id: com.mfractor.code_actions.csharp.assign_constructor_argument_to_member</em></p>
-<p>When a constructor argument matches a member that isn't assigned by the constructor, this code action will generate an expression that assigns the argument to the member.</p>
-<h3 id="uses_1">Uses:</h3>
-<ul>
-<li><a href="../../code-generation/csharp/#generate-assignment-expression">Generate Assignment Expression</a></li>
-</ul>
-<h2 id="create-immutable-constructor">Create Immutable Constructor</h2>
-<p><strong>Premium Only</strong></p>
-<p><em>Configuration Id: com.mfractor.code_actions.csharp.create_immutable_constuctor</em></p>
-<h2 id="annotate-with-attribute-usage_1">Annotate With Attribute Usage</h2>
-<p><strong>Premium Only</strong></p>
-<p><em>Configuration Id: com.mfractor.code_actions.csharp.annotate_with_attribute_usage</em></p>
-<p>Adds an <code>AttributeUsage</code> annotation to a class that derives directly or indirectly from <code>System.Attribute</code>.</p>
-<h3 id="configurable-properties_1">Configurable Properties</h3>
-<table>
-<thead>
-<tr>
-<th>Name</th>
-<th>Type</th>
-<th>Defaults To</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><strong>DefaultAttributeUsage</strong></td>
-<td>System.AttributeTargets</td>
-<td><code>Class</code></td>
-<td>When creating the attribute usage annotation, what is the default target this attribute should be used on?</td>
-</tr>
-</tbody>
-</table>
-<h3 id="uses_2">Uses:</h3>
-<ul>
-<li><a href="../../code-generation/csharp/#create-attributeusage-annotation">Create AttributeUsage Annotation</a></li>
-</ul>
-<h2 id="make-class-inherit-from-systemattribute_1">Make Class Inherit From System.Attribute</h2>
-<p><strong>Premium Only</strong></p>
-<p><em>Configuration Id: com.mfractor.code_actions.csharp.make_class_inherit_from_attribute</em></p>
-<p>When a class declaration ends with <code>Attribute</code> (EG: <code>MyCoolAttribute</code>) and does not derive from any class, this code action will make the class inherit from <code>System.Attribute</code>.</p>
-<h2 id="assign-constructor-argument-to-member_1">Assign Constructor Argument To Member</h2>
-<p><strong>Premium Only</strong></p>
-<p><em>Configuration Id: com.mfractor.code_actions.csharp.assign_constructor_argument_to_member</em></p>
-<p>When a constructor argument matches a member that isn't assigned by the constructor, this code action will generate an expression that assigns the argument to the member.</p>
-<h3 id="uses_3">Uses:</h3>
-<ul>
-<li><a href="../../code-generation/csharp/#generate-assignment-expression">Generate Assignment Expression</a></li>
-</ul>
-<h2 id="create-immutable-constructor_1">Create Immutable Constructor</h2>
-<p><strong>Premium Only</strong></p>
-<p><em>Configuration Id: com.mfractor.code_actions.csharp.create_immutable_constuctor</em></p>
               
             </div>
           </div>
