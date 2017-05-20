@@ -2,9 +2,30 @@
 
 ##Welcome
 
-Welcome to the documentation for MFractor, incredible Xamarin tools.
+Welcome to the documentation for MFractor, incredible tools for Visual Studio Mac.
 
-Let's get you started:
+### MFractor Video Guide
+
+### MFractor Feature Map
+
+MFractor comes in both a free and a paid version. The
+
+
+| Feature | Included In Free | Included In Paid |
+|------|:----:|:-----------:|
+| [Configuration Support](/configuration.md) |  | **XXX** |
+| **Xamarin.Forms Features** |  |  |
+| [Xaml Analysis](/code-analysis/xamarin-forms-xaml.md) |  **XXX** | **XXX** |
+| (Navigation Tools |  **XXX** | **XXX** |
+| Xaml Refactoring |  **XXX** | **XXX** |
+| Xaml To C# Code Generation |  **XXX** | **XXX** |
+| Xamarin.Forms C# Refactorings |   | **XXX** |
+| Xamarin.Forms C# Code Diagnostics |   | **XXX** |
+| **Xamarin.Android Features** |  |  |
+|  |  |  |
+| **C# Features** |  |  |
+
+
 
 ###Installation
 

@@ -7,7 +7,11 @@
 
 This document covers how to install, activate, update and uninstall MFractor for Visual Studio Mac.
 
-##Get MFractor
+## Install Using Install script
+
+
+
+## Get MFractor
 The latest version of MFractor for Visual Studio Mac can be downloaded from the addin server, [addins.mfractor.com/MFractor.mpack](http://addins.mfractor.com/MFractor.mpack).
 
 If you'd like an older version of MFractor, these can be found under our old release archives. Simply navigate to [addins.mfractor.com/releases](http://addins.mfractor.com/releases), open the folder for the version you'd like and download the .mpack file.

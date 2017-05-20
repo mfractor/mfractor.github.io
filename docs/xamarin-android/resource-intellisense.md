@@ -6,4 +6,6 @@
 
 ##Introduction
 
-##
+## Supported Resources
+
+This is a list of the supported Android resource types that MFractor for Visual Studio Mac supports:

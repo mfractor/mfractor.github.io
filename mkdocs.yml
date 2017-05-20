@@ -23,8 +23,7 @@ pages:
   - Activating MFractor Premium: activate-mfractor-premium.md
   - FAQ: faq.md
   - Configuration: configuration.md
-  - Xamarin.Forms Quickstart: xamarin-forms-quickstart.md
-  - Xamarin.Android Quickstart: xamarin-android-quickstart.md
+  - Using MFractor.Annotations: annotations.md
 - Xamarin.Forms:
   - Configuring A Binding Context: xamarin-forms/configure-binding-context.md
   - Navigation Tools: xamarin-forms/navigation.md
@@ -32,9 +31,7 @@ pages:
   - Implementing View Models: xamarin-forms/implementing-view-models.md
   - Value Converter Type Safety: xamarin-forms/value-converter-type-safety.md
 - Xamarin.Android:
-  - Resource Navigation: xamarin-android/resource-navigation.md
-  - Analysis: xamarin-android/analysis.md
-  - .NET Code Analysis: xamarin-android/dotnet-code-analysis.md
+  - Navigation Tools: xamarin-android/navigation-tools.md
   - Resource IntelliSense: xamarin-android/resource-intellisense.md
 - Code Actions:
   - C# Code Actions: code-actions/csharp.md
