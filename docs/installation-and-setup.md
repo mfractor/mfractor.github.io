@@ -7,32 +7,18 @@
 
 This document covers how to install, activate, update and uninstall MFractor for Visual Studio Mac.
 
-## Install Using Install script
+## Install Using The Installer Script
 
 
 
 ## Get MFractor
+
 The latest version of MFractor for Visual Studio Mac can be downloaded from the addin server, [addins.mfractor.com/MFractor.mpack](http://addins.mfractor.com/MFractor.mpack).
 
 If you'd like an older version of MFractor, these can be found under our old release archives. Simply navigate to [addins.mfractor.com/releases](http://addins.mfractor.com/releases), open the folder for the version you'd like and download the .mpack file.
 
-## Install MFractor Manually
+##Install Using MFractor.Installer Addin
 
-MFractor can be installed directly through the addin manager's **Install from file** button.
-
-Firstly, download the latest version of MFractor for Visual Studio Mac at [addins.mfractor.com/MFractor.mpack](addins.mfractor.com/MFractor.mpack)
-
-Open up Visual Studio Mac and click on the **Visual Studio Mac** menu and then **Addins...**
-
-![addin manager location](img/setup/addin-manager-menu.png)
-
-Within the Addin Manager, click the **Install from file** button in the bottom left of the Addin Manager.
-
-Browse to **MFractor.mpack** and then select **Open**:
-
-![How to install MFractor](/img/setup/install-mfractor.gif)
-
-##Install Using MFractor.Installer
 We can also install install MFractor into Visual Studio Mac by using the MFractor.Installer helper addin.
 
 This addin lives inside the Addin Manager in Visual Studio Mac, under **Gallery** -> **IDE extensions**.
@@ -53,9 +39,27 @@ You will then see a download dialog appear and MFractor will download and instal
 
 ![mfractor.installer download window](img/setup/mfractor-installer-download-window.png)
 
-##Activation
+## Install MFractor Manually
 
-To use MFractor, you'll need activate it using your email address.
+MFractor can be installed directly through the addin manager's **Install from file** button.
+
+Firstly, download the latest version of MFractor for Visual Studio Mac at [addins.mfractor.com/MFractor.mpack](addins.mfractor.com/MFractor.mpack)
+
+Open up Visual Studio Mac and click on the **Visual Studio Mac** menu and then **Addins...**
+
+![addin manager location](img/setup/addin-manager-menu.png)
+
+Within the Addin Manager, click the **Install from file** button in the bottom left of the Addin Manager.
+
+Browse to **MFractor.mpack** and then select **Open**:
+
+![How to install MFractor](/img/setup/install-mfractor.gif)
+
+## Activating MFractor Free
+
+MFractor comes in both a free and a paid version. The free version of MFractor
+
+To use MFractor, you need activate it using your email address; this will enable the free version of MFractor only. To
 
 First things first, **close the Addin Manager**. There is a known bug that blocks the email entry field from receiving keyboard when the Addin Manager is open. It's a pain and we are working on fixing this.
 
@@ -63,15 +67,53 @@ To activate MFractor, enter you email and then click **Activate**.
 
 ![activation dialog](img/setup/mfractor-activation-dialog.png)
 
-Tada! You are now ready to rock. Why not learn how to use MFractor for [Xamarin.Forms](xamarin-forms-quickstart.md) or [Xamarin.Android](xamarin-android-quickstart.md) next?
+Tada! You are now ready to rock.
 
-##Updating
+## Activating MFractor Premium
+
+Download and locate your license file (which ends with the extension `.lic`). When purchasing MFractor Premium, this license file will be provided in an email. In this example, our license file is located on our desktop and is called `license.lic`.
+
+ ![MFractor license file](/img/licensing/license-file.png)
+
+Open Visual Studio for Mac. If you have not activated MFractor with an email address, close the activation window.
+
+ ![Close Activation Dialog](/img/licensing/close-activation-dialog.png)
+
+In the main Visual Studio for Mac menu bar, select **Help**, then **MFractor** and then finally **License Information**.
+
+This will open the licensing window where you can import or remove an MFractor Premium license.
+
+Next, click on the **Import License** button, browse to where our license is located (`license.lic`) and double click it. This will import the license into MFractor.
+
+![Importing an MFractor Premium license file](/img/licensing/import-licesne.gif)
+
+Voila, you now have a valid active MFractor Premium installation.
+
+![MFractor Premium License Information](/img/licensing/valid-license.png)
+
+The licensing window will list:
+
+ * **Licensed To** - The full name of the person that the MFractor Premium license is issued to.
+ * **License Email:** - The email that this MFractor Premium license is issued against.
+ * **License Type and Expiry Date** - The type of license issued (Premium, Trial or Free) and when that license expires.
+
+## Deactivating Your Premium License
+
+If you'd like to remove a license from MFractor, you can open the MFractor license information window and click **Remove License**.
+
+**IMPORTANT: This is a destructive operation, you cannot undo removing a license but you can re-import a new license.**
+
+After removing a license, you will be automatically downgraded to a free MFractor license. This allows usage of most features apart from C# code actions, mobile-specific C# code diagnostics and configuration file support.
+
+[View the free vs paid feature map here](/mfractor-premium.md#feature-map).
+
+## Updating MFractor
 
 When MFractor installs into Visual Studio Mac, it'll register itself into Visual Studio Macs addin updater.
 
 This means that Visual Studio Mac will automatically prompt you that an update is available.
 
-However, you can check for udpate at any time by opening the **Visual Studio Mac** main menu and selecting **Check for Updates...**
+However, you can check for update at any time by opening the **Visual Studio Mac** main menu and selecting **Check for Updates...**
 
 ![update mfractor](img/setup/update-mfractor.png)
 

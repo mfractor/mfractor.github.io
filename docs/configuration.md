@@ -1,11 +1,15 @@
 
 ##Configuring MFractor
 
-*Changing*
+**Premium Only**
+
+*Changing the behaviour of MFractor's code generation and code actions*
 
 ## Introduction
 
 The configuration engine allows you to customise the internals of MFractor to generate code specific to your project. Initially the amount of options that are exposed will be limited but over time I will drastically increase the flexibility of MFractors code generation engine.
+
+If you have a
 
 ## Configuration Basics
 
@@ -42,8 +46,12 @@ You might notice that the structure of docs.mfractor.com has drastically changed
 
 ## Configuration Identifiers
 
-## Configurable properties
+Every element inside MFractor that can be configured has it's own unique **configuration identifier**. This a java-style, package based string that indicates the software, element type and element name inside the name.
+
+For example, the Xamarin.Forms [Implement View Model](/code-actions/xamarin-forms-xaml/generate.md#implement-view-model) code action has the configuration identifier `com.mfractor.code_actions.forms.implement_view_model`.
+
+## Configurable Properties
 
 ## Configuration Dependencies
 
-L
+## Configuration Groups

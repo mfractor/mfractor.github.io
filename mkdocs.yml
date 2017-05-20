@@ -20,7 +20,7 @@ pages:
 - Home: index.md
 - Getting Started:
   - Installation And Setup: installation-and-setup.md
-  - Activating MFractor Premium: activate-mfractor-premium.md
+  - About MFractor Premium: mfractor-premium.md
   - FAQ: faq.md
   - Configuration: configuration.md
   - Using MFractor.Annotations: annotations.md
