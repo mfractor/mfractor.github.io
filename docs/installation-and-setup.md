@@ -74,7 +74,7 @@ This will open the licensing window where you can import or remove an MFractor P
 
 Next, click on the **Import License** button, browse to where our license is located (`license.lic`) and double click it. This will import the license into MFractor.
 
-![Importing an MFractor Premium license file](/img/licensing/import-licesne.gif)
+![Importing an MFractor Premium license file](/img/licensing/import-license.gif)
 
 Voila, you now have a valid active MFractor Premium installation.
 

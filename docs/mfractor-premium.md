@@ -47,15 +47,15 @@ Premium licenses:
 
 To enquire about purchasing an MFractor Premium license, please email **matthew.ch.robbins@gmail.com**.
 
-If you are a business who would like to purchase 5 or more licenses, contact me directly at **matthew.ch.robbins@gmail.com** for a bulk buy discount.
-
 ## Renewing A Premium License
 
-When your license is about to expire, you can purchase a new license
+When your license is about to expire, you can purchase a new license by contacting me at **matthew.ch.robbins@gmail.com**. I will issue a new license for 366 + the peroid until your current license expires.
+
+
 
 ## Refund Policy
 
-Each purchase of MFractor comes with a 30 day refund period;If you would like a refund, email **matthew.ch.robbins@gmail.com** requesting a refund and the account details to transfer
+Each purchase of MFractor comes with a 30 day refund period; If you would like a refund, email **matthew.ch.robbins@gmail.com** requesting a refund and the account details to transfer to. I will refund the full amount minus a $30aud processing fee.
 
 ## Terms Of Use
 
