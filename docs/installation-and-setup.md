@@ -5,6 +5,21 @@
 
 ## Install Using The Installer Script
 
+The fastest way to install MFractor is using the installation script; you can do
+
+After downloading MFractor.zip:
+
+ 0. *Ensure that Visual Studio for Mac is closed.*
+ 1. Double click on **MFractor.zip** to extract the archive.
+ 2. Open the folder **MFractor**./
+ 3. Right click on **install-mfractor.command** and select **Open**.
+ 4. If prompted, confirm opening by selecting **Open**
+ 5. Wait for MFractor to install into Visual Studio for Mac.
+ 6. After installing, Visual Studio for Mac will open and prompt you to activate.
+
+Done!
+
+![Installing MFractor for Visaul Studio Mac using the install script](/img/setup/install-script.gif)
 
 ## Install Using MFractor.Installer Extension
 
