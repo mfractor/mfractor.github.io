@@ -9,7 +9,7 @@ The fastest way to install MFractor is using the installation script; you can do
 
 After downloading MFractor.zip:
 
- 0. *Ensure that Visual Studio for Mac is closed.*
+ 0. *Close Visual Studio for Mac.*
  1. Double click on **MFractor.zip** to extract the archive.
  2. Open the folder **MFractor**./
  3. Right click on **install-mfractor.command** and select **Open**.
@@ -19,11 +19,11 @@ After downloading MFractor.zip:
 
 Done!
 
-![Installing MFractor for Visaul Studio Mac using the install script](/img/setup/install-script.gif)
+![Installing MFractor for Visual Studio Mac using the install script](/img/setup/install-script.gif)
 
 ## Install Using MFractor.Installer Extension
 
-We can also install install MFractor into Visual Studio Mac by using the MFractor.Installer helper extension.
+We can also install MFractor into Visual Studio Mac by using the MFractor.Installer helper extension.
 
 This extension lives inside the Extension Manager in Visual Studio Mac, under **Gallery** -> **IDE extensions**.
 
@@ -35,7 +35,7 @@ Once the Extension Manager opens, click **Gallery** and under **IDE extensions**
 
 ![Extension Manager location](img/setup/mfractor-installer-location.png)
 
-Once you've located **MFractor.Installer**, left click on it to select it. In the right hand detail view, click **Install**. Visual Studio Mac will prompt you for confirmation, click **Install**
+Once you've located **MFractor.Installer**, left-click on it to select it. In the right-hand detail view, click **Install**. Visual Studio Mac will prompt you for confirmation, click **Install**
 
 ![install mfractor.installer](img/setup/install-mfractor-installer.png)
 
@@ -63,11 +63,11 @@ Browse to **MFractor.mpack** and then select **Open**:
 
 MFractor comes in both a free and a paid version. The free version of MFractor
 
-To use MFractor, you need activate it using your email address; this will enable the free version of MFractor only. To
+To use MFractor, you need to activate it using your email address; this will enable the free version of MFractor only. To
 
-First things first, **close the Extension Manager**. There is a known bug that blocks the email entry field from receiving keyboard when the Extension Manager is open. It's a pain and we are working on fixing this.
+First things first, **close the Extension Manager**. There is a known bug that blocks the email entry field from receiving keyboard when the Extension Manager is open
 
-To activate MFractor, enter you email and then click **Activate**.
+To activate MFractor, enter your email and then click **Activate**.
 
 ![activation dialog](img/setup/mfractor-activation-dialog.png)
 
@@ -75,7 +75,7 @@ Tada! You are now ready to rock.
 
 ## Activating MFractor Premium
 
-Download and locate your license file (which ends with the extension `.lic`). When purchasing MFractor Premium, this license file will be provided in an email. In this example, our license file is located on our desktop and is called `license.lic`.
+Download and locate your license file (which ends with the extension `.lic`). When purchasing MFractor Premium, this license file will be provided in an email. In this example, our license file is located on our desktop called `license.lic`.
 
  ![MFractor license file](/img/licensing/license-file.png)
 
@@ -83,17 +83,15 @@ Open Visual Studio for Mac. If you have not activated MFractor with an email add
 
  ![Close Activation Dialog](/img/licensing/close-activation-dialog.png)
 
-In the main Visual Studio for Mac menu bar, select **Help**, then **MFractor** and then finally **License Information**.
+In the main Visual Studio for Mac menu bar, select **Help**, then **MFractor** and then finally **License Information**. This will open the licensing window where you can import or remove an MFractor Premium license.
 
-This will open the licensing window where you can import or remove an MFractor Premium license.
-
-Next, click on the **Import License** button, browse to where our license is located (`license.lic`) and double click it. This will import the license into MFractor.
+Next, click on the **Import License** button, browse to where our license is located (`license.lic`) and double click it to import the license into MFractor.
 
 ![Importing an MFractor Premium license file](/img/licensing/import-license.gif)
 
-Voila, you now have a valid active MFractor Premium installation.
+Voila, you now have a valid, active MFractor Premium installation.
 
-**It is safe to delete the license file from it's original location. MFractor stores the license inside itself.**
+**It is safe to delete the license file from its original location. MFractor stores the license inside itself.**
 
 ![MFractor Premium License Information](/img/licensing/valid-license.png)
 
@@ -109,7 +107,7 @@ If you'd like to remove a license from MFractor, you can open the MFractor licen
 
 **IMPORTANT: This is a destructive operation, you cannot undo removing a license but you can re-import a new license.**
 
-After removing a license, you will be automatically downgraded to a free MFractor license. This allows usage of most features apart from C# code actions, mobile-specific C# code diagnostics and configuration file support.
+After removing a license, you will be automatically downgraded to a free MFractor license. This allows usage of most features apart from C# code actions, mobile-specific C# code diagnostics, and configuration file support.
 
 [View the free vs paid feature map here](/mfractor-premium.md#feature-map).
 
