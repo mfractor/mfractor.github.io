@@ -8,7 +8,7 @@ MFractor comes in both a free and a paid/premium version.
 
 The free version contains most features that are included in MFractor Premium; as a Xamarin developer you will find the free version will still help out your day-to-day Xamarin.Android and Xamarin.Forms development a heck of a lot!
 
-I stress this, **you are under no obligation to upgrade to the paid version of MFractor.** If you need C# code refactoring support, mobile-specific code diagnostics or want to tweak the code that MFractor creates then you will need to pay for a MFractor Premium license.
+If you would like C# code refactoring support, mobile-specific code diagnostics or wish to tweak the code that MFractor creates then you will need to pay for a MFractor Premium license.
 
 ## Feature Map
 
