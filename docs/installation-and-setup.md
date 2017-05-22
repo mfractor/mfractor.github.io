@@ -7,7 +7,7 @@
 
 The fastest way to install MFractor is using the installation script:
 
-[Download the MFracto script](addins.mfractor.com/MFractor.zip)
+[Download the MFractor script](http://addins.mfractor.com/MFractor.zip)
 
 This will download **MFractor.zip**; this contains the installation script and instructions on installation.
 
