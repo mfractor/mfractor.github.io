@@ -5,9 +5,13 @@
 
 ## Install Using The Installer Script
 
-The fastest way to install MFractor is using the installation script; you can do
+The fastest way to install MFractor is using the installation script:
 
-After downloading MFractor.zip:
+[Download the MFracto script](addins.mfractor.com/MFractor.zip)
+
+This will download **MFractor.zip**; this contains the installation script and instructions on installation.
+
+To install:
 
  0. *Close Visual Studio for Mac.*
  1. Double click on **MFractor.zip** to extract the archive.
