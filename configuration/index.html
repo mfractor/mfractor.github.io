@@ -329,6 +329,13 @@
   
   
 <li class="toctree-l1 ">
+  <a class="" href="../release-notes/v3-1/">v3.1</a>
+  
+</li>
+
+  
+  
+<li class="toctree-l1 ">
   <a class="" href="../release-notes/v3-0/">v3.0</a>
   
 </li>
@@ -379,30 +386,28 @@
               
                 <h2 id="configuring-mfractor">Configuring MFractor</h2>
 <p><strong>Premium Only</strong></p>
-<p><em>Changing the behaviour of MFractor's code generation and code actions</em></p>
+<p><em>Changing the behavior of MFractor's code generation and code actions</em></p>
 <h2 id="introduction">Introduction</h2>
-<p>The configuration engine allows you to customise the internals of MFractor to generate code specific to your project. Initially the amount of options that are exposed will be limited but over time I will drastically increase the flexibility of MFractors code generation engine.</p>
-<p>If you have a</p>
+<p>The configuration engine allows you to customize the internals of MFractor to generate code specific to your project. Initially, the amount of options that are exposed will be limited but over time I will drastically increase the flexibility of MFractors code generation engine.</p>
+<p>If you wish to have a piece of code generation customizable, please submit a feature request at <a href="https://github.com/mfractor/mfractor-feedback/issues/new">MFractor Feedback</a>.</p>
 <h2 id="configuration-basics">Configuration Basics</h2>
+<p>Conceptually, MFractor has <em>Configurables</em>, extensible components that expose properties that can be edited by a configuration file. <em>Configurables</em> can be C# code actions</p>
+<p>MFractor configuration files are XML based and end with the extension <code>.mfc.xml</code>. You can name a configuration file whatever you'd like as long as it ends in the extension <code>.mfc.xml</code>.</p>
 <p>How does it work? Let's consider the following configuration file:</p>
 <p><strong>config.mfc.xml</strong></p>
 <pre><code>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; ?&gt;
 &lt;mfractor&gt;
-    &lt;configure id=&quot;com.mfractor.code_gen.forms.csharp.instance_property&quot;&gt;
-        &lt;property name=&quot;CodeSnippet&quot; value=&quot;Snippets/property.txt&quot;/&gt;
-    &lt;/configure&gt;
     &lt;configure id=&quot;com.mfractor.code_action.forms.implement_view_model&quot;&gt;
             &lt;property name=&quot;BaseClass&quot; value=&quot;MyNamespace.ViewModels.ViewModelBase&quot;/&gt;
     &lt;/configure&gt;
 &lt;/mfractor&gt;
 </code></pre>
 
-<p>MFractor configuration files are xml based and end with the extension <code>.mfc</code> or <code>.mfc.xml</code> (add <code>.xml</code> if you'd like the IDEs default IntelliSense and xml highlighting). Conceptually, MFractor has <em>Configurables</em>, extensible components within MFractor itself that expose properties that can be edited by a configuration file.</p>
 <p>Let's examine each of the each element in the above configuration in depth:</p>
 <ul>
-<li>We open a configuration file with the <code>&lt;mfractor&gt;</code> tag; this is just ceremony to denote to MFractor this is it's config file.</li>
+<li>We open a configuration file with the <code>&lt;mfractor&gt;</code> tag; this is ceremony to denote to MFractor this is a config file.</li>
 <li>We <strong>target</strong> a configurable by using the <code>&lt;configure&gt;</code> element:<ul>
-<li>The <code>id</code> attribute specifies the unique identifier of the configurable we wish to modify. This could be a code action, a code generator or an analysis routine.</li>
+<li>The <code>id</code> attribute specifies the unique identifier of the configurable we wish to modify. An id could refer a code action, a code generator or an analysis routine.</li>
 </ul>
 </li>
 <li>We <strong>modify</strong> a property using the <code>&lt;property&gt;</code> element:<ul>
@@ -412,13 +417,19 @@
 </ul>
 </li>
 </ul>
-<p>Some configurables expose lots of properties, some expose none. If you want the behaviour for a code action or code generator to be customisable, please get in touch. It's trivial to expose new configuration settings so just ask! :)</p>
-<p>You might notice that the structure of docs.mfractor.com has drastically changed. This new site structure enables you to easily explore the code actions, analysis and code generation exposed by MFractor; they are logically grouped in the same way the configuration engine groups elements. We now include the configuration identifier for <strong>all</strong> code actions, code generators and analysers and list the configurable properties for each element in MFractor.</p>
 <h2 id="configuration-identifiers">Configuration Identifiers</h2>
 <p>Every element inside MFractor that can be configured has it's own unique <strong>configuration identifier</strong>. This a java-style, package based string that indicates the software, element type and element name inside the name.</p>
 <p>For example, the Xamarin.Forms <a href="../code-actions/xaml/generate/#implement-view-model">Implement View Model</a> code action has the configuration identifier <code>com.mfractor.code_actions.forms.implement_view_model</code>.</p>
+<p>If we wanted to change the behaviour of the <em>Implement View Model</em> code action, we add a <code>configure</code> element into our <code>.mfc.xml</code> and target the identifier for the</p>
+<pre><code>
+&lt;configure id=&quot;com.mfractor.code_action.forms.implement_view_model&quot;&gt;
+&lt;/configure&gt;
+
+</code></pre>
+
 <h2 id="configurable-properties">Configurable Properties</h2>
 <h2 id="configuration-dependencies">Configuration Dependencies</h2>
+<p>Configurables can also use other configurables to</p>
 <h2 id="configuration-groups">Configuration Groups</h2>
               
             </div>
