@@ -13,6 +13,62 @@ When a constructor argument matches a member that isn't assigned by the construc
  * [Generate Assignment Expression](/code-generation/csharp.md#generate-assignment-expression)
 
 
+## Implement Base Class Constructors
+
+**Premium Only**
+
+**Configuration Id: com.mfractor.code_actions.csharp.implement_base_class_constructors**
+
+When a C# class inherits from a base type that does only has parameterised constructors, this code action will generate each of the base classes parametered constructors.
+
+For example, say a developer wanted to inherit `MyCustomView` from `Android.Views.View` to create a custom view in Xamarin.Android; the `View` class does not have any paramterless contructors.
+
+```
+
+public class MyCustomView : Android.Views.View // Generates a compiler error as View has no parameterless constructors. 
+{
+}
+
+```
+
+Using the **Implement Base Class Constructors** code action against the `MyCustomView` class would generate the following code.
+
+```
+
+public class MyClass : View
+{
+    public MyClass(System.IntPtr javaReference, Android.Runtime.JniHandleOwnership transfer) : base(javaReference, transfer)
+    {
+    }
+
+    public MyClass(Android.Content.Context context) : base(context)
+    {
+    }
+
+    public MyClass(Android.Content.Context context, Android.Util.IAttributeSet attrs) : base(context, attrs)
+    {
+    }
+
+    public MyClass(Android.Content.Context context, Android.Util.IAttributeSet attrs, int defStyleAttr) : base(context, attrs, defStyleAttr)
+    {
+    }
+
+    public MyClass(Android.Content.Context context, Android.Util.IAttributeSet attrs, int defStyleAttr, int defStyleRes) : base(context, attrs, defStyleAttr, defStyleRes)
+    {
+    }
+}
+
+```
+
+**Example**
+
+![Implementing a base classes constructors](/img/code-actions/csharp/implement-base-constructors.gif)
+
+### Uses:
+
+ * [Create Base Constructor](/code-generation/csharp.md#create-base-constructor)
+
+
 ## Annotate With Attribute Usage
 
 **Premium Only**

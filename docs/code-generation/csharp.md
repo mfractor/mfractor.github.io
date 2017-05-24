@@ -60,3 +60,9 @@ Generates an initilisation expression for a class/struct member (such as a prope
 |------|------|-------------|-------------|
 | **ForceStringLiteral** | System.Boolean | `False` | Should the code generator always attempt to assign members with a string literal? |
 
+## Create Base Constructor
+
+**Configuration Id: com.mfractor.code_gen.csharp.base_constructor**
+
+Generates a class constructor that routes a series of constructor parameters into a `base(...)` constructor.
+
