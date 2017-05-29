@@ -20,22 +20,19 @@ If you would like C# code refactoring support, mobile-specific code diagnostics 
 | [Xaml Analysis](/code-analysis/xaml.md) |  **XXX** | **XXX** |
 | [Navigation Tools](/xamarin-forms/navigation.md) |  **XXX** | **XXX** |
 | [Xaml Refactoring](/code-actions/xaml/refactor.md) |  **XXX** | **XXX** |
-| Xaml To C# Code Generation |  **XXX** | **XXX** |
-| Xamarin.Forms C# Refactorings |   | **XXX** |
-| Xamarin.Forms C# Code Diagnostics |   | **XXX** |
+| [Xaml To C# Code Generation](/code-actions/xaml/generate.md) |  **XXX** | **XXX** |
 | **Xamarin.Android Features** | **XXX** | **XXX** |
-| Android Resource IntelliSense | **XXX** | **XXX** |
-| Android Resource Navigation Suite | **XXX** | **XXX** |
-| Android C# Code Diagnostics |  | **XXX** |
+| [Android Resource IntelliSense](/xamarin-android/resource-intellisense.md) | **XXX** | **XXX** |
+| [Android Resource Navigation Suite](/xamarin-android/navigation-tools.md) | **XXX** | **XXX** |
+| [Android C# Code Diagnostics](code-analysis/android-csharp.md) |  | **XXX** |
 | **C# Features** |  |  |
-| C# Code Actions |  | **XXX** |
-| C# Code Diagnostics |  | **XXX** |
+| [C# Code Actions](code-actions/csharp.md) |  | **XXX** |
 
 ## Purchase An MFractor Premium License
 
 **RRP: $199aud**
 
-MFractor Premium licenses are currently issued on a by-request basis. I (Matthew Robbins) will be officially opening MFractor Premium up for pre-sale on the 1st of June 2017 priced at **$149 AUD** (25% discount).
+MFractor Premium licenses are currently issued on a by-request basis. Until September 1st 2017, MFractor Premium is on sale at **$149 AUD** (25% discount).
 
 Premium licenses:
 
@@ -49,13 +46,11 @@ To enquire about purchasing an MFractor Premium license, please email **matthew.
 
 ## Renewing A Premium License
 
-When your license is about to expire, you can purchase a new license by contacting me at **matthew.ch.robbins@gmail.com**. I will issue a new license for 366 + the peroid until your current license expires.
-
-
+When your license is about to expire, you can purchase a new license by contacting me at **matthew.ch.robbins@gmail.com**. I will issue a new license for 366 + the period until your current license expires.
 
 ## Refund Policy
 
-Each purchase of MFractor comes with a 30 day refund period; If you would like a refund, email **matthew.ch.robbins@gmail.com** requesting a refund and the account details to transfer to. I will refund the full amount minus a $30aud processing fee.
+Each purchase of MFractor comes with a 30 day refund period; If you would like a refund, email **matthew.ch.robbins@gmail.com** requesting a refund and the account details to transfer to. I will refund the full amount minus a $30AUD processing fee.
 
 ## Terms Of Use
 

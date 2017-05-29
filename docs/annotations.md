@@ -11,8 +11,8 @@ The MFractor.Annotations library is a Nuget package that powers a suite of mobil
 
 While the Nuget library can be installed into any project, MFractor's mobile-specific code diagnostics are only available in MFractor Premium.
 
-## Installing MFractor.Annations Nuget
+## Installing MFractor.Annotations NuGet
 
 
 
-## Targetting A Layout In Xamarin.Android
+## Targeting A Layout In Xamarin.Android

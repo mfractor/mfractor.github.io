@@ -23,6 +23,7 @@ pages:
   - About MFractor Premium: mfractor-premium.md
   - FAQ: faq.md
   - Configuration: configuration.md
+  - Code Actions: code-actions.md
   - Using MFractor.Annotations: annotations.md
 - Xamarin.Forms:
   - Configuring A Binding Context: xamarin-forms/configure-binding-context.md
