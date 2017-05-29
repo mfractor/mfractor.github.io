@@ -103,6 +103,13 @@
   
   
 <li class="toctree-l1 ">
+  <a class="" href="../../code-actions/">Code Actions</a>
+  
+</li>
+
+  
+  
+<li class="toctree-l1 ">
   <a class="" href="../../annotations/">Using MFractor.Annotations</a>
   
 </li>
@@ -387,11 +394,24 @@
 <p>This is a summary of the changes introduced in v3.1.0 of MFractor for Visual Studio Mac.</p>
 <h2 id="features">Features</h2>
 <h2 id="premium-features">Premium Features</h2>
+<ul>
+<li><strong>C# Code Actions</strong></li>
+<li>Implement all of a base classes constructors onto the class. See <a href="../../code-actions/csharp/#implement-base-class-constructors">Implement Base Class Constructors</a>.</li>
+<li>When a class ends with <code>Attribute</code>, use the <a href="../../code-actions/csharp/#make-class-inherit-from-systemattribute">Make Class Inherit From System.Attribute</a> code action to add attribute inheritance.</li>
+<li>Quickly assign closely named constructor arguments to fields and properites using the <a href="../../code-actions/csharp/#assign-constructor-argument-to-member">Assign Constructor Argument To Member</a> C# code action.</li>
+<li>Use <a href="../../code-actions/csharp/#annotate-with-attribute-usage">Annotate With Attribute Usage</a> to add a <code>AttributeUsage</code> attribute to a class that inherits from <code>System.Attribute</code>.</li>
+<li><strong>Android C# Code Diagnostics</strong></li>
+<li>Detect when a developer tries to manually create an <code>Activity</code> with new statement. See <a href="../../code-analysis/android-csharp/#incorrect-activity-creation">Incorrect Activity Creation</a>.</li>
+<li>Detect when a developer directly implements the <code>IJavaObject</code> interface instead of inheriting from <code>Java.Lang.Object</code>. See <a href="../../code-analysis/android-csharp/#class-derives-from-ijavaobject">Class Derives From IJavaObject</a>.</li>
+<li>Detect when a subclass of <code>Android.App.Application</code> is missing the peer connection constructor. See <a href="../../code-analysis/android-csharp/#application-requires-peer-connection-constructor">Application Requires Peer Connection Constructor</a>.</li>
+</ul>
 <h2 id="enhancements">Enhancements</h2>
-<p>-</p>
+<ul>
+<li>Added a <strong>Feedback</strong> menu into the <strong>Help</strong> -&gt; <strong>MFractor</strong> menu. Use this menu to file bug reports and feature requests.</li>
+</ul>
 <h2 id="bug-fixes">Bug Fixes</h2>
 <ul>
-<li></li>
+<li>Fixed: Often the Xaml analyser would fail to remove code-issue markers.</li>
 </ul>
               
             </div>
