@@ -82,7 +82,9 @@ Inside the `configure` element we can now specify multiple `property` tags to ch
 
 ## Configurable Properties
 
-After targetting a configurable, we can use **Configurable Property**
+After targeting a configurable, we can use **Configurable Properties** to change the behaviour of that feature.
+
+Configurable properties are settings that can be editing on a configurable
 
 
 ## Configuration Dependencies

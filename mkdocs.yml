@@ -44,7 +44,9 @@ pages:
     - Xaml Organisation: code-actions/xaml/organise.md
     - Refactoring: code-actions/xaml/refactor.md
 - Code Analysis:
-  - Android C# Analysis: code-analysis/android-csharp.md
+  - C#:
+    - Android C# Analysis: code-analysis/csharp/android.md
+    - Xamarin.Forms C# Analysis: code-analysis/csharp/xamarin-forms.md
   - Android Resource Analysis: code-analysis/android-resources.md
   - Xamarin.Forms Xaml Analysis: code-analysis/xaml.md
 - Code Generation:

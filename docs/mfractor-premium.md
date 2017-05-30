@@ -21,10 +21,11 @@ If you would like C# code refactoring support, mobile-specific code diagnostics 
 | [Navigation Tools](/xamarin-forms/navigation.md) |  **XXX** | **XXX** |
 | [Xaml Refactoring](/code-actions/xaml/refactor.md) |  **XXX** | **XXX** |
 | [Xaml To C# Code Generation](/code-actions/xaml/generate.md) |  **XXX** | **XXX** |
+| [Xamarin.Forms C# Code Diagnostics](code-analysis/csharp/xamarin-forms.md) |  | **XXX** |
 | **Xamarin.Android Features** | **XXX** | **XXX** |
 | [Android Resource IntelliSense](/xamarin-android/resource-intellisense.md) | **XXX** | **XXX** |
 | [Android Resource Navigation Suite](/xamarin-android/navigation-tools.md) | **XXX** | **XXX** |
-| [Android C# Code Diagnostics](code-analysis/android-csharp.md) |  | **XXX** |
+| [Android C# Code Diagnostics](code-analysis/csharp/android.md) |  | **XXX** |
 | **C# Features** |  |  |
 | [C# Code Actions](code-actions/csharp.md) |  | **XXX** |
 
