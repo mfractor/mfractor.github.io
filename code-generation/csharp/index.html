@@ -326,6 +326,10 @@
       <li class="toctree-l3"><a href="#create-base-constructor">Create Base Constructor</a></li>
       
     
+      
+      <li class="toctree-l3"><a href="#create-constructor">Create Constructor</a></li>
+      
+    
   </ul>
   
 </li>
@@ -499,6 +503,32 @@
 <h2 id="create-base-constructor">Create Base Constructor</h2>
 <p><strong>Configuration Id: com.mfractor.code_gen.csharp.base_constructor</strong></p>
 <p>Generates a class constructor that routes a series of constructor parameters into a <code>base(...)</code> constructor.</p>
+<h3 id="uses_1">Uses:</h3>
+<ul>
+<li><a href="./#create-constructor">Create Constructor</a></li>
+</ul>
+<h2 id="create-constructor">Create Constructor</h2>
+<p><strong>Configuration Id: com.mfractor.code_gen.csharp.constructor</strong></p>
+<p>Generates a class constructor, optionally with a set of arguments.</p>
+<h3 id="configurable-properties_3">Configurable Properties</h3>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Defaults To</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>ArgumentFirstLetterToLowerCase</strong></td>
+<td>System.Boolean</td>
+<td><code>True</code></td>
+<td>Should all constructor arguments have their first letter forced to lower case?</td>
+</tr>
+</tbody>
+</table>
               
             </div>
           </div>

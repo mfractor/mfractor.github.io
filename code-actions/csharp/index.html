@@ -198,6 +198,10 @@
       
     
       
+      <li class="toctree-l3"><a href="#create-immutable-constructor">Create Immutable Constructor</a></li>
+      
+    
+      
       <li class="toctree-l3"><a href="#implement-base-class-constructors">Implement Base Class Constructors</a></li>
       
     
@@ -408,6 +412,39 @@
 <ul>
 <li><a href="../../code-generation/csharp/#generate-assignment-expression">Generate Assignment Expression</a></li>
 </ul>
+<h2 id="create-immutable-constructor">Create Immutable Constructor</h2>
+<p><strong>Premium Only</strong></p>
+<p><strong>Configuration Id: com.mfractor.code_actions.csharp.create_immutable_constuctor</strong></p>
+<p>This code action creates a constructor that assigns all of a classes readonly fields from constructor arguments</p>
+<p>The <strong>Create Immutable Constructor</strong> code action is useful when building readonly class implementations.</p>
+<p>When triggered, the code action collects all readonly fields in a class and builds a constructor that has a parameter that assigns to each readonly field.</p>
+<p><strong>Before</strong></p>
+<pre><code>public class MyImmutableClass
+{
+    public readonly string MyString;
+    public readonly int MyInt;
+}
+</code></pre>
+
+<p><strong>After</strong></p>
+<pre><code>public class MyImmutableClass
+{
+    public readonly string MyString;
+    public readonly int MyInt;
+
+    public MyImmutableClass(string myString, myInt)
+    {
+        MyString = myString;
+        MyInt = myInt;
+    }
+}
+</code></pre>
+
+<h3 id="uses_1">Uses:</h3>
+<ul>
+<li><a href="../../code-generation/csharp/#generate-assignment-expression">Generate Assignment Expression</a></li>
+<li><a href="../../code-generation/csharp/#create-constructor">Create Constructor</a></li>
+</ul>
 <h2 id="implement-base-class-constructors">Implement Base Class Constructors</h2>
 <p><strong>Premium Only</strong></p>
 <p><strong>Configuration Id: com.mfractor.code_actions.csharp.implement_base_class_constructors</strong></p>
@@ -449,7 +486,7 @@ public class MyClass : View
 
 <p><strong>Example</strong></p>
 <p><img alt="Implementing a base classes constructors" src="../../img/code-actions/csharp/implement-base-constructors.gif" /></p>
-<h3 id="uses_1">Uses:</h3>
+<h3 id="uses_2">Uses:</h3>
 <ul>
 <li><a href="../../code-generation/csharp/#create-base-constructor">Create Base Constructor</a></li>
 </ul>
@@ -477,7 +514,7 @@ public class MyClass : View
 </tr>
 </tbody>
 </table>
-<h3 id="uses_2">Uses:</h3>
+<h3 id="uses_3">Uses:</h3>
 <ul>
 <li><a href="../../code-generation/csharp/#create-attributeusage-annotation">Create AttributeUsage Annotation</a></li>
 </ul>
