@@ -66,3 +66,20 @@ Generates an initilisation expression for a class/struct member (such as a prope
 
 Generates a class constructor that routes a series of constructor parameters into a `base(...)` constructor.
 
+### Uses:
+
+ * [Create Constructor](/code-generation/csharp.md#create-constructor)
+
+
+## Create Constructor
+
+**Configuration Id: com.mfractor.code_gen.csharp.constructor**
+
+Generates a class constructor, optionally with a set of arguments.
+
+### Configurable Properties
+
+| Name | Type | Defaults To | Description |
+|------|------|-------------|-------------|
+| **ArgumentFirstLetterToLowerCase** | System.Boolean | `True` | Should all constructor arguments have their first letter forced to lower case? |
+

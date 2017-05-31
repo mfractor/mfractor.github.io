@@ -61,7 +61,7 @@ Let's examine each of the each element in the above configuration in depth:
    - We **modify** a property using the `<property>` element:
     - The `name` attribute specifies the configurable property we wish to edit.
     - The `value` attribute specifies the value we wish to set the property to.
-     - We **group** configurations within the `<collection name="CollectionName">` element. These groups are hard coded into the product itself and relate to how the code actions, code generation and code analysis documentation folders are structured in this site.
+    - We **group** configurations within the `<collection name="CollectionName">` element. These groups are hard coded into the product itself and relate to how the code actions, code generation and code analysis documentation folders are structured in this site.
 
 ## Configuration Identifiers
 

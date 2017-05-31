@@ -15,6 +15,49 @@ When a constructor argument matches a member that isn't assigned by the construc
  * [Generate Assignment Expression](/code-generation/csharp.md#generate-assignment-expression)
 
 
+## Create Immutable Constructor
+
+**Premium Only**
+
+**Configuration Id: com.mfractor.code_actions.csharp.create_immutable_constuctor**
+
+This code action creates a constructor that assigns all of a classes readonly fields from constructor arguments
+
+The **Create Immutable Constructor** code action is useful when building readonly class implementations.
+
+When triggered, the code action collects all readonly fields in a class and builds a constructor that has a parameter that assigns to each readonly field.
+
+**Before**
+```
+public class MyImmutableClass
+{
+    public readonly string MyString;
+    public readonly int MyInt;
+}
+```
+
+**After**
+```
+public class MyImmutableClass
+{
+    public readonly string MyString;
+    public readonly int MyInt;
+
+    public MyImmutableClass(string myString, myInt)
+    {
+        MyString = myString;
+        MyInt = myInt;
+    }
+}
+```
+
+
+### Uses:
+
+ * [Generate Assignment Expression](/code-generation/csharp.md#generate-assignment-expression)
+ * [Create Constructor](/code-generation/csharp.md#create-constructor)
+
+
 ## Implement Base Class Constructors
 
 **Premium Only**
@@ -80,7 +123,6 @@ public class MyClass : View
 Adds an `AttributeUsage` annotation to a class that derives directly or indirectly from `System.Attribute`.
 
 ![Annodate an attribute with an AttributeUsage attribute](/img/code-actions/csharp/annote-with-attribute-usage.gif)
-
 
 ### Configurable Properties
 
