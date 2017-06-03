@@ -10,7 +10,32 @@ When working with Xaml, we can specify a binding context to activate binding exp
 
 We can specify a binding context [*explicitly*](#explicit-binding-context-resolution) via in inline Xaml expression or [*implicitly*](#implicit-binding-context-resolution) through the use of common MVVM naming conventions.
 
-##Explicit Binding Context Resolution
+##Implicit Binding Context Resolution
+
+MFractor will attempt to infer the relationship between your view models and xaml views via *implicit binding context resolution*. This is done by looking for classes and Xaml views that share a common naming convention.
+
+Let's consider the following files:
+
+ * **LoginPage.xaml** - The xaml view.
+ * **LoginPage.xaml.cs** - The code behind for the xaml view.
+ * **LoginViewModel** - The a C# class that is the view model for the LoginPage view.
+
+![mvvm relationships](/img/forms/implicit-mvvm-relationship.png)
+
+Because these pages share the prefix **Login** and each has a distinct file extension or suffix, MFractor assumes the following relationships:
+
+  * The *.xaml* extension denotes that **LoginPage.xaml** is a xaml view.
+  * The *.xaml.cs* extension and the *LoginPage* component denotes that **LoginPage.xaml.cs** is the code behind implementation **LoginPage** view.
+  * The **ViewModel** suffix implies that **LoginViewModel** is a view model. When *ViewModel* is removed from *LoginViewModel* and *Page* is removed from *LoginPage*, the **Login** component implies that the **LoginViewModel** is related to the **LoginPage** xaml view and it's code behind file.
+
+MFractor uses these common naming conventions of Page.xaml, Page.xaml.cs and ViewModel to decide that **LoginViewModel** will probably be the BindingContext for **LoginPage**. The `Page` <-> `ViewModel` naming convention is used by several popular MVVM frameworks such as Prism and FreshMVVM.
+
+The following suffixes are supported for Xaml views:
+
+ * **Page**: EG LoginPage.xaml <-> LoginViewModel
+ * **View**: EG LoginView.xaml <-> LoginViewModel
+
+## Explicit Binding Context Resolution
 In Xamarin.Forms, all views have the property `BindingContext`; this specifies the object that a view should data-bind with. When coding with Xaml, we can use the `x:Static` markup extension to reference a static C# property and explicitly provide an instance of a C# class as the binding context:
 
 ```
@@ -22,7 +47,8 @@ This is known as the *View Model Locator Pattern*. We implement a static class n
 For example, given a Xaml page named `LoginPage`, we can explicitly provide an instance of `LoginViewModel` as the binding context like so:
 
 **ViewModelLocator.cs**
-```cs
+
+```
 public namespace MyApp
 {
   public static class ViewModelLocator
@@ -33,7 +59,8 @@ public namespace MyApp
 ```
 
 **LoginPage.xaml**
-```cs
+
+```
 <ContentPage
   xmlns:local="clr-namespace:MyApp;assembly=MyApp"
   BindingContext="{x:Static local:ViewModelLocator.LoginViewModel}"/>
@@ -51,30 +78,6 @@ Explicit binding context resolution will also work when referencing another elem
 ```
 
 When MFractor analyses the `{Binding IsToggled}` expression, it will evaluate the `{x:Reference mySwitch}` expression and use the type of mySwitch as the BindingContext (Xamarin.Forms.Switch).
-
-##Implicit Binding Context Resolution
-In addition to explicit binding context resolution, MFractor will attempt to infer the relationship between your view models and xaml views via *implicit binding context resolution*. This is done by looking for classes and Xaml views that share a common naming convention.
-
-Let's consider the following files:
-
- * **LoginPage.xaml** - The xaml view.
- * **LoginPage.xaml.cs** - The code behind for the xaml view.
- * **LoginViewModel** - The a C# class that is the view model for the LoginPage view.
-
-![mvvm relationships](/img/forms/implicit-mvvm-relationship.png)
-
-Because these pages share the prefix **Login** and each has a distinct file extension or suffix, we can infer the following relationships:
-
-  * The *.xaml* extension denotes that **LoginPage.xaml** is a xaml view.
-  * The *.xaml.cs* extension and the *LoginPage* component denotes that **LoginPage.xaml.cs** is the code behind implementation **LoginPage** view.
-  * The **ViewModel** suffix implies that **LoginViewModel** is a view model. When *ViewModel* is removed from *LoginViewModel* and *Page* is removed from *LoginPage*, the **Login** component implies that the **LoginViewModel** is related to the **LoginPage** xaml view and it's code behind file.
-
-MFractor uses these common naming conventions of Page.xaml, Page.xaml.cs and ViewModel to decide that **LoginViewModel** will probably be the BindingContext for **LoginPage**. It will then
-
-The following suffixes are supported for Xaml views:
-
- * **Page**: EG LoginPage.xaml <-> LoginViewModel
- * **View**: EG LoginView.xaml <-> LoginViewModel
 
 Explicit binding context resolution will **always** override implicit binding context resolution. If your xaml views are named using the conventions listed above but your page or a view explicitly assigns the `BindingContext` property then MFractor will use the `BindingContext` return type instead of the implicit Mvvm relationship.
 
