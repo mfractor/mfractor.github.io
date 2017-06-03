@@ -51,7 +51,9 @@ MFractor supports analysis of the following markup extensions:
 
 ##Binding Expression Analysis
 
-MFractor supports analysis of binding markup extensions; this is a powerful feature that can prevent runtime bugs by checking that properties exist on a binding context, that return and input types match and match more.
+MFractor supports analysis of binding markup extensions; this is a powerful feature that can prevent runtime bugs by checking that properties exist on a binding context, that return and input types match and match more:
+
+![Inspecting a binding expression for a return type mis-match](/img/forms/binding-expression-analysis.png)
 
 For binding expressions to be analysed, MFractor must be able to resolve a binding context for the XAML document. For applications that use the `Page` <-> `ViewModel` naming convention, binding contexts will automatically resolve when the XAML document is opened.
 
