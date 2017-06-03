@@ -219,19 +219,7 @@
       
     
       
-      <li class="toctree-l3"><a href="#generate-property-onto-parent-type">Generate property onto parent type</a></li>
-      
-    
-      
-      <li class="toctree-l3"><a href="#generate-bindable-property-on-type">Generate bindable property on type</a></li>
-      
-    
-      
-      <li class="toctree-l3"><a href="#replace-attribute-with-closely-named-member">Replace attribute with closely named member</a></li>
-      
-    
-      
-      <li class="toctree-l3"><a href="#replace-with-correct-attached-property-name">Replace with correct attached property name</a></li>
+      <li class="toctree-l3"><a href="#autocorrect-class-or-property">Autocorrect Class Or Property</a></li>
       
     
       
@@ -239,11 +227,23 @@
       
     
       
-      <li class="toctree-l3"><a href="#generate-event-handler">Generate Event Handler</a></li>
+      <li class="toctree-l3"><a href="#autocorrect-nearly-named-property-binding">Autocorrect Nearly Named Property Binding</a></li>
       
     
       
-      <li class="toctree-l3"><a href="#replace-field-or-method-reference-with-property">Replace Field Or Method Reference With Property</a></li>
+      <li class="toctree-l3"><a href="#create-value-converter-that-resolves-type-flow">Create Value Converter That Resolves Type Flow</a></li>
+      
+    
+      
+      <li class="toctree-l3"><a href="#create-xtypearguments-attribute">Create x:TypeArguments attribute.</a></li>
+      
+    
+      
+      <li class="toctree-l3"><a href="#encapsulate-with-resource-dictionary">Encapsulate With Resource Dictionary</a></li>
+      
+    
+      
+      <li class="toctree-l3"><a href="#generate-bindable-property-on-type">Generate bindable property on type</a></li>
       
     
       
@@ -251,11 +251,7 @@
       
     
       
-      <li class="toctree-l3"><a href="#autocorrect-class-or-property">Autocorrect Class Or Property</a></li>
-      
-    
-      
-      <li class="toctree-l3"><a href="#import-namespace-and-assembly">Import namespace and assembly</a></li>
+      <li class="toctree-l3"><a href="#generate-class">Generate class</a></li>
       
     
       
@@ -263,15 +259,15 @@
       
     
       
-      <li class="toctree-l3"><a href="#generate-class">Generate class</a></li>
+      <li class="toctree-l3"><a href="#generate-event-handler">Generate Event Handler</a></li>
       
     
       
-      <li class="toctree-l3"><a href="#generate-property">Generate property</a></li>
+      <li class="toctree-l3"><a href="#generate-missing-binding-command-stub">Generate Missing Binding Command Stub</a></li>
       
     
       
-      <li class="toctree-l3"><a href="#create-xtypearguments-attribute">Create x:TypeArguments attribute.</a></li>
+      <li class="toctree-l3"><a href="#generate-missing-class">Generate Missing Class</a></li>
       
     
       
@@ -283,7 +279,11 @@
       
     
       
-      <li class="toctree-l3"><a href="#generate-missing-class">Generate Missing Class</a></li>
+      <li class="toctree-l3"><a href="#generate-property">Generate property</a></li>
+      
+    
+      
+      <li class="toctree-l3"><a href="#generate-property-onto-parent-type">Generate property onto parent type</a></li>
       
     
       
@@ -291,15 +291,15 @@
       
     
       
-      <li class="toctree-l3"><a href="#replace-unknown-property-value-with-autocorrection">Replace unknown property value with autocorrection</a></li>
-      
-    
-      
-      <li class="toctree-l3"><a href="#replace-node-with-auto-corrected-match">Replace node with auto-corrected match</a></li>
+      <li class="toctree-l3"><a href="#import-namespace-and-assembly">Import namespace and assembly</a></li>
       
     
       
       <li class="toctree-l3"><a href="#import-namespace-and-assembly_1">Import Namespace And Assembly</a></li>
+      
+    
+      
+      <li class="toctree-l3"><a href="#import-value-converter-for-binding">Import Value Converter For Binding</a></li>
       
     
       
@@ -311,7 +311,23 @@
       
     
       
-      <li class="toctree-l3"><a href="#replace-xml-namespace-with-auto-correction">Replace xml namespace with auto-correction</a></li>
+      <li class="toctree-l3"><a href="#replace-attribute-with-closely-named-member">Replace attribute with closely named member</a></li>
+      
+    
+      
+      <li class="toctree-l3"><a href="#replace-field-or-method-reference-with-property">Replace Field Or Method Reference With Property</a></li>
+      
+    
+      
+      <li class="toctree-l3"><a href="#replace-node-with-auto-corrected-match">Replace node with auto-corrected match</a></li>
+      
+    
+      
+      <li class="toctree-l3"><a href="#replace-unknown-property-value-with-autocorrection">Replace unknown property value with autocorrection</a></li>
+      
+    
+      
+      <li class="toctree-l3"><a href="#replace-with-correct-attached-property-name">Replace with correct attached property name</a></li>
       
     
       
@@ -319,23 +335,7 @@
       
     
       
-      <li class="toctree-l3"><a href="#generate-missing-binding-command-stub">Generate Missing Binding Command Stub</a></li>
-      
-    
-      
-      <li class="toctree-l3"><a href="#autocorrect-nearly-named-property-binding">Autocorrect Nearly Named Property Binding</a></li>
-      
-    
-      
-      <li class="toctree-l3"><a href="#encapsulate-with-resource-dictionary">Encapsulate With Resource Dictionary</a></li>
-      
-    
-      
-      <li class="toctree-l3"><a href="#import-value-converter-for-binding">Import Value Converter For Binding</a></li>
-      
-    
-      
-      <li class="toctree-l3"><a href="#create-value-converter-that-resolves-type-flow">Create Value Converter That Resolves Type Flow</a></li>
+      <li class="toctree-l3"><a href="#replace-xml-namespace-with-auto-correction">Replace xml namespace with auto-correction</a></li>
       
     
   </ul>
@@ -507,140 +507,47 @@
               
                 <h2 id="xaml-code-fixes">Xaml Code Fixes</h2>
 <p><em>Autogenerated by MFractor v3.0.4</em></p>
-<h2 id="generate-property-onto-parent-type">Generate property onto parent type</h2>
-<p><strong>Configuration Id: com.mfractor.code_fixes.xaml.generate_property</strong></p>
-<p>This fix generates a property with a getter and setter onto the parent type.</p>
-<h3 id="uses">Uses:</h3>
-<ul>
-<li><a href="../../../code-generation/csharp/#generate-instance-property">Generate Instance Property</a></li>
-</ul>
-<h2 id="generate-bindable-property-on-type">Generate bindable property on type</h2>
-<p><strong>Configuration Id: com.mfractor.code_fixes.xaml.generate_bindable_property</strong></p>
-<p>This fix generates a bindable property onto the targetted class.</p>
-<h3 id="uses_1">Uses:</h3>
-<ul>
-<li><a href="../../../code-generation/xamarin-forms/#generate-bindable-property">Generate Bindable Property</a></li>
-</ul>
-<h2 id="replace-attribute-with-closely-named-member">Replace attribute with closely named member</h2>
-<p><strong>Configuration Id: com.mfractor.code_fixes.xaml.autocorrect_member</strong></p>
-<p>Looks for members on a C# class that are named closely to an unresolved xml attribute and then suggest near matches.</p>
-<h2 id="replace-with-correct-attached-property-name">Replace with correct attached property name</h2>
-<p><strong>Configuration Id: com.mfractor.code_fixes.xaml.no_attached_property</strong></p>
-<p>Replaces an incorrect attached property with an auto-corrected value.</p>
-<h2 id="auto-correct-event-handler-name">Auto-Correct Event Handler Name</h2>
-<p><strong>Configuration Id: com.mfractor.code_fixes.xaml.autocorrect_event_handler</strong></p>
-<p>Auto-corrects a missing event handler name with a closely named callback from the code behind class.</p>
-<h3 id="uses_2">Uses:</h3>
-<ul>
-<li><a href="../../../code-generation/csharp/#generate-event-handler-method-callback">Generate Event Handler Method Callback</a></li>
-</ul>
-<h2 id="generate-event-handler">Generate Event Handler</h2>
-<p><strong>Configuration Id: com.mfractor.code_fixes.xaml.generate_event_handler</strong></p>
-<p>When an event handler Xaml attribute references a method that does not exist on the code behind class, the <strong>Generate Missing Event Handler</strong> code fix will generate a method on the code behind class.</p>
-<p>Consider the following code:</p>
-<p><strong>View: LoginPage.xaml</strong></p>
-<pre><code>&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot;?&gt;
-&lt;ContentPage xmlns=&quot;http://xamarin.com/schemas/2014/forms&quot;
-    xmlns:x=&quot;http://schemas.microsoft.com/winfx/2009/xaml&quot;
-    x:Class=&quot;HelloMFractor.LoginPage&quot;&gt;
-    &lt;Button Clicked=&quot;OnButtonClicked&quot;/&gt;
-&lt;/ContentPage&gt;
-</code></pre>
-
-<p><strong>Code Behind: LoginPage.xaml.cs</strong></p>
-<pre><code>public partial class LoginPage : ContentPage
-{
-    public LoginPage()
-    {
-        InitializeComponent();
-    }
-}
-</code></pre>
-
-<p>The referenced method <code>OnButtonClicked</code> does not exist in the views code behind class, <code>LoginPage</code>. The corresponding <a href="http://docs.mfractor.com/code-analysis/xamarin-forms-xaml.ms/#event-handler-exists-in-code-behind-class">analyser</a> will detect this issue and annotate it in your source code.</p>
-<p>From here, we can action the code fix to generate a method stub in <code>LoginPage.xaml.cs</code>:</p>
-<p><img alt="Generating an event handler" src="../../../img/code-actions/forms/generate-event-handler.gif" /></p>
-<h3 id="uses_3">Uses:</h3>
-<ul>
-<li><a href="../../../code-generation/csharp/#generate-event-handler-method-callback">Generate Event Handler Method Callback</a></li>
-</ul>
-<h2 id="replace-field-or-method-reference-with-property">Replace Field Or Method Reference With Property</h2>
-<p><strong>Configuration Id: com.mfractor.code_fixes.xaml.binding_expression_does_not_return_property</strong></p>
-<p>Replaces a field or method symbol within a binding expression with a suggested property name.</p>
-<h2 id="generate-binding-expression-property-implement">Generate Binding Expression Property Implement</h2>
-<p><strong>Configuration Id: com.mfractor.code_fixes.xaml.generate_binding_property</strong></p>
-<h3 id="uses_4">Uses:</h3>
-<ul>
-<li><a href="../../../code-generation/csharp/#generate-instance-property">Generate Instance Property</a></li>
-</ul>
 <h2 id="autocorrect-class-or-property">Autocorrect Class Or Property</h2>
 <p><strong>Configuration Id: com.mfractor.code_fixes.xaml.autocorrect_csharp_symbol</strong></p>
 <p>When a c# symbol reference expression does not resolve, this fix applies an auto-corrected suggestion from the class/property.</p>
-<h2 id="import-namespace-and-assembly">Import namespace and assembly</h2>
-<p><strong>Configuration Id: com.mfractor.code_fixes.xaml.resolve_csharp_symbol</strong></p>
-<p>When the namespace inside c# symbol reference expression can be resolved to a .NET symbol in the project or its references this fix generates an 'xmlns' import statement in the root xaml element.</p>
-<h2 id="generate-class-and-static-member">Generate class and static member</h2>
-<p><strong>Configuration Id: com.mfractor.code_fixes.xaml.generate_class_and_member</strong></p>
-<p>When a c# symbol reference expression does not resolve, this fix generates a stub class declaration with a default, readonly static member.</p>
-<h2 id="generate-class">Generate class</h2>
-<p><strong>Configuration Id: com.mfractor.code_fixes.xaml.generate_csharp_class</strong></p>
-<p>When a c# symbol reference expression does not resolve, this fix generates an implementation for the missing class.</p>
-<h2 id="generate-property">Generate property</h2>
-<p><strong>Configuration Id: com.mfractor.code_fixes.xaml.generate_csharp_member</strong></p>
-<p>Generate a static or constant variable onto the targetted class</p>
-<h2 id="create-xtypearguments-attribute">Create x:TypeArguments attribute.</h2>
-<p><strong>Configuration Id: com.mfractor.code_fixes.xaml.create_type_arguments_attribute</strong></p>
-<p>Generates an x:TypeArguments attribute, resolving the potential argument types if possible.</p>
-<h2 id="generate-missing-value-converter">Generate Missing Value Converter</h2>
-<p><strong>Configuration Id: com.mfractor.code_fixes.xaml.generate_missing_class_as_value_converter</strong></p>
-<p>When a Xaml node cannot be resolved and it ends with '[cC]onverter', this fix will create a new implemenation of IValueConverter.</p>
-<h3 id="uses_5">Uses:</h3>
+<h2 id="auto-correct-event-handler-name">Auto-Correct Event Handler Name</h2>
+<p><strong>Configuration Id: com.mfractor.code_fixes.xaml.autocorrect_event_handler</strong></p>
+<p>Auto-corrects a missing event handler name with a closely named callback from the code behind class.</p>
+<h3 id="uses">Uses:</h3>
 <ul>
-<li><a href="../../../code-generation/xamarin-forms/#generate-ivalueconverter-implementation">Generate IValueConverter Implementation</a></li>
-</ul>
-<h2 id="generate-missing-view">Generate Missing View</h2>
-<p><strong>Configuration Id: com.mfractor.code_fixes.xaml.generate_missing_class_as_view</strong></p>
-<p>When a Xaml node cannot be resolved, this fix will create a new implemenation of that class deriving from 'Xamarin.Forms.View'.</p>
-<h2 id="generate-missing-class">Generate Missing Class</h2>
-<p><strong>Configuration Id: com.mfractor.code_fixes.xaml.generate_missing_class</strong></p>
-<p>When a Xaml node cannot be resolved, this fix will create a new implementation of that class.</p>
-<h2 id="generate-resource-dictionary-key">Generate Resource Dictionary Key</h2>
-<p><strong>Configuration Id: com.mfractor.code_fixes.xaml.missing_resource_key</strong></p>
-<p>When a Xaml node that is declared within a ResourceDictionary is missing the <code>x:Key</code> attribute, this fix will automatically create a new <code>x:Key</code> attribute for the node.</p>
-<h2 id="replace-unknown-property-value-with-autocorrection">Replace unknown property value with autocorrection</h2>
-<p><strong>Configuration Id: com.mfractor.code_fixes.xaml.unknown_static_property_value</strong></p>
-<p>When a xaml element property attempts to reference a static field (for instance LayoutOptions.Center), this fix finds the nearest named member and replaces the incorrect value with an auto-correction.</p>
-<h2 id="replace-node-with-auto-corrected-match">Replace node with auto-corrected match</h2>
-<p><strong>Configuration Id: com.mfractor.code_fixes.xaml.autocorrect_unresolved_reference</strong></p>
-<p>This fix action replaces a mispelt xaml node that can be resolved in an assembly with its correct .NET symbol name.</p>
-<h2 id="import-namespace-and-assembly_1">Import Namespace And Assembly</h2>
-<p><strong>Configuration Id: com.mfractor.code_fixes.xaml.import_reference</strong></p>
-<p>When an xaml node can be resolved to a .NET symbol in the project or its references this fix generates an 'xmlns' import statement in the root xaml element.</p>
-<h2 id="remove-unused-xmlns-declaration">Remove unused xmlns declaration</h2>
-<p><strong>Configuration Id: com.mfractor.code_fixes.xaml.xml_namespace_is_unused</strong></p>
-<p>Removes the unused xmlns declaration.</p>
-<h2 id="rename-duplicate-namespace-references">Rename Duplicate Namespace References</h2>
-<p><strong>Configuration Id: com.mfractor.code_fixes.xaml.multiple_namespace_assembly_references</strong></p>
-<p>Replaces all occurances of a namespace with .</p>
-<h3 id="uses_6">Uses:</h3>
-<ul>
-<li><a href="../../../code-generation/xaml/#rename-xaml-namespace-generator">Rename Xaml Namespace Generator</a></li>
-</ul>
-<h2 id="replace-xml-namespace-with-auto-correction">Replace xml namespace with auto-correction</h2>
-<p><strong>Configuration Id: com.mfractor.code_fixes.xaml.xml_namespace_does_not_exist</strong></p>
-<p>Replaces an xml namespace prefix with the auto-corrected xml namespace.</p>
-<h2 id="replace-xname-with-closely-named-member">Replace x:Name with closely named member</h2>
-<p><strong>Configuration Id: com.mfractor.code_fixes.xaml.xreference_does_not_exist</strong></p>
-<p>Replaces an invalid x:Name reference with a similiarly named x:Name declared in the current document.</p>
-<h2 id="generate-missing-binding-command-stub">Generate Missing Binding Command Stub</h2>
-<p><strong>Configuration Id: com.mfractor.code_fixes.xaml.generate_binding_command_stub</strong></p>
-<p>When the symbol referenced inside a binding expression is unresolved, this fix can either apply an auto-correcet or generate a property on elements the BindingContext</p>
-<h3 id="uses_7">Uses:</h3>
-<ul>
-<li><a href="../../../code-generation/xamarin-forms/#generate-icommand-implementation">Generate ICommand Implementation</a></li>
+<li><a href="../../../code-generation/csharp/#generate-event-handler-method-callback">Generate Event Handler Method Callback</a></li>
 </ul>
 <h2 id="autocorrect-nearly-named-property-binding">Autocorrect Nearly Named Property Binding</h2>
 <p><strong>Configuration Id: com.mfractor.code_fixes.xaml.autcorrect_property_binding</strong></p>
+<h2 id="create-value-converter-that-resolves-type-flow">Create Value Converter That Resolves Type Flow</h2>
+<p><strong>Configuration Id: com.mfractor.code_fixes.xaml.create_resolving_value_converter</strong></p>
+<p>Using the input and output type for a value conversion path, this code fix will create a new value converter implementation for the input and output type.</p>
+<h3 id="configurable-properties">Configurable Properties</h3>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Defaults To</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>DefaultConverterNamespace</strong></td>
+<td>System.String</td>
+<td><code>"converters"</code></td>
+<td>The namespace name of the xmlns import statement for the newly created value converter</td>
+</tr>
+</tbody>
+</table>
+<h3 id="uses_1">Uses:</h3>
+<ul>
+<li><a href="../../../code-generation/xamarin-forms/#generate-ivalueconverter-implementation">Generate IValueConverter Implementation</a></li>
+</ul>
+<h2 id="create-xtypearguments-attribute">Create x:TypeArguments attribute.</h2>
+<p><strong>Configuration Id: com.mfractor.code_fixes.xaml.create_type_arguments_attribute</strong></p>
+<p>Generates an x:TypeArguments attribute, resolving the potential argument types if possible.</p>
 <h2 id="encapsulate-with-resource-dictionary">Encapsulate With Resource Dictionary</h2>
 <p><strong>Configuration Id: com.mfractor.code_fixes.xaml.encapsulate_with_resource_dictionary</strong></p>
 <p>When declaring the resources for a page/view, it is common to accidentally put resources directly inside a <code>MyPage.Resources</code> rather than wrapping the elements with a <code>ResourceDictionary</code> declaration.</p>
@@ -669,35 +576,128 @@
 &lt;/ContentPage&gt;
 </code></pre>
 
-<h2 id="import-value-converter-for-binding">Import Value Converter For Binding</h2>
-<p><strong>Configuration Id: com.mfractor.code_fixes.xaml.import_resolving_value_converter</strong></p>
-<p>Inspects for IValueConverter implementations within the project and it's references that match the value conversion flow for this binding type mismatch. IValueConverter implementations must be annotated with the <code>ValueConversionAttribute</code> to be detected by this fix.</p>
-<h2 id="create-value-converter-that-resolves-type-flow">Create Value Converter That Resolves Type Flow</h2>
-<p><strong>Configuration Id: com.mfractor.code_fixes.xaml.create_resolving_value_converter</strong></p>
-<p>Using the input and output type for a value conversion path, this code fix will create a new value converter implementation for the input and output type.</p>
-<h3 id="configurable-properties">Configurable Properties</h3>
-<table>
-<thead>
-<tr>
-<th>Name</th>
-<th>Type</th>
-<th>Defaults To</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><strong>DefaultConverterNamespace</strong></td>
-<td>System.String</td>
-<td><code>"converters"</code></td>
-<td>The namespace name of the xmlns import statement for the newly created value converter</td>
-</tr>
-</tbody>
-</table>
-<h3 id="uses_8">Uses:</h3>
+<h2 id="generate-bindable-property-on-type">Generate bindable property on type</h2>
+<p><strong>Configuration Id: com.mfractor.code_fixes.xaml.generate_bindable_property</strong></p>
+<p>This fix generates a bindable property onto the targetted class.</p>
+<h3 id="uses_2">Uses:</h3>
+<ul>
+<li><a href="../../../code-generation/xamarin-forms/#generate-bindable-property">Generate Bindable Property</a></li>
+</ul>
+<h2 id="generate-binding-expression-property-implement">Generate Binding Expression Property Implement</h2>
+<p><strong>Configuration Id: com.mfractor.code_fixes.xaml.generate_binding_property</strong></p>
+<h3 id="uses_3">Uses:</h3>
+<ul>
+<li><a href="../../../code-generation/csharp/#generate-instance-property">Generate Instance Property</a></li>
+</ul>
+<h2 id="generate-class">Generate class</h2>
+<p><strong>Configuration Id: com.mfractor.code_fixes.xaml.generate_csharp_class</strong></p>
+<p>When a c# symbol reference expression does not resolve, this fix generates an implementation for the missing class.</p>
+<h2 id="generate-class-and-static-member">Generate class and static member</h2>
+<p><strong>Configuration Id: com.mfractor.code_fixes.xaml.generate_class_and_member</strong></p>
+<p>When a c# symbol reference expression does not resolve, this fix generates a stub class declaration with a default, readonly static member.</p>
+<h2 id="generate-event-handler">Generate Event Handler</h2>
+<p><strong>Configuration Id: com.mfractor.code_fixes.xaml.generate_event_handler</strong></p>
+<p>When an event handler Xaml attribute references a method that does not exist on the code behind class, the <strong>Generate Missing Event Handler</strong> code fix will generate a method on the code behind class.</p>
+<p>Consider the following code:</p>
+<p><strong>View: LoginPage.xaml</strong></p>
+<pre><code>&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot;?&gt;
+&lt;ContentPage xmlns=&quot;http://xamarin.com/schemas/2014/forms&quot;
+    xmlns:x=&quot;http://schemas.microsoft.com/winfx/2009/xaml&quot;
+    x:Class=&quot;HelloMFractor.LoginPage&quot;&gt;
+    &lt;Button Clicked=&quot;OnButtonClicked&quot;/&gt;
+&lt;/ContentPage&gt;
+</code></pre>
+
+<p><strong>Code Behind: LoginPage.xaml.cs</strong></p>
+<pre><code>public partial class LoginPage : ContentPage
+{
+    public LoginPage()
+    {
+        InitializeComponent();
+    }
+}
+</code></pre>
+
+<p>The referenced method <code>OnButtonClicked</code> does not exist in the views code behind class, <code>LoginPage</code>. The corresponding <a href="http://docs.mfractor.com/code-analysis/xamarin-forms-xaml.ms/#event-handler-exists-in-code-behind-class">analyser</a> will detect this issue and annotate it in your source code.</p>
+<p>From here, we can action the code fix to generate a method stub in <code>LoginPage.xaml.cs</code>:</p>
+<p><img alt="Generating an event handler" src="../../../img/code-actions/forms/generate-event-handler.gif" /></p>
+<h3 id="uses_4">Uses:</h3>
+<ul>
+<li><a href="../../../code-generation/csharp/#generate-event-handler-method-callback">Generate Event Handler Method Callback</a></li>
+</ul>
+<h2 id="generate-missing-binding-command-stub">Generate Missing Binding Command Stub</h2>
+<p><strong>Configuration Id: com.mfractor.code_fixes.xaml.generate_binding_command_stub</strong></p>
+<p>When the symbol referenced inside a binding expression is unresolved, this fix can either apply an auto-correcet or generate a property on elements the BindingContext</p>
+<h3 id="uses_5">Uses:</h3>
+<ul>
+<li><a href="../../../code-generation/xamarin-forms/#generate-icommand-implementation">Generate ICommand Implementation</a></li>
+</ul>
+<h2 id="generate-missing-class">Generate Missing Class</h2>
+<p><strong>Configuration Id: com.mfractor.code_fixes.xaml.generate_missing_class</strong></p>
+<p>When a Xaml node cannot be resolved, this fix will create a new implementation of that class.</p>
+<h2 id="generate-missing-value-converter">Generate Missing Value Converter</h2>
+<p><strong>Configuration Id: com.mfractor.code_fixes.xaml.generate_missing_class_as_value_converter</strong></p>
+<p>When a Xaml node cannot be resolved and it ends with '[cC]onverter', this fix will create a new implemenation of IValueConverter.</p>
+<h3 id="uses_6">Uses:</h3>
 <ul>
 <li><a href="../../../code-generation/xamarin-forms/#generate-ivalueconverter-implementation">Generate IValueConverter Implementation</a></li>
 </ul>
+<h2 id="generate-missing-view">Generate Missing View</h2>
+<p><strong>Configuration Id: com.mfractor.code_fixes.xaml.generate_missing_class_as_view</strong></p>
+<p>When a Xaml node cannot be resolved, this fix will create a new implemenation of that class deriving from 'Xamarin.Forms.View'.</p>
+<h2 id="generate-property">Generate property</h2>
+<p><strong>Configuration Id: com.mfractor.code_fixes.xaml.generate_csharp_member</strong></p>
+<p>Generate a static or constant variable onto the targetted class</p>
+<h2 id="generate-property-onto-parent-type">Generate property onto parent type</h2>
+<p><strong>Configuration Id: com.mfractor.code_fixes.xaml.generate_property</strong></p>
+<p>This fix generates a property with a getter and setter onto the parent type.</p>
+<h3 id="uses_7">Uses:</h3>
+<ul>
+<li><a href="../../../code-generation/csharp/#generate-instance-property">Generate Instance Property</a></li>
+</ul>
+<h2 id="generate-resource-dictionary-key">Generate Resource Dictionary Key</h2>
+<p><strong>Configuration Id: com.mfractor.code_fixes.xaml.missing_resource_key</strong></p>
+<p>When a Xaml node that is declared within a ResourceDictionary is missing the <code>x:Key</code> attribute, this fix will automatically create a new <code>x:Key</code> attribute for the node.</p>
+<h2 id="import-namespace-and-assembly">Import namespace and assembly</h2>
+<p><strong>Configuration Id: com.mfractor.code_fixes.xaml.resolve_csharp_symbol</strong></p>
+<p>When the namespace inside c# symbol reference expression can be resolved to a .NET symbol in the project or its references this fix generates an 'xmlns' import statement in the root xaml element.</p>
+<h2 id="import-namespace-and-assembly_1">Import Namespace And Assembly</h2>
+<p><strong>Configuration Id: com.mfractor.code_fixes.xaml.import_reference</strong></p>
+<p>When an xaml node can be resolved to a .NET symbol in the project or its references this fix generates an 'xmlns' import statement in the root xaml element.</p>
+<h2 id="import-value-converter-for-binding">Import Value Converter For Binding</h2>
+<p><strong>Configuration Id: com.mfractor.code_fixes.xaml.import_resolving_value_converter</strong></p>
+<p>Inspects for IValueConverter implementations within the project and it's references that match the value conversion flow for this binding type mismatch. IValueConverter implementations must be annotated with the <code>ValueConversionAttribute</code> to be detected by this fix.</p>
+<h2 id="remove-unused-xmlns-declaration">Remove unused xmlns declaration</h2>
+<p><strong>Configuration Id: com.mfractor.code_fixes.xaml.xml_namespace_is_unused</strong></p>
+<p>Removes the unused xmlns declaration.</p>
+<h2 id="rename-duplicate-namespace-references">Rename Duplicate Namespace References</h2>
+<p><strong>Configuration Id: com.mfractor.code_fixes.xaml.multiple_namespace_assembly_references</strong></p>
+<p>Replaces all occurances of a namespace with .</p>
+<h3 id="uses_8">Uses:</h3>
+<ul>
+<li><a href="../../../code-generation/xaml/#rename-xaml-namespace-generator">Rename Xaml Namespace Generator</a></li>
+</ul>
+<h2 id="replace-attribute-with-closely-named-member">Replace attribute with closely named member</h2>
+<p><strong>Configuration Id: com.mfractor.code_fixes.xaml.autocorrect_member</strong></p>
+<p>Looks for members on a C# class that are named closely to an unresolved xml attribute and then suggest near matches.</p>
+<h2 id="replace-field-or-method-reference-with-property">Replace Field Or Method Reference With Property</h2>
+<p><strong>Configuration Id: com.mfractor.code_fixes.xaml.binding_expression_does_not_return_property</strong></p>
+<p>Replaces a field or method symbol within a binding expression with a suggested property name.</p>
+<h2 id="replace-node-with-auto-corrected-match">Replace node with auto-corrected match</h2>
+<p><strong>Configuration Id: com.mfractor.code_fixes.xaml.autocorrect_unresolved_reference</strong></p>
+<p>This fix action replaces a mispelt xaml node that can be resolved in an assembly with its correct .NET symbol name.</p>
+<h2 id="replace-unknown-property-value-with-autocorrection">Replace unknown property value with autocorrection</h2>
+<p><strong>Configuration Id: com.mfractor.code_fixes.xaml.unknown_static_property_value</strong></p>
+<p>When a xaml element property attempts to reference a static field (for instance LayoutOptions.Center), this fix finds the nearest named member and replaces the incorrect value with an auto-correction.</p>
+<h2 id="replace-with-correct-attached-property-name">Replace with correct attached property name</h2>
+<p><strong>Configuration Id: com.mfractor.code_fixes.xaml.no_attached_property</strong></p>
+<p>Replaces an incorrect attached property with an auto-corrected value.</p>
+<h2 id="replace-xname-with-closely-named-member">Replace x:Name with closely named member</h2>
+<p><strong>Configuration Id: com.mfractor.code_fixes.xaml.xreference_does_not_exist</strong></p>
+<p>Replaces an invalid x:Name reference with a similiarly named x:Name declared in the current document.</p>
+<h2 id="replace-xml-namespace-with-auto-correction">Replace xml namespace with auto-correction</h2>
+<p><strong>Configuration Id: com.mfractor.code_fixes.xaml.xml_namespace_does_not_exist</strong></p>
+<p>Replaces an xml namespace prefix with the auto-corrected xml namespace.</p>
               
             </div>
           </div>

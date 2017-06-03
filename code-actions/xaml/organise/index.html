@@ -237,19 +237,11 @@
       
     
       
-      <li class="toctree-l3"><a href="#expand-attributes-onto-separate-lines">Expand Attributes Onto Separate Lines</a></li>
-      
-    
-      
-      <li class="toctree-l3"><a href="#sort-xaml-attributes">Sort Xaml Attributes</a></li>
-      
-    
-      
-      <li class="toctree-l3"><a href="#format-xaml-document">Format Xaml Document</a></li>
-      
-    
-      
       <li class="toctree-l3"><a href="#collapse-node">Collapse Node</a></li>
+      
+    
+      
+      <li class="toctree-l3"><a href="#expand-attributes-onto-separate-lines">Expand Attributes Onto Separate Lines</a></li>
       
     
       
@@ -257,7 +249,15 @@
       
     
       
+      <li class="toctree-l3"><a href="#format-xaml-document">Format Xaml Document</a></li>
+      
+    
+      
       <li class="toctree-l3"><a href="#remove-unused-namespaces">Remove Unused Namespaces</a></li>
+      
+    
+      
+      <li class="toctree-l3"><a href="#sort-xaml-attributes">Sort Xaml Attributes</a></li>
       
     
   </ul>
@@ -418,37 +418,23 @@
 <h2 id="collapse-attributes-onto-same-line">Collapse Attributes Onto Same Line</h2>
 <p><strong>Configuration Id: com.mfractor.code_actions.xaml.collapse_attributes_onto_same_line</strong></p>
 <p>This code action collapses all the attributes for a Xaml node onto the same line as the nodes name declaration.</p>
+<h2 id="collapse-node">Collapse Node</h2>
+<p><strong>Configuration Id: com.mfractor.code_actions.xaml.collapse_node_closing_tag</strong></p>
+<p>When a Xaml node has a closing tag and no children (eg: <code>&lt;MyNode&gt; &lt;/MyNode&gt;</code>), this refactoring allows the developer to remove the closing tag to make the node self-closing. For example, when applied to the node <code>&lt;MyNode&gt; ... &lt;/MyNode&gt;</code>, the closing tag <code>&lt;/MyNode&gt;</code> is removed and the element becomes self closing like so: <code>&lt;MyNode/&gt;</code>.</p>
 <h2 id="expand-attributes-onto-separate-lines">Expand Attributes Onto Separate Lines</h2>
 <p><strong>Configuration Id: com.mfractor.code_actions.xaml.expand_attributes_onto_new_lines</strong></p>
 <p>This code action expands all the attributes for a Xaml node onto a separate line for each attribute.</p>
 <p>For example, gi</p>
-<h2 id="sort-xaml-attributes">Sort Xaml Attributes</h2>
-<p><strong>Configuration Id: com.mfractor.code_actions.xaml.sort_attributes</strong></p>
-<p>This code action sorts the attributes for a Xaml node and regenerates the xaml node based on the IDE's xml formatting policy.
-MFractor uses the following rules when sorting:</p>
-<ul>
-<li>Attributes that declare an xml namespace are ordered first, sorted alphabetically ascending. For example <code>xmlns:forms="http://xamarin.com/schemas/2014/forms"</code> will appear before <code>xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"</code>.</li>
-<li>Attributes that belong to the Microsoft Xaml schema <code>http://schemas.microsoft.com/winfx/2009/xaml</code> are ordered next. For example, the <code>x:Class</code> or <code>x:Name</code> declaration.</li>
-<li>Attributes belonging to the default namespace are ordered next, sorted alphabetically ascending.</li>
-<li>Attributes belonging to the other namespaces are then ordered next, sorted by namespace ascending and then by attribute name ascending.</li>
-</ul>
+<h2 id="expand-node">Expand Node</h2>
+<p><strong>Configuration Id: com.mfractor.code_actions.xaml.expand_node_with_closing_tag</strong></p>
+<p>When a Xaml node is self-closing (EG <code>&lt;MyNode/&gt;</code>), this organise refactoring allows a developer to generate a closing tag for the node. For example, the node <code>&lt;MyNode/&gt;</code> would become <code>&lt;MyNode&gt; ... &lt;/MyNode&gt;</code> after applying this refactoring.</p>
+<h2 id="format-xaml-document">Format Xaml Document</h2>
+<p><strong>Configuration Id: com.mfractor.code_actions.xaml.format_document</strong></p>
+<p>Applies the xml formatting policy to the entire document. It will correctly indent nodes, sort attributes, align attributes under the parent node.</p>
 <h3 id="uses">Uses:</h3>
 <ul>
 <li><a href="../../../code-generation/xaml/#sort-xaml-attributes">Sort Xaml Attributes</a></li>
 </ul>
-<h2 id="format-xaml-document">Format Xaml Document</h2>
-<p><strong>Configuration Id: com.mfractor.code_actions.xaml.format_document</strong></p>
-<p>Applies the xml formatting policy to the entire document. It will correctly indent nodes, sort attributes, align attributes under the parent node.</p>
-<h3 id="uses_1">Uses:</h3>
-<ul>
-<li><a href="../../../code-generation/xaml/#sort-xaml-attributes">Sort Xaml Attributes</a></li>
-</ul>
-<h2 id="collapse-node">Collapse Node</h2>
-<p><strong>Configuration Id: com.mfractor.code_actions.xaml.collapse_node_closing_tag</strong></p>
-<p>When a Xaml node has a closing tag and no children (eg: <code>&lt;MyNode&gt; &lt;/MyNode&gt;</code>), this refactoring allows the developer to remove the closing tag to make the node self-closing. For example, when applied to the node <code>&lt;MyNode&gt; ... &lt;/MyNode&gt;</code>, the closing tag <code>&lt;/MyNode&gt;</code> is removed and the element becomes self closing like so: <code>&lt;MyNode/&gt;</code>.</p>
-<h2 id="expand-node">Expand Node</h2>
-<p><strong>Configuration Id: com.mfractor.code_actions.xaml.expand_node_with_closing_tag</strong></p>
-<p>When a Xaml node is self-closing (EG <code>&lt;MyNode/&gt;</code>), this organise refactoring allows a developer to generate a closing tag for the node. For example, the node <code>&lt;MyNode/&gt;</code> would become <code>&lt;MyNode&gt; ... &lt;/MyNode&gt;</code> after applying this refactoring.</p>
 <h2 id="remove-unused-namespaces">Remove Unused Namespaces</h2>
 <p><strong>Configuration Id: com.mfractor.code_actions.xaml.remove_unused_namespaces</strong></p>
 <p>When a xaml node has unused xml namespace declarations, this code action will remove all unused namespaces.</p>
@@ -471,6 +457,20 @@ MFractor uses the following rules when sorting:</p>
 </tr>
 </tbody>
 </table>
+<h3 id="uses_1">Uses:</h3>
+<ul>
+<li><a href="../../../code-generation/xaml/#sort-xaml-attributes">Sort Xaml Attributes</a></li>
+</ul>
+<h2 id="sort-xaml-attributes">Sort Xaml Attributes</h2>
+<p><strong>Configuration Id: com.mfractor.code_actions.xaml.sort_attributes</strong></p>
+<p>This code action sorts the attributes for a Xaml node and regenerates the xaml node based on the IDE's xml formatting policy.
+MFractor uses the following rules when sorting:</p>
+<ul>
+<li>Attributes that declare an xml namespace are ordered first, sorted alphabetically ascending. For example <code>xmlns:forms="http://xamarin.com/schemas/2014/forms"</code> will appear before <code>xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"</code>.</li>
+<li>Attributes that belong to the Microsoft Xaml schema <code>http://schemas.microsoft.com/winfx/2009/xaml</code> are ordered next. For example, the <code>x:Class</code> or <code>x:Name</code> declaration.</li>
+<li>Attributes belonging to the default namespace are ordered next, sorted alphabetically ascending.</li>
+<li>Attributes belonging to the other namespaces are then ordered next, sorted by namespace ascending and then by attribute name ascending.</li>
+</ul>
 <h3 id="uses_2">Uses:</h3>
 <ul>
 <li><a href="../../../code-generation/xaml/#sort-xaml-attributes">Sort Xaml Attributes</a></li>
