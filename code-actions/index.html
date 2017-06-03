@@ -110,6 +110,10 @@
       
     
       
+      <li class="toctree-l3"><a href="#the-essentials">The Essentials</a></li>
+      
+    
+      
       <li class="toctree-l3"><a href="#c-code-actions">C# Code Actions</a></li>
       
     
@@ -395,9 +399,30 @@
               
                 <h2 id="code-actions">Code Actions</h2>
 <p><em>How to use MFractors code fixes, actions and refactorings</em></p>
+<h2 id="the-essentials">The Essentials</h2>
+<p>MFractor includes a suite of code actions to organise, refactor and generate source code.</p>
+<p>To use MFractors code actions:</p>
+<ul>
+<li>Press <code>Alt + Return</code> within a C#, XAML or Android Resource document.</li>
+<li>Right click and select <code>Quick Fix</code> in a C# document.</li>
+</ul>
+<p><img alt="Using MFractors code action suite" src="../img/code-actions/using-code-actions.gif" /></p>
 <h2 id="c-code-actions">C# Code Actions</h2>
+<p>MFractors C# code action suite integrates directly into Visual Studio Macs existing code action suite; you can simply press <code>Alt+Return</code> to view available code actions and then <code>Return</code> to apply a code action.</p>
+<p><a href="csharp/">You can view the full list of MFractors C# code actions here</a></p>
 <h2 id="xaml-code-actions">XAML Code Actions</h2>
+<p>XAML code actions can be actioned when the current open is a Xamarin.Forms XAML document.</p>
+<p>In addition to being accessible through the quick fix menu, XAML code actions can be action  </p>
+<p>The XAML code actions come in 4 types:</p>
+<ul>
+<li><a href="xaml/fix/">Fix</a>: Fixes code issues. This menu is only available when actioned over a code issue (yellow or red squiggle).</li>
+<li><a href="xaml/organise/">Organise</a>: Organises XAML code. For example, sorting attributes or formatting a document.</li>
+<li><a href="xaml/refactor/">Refactor</a>: Refactors XAML code: For example, renaming XAML namespaces or extracting property values into a view model.</li>
+<li><a href="xaml/generate/">Generate</a>: Generates C# or XAML code. For example, implementing view models or creating resource dictionaries.</li>
+</ul>
 <h2 id="android-resource-code-actions">Android Resource Code Actions</h2>
+<p>Android code actions can be actioned when the current open is an Android resource; for example a menu, values or xml configuration file.</p>
+<p>Disclaimer: Support for Android resource code actions is currently very limited. This feature-set will be added to over time.</p>
               
             </div>
           </div>
