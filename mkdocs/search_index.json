@@ -247,7 +247,7 @@
         }, 
         {
             "location": "/annotations/", 
-            "text": "Using MFractor.Annotations\n\n\nPremium Only\n\n\nUsing the MFractor.Annotations library to power mobile-specific C# code diagnostics\n\n\nIntroduction\n\n\nThe MFractor.Annotations library is a Nuget package that powers a suite of mobile-specific code diagnostics. When this library is installed and used in a .NET project, developers can annotate their code with MFractor attributes to activate features like\n\n\nWhile the Nuget library can be installed into any project, MFractor's mobile-specific code diagnostics are only available in MFractor Premium.\n\n\nInstalling MFractor.Annotations NuGet\n\n\nTargeting A Layout In Xamarin.Android", 
+            "text": "Using MFractor.Annotations\n\n\nPremium Only\n\n\nUsing the MFractor.Annotations library to power mobile-specific C# code diagnostics\n\n\nIntroduction\n\n\nThe MFractor.Annotations library is a Nuget package that powers a suite of mobile-specific code diagnostics. When this library is installed and used in a .NET project, developers can annotate their code with MFractor attributes to activate features like the \nCheck Views Exist In Layout\n C# code analyser.\n\n\nWhile the Nuget library can be installed into any project, MFractor's mobile-specific code diagnostics are only available in MFractor Premium.\n\n\nInstalling the MFractor.Annotations NuGet\n\n\nTo add the MFractor.Annotations library into your project:\n\n\nRight click on 'Packages' and select 'Add Packages...'\n\n\n\n\nSearch for 'MFractor.Annotations' and select 'Add Package'\n\n\n\n\nTargeting A Layout In Xamarin.Android\n\n\nWhen working in Xamarin.Android, developers use layouts to define the UI contents for an \nActivity\n, \nFragment\n, \nView\n etc. A layout is connected to these UI components by either an \nSetContentView\n call (for Activities) or a \nInflate\n call. Developers then retrieve views from within that layout using the \nFindViewById\n method.\n\n\nFor example:\n\n\nMain.axml\n\n\n?xml version=\n1.0\n encoding=\nutf-8\n?\n\n\nLinearLayout xmlns:android=\nhttp://schemas.android.com/apk/res/android\n\n    android:orientation=\nvertical\n\n    android:layout_width=\nmatch_parent\n\n    android:layout_height=\nmatch_parent\n\n    \nButton\n        android:id=\n@+id/myButton\n\n        android:layout_width=\nmatch_parent\n\n        android:layout_height=\nwrap_content\n\n        android:text=\n@string/hello\n /\n\n\n/LinearLayout\n\n\n\n\n\nMainActivity.cs\n\n\n[Activity(Label = \nHelloMFractor\n, MainLauncher = true, Icon = \n@mipmap/icon\n)]\npublic class MainActivity : Activity\n{\n    protected override void OnCreate(Bundle savedInstanceState)\n    {\n        // Set our view from the \nmain\n layout resource\n        SetContentView(Resource.Layout.Main);\n\n        Button button = FindViewById\nButton\n(Resource.Id.myButton);\n        Button otherButton = FindViewById\nButton\n(Resource.Id.myOtherButton);\n    }\n}\n\n\n\n\nIn the \nMainActivity.cs\n example above, the second \nFindViewById\n call points to the \nButton\n declaration, \nmyOtherButton\n, that is not declared in the Main.axml layout. At runtime the \nFindViewById\n call will fail\n\n\nMFractor.Annotations includes the attribute \nUsesLayout\n that we can attach to a class declaration to tell MFractor what the expected layout for a call is\n\nMainActivity.cs\n\n\n[MFrator.Annotations.Android.UsesLayout(Resource.Layout.Main)]\n[Activity(Label = \nHelloMFractor\n, MainLauncher = true, Icon = \n@mipmap/icon\n)]\npublic class MainActivity : Activity\n{\n  // ...\n}\n\n\n\n\nThis activates the \nCheck Views Exist In Layout\n C# analyser; uses of \nFindViewById\n will be inspected and check that the view referenced by the \nResource.Id\n expression inspected exists in the layout specified by the \nUsesLayout\n attribute:", 
             "title": "Using MFractor.Annotations"
         }, 
         {
@@ -257,17 +257,17 @@
         }, 
         {
             "location": "/annotations/#introduction", 
-            "text": "The MFractor.Annotations library is a Nuget package that powers a suite of mobile-specific code diagnostics. When this library is installed and used in a .NET project, developers can annotate their code with MFractor attributes to activate features like  While the Nuget library can be installed into any project, MFractor's mobile-specific code diagnostics are only available in MFractor Premium.", 
+            "text": "The MFractor.Annotations library is a Nuget package that powers a suite of mobile-specific code diagnostics. When this library is installed and used in a .NET project, developers can annotate their code with MFractor attributes to activate features like the  Check Views Exist In Layout  C# code analyser.  While the Nuget library can be installed into any project, MFractor's mobile-specific code diagnostics are only available in MFractor Premium.", 
             "title": "Introduction"
         }, 
         {
-            "location": "/annotations/#installing-mfractorannotations-nuget", 
-            "text": "", 
-            "title": "Installing MFractor.Annotations NuGet"
+            "location": "/annotations/#installing-the-mfractorannotations-nuget", 
+            "text": "To add the MFractor.Annotations library into your project:  Right click on 'Packages' and select 'Add Packages...'   Search for 'MFractor.Annotations' and select 'Add Package'", 
+            "title": "Installing the MFractor.Annotations NuGet"
         }, 
         {
             "location": "/annotations/#targeting-a-layout-in-xamarinandroid", 
-            "text": "", 
+            "text": "When working in Xamarin.Android, developers use layouts to define the UI contents for an  Activity ,  Fragment ,  View  etc. A layout is connected to these UI components by either an  SetContentView  call (for Activities) or a  Inflate  call. Developers then retrieve views from within that layout using the  FindViewById  method.  For example:  Main.axml  ?xml version= 1.0  encoding= utf-8 ?  LinearLayout xmlns:android= http://schemas.android.com/apk/res/android \n    android:orientation= vertical \n    android:layout_width= match_parent \n    android:layout_height= match_parent \n     Button\n        android:id= @+id/myButton \n        android:layout_width= match_parent \n        android:layout_height= wrap_content \n        android:text= @string/hello  /  /LinearLayout   MainActivity.cs  [Activity(Label =  HelloMFractor , MainLauncher = true, Icon =  @mipmap/icon )]\npublic class MainActivity : Activity\n{\n    protected override void OnCreate(Bundle savedInstanceState)\n    {\n        // Set our view from the  main  layout resource\n        SetContentView(Resource.Layout.Main);\n\n        Button button = FindViewById Button (Resource.Id.myButton);\n        Button otherButton = FindViewById Button (Resource.Id.myOtherButton);\n    }\n}  In the  MainActivity.cs  example above, the second  FindViewById  call points to the  Button  declaration,  myOtherButton , that is not declared in the Main.axml layout. At runtime the  FindViewById  call will fail  MFractor.Annotations includes the attribute  UsesLayout  that we can attach to a class declaration to tell MFractor what the expected layout for a call is MainActivity.cs  [MFrator.Annotations.Android.UsesLayout(Resource.Layout.Main)]\n[Activity(Label =  HelloMFractor , MainLauncher = true, Icon =  @mipmap/icon )]\npublic class MainActivity : Activity\n{\n  // ...\n}  This activates the  Check Views Exist In Layout  C# analyser; uses of  FindViewById  will be inspected and check that the view referenced by the  Resource.Id  expression inspected exists in the layout specified by the  UsesLayout  attribute:", 
             "title": "Targeting A Layout In Xamarin.Android"
         }, 
         {
@@ -507,7 +507,7 @@
         }, 
         {
             "location": "/xamarin-android/resource-intellisense/", 
-            "text": "WORK IN PROGRESS\n\n\nResource IntelliSense\n\n\nBuilding Android resource files such as values, menus, drawables or layouts using resource code completion\n\n\nIntroduction\n\n\nSupported Resources\n\n\nThis is a list of the supported Android resource types that MFractor for Visual Studio Mac supports:", 
+            "text": "WORK IN PROGRESS\n\n\nResource IntelliSense\n\n\nBuilding Android resource files such as values, menus, drawables or layouts using resource code completion\n\n\nIntroduction\n\n\nAs a Xamarin.Android developer, chances are you will spend a significant amount of time building application resources like values, drawables, menus and layouts (plus more!) within the \nResources/\n directory of your project.\n\n\nMFractor improves this experience by adding comprehensive Resource IntelliSense; autocompletion for most resource types (all but layouts) within a Xamarin.Android project.\n\n\n\n\nSupported Resources\n\n\nComing soon: A full list of the resources that support IntelliSense", 
             "title": "Resource IntelliSense"
         }, 
         {
@@ -517,12 +517,12 @@
         }, 
         {
             "location": "/xamarin-android/resource-intellisense/#introduction", 
-            "text": "", 
+            "text": "As a Xamarin.Android developer, chances are you will spend a significant amount of time building application resources like values, drawables, menus and layouts (plus more!) within the  Resources/  directory of your project.  MFractor improves this experience by adding comprehensive Resource IntelliSense; autocompletion for most resource types (all but layouts) within a Xamarin.Android project.", 
             "title": "Introduction"
         }, 
         {
             "location": "/xamarin-android/resource-intellisense/#supported-resources", 
-            "text": "This is a list of the supported Android resource types that MFractor for Visual Studio Mac supports:", 
+            "text": "Coming soon: A full list of the resources that support IntelliSense", 
             "title": "Supported Resources"
         }, 
         {
