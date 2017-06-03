@@ -76,4 +76,4 @@ public class MainActivity : Activity
 
  This activates the [Check Views Exist In Layout](/code-analysis/csharp/android/#check-views-exist-in-layout) C# analyser; uses of `FindViewById` will be inspected and check that the view referenced by the `Resource.Id` expression inspected exists in the layout specified by the `UsesLayout` attribute:
 
- ![Validating id usages with the UsesLayout attribute(/img/annotations/missing-view.png)
+ ![Validating id usages with the UsesLayout attribute](/img/annotations/missing-view.png)
