@@ -20,7 +20,7 @@ To add the MFractor.Annotations library into your project:
 ![Adding a package to a project](/img/annotations/add-packages.png)
 
 
-**Search for 'MFractor.Annotations' and select ''**
+**Search for 'MFractor.Annotations' and select 'Add Package'**
 
 ![Adding a package to a project](/img/annotations/mfractor-annotations.png)
 
