@@ -18,12 +18,6 @@ Generates a boilerplate implementation of ICommand using Xamarin.Forms.Command
 |------|------|-------------|-------------|
 | **CommandType** | System.String | `"Xamarin.Forms.Command"` | The fully qualified type to use as the command implementation. For example, using `Xamarin.Forms.Command` would cause the new expression to be `new Xamarin.Forms.Command` |
 
-## Generate Value Conversion Attribute
-
-**Configuration Id: com.mfractor.code_gen.forms.csharp.value_conversion_attribute**
-
-Generates an implementation of the `ValueConversionAttribute`
-
 ## Generate IValueConverter Implementation
 
 **Configuration Id: com.mfractor.code_gen.forms.csharp.value_converter**
@@ -45,4 +39,10 @@ Generates an implementation of a value converter.
 
  * [Generate Value Conversion Attribute](/code-generation/xamarin-forms.md#generate-value-conversion-attribute)
 
+
+## Generate Value Conversion Attribute
+
+**Configuration Id: com.mfractor.code_gen.forms.csharp.value_conversion_attribute**
+
+Generates an implementation of the `ValueConversionAttribute`
 

@@ -3,7 +3,5 @@
 
 **Premium Only**
 
-**Configuration Id: com.mfractor.analysis.csharp.forms.validate_export_renderer_attribute**
-
 This analyser inspects usages of the ExportRenderer attribute, validating the type passed into the view argument is derived from Xamarin.Forms.View and that the type passed into the renderer argument is a renderer type.
 
