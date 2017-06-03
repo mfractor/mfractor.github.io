@@ -407,6 +407,16 @@
 <h2 id="introduction">Introduction</h2>
 <p>This is a summary of the changes introduced in v3.1.0 of MFractor for Visual Studio Mac.</p>
 <h2 id="features">Features</h2>
+<ul>
+<li><strong>Navigation Tools</strong>
+    -</li>
+<li><strong>XAML Code Actions</strong><ul>
+<li>Quickly migrate to the new <code>OnPlatform</code> methodology with the <a href="../../code-actions/xaml/refactor/#migrate-onplatform-usage">Migrate OnPlatform Usage</a> code action.</li>
+</ul>
+</li>
+<li><strong>XAML Analysers</strong>
+    -</li>
+</ul>
 <h2 id="premium-features">Premium Features</h2>
 <ul>
 <li><strong>C# Code Actions</strong><ul>
@@ -434,7 +444,8 @@
 </ul>
 <h2 id="bug-fixes">Bug Fixes</h2>
 <ul>
-<li>Fixed: Often the Xaml analyser would fail to remove code-issue markers.</li>
+<li>Fixed: Often the XAML analyser would fail to remove code-issue markers.</li>
+<li>Fixed: Custom markup extension symbols would not be detected and would cause the unused XAML namespace analyser to trigger.</li>
 </ul>
               
             </div>
