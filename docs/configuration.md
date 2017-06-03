@@ -19,7 +19,7 @@ When browsing this website, you may notice that parts of the site are tagged as 
 
 Let's look at the 3 main configurable feature types:
 
-###Code Actions
+###C ode Actions
 
 Code actions are features exposed through the IDE context menu (accessed via `Right CLick` or `Alt+Return`) that fix code issues and organise, refactor and generate source code.
 
@@ -31,9 +31,7 @@ Code analysis features are linters that inspect for problems in your source code
 
 Code generators create source code (such as C# or XAML); they isolate the creation of a common piece of code into a single, reusable unit.
 
-Code generators are only ever directly used by code actions.
-
-The layout of
+Code generators are only ever directly used by code actions; they are not exposed through the IDE.
 
 ## Configuration Files
 
@@ -84,9 +82,22 @@ Inside the `configure` element we can now specify multiple `property` tags to ch
 
 After targeting a configurable, we can use **Configurable Properties** to change the behaviour of that feature.
 
-Configurable properties are settings that can be editing on a configurable
+Configurable properties are settings that can be edited on a configurable through the use of the `property` tag.
 
+We place a `property` tag inside a `configure` tag; we can then target the property name using the `name` attribute and apply a new value using the `value` attribute.
 
-## Configuration Dependencies
+For example, we can change the output folder for new ViewModels by using a `property` setter on the `ViewModelsFolder` property:
 
-Configurables can also use other configurables, typically code generators.
+```
+<configure id="com.mfractor.code_action.forms.implement_view_model">
+	<property name="ViewModelsFolder" value="Path/To/ViewModelsFolder"/>
+</configure>
+```
+
+## Code Generation Dependencies
+
+Often multiple code actions need to generate the same source; rather than configuring each code action separately each code action reuses a common **code generator**. A code generator is a configurable that encapsulates the logic needed to generate a specific piece of code.
+
+For example, both the [Implement View Model](/code-actions/xaml/generate/#implement-view-model) and [Generate Missing Command](/code-actions/xaml/fix/#generate-missing-binding-command-stub) use the [Generate ICommand Implementation](/code-generation/xamarin-forms/#generate-icommand-implementation) code generator; this allows us to set the ICommand type once and have the behaviour propagate through all code-actions that need to generate an ICommand implementation.
+
+This documentation site lists the code-generaton dependencies

@@ -7,9 +7,12 @@ When MFractor can [implicitly resolve the View - Code Behind Class - ViewModel r
 
 We can access these shortcuts by right clicking in a **.xaml**, **.xaml.cs** or **ViewModel.cs** code file:
 
- * Go To Code-Behind Class: Jumps you to the code behind class related to a view or view model
  * Go To View Model: Jumps you to the view model related to a view or code behind class.
+    * Shortcut: `Alt + Left Shift + 1`
+ * Go To Code-Behind Class: Jumps you to the code behind class related to a view or view model.
+    * Shortcut: `Alt + Left Shift + 2`
  * Go To Xaml View: Jumps you to the xaml view related to a view model or code behind class.
+    * Shortcut: `Alt + Left Shift + 3`
 
  For example:
 

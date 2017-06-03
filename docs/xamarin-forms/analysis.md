@@ -30,10 +30,29 @@ A full list of available Xaml analysers can be found at [Xamarin.Forms Xaml Anal
 Whenever you edit a Xaml code file, MFractor will cancel any running analysis, re-parse and symbolicate the document and then re-run the xaml analyser against your xaml.
 
 ##Code Fixes
-When MFractor detects a code issue, it is usually able to suggest a fix as well. When MFractor can fix an issue,
+When MFractor detects a code issue, it is usually able to suggest a fix as well. When MFractor can fix an issue, it will display within the code issue tooltip that fixes are available:
 
-You can action this fix by right clicking on the text area marked by the coloured squiggle
+![Xamarin.Forms XAML code issue](/img/forms/code-issue.png)
 
-##Expression Analysis
+You can action this fix by right clicking on the text area marked by the coloured squiggle, navigating to **Fix** and then choosing your code fix. Alternatively, click on the affected text area and press `Alt + Return` to open the quick fix menu.
+
+![Xamarin.Forms XAML code issue fixing](/img/forms/fix-code-issue.gif)
+
+## Markup Extension Expression Analysis
+
+When MFractor encounters a markup extension, an attribute value that have `{ ... }` as it's content, it will consume, evaluate and analyse the expression.
+
+MFractor supports analysis of the following markup extensions:
+
+ * `x:Reference`
+ * `x:Static`
+ * `Binding`
+ * `StaticResource` -> Limited support
 
 ##Binding Expression Analysis
+
+MFractor supports analysis of binding markup extensions; this is a powerful feature that can prevent runtime bugs by checking that properties exist on a binding context, that return and input types match and match more.
+
+For binding expressions to be analysed, MFractor must be able to resolve a binding context for the XAML document. For applications that use the `Page` <-> `ViewModel` naming convention, binding contexts will automatically resolve when the XAML document is opened.
+
+To learn how to configure a binding context for a XAML document, refer to the [Configuring A Binding Context](/xamarin-forms/configure-binding-context.md) documentation.
