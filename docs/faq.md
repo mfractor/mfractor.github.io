@@ -13,7 +13,7 @@ If something doesn't work or you'd like a sweet new feature added, be patient an
 The latest version of MFractor always targets the current stable channel version of Visual Studio Mac.
 
 ##Does MFractor support Visual Studio Windows?
-MFractor **does not** support Visual Studio Windows. This is on our roadmap for the future but we have no concrete timeline. A news announcement will be published when we commence work on MFractor for Visual Studio Windows.
+MFractor **does not** support Visual Studio Windows. This is on the roadmap for the future but there is no concrete timeline. A news announcement will be published work commences on MFractor for Visual Studio Windows.
 
 ##How do I get started using MFractor?
 MFractor does a lot so it may take a little while to learn its ins and outs. If you'd like to learn how to best use it, you have a few options:
@@ -24,9 +24,9 @@ MFractor does a lot so it may take a little while to learn its ins and outs. If 
 ##How do I file a bug report?
 If you notice a bug while you are using MFractor, please file a bug report by taking the following steps:
 
- * Prepare a short 2-3 sentence description of the bug, the steps you took that triggered it and the symptoms of the bug.
+ * Go to the [MFractor Feedback](https://github.com/mfractor/mfractor-feedback/issues/new) repository.
+ * Enter a 2-3 sentence description of the bug, the steps you took that triggered it and the symptoms of the bug.
  * Copy MFractors version information by opening the **About** dialog (**Help** -> **MFractor** -> **About**) and click **Copy Build Details Into Clipboard**.
- * Email the description and build version to [hello@mfractor.com](hello@mfractor.com).
 
 ##How do I install or update the Android SDK meta-data bundle?
 
