@@ -31,9 +31,7 @@ If you would like C# code refactoring support, mobile-specific code diagnostics 
 
 ## Purchase An MFractor Premium License
 
-**RRP: $199aud**
-
-MFractor Premium licenses are currently issued on a by-request basis. Until September 1st 2017, MFractor Premium is on sale at **$149 AUD** (25% discount).
+**RRP: $199AUD per user per year**
 
 Premium licenses:
 
