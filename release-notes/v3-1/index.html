@@ -431,6 +431,7 @@
 <li>Detect when a developer tries to manually create an <code>Activity</code> with new statement. See <a href="../../code-analysis/csharp/android/#incorrect-activity-creation">Incorrect Activity Creation</a>.</li>
 <li>Detect when a developer directly implements the <code>IJavaObject</code> interface instead of inheriting from <code>Java.Lang.Object</code>. See <a href="../../code-analysis/csharp/android#class-derives-from-ijavaobject">Class Derives From IJavaObject</a>.</li>
 <li>Detect when a subclass of <code>Android.App.Application</code> is missing the peer connection constructor. See <a href="../../code-analysis/csharp/android/#application-requires-peer-connection-constructor">Application Requires Peer Connection Constructor</a>.</li>
+<li><a href="../../code-analysis/csharp/android/#activity-icon-should-be-mip-map">Activity icons should be a mip map not a drawable</a>.</li>
 </ul>
 </li>
 <li><strong>Xamarin.Forms C# Code Diagnostics</strong><ul>
@@ -441,11 +442,13 @@
 <h2 id="enhancements">Enhancements</h2>
 <ul>
 <li>Added a <strong>Feedback</strong> menu into the <strong>Help</strong> -&gt; <strong>MFractor</strong> menu. Use this menu to file bug reports and feature requests.</li>
+<li>The <a href="../../code-actions/xaml/fix/#generate-property-into-class">Generate Property Into Class</a></li>
 </ul>
 <h2 id="bug-fixes">Bug Fixes</h2>
 <ul>
 <li>Fixed: Often the XAML analyser would fail to remove code-issue markers.</li>
 <li>Fixed: Custom markup extension symbols would not be detected and would cause the unused XAML namespace analyser to trigger.</li>
+<li>Fixed: The Android resource tooltips would not render over C# resource usages. EG: <code>Resource.Layout.myLayout</code>.</li>
 </ul>
               
             </div>
