@@ -6,6 +6,7 @@ fi
 
 MESSAGE=$1
 
+git add docs/
 git commit -am "$MESSAGE"
 git push
 
