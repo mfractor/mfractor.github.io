@@ -28,8 +28,8 @@ Generates an implementation of a value converter.
 
 | Name | Type | Defaults To | Description |
 |------|------|-------------|-------------|
-| **IncludeValueConversionAttribute** | System.Boolean | `False` | If the generated value converter should automatically have a ValueConversionAttribute added to it to denote it's input and output types. |
-| **CreateMissingValueConversionAttribute** | System.Boolean | `False` | If an implementation of the ValueConversionAttribute class cannot be resolved within the project compilation, should MFractor automatically create the implementation? |
+| **IncludeValueConversionAttribute** | System.Boolean | `True` | If the generated value converter should automatically have a ValueConversionAttribute added to it to denote it's input and output types. |
+| **CreateMissingValueConversionAttribute** | System.Boolean | `True` | If an implementation of the ValueConversionAttribute class cannot be resolved within the project compilation, should MFractor automatically create the implementation? |
 | **Namespace** | System.String | NA | The namespace to place new value converters inside. When empty, new value converters will be placed under the projects default namespace. |
 | **Folder** | System.String | NA | The folder to place new value converters inside. When empty, new value converters will be placed inside the proejcts root folder. |
 | **ImplementConversionForConvert** | System.Boolean | `False` | When creating the body of the `Convert` method, should a `var input = (InputType)value;* and `return default(OutputType)` be inserted instead of a not implemented exception? |
@@ -44,5 +44,5 @@ Generates an implementation of a value converter.
 
 **Configuration Id: com.mfractor.code_gen.forms.csharp.value_conversion_attribute**
 
-Generates an implementation of the `ValueConversionAttribute`
+Generates an implementation of the `ValueConversionAttribute`; the attribute used to hint type-flow in a value converter for design time tools like MFractor.
 

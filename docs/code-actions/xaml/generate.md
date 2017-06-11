@@ -158,7 +158,7 @@ public class MyCustomSlider : Slider
 ### Uses:
 
  * [Generate Event Handler Declaration](/code-generation/csharp.md#generate-event-handler-declaration)
- * [Generate Property Into Class](/code-actions/xaml/fix.md#generate-property-into-class)
+ * [Create Missing Property For Class](/code-actions/xaml/fix.md#create-missing-property-for-class)
 
 
 ## Implement View Model

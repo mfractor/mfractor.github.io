@@ -2,7 +2,7 @@
 
 ##Welcome
 
-Welcome to the documentation for MFractor, incredible tools for Visual Studio Mac.
+Welcome to the documentation for MFractor, a mobile first ReSharper for Visual Studio Mac.
 
 ## MFractor Video Guide
 
