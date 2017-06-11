@@ -441,13 +441,13 @@
 <tr>
 <td><strong>IncludeValueConversionAttribute</strong></td>
 <td>System.Boolean</td>
-<td><code>False</code></td>
+<td><code>True</code></td>
 <td>If the generated value converter should automatically have a ValueConversionAttribute added to it to denote it's input and output types.</td>
 </tr>
 <tr>
 <td><strong>CreateMissingValueConversionAttribute</strong></td>
 <td>System.Boolean</td>
-<td><code>False</code></td>
+<td><code>True</code></td>
 <td>If an implementation of the ValueConversionAttribute class cannot be resolved within the project compilation, should MFractor automatically create the implementation?</td>
 </tr>
 <tr>
@@ -482,7 +482,7 @@
 </ul>
 <h2 id="generate-value-conversion-attribute">Generate Value Conversion Attribute</h2>
 <p><strong>Configuration Id: com.mfractor.code_gen.forms.csharp.value_conversion_attribute</strong></p>
-<p>Generates an implementation of the <code>ValueConversionAttribute</code></p>
+<p>Generates an implementation of the <code>ValueConversionAttribute</code>; the attribute used to hint type-flow in a value converter for design time tools like MFractor.</p>
               
             </div>
           </div>
