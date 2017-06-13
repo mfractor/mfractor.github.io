@@ -4,7 +4,9 @@
 
 **Configuration Id: com.mfractor.code_actions.xaml.collapse_attributes_onto_same_line**
 
-This code action collapses all the attributes for a Xaml node onto the same line as the nodes name declaration.
+The **Collapse Attributes** code action will fold all attributes onto the same line for the XAML node under the cursor.
+
+![Using the Collapse Attributes code action](/img/code-actions/forms/collapse-attributes.gif)
 
 ## Collapse Node
 
@@ -16,9 +18,9 @@ When a Xaml node has a closing tag and no children (eg: `<MyNode> </MyNode>`), t
 
 **Configuration Id: com.mfractor.code_actions.xaml.expand_attributes_onto_new_lines**
 
-This code action expands all the attributes for a Xaml node onto a separate line for each attribute.
+The **Expand Attributes** code action move all attributes onto seperate lines for the XAML node under the cursor.
 
-For example, gi
+![Using the Expand Attributes code action](/img/code-actions/forms/expand-attributes.gif)
 
 ## Expand Node
 
@@ -58,14 +60,16 @@ When a xaml node has unused xml namespace declarations, this code action will re
 
 **Configuration Id: com.mfractor.code_actions.xaml.sort_attributes**
 
-This code action sorts the attributes for a Xaml node and regenerates the xaml node based on the IDE's xml formatting policy.
+This **Sort Attribute** code actions sorts the attributes for a Xaml node and then recreates the xaml node based on the IDE's xml formatting policy.
+
+![Using the sort attributes code action](/img/code-actions/forms/sort-attributes.gif)
+
 MFractor uses the following rules when sorting:
 
- * Attributes that declare an xml namespace are ordered first, sorted alphabetically ascending. For example `xmlns:forms="http://xamarin.com/schemas/2014/forms"` will appear before `xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"`.
+ * Attributes that declare an xml namespace are ordered first, sorted alphabetically ascending. For example `xmlns:forms=\"http://xamarin.com/schemas/2014/forms\"` will appear before `xmlns:x=\"http://schemas.microsoft.com/winfx/2009/xaml\"`.
  * Attributes that belong to the Microsoft Xaml schema `http://schemas.microsoft.com/winfx/2009/xaml` are ordered next. For example, the `x:Class` or `x:Name` declaration.
  * Attributes belonging to the default namespace are ordered next, sorted alphabetically ascending.
  * Attributes belonging to the other namespaces are then ordered next, sorted by namespace ascending and then by attribute name ascending.
-
 
 ### Uses:
 
