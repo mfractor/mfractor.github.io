@@ -450,7 +450,7 @@
 
 <p>The developer is retrieving the <code>mainButton</code> from the <code>Main.axml</code> layout that was bound using the <code>SetContentView(Resource.Layout.Main)</code> invocation.</p>
 <p>In large scale applications, as the amount of layouts grows, it becomes very easy to accidentally retrieve the wrong button from the layout.</p>
-<p>Say another button defined <code>secondaryButton</code>... Consider the following:</p>
+<p>Say another layout defined <code>secondaryButton</code>... Consider the following:</p>
 <p><strong>MyActivity.cs</strong></p>
 <pre><code>public class MyActivity : Activity
 {
@@ -473,7 +473,7 @@ public class MyActivity : Activity
 </code></pre>
 
 <p>MFractor will look for a <code>secondaryButton</code> declaration in all configurations of <code>Main.axml</code> and provide a code warning if it cannot be found:</p>
-<p><img alt="Inspecting for missing views in a layout using the UsesLayout analyser" src="../../../img/code-analysis/uses-layout-analysis.png" /></p>
+<p><img alt="Inspecting for missing views in a layout using the UsesLayout analyser" src="../../../img/code-analysis/android/uses-layout-analysis.png" /></p>
 <h2 id="class-derives-from-ijavaobject">Class Derives From IJavaObject</h2>
 <p><strong>Premium Only</strong></p>
 <p>Often when creating new classes in a Xamarin.Android codebase developers will need a new class to be usable between Java and C#. Xamarin.Android provides the IJavaObject interface to expose a class to Java. Instead of directly inheriting from the IJavaObject interface, a developer should instead inherit from Java.Lang.Object which implements the required interface members.</p>
