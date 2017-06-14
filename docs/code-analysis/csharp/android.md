@@ -48,7 +48,7 @@ The developer is retrieving the `mainButton` from the `Main.axml` layout that wa
 
 In large scale applications, as the amount of layouts grows, it becomes very easy to accidentally retrieve the wrong button from the layout.
 
-Say another button defined `secondaryButton`... Consider the following:
+Say another layout defined `secondaryButton`... Consider the following:
 
 **MyActivity.cs**
 ```
@@ -77,7 +77,7 @@ public class MyActivity : Activity
 
 MFractor will look for a `secondaryButton` declaration in all configurations of `Main.axml` and provide a code warning if it cannot be found:
 
-![Inspecting for missing views in a layout using the UsesLayout analyser](/img/code-analysis/uses-layout-analysis.png)
+![Inspecting for missing views in a layout using the UsesLayout analyser](/img/code-analysis/android/uses-layout-analysis.png)
 
 ## Class Derives From IJavaObject
 
