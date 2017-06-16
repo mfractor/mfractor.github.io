@@ -287,11 +287,11 @@
       
     
       
-      <li class="toctree-l3"><a href="#import-namespace-and-assembly">Import namespace and assembly</a></li>
+      <li class="toctree-l3"><a href="#import-namespace-and-assembly-for-unresolved-expression-symbol">Import Namespace And Assembly For Unresolved Expression Symbol</a></li>
       
     
       
-      <li class="toctree-l3"><a href="#import-namespace-and-assembly_1">Import Namespace And Assembly</a></li>
+      <li class="toctree-l3"><a href="#import-namespace-and-assembly-for-unresolved-xaml-node">Import Namespace And Assembly For Unresolved XAML Node</a></li>
       
     
       
@@ -315,7 +315,7 @@
       
     
       
-      <li class="toctree-l3"><a href="#replace-node-with-auto-corrected-match">Replace node with auto-corrected match</a></li>
+      <li class="toctree-l3"><a href="#replace-node-with-auto-correct">Replace Node With Auto-Correct</a></li>
       
     
       
@@ -727,12 +727,42 @@
 <h2 id="generate-view-from-xaml-node">Generate View From XAML Node</h2>
 <p><strong>Configuration Id: com.mfractor.code_fixes.xaml.generate_missing_class_as_view</strong></p>
 <p>When a Xaml node cannot be resolved, this fix will create a new implemenation of that class deriving from 'Xamarin.Forms.View'.</p>
-<h2 id="import-namespace-and-assembly">Import namespace and assembly</h2>
-<p><strong>Configuration Id: com.mfractor.code_fixes.xaml.resolve_csharp_symbol</strong></p>
+<h2 id="import-namespace-and-assembly-for-unresolved-expression-symbol">Import Namespace And Assembly For Unresolved Expression Symbol</h2>
+<p><strong>Configuration Id: com.mfractor.code_fixes.xaml.resolve_expression_csharp_symbol</strong></p>
 <p>When the namespace inside c# symbol reference expression can be resolved to a .NET symbol in the project or its references this fix generates an 'xmlns' import statement in the root xaml element.</p>
-<h2 id="import-namespace-and-assembly_1">Import Namespace And Assembly</h2>
+<h2 id="import-namespace-and-assembly-for-unresolved-xaml-node">Import Namespace And Assembly For Unresolved XAML Node</h2>
 <p><strong>Configuration Id: com.mfractor.code_fixes.xaml.import_reference</strong></p>
-<p>When an xaml node can be resolved to a .NET symbol in the project or its references this fix generates an 'xmlns' import statement in the root xaml element.</p>
+<p><img alt="Resolving an unknown XAML namespace by importing a controls namespace and assembly" src="../../../img/code-actions/forms/import-xaml-node.gif" /></p>
+<p>When building XAML documents, developers frequently use 3rd party or custom controls to build great UIs for their app.</p>
+<p>This comes with one little quirk, each time a custom control is used in XAML, the .NET namespace and assembly needs to be imported as a custom XAML namespace.</p>
+<p>For example, consider we wanted to use FFImageLoadings <code>CachedImage</code> control like so:</p>
+<pre><code>    &lt;ffimage:CachedImage/&gt;
+</code></pre>
+
+<p>This control lives inside the <code>FFImageLoading.Forms</code> namespace in the <code>FFImageLoading.Forms</code> assembly. To include this control into our XAML, we need to add the following code into the root XAML node:</p>
+<pre><code>xmlns:ffimage=&quot;clr-namespace:FFImageLoading.Forms;assembly=FFImageLoading.Forms&quot;
+</code></pre>
+
+<p>There's a few issues with this workflow:</p>
+<ul>
+<li>Remembering the <code>clr-namespace: ... ;assembly= ...</code> syntax is hard!</li>
+<li>Remembering what namespace and assembly a control is in is hard!</li>
+</ul>
+<p>Therefore the <strong>Import Namespace And Assembly For Unresolved XAML Node</strong> code fix is very useful because it resolves these for you!</p>
+<p>The code action will search all assemblies that the project references for classes that match the name of the XAML node. It will then suggest the creation of an <code>xmlns=...</code> import statement to resovle that missing class:</p>
+<p><strong>Before</strong>
+ <code>&lt;?xml version="1.0" encoding="utf-8"?&gt;
+&lt;ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+    x:Class="MyXamarinFormsApp.MainPage" &gt;
+    &lt;ffimage:CachedImage/&gt; &lt;-- The ffimage namespace doesn't exist!
+&lt;/ContentPage&gt;</code></p>
+<p><strong>After</strong>
+ <code>&lt;?xml version="1.0" encoding="utf-8"?&gt;
+&lt;ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+    x:Class="MyXamarinFormsApp.MainPage"
+    xmlns:ffimage="clr-namespace:FFImageLoading.Forms;assembly=FFImageLoading.Forms" &gt; &lt;-- The ffimage is now resolved
+    &lt;ffimage:CachedImage/&gt;
+&lt;/ContentPage&gt;</code></p>
 <h2 id="import-value-converter-for-binding-type-flow">Import Value Converter For Binding Type Flow</h2>
 <p><strong>Configuration Id: com.mfractor.code_fixes.xaml.import_resolving_value_converter</strong></p>
 <p>Inspects for IValueConverter implementations within the project and it's references that match the value conversion flow for this binding type mismatch. IValueConverter implementations must be annotated with the <code>ValueConversionAttribute</code> to be detected by this fix.</p>
@@ -752,7 +782,7 @@
 <h2 id="replace-field-or-method-reference-with-property">Replace Field Or Method Reference With Property</h2>
 <p><strong>Configuration Id: com.mfractor.code_fixes.xaml.binding_expression_does_not_return_property</strong></p>
 <p>Replaces a field or method symbol within a binding expression with a suggested property name.</p>
-<h2 id="replace-node-with-auto-corrected-match">Replace node with auto-corrected match</h2>
+<h2 id="replace-node-with-auto-correct">Replace Node With Auto-Correct</h2>
 <p><strong>Configuration Id: com.mfractor.code_fixes.xaml.autocorrect_unresolved_reference</strong></p>
 <p>This fix action replaces a mispelt xaml node that can be resolved in an assembly with its correct .NET symbol name.</p>
 <h2 id="replace-unknown-property-value-with-autocorrection">Replace unknown property value with autocorrection</h2>
