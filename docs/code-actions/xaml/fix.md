@@ -277,17 +277,61 @@ When a Xaml node cannot be resolved and it ends with '[cC]onverter', this fix wi
 
 When a Xaml node cannot be resolved, this fix will create a new implemenation of that class deriving from 'Xamarin.Forms.View'.
 
-## Import namespace and assembly
+## Import Namespace And Assembly For Unresolved Expression Symbol
 
-**Configuration Id: com.mfractor.code_fixes.xaml.resolve_csharp_symbol**
+**Configuration Id: com.mfractor.code_fixes.xaml.resolve_expression_csharp_symbol**
 
 When the namespace inside c# symbol reference expression can be resolved to a .NET symbol in the project or its references this fix generates an 'xmlns' import statement in the root xaml element.
 
-## Import Namespace And Assembly
+## Import Namespace And Assembly For Unresolved XAML Node
 
 **Configuration Id: com.mfractor.code_fixes.xaml.import_reference**
 
-When an xaml node can be resolved to a .NET symbol in the project or its references this fix generates an 'xmlns' import statement in the root xaml element.
+![Resolving an unknown XAML namespace by importing a controls namespace and assembly](/img/code-actions/forms/import-xaml-node.gif)
+
+When building XAML documents, developers frequently use 3rd party or custom controls to build great UIs for their app.
+
+This comes with one little quirk, each time a custom control is used in XAML, the .NET namespace and assembly needs to be imported as a custom XAML namespace.
+
+For example, consider we wanted to use FFImageLoadings `CachedImage` control like so:
+
+```
+    <ffimage:CachedImage/>
+```
+
+This control lives inside the `FFImageLoading.Forms` namespace in the `FFImageLoading.Forms` assembly. To include this control into our XAML, we need to add the following code into the root XAML node:
+
+```
+xmlns:ffimage="clr-namespace:FFImageLoading.Forms;assembly=FFImageLoading.Forms"
+```
+
+There's a few issues with this workflow:
+
+ - Remembering the `clr-namespace: ... ;assembly= ...` syntax is hard!
+ - Remembering what namespace and assembly a control is in is hard!
+
+ Therefore the **Import Namespace And Assembly For Unresolved XAML Node** code fix is very useful because it resolves these for you!
+
+ The code action will search all assemblies that the project references for classes that match the name of the XAML node. It will then suggest the creation of an `xmlns=...` import statement to resovle that missing class:
+
+ **Before**
+ ```
+ <?xml version="1.0" encoding="utf-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+    x:Class="MyXamarinFormsApp.MainPage" >
+    <ffimage:CachedImage/> <-- The ffimage namespace doesn't exist!
+</ContentPage>
+ ```
+
+ **After**
+ ```
+ <?xml version="1.0" encoding="utf-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+    x:Class="MyXamarinFormsApp.MainPage"
+    xmlns:ffimage="clr-namespace:FFImageLoading.Forms;assembly=FFImageLoading.Forms" > <-- The ffimage is now resolved
+    <ffimage:CachedImage/>
+</ContentPage>
+ ```
 
 ## Import Value Converter For Binding Type Flow
 
@@ -324,7 +368,7 @@ Looks for members on a C# class that are named closely to an unresolved xml attr
 
 Replaces a field or method symbol within a binding expression with a suggested property name.
 
-## Replace node with auto-corrected match
+## Replace Node With Auto-Correct
 
 **Configuration Id: com.mfractor.code_fixes.xaml.autocorrect_unresolved_reference**
 
