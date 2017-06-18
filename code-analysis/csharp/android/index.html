@@ -423,7 +423,45 @@
 <p>Inspects usages of the <code>[Activity]</code> attribute and validates the <code>Icon</code> property uses a mip map instead of a drawable.</p>
 <h2 id="application-requires-peer-connection-constructor">Application Requires Peer Connection Constructor</h2>
 <p><strong>Premium Only</strong></p>
-<p>This analyser detects when a developer has created a custom implementation of the <code>Android.App.Application</code> class but has not implemented the peer connection constructor (EG <code>MyApp(IntPtr, JniHandleOwnership)</code>). This constructor is required for the custom application to be instantiated by the Xamarin.Android runtime.</p>
+<p><img alt="MFractor detecting an unimplemented Application peer connection constructor" src="../../../img/code-analysis/android/application-constructor-0.png" /></p>
+<p>In Xamarin.Android applications, it is often necessary to implement a custom <code>Android.App.Application</code> subclass. Unfortunately this has a nasty edgecase; <code>Application</code> subclasses <strong>must</strong> manually implement the peer connection constructor otherwise the Xamarin.Android runtime cannot instantiate it!</p>
+<p>Consider the following application subclass:</p>
+<p><strong>MyApplication.cs</strong></p>
+<pre><code>[Application(Name=&quot;com.companyname.myandroidapp.MyApplication&quot;, Icon=&quot;@mipmap/icon&quot;, Label=&quot;@string/app_name&quot;)]
+public class MyApplication : Application
+{
+    public override void OnCreate()
+    {
+        base.OnCreate();
+    }
+}
+</code></pre>
+
+<p>At a glance, this seems perfectly reasonable. However, when the <code>OnCreate</code> method is called by the Xamarin.Android runtime, it generates a <code>System.NotSupportedException</code> when the Java counterpart for the managed <code>Application</code> class cannot be bound:</p>
+<p><img alt="The System.NotSupportedException caused by not having a peer connection constructor" src="../../../img/code-analysis/android/application-constructor-1.png" /></p>
+<p>This can be fixed by implementing the peer connection constructor for the <code>Application</code> class:</p>
+<p><strong>MyApplication.cs</strong></p>
+<pre><code>[Application(Name = &quot;com.companyname.myandroidapp.MyApplication&quot;, Icon = &quot;@mipmap/icon&quot;, Label = &quot;@string/app_name&quot;)]
+public class MyApplication : Application
+{
+    public MyApplication(System.IntPtr javaReference, Android.Runtime.JniHandleOwnership transfer)
+        : base(javaReference, transfer)
+    {
+    }
+
+    public override void OnCreate()
+    {
+        base.OnCreate();
+    }
+}
+</code></pre>
+
+<p>To quickly fix this code issue, you can use the <a href="../../../code-actions/csharp/#implement-base-class-constructors">implement base class constructors code action</a>.</p>
+<p><strong>Refer To:</strong></p>
+<ul>
+<li><a href="https://stackoverflow.com/questions/21427981/how-to-register-my-own-application-subclass-in-xamarin-android">How to register my own Application subclass in Xamarin.Android?</a></li>
+<li><a href="https://forums.xamarin.com/discussion/2147/what-is-the-recipe-to-have-a-working-application-derived-class">What is the recipe to have a working Application-derived class?</a></li>
+</ul>
 <h2 id="check-androidcontentresresources-usages">Check Android.Content.Res.Resources Usages</h2>
 <p><strong>Premium Only</strong></p>
 <p>When using the Android.Content.Res.Resources class, all Get* expressions expect the correct resource type identifier. For example, when using Resource.GetString(), a resource identifier of Resources.String.myString is expected. Passing any other resource identifier such as Resource.Color.myColor may result in unintended data being used or runtime exceptions. This code analyser validates that the correct resource type is being provided to the API call.</p>
