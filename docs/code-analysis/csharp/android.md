@@ -10,7 +10,53 @@ Inspects usages of the `[Activity]` attribute and validates the `Icon` property 
 
 **Premium Only**
 
-This analyser detects when a developer has created a custom implementation of the `Android.App.Application` class but has not implemented the peer connection constructor (EG `MyApp(IntPtr, JniHandleOwnership)`). This constructor is required for the custom application to be instantiated by the Xamarin.Android runtime.
+![MFractor detecting an unimplemented Application peer connection constructor](/img/code-analysis/android/application-constructor-0.png)
+
+In Xamarin.Android applications, it is often necessary to implement a custom `Android.App.Application` subclass. Unfortunately this has a nasty edgecase; `Application` subclasses **must** manually implement the peer connection constructor otherwise the Xamarin.Android runtime cannot instantiate it!
+
+Consider the following application subclass:
+
+**MyApplication.cs**
+```
+[Application(Name="com.companyname.myandroidapp.MyApplication", Icon="@mipmap/icon", Label="@string/app_name")]
+public class MyApplication : Application
+{
+    public override void OnCreate()
+    {
+        base.OnCreate();
+    }
+}
+```
+
+At a glance, this seems perfectly reasonable. However, when the `OnCreate` method is called by the Xamarin.Android runtime, it generates a `System.NotSupportedException` when the Java counterpart for the managed `Application` class cannot be bound:
+
+![The System.NotSupportedException caused by not having a peer connection constructor](/img/code-analysis/android/application-constructor-1.png)
+
+This can be fixed by implementing the peer connection constructor for the `Application` class:
+
+**MyApplication.cs**
+```
+[Application(Name = "com.companyname.myandroidapp.MyApplication", Icon = "@mipmap/icon", Label = "@string/app_name")]
+public class MyApplication : Application
+{
+    public MyApplication(System.IntPtr javaReference, Android.Runtime.JniHandleOwnership transfer)
+        : base(javaReference, transfer)
+    {
+    }
+
+    public override void OnCreate()
+    {
+        base.OnCreate();
+    }
+}
+```
+
+To quickly fix this code issue, you can use the [implement base class constructors code action](/code-actions/csharp/#implement-base-class-constructors).
+
+**Refer To:**
+
+ * [How to register my own Application subclass in Xamarin.Android?](https://stackoverflow.com/questions/21427981/how-to-register-my-own-application-subclass-in-xamarin-android)
+ * [What is the recipe to have a working Application-derived class?](https://forums.xamarin.com/discussion/2147/what-is-the-recipe-to-have-a-working-application-derived-class)
 
 
 ## Check Android.Content.Res.Resources Usages
