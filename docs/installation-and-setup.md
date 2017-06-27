@@ -51,7 +51,7 @@ You will then see a download dialog appear and MFractor will download and instal
 
 MFractor can be installed directly through the Extension Manager's **Install from file** button.
 
-Firstly, download the latest version of MFractor for Visual Studio Mac at [addins.mfractor.com/MFractor.mpack](addins.mfractor.com/MFractor.mpack)
+Firstly, download the latest version of MFractor for Visual Studio Mac at [addins.mfractor.com/MFractor.mpack](http://addins.mfractor.com/MFractor.mpack)
 
 Open up Visual Studio Mac and click on the **Visual Studio** menu and then **Extensions...**
 
