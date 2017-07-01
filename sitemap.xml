@@ -4,7 +4,7 @@
     
     <url>
      <loc>/</loc>
-     <lastmod>2017-06-27</lastmod>
+     <lastmod>2017-07-01</lastmod>
      <changefreq>daily</changefreq>
     </url>
     
@@ -13,37 +13,37 @@
         
     <url>
      <loc>/installation-and-setup/</loc>
-     <lastmod>2017-06-27</lastmod>
+     <lastmod>2017-07-01</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/mfractor-premium/</loc>
-     <lastmod>2017-06-27</lastmod>
+     <lastmod>2017-07-01</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/faq/</loc>
-     <lastmod>2017-06-27</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-        
-    <url>
-     <loc>/configuration/</loc>
-     <lastmod>2017-06-27</lastmod>
+     <lastmod>2017-07-01</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/code-actions/</loc>
-     <lastmod>2017-06-27</lastmod>
+     <lastmod>2017-07-01</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/annotations/</loc>
-     <lastmod>2017-06-27</lastmod>
+     <lastmod>2017-07-01</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>/configuration/</loc>
+     <lastmod>2017-07-01</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
@@ -53,31 +53,31 @@
         
     <url>
      <loc>/xamarin-forms/configure-binding-context/</loc>
-     <lastmod>2017-06-27</lastmod>
+     <lastmod>2017-07-01</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/xamarin-forms/navigation/</loc>
-     <lastmod>2017-06-27</lastmod>
+     <lastmod>2017-07-01</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/xamarin-forms/analysis/</loc>
-     <lastmod>2017-06-27</lastmod>
+     <lastmod>2017-07-01</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/xamarin-forms/implementing-view-models/</loc>
-     <lastmod>2017-06-27</lastmod>
+     <lastmod>2017-07-01</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/xamarin-forms/value-converter-type-safety/</loc>
-     <lastmod>2017-06-27</lastmod>
+     <lastmod>2017-07-01</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
@@ -87,13 +87,13 @@
         
     <url>
      <loc>/xamarin-android/navigation-tools/</loc>
-     <lastmod>2017-06-27</lastmod>
+     <lastmod>2017-07-01</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/xamarin-android/resource-intellisense/</loc>
-     <lastmod>2017-06-27</lastmod>
+     <lastmod>2017-07-01</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
@@ -103,7 +103,7 @@
         
     <url>
      <loc>/code-actions/csharp/</loc>
-     <lastmod>2017-06-27</lastmod>
+     <lastmod>2017-07-01</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
@@ -131,13 +131,13 @@
         
     <url>
      <loc>/code-analysis/android-resources/</loc>
-     <lastmod>2017-06-27</lastmod>
+     <lastmod>2017-07-01</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/code-analysis/xaml/</loc>
-     <lastmod>2017-06-27</lastmod>
+     <lastmod>2017-07-01</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
@@ -147,19 +147,19 @@
         
     <url>
      <loc>/code-generation/csharp/</loc>
-     <lastmod>2017-06-27</lastmod>
+     <lastmod>2017-07-01</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/code-generation/xamarin-forms/</loc>
-     <lastmod>2017-06-27</lastmod>
+     <lastmod>2017-07-01</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/code-generation/xaml/</loc>
-     <lastmod>2017-06-27</lastmod>
+     <lastmod>2017-07-01</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
@@ -169,19 +169,19 @@
         
     <url>
      <loc>/release-notes/v3-1/</loc>
-     <lastmod>2017-06-27</lastmod>
+     <lastmod>2017-07-01</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/release-notes/v3-0/</loc>
-     <lastmod>2017-06-27</lastmod>
+     <lastmod>2017-07-01</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/release-notes/v2/</loc>
-     <lastmod>2017-06-27</lastmod>
+     <lastmod>2017-07-01</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
