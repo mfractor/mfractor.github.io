@@ -410,15 +410,19 @@
 <p>Lastly, we are slowly working through the documentation and adding a comprehensive explanation for each MFractor feature.</p>
 <h2 id="features">Features</h2>
 <ul>
-<li><strong>Onboarding Window</strong>: When MFractor is first installed, after activation, we now have an activation window to teach you the fundamentals of MFractor.</li>
+<li><strong>Onboarding Window</strong>: When MFractor is first installed, after activation, we now have an onboarding window that teaches you the fundamentals of MFractor.</li>
 <li><strong>XAML Code Actions</strong><ul>
 <li>Quickly migrate to the new <code>OnPlatform</code> methodology with the <a href="../../code-actions/xaml/refactor/#migrate-onplatform-usage">Migrate OnPlatform Usage</a> code action.</li>
-<li>Generate a new view from an unknown XAML node as a XAML view and code behind class.</li>
+<li>Generate a new view from an unknown XAML node as a XAML view and code behind class. See</li>
 </ul>
 </li>
 </ul>
 <h2 id="premium-features">Premium Features</h2>
 <ul>
+<li><strong>XAML</strong><ul>
+<li>For XAML attributes that accept an <code>ImageSource</code>, detect missing image resources in Android and iOS projects and offer the ability to easily import those images using the quick fix menu. See</li>
+</ul>
+</li>
 <li><strong>C# Code Actions</strong><ul>
 <li>Implement all of a base classes constructors onto the class. See <a href="../../code-actions/csharp/#implement-base-class-constructors">Implement Base Class Constructors</a>.</li>
 <li>When a class ends with <code>Attribute</code>, use the <a href="../../code-actions/csharp/#make-class-inherit-from-systemattribute">Make Class Inherit From System.Attribute</a> code action to add attribute inheritance.</li>
@@ -449,7 +453,7 @@
 <li>Improved and reduced memory consumption across the entire product.</li>
 <li>The following code analysers have been removed:<ul>
 <li>Detect when an abstract class was used in XAML. This caused false errors.</li>
-<li>Detect when the root XAML node has an x:Name declaration; it's likely the developer wants to reference</li>
+<li>Detect when the root XAML node has an x:Name declaration; it's likely the developer wants to reference the root element inside an <code>x:Reference</code> markup extension.</li>
 </ul>
 </li>
 </ul>
@@ -458,9 +462,9 @@
 <li>Fixed: Often the XAML analyser would fail to remove code-issue markers.</li>
 <li>Fixed: Custom markup extension symbols would not be detected and would cause the unused XAML namespace analyser to trigger.</li>
 <li>Fixed: The Android resource tooltips would not render over C# resource usages. EG: <code>Resource.Layout.myLayout</code>.</li>
-<li>Fixed: Image tooltips now work in shared proejcts.</li>
+<li>Fixed: Image tooltips now work in shared projects.</li>
 <li>Fixed: Image tooltips now work when the image source is referring to a nested image under a folder. EG: "Icons/logo.png" inside the iOS Resources folder.</li>
-<li>Fixed: Using the <code>ListView CachingStrategy</code> property in XAML no longer generates an unknown property warning./</li>
+<li>Fixed: Using the <code>ListView CachingStrategy</code> property in XAML no longer generates an unknown property warning.</li>
 <li>Fixed: Multiple potential null access that would cause the XAML analyser to fail.</li>
 </ul>
               
