@@ -106,7 +106,7 @@ If the attributes value isn't an expression, MFractor will attempt to infer type
 
 **Fixes Code Issue:** [Binding Expression Return Type Mismatch](/code-analysis/xaml.md#binding-expression-return-type-mismatch)
 
-![Generating ](/img/code-actions/forms/create-value-converter.gif)
+![Generating ](/img/forms/create-value-converter.gif)
 
 Using the input and output type for a value conversion path, this code fix creates a new value converter implementation for the input and output type and imports it into the views resource dictionary.
 
