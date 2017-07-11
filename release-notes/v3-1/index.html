@@ -311,6 +311,13 @@
 </li>
 
   
+  
+<li class="toctree-l1 ">
+  <a class="" href="../../code-generation/resx/">ResX</a>
+  
+</li>
+
+  
 </ul>
 <li>
           
@@ -410,17 +417,23 @@
 <p>Lastly, we are slowly working through the documentation and adding a comprehensive explanation for each MFractor feature.</p>
 <h2 id="features">Features</h2>
 <ul>
-<li><strong>Onboarding Window</strong>: When MFractor is first installed, after activation, we now have an onboarding window that teaches you the fundamentals of MFractor.</li>
+<li><strong>Onboarding Window</strong>: When MFractor is first installed, after activation, we now display an onboarding window to teaches you the fundamentals of using MFractor.</li>
 <li><strong>XAML Code Actions</strong><ul>
 <li>Quickly migrate to the new <code>OnPlatform</code> methodology with the <a href="../../code-actions/xaml/refactor/#migrate-onplatform-usage">Migrate OnPlatform Usage</a> code action.</li>
-<li>Generate a new view from an unknown XAML node as a XAML view and code behind class. See</li>
+<li>Generate a new view from an unknown XAML node as a XAML view with a code behind class.</li>
+</ul>
+</li>
+<li><strong>XAML Code Analysis</strong><ul>
+<li>For <code>Style</code>s, inspect that it sets a <code>TargetType</code> attribute.</li>
+<li>For <code>Style</code> <code>Setter</code>s, inspect that the <code>Property</code> value maps to a property in the type provided byt the  <code>Style</code>s <code>TargetType</code> attribute.</li>
 </ul>
 </li>
 </ul>
 <h2 id="premium-features">Premium Features</h2>
 <ul>
 <li><strong>XAML</strong><ul>
-<li>For XAML attributes that accept an <code>ImageSource</code>, detect missing image resources in Android and iOS projects and offer the ability to easily import those images using the quick fix menu. See</li>
+<li>For XAML attributes that accept an <code>ImageSource</code>, detect missing image resources in Android and iOS projects and offer the ability to easily import those images using the quick fix menu.</li>
+<li>The new <strong>Replace string literal with localisation</strong> code action let's you quickly extract a inline string from your XAML, put it into a ResX file and replace the string with a translation markup extension expression. This action may require code-configuration.</li>
 </ul>
 </li>
 <li><strong>C# Code Actions</strong><ul>
@@ -446,7 +459,7 @@
 <h2 id="enhancements">Enhancements</h2>
 <ul>
 <li>Added a <strong>Feedback</strong> menu into the <strong>Help</strong> -&gt; <strong>MFractor</strong> menu. Use this menu to file bug reports and feature requests.</li>
-<li>The <a href="../../code-actions/xaml/fix/#generate-property-into-class">Generate Property Into Class</a> now infers the type of the new property based on the attributes value. This behaviour can be disabled through the configuration engine.</li>
+<li>The <a href="../../code-actions/xaml/fix/#generate-property-into-class">Generate Property Into Class</a> now infers the type of the new property based on the attributes value and name. This behaviour can be disabled through the configuration engine.</li>
 <li>Issues that detect redundant XAML now gray out that code section.</li>
 <li>Issues that detect code improvements now underline that code segment.</li>
 <li>Significantly improved analysis times for XAML documents.</li>
@@ -456,6 +469,7 @@
 <li>Detect when the root XAML node has an x:Name declaration; it's likely the developer wants to reference the root element inside an <code>x:Reference</code> markup extension.</li>
 </ul>
 </li>
+<li>The bindable property generator can now generate a property with either an expression body or a return statement.</li>
 </ul>
 <h2 id="bug-fixes">Bug Fixes</h2>
 <ul>
@@ -466,6 +480,8 @@
 <li>Fixed: Image tooltips now work when the image source is referring to a nested image under a folder. EG: "Icons/logo.png" inside the iOS Resources folder.</li>
 <li>Fixed: Using the <code>ListView CachingStrategy</code> property in XAML no longer generates an unknown property warning.</li>
 <li>Fixed: Multiple potential null access that would cause the XAML analyser to fail.</li>
+<li>Fixed: When using <strong>Go-To XAML symbol</strong> on a class with a XAML view and code-behind, don't include the auto-generated designer class as an option and jump straight to the code-behind.</li>
+<li>Fixed: When using <strong>Go-To Code Behind Class</strong>, don't include the auto-generated designer class as an option and jump straight to the code-behind.</li>
 </ul>
               
             </div>
@@ -477,7 +493,7 @@
         <a href="../v3-0/" class="btn btn-neutral float-right" title="v3.0">Next <span class="icon icon-circle-arrow-right"></span></a>
       
       
-        <a href="../../code-generation/xaml/" class="btn btn-neutral" title="Xaml"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../../code-generation/resx/" class="btn btn-neutral" title="ResX"><span class="icon icon-circle-arrow-left"></span> Previous</a>
       
     </div>
   
@@ -508,7 +524,7 @@
           <a href="https://github.com/mfractor/mfractor.github.io" class="icon icon-github" style="float: left; color: #fcfcfc"> GitHub</a>
       
       
-        <span><a href="../../code-generation/xaml/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+        <span><a href="../../code-generation/resx/" style="color: #fcfcfc;">&laquo; Previous</a></span>
       
       
         <span style="margin-left: 15px"><a href="../v3-0/" style="color: #fcfcfc">Next &raquo;</a></span>
