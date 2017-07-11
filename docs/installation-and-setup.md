@@ -77,9 +77,9 @@ To activate MFractor, enter your email and then click **Activate**.
 
 Tada! You are now ready to rock.
 
-## Activating MFractor Premium
+## Activating MFractor Professional
 
-Download and locate your license file (which ends with the extension `.lic`). When purchasing MFractor Premium, this license file will be provided in an email. In this example, our license file is located on our desktop called `license.lic`.
+Download and locate your license file (which ends with the extension `.lic`). When purchasing MFractor Professional, this license file will be provided in an email. In this example, our license file is located on our desktop called `license.lic`.
 
  ![MFractor license file](/img/licensing/license-file.png)
 
@@ -87,25 +87,25 @@ Open Visual Studio for Mac. If you have not activated MFractor with an email add
 
  ![Close Activation Dialog](/img/licensing/close-activation-dialog.png)
 
-In the main Visual Studio for Mac menu bar, select **Help**, then **MFractor** and then finally **License Information**. This will open the licensing window where you can import or remove an MFractor Premium license.
+In the main Visual Studio for Mac menu bar, select **Help**, then **MFractor** and then finally **License Information**. This will open the licensing window where you can import or remove an MFractor Professional license.
 
 Next, click on the **Import License** button, browse to where our license is located (`license.lic`) and double click it to import the license into MFractor.
 
-![Importing an MFractor Premium license file](/img/licensing/import-license.gif)
+![Importing an MFractor Professional license file](/img/licensing/import-license.gif)
 
-Voila, you now have a valid, active MFractor Premium installation.
+Voila, you now have a valid, active MFractor Professional installation.
 
 **It is safe to delete the license file from its original location. MFractor stores the license inside itself.**
 
-![MFractor Premium License Information](/img/licensing/valid-license.png)
+![MFractor Professional License Information](/img/licensing/valid-license.png)
 
 The licensing window will list:
 
- * **Licensed To** - The full name of the person that the MFractor Premium license is issued to.
- * **License Email:** - The email that this MFractor Premium license is issued against.
- * **License Type and Expiry Date** - The type of license issued (Premium, Trial or Free) and when that license expires.
+ * **Licensed To** - The full name of the person that the MFractor Professional license is issued to.
+ * **License Email:** - The email that this MFractor Professional license is issued against.
+ * **License Type and Expiry Date** - The type of license issued (Professional, Trial or Lite) and when that license expires.
 
-## Deactivating Your Premium License
+## Deactivating Your Professional License
 
 If you'd like to remove a license from MFractor, you can open the MFractor license information window and click **Remove License**.
 
@@ -113,7 +113,7 @@ If you'd like to remove a license from MFractor, you can open the MFractor licen
 
 After removing a license, you will be automatically downgraded to a free MFractor license. This allows usage of most features apart from C# code actions, mobile-specific C# code diagnostics, and configuration file support.
 
-[View the free vs paid feature map here](/mfractor-premium.md#feature-map).
+[View the free vs paid feature map here](/mfractor-professional.md#feature-map).
 
 ## Updating MFractor
 
