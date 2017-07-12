@@ -338,11 +338,11 @@
       
     
       
-      <li class="toctree-l3"><a href="#features">Features</a></li>
+      <li class="toctree-l3"><a href="#lite-features">Lite Features</a></li>
       
     
       
-      <li class="toctree-l3"><a href="#premium-features">Premium Features</a></li>
+      <li class="toctree-l3"><a href="#professional-features">Professional Features</a></li>
       
     
       
@@ -409,13 +409,14 @@
             <div class="section">
               
                 <h2 id="release-notes-v310">Release Notes - v3.1.0</h2>
-<p><strong>TO BE DECIDED</strong></p>
+<p><strong>July 13th 2017</strong></p>
 <p><strong><a href="http://addins.mfractor.com/releases/3.01.00/MFractor.MFractor_3.01.00.mpack">Download MFractor 3.1.0</a></strong></p>
 <h2 id="introduction">Introduction</h2>
 <p>This is a summary of the changes introduced in v3.1.0 of MFractor for Visual Studio Mac.</p>
-<p>This release of MFractor adds a new on-boarding window to make it as easy as possible to learn to use MFractor. We've also added a suite of new premium features for C# and Android, a <strong>heap</strong> of bug fixes and a few handy XAML refactorings.</p>
-<p>Lastly, we are slowly working through the documentation and adding a comprehensive explanation for each MFractor feature.</p>
-<h2 id="features">Features</h2>
+<p>We have rebranded our free tier into <strong>MFractor Lite</strong> and our premium tier into <strong>MFractor Professional</strong>. This is to better reflect the value difference between the different licensing levels.</p>
+<p>In terms of features, this release adds a new on-boarding window to make it as easy as possible to learn to use MFractor. We've also added a suite of new professional features for C# and Android, a <strong>heap</strong> of bug fixes and a few handy XAML refactorings.</p>
+<p>Lastly, we are slowly working through the documentation and adding a comprehensive explanation for each MFractor feature. This is ongoing and will take some time to complete.</p>
+<h2 id="lite-features">Lite Features</h2>
 <ul>
 <li><strong>Onboarding Window</strong>: When MFractor is first installed, after activation, we now display an onboarding window to teaches you the fundamentals of using MFractor.</li>
 <li><strong>XAML Code Actions</strong><ul>
@@ -429,11 +430,10 @@
 </ul>
 </li>
 </ul>
-<h2 id="premium-features">Premium Features</h2>
+<h2 id="professional-features">Professional Features</h2>
 <ul>
 <li><strong>XAML</strong><ul>
 <li>For XAML attributes that accept an <code>ImageSource</code>, detect missing image resources in Android and iOS projects and offer the ability to easily import those images using the quick fix menu.</li>
-<li>The new <strong>Replace string literal with localisation</strong> code action let's you quickly extract a inline string from your XAML, put it into a ResX file and replace the string with a translation markup extension expression. This action may require code-configuration.</li>
 </ul>
 </li>
 <li><strong>C# Code Actions</strong><ul>
@@ -460,16 +460,17 @@
 <ul>
 <li>Added a <strong>Feedback</strong> menu into the <strong>Help</strong> -&gt; <strong>MFractor</strong> menu. Use this menu to file bug reports and feature requests.</li>
 <li>The <a href="../../code-actions/xaml/fix/#generate-property-into-class">Generate Property Into Class</a> now infers the type of the new property based on the attributes value and name. This behaviour can be disabled through the configuration engine.</li>
-<li>Issues that detect redundant XAML now gray out that code section.</li>
+<li>Issues that detect redundant XAML now grey out that code section.</li>
 <li>Issues that detect code improvements now underline that code segment.</li>
 <li>Significantly improved analysis times for XAML documents.</li>
-<li>Improved and reduced memory consumption across the entire product.</li>
+<li>Reduced memory consumption across the entire product.</li>
 <li>The following code analysers have been removed:<ul>
 <li>Detect when an abstract class was used in XAML. This caused false errors.</li>
 <li>Detect when the root XAML node has an x:Name declaration; it's likely the developer wants to reference the root element inside an <code>x:Reference</code> markup extension.</li>
 </ul>
 </li>
 <li>The bindable property generator can now generate a property with either an expression body or a return statement.</li>
+<li>Significantly more configurable properties have been exposed throughout the product. Browse the docs site to see what you can change!</li>
 </ul>
 <h2 id="bug-fixes">Bug Fixes</h2>
 <ul>
