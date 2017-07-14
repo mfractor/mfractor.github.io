@@ -22,7 +22,7 @@ If you would like C# code refactoring support, mobile-specific code diagnostics 
 
 ## Purchase An MFractor Professional License
 
-**RRP: $199AUD per user per year**
+**RRP: $299AUD per user per year**
 
 Professional licenses:
 
