@@ -15,7 +15,7 @@ To install:
 
  0. *Close Visual Studio for Mac.*
  1. Double click on **MFractor.Installer.zip** to extract the archive.
- 2. Open the folder **MFractor**./
+ 2. Open the folder **MFractor**.
  3. Double click on **MFractor.Installer.app**.
  4. If prompted, confirm installation.
  5. Wait for MFractor to install into Visual Studio for Mac.

@@ -23,6 +23,7 @@ pages:
   - About MFractor Professional: mfractor-professional.md
   - FAQ: faq.md
   - Code Actions: code-actions.md
+  - Working With Images: working-with-images.md
   - Using MFractor.Annotations: annotations.md
   - Configuration: configuration.md
 - Xamarin.Forms:
