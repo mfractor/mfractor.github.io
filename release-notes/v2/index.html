@@ -370,6 +370,106 @@
       <li class="toctree-l3"><a href="#bug-fixes">Bug Fixes</a></li>
       
     
+      
+      <li class="toctree-l3"><a href="#release-notes-v294">Release Notes - v2.9.4</a></li>
+      
+    
+      
+      <li class="toctree-l3"><a href="#introduction_1">Introduction</a></li>
+      
+    
+      
+      <li class="toctree-l3"><a href="#features_1">Features</a></li>
+      
+    
+      
+      <li class="toctree-l3"><a href="#enhancements_1">Enhancements</a></li>
+      
+    
+      
+      <li class="toctree-l3"><a href="#bug-fixes_1">Bug Fixes</a></li>
+      
+    
+      
+      <li class="toctree-l3"><a href="#release-notes-v280">Release Notes - v2.8.0</a></li>
+      
+    
+      
+      <li class="toctree-l3"><a href="#introduction_2">Introduction</a></li>
+      
+    
+      
+      <li class="toctree-l3"><a href="#features_2">Features</a></li>
+      
+    
+      
+      <li class="toctree-l3"><a href="#enhancements_2">Enhancements</a></li>
+      
+    
+      
+      <li class="toctree-l3"><a href="#bug-fixes_2">Bug Fixes</a></li>
+      
+    
+      
+      <li class="toctree-l3"><a href="#release-notes-v270">Release Notes - v2.7.0</a></li>
+      
+    
+      
+      <li class="toctree-l3"><a href="#introduction_3">Introduction</a></li>
+      
+    
+      
+      <li class="toctree-l3"><a href="#introducing-view-model-generation">Introducing View Model Generation</a></li>
+      
+    
+      
+      <li class="toctree-l3"><a href="#features_3">Features</a></li>
+      
+    
+      
+      <li class="toctree-l3"><a href="#enhancements_3">Enhancements</a></li>
+      
+    
+      
+      <li class="toctree-l3"><a href="#bug-fixes_3">Bug Fixes</a></li>
+      
+    
+      
+      <li class="toctree-l3"><a href="#release-notes-v260">Release Notes - v2.6.0</a></li>
+      
+    
+      
+      <li class="toctree-l3"><a href="#introduction_4">Introduction</a></li>
+      
+    
+      
+      <li class="toctree-l3"><a href="#features_4">Features</a></li>
+      
+    
+      
+      <li class="toctree-l3"><a href="#enhancements_4">Enhancements</a></li>
+      
+    
+      
+      <li class="toctree-l3"><a href="#bug-fixes_4">Bug Fixes</a></li>
+      
+    
+      
+      <li class="toctree-l3"><a href="#release-notes-v253">Release Notes - v2.5.3</a></li>
+      
+    
+      
+      <li class="toctree-l3"><a href="#introduction_5">Introduction</a></li>
+      
+    
+      
+      <li class="toctree-l3"><a href="#features_5">Features</a></li>
+      
+    
+      
+      <li class="toctree-l3"><a href="#bug-fixes_5">Bug Fixes</a></li>
+      
+    
   </ul>
   
 </li>
@@ -414,7 +514,6 @@
                 <p>**IMPORTANT: MFractor v2 is only supported on Xamarin Studio. To use MFractor in Visual Studio Mac, please install <a href="../v3-0/">MFractor v3 and above</a>.</p>
 <h2 id="release-notes-v2100">Release Notes - v2.10.0</h2>
 <p><strong>6th March 2017</strong></p>
-<p><strong><a href="http://addins.mfractor.com/releases/2.10.02/MFractor.MFractor_2.10.02.mpack">Download MFractor 2.10.2</a></strong></p>
 <h2 id="introduction">Introduction</h2>
 <p>This is a summary of the changes introduced in v2.10.2 of MFractor for Visual Studio Mac.</p>
 <p>This release is all about improving MFractors usability. You can now tap Alt+Return in Xaml documents to quickly access any fixes or refactorings at that location, the xaml analyser has been tuned for speed and a new code issue tooltip gives deeper insight into the code issue beneath it:</p>
@@ -433,38 +532,38 @@
 <ul>
 <li>Fixed: When generating a view model and the view has bindings against an unknown class, previously these bindings would be missed.</li>
 </ul>
-<p>##Release Notes - v2.9.4</p>
+<h2 id="release-notes-v294">Release Notes - v2.9.4</h2>
 <p><strong>22nd February 2017</strong></p>
-<p><strong><a href="http://addins.mfractor.com/releases/2.09.01/MFractor.MFractor_2.09.04.mpack">Download MFractor 2.9.4</a></strong></p>
-<p>##Introduction</p>
+<h2 id="introduction_1">Introduction</h2>
 <p>This is a summary of the changes introduced in v2.9.4 of MFractor for Visual Studio Mac.</p>
 <p><strong>Important: If Visual Studio Mac loses IntelliSense/Code Completion when you update to cycle 9 (XS v6.2), uninstall MFractor and upgrade to the latest version</strong></p>
 <p>This release focuses on keeping your Xaml tidy... you can now rename xaml namespaces, align the naming of duplicate namespace imports and format your entire Xaml document.</p>
 <p>It's also easier than ever to build out custom controls, the new <strong>Implement Missing Members</strong> code generator can bulk implement properties or bindable properties onto custom views in your Xaml. No need to hand code bindable properties!</p>
 <p>Hold onto your socks!</p>
 <p><img alt="MFractor v2.9 demo" src="../../img/releases/v2-9/mfractor-2-9-demo.gif" /></p>
-<p>##Features</p>
-<pre><code>- **New Refactorings**
- - Right click on an `xmlns` declaration on the root node and select **Refactor** -&gt; **Rename Xaml Namespace** to rename all occurrences of that namespace in the doc!
-- **New Code Organisers**
- - Right click on the root xaml node and select **Organise** -&gt; **Format** to organise your entire xaml document.
-- **New Code Generators**
- - Quickly build out Grids by using the **Insert Row Definitions** and **Insert Column Definitions** actions.
- - Bulk implement missing properties on a class by right clicking on the xaml node with the missing members and selecting **Implement missing members**.
-- **New Xaml Analysers**
- - Detect if the root xaml element uses a `x:Name` attribute as this is redundant.
- - Detect duplicate xaml namespaces that reference the same namespace and assembly.
- - Detect when the xaml views code behind class derives from a different type than what is declared by it's root element.
-- **New Code Fixes**
- - When a xaml namespace references the same namespace and assembly, you can now rename all duplicate namespace declarations to a certain namespace to align the usages in your xaml.
-</code></pre>
-<p>##Enhancements</p>
+<h2 id="features_1">Features</h2>
+<ul>
+<li><strong>New Refactorings</strong></li>
+<li>Right click on an <code>xmlns</code> declaration on the root node and select <strong>Refactor</strong> -&gt; <strong>Rename Xaml Namespace</strong> to rename all occurrences of that namespace in the doc!</li>
+<li><strong>New Code Organisers</strong></li>
+<li>Right click on the root xaml node and select <strong>Organise</strong> -&gt; <strong>Format</strong> to organise your entire xaml document.</li>
+<li><strong>New Code Generators</strong></li>
+<li>Quickly build out Grids by using the <strong>Insert Row Definitions</strong> and <strong>Insert Column Definitions</strong> actions.</li>
+<li>Bulk implement missing properties on a class by right clicking on the xaml node with the missing members and selecting <strong>Implement missing members</strong>.</li>
+<li><strong>New Xaml Analysers</strong></li>
+<li>Detect if the root xaml element uses a <code>x:Name</code> attribute as this is redundant.</li>
+<li>Detect duplicate xaml namespaces that reference the same namespace and assembly.</li>
+<li>Detect when the xaml views code behind class derives from a different type than what is declared by it's root element.</li>
+<li><strong>New Code Fixes</strong></li>
+<li>When a xaml namespace references the same namespace and assembly, you can now rename all duplicate namespace declarations to a certain namespace to align the usages in your xaml.</li>
+</ul>
+<h2 id="enhancements_1">Enhancements</h2>
 <ul>
 <li>FreshMVVM style page models (EG: LoginPageModel) are now supported for view &lt;-&gt; view model &lt;-&gt; code behind association.</li>
 <li>The <code>Model</code> suffix (EG: LoginModel) is now supported for view &lt;-&gt; view model &lt;-&gt; code behind association.</li>
 <li>This release targets Visual Studio Mac v6.2.</li>
 </ul>
-<p>##Bug Fixes</p>
+<h2 id="bug-fixes_1">Bug Fixes</h2>
 <ul>
 <li>Undefined StaticResource detection has been disabled in this release.</li>
 <li>Fixed: When generating view models, if a binding expression was within an undefined control property, the refactoring would fail as it could not resolve the member type. Undefined properties will now auto-generate using <code>System.Object</code>.</li>
@@ -472,168 +571,172 @@
 <li>Fixed: When generating members or static properties onto a code behind class, sometimes the insertion point would jump to the xaml.g.cs auto-generated class.</li>
 <li>Fixed: When the Visual Studio Mac Xamarin Forms Previewer is open, the refactoring engine would fail to commit text replace changes.</li>
 </ul>
-<p>##Release Notes - v2.8.0</p>
+<h2 id="release-notes-v280">Release Notes - v2.8.0</h2>
 <p><strong>12th February 2017</strong></p>
-<p><strong><a href="http://addins.mfractor.com/releases/2.08.00/MFractor.MFractor_2.08.00.mpack">Download MFractor 2.8.0</a></strong></p>
-<p>##Introduction</p>
+<h2 id="introduction_2">Introduction</h2>
 <p>This is a summary of the changes introduced in v2.8.0 of MFractor for Visual Studio Mac.</p>
 <p>This release focuses on adding new refactoring and code generation actions into the Xaml editor.</p>
 <p>You can now sort your xaml, edit colors interactively, extract values into binding expressions and more:</p>
 <p><img alt="MFractor v2.8 demo" src="../../img/releases/v2-8/mfractor-2-8-demo.gif" /></p>
-<p>##Features</p>
-<pre><code> - **New Refactorings**
-  - Right click on a xaml attribute property that's a `System.Drawing.Color` or a `Xamarin.Forms.Color` and edit it using the color selection dialog. This action won't be available if the attribute value is an expression.
-  - Right click on a xaml attribute property that has a literal value and extract it into a `Binding` expression. This action is not available if the attribute value is an expression or the attribute does not have a corresponding bindable property.
-  - **Organise Refactorings:**
-      - The *Collapse Xaml Attributes* refactoring will collapse all xaml attributes onto the same line as the parent xaml node.
-      - The *Expand Xaml Attributes* refactoring will expand all xaml attributes onto separate lines.
-      - The *Sort Xaml Attributes* refactoring will sort the attributes for a xaml node by namespace and name.
-      - The *Expand Node* refactoring takes a self-closing xaml node and generate a closing tag for it.
-      - The *Collapse Node* refactoring takes a xaml node with no children and a closing tag and removes the closing tag to make the node self-closing.
- - **New Code Generators**
-  - Right click on an xaml node that inherits from `Xamarin.Forms.VisualElement` or `Xamarin.Forms.Application` and select **Add Resource Dictionary** to generate a resource dictionary for that element.
- - **New Xaml Analysers**
-  - Detect when an `x:Name` code-behind field declaration is empty.
-</code></pre>
-<p>##Enhancements</p>
+<h2 id="features_2">Features</h2>
+<ul>
+<li><strong>New Refactorings</strong><ul>
+<li>Right click on a xaml attribute property that's a <code>System.Drawing.Color</code> or a <code>Xamarin.Forms.Color</code> and edit it using the color selection dialog. This action won't be available if the attribute value is an expression.</li>
+<li>Right click on a xaml attribute property that has a literal value and extract it into a <code>Binding</code> expression. This action is not available if the attribute value is an expression or the attribute does not have a corresponding bindable property.</li>
+<li><strong>Organise Refactorings:</strong><ul>
+<li>The <em>Collapse Xaml Attributes</em> refactoring will collapse all xaml attributes onto the same line as the parent xaml node.</li>
+<li>The <em>Expand Xaml Attributes</em> refactoring will expand all xaml attributes onto separate lines.</li>
+<li>The <em>Sort Xaml Attributes</em> refactoring will sort the attributes for a xaml node by namespace and name.</li>
+<li>The <em>Expand Node</em> refactoring takes a self-closing xaml node and generate a closing tag for it.</li>
+<li>The <em>Collapse Node</em> refactoring takes a xaml node with no children and a closing tag and removes the closing tag to make the node self-closing.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><strong>New Code Generators</strong><ul>
+<li>Right click on an xaml node that inherits from <code>Xamarin.Forms.VisualElement</code> or <code>Xamarin.Forms.Application</code> and select <strong>Add Resource Dictionary</strong> to generate a resource dictionary for that element.</li>
+</ul>
+</li>
+<li><strong>New Xaml Analysers</strong><ul>
+<li>Detect when an <code>x:Name</code> code-behind field declaration is empty.</li>
+</ul>
+</li>
+</ul>
+<h2 id="enhancements_2">Enhancements</h2>
 <ul>
 <li>This release targets Visual Studio Mac v6.1.5</li>
 <li>The <strong>Implement View Model</strong> refactoring has been moved from the <strong>Refactor</strong> menu to <strong>Generate</strong>.</li>
 <li>Hover over a xaml attribute property that's a <code>System.Drawing.Color</code> or a <code>Xamarin.Forms.Color</code> to see the color value inside the tooltip.</li>
 <li>The Android SDK meta-data has been removed from MFractor.mpack; you can download and update the sdk meta-data through the <strong>Help</strong> -&gt; <strong>MFractor</strong> -&gt; <strong>Install Android SDK Meta-Data</strong> menu item.</li>
 </ul>
-<p>##Bug Fixes</p>
+<h2 id="bug-fixes_2">Bug Fixes</h2>
 <ul>
 <li>Correctly validate the type provided to x:TypeArguments; there was a bug in the type checking algorithm.</li>
 <li>Don't allow the 'Simplify' refactoring to run against expressions.</li>
 <li>Fix multiple type conversion checking bugs in the ValueConversion attribute validation.</li>
 </ul>
-<p>##Release Notes - v2.7.0</p>
+<h2 id="release-notes-v270">Release Notes - v2.7.0</h2>
 <p><strong>8th January 2017</strong></p>
-<p><strong><a href="http://addins.mfractor.com/releases/2.07.00/MFractor.MFractor_2.07.00.mpack">Download MFractor 2.7.0</a></strong></p>
-<p>##Introduction</p>
+<h2 id="introduction_3">Introduction</h2>
 <p>This is a summary of the changes introduced in v2.7.0 of MFractor for Visual Studio Mac.</p>
 <p>This release adds the ability implement entire view models, introduces a dozen xaml analysers and fixes many bugs.</p>
 <p>I recommend taking a moment to read these tutorials:</p>
-<pre><code>* [Implementing View Models](/xamarin-forms/implementing-view-models.md): Learn implement entire view models using the **Implement View Model** refactoring.
-* [Value Converter Type Safety](/xamarin-forms/value-converter-type-safety.md): Learn to annotate `IValueConverter`s with value conversion attributes for `Converter` expression type-safety.
-</code></pre>
-<p>##Introducing View Model Generation</p>
+<ul>
+<li><a href="../../xamarin-forms/implementing-view-models/">Implementing View Models</a>: Learn implement entire view models using the <strong>Implement View Model</strong> refactoring.</li>
+<li><a href="../../xamarin-forms/value-converter-type-safety/">Value Converter Type Safety</a>: Learn to annotate <code>IValueConverter</code>s with value conversion attributes for <code>Converter</code> expression type-safety.</li>
+</ul>
+<h2 id="introducing-view-model-generation">Introducing View Model Generation</h2>
 <p>You already love being able to generate bindings but I've taken it to the next level this release 💪</p>
 <p><a href="http://www.mfractor.com"><img alt="www.mfractor.com" src="../../img/releases/v2-7/implement-viewmodel.gif" /></a></p>
 <p>Got a heap of unimplemented bindings? Right click anywhere in your Xaml document and select <strong>Refactor</strong> -&gt; <strong>Implement View Model</strong>.</p>
 <p>MFractor will collect all the missing bindings and then generate a new class with <strong>all</strong> of those properties into a namespace named <code>MyDefaultNamespace.ViewModels</code>.</p>
 <p>Does the view model already exist? Then MFractor simply inserts the missing bindings into the existing view model.</p>
 <p>I think it'll save you enough time during the week that you may just get to Friday beers a few hours early 🍻</p>
-<p>##Features</p>
-<pre><code>- By right clicking anywhere in a Xaml document, implement all missing bindings as a new or into an existing view model:
-    - Implement view model properties with a getter and setter.
-    - Implement view model properties with a backing field.
-    - Bound properties that return `ICommand` will have an empty `Xamarin.Forms.Command` instance generated.
-    - When MFractor encounters binding expressions that use a `Converter`, it inspects the converter for a `ValueConversion` attribute to deduce the input typed required. If it can't resolve the converter or the converter does not have value conversion information, it will default to using `System.Object`.
-    - When implementing a new view model with getter and setters, MFractor will inspect for references to Fody's `ImplementPropertyChanged` and annotate the new class with it.
-- **New Xaml Analysers:**
-    - Validate that elements declared inside a resource dictionary have an x:Key.
-    - Validate that elements declared inside a resource dictionary have a unique x:Key value.
-    - Detect when an x:TypeArguments is used on a non-generic type and warn of incorrect usage.
-    - Detect when a property setter node (`&lt;MyClass.MyProperty/&gt;`) references a non-existent member on the parent class.
-    - Detect when a property setter attribute is empty.
-    - Detect when an undefined static resource is referenced by a `StaticResource` expression.
-    - Detect when the value returned by a `StaticResource` expression causes a type mismatch.
-    - Detect when an unknown type is being provided to a `x:TypeArguments` attribute.
-    - Validate that `OnIdiom` elements return the correct type for the outer property setter.
-    - Validate that `OnPlatform` elements return the correct type for the outer property setter.
-    - Detect when a developer has misused a property setter inside another xaml element. For example, `OnIdiom.Phone` doesn't make any sense when wrapped by the outer element `OnPlatform`.
-    - Detect when an incorrect input type is provided to a `Converter`. The value converter must have a `ValueConversion` attribute for this to trigger.
-    - Detect when an incorrect output type is returned by a `Converter` expression. The value converter must have a `ValueConversion` attribute for this to trigger.
-    - Detect when multiple occurrences of the same automation ID exists within a Xaml document.
-- **New Xaml Fixes:**
-    - Generate missing resource dictionary keys.
-    - Auto-correct misspelt `StaticResource` references.
-- **New Simplify Refactorings:**
-    - Attributes that use a static instance to initialize the property (eg `VerticalOptions="LayoutOptions.CentreAndExpand"`) can now be simplified to just the instance name (eg `VerticalOptions="CentreAndExpand"`).
-</code></pre>
-<p>##Enhancements</p>
-<pre><code>- This release targets Visual Studio Mac v6.1.3
-- The **About MFractor** dialog now contains a button to copy version and IDE information into the clipboard for bug reports. See [Support - Filing A Bug Report](/faq.md#how-do-i-file-a-bug-report) for more information on filing a bug report.
-- This release introduces the framework for an Xml and Xaml refactoring engine. Over time, I'll be adding Xml and Xaml refactoring operations to make code cleanup a breeze.
-- Annotating value converters with a `ValueConversion(typeof(InputType), typeof(OutputType))` attribute will trigger the conversion information to render into tooltip. See [FormsCommunityToolkit.Converters](https://github.com/FormsCommunityToolkit/Converters) for examples.
-</code></pre>
-<p>##Bug Fixes</p>
-<pre><code>- Sometimes the Xaml document analyser would fail to load and bring down the Xaml editor. This has been fixed.
-- The View &lt; - &gt; Code Behind navigation shortcuts would break when an AST parse was in progress. View &lt; - &gt; Code Behind shortcuts will now always be active.
-- When property setter nodes are used (`&lt;MyClass.MyProperty/&gt;`), the class component is now correctly validated.
-- When importing a Xaml namespace, the element is inserted on a newline and formatted to align with other attributes.
-- When resolving the binding context for nested DataTemplates, sometimes the binding context resolver would fail on generics or IEnumerables
-- More resilient Mvvm resolver to drive the 'Go To View Model', 'Go To Xaml View' and 'Go To Code Behind' shortcuts. MFractor will attempt to infer as best possible the associations between those 3 files.
-- Save the project after adding a new file to it.
-
-
-##Release Notes - v2.6.0
-
-**31st October 2016**
-
-**[Download MFractor 2.6.0](http://addins.mfractor.com/releases/2.06.00/MFractor.MFractor_2.06.00.mpack)**
-
-##Introduction
-
-This is a summary of the changes introduced in v2.6.0 of MFractor for Visual Studio Mac.
-
-As a major release, this release adds several code generation capabilities to improve your Xaml workflow. Generate views, classes and value converters in only a few clicks...
-
-Just right click on that little yellow squiggle and use the fix to generate a whole lotta code.
-
-There are also more xaml code checks to watch out for nasty Xaml issues and bug fixes galore.
-
-Enjoy!
-
-##Features
-
- - **New code generation actions:**
-    - Generate classes from `&lt;my_namespace:MyMissingClass&gt;` in xaml.
-    - Generate views from `&lt;my_namespace:MyMissingView&gt;` in xaml.
-    - Generate value converters when a missing xaml node ends with "[cC]onverter] in xaml.
- - **New Xaml analysers:**
-    - For generics, validate that an x:TypeArguments attribute or xml node setter exists.
-    - For generics, validate that the count of parameters provided to x:TypeArguments matches the generics signature.
-    - Validate the root xaml node contains an x:Class directive to set the code behind class name and namespace.
-
-##Enhancements
-
- - This release targets Visual Studio Mac v6.1.1
-
-## Bug Fixes
-
- - Fix a bug in xaml namespace resolution that prevented the "import new xmlns" fix from triggering.
- - Allow importing of xaml namespaces from x:Static symbols.
- - For Setters, don't validate TargetType property that the provided type is a static member of System.Type.
- - When a symbol name matches but its in the wrong namespace, don't suggest it as a fix.
- - Remove the MFractor settings panel to fix the Visual Studio Mac preferences dialog from not opening when it didn't exist.
- - When using native view declaration, the xaml symbolicator will now honor the targetPlatform flag and find the assembly for that platform. Previously this was a naive search that used the first assembly found; using the wrong symbols if a assembly of the same name existed in both an iOS and Android project.
-
-
- ##Release Notes - v2.5.3
-
- **10th of October 2016**
-
- **[Download MFractor 2.5.0](http://addins.mfractor.com/releases/2.06.00/MFractor.MFractor_2.06.00.mpack)**
-
- ##Introduction
-
- This is a summary of the changes introduced in v2.5.3 of MFractor for Visual Studio Mac.
-
- This release adds support for native view declaration and property generation for missing view attributes.
-
- ##Features
-
-  - Generate properties and bindable properties onto classes that implement Xamarin.Forms.ObservableObject.
-  - Full support for native view declaration. Tooltips, go-to declaration, xaml analysis and code generation enabled on native views used in Xaml.
-
- ##Bug Fixes
-
-  - Xaml expressions now parsed on attributes that cannot be resolved to a .NET symbol. This enables Tooltips, go-to declaration, xaml analysis and code generation.
-  - The analysis engine no longer assumes that the Xamarin.Forms and Microsoft schemas are the implicit and 'x' namespaces. This means that Xamarin.Forms could be remapped to xmlns:xf etc and the xaml analyser will still function correctly.
-</code></pre>
+<h2 id="features_3">Features</h2>
+<ul>
+<li>By right clicking anywhere in a Xaml document, implement all missing bindings as a new or into an existing view model:<ul>
+<li>Implement view model properties with a getter and setter.</li>
+<li>Implement view model properties with a backing field.</li>
+<li>Bound properties that return <code>ICommand</code> will have an empty <code>Xamarin.Forms.Command</code> instance generated.</li>
+<li>When MFractor encounters binding expressions that use a <code>Converter</code>, it inspects the converter for a <code>ValueConversion</code> attribute to deduce the input typed required. If it can't resolve the converter or the converter does not have value conversion information, it will default to using <code>System.Object</code>.</li>
+<li>When implementing a new view model with getter and setters, MFractor will inspect for references to Fody's <code>ImplementPropertyChanged</code> and annotate the new class with it.</li>
+</ul>
+</li>
+<li><strong>New Xaml Analysers:</strong><ul>
+<li>Validate that elements declared inside a resource dictionary have an x:Key.</li>
+<li>Validate that elements declared inside a resource dictionary have a unique x:Key value.</li>
+<li>Detect when an x:TypeArguments is used on a non-generic type and warn of incorrect usage.</li>
+<li>Detect when a property setter node (<code>&lt;MyClass.MyProperty/&gt;</code>) references a non-existent member on the parent class.</li>
+<li>Detect when a property setter attribute is empty.</li>
+<li>Detect when an undefined static resource is referenced by a <code>StaticResource</code> expression.</li>
+<li>Detect when the value returned by a <code>StaticResource</code> expression causes a type mismatch.</li>
+<li>Detect when an unknown type is being provided to a <code>x:TypeArguments</code> attribute.</li>
+<li>Validate that <code>OnIdiom</code> elements return the correct type for the outer property setter.</li>
+<li>Validate that <code>OnPlatform</code> elements return the correct type for the outer property setter.</li>
+<li>Detect when a developer has misused a property setter inside another xaml element. For example, <code>OnIdiom.Phone</code> doesn't make any sense when wrapped by the outer element <code>OnPlatform</code>.</li>
+<li>Detect when an incorrect input type is provided to a <code>Converter</code>. The value converter must have a <code>ValueConversion</code> attribute for this to trigger.</li>
+<li>Detect when an incorrect output type is returned by a <code>Converter</code> expression. The value converter must have a <code>ValueConversion</code> attribute for this to trigger.</li>
+<li>Detect when multiple occurrences of the same automation ID exists within a Xaml document.</li>
+</ul>
+</li>
+<li><strong>New Xaml Fixes:</strong><ul>
+<li>Generate missing resource dictionary keys.</li>
+<li>Auto-correct misspelt <code>StaticResource</code> references.</li>
+</ul>
+</li>
+<li><strong>New Simplify Refactorings:</strong><ul>
+<li>Attributes that use a static instance to initialize the property (eg <code>VerticalOptions="LayoutOptions.CentreAndExpand"</code>) can now be simplified to just the instance name (eg <code>VerticalOptions="CentreAndExpand"</code>).</li>
+</ul>
+</li>
+</ul>
+<h2 id="enhancements_3">Enhancements</h2>
+<ul>
+<li>This release targets Visual Studio Mac v6.1.3</li>
+<li>The <strong>About MFractor</strong> dialog now contains a button to copy version and IDE information into the clipboard for bug reports. See <a href="../../faq/#how-do-i-file-a-bug-report">Support - Filing A Bug Report</a> for more information on filing a bug report.</li>
+<li>This release introduces the framework for an Xml and Xaml refactoring engine. Over time, I'll be adding Xml and Xaml refactoring operations to make code cleanup a breeze.</li>
+<li>Annotating value converters with a <code>ValueConversion(typeof(InputType), typeof(OutputType))</code> attribute will trigger the conversion information to render into tooltip. See <a href="https://github.com/FormsCommunityToolkit/Converters">FormsCommunityToolkit.Converters</a> for examples.</li>
+</ul>
+<h2 id="bug-fixes_3">Bug Fixes</h2>
+<ul>
+<li>Sometimes the Xaml document analyser would fail to load and bring down the Xaml editor. This has been fixed.</li>
+<li>The View &lt; - &gt; Code Behind navigation shortcuts would break when an AST parse was in progress. View &lt; - &gt; Code Behind shortcuts will now always be active.</li>
+<li>When property setter nodes are used (<code>&lt;MyClass.MyProperty/&gt;</code>), the class component is now correctly validated.</li>
+<li>When importing a Xaml namespace, the element is inserted on a newline and formatted to align with other attributes.</li>
+<li>When resolving the binding context for nested DataTemplates, sometimes the binding context resolver would fail on generics or IEnumerables</li>
+<li>More resilient Mvvm resolver to drive the 'Go To View Model', 'Go To Xaml View' and 'Go To Code Behind' shortcuts. MFractor will attempt to infer as best possible the associations between those 3 files.</li>
+<li>Save the project after adding a new file to it.</li>
+</ul>
+<h2 id="release-notes-v260">Release Notes - v2.6.0</h2>
+<p><strong>31st October 2016</strong></p>
+<h2 id="introduction_4">Introduction</h2>
+<p>This is a summary of the changes introduced in v2.6.0 of MFractor for Visual Studio Mac.</p>
+<p>As a major release, this release adds several code generation capabilities to improve your Xaml workflow. Generate views, classes and value converters in only a few clicks...</p>
+<p>Just right click on that little yellow squiggle and use the fix to generate a whole lotta code.</p>
+<p>There are also more xaml code checks to watch out for nasty Xaml issues and bug fixes galore.</p>
+<p>Enjoy!</p>
+<h2 id="features_4">Features</h2>
+<ul>
+<li><strong>New code generation actions:</strong><ul>
+<li>Generate classes from <code>&lt;my_namespace:MyMissingClass&gt;</code> in xaml.</li>
+<li>Generate views from <code>&lt;my_namespace:MyMissingView&gt;</code> in xaml.</li>
+<li>Generate value converters when a missing xaml node ends with "[cC]onverter] in xaml.</li>
+</ul>
+</li>
+<li><strong>New Xaml analysers:</strong><ul>
+<li>For generics, validate that an x:TypeArguments attribute or xml node setter exists.</li>
+<li>For generics, validate that the count of parameters provided to x:TypeArguments matches the generics signature.</li>
+<li>Validate the root xaml node contains an x:Class directive to set the code behind class name and namespace.</li>
+</ul>
+</li>
+</ul>
+<h2 id="enhancements_4">Enhancements</h2>
+<ul>
+<li>This release targets Visual Studio Mac v6.1.1</li>
+</ul>
+<h2 id="bug-fixes_4">Bug Fixes</h2>
+<ul>
+<li>Fix a bug in xaml namespace resolution that prevented the "import new xmlns" fix from triggering.</li>
+<li>Allow importing of xaml namespaces from x:Static symbols.</li>
+<li>For Setters, don't validate TargetType property that the provided type is a static member of System.Type.</li>
+<li>When a symbol name matches but its in the wrong namespace, don't suggest it as a fix.</li>
+<li>Remove the MFractor settings panel to fix the Visual Studio Mac preferences dialog from not opening when it didn't exist.</li>
+<li>When using native view declaration, the xaml symbolicator will now honor the targetPlatform flag and find the assembly for that platform. Previously this was a naive search that used the first assembly found; using the wrong symbols if a assembly of the same name existed in both an iOS and Android project.</li>
+</ul>
+<h2 id="release-notes-v253">Release Notes - v2.5.3</h2>
+<p><strong>10th of October 2016</strong></p>
+<h2 id="introduction_5">Introduction</h2>
+<p>This is a summary of the changes introduced in v2.5.3 of MFractor for Visual Studio Mac.</p>
+<p>This release adds support for native view declaration and property generation for missing view attributes.</p>
+<h2 id="features_5">Features</h2>
+<ul>
+<li>Generate properties and bindable properties onto classes that implement Xamarin.Forms.ObservableObject.</li>
+<li>Full support for native view declaration. Tooltips, go-to declaration, xaml analysis and code generation enabled on native views used in Xaml.</li>
+</ul>
+<h2 id="bug-fixes_5">Bug Fixes</h2>
+<ul>
+<li>Xaml expressions now parsed on attributes that cannot be resolved to a .NET symbol. This enables Tooltips, go-to declaration, xaml analysis and code generation.</li>
+<li>The analysis engine no longer assumes that the Xamarin.Forms and Microsoft schemas are the implicit and 'x' namespaces. This means that Xamarin.Forms could be remapped to xmlns:xf etc and the xaml analyser will still function correctly.</li>
+</ul>
               
             </div>
           </div>
