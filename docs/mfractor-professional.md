@@ -4,9 +4,9 @@
 
 ## MFractor Lite VS MFractor Professional
 
-MFractor comes in both a free (lite) and a paid/premium (Professional) version.
+MFractor comes in both a free (lite) and a paid (Professional) version.
 
-The free version contains most features that are included in MFractor Premium; as a Xamarin developer you will find the free version will still help out your day-to-day Xamarin.Android and Xamarin.Forms development a heck of a lot!
+The free version contains most features that are included in MFractor Professional; as a Xamarin developer you will find the free version will still help out your day-to-day Xamarin.Android and Xamarin.Forms development a heck of a lot!
 
 If you would like C# code refactoring support, mobile-specific code diagnostics or wish to tweak the code that MFractor creates then you will need to pay for a MFractor Professional license.
 
@@ -29,7 +29,7 @@ Professional licenses:
  * Are issued against a single developer.
  * Can be used on up to 3 separate machines for a single developer.
  * Expired 366 days after being issued.
- * Include 1 year of maintenance for premium features.
+ * Include 1 year of maintenance for Professional features.
  * Include priority for feature requests and bug fixes.
 
 To enquire about purchasing an MFractor Professional license, please email **hello@mfractor.com**.

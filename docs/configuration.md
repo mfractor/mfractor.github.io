@@ -1,7 +1,7 @@
 
 ##Configuring MFractor
 
-**Premium Only**
+**Professional Only**
 
 *Changing the behavior of MFractor's code generation and code actions*
 

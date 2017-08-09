@@ -1,15 +1,11 @@
 
 ## Using MFractor.Annotations
 
-**Premium Only**
-
 *Using the MFractor.Annotations library to power mobile-specific C# code diagnostics*
 
 ## Introduction
 
 The MFractor.Annotations library is a Nuget package that powers a suite of mobile-specific code diagnostics. When this library is installed and used in a .NET project, developers can annotate their code with MFractor attributes to activate features like the [Check Views Exist In Layout](/code-analysis/csharp/android/#check-views-exist-in-layout) C# code analyser.
-
-While the Nuget library can be installed into any project, MFractor's mobile-specific code diagnostics are only available in MFractor Premium.
 
 ## Installing the MFractor.Annotations NuGet
 
@@ -18,7 +14,6 @@ To add the MFractor.Annotations library into your project:
 **Right click on 'Packages' and select 'Add Packages...'**
 
 ![Adding a package to a project](/img/annotations/add-packages.png)
-
 
 **Search for 'MFractor.Annotations' and select 'Add Package'**
 
