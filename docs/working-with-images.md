@@ -2,10 +2,6 @@
 
 *Using MFractors image tooling to simplify working with your apps image resources*
 
-## Introduction
-
-As mobile developers we rely on image assets
-
 ## Using The Image Wizard
 
 When an Android and/or iOS project is within the active solution, the image wizard will become available.
@@ -55,11 +51,13 @@ For Android, MFractor uses the following scales and names:
 Say you chose `@3x` and `xxhdpi` as your source densities when importing a new image with the resolutions of 1000w by 1000h, MFractor would generate the following sizes:
 
 **iOS**
+
   * `@3x`: 1000w by 1000h (`@3x` / `@3x`)
   * `@2x`: 666w by 666h (`@2x` / `@3x`)
   * `@1x`: 333w by 333h (`@1x` / `@3x`)
 
 **Android**
+
   * `xxhdpi`: 1000w by 1000h (`xxhdpi` / `xxhdpi`)
   * `xhdpi` : 666w by 666h   (`xhdpi` / `xxhdpi`)
   * `hdpi`  : 500w by 500h   (`hdpi` / `xxhdpi`)
