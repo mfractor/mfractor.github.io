@@ -56,6 +56,7 @@ pages:
   - Xaml: code-generation/xaml.md
   - ResX: code-generation/resx.md
 - Release Notes:
+    - v3.2: release-notes/v3-2.md
     - v3.1: release-notes/v3-1.md
     - v3.0: release-notes/v3-0.md
     - v2: release-notes/v2.md
