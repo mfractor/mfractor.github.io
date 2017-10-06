@@ -44,17 +44,22 @@ pages:
     - Code Generation: code-actions/xaml/generate.md
     - Xaml Organisation: code-actions/xaml/organise.md
     - Refactoring: code-actions/xaml/refactor.md
+  - XML Code Actions: code-actions/xml.md
 - Code Analysis:
   - C#:
     - Android C# Analysis: code-analysis/csharp/android.md
     - Xamarin.Forms C# Analysis: code-analysis/csharp/xamarin-forms.md
   - Android Resource Analysis: code-analysis/android-resources.md
   - Xamarin.Forms Xaml Analysis: code-analysis/xaml.md
+  - MFractor Config Analysis: code-analysis/configuration.md
 - Code Generation:
   - C#: code-generation/csharp.md
   - Xamarin.Forms - C#: code-generation/xamarin-forms.md
   - Xaml: code-generation/xaml.md
   - ResX: code-generation/resx.md
+  - XML: code-generation/xml.md
+- ResX:
+  - Configuration: resx/configuration.md
 - Release Notes:
     - v3.2: release-notes/v3-2.md
     - v3.1: release-notes/v3-1.md
