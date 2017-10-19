@@ -37,6 +37,8 @@ pages:
   - Resource IntelliSense: xamarin-android/resource-intellisense.md
 - Code Actions:
   - C# Code Actions: code-actions/csharp.md
+  - C#:
+    - Android: code-actions/csharp/android.md
   - Android Resource Code Actions:
     - Issue Fixing: code-actions/android-resources/fix.md
   - Xamarin.Forms Xaml Code Actions:
@@ -54,6 +56,8 @@ pages:
   - MFractor Config Analysis: code-analysis/configuration.md
 - Code Generation:
   - C#: code-generation/csharp.md
+  - C#:
+    - Android: code-generation/csharp/android.md
   - Xamarin.Forms - C#: code-generation/xamarin-forms.md
   - Xaml: code-generation/xaml.md
   - ResX: code-generation/resx.md
