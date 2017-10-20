@@ -9,7 +9,7 @@
   <meta name="author" content="Matthew Robbins">
   <link rel="shortcut icon" href="../../img/favicon.ico">
   
-  <title>Xamarin.Forms - C# - mfractor docs</title>
+  <title>Xamarin.Forms - mfractor docs</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="../../css/theme.css" type="text/css" />
@@ -23,7 +23,7 @@
   
   <script>
     // Current page data
-    var mkdocs_page_name = "Xamarin.Forms - C#";
+    var mkdocs_page_name = "Xamarin.Forms";
     var mkdocs_page_input_path = "code-generation/xamarin-forms.md";
     var mkdocs_page_url = "/code-generation/xamarin-forms/";
   </script>
@@ -89,13 +89,6 @@
   
   
 <li class="toctree-l1 ">
-  <a class="" href="../../faq/">FAQ</a>
-  
-</li>
-
-  
-  
-<li class="toctree-l1 ">
   <a class="" href="../../code-actions/">Code Actions</a>
   
 </li>
@@ -103,7 +96,28 @@
   
   
 <li class="toctree-l1 ">
-  <a class="" href="../../working-with-images/">Working With Images</a>
+  <a class="" href="../../configuration/">Configuration</a>
+  
+</li>
+
+  
+  
+<li class="toctree-l1 ">
+  <a class="" href="../../image-importing-wizard/">Image Importing Wizard</a>
+  
+</li>
+
+  
+  
+<li class="toctree-l1 ">
+  <a class="" href="../../localisation-wizard/">Localisation Wizard</a>
+  
+</li>
+
+  
+  
+<li class="toctree-l1 ">
+  <a class="" href="../../code-snippets/">Code Snippets</a>
   
 </li>
 
@@ -111,13 +125,6 @@
   
 <li class="toctree-l1 ">
   <a class="" href="../../annotations/">Using MFractor.Annotations</a>
-  
-</li>
-
-  
-  
-<li class="toctree-l1 ">
-  <a class="" href="../../configuration/">Configuration</a>
   
 </li>
 
@@ -193,15 +200,15 @@
   <li><span>Code Actions</span></li>
   
   
+<ul class="subnav">
+  <li><span>C#</span></li>
+  
+  
 <li class="toctree-l1 ">
   <a class="" href="../../code-actions/csharp/">C# Code Actions</a>
   
 </li>
 
-  
-  
-<ul class="subnav">
-  <li><span>C#</span></li>
   
   
 <li class="toctree-l1 ">
@@ -326,15 +333,15 @@
   <li><span>Code Generation</span></li>
   
   
+<ul class="subnav">
+  <li><span>C#</span></li>
+  
+  
 <li class="toctree-l1 ">
   <a class="" href="../csharp/">C#</a>
   
 </li>
 
-  
-  
-<ul class="subnav">
-  <li><span>C#</span></li>
   
   
 <li class="toctree-l1 ">
@@ -343,12 +350,9 @@
 </li>
 
   
-</ul>
-
-  
   
 <li class="toctree-l1 current">
-  <a class="current" href="./">Xamarin.Forms - C#</a>
+  <a class="current" href="./">Xamarin.Forms</a>
   
   <ul>
     
@@ -381,6 +385,9 @@
   </ul>
   
 </li>
+
+  
+</ul>
 
   
   
@@ -424,6 +431,13 @@
             <li>
 <ul class="subnav">
   <li><span>Release Notes</span></li>
+  
+  
+<li class="toctree-l1 ">
+  <a class="" href="../../release-notes/v3-3/">v3.3</a>
+  
+</li>
+
   
   
 <li class="toctree-l1 ">
@@ -481,8 +495,12 @@
           <li>Code Generation &raquo;</li>
         
       
+        
+          <li>C# &raquo;</li>
+        
+      
     
-    <li>Xamarin.Forms - C#</li>
+    <li>Xamarin.Forms</li>
   </ul>
   <hr/>
 </div>
@@ -607,10 +625,17 @@
 <h3 id="uses">Uses:</h3>
 <ul>
 <li><a href="./#generate-value-conversion-attribute">Generate Value Conversion Attribute</a></li>
+<li><a href="../csharp/#using-directive-generator">Using Directive Generator</a></li>
+<li><a href="../csharp/#namespace-declaration">Namespace Declaration</a></li>
 </ul>
 <h2 id="generate-value-conversion-attribute">Generate Value Conversion Attribute</h2>
 <p><strong>Configuration Id: com.mfractor.code_gen.forms.csharp.value_conversion_attribute</strong></p>
 <p>Generates an implementation of the <code>ValueConversionAttribute</code>; the attribute used to hint type-flow in a value converter for design time tools like MFractor.</p>
+<h3 id="uses_1">Uses:</h3>
+<ul>
+<li><a href="../csharp/#using-directive-generator">Using Directive Generator</a></li>
+<li><a href="../csharp/#namespace-declaration">Namespace Declaration</a></li>
+</ul>
 <h2 id="generate-view-with-xaml-and-code-behind-class">Generate View With XAML and Code-Behind Class</h2>
 <p><strong>Configuration Id: com.mfractor.code_gen.forms.xaml_view_with_code_behind</strong></p>
 <p>Creates a new view/control using a XAML to define the UI and a code-behind class to encapsulate backing logic.</p>
@@ -633,6 +658,11 @@
 </tr>
 </tbody>
 </table>
+<h3 id="uses_2">Uses:</h3>
+<ul>
+<li><a href="../csharp/#using-directive-generator">Using Directive Generator</a></li>
+<li><a href="../csharp/#namespace-declaration">Namespace Declaration</a></li>
+</ul>
 <h2 id="string-localisation-generator">String Localisation Generator</h2>
 <p><strong>Configuration Id: com.mfractor.code_gen.forms.replace_with_localisation_lookup</strong></p>
 <p>The string localisation generator converts literal string value inside a XAML document to a localised value lookup. This replaces the text with a localistaion lookup extension and generates a resx entry for the old value.</p>
@@ -661,7 +691,7 @@
 </tr>
 </tbody>
 </table>
-<h3 id="uses_1">Uses:</h3>
+<h3 id="uses_3">Uses:</h3>
 <ul>
 <li><a href="../resx/#generate-resx-entry">Generate ResX Entry</a></li>
 <li><a href="../../resx/configuration/#default-resource-file">Default Resource File</a></li>
@@ -724,7 +754,7 @@
 </tr>
 </tbody>
 </table>
-<h3 id="uses_2">Uses:</h3>
+<h3 id="uses_4">Uses:</h3>
 <ul>
 <li><a href="../csharp/#generate-instance-property">Generate Instance Property</a></li>
 </ul>

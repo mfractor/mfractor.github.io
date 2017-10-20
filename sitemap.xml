@@ -24,31 +24,37 @@
     </url>
         
     <url>
-     <loc>/faq/</loc>
-     <lastmod>2017-10-20</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-        
-    <url>
      <loc>/code-actions/</loc>
      <lastmod>2017-10-20</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
-     <loc>/working-with-images/</loc>
+     <loc>/configuration/</loc>
+     <lastmod>2017-10-20</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>/image-importing-wizard/</loc>
+     <lastmod>2017-10-20</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>/localisation-wizard/</loc>
+     <lastmod>2017-10-20</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>/code-snippets/</loc>
      <lastmod>2017-10-20</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/annotations/</loc>
-     <lastmod>2017-10-20</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-        
-    <url>
-     <loc>/configuration/</loc>
      <lastmod>2017-10-20</lastmod>
      <changefreq>daily</changefreq>
     </url>
@@ -108,12 +114,6 @@
     
         
     <url>
-     <loc>/code-actions/csharp/</loc>
-     <lastmod>2017-10-20</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-        
-    <url>
      <loc></loc>
      <lastmod></lastmod>
      <changefreq>daily</changefreq>
@@ -170,20 +170,8 @@
     
         
     <url>
-     <loc>/code-generation/csharp/</loc>
-     <lastmod>2017-10-20</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-        
-    <url>
      <loc></loc>
      <lastmod></lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-        
-    <url>
-     <loc>/code-generation/xamarin-forms/</loc>
-     <lastmod>2017-10-20</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
@@ -218,6 +206,12 @@
     
 
     
+        
+    <url>
+     <loc>/release-notes/v3-3/</loc>
+     <lastmod>2017-10-20</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
         
     <url>
      <loc>/release-notes/v3-2/</loc>
