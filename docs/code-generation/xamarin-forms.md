@@ -49,6 +49,8 @@ Generates an implementation of a value converter.
 ### Uses:
 
  * [Generate Value Conversion Attribute](/code-generation/xamarin-forms.md#generate-value-conversion-attribute)
+ * [Using Directive Generator](/code-generation/csharp.md#using-directive-generator)
+ * [Namespace Declaration](/code-generation/csharp.md#namespace-declaration)
 
 
 ## Generate Value Conversion Attribute
@@ -56,6 +58,12 @@ Generates an implementation of a value converter.
 **Configuration Id: com.mfractor.code_gen.forms.csharp.value_conversion_attribute**
 
 Generates an implementation of the `ValueConversionAttribute`; the attribute used to hint type-flow in a value converter for design time tools like MFractor.
+
+
+### Uses:
+
+ * [Using Directive Generator](/code-generation/csharp.md#using-directive-generator)
+ * [Namespace Declaration](/code-generation/csharp.md#namespace-declaration)
 
 
 ## Generate View With XAML and Code-Behind Class
@@ -70,6 +78,12 @@ Creates a new view/control using a XAML to define the UI and a code-behind class
 | Name | Type | Defaults To | Description |
 |------|------|-------------|-------------|
 | **ViewsFolder** | `System.String` | `null` | What is the folder that new XAML views be placed into? |
+
+### Uses:
+
+ * [Using Directive Generator](/code-generation/csharp.md#using-directive-generator)
+ * [Namespace Declaration](/code-generation/csharp.md#namespace-declaration)
+
 
 ## String Localisation Generator
 

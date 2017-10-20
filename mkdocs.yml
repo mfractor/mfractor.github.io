@@ -21,11 +21,12 @@ pages:
 - Getting Started:
   - Installation And Setup: installation-and-setup.md
   - About MFractor Professional: mfractor-professional.md
-  - FAQ: faq.md
   - Code Actions: code-actions.md
-  - Working With Images: working-with-images.md
-  - Using MFractor.Annotations: annotations.md
   - Configuration: configuration.md
+  - Image Importing Wizard: image-importing-wizard.md
+  - Localisation Wizard: localisation-wizard.md
+  - Code Snippets: code-snippets.md
+  - Using MFractor.Annotations: annotations.md
 - Xamarin.Forms:
   - Configuring A Binding Context: xamarin-forms/configure-binding-context.md
   - Navigation Tools: xamarin-forms/navigation.md
@@ -36,8 +37,8 @@ pages:
   - Navigation Tools: xamarin-android/navigation-tools.md
   - Resource IntelliSense: xamarin-android/resource-intellisense.md
 - Code Actions:
-  - C# Code Actions: code-actions/csharp.md
   - C#:
+    - C# Code Actions: code-actions/csharp.md
     - Android: code-actions/csharp/android.md
   - Android Resource Code Actions:
     - Issue Fixing: code-actions/android-resources/fix.md
@@ -55,16 +56,17 @@ pages:
   - Xamarin.Forms Xaml Analysis: code-analysis/xaml.md
   - MFractor Config Analysis: code-analysis/configuration.md
 - Code Generation:
-  - C#: code-generation/csharp.md
   - C#:
+    - C#: code-generation/csharp.md
     - Android: code-generation/csharp/android.md
-  - Xamarin.Forms - C#: code-generation/xamarin-forms.md
+    - Xamarin.Forms: code-generation/xamarin-forms.md
   - Xaml: code-generation/xaml.md
   - ResX: code-generation/resx.md
   - XML: code-generation/xml.md
 - ResX:
   - Configuration: resx/configuration.md
 - Release Notes:
+    - v3.3: release-notes/v3-3.md
     - v3.2: release-notes/v3-2.md
     - v3.1: release-notes/v3-1.md
     - v3.0: release-notes/v3-0.md
