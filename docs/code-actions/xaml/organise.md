@@ -10,12 +10,9 @@ When a xaml node has unused xml namespace declarations, this code action will re
 
 ### Configurable Properties
 
-####ShouldSort
-**Type:** `System.Boolean`
-
-**Default Value:** `True`
-
-If the attributes for this node should be sorted when the unused namespaces are removed
+| Name | Type | Defaults To | Description |
+|------|------|-------------|-------------|
+| **ShouldSort** | `System.Boolean` | `True` | If the attributes for this node should be sorted when the unused namespaces are removed |
 
 ### Uses:
 

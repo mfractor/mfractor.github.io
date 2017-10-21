@@ -8,30 +8,12 @@ Generates a new `Grid` XAML element.
 
 ### Configurable Properties
 
-####IncludeColumnDefinitions
-**Type:** `System.Boolean`
-
-**Default Value:** `True`
-
-Should the new grid include a `ColumnDefinitions` element by default?
-####IncludeRowDefinitions
-**Type:** `System.Boolean`
-
-**Default Value:** `True`
-
-Should the new grid include a `RowDefinitions` element by default?
-####DefaultRowsCount
-**Type:** `System.Int32`
-
-**Default Value:** `1`
-
-What is the default amount of rows that the new grid should have?
-####DefaultColumnsCount
-**Type:** `System.Int32`
-
-**Default Value:** `1`
-
-What is the default amount of columns that the new grid should have?
+| Name | Type | Defaults To | Description |
+|------|------|-------------|-------------|
+| **IncludeColumnDefinitions** | `System.Boolean` | `True` | Should the new grid include a `ColumnDefinitions` element by default? |
+| **IncludeRowDefinitions** | `System.Boolean` | `True` | Should the new grid include a `RowDefinitions` element by default? |
+| **DefaultRowsCount** | `System.Int32` | `1` | What is the default amount of rows that the new grid should have? |
+| **DefaultColumnsCount** | `System.Int32` | `1` | What is the default amount of columns that the new grid should have? |
 
 ### Uses:
 
@@ -48,12 +30,9 @@ Generates a `ColumnDefinition` Xaml node that is used inside a `Grid.ColumnDefin
 
 ### Configurable Properties
 
-####DefaultWidthValue
-**Type:** `System.String`
-
-**Default Value:** `"*"`
-
-When creating a new `ColumnDefinition` for a grid, what is the default width value.
+| Name | Type | Defaults To | Description |
+|------|------|-------------|-------------|
+| **DefaultWidthValue** | `System.String` | `"*"` | When creating a new `ColumnDefinition` for a grid, what is the default width value. |
 
 ## Generate Grid Row Definition
 
@@ -64,12 +43,9 @@ Generates a `RowDefinition` Xaml node that is used inside a `Grid.RowDefinitions
 
 ### Configurable Properties
 
-####DefaultHeightValue
-**Type:** `System.String`
-
-**Default Value:** `"*"`
-
-When creating a new `RowDefinition` for a grid, what is the default height of a newly created row?
+| Name | Type | Defaults To | Description |
+|------|------|-------------|-------------|
+| **DefaultHeightValue** | `System.String` | `"*"` | When creating a new `RowDefinition` for a grid, what is the default height of a newly created row? |
 
 ## Rename Xaml Namespace Generator
 

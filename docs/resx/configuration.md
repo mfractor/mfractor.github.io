@@ -8,10 +8,7 @@ A proxy configuration that allows code actions and code generators throughout MF
 
 ### Configurable Properties
 
-####ProjectFilePath
-**Type:** `System.String`
-
-**Default Value:** `""`
-
-What is the default resource file that string resources should be placed into? This should be match the path of the resource file relative to the parent project as shown in the solution explorer.
+| Name | Type | Defaults To | Description |
+|------|------|-------------|-------------|
+| **ProjectFilePath** | `System.String` | `""` | What is the default resource file that string resources should be placed into? This should be match the path of the resource file relative to the parent project as shown in the solution explorer. |
 
