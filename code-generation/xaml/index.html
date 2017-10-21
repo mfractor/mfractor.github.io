@@ -496,42 +496,22 @@
 <p><strong>Configuration Id: com.mfractor.code_gen.forms.xaml.grid</strong></p>
 <p>Generates a new <code>Grid</code> XAML element.</p>
 <h3 id="configurable-properties">Configurable Properties</h3>
-<table>
-<thead>
-<tr>
-<th>Name</th>
-<th>Type</th>
-<th>Defaults To</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><strong>IncludeColumnDefinitions</strong></td>
-<td><code>System.Boolean</code></td>
-<td><code>True</code></td>
-<td>Should the new grid include a <code>ColumnDefinitions</code> element by default?</td>
-</tr>
-<tr>
-<td><strong>IncludeRowDefinitions</strong></td>
-<td><code>System.Boolean</code></td>
-<td><code>True</code></td>
-<td>Should the new grid include a <code>RowDefinitions</code> element by default?</td>
-</tr>
-<tr>
-<td><strong>DefaultRowsCount</strong></td>
-<td><code>System.Int32</code></td>
-<td><code>1</code></td>
-<td>What is the default amount of rows that the new grid should have?</td>
-</tr>
-<tr>
-<td><strong>DefaultColumnsCount</strong></td>
-<td><code>System.Int32</code></td>
-<td><code>1</code></td>
-<td>What is the default amount of columns that the new grid should have?</td>
-</tr>
-</tbody>
-</table>
+<h4 id="includecolumndefinitions">IncludeColumnDefinitions</h4>
+<p><strong>Type:</strong> <code>System.Boolean</code></p>
+<p><strong>Default Value:</strong> <code>True</code></p>
+<p>Should the new grid include a <code>ColumnDefinitions</code> element by default?</p>
+<h4 id="includerowdefinitions">IncludeRowDefinitions</h4>
+<p><strong>Type:</strong> <code>System.Boolean</code></p>
+<p><strong>Default Value:</strong> <code>True</code></p>
+<p>Should the new grid include a <code>RowDefinitions</code> element by default?</p>
+<h4 id="defaultrowscount">DefaultRowsCount</h4>
+<p><strong>Type:</strong> <code>System.Int32</code></p>
+<p><strong>Default Value:</strong> <code>1</code></p>
+<p>What is the default amount of rows that the new grid should have?</p>
+<h4 id="defaultcolumnscount">DefaultColumnsCount</h4>
+<p><strong>Type:</strong> <code>System.Int32</code></p>
+<p><strong>Default Value:</strong> <code>1</code></p>
+<p>What is the default amount of columns that the new grid should have?</p>
 <h3 id="uses">Uses:</h3>
 <ul>
 <li><a href="./#generate-grid-row-definition">Generate Grid Row Definition</a></li>
@@ -541,46 +521,18 @@
 <p><strong>Configuration Id: com.mfractor.code_gen.forms.xaml.grid_column_definition</strong></p>
 <p>Generates a <code>ColumnDefinition</code> Xaml node that is used inside a <code>Grid.ColumnDefinitions</code> node.</p>
 <h3 id="configurable-properties_1">Configurable Properties</h3>
-<table>
-<thead>
-<tr>
-<th>Name</th>
-<th>Type</th>
-<th>Defaults To</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><strong>DefaultWidthValue</strong></td>
-<td><code>System.String</code></td>
-<td><code>"*"</code></td>
-<td>When creating a new <code>ColumnDefinition</code> for a grid, what is the default width value.</td>
-</tr>
-</tbody>
-</table>
+<h4 id="defaultwidthvalue">DefaultWidthValue</h4>
+<p><strong>Type:</strong> <code>System.String</code></p>
+<p><strong>Default Value:</strong> <code>"*"</code></p>
+<p>When creating a new <code>ColumnDefinition</code> for a grid, what is the default width value.</p>
 <h2 id="generate-grid-row-definition">Generate Grid Row Definition</h2>
 <p><strong>Configuration Id: com.mfractor.code_gen.forms.xaml.grid_row_definition</strong></p>
 <p>Generates a <code>RowDefinition</code> Xaml node that is used inside a <code>Grid.RowDefinitions</code> node.</p>
 <h3 id="configurable-properties_2">Configurable Properties</h3>
-<table>
-<thead>
-<tr>
-<th>Name</th>
-<th>Type</th>
-<th>Defaults To</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><strong>DefaultHeightValue</strong></td>
-<td><code>System.String</code></td>
-<td><code>"*"</code></td>
-<td>When creating a new <code>RowDefinition</code> for a grid, what is the default height of a newly created row?</td>
-</tr>
-</tbody>
-</table>
+<h4 id="defaultheightvalue">DefaultHeightValue</h4>
+<p><strong>Type:</strong> <code>System.String</code></p>
+<p><strong>Default Value:</strong> <code>"*"</code></p>
+<p>When creating a new <code>RowDefinition</code> for a grid, what is the default height of a newly created row?</p>
 <h2 id="rename-xaml-namespace-generator">Rename Xaml Namespace Generator</h2>
 <p><strong>Configuration Id: com.mfractor.code_gen.forms.xaml.rename_xaml_namespace</strong></p>
 <p>Generates a series of replace text fixes to rename a namespace</p>

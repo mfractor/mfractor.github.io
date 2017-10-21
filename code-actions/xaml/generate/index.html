@@ -602,48 +602,26 @@ namespace MyApp.ViewModels
 </code></pre>
 
 <h3 id="configurable-properties">Configurable Properties</h3>
-<table>
-<thead>
-<tr>
-<th>Name</th>
-<th>Type</th>
-<th>Defaults To</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><strong>BaseClass</strong></td>
-<td><code>System.String</code></td>
-<td><code>null</code></td>
-<td>The fully qualified type to use as the base class for the view model. For example, <code>MvvmFramework.ViewModels.BaseViewModel</code>.</td>
-</tr>
-<tr>
-<td><strong>ViewModelsFolder</strong></td>
-<td><code>System.String</code></td>
-<td><code>null</code></td>
-<td>The folder path relative to the project root to insert the newly created view model class into. For example <code>ViewModels/Cells</code>.</td>
-</tr>
-<tr>
-<td><strong>ViewModelSuffix</strong></td>
-<td><code>System.String</code></td>
-<td><code>"ViewModel"</code></td>
-<td>The suffix to append to the end of the newly created view model. For example, setting this to <code>PageModel</code> would cause a page named <code>MainPage</code> to create a view model named <code>MainPageModel</code>.</td>
-</tr>
-<tr>
-<td><strong>ViewModelNamespace</strong></td>
-<td><code>System.String</code></td>
-<td><code>null</code></td>
-<td>What is the default namespace that view models be included into? Use a '.' before the namespace to signify to MFractor that the new namespace is relative to the projects default namespace. If unset, the default project namespace is used.</td>
-</tr>
-<tr>
-<td><strong>ShouldRemoveXamlViewSuffix</strong></td>
-<td><code>System.Boolean</code></td>
-<td><code>True</code></td>
-<td>Should MFractor remove the 'Page' or 'View' suffix from the view name before creating generating the new view model? Consider the view 'MainPage' with ViewModelSuffix set to 'ViewModel'; if set as true, the new view model would be named 'MainViewModel'. If false, the new view model would be named 'MainPageViewModel'</td>
-</tr>
-</tbody>
-</table>
+<h4 id="baseclass">BaseClass</h4>
+<p><strong>Type:</strong> <code>System.String</code></p>
+<p><strong>Default Value:</strong> <code>null</code></p>
+<p>The fully qualified type to use as the base class for the view model. For example, <code>MvvmFramework.ViewModels.BaseViewModel</code>.</p>
+<h4 id="viewmodelsfolder">ViewModelsFolder</h4>
+<p><strong>Type:</strong> <code>System.String</code></p>
+<p><strong>Default Value:</strong> <code>null</code></p>
+<p>The folder path relative to the project root to insert the newly created view model class into. For example <code>ViewModels/Cells</code>.</p>
+<h4 id="viewmodelsuffix">ViewModelSuffix</h4>
+<p><strong>Type:</strong> <code>System.String</code></p>
+<p><strong>Default Value:</strong> <code>"ViewModel"</code></p>
+<p>The suffix to append to the end of the newly created view model. For example, setting this to <code>PageModel</code> would cause a page named <code>MainPage</code> to create a view model named <code>MainPageModel</code>.</p>
+<h4 id="viewmodelnamespace">ViewModelNamespace</h4>
+<p><strong>Type:</strong> <code>System.String</code></p>
+<p><strong>Default Value:</strong> <code>null</code></p>
+<p>What is the default namespace that view models be included into? Use a '.' before the namespace to signify to MFractor that the new namespace is relative to the projects default namespace. If unset, the default project namespace is used.</p>
+<h4 id="shouldremovexamlviewsuffix">ShouldRemoveXamlViewSuffix</h4>
+<p><strong>Type:</strong> <code>System.Boolean</code></p>
+<p><strong>Default Value:</strong> <code>True</code></p>
+<p>Should MFractor remove the 'Page' or 'View' suffix from the view name before creating generating the new view model? Consider the view 'MainPage' with ViewModelSuffix set to 'ViewModel'; if set as true, the new view model would be named 'MainViewModel'. If false, the new view model would be named 'MainPageViewModel'</p>
 <h3 id="uses_4">Uses:</h3>
 <ul>
 <li><a href="../../../code-generation/xamarin-forms/#generate-icommand-implementation">Generate ICommand Implementation</a></li>

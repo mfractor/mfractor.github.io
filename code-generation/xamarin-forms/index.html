@@ -512,116 +512,56 @@
 <p><strong>Configuration Id: com.mfractor.code_gen.forms.csharp.bindable_property</strong></p>
 <p>Generates a Xamarin.Forms bindable property implementation and a proxy property that calls the <code>BindableProperty</code> implementation.</p>
 <h3 id="configurable-properties">Configurable Properties</h3>
-<table>
-<thead>
-<tr>
-<th>Name</th>
-<th>Type</th>
-<th>Defaults To</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><strong>PreferExpressionBodies</strong></td>
-<td><code>System.Boolean</code></td>
-<td><code>False</code></td>
-<td>When generating bindable properties, should the generator prefer expression bodies (<code>get =&gt; MyValue;</code>) instead of a return statement?</td>
-</tr>
-</tbody>
-</table>
+<h4 id="preferexpressionbodies">PreferExpressionBodies</h4>
+<p><strong>Type:</strong> <code>System.Boolean</code></p>
+<p><strong>Default Value:</strong> <code>False</code></p>
+<p>When generating bindable properties, should the generator prefer expression bodies (<code>get =&gt; MyValue;</code>) instead of a return statement?</p>
 <h2 id="generate-icommand-implementation">Generate ICommand Implementation</h2>
 <p><strong>Configuration Id: com.mfractor.code_gen.forms.csharp.command_implementation</strong></p>
 <p>Generates a boilerplate implementation of ICommand using Xamarin.Forms.Command</p>
 <h3 id="configurable-properties_1">Configurable Properties</h3>
-<table>
-<thead>
-<tr>
-<th>Name</th>
-<th>Type</th>
-<th>Defaults To</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><strong>Snippet</strong></td>
-<td><code>Code Snippet</code></td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td><strong>Expected Arguments</strong>:</td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td>* <code>name</code>: The name of the new command.</td>
-<td><code>null</code></td>
-<td>What is the code snippet to use when creating the command stub? If not set, this code generator will default to generating a stub <code>Xamarin.Forms.Command</code> implementation</td>
-<td></td>
-</tr>
-<tr>
-<td><strong>CommandType</strong></td>
-<td><code>System.String</code></td>
-<td><code>"Xamarin.Forms.Command"</code></td>
-<td>The fully qualified type to use as the command implementation. For example, using <code>Xamarin.Forms.Command</code> would cause the new expression to be <code>new Xamarin.Forms.Command</code></td>
-</tr>
-</tbody>
-</table>
+<h4 id="snippet">Snippet</h4>
+<p><strong>Type:</strong> <code>Code Snippet</code></p>
+<ul>
+<li><strong>Expected Arguments</strong>:<ul>
+<li><code>name</code>: The name of the new command.</li>
+</ul>
+</li>
+</ul>
+<p><strong>Default Value:</strong> <code>null</code></p>
+<p>What is the code snippet to use when creating the command stub? If not set, this code generator will default to generating a stub <code>Xamarin.Forms.Command</code> implementation</p>
+<h4 id="commandtype">CommandType</h4>
+<p><strong>Type:</strong> <code>System.String</code></p>
+<p><strong>Default Value:</strong> <code>"Xamarin.Forms.Command"</code></p>
+<p>The fully qualified type to use as the command implementation. For example, using <code>Xamarin.Forms.Command</code> would cause the new expression to be <code>new Xamarin.Forms.Command</code></p>
 <h2 id="generate-ivalueconverter-implementation">Generate IValueConverter Implementation</h2>
 <p><strong>Configuration Id: com.mfractor.code_gen.forms.csharp.value_converter</strong></p>
 <p>Generates an implementation of a value converter.</p>
 <h3 id="configurable-properties_2">Configurable Properties</h3>
-<table>
-<thead>
-<tr>
-<th>Name</th>
-<th>Type</th>
-<th>Defaults To</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><strong>IncludeValueConversionAttribute</strong></td>
-<td><code>System.Boolean</code></td>
-<td><code>True</code></td>
-<td>If the generated value converter should automatically have a ValueConversionAttribute added to it to denote it's input and output types.</td>
-</tr>
-<tr>
-<td><strong>CreateMissingValueConversionAttribute</strong></td>
-<td><code>System.Boolean</code></td>
-<td><code>True</code></td>
-<td>If an implementation of the ValueConversionAttribute class cannot be resolved within the project compilation, should MFractor automatically create the implementation?</td>
-</tr>
-<tr>
-<td><strong>Namespace</strong></td>
-<td><code>System.String</code></td>
-<td><code>null</code></td>
-<td>The namespace to place new value converters inside. When empty, new value converters will be placed under the projects default namespace. Place a single '.' before the namespace name to make it relative to the projects default namespace.</td>
-</tr>
-<tr>
-<td><strong>Folder</strong></td>
-<td><code>System.String</code></td>
-<td><code>null</code></td>
-<td>The folder to place new value converters inside. When empty, new value converters will be placed inside the proejcts root folder.</td>
-</tr>
-<tr>
-<td><strong>ImplementConversionForConvert</strong></td>
-<td><code>System.Boolean</code></td>
-<td><code>False</code></td>
-<td>When creating the body of the <code>Convert</code> method, should a <code>var input = (InputType)value;* and</code>return default(OutputType)` be inserted instead of a not implemented exception?</td>
-</tr>
-<tr>
-<td><strong>ImplementConversionForConvertBack</strong></td>
-<td><code>System.Boolean</code></td>
-<td><code>False</code></td>
-<td>When creating the body of the <code>ConvertBack</code> method, should a <code>var input = (OutputType)value;* and</code>return default(InputType)` be inserted instead of a not implemented exception?</td>
-</tr>
-</tbody>
-</table>
+<h4 id="includevalueconversionattribute">IncludeValueConversionAttribute</h4>
+<p><strong>Type:</strong> <code>System.Boolean</code></p>
+<p><strong>Default Value:</strong> <code>True</code></p>
+<p>If the generated value converter should automatically have a ValueConversionAttribute added to it to denote it's input and output types.</p>
+<h4 id="createmissingvalueconversionattribute">CreateMissingValueConversionAttribute</h4>
+<p><strong>Type:</strong> <code>System.Boolean</code></p>
+<p><strong>Default Value:</strong> <code>True</code></p>
+<p>If an implementation of the ValueConversionAttribute class cannot be resolved within the project compilation, should MFractor automatically create the implementation?</p>
+<h4 id="namespace">Namespace</h4>
+<p><strong>Type:</strong> <code>System.String</code></p>
+<p><strong>Default Value:</strong> <code>null</code></p>
+<p>The namespace to place new value converters inside. When empty, new value converters will be placed under the projects default namespace. Place a single '.' before the namespace name to make it relative to the projects default namespace.</p>
+<h4 id="folder">Folder</h4>
+<p><strong>Type:</strong> <code>System.String</code></p>
+<p><strong>Default Value:</strong> <code>null</code></p>
+<p>The folder to place new value converters inside. When empty, new value converters will be placed inside the proejcts root folder.</p>
+<h4 id="implementconversionforconvert">ImplementConversionForConvert</h4>
+<p><strong>Type:</strong> <code>System.Boolean</code></p>
+<p><strong>Default Value:</strong> <code>False</code></p>
+<p>When creating the body of the <code>Convert</code> method, should a <code>var input = (InputType)value;* and</code>return default(OutputType)` be inserted instead of a not implemented exception?</p>
+<h4 id="implementconversionforconvertback">ImplementConversionForConvertBack</h4>
+<p><strong>Type:</strong> <code>System.Boolean</code></p>
+<p><strong>Default Value:</strong> <code>False</code></p>
+<p>When creating the body of the <code>ConvertBack</code> method, should a <code>var input = (OutputType)value;* and</code>return default(InputType)` be inserted instead of a not implemented exception?</p>
 <h3 id="uses">Uses:</h3>
 <ul>
 <li><a href="./#generate-value-conversion-attribute">Generate Value Conversion Attribute</a></li>
@@ -640,24 +580,10 @@
 <p><strong>Configuration Id: com.mfractor.code_gen.forms.xaml_view_with_code_behind</strong></p>
 <p>Creates a new view/control using a XAML to define the UI and a code-behind class to encapsulate backing logic.</p>
 <h3 id="configurable-properties_3">Configurable Properties</h3>
-<table>
-<thead>
-<tr>
-<th>Name</th>
-<th>Type</th>
-<th>Defaults To</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><strong>ViewsFolder</strong></td>
-<td><code>System.String</code></td>
-<td><code>null</code></td>
-<td>What is the folder that new XAML views be placed into?</td>
-</tr>
-</tbody>
-</table>
+<h4 id="viewsfolder">ViewsFolder</h4>
+<p><strong>Type:</strong> <code>System.String</code></p>
+<p><strong>Default Value:</strong> <code>null</code></p>
+<p>What is the folder that new XAML views be placed into?</p>
 <h3 id="uses_2">Uses:</h3>
 <ul>
 <li><a href="../csharp/#using-directive-generator">Using Directive Generator</a></li>
@@ -667,30 +593,14 @@
 <p><strong>Configuration Id: com.mfractor.code_gen.forms.replace_with_localisation_lookup</strong></p>
 <p>The string localisation generator converts literal string value inside a XAML document to a localised value lookup. This replaces the text with a localistaion lookup extension and generates a resx entry for the old value.</p>
 <h3 id="configurable-properties_4">Configurable Properties</h3>
-<table>
-<thead>
-<tr>
-<th>Name</th>
-<th>Type</th>
-<th>Defaults To</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><strong>TranslateExtensionSymbol</strong></td>
-<td><code>System.String</code></td>
-<td><code>".TranslateExtension"</code></td>
-<td>What is the full sybol name (namespace + class name) of the translate markup extension? Prepend the symbol name with a dot to make it relative to the projects default namespace. For example, using <code>.Localisation.TranslateExtension</code> when the default namespace is <code>MyApp</code> would cause the full symbol name to become <code>MyApp.Localisation.TranslateExtension</code>.</td>
-</tr>
-<tr>
-<td><strong>TranslationXamlNamespace</strong></td>
-<td><code>System.String</code></td>
-<td><code>"i18n"</code></td>
-<td>When importing a XAML namespace reference to the translation extension, what is the default namespace name that should be used?</td>
-</tr>
-</tbody>
-</table>
+<h4 id="translateextensionsymbol">TranslateExtensionSymbol</h4>
+<p><strong>Type:</strong> <code>System.String</code></p>
+<p><strong>Default Value:</strong> <code>".TranslateExtension"</code></p>
+<p>What is the full sybol name (namespace + class name) of the translate markup extension? Prepend the symbol name with a dot to make it relative to the projects default namespace. For example, using <code>.Localisation.TranslateExtension</code> when the default namespace is <code>MyApp</code> would cause the full symbol name to become <code>MyApp.Localisation.TranslateExtension</code>.</p>
+<h4 id="translationxamlnamespace">TranslationXamlNamespace</h4>
+<p><strong>Type:</strong> <code>System.String</code></p>
+<p><strong>Default Value:</strong> <code>"i18n"</code></p>
+<p>When importing a XAML namespace reference to the translation extension, what is the default namespace name that should be used?</p>
 <h3 id="uses_3">Uses:</h3>
 <ul>
 <li><a href="../resx/#generate-resx-entry">Generate ResX Entry</a></li>
@@ -700,60 +610,33 @@
 <p><strong>Configuration Id: com.mfractor.code_gen.forms.csharp.view_model_property</strong></p>
 <p>Generates a property declaration for a Xamarin.Forms ViewModel. By default, this code generator routes to the standard PropertyGenerator. However, specifying a code snippet will cause the code generator to use that instead.</p>
 <h3 id="configurable-properties_5">Configurable Properties</h3>
-<table>
-<thead>
-<tr>
-<th>Name</th>
-<th>Type</th>
-<th>Defaults To</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><strong>Snippet</strong></td>
-<td><code>Code Snippet</code></td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td><strong>Expected Arguments</strong>:</td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td>* <code>type</code>: The fully qualified type of the new property.</td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td>* <code>name</code>: The name of the new propety.</td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td><strong>Optional Arguments</strong>:</td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td>* <code>value</code>: The value to assign to the new property.</td>
-<td><code>null</code></td>
-<td>What is the code snippet to use when creating the property declaration? If not set, this code generator will default to the standard property generator.</td>
-<td></td>
-</tr>
-<tr>
-<td><strong>UseBackingFields</strong></td>
-<td><code>System.Boolean</code></td>
-<td><code>False</code></td>
-<td>When creating the implementation for a property with a public getter and setter, should the property generator create a backing field?</td>
-</tr>
-</tbody>
-</table>
+<h4 id="snippet_1">Snippet</h4>
+<p><strong>Type:</strong> <code>Code Snippet</code></p>
+<ul>
+<li>
+<p><strong>Expected Arguments</strong>:</p>
+<ul>
+<li>
+<p><code>type</code>: The fully qualified type of the new property.</p>
+</li>
+<li>
+<p><code>name</code>: The name of the new propety.</p>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Optional Arguments</strong>:</p>
+<ul>
+<li><code>value</code>: The value to assign to the new property.</li>
+</ul>
+</li>
+</ul>
+<p><strong>Default Value:</strong> <code>null</code></p>
+<p>What is the code snippet to use when creating the property declaration? If not set, this code generator will default to the standard property generator.</p>
+<h4 id="usebackingfields">UseBackingFields</h4>
+<p><strong>Type:</strong> <code>System.Boolean</code></p>
+<p><strong>Default Value:</strong> <code>False</code></p>
+<p>When creating the implementation for a property with a public getter and setter, should the property generator create a backing field?</p>
 <h3 id="uses_4">Uses:</h3>
 <ul>
 <li><a href="../csharp/#generate-instance-property">Generate Instance Property</a></li>
