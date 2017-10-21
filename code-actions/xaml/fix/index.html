@@ -707,22 +707,42 @@
 <p>The code action will attempt to resolve the new properties type by inspecting the value of the source attribute. If the value is an expression, MFractor will evaluate the expression and use the return type as the new properties type.</p>
 <p>If the attributes value isn't an expression, MFractor will attempt to infer type based on the literal input. For example, an attribute value of <code>true</code> would trigger MFractor to output a boolean typed property. This behaviour can be disabled by configuring the <code>TryInferUnknownTypes</code> to false.</p>
 <h3 id="configurable-properties">Configurable Properties</h3>
-<h4 id="tryinferunknowntypes">TryInferUnknownTypes</h4>
-<p><strong>Type:</strong> <code>System.Boolean</code></p>
-<p><strong>Default Value:</strong> <code>True</code></p>
-<p>Should MFractor attempt to guess the type for the new property based on it's value? EG: A value of <code>true</code> would cause the output type to be <code>bool</code> instead of <code>System.Object</code>.</p>
-<h4 id="defaultcolortype">DefaultColorType</h4>
-<p><strong>Type:</strong> <code>System.String</code></p>
-<p><strong>Default Value:</strong> <code>"Xamarin.Forms.Color"</code></p>
-<p>When attempting to infer the property type based on its value and MFractor decides it's a color, what is the color type MFractor should use?</p>
-<h4 id="defaultpropertytype">DefaultPropertyType</h4>
-<p><strong>Type:</strong> <code>System.String</code></p>
-<p><strong>Default Value:</strong> <code>"System.Object"</code></p>
-<p>What is the default type for the new property if MFractor can't figure it out based on the attribute value?</p>
-<h4 id="defaultimagetype">DefaultImageType</h4>
-<p><strong>Type:</strong> <code>System.String</code></p>
-<p><strong>Default Value:</strong> <code>"Xamarin.Forms.ImageSource"</code></p>
-<p>When attempting to infer the property type based on its value and MFractor decides it's an image, what is the CLR type MFractor should use?</p>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Defaults To</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>TryInferUnknownTypes</strong></td>
+<td><code>System.Boolean</code></td>
+<td><code>True</code></td>
+<td>Should MFractor attempt to guess the type for the new property based on it's value? EG: A value of <code>true</code> would cause the output type to be <code>bool</code> instead of <code>System.Object</code>.</td>
+</tr>
+<tr>
+<td><strong>DefaultColorType</strong></td>
+<td><code>System.String</code></td>
+<td><code>"Xamarin.Forms.Color"</code></td>
+<td>When attempting to infer the property type based on its value and MFractor decides it's a color, what is the color type MFractor should use?</td>
+</tr>
+<tr>
+<td><strong>DefaultPropertyType</strong></td>
+<td><code>System.String</code></td>
+<td><code>"System.Object"</code></td>
+<td>What is the default type for the new property if MFractor can't figure it out based on the attribute value?</td>
+</tr>
+<tr>
+<td><strong>DefaultImageType</strong></td>
+<td><code>System.String</code></td>
+<td><code>"Xamarin.Forms.ImageSource"</code></td>
+<td>When attempting to infer the property type based on its value and MFractor decides it's an image, what is the CLR type MFractor should use?</td>
+</tr>
+</tbody>
+</table>
 <h3 id="uses_1">Uses:</h3>
 <ul>
 <li><a href="../../../code-generation/xamarin-forms/#generate-bindable-property">Generate Bindable Property</a></li>
@@ -736,10 +756,24 @@
 <p><img alt="Generating a value converter from XAML" src="../../../img/forms/create-value-converter.gif" /></p>
 <p>Using the input and output type for a value conversion path, this code fix creates a new value converter implementation for the input and output type and imports it into the views resource dictionary.</p>
 <h3 id="configurable-properties_1">Configurable Properties</h3>
-<h4 id="defaultconverternamespace">DefaultConverterNamespace</h4>
-<p><strong>Type:</strong> <code>System.String</code></p>
-<p><strong>Default Value:</strong> <code>"converters"</code></p>
-<p>The namespace name of the xmlns import statement for the newly created value converter</p>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Defaults To</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>DefaultConverterNamespace</strong></td>
+<td><code>System.String</code></td>
+<td><code>"converters"</code></td>
+<td>The namespace name of the xmlns import statement for the newly created value converter</td>
+</tr>
+</tbody>
+</table>
 <h3 id="uses_2">Uses:</h3>
 <ul>
 <li><a href="../../../code-generation/xamarin-forms/#generate-ivalueconverter-implementation">Generate IValueConverter Implementation</a></li>
@@ -764,10 +798,24 @@
 <p><strong>Fixes Code Issue:</strong> <a href="../../../code-analysis/xaml/#contentpage-has-multiple-direct-children">ContentPage Has Multiple Direct Children</a></p>
 <p>When a content page has multiple direct children, this fix merges them into a grid.</p>
 <h3 id="configurable-properties_2">Configurable Properties</h3>
-<h4 id="defaultorientation">DefaultOrientation</h4>
-<p><strong>Type:</strong> <code>System.String</code></p>
-<p><strong>Default Value:</strong> <code>""</code></p>
-<p>What is the default orientation for the <code>StackLayout</code> that is created for this fix? If empty, an <code>Orientation</code> attribute is not inserted.</p>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Defaults To</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>DefaultOrientation</strong></td>
+<td><code>System.String</code></td>
+<td><code>""</code></td>
+<td>What is the default orientation for the <code>StackLayout</code> that is created for this fix? If empty, an <code>Orientation</code> attribute is not inserted.</td>
+</tr>
+</tbody>
+</table>
 <h2 id="encapsulate-content-view-children-with-grid">Encapsulate Content View Children With Grid</h2>
 <p><strong><a href="https://www.mfractor.com/buy?utm_source=docs&amp;utm_medium=professional_only">Professional Only</a></strong></p>
 <p><strong>Configuration Id: com.mfractor.code_fixes.xaml.encapsulate_content_view_children_with_grid</strong></p>
@@ -783,10 +831,24 @@
 <p><strong>Fixes Code Issue:</strong> <a href="../../../code-analysis/xaml/#contentview-has-multiple-direct-children">ContentView Has Multiple Direct Children</a></p>
 <p>When a content view has multiple direct children, this fix merges them into a stack layout.</p>
 <h3 id="configurable-properties_3">Configurable Properties</h3>
-<h4 id="defaultorientation_1">DefaultOrientation</h4>
-<p><strong>Type:</strong> <code>System.String</code></p>
-<p><strong>Default Value:</strong> <code>""</code></p>
-<p>What is the default orientation for the <code>StackLayout</code> that is created for this fix? If empty, an <code>Orientation</code> attribute is not inserted.</p>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Defaults To</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>DefaultOrientation</strong></td>
+<td><code>System.String</code></td>
+<td><code>""</code></td>
+<td>What is the default orientation for the <code>StackLayout</code> that is created for this fix? If empty, an <code>Orientation</code> attribute is not inserted.</td>
+</tr>
+</tbody>
+</table>
 <h2 id="encapsulate-scroll-view-children-with-grid">Encapsulate Scroll View Children With Grid</h2>
 <p><strong><a href="https://www.mfractor.com/buy?utm_source=docs&amp;utm_medium=professional_only">Professional Only</a></strong></p>
 <p><strong>Configuration Id: com.mfractor.code_fixes.xaml.encapsulate_scroll_view_children_with_grid</strong></p>
@@ -802,10 +864,24 @@
 <p><strong>Fixes Code Issue:</strong> <a href="../../../code-analysis/xaml/#scrollview-has-multiple-direct-children">ScrollView Has Multiple Direct Children</a></p>
 <p>When a scroll view has multiple direct children, this fix merges them into a stack layout.</p>
 <h3 id="configurable-properties_4">Configurable Properties</h3>
-<h4 id="defaultorientation_2">DefaultOrientation</h4>
-<p><strong>Type:</strong> <code>System.String</code></p>
-<p><strong>Default Value:</strong> <code>""</code></p>
-<p>What is the default orientation for the <code>StackLayout</code> that is created for this fix? If empty, an <code>Orientation</code> attribute is not inserted.</p>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Defaults To</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>DefaultOrientation</strong></td>
+<td><code>System.String</code></td>
+<td><code>""</code></td>
+<td>What is the default orientation for the <code>StackLayout</code> that is created for this fix? If empty, an <code>Orientation</code> attribute is not inserted.</td>
+</tr>
+</tbody>
+</table>
 <h2 id="encapsulate-with-resource-dictionary">Encapsulate With Resource Dictionary</h2>
 <p><strong><a href="https://www.mfractor.com/buy?utm_source=docs&amp;utm_medium=professional_only">Professional Only</a></strong></p>
 <p><strong>Configuration Id: com.mfractor.code_fixes.xaml.encapsulate_with_resource_dictionary</strong></p>

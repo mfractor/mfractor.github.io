@@ -546,10 +546,24 @@
 <p><strong>Configuration Id: com.mfractor.code_gen.csharp.class_declaration</strong></p>
 <p>Generates a new class declaration implementing all provided members, base class constructors, base class abstract invocations and interfaces</p>
 <h3 id="configurable-properties">Configurable Properties</h3>
-<h4 id="implementbaseconstructors">ImplementBaseConstructors</h4>
-<p><strong>Type:</strong> <code>System.Boolean</code></p>
-<p><strong>Default Value:</strong> <code>False</code></p>
-<p>Should the base class constructors be automatically created?</p>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Defaults To</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>ImplementBaseConstructors</strong></td>
+<td><code>System.Boolean</code></td>
+<td><code>False</code></td>
+<td>Should the base class constructors be automatically created?</td>
+</tr>
+</tbody>
+</table>
 <h3 id="uses_1">Uses:</h3>
 <ul>
 <li><a href="./#member-field-generator">Member Field Generator</a></li>
@@ -561,18 +575,46 @@
 <p><strong>Configuration Id: com.mfractor.code_gen.csharp.constructor</strong></p>
 <p>Generates a class constructor, optionally with a set of arguments.</p>
 <h3 id="configurable-properties_1">Configurable Properties</h3>
-<h4 id="argumentfirstlettertolowercase">ArgumentFirstLetterToLowerCase</h4>
-<p><strong>Type:</strong> <code>System.Boolean</code></p>
-<p><strong>Default Value:</strong> <code>True</code></p>
-<p>Should all constructor arguments have their first letter forced to lower case?</p>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Defaults To</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>ArgumentFirstLetterToLowerCase</strong></td>
+<td><code>System.Boolean</code></td>
+<td><code>True</code></td>
+<td>Should all constructor arguments have their first letter forced to lower case?</td>
+</tr>
+</tbody>
+</table>
 <h2 id="generate-assignment-expression">Generate Assignment Expression</h2>
 <p><strong>Configuration Id: com.mfractor.code_gen.csharp.assignment_expression</strong></p>
 <p>Generates an assignment expresssion; eg <code>this.myField = value;</code></p>
 <h3 id="configurable-properties_2">Configurable Properties</h3>
-<h4 id="includethisformembers">IncludeThisForMembers</h4>
-<p><strong>Type:</strong> <code>System.Boolean</code></p>
-<p><strong>Default Value:</strong> <code>False</code></p>
-<p>When assigning to a class member, should a <code>this.</code> be added to the variable being assigned?</p>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Defaults To</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>IncludeThisForMembers</strong></td>
+<td><code>System.Boolean</code></td>
+<td><code>False</code></td>
+<td>When assigning to a class member, should a <code>this.</code> be added to the variable being assigned?</td>
+</tr>
+</tbody>
+</table>
 <h2 id="generate-event-handler-declaration">Generate Event Handler Declaration</h2>
 <p><strong>Configuration Id: com.mfractor.code_gen.csharp.event_handler_declaration</strong></p>
 <p>Generates an <code>event EventHandler&lt;EventArgs&gt;</code> declaration that can be bound against by a callback.</p>
@@ -583,10 +625,24 @@
 <p><strong>Configuration Id: com.mfractor.code_gen.csharp.instance_property</strong></p>
 <p>Generates a instance property with a getter and setter.</p>
 <h3 id="configurable-properties_3">Configurable Properties</h3>
-<h4 id="usebackingfields">UseBackingFields</h4>
-<p><strong>Type:</strong> <code>System.Boolean</code></p>
-<p><strong>Default Value:</strong> <code>False</code></p>
-<p>When creating the implementation for a property with a public getter and setter, should the property generator create a backing field?</p>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Defaults To</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>UseBackingFields</strong></td>
+<td><code>System.Boolean</code></td>
+<td><code>False</code></td>
+<td>When creating the implementation for a property with a public getter and setter, should the property generator create a backing field?</td>
+</tr>
+</tbody>
+</table>
 <h3 id="uses_2">Uses:</h3>
 <ul>
 <li><a href="./#generate-member-initialiser">Generate Member Initialiser</a></li>
@@ -596,18 +652,46 @@
 <p><strong>Configuration Id: com.mfractor.code_gen.csharp.member_initialiser_expression</strong></p>
 <p>Generates an initilisation expression for a class/struct member (such as a property or field).</p>
 <h3 id="configurable-properties_4">Configurable Properties</h3>
-<h4 id="forcestringliteral">ForceStringLiteral</h4>
-<p><strong>Type:</strong> <code>System.Boolean</code></p>
-<p><strong>Default Value:</strong> <code>False</code></p>
-<p>Should the code generator always attempt to assign members with a string literal?</p>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Defaults To</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>ForceStringLiteral</strong></td>
+<td><code>System.Boolean</code></td>
+<td><code>False</code></td>
+<td>Should the code generator always attempt to assign members with a string literal?</td>
+</tr>
+</tbody>
+</table>
 <h2 id="member-field-generator">Member Field Generator</h2>
 <p><strong>Configuration Id: com.mfractor.code_gen.csharp.field_declaration</strong></p>
 <p>Generates member field declarations with an optional value initialisation</p>
 <h3 id="configurable-properties_5">Configurable Properties</h3>
-<h4 id="underscoreonbackingfield">UnderscoreOnBackingField</h4>
-<p><strong>Type:</strong> <code>System.Boolean</code></p>
-<p><strong>Default Value:</strong> <code>False</code></p>
-<p>When creating a backing field for a property, should the field have an underscore appended to the start of the field name?</p>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Defaults To</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>UnderscoreOnBackingField</strong></td>
+<td><code>System.Boolean</code></td>
+<td><code>False</code></td>
+<td>When creating a backing field for a property, should the field have an underscore appended to the start of the field name?</td>
+</tr>
+</tbody>
+</table>
 <h3 id="uses_3">Uses:</h3>
 <ul>
 <li><a href="./#generate-member-initialiser">Generate Member Initialiser</a></li>
@@ -616,14 +700,30 @@
 <p><strong>Configuration Id: com.mfractor.code_gen.csharp.method_declaration</strong></p>
 <p>Generates a new method declaration</p>
 <h3 id="configurable-properties_6">Configurable Properties</h3>
-<h4 id="useexplicitinterfaceimplementation">UseExplicitInterfaceImplementation</h4>
-<p><strong>Type:</strong> <code>System.Boolean</code></p>
-<p><strong>Default Value:</strong> <code>False</code></p>
-<p>When generating a method for an interface, should the new method be explicitly qualified against the interface? EG: 'void MyInterface.MyMethod'</p>
-<h4 id="includenotimplementexception">IncludeNotImplementException</h4>
-<p><strong>Type:</strong> <code>System.Boolean</code></p>
-<p><strong>Default Value:</strong> <code>False</code></p>
-<p>When creating the new method body, should a NotImplementedException be thrown as the default code body?</p>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Defaults To</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>UseExplicitInterfaceImplementation</strong></td>
+<td><code>System.Boolean</code></td>
+<td><code>False</code></td>
+<td>When generating a method for an interface, should the new method be explicitly qualified against the interface? EG: 'void MyInterface.MyMethod'</td>
+</tr>
+<tr>
+<td><strong>IncludeNotImplementException</strong></td>
+<td><code>System.Boolean</code></td>
+<td><code>False</code></td>
+<td>When creating the new method body, should a NotImplementedException be thrown as the default code body?</td>
+</tr>
+</tbody>
+</table>
 <h2 id="namespace-declaration">Namespace Declaration</h2>
 <p><strong>Configuration Id: com.mfractor.code_gen.csharp.namespace_declaration</strong></p>
 <p>Generates a new namespace declaration syntax element</p>

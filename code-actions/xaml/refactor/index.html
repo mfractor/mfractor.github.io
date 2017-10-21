@@ -525,14 +525,30 @@
 <p><strong>Configuration Id: com.mfractor.code_actions.xaml.extract_xaml_into_control</strong></p>
 <p>Extracts a XAML element that derives from <code>Xamarin.Forms.Layout</code> into a new XAML control.</p>
 <h3 id="configurable-properties">Configurable Properties</h3>
-<h4 id="defaultxamlnamespace">DefaultXamlNamespace</h4>
-<p><strong>Type:</strong> <code>System.String</code></p>
-<p><strong>Default Value:</strong> <code>"controls"</code></p>
-<p>What is the default name of the XAML namespace for the new control?</p>
-<h4 id="defaultnamespace">DefaultNamespace</h4>
-<p><strong>Type:</strong> <code>System.String</code></p>
-<p><strong>Default Value:</strong> <code>""</code></p>
-<p>What is the default name of the C# namespace for the new control? If empty, the projects default namespace will be used.</p>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Defaults To</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>DefaultXamlNamespace</strong></td>
+<td><code>System.String</code></td>
+<td><code>"controls"</code></td>
+<td>What is the default name of the XAML namespace for the new control?</td>
+</tr>
+<tr>
+<td><strong>DefaultNamespace</strong></td>
+<td><code>System.String</code></td>
+<td><code>""</code></td>
+<td>What is the default name of the C# namespace for the new control? If empty, the projects default namespace will be used.</td>
+</tr>
+</tbody>
+</table>
 <h3 id="uses_1">Uses:</h3>
 <ul>
 <li><a href="../../../code-generation/xamarin-forms/#generate-view-with-xaml-and-code-behind-class">Generate View With XAML and Code-Behind Class</a></li>
