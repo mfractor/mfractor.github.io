@@ -27,9 +27,12 @@ Generates a new class declaration implementing all provided members, base class 
 
 ### Configurable Properties
 
-| Name | Type | Defaults To | Description |
-|------|------|-------------|-------------|
-| **ImplementBaseConstructors** | `System.Boolean` | `False` | Should the base class constructors be automatically created? |
+####ImplementBaseConstructors
+**Type:** `System.Boolean`
+
+**Default Value:** `False`
+
+Should the base class constructors be automatically created?
 
 ### Uses:
 
@@ -48,9 +51,12 @@ Generates a class constructor, optionally with a set of arguments.
 
 ### Configurable Properties
 
-| Name | Type | Defaults To | Description |
-|------|------|-------------|-------------|
-| **ArgumentFirstLetterToLowerCase** | `System.Boolean` | `True` | Should all constructor arguments have their first letter forced to lower case? |
+####ArgumentFirstLetterToLowerCase
+**Type:** `System.Boolean`
+
+**Default Value:** `True`
+
+Should all constructor arguments have their first letter forced to lower case?
 
 ## Generate Assignment Expression
 
@@ -61,9 +67,12 @@ Generates an assignment expresssion; eg `this.myField = value;`
 
 ### Configurable Properties
 
-| Name | Type | Defaults To | Description |
-|------|------|-------------|-------------|
-| **IncludeThisForMembers** | `System.Boolean` | `False` | When assigning to a class member, should a `this.` be added to the variable being assigned? |
+####IncludeThisForMembers
+**Type:** `System.Boolean`
+
+**Default Value:** `False`
+
+When assigning to a class member, should a `this.` be added to the variable being assigned?
 
 ## Generate Event Handler Declaration
 
@@ -88,9 +97,12 @@ Generates a instance property with a getter and setter.
 
 ### Configurable Properties
 
-| Name | Type | Defaults To | Description |
-|------|------|-------------|-------------|
-| **UseBackingFields** | `System.Boolean` | `False` | When creating the implementation for a property with a public getter and setter, should the property generator create a backing field? |
+####UseBackingFields
+**Type:** `System.Boolean`
+
+**Default Value:** `False`
+
+When creating the implementation for a property with a public getter and setter, should the property generator create a backing field?
 
 ### Uses:
 
@@ -107,9 +119,12 @@ Generates an initilisation expression for a class/struct member (such as a prope
 
 ### Configurable Properties
 
-| Name | Type | Defaults To | Description |
-|------|------|-------------|-------------|
-| **ForceStringLiteral** | `System.Boolean` | `False` | Should the code generator always attempt to assign members with a string literal? |
+####ForceStringLiteral
+**Type:** `System.Boolean`
+
+**Default Value:** `False`
+
+Should the code generator always attempt to assign members with a string literal?
 
 ## Member Field Generator
 
@@ -120,9 +135,12 @@ Generates member field declarations with an optional value initialisation
 
 ### Configurable Properties
 
-| Name | Type | Defaults To | Description |
-|------|------|-------------|-------------|
-| **UnderscoreOnBackingField** | `System.Boolean` | `False` | When creating a backing field for a property, should the field have an underscore appended to the start of the field name? |
+####UnderscoreOnBackingField
+**Type:** `System.Boolean`
+
+**Default Value:** `False`
+
+When creating a backing field for a property, should the field have an underscore appended to the start of the field name?
 
 ### Uses:
 
@@ -138,10 +156,18 @@ Generates a new method declaration
 
 ### Configurable Properties
 
-| Name | Type | Defaults To | Description |
-|------|------|-------------|-------------|
-| **UseExplicitInterfaceImplementation** | `System.Boolean` | `False` | When generating a method for an interface, should the new method be explicitly qualified against the interface? EG: 'void MyInterface.MyMethod' |
-| **IncludeNotImplementException** | `System.Boolean` | `False` | When creating the new method body, should a NotImplementedException be thrown as the default code body? |
+####UseExplicitInterfaceImplementation
+**Type:** `System.Boolean`
+
+**Default Value:** `False`
+
+When generating a method for an interface, should the new method be explicitly qualified against the interface? EG: 'void MyInterface.MyMethod'
+####IncludeNotImplementException
+**Type:** `System.Boolean`
+
+**Default Value:** `False`
+
+When creating the new method body, should a NotImplementedException be thrown as the default code body?
 
 ## Namespace Declaration
 

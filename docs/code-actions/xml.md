@@ -50,9 +50,12 @@ Applies the xml formatting policy to the entire document. It will correctly inde
 
 ### Configurable Properties
 
-| Name | Type | Defaults To | Description |
-|------|------|-------------|-------------|
-| **AttributesOnSeparateLines** | `System.Boolean` | `False` | Should attributes be placed onto separate lines? |
+####AttributesOnSeparateLines
+**Type:** `System.Boolean`
+
+**Default Value:** `False`
+
+Should attributes be placed onto separate lines?
 
 ### Uses:
 

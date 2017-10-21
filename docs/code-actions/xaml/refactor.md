@@ -41,10 +41,18 @@ Extracts a XAML element that derives from `Xamarin.Forms.Layout` into a new XAML
 
 ### Configurable Properties
 
-| Name | Type | Defaults To | Description |
-|------|------|-------------|-------------|
-| **DefaultXamlNamespace** | `System.String` | `"controls"` | What is the default name of the XAML namespace for the new control? |
-| **DefaultNamespace** | `System.String` | `""` | What is the default name of the C# namespace for the new control? If empty, the projects default namespace will be used. |
+####DefaultXamlNamespace
+**Type:** `System.String`
+
+**Default Value:** `"controls"`
+
+What is the default name of the XAML namespace for the new control?
+####DefaultNamespace
+**Type:** `System.String`
+
+**Default Value:** `""`
+
+What is the default name of the C# namespace for the new control? If empty, the projects default namespace will be used.
 
 ### Uses:
 

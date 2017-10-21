@@ -8,9 +8,12 @@ Generates a Xamarin.Forms bindable property implementation and a proxy property 
 
 ### Configurable Properties
 
-| Name | Type | Defaults To | Description |
-|------|------|-------------|-------------|
-| **PreferExpressionBodies** | `System.Boolean` | `False` | When generating bindable properties, should the generator prefer expression bodies (`get => MyValue;`) instead of a return statement? |
+####PreferExpressionBodies
+**Type:** `System.Boolean`
+
+**Default Value:** `False`
+
+When generating bindable properties, should the generator prefer expression bodies (`get => MyValue;`) instead of a return statement?
 
 ## Generate ICommand Implementation
 
@@ -21,12 +24,21 @@ Generates a boilerplate implementation of ICommand using Xamarin.Forms.Command
 
 ### Configurable Properties
 
-| Name | Type | Defaults To | Description |
-|------|------|-------------|-------------|
-| **Snippet** | `Code Snippet`
-**Expected Arguments**:
- * `name`: The name of the new command. | `null` | What is the code snippet to use when creating the command stub? If not set, this code generator will default to generating a stub `Xamarin.Forms.Command` implementation |
-| **CommandType** | `System.String` | `"Xamarin.Forms.Command"` | The fully qualified type to use as the command implementation. For example, using `Xamarin.Forms.Command` would cause the new expression to be `new Xamarin.Forms.Command` |
+####Snippet
+**Type:** `Code Snippet`
+
+* **Expected Arguments**:
+ 	* `name`: The name of the new command.
+
+**Default Value:** `null`
+
+What is the code snippet to use when creating the command stub? If not set, this code generator will default to generating a stub `Xamarin.Forms.Command` implementation
+####CommandType
+**Type:** `System.String`
+
+**Default Value:** `"Xamarin.Forms.Command"`
+
+The fully qualified type to use as the command implementation. For example, using `Xamarin.Forms.Command` would cause the new expression to be `new Xamarin.Forms.Command`
 
 ## Generate IValueConverter Implementation
 
@@ -37,14 +49,42 @@ Generates an implementation of a value converter.
 
 ### Configurable Properties
 
-| Name | Type | Defaults To | Description |
-|------|------|-------------|-------------|
-| **IncludeValueConversionAttribute** | `System.Boolean` | `True` | If the generated value converter should automatically have a ValueConversionAttribute added to it to denote it's input and output types. |
-| **CreateMissingValueConversionAttribute** | `System.Boolean` | `True` | If an implementation of the ValueConversionAttribute class cannot be resolved within the project compilation, should MFractor automatically create the implementation? |
-| **Namespace** | `System.String` | `null` | The namespace to place new value converters inside. When empty, new value converters will be placed under the projects default namespace. Place a single '.' before the namespace name to make it relative to the projects default namespace. |
-| **Folder** | `System.String` | `null` | The folder to place new value converters inside. When empty, new value converters will be placed inside the proejcts root folder. |
-| **ImplementConversionForConvert** | `System.Boolean` | `False` | When creating the body of the `Convert` method, should a `var input = (InputType)value;* and `return default(OutputType)` be inserted instead of a not implemented exception? |
-| **ImplementConversionForConvertBack** | `System.Boolean` | `False` | When creating the body of the `ConvertBack` method, should a `var input = (OutputType)value;* and `return default(InputType)` be inserted instead of a not implemented exception? |
+####IncludeValueConversionAttribute
+**Type:** `System.Boolean`
+
+**Default Value:** `True`
+
+If the generated value converter should automatically have a ValueConversionAttribute added to it to denote it's input and output types.
+####CreateMissingValueConversionAttribute
+**Type:** `System.Boolean`
+
+**Default Value:** `True`
+
+If an implementation of the ValueConversionAttribute class cannot be resolved within the project compilation, should MFractor automatically create the implementation?
+####Namespace
+**Type:** `System.String`
+
+**Default Value:** `null`
+
+The namespace to place new value converters inside. When empty, new value converters will be placed under the projects default namespace. Place a single '.' before the namespace name to make it relative to the projects default namespace.
+####Folder
+**Type:** `System.String`
+
+**Default Value:** `null`
+
+The folder to place new value converters inside. When empty, new value converters will be placed inside the proejcts root folder.
+####ImplementConversionForConvert
+**Type:** `System.Boolean`
+
+**Default Value:** `False`
+
+When creating the body of the `Convert` method, should a `var input = (InputType)value;* and `return default(OutputType)` be inserted instead of a not implemented exception?
+####ImplementConversionForConvertBack
+**Type:** `System.Boolean`
+
+**Default Value:** `False`
+
+When creating the body of the `ConvertBack` method, should a `var input = (OutputType)value;* and `return default(InputType)` be inserted instead of a not implemented exception?
 
 ### Uses:
 
@@ -75,9 +115,12 @@ Creates a new view/control using a XAML to define the UI and a code-behind class
 
 ### Configurable Properties
 
-| Name | Type | Defaults To | Description |
-|------|------|-------------|-------------|
-| **ViewsFolder** | `System.String` | `null` | What is the folder that new XAML views be placed into? |
+####ViewsFolder
+**Type:** `System.String`
+
+**Default Value:** `null`
+
+What is the folder that new XAML views be placed into?
 
 ### Uses:
 
@@ -94,10 +137,18 @@ The string localisation generator converts literal string value inside a XAML do
 
 ### Configurable Properties
 
-| Name | Type | Defaults To | Description |
-|------|------|-------------|-------------|
-| **TranslateExtensionSymbol** | `System.String` | `".TranslateExtension"` | What is the full sybol name (namespace + class name) of the translate markup extension? Prepend the symbol name with a dot to make it relative to the projects default namespace. For example, using `.Localisation.TranslateExtension` when the default namespace is `MyApp` would cause the full symbol name to become `MyApp.Localisation.TranslateExtension`. |
-| **TranslationXamlNamespace** | `System.String` | `"i18n"` | When importing a XAML namespace reference to the translation extension, what is the default namespace name that should be used? |
+####TranslateExtensionSymbol
+**Type:** `System.String`
+
+**Default Value:** `".TranslateExtension"`
+
+What is the full sybol name (namespace + class name) of the translate markup extension? Prepend the symbol name with a dot to make it relative to the projects default namespace. For example, using `.Localisation.TranslateExtension` when the default namespace is `MyApp` would cause the full symbol name to become `MyApp.Localisation.TranslateExtension`.
+####TranslationXamlNamespace
+**Type:** `System.String`
+
+**Default Value:** `"i18n"`
+
+When importing a XAML namespace reference to the translation extension, what is the default namespace name that should be used?
 
 ### Uses:
 
@@ -114,15 +165,26 @@ Generates a property declaration for a Xamarin.Forms ViewModel. By default, this
 
 ### Configurable Properties
 
-| Name | Type | Defaults To | Description |
-|------|------|-------------|-------------|
-| **Snippet** | `Code Snippet`
-**Expected Arguments**:
- * `type`: The fully qualified type of the new property.
- * `name`: The name of the new propety.
-**Optional Arguments**:
- * `value`: The value to assign to the new property. | `null` | What is the code snippet to use when creating the property declaration? If not set, this code generator will default to the standard property generator. |
-| **UseBackingFields** | `System.Boolean` | `False` | When creating the implementation for a property with a public getter and setter, should the property generator create a backing field? |
+####Snippet
+**Type:** `Code Snippet`
+
+* **Expected Arguments**:
+ 	* `type`: The fully qualified type of the new property.
+
+ 	* `name`: The name of the new propety.
+
+ * **Optional Arguments**:
+ 	* `value`: The value to assign to the new property.
+
+**Default Value:** `null`
+
+What is the code snippet to use when creating the property declaration? If not set, this code generator will default to the standard property generator.
+####UseBackingFields
+**Type:** `System.Boolean`
+
+**Default Value:** `False`
+
+When creating the implementation for a property with a public getter and setter, should the property generator create a backing field?
 
 ### Uses:
 

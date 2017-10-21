@@ -116,12 +116,30 @@ If the attributes value isn't an expression, MFractor will attempt to infer type
 
 ### Configurable Properties
 
-| Name | Type | Defaults To | Description |
-|------|------|-------------|-------------|
-| **TryInferUnknownTypes** | `System.Boolean` | `True` | Should MFractor attempt to guess the type for the new property based on it's value? EG: A value of `true` would cause the output type to be `bool` instead of `System.Object`. |
-| **DefaultColorType** | `System.String` | `"Xamarin.Forms.Color"` | When attempting to infer the property type based on its value and MFractor decides it's a color, what is the color type MFractor should use? |
-| **DefaultPropertyType** | `System.String` | `"System.Object"` | What is the default type for the new property if MFractor can't figure it out based on the attribute value? |
-| **DefaultImageType** | `System.String` | `"Xamarin.Forms.ImageSource"` | When attempting to infer the property type based on its value and MFractor decides it's an image, what is the CLR type MFractor should use? |
+####TryInferUnknownTypes
+**Type:** `System.Boolean`
+
+**Default Value:** `True`
+
+Should MFractor attempt to guess the type for the new property based on it's value? EG: A value of `true` would cause the output type to be `bool` instead of `System.Object`.
+####DefaultColorType
+**Type:** `System.String`
+
+**Default Value:** `"Xamarin.Forms.Color"`
+
+When attempting to infer the property type based on its value and MFractor decides it's a color, what is the color type MFractor should use?
+####DefaultPropertyType
+**Type:** `System.String`
+
+**Default Value:** `"System.Object"`
+
+What is the default type for the new property if MFractor can't figure it out based on the attribute value?
+####DefaultImageType
+**Type:** `System.String`
+
+**Default Value:** `"Xamarin.Forms.ImageSource"`
+
+When attempting to infer the property type based on its value and MFractor decides it's an image, what is the CLR type MFractor should use?
 
 ### Uses:
 
@@ -145,9 +163,12 @@ Using the input and output type for a value conversion path, this code fix creat
 
 ### Configurable Properties
 
-| Name | Type | Defaults To | Description |
-|------|------|-------------|-------------|
-| **DefaultConverterNamespace** | `System.String` | `"converters"` | The namespace name of the xmlns import statement for the newly created value converter |
+####DefaultConverterNamespace
+**Type:** `System.String`
+
+**Default Value:** `"converters"`
+
+The namespace name of the xmlns import statement for the newly created value converter
 
 ### Uses:
 
@@ -194,9 +215,12 @@ When a content page has multiple direct children, this fix merges them into a gr
 
 ### Configurable Properties
 
-| Name | Type | Defaults To | Description |
-|------|------|-------------|-------------|
-| **DefaultOrientation** | `System.String` | `""` | What is the default orientation for the `StackLayout` that is created for this fix? If empty, an `Orientation` attribute is not inserted. |
+####DefaultOrientation
+**Type:** `System.String`
+
+**Default Value:** `""`
+
+What is the default orientation for the `StackLayout` that is created for this fix? If empty, an `Orientation` attribute is not inserted.
 
 ## Encapsulate Content View Children With Grid
 
@@ -227,9 +251,12 @@ When a content view has multiple direct children, this fix merges them into a st
 
 ### Configurable Properties
 
-| Name | Type | Defaults To | Description |
-|------|------|-------------|-------------|
-| **DefaultOrientation** | `System.String` | `""` | What is the default orientation for the `StackLayout` that is created for this fix? If empty, an `Orientation` attribute is not inserted. |
+####DefaultOrientation
+**Type:** `System.String`
+
+**Default Value:** `""`
+
+What is the default orientation for the `StackLayout` that is created for this fix? If empty, an `Orientation` attribute is not inserted.
 
 ## Encapsulate Scroll View Children With Grid
 
@@ -260,9 +287,12 @@ When a scroll view has multiple direct children, this fix merges them into a sta
 
 ### Configurable Properties
 
-| Name | Type | Defaults To | Description |
-|------|------|-------------|-------------|
-| **DefaultOrientation** | `System.String` | `""` | What is the default orientation for the `StackLayout` that is created for this fix? If empty, an `Orientation` attribute is not inserted. |
+####DefaultOrientation
+**Type:** `System.String`
+
+**Default Value:** `""`
+
+What is the default orientation for the `StackLayout` that is created for this fix? If empty, an `Orientation` attribute is not inserted.
 
 ## Encapsulate With Resource Dictionary
 

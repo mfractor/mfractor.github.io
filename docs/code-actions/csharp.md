@@ -12,9 +12,12 @@ Adds an `AttributeUsage` annotation to a class that derives directly or indirect
 
 ### Configurable Properties
 
-| Name | Type | Defaults To | Description |
-|------|------|-------------|-------------|
-| **DefaultAttributeUsage** | `System.AttributeTargets` | `Class` | When creating the attribute usage annotation, what is the default target this attribute should be used on? |
+####DefaultAttributeUsage
+**Type:** `System.AttributeTargets`
+
+**Default Value:** `Class`
+
+When creating the attribute usage annotation, what is the default target this attribute should be used on?
 
 ### Uses:
 

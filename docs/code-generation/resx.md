@@ -15,7 +15,10 @@ Generates a single ResX resource entry element containing the key, value and com
 
 ### Configurable Properties
 
-| Name | Type | Defaults To | Description |
-|------|------|-------------|-------------|
-| **IncludeCommentWhenEmpty** | `System.Boolean` | `False` | When no comment for the new ResX entry has been provided, should an empty comment tag be included? |
+####IncludeCommentWhenEmpty
+**Type:** `System.Boolean`
+
+**Default Value:** `False`
+
+When no comment for the new ResX entry has been provided, should an empty comment tag be included?
 
