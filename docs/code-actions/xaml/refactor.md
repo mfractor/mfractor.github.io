@@ -36,7 +36,9 @@ For example, given the attribute initialiser `Text=\"Hello Xamarin.Forms!\"`, th
 
 **Configuration Id: com.mfractor.code_actions.xaml.extract_xaml_into_control**
 
-Extracts a XAML element that derives from `Xamarin.Forms.Layout` into a new XAML control.
+![Extracting a XAML container into a new control](/img/forms/extract-xaml-control.gif)
+
+Extracts a XAML layout container that derives from `Xamarin.Forms.Layout` into a new XAML control.
 
 
 ### Configurable Properties
@@ -118,6 +120,8 @@ Your new namespace will be applied across the document:
 **[Professional Only](https://www.mfractor.com/buy?utm_source=docs&utm_medium=professional_only)**
 
 **Configuration Id: com.mfractor.code_actions.xaml.replace_with_localisation_lookup**
+
+![Localising a XAML file using the localisation wizard](/img/forms/localisation-wizard.gif)
 
 This refactoring action will open the document localisation wizard, a dialog that walks through all strings in the current document and lets you easily replace them with a localised value lookup.
 

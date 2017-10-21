@@ -155,6 +155,8 @@ When a class declaration ends with `Attribute` (EG: `MyCoolAttribute`) and does 
 
 **Configuration Id: com.mfractor.code_actions.resx.replace_csharp_string_with_resource_lookup**
 
+![Using the localisation wizard to extract string literals into a ResX file](/img/code-actions/csharp/localisation-wizard.gif)
+
 This code refactoring will open the localisation wizard, allowing you to walk through all strings in a C# code file and replace inline strings with resource lookups.
 
 
