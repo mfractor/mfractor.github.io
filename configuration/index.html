@@ -527,7 +527,7 @@
 <pre><code>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; ?&gt;
 &lt;mfractor&gt;
         &lt;!-- Change the behaviour of the Implement View Model code action --&gt;
-    &lt;configure id=&quot;com.mfractor.code_action.forms.implement_view_model&quot;&gt;
+    &lt;configure id=&quot;com.mfractor.code_actions.xaml.implement_view_model&quot;&gt;
             &lt;property name=&quot;BaseClass&quot; value=&quot;MyNamespace.ViewModels.ViewModelBase&quot;/&gt;
     &lt;/configure&gt;
 &lt;/mfractor&gt;
@@ -549,10 +549,10 @@
 </ul>
 <h2 id="configuration-identifiers">Configuration Identifiers</h2>
 <p>Every element inside MFractor that can be configured has it's own unique <strong>configuration identifier</strong>. This a java-style, package based string that indicates the software, element type and element name inside the name.</p>
-<p>For example, the Xamarin.Forms <a href="../code-actions/xaml/generate/#implement-view-model">Implement View Model</a> code action has the configuration identifier <code>com.mfractor.code_actions.forms.implement_view_model</code>. A features id is located below the heading inside the documentation:</p>
+<p>For example, the Xamarin.Forms <a href="../code-actions/xaml/generate/#implement-view-model">Implement View Model</a> code action has the configuration identifier <code>com.mfractor.code_actions.xaml.implement_view_model</code>. A features id is located below the heading inside the documentation:</p>
 <p><img alt="Location of configuration identifier" src="../img/configuration/config-id.png" /></p>
-<p>If we wanted to change the behaviour of the <em>Implement View Model</em> code action, we add a <code>configure</code> element into our <code>.mfc.xml</code> and target the identifier <code>com.mfractor.code_action.forms.implement_view_model</code>:</p>
-<pre><code>&lt;configure id=&quot;com.mfractor.code_action.forms.implement_view_model&quot;&gt;
+<p>If we wanted to change the behaviour of the <em>Implement View Model</em> code action, we add a <code>configure</code> element into our <code>.mfc.xml</code> and target the identifier <code>com.mfractor.code_actions.xaml.implement_view_model</code>:</p>
+<pre><code>&lt;configure id=&quot;com.mfractor.code_actions.xaml.implement_view_model&quot;&gt;
 &lt;/configure&gt;
 </code></pre>
 
@@ -562,15 +562,15 @@
 <p>Configurable properties are settings that can be edited on a configurable through the use of the <code>property</code> tag.</p>
 <p>We place a <code>property</code> tag inside a <code>configure</code> tag; we can then target the property name using the <code>name</code> attribute and apply a new value using the <code>value</code> attribute.</p>
 <p>For example, we can change the output folder for new ViewModels by using a <code>property</code> setter on the <code>ViewModelsFolder</code> property:</p>
-<pre><code>&lt;configure id=&quot;com.mfractor.code_action.forms.implement_view_model&quot;&gt;
+<pre><code>&lt;configure id=&quot;com.mfractor.code_actions.xaml.implement_view_model&quot;&gt;
     &lt;property name=&quot;ViewModelsFolder&quot; value=&quot;Path/To/ViewModelsFolder&quot;/&gt;
 &lt;/configure&gt;
 </code></pre>
 
 <h2 id="code-generation-dependencies">Code Generation Dependencies</h2>
 <p>Often multiple code actions need to generate the same source; rather than configuring each code action separately each code action reuses a common <strong>code generator</strong>. A code generator is a configurable that encapsulates the logic needed to generate a specific piece of code.</p>
-<p>For example, both the <a href="../code-actions/xaml/generate/#implement-view-model">Implement View Model</a> and <a href="../code-actions/xaml/fix/#generate-missing-binding-command-stub">Generate Missing Command</a> use the <a href="../code-generation/xamarin-forms/#generate-icommand-implementation">Generate ICommand Implementation</a> code generator; this allows us to set the ICommand type once and have the behaviour propagate through all code-actions that need to generate an ICommand implementation.</p>
-<p>This documentation site lists the code-generaton dependencies</p>
+<p>For example, both the <a href="../code-actions/xaml/generate/#implement-view-model">Implement View Model</a> and <a href="../code-actions/xaml/fix/#generate-missing-binding-command-stub">Generate Missing Command</a> use the <a href="../code-generation/xamarin-forms/#generate-icommand-implementation">Generate ICommand Implementation</a> code generator; this allows us to set the <code>ICommand</code> type once and have the behaviour propagate through all code-actions that need to generate an ICommand implementation.</p>
+<p>This documentation site lists the code-generaton dependencies under the <strong>Uses:</strong> section.</p>
               
             </div>
           </div>
