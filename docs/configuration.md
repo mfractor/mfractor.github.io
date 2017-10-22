@@ -45,7 +45,7 @@ How does it work? Let's consider the following configuration file:
 <?xml version="1.0" encoding="UTF-8" ?>
 <mfractor>
 		<!-- Change the behaviour of the Implement View Model code action -->
-    <configure id="com.mfractor.code_action.forms.implement_view_model">
+    <configure id="com.mfractor.code_actions.xaml.implement_view_model">
             <property name="BaseClass" value="MyNamespace.ViewModels.ViewModelBase"/>
     </configure>
 </mfractor>
@@ -65,14 +65,14 @@ Let's examine each of the each element in the above configuration in depth:
 
 Every element inside MFractor that can be configured has it's own unique **configuration identifier**. This a java-style, package based string that indicates the software, element type and element name inside the name.
 
-For example, the Xamarin.Forms [Implement View Model](/code-actions/xaml/generate.md#implement-view-model) code action has the configuration identifier `com.mfractor.code_actions.forms.implement_view_model`. A features id is located below the heading inside the documentation:
+For example, the Xamarin.Forms [Implement View Model](/code-actions/xaml/generate.md#implement-view-model) code action has the configuration identifier `com.mfractor.code_actions.xaml.implement_view_model`. A features id is located below the heading inside the documentation:
 
 ![Location of configuration identifier](/img/configuration/config-id.png)
 
-If we wanted to change the behaviour of the *Implement View Model* code action, we add a `configure` element into our `.mfc.xml` and target the identifier `com.mfractor.code_action.forms.implement_view_model`:
+If we wanted to change the behaviour of the *Implement View Model* code action, we add a `configure` element into our `.mfc.xml` and target the identifier `com.mfractor.code_actions.xaml.implement_view_model`:
 
 ```
-<configure id="com.mfractor.code_action.forms.implement_view_model">
+<configure id="com.mfractor.code_actions.xaml.implement_view_model">
 </configure>
 ```
 
@@ -89,7 +89,7 @@ We place a `property` tag inside a `configure` tag; we can then target the prope
 For example, we can change the output folder for new ViewModels by using a `property` setter on the `ViewModelsFolder` property:
 
 ```
-<configure id="com.mfractor.code_action.forms.implement_view_model">
+<configure id="com.mfractor.code_actions.xaml.implement_view_model">
 	<property name="ViewModelsFolder" value="Path/To/ViewModelsFolder"/>
 </configure>
 ```
@@ -98,6 +98,6 @@ For example, we can change the output folder for new ViewModels by using a `prop
 
 Often multiple code actions need to generate the same source; rather than configuring each code action separately each code action reuses a common **code generator**. A code generator is a configurable that encapsulates the logic needed to generate a specific piece of code.
 
-For example, both the [Implement View Model](/code-actions/xaml/generate/#implement-view-model) and [Generate Missing Command](/code-actions/xaml/fix/#generate-missing-binding-command-stub) use the [Generate ICommand Implementation](/code-generation/xamarin-forms/#generate-icommand-implementation) code generator; this allows us to set the ICommand type once and have the behaviour propagate through all code-actions that need to generate an ICommand implementation.
+For example, both the [Implement View Model](/code-actions/xaml/generate/#implement-view-model) and [Generate Missing Command](/code-actions/xaml/fix/#generate-missing-binding-command-stub) use the [Generate ICommand Implementation](/code-generation/xamarin-forms/#generate-icommand-implementation) code generator; this allows us to set the `ICommand` type once and have the behaviour propagate through all code-actions that need to generate an ICommand implementation.
 
-This documentation site lists the code-generaton dependencies
+This documentation site lists the code-generaton dependencies under the **Uses:** section.
