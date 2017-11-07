@@ -4,12 +4,16 @@
 
 ## Introduction
 
- - Why?
- -
+ - Why localise?
+ - Why use the
 
 ## C#
 
 ![Using the localisation wizard to extract C# strings into resource files](/img/code-actions/csharp/localisation-wizard.gif)
+
+ - Opening the localisation wizard in C#.
+
+
 
 ## Xamarin.Forms
 
@@ -20,10 +24,13 @@
  - Need a ResX file.
  - Open through the code actions menus.
  - Pick the resource file that MFractor should write the ResX entry into (MFractor will default to the first it finds)
- - Optionally
+ - Optionally choose the resource file
  - Enter a resource key
  - Optionally enter a resource description
  - *Enter* to submit the localisation key and continue
  - If a match
 
 ## Configuration
+
+ - Targetting a default file.
+ -

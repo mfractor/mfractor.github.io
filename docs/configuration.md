@@ -19,7 +19,7 @@ When browsing this website, you may notice that parts of the site are tagged as 
 
 Let's look at the 3 main configurable feature types:
 
-###C ode Actions
+### Code Actions
 
 Code actions are features exposed through the IDE context menu (accessed via `Right CLick` or `Alt+Return`) that fix code issues and organise, refactor and generate source code.
 
@@ -35,7 +35,7 @@ Code generators are only ever directly used by code actions; they are not expose
 
 ## Configuration Files
 
-MFractor configuration files are XML based and end with the extension `.mfc.xml`; a configuration file can be named anything and be placed in any directory if a project as long as it ends in the extension `.mfc.xml`.
+MFractor configuration files are XML based and end with the extension `.mfc.xml`; a configuration file can be named anything and be placed in any directory in a project as long as it ends in the extension `.mfc.xml`.
 
 How does it work? Let's consider the following configuration file:
 
