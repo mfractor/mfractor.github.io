@@ -96,13 +96,6 @@
   
   
 <li class="toctree-l1 ">
-  <a class="" href="../../configuration/">Configuration</a>
-  
-</li>
-
-  
-  
-<li class="toctree-l1 ">
   <a class="" href="../../image-importing-wizard/">Image Importing Wizard</a>
   
 </li>
@@ -125,6 +118,27 @@
   
 <li class="toctree-l1 ">
   <a class="" href="../../annotations/">Using MFractor.Annotations</a>
+  
+</li>
+
+  
+</ul>
+<li>
+          
+            <li>
+<ul class="subnav">
+  <li><span>Configuration</span></li>
+  
+  
+<li class="toctree-l1 ">
+  <a class="" href="../../configuration/">Configuration</a>
+  
+</li>
+
+  
+  
+<li class="toctree-l1 ">
+  <a class="" href="../../configuration/configuration-property-types/">Types</a>
   
 </li>
 
@@ -386,11 +400,11 @@
           
             <li>
 <ul class="subnav">
-  <li><span>ResX</span></li>
+  <li><span>Configuration</span></li>
   
   
 <li class="toctree-l1 ">
-  <a class="" href="../../resx/configuration/">Configuration</a>
+  <a class="" href="../../configuration/resx/">ResX</a>
   
 </li>
 
@@ -415,7 +429,7 @@
       
     
       
-      <li class="toctree-l3"><a href="#professional-features">Professional Features</a></li>
+      <li class="toctree-l3"><a href="#features">Features</a></li>
       
     
       
@@ -424,6 +438,10 @@
     
       
       <li class="toctree-l3"><a href="#bug-fixes">Bug Fixes</a></li>
+      
+    
+      
+      <li class="toctree-l3"><a href="#deprecations">Deprecations</a></li>
       
     
   </ul>
@@ -499,24 +517,54 @@
 <p><strong>TO BE DECIDED</strong></p>
 <h2 id="introduction">Introduction</h2>
 <p>This is a summary of the changes introduced in v3.3.0 of MFractor for Visual Studio Mac.</p>
-<p>This release adds code snippet support. We've added an import image wizard to make it dead-simple to bring images into your Android, iOS and Xamarin.Forms apps. You can access the image wizard through the <strong>Tools</strong> main menu and then selecting <strong>Import Image Wizard</strong>.</p>
-<h2 id="professional-features">Professional Features</h2>
+<p>This standout feature in this release is the addition of code snippet support. Got a particular way you write your view model properties or commands? MFractor now lets you use your own code snippet, enabling complete customisation!</p>
+<p>We've also added a localisation wizard that will quickly move string literals into ResX files, several handy code actions and a update notification dialog that let's you know when new MFractor releases are available.</p>
+<h2 id="features">Features</h2>
 <ul>
-<li>Localisation Wizard.</li>
-<li>Code Snippet Support for view model properties and custom commands.</li>
-<li>Extract XAML layout into new control</li>
-<li>Add UsesLayout to class code action</li>
+<li>A localisation Wizard for XAML and C#.</li>
+<li>Code Snippet Support for view model properties, custom commands and bindable properties.</li>
+<li>Use the <em>Extract XAML layout into new control</em> code action to move a XAML section into its own code file.</li>
+<li>Use the <em>Generate Platform Effect</em> code action to easily generate the routing effect and platform effects.</li>
+<li>Use the <em>Generate interface implementation</em> code action to quickly create a new class implementation from an existing C# interface;</li>
+<li>The <em>Add <code>UsesLayout</code> to class code action</em> will append an <code>MFractor.Annotations.Android.UsesLayout</code> annotation to an Android class to specify the layout that class uses. Using this you can quickly enable MFractors Android layout usage validation.</li>
+<li>Support for config files that are included within a nuget packages build folder. Framework authors can now include an MFractor config to enforce their framework standards by including a file named <code>.mfc.xml</code> in the packages build folder.</li>
 </ul>
 <h2 id="enhancements">Enhancements</h2>
 <ul>
-<li>MFractor now regularly checks for updates against the addin server.</li>
+<li>Support for Visual Studio Mac 7.2.</li>
+<li>Support for Roslyn 2.3.</li>
+<li>MFractor now regularly checks for updates against the addin server and let's you know when there's been a new release.</li>
 <li>Enhanced code completion for MFractor configuration files.</li>
+<li>Specify a new width and height for the highest density image when you import an image with the image importing wizard.</li>
+<li>Use the new Mvvm resolution configuration to specify the project in a solution that contains your views or view models. This lets MFractor resolve the MVVM relationship across project boundaries!</li>
+<li>The <code>Generate constructor for all readonly members</code> will now include constructor arguments for auto properties as well as readonly fields.</li>
+<li>The empty XAML attribute and node analysers have been removed as they were plain annoying (and frequently incorrect).</li>
+<li>MFractor Lite now allows up to 5 pro feature uses per day.</li>
+<li>Internally, MFractor now uses Roslyn's concept of text spans instead of line/columns. This reduces MFractors memory footprint and improves the speed of all analysers.</li>
+<li>The following features are now professional only:</li>
+<li>Image tooltips.</li>
+<li>Go To View Model, Go To Code Behind and Go To View.</li>
+<li>Android resource IntelliSense.</li>
+<li>Code snippet support added for:</li>
+<li>View Model Properties.</li>
+<li>Bindable Properties.</li>
+<li>Command Implementations.</li>
+<li>Routing Effects.</li>
+<li>Platform Specific Effects.</li>
+<li>Value Converters.</li>
+<li>Value Conversion Attribute.</li>
+<li>Code Behind class declarations.</li>
 </ul>
 <h2 id="bug-fixes">Bug Fixes</h2>
 <ul>
 <li>Fixed: MFractor no longer bundles the Microsoft.CodeAnalysis (Roslyn) assemblies into its distribution package. This caused critical issues in VSMac 7.2.</li>
 <li>Fixed: Upgraded MFractor to use Microsoft.CodeAnalysis (Roslyn) 2.3. This required several code generators to be upgraded.</li>
-<li>Fixed:</li>
+<li>Fixed: A regression in the <em>Migrate OnPlatform</em> code action caused it to failed.</li>
+</ul>
+<h2 id="deprecations">Deprecations</h2>
+<ul>
+<li>The configurable property <code>ImplementConversionForConvert</code> on the value converter generator is deprecated and has been removed. Please use the code snippet to control the <code>Convert</code> method body.</li>
+<li>The configurable property <code>ImplementConversionForConvertBack</code> on the value converter generator is deprecated and has been removed. Please use the code snippet to control the <code>ConvertBack</code> method body.</li>
 </ul>
               
             </div>
@@ -528,7 +576,7 @@
         <a href="../v3-2/" class="btn btn-neutral float-right" title="v3.2">Next <span class="icon icon-circle-arrow-right"></span></a>
       
       
-        <a href="../../resx/configuration/" class="btn btn-neutral" title="Configuration"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../../configuration/resx/" class="btn btn-neutral" title="ResX"><span class="icon icon-circle-arrow-left"></span> Previous</a>
       
     </div>
   
@@ -559,7 +607,7 @@
           <a href="https://github.com/mfractor/mfractor.github.io" class="icon icon-github" style="float: left; color: #fcfcfc"> GitHub</a>
       
       
-        <span><a href="../../resx/configuration/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+        <span><a href="../../configuration/resx/" style="color: #fcfcfc;">&laquo; Previous</a></span>
       
       
         <span style="margin-left: 15px"><a href="../v3-2/" style="color: #fcfcfc">Next &raquo;</a></span>
