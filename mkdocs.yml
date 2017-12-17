@@ -22,14 +22,16 @@ pages:
   - Installation And Setup: installation-and-setup.md
   - About MFractor Professional: mfractor-professional.md
   - Code Actions: code-actions.md
-
   - Image Importing Wizard: image-importing-wizard.md
   - Localisation Wizard: localisation-wizard.md
   - Code Snippets: code-snippets.md
   - Using MFractor.Annotations: annotations.md
-- Configuration:
-  - Configuration: configuration.md
+- Configuring MFractor:
+  - Getting Started: configuration/getting-started.md
+  - Code Snippets: configuration/code-snippets.md
   - Types: configuration/configuration-property-types.md
+  - ResX: configuration/resx.md
+  - Xamarin.Forms: configuration/xamarin-forms.md
 - Xamarin.Forms:
   - Configuring A Binding Context: xamarin-forms/configure-binding-context.md
   - Navigation Tools: xamarin-forms/navigation.md
@@ -50,24 +52,22 @@ pages:
     - Code Generation: code-actions/xaml/generate.md
     - Xaml Organisation: code-actions/xaml/organise.md
     - Refactoring: code-actions/xaml/refactor.md
+    - Navigation: code-actions/xaml/navigate.md
   - XML Code Actions: code-actions/xml.md
 - Code Analysis:
   - C#:
     - Android C# Analysis: code-analysis/csharp/android.md
     - Xamarin.Forms C# Analysis: code-analysis/csharp/xamarin-forms.md
-  - Android Resource Analysis: code-analysis/android-resources.md
-  - Xamarin.Forms Xaml Analysis: code-analysis/xaml.md
-  - MFractor Config Analysis: code-analysis/configuration.md
+  - XAML Analysis: code-analysis/xaml.md
+  - MFractor Configuration Analysis: code-analysis/configuration.md
 - Code Generation:
   - C#:
     - C#: code-generation/csharp.md
-    - Android: code-generation/csharp/android.md
-    - Xamarin.Forms: code-generation/xamarin-forms.md
+  - Android (C#):  code-generation/csharp/android.md
+  - Xamarin.Forms (C#): xamarin-forms.md
   - Xaml: code-generation/xaml.md
   - ResX: code-generation/resx.md
   - XML: code-generation/xml.md
-- Configuration:
-  - ResX: configuration/resx.md
 - Release Notes:
     - v3.3: release-notes/v3-3.md
     - v3.2: release-notes/v3-2.md
