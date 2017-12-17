@@ -52,7 +52,7 @@ public string Message
 
 When possible, MFractor's internal code generators use a code snippet to create code. These code snippets are exposed as configurable properties and are named `Snippet`.
 
-We can link
+To identify what you can
 
 We can customise MFractor by providing code snippets through two sources: [Visual Studio for Macs snippets](#using-visual-studio-macs-code-snippets) and [code snippets included within your project](#using-project-code-snippets).
 
@@ -68,11 +68,16 @@ In the preferences window that opens, browse to **Code Snippets...** and then se
 
 ![Visual Studio for Macs code snippets pane](/img/code-snippets/code-snippets-preferences-window.png)
 
-This will open the **New template** wizard. For this code snippet we'll, define our code as below:
+This will open the **New template** wizard. For this code snippet we'll create a template for a new property that triggers a property changed method.
+
+We'll set our code snippets name to `notify_changed_property` and enter the , define our code as below:
 
 ![Visual Studio for Macs code template pane](/img/code-snippets/code-template-window.png)
 
-Next, create an MFractor project configuration file named `app.mfc.xml` in the root directory with the following content:
+
+Lastly, we need to tell MFractor to use our code snippet when generating view model properties. We do this through an MFractor configuraiton file.
+
+Create a file named `app.mfc.xml` in the root directory with the following content:
 
 ```
 <mfractor>
@@ -82,7 +87,7 @@ Next, create an MFractor project configuration file named `app.mfc.xml` in the r
 </mfractor>
 ```
 
-This will connect MFractor's [View Model Property Generator](/code-generation/xamarin-forms.md#view-model-property-generator) `Snippet` to the `notify_changed_property` code snippet.
+This code connects the [View Model Property Generator](/code-generation/xamarin-forms.md#view-model-property-generator) `Snippet` to the `notify_changed_property` code snippet in Visual Studio for Mac.
 
 ## Using Project Code Snippets
 
@@ -90,8 +95,34 @@ MFractor can also use code snippets that are included within your project. This 
 
 To do this, create a new folder named **Snippets** in the root of your project:
 
-Next,
+![Creating the code snippets folder](/img/code-snippets/code-snippets-folders.png)
 
- - Create an `*.mfc.xml` file.
- - Create a `Snippets` folder.
- - Identify the code action we want to replace
+Next, create a new text file inside the `Snippets` folder named `notify_changed_property.txt` and enter the following content:
+
+```
+private $type$ _$name$;
+public $type$ $name$
+{
+    get
+    {
+        return _$name$;
+    }
+    set
+    {
+        _$name$ = value;
+        NotifyPropertyChanged(nameof($name$));
+    }
+}
+```
+
+Lastly, we need to connect the [View Model Property Generator](/code-generation/xamarin-forms.md#view-model-property-generator) `Snippet` to `notify_changed_property.txt` code snippet included in our project.
+
+Create a file named `app.mfc.xml` in the root directory with the following content:
+
+```
+<mfractor>
+  <configure id="com.mfractor.code_gen.forms.csharp.view_model_property"
+    <property name="Snippet" source="file" value="Snippets/notify_changed_property.txt"/>
+  </configure>
+</mfractor>
+```

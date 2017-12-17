@@ -24,7 +24,6 @@ pages:
   - Code Actions: code-actions.md
   - Image Importing Wizard: image-importing-wizard.md
   - Localisation Wizard: localisation-wizard.md
-  - Code Snippets: code-snippets.md
   - Using MFractor.Annotations: annotations.md
 - Configuring MFractor:
   - Getting Started: configuration/getting-started.md
@@ -45,8 +44,6 @@ pages:
   - C#:
     - C# Code Actions: code-actions/csharp.md
     - Android: code-actions/csharp/android.md
-  - Android Resource Code Actions:
-    - Issue Fixing: code-actions/android-resources/fix.md
   - Xamarin.Forms Xaml Code Actions:
     - Issue Fixing: code-actions/xaml/fix.md
     - Code Generation: code-actions/xaml/generate.md
@@ -64,7 +61,7 @@ pages:
   - C#:
     - C#: code-generation/csharp.md
   - Android (C#):  code-generation/csharp/android.md
-  - Xamarin.Forms (C#): xamarin-forms.md
+  - Xamarin.Forms (C#): code-generation/xamarin-forms.md
   - Xaml: code-generation/xaml.md
   - ResX: code-generation/resx.md
   - XML: code-generation/xml.md

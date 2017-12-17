@@ -9,7 +9,7 @@ MFractor configuration files are XML based and end with the extension `.mfc.xml`
 
 How does it work? Let's consider the following configuration file:
 
-**config.mfc.xml**
+**app.mfc.xml**
 
 ```
 <?xml version="1.0" encoding="UTF-8" ?>
@@ -29,7 +29,6 @@ Let's examine each of the each element in the above configuration in depth:
    - We **modify** a property using the `<property>` element:
     - The `name` attribute specifies the configurable property we wish to edit.
     - The `value` attribute specifies the value we wish to set the property to.
-    - We **group** configurations within the `<collection name="CollectionName">` element. These groups are hard coded into the product itself and relate to how the code actions, code generation and code analysis documentation folders are structured in this site.
 
 ## Configuration Identifiers
 
@@ -70,4 +69,4 @@ Often multiple code actions need to generate the same source; rather than config
 
 For example, both the [Implement View Model](/code-actions/xaml/generate/#implement-view-model) and [Generate Missing Command](/code-actions/xaml/fix/#generate-missing-binding-command-stub) use the [Generate ICommand Implementation](/code-generation/xamarin-forms/#generate-icommand-implementation) code generator; this allows us to set the `ICommand` type once and have the behaviour propagate through all code-actions that need to generate an ICommand implementation.
 
-This documentation site lists the code-generaton dependencies under the **Uses:** section.
+This documentation site lists the code-generation dependencies under the **Uses:** section.
