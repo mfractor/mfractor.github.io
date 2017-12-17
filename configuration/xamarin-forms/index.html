@@ -9,7 +9,7 @@
   <meta name="author" content="Matthew Robbins">
   <link rel="shortcut icon" href="../../img/favicon.ico">
   
-  <title>Navigation Tools - mfractor docs</title>
+  <title>Xamarin.Forms - mfractor docs</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="../../css/theme.css" type="text/css" />
@@ -23,9 +23,9 @@
   
   <script>
     // Current page data
-    var mkdocs_page_name = "Navigation Tools";
-    var mkdocs_page_input_path = "xamarin-android/navigation-tools.md";
-    var mkdocs_page_url = "/xamarin-android/navigation-tools/";
+    var mkdocs_page_name = "Xamarin.Forms";
+    var mkdocs_page_input_path = "configuration/xamarin-forms.md";
+    var mkdocs_page_url = "/configuration/xamarin-forms/";
   </script>
   
   <script src="../../js/jquery-2.1.1.min.js"></script>
@@ -124,35 +124,45 @@
   
   
 <li class="toctree-l1 ">
-  <a class="" href="../../configuration/getting-started/">Getting Started</a>
+  <a class="" href="../getting-started/">Getting Started</a>
   
 </li>
 
   
   
 <li class="toctree-l1 ">
-  <a class="" href="../../configuration/code-snippets/">Code Snippets</a>
+  <a class="" href="../code-snippets/">Code Snippets</a>
   
 </li>
 
   
   
 <li class="toctree-l1 ">
-  <a class="" href="../../configuration/configuration-property-types/">Types</a>
+  <a class="" href="../configuration-property-types/">Types</a>
   
 </li>
 
   
   
 <li class="toctree-l1 ">
-  <a class="" href="../../configuration/resx/">ResX</a>
+  <a class="" href="../resx/">ResX</a>
   
 </li>
 
   
   
-<li class="toctree-l1 ">
-  <a class="" href="../../configuration/xamarin-forms/">Xamarin.Forms</a>
+<li class="toctree-l1 current">
+  <a class="current" href="./">Xamarin.Forms</a>
+  
+  <ul>
+    
+      
+    
+      
+      <li class="toctree-l3"><a href="#mvvm-resolution-settings">MVVM Resolution Settings</a></li>
+      
+    
+  </ul>
   
 </li>
 
@@ -207,49 +217,15 @@
   <li><span>Xamarin.Android</span></li>
   
   
-<li class="toctree-l1 current">
-  <a class="current" href="./">Navigation Tools</a>
-  
-  <ul>
-    
-      
-    
-      
-      <li class="toctree-l3"><a href="#overview">Overview</a></li>
-      
-    
-      
-      <li class="toctree-l3"><a href="#c-resource-expressions">C# Resource Expressions</a></li>
-      
-    
-      
-      <li class="toctree-l3"><a href="#xml-resource-expressions">Xml Resource Expressions</a></li>
-      
-    
-      
-      <li class="toctree-l3"><a href="#go-to-resource-declaration">Go To Resource Declaration</a></li>
-      
-    
-      
-      <li class="toctree-l3"><a href="#find-all-resource-usages">Find All Resource Usages</a></li>
-      
-    
-      
-      <li class="toctree-l3"><a href="#resource-tooltips">Resource Tooltips</a></li>
-      
-    
-      
-      <li class="toctree-l3"><a href="#image-tooltips">Image Tooltips</a></li>
-      
-    
-  </ul>
+<li class="toctree-l1 ">
+  <a class="" href="../../xamarin-android/navigation-tools/">Navigation Tools</a>
   
 </li>
 
   
   
 <li class="toctree-l1 ">
-  <a class="" href="../resource-intellisense/">Resource IntelliSense</a>
+  <a class="" href="../../xamarin-android/resource-intellisense/">Resource IntelliSense</a>
   
 </li>
 
@@ -496,92 +472,47 @@
     
       
         
-          <li>Xamarin.Android &raquo;</li>
+          <li>Configuring MFractor &raquo;</li>
         
       
     
-    <li>Navigation Tools</li>
+    <li>Xamarin.Forms</li>
   </ul>
   <hr/>
 </div>
           <div role="main">
             <div class="section">
               
-                <h2 id="resource-expressions-and-code-navigation">Resource Expressions And Code Navigation</h2>
-<p><em>Learn the C# and xml expressions that activate tooltips and go-to declaration in MFractor for Android</em></p>
-<h2 id="overview">Overview</h2>
-<p>If you’re a Xamarin.Android developer building apps using the native APIs then chances are you spend a lot of time navigating resource code.</p>
-<p>This becomes tedious when you are constantly doing manual searches for your target, browsing through the find results and then clicking the search result to jump to it. What’s more, using go-to declaration on a C# resource symbol takes you to its integer id! It’s tremendously frustrating and a massive time-waster.</p>
-<p>And this problem gets worse the bigger your project is; large Android applications can have dozens to hundreds of xml resources that need to be scanned each time a search takes place.</p>
-<p>MFractor addresses these navigation issues by overriding the default “go to declaration” keyboard shortcuts when you are in the context of a resource expression.</p>
-<p>These expressions come in 2 flavours:</p>
-<ul>
-<li>C#: Code expressions within C# that access the generated Resources class contained in the Resources.Designer.cs file. For instance; Resource.Layout.myLayout.</li>
-<li>XML: Code expressions within Android xml resources that point to another resource. For instance; @layout/myLayout.</li>
-</ul>
-<p>When MFractor detects the cursor is within one of these expressions, resource tooltips and go-to-declaration become active. This enables fast and efficient code navigation.</p>
-<p>That is much faster than manual searching! Now lets go over each of these expression types.</p>
-<h2 id="c-resource-expressions">C# Resource Expressions</h2>
-<p>For C#, resource expressions are always resolved against the Resource.Designer.cs file that is generated alongside a project. This section assumes a basic familiarity of the Resource.Designer.cs file; if this is a new concept I suggested reading the <a href="https://developer.xamarin.com/guides/android/application_fundamentals/resources_in_android/part_1_-_android_resource_basics/">Android Resource Basics</a> page in Xamarins documentation.</p>
-<p>The components of a supported resource expression are formatted like so:</p>
-<pre><code>[Project Namespace].[Resource].[ResourceType].[ResourceName]
-</code></pre>
-
-<p>Where:</p>
-<ul>
-<li>[Project Namespace] is the project namespace that the Resources designer class resides. This component is either:</li>
-<li>Implicit: The encapsulating namespace is the same as the resource designers namespace or a using statement provides the resource designer class.</li>
-<li>Explicit: The expression explicitly uses the namespace that owns the resource class.</li>
-<li>Resource is the constant Resource class that wraps the declarations of the ResourceType sub-classes.</li>
-<li>ResourceType is the nested resource type class.</li>
-<li>ResourceName is the name of the resource being referenced. MFractor will only trigger its behaviour when your caret or mouse cursor is over this component of the c# resource expression.</li>
-</ul>
-<p>An example of a valid expression would be:</p>
-<pre><code>Resources.String.my_string;
-</code></pre>
-
-<p>When your cursor is over the my_string component of this expression, MFractor will attempt to resolve a string resource named my_string.</p>
-<h2 id="xml-resource-expressions">Xml Resource Expressions</h2>
-<p>Xml resource expressions come in 3 different categories:</p>
-<ul>
-<li>Reference expressions point directly to a resource. They begin with the ‘@’ character.</li>
-<li>Declarative expressions declare a new resource. These are only used with ids. They begin with a ‘@+’ character sequence.</li>
-<li>Theme expression point to a component of the currently scoped theme. They begin with a ‘?’ character.</li>
-</ul>
-<p>Reference and declarative expression are structured with the following syntax:</p>
-<pre><code>@[+][PackageName:]resourceType/resourceName
-</code></pre>
-
-<p>Where:</p>
-<ul>
-<li>
-<p>@[+] is the resource reference symbol.</p>
-</li>
-<li>
-<p>PackageName is an optional component that points to the package the resource is within.</p>
-</li>
-<li>resourceType is the resource type.</li>
-<li>resourceName is the name of the resource.</li>
-</ul>
-<p>An example of this would be:</p>
-<pre><code>@string/my_string
-</code></pre>
-
-<p>When your cursor is any component of this expression, MFractor will attempt to resolve a pre-existing string resource named my_string.</p>
-<p>Lastly, theme resource expressions point to a component of the current theme. These are structured with the following syntax:</p>
-<pre><code>?[PackageName:][ResourceType/]themeItemName
-</code></pre>
-
-<p>Where:</p>
-<ul>
-<li>PackageName is the optional package name the theme component resides within.</li>
-<li>ResourceType is the optional resource type of the theme component. This is typically inferred.</li>
-<li>themeItemName the name of the theme item.</li>
-</ul>
-<h2 id="go-to-resource-declaration">Go To Resource Declaration</h2>
-<h2 id="find-all-resource-usages">Find All Resource Usages</h2>
-<h2 id="resource-tooltips">Resource Tooltips</h2>
-<h2 id="image-tooltips">Image Tooltips</h2>
+                <h2 id="xamarinforms-feature-configuration">Xamarin.Forms Feature Configuration</h2>
+<p><em>Autogenerated by MFractor v3.2.19</em></p>
+<h2 id="mvvm-resolution-settings">MVVM Resolution Settings</h2>
+<p><strong>Configuration Id: com.mfractor.configuration.forms.mvvm_resolution</strong></p>
+<p>The MVVM resolution settings can be used to specify the project that your views or view models sit within. If you prefer to separate your views and view models into separate projects, these settings enable MFractor to resolve the MVVM relationship across project boundaries.</p>
+<h3 id="configurable-properties">Configurable Properties</h3>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Defaults To</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>ViewsProject</strong></td>
+<td>System.String</td>
+<td><code>null</code></td>
+<td>If the apps XAML views and view models are in separate projects, what is the name of project that contains the XAML views?</td>
+</tr>
+<tr>
+<td><strong>ViewModelsProject</strong></td>
+<td>System.String</td>
+<td><code>null</code></td>
+<td>If the apps XAML views and view models are in separate projects, what is the name of project that contains the ViewModels?</td>
+</tr>
+</tbody>
+</table>
               
             </div>
           </div>
@@ -589,10 +520,10 @@
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="../resource-intellisense/" class="btn btn-neutral float-right" title="Resource IntelliSense">Next <span class="icon icon-circle-arrow-right"></span></a>
+        <a href="../../xamarin-forms/configure-binding-context/" class="btn btn-neutral float-right" title="Configuring A Binding Context">Next <span class="icon icon-circle-arrow-right"></span></a>
       
       
-        <a href="../../xamarin-forms/value-converter-type-safety/" class="btn btn-neutral" title="Value Converter Type Safety"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../resx/" class="btn btn-neutral" title="ResX"><span class="icon icon-circle-arrow-left"></span> Previous</a>
       
     </div>
   
@@ -623,10 +554,10 @@
           <a href="https://github.com/mfractor/mfractor.github.io" class="icon icon-github" style="float: left; color: #fcfcfc"> GitHub</a>
       
       
-        <span><a href="../../xamarin-forms/value-converter-type-safety/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+        <span><a href="../resx/" style="color: #fcfcfc;">&laquo; Previous</a></span>
       
       
-        <span style="margin-left: 15px"><a href="../resource-intellisense/" style="color: #fcfcfc">Next &raquo;</a></span>
+        <span style="margin-left: 15px"><a href="../../xamarin-forms/configure-binding-context/" style="color: #fcfcfc">Next &raquo;</a></span>
       
     </span>
 </div>

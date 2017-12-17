@@ -110,13 +110,6 @@
   
   
 <li class="toctree-l1 ">
-  <a class="" href="../../code-snippets/">Code Snippets</a>
-  
-</li>
-
-  
-  
-<li class="toctree-l1 ">
   <a class="" href="../../annotations/">Using MFractor.Annotations</a>
   
 </li>
@@ -127,11 +120,18 @@
           
             <li>
 <ul class="subnav">
-  <li><span>Configuration</span></li>
+  <li><span>Configuring MFractor</span></li>
   
   
 <li class="toctree-l1 ">
-  <a class="" href="../../configuration/">Configuration</a>
+  <a class="" href="../../configuration/getting-started/">Getting Started</a>
+  
+</li>
+
+  
+  
+<li class="toctree-l1 ">
+  <a class="" href="../../configuration/code-snippets/">Code Snippets</a>
   
 </li>
 
@@ -139,6 +139,20 @@
   
 <li class="toctree-l1 ">
   <a class="" href="../../configuration/configuration-property-types/">Types</a>
+  
+</li>
+
+  
+  
+<li class="toctree-l1 ">
+  <a class="" href="../../configuration/resx/">ResX</a>
+  
+</li>
+
+  
+  
+<li class="toctree-l1 ">
+  <a class="" href="../../configuration/xamarin-forms/">Xamarin.Forms</a>
   
 </li>
 
@@ -236,20 +250,6 @@
   
   
 <ul class="subnav">
-  <li><span>Android Resource Code Actions</span></li>
-  
-  
-<li class="toctree-l1 ">
-  <a class="" href="../../code-actions/android-resources/fix/">Issue Fixing</a>
-  
-</li>
-
-  
-</ul>
-
-  
-  
-<ul class="subnav">
   <li><span>Xamarin.Forms Xaml Code Actions</span></li>
   
   
@@ -276,6 +276,13 @@
   
 <li class="toctree-l1 ">
   <a class="" href="../../code-actions/xaml/refactor/">Refactoring</a>
+  
+</li>
+
+  
+  
+<li class="toctree-l1 ">
+  <a class="" href="../../code-actions/xaml/navigate/">Navigation</a>
   
 </li>
 
@@ -320,21 +327,14 @@
   
   
 <li class="toctree-l1 ">
-  <a class="" href="../../code-analysis/android-resources/">Android Resource Analysis</a>
+  <a class="" href="../../code-analysis/xaml/">XAML Analysis</a>
   
 </li>
 
   
   
 <li class="toctree-l1 ">
-  <a class="" href="../../code-analysis/xaml/">Xamarin.Forms Xaml Analysis</a>
-  
-</li>
-
-  
-  
-<li class="toctree-l1 ">
-  <a class="" href="../../code-analysis/configuration/">MFractor Config Analysis</a>
+  <a class="" href="../../code-analysis/configuration/">MFractor Configuration Analysis</a>
   
 </li>
 
@@ -357,21 +357,21 @@
 </li>
 
   
-  
-<li class="toctree-l1 ">
-  <a class="" href="../../code-generation/csharp/android/">Android</a>
-  
-</li>
-
-  
-  
-<li class="toctree-l1 ">
-  <a class="" href="../../code-generation/xamarin-forms/">Xamarin.Forms</a>
-  
-</li>
-
-  
 </ul>
+
+  
+  
+<li class="toctree-l1 ">
+  <a class="" href="../../code-generation/csharp/android/">Android (C#)</a>
+  
+</li>
+
+  
+  
+<li class="toctree-l1 ">
+  <a class="" href="../../code-generation/xamarin-forms/">Xamarin.Forms (C#)</a>
+  
+</li>
 
   
   
@@ -391,20 +391,6 @@
   
 <li class="toctree-l1 ">
   <a class="" href="../../code-generation/xml/">XML</a>
-  
-</li>
-
-  
-</ul>
-<li>
-          
-            <li>
-<ul class="subnav">
-  <li><span>Configuration</span></li>
-  
-  
-<li class="toctree-l1 ">
-  <a class="" href="../../configuration/resx/">ResX</a>
   
 </li>
 
@@ -513,7 +499,7 @@
           <div role="main">
             <div class="section">
               
-                <h2 id="release-notes-v330">Release Notes - v3.3.0</h2>
+                <h2 id="release-notes-v330">Release Notes * v3.3.0</h2>
 <p><strong>TO BE DECIDED</strong></p>
 <h2 id="introduction">Introduction</h2>
 <p>This is a summary of the changes introduced in v3.3.0 of MFractor for Visual Studio Mac.</p>
@@ -521,31 +507,8 @@
 <p>We've also added a localisation wizard that will quickly move string literals into ResX files, several handy code actions and a update notification dialog that let's you know when new MFractor releases are available.</p>
 <h2 id="features">Features</h2>
 <ul>
-<li>A localisation Wizard for XAML and C#.</li>
-<li>Code Snippet Support for view model properties, custom commands and bindable properties.</li>
-<li>Use the <em>Extract XAML layout into new control</em> code action to move a XAML section into its own code file.</li>
-<li>Use the <em>Generate Platform Effect</em> code action to easily generate the routing effect and platform effects.</li>
-<li>Use the <em>Generate interface implementation</em> code action to quickly create a new class implementation from an existing C# interface;</li>
-<li>The <em>Add <code>UsesLayout</code> to class code action</em> will append an <code>MFractor.Annotations.Android.UsesLayout</code> annotation to an Android class to specify the layout that class uses. Using this you can quickly enable MFractors Android layout usage validation.</li>
-<li>Support for config files that are included within a nuget packages build folder. Framework authors can now include an MFractor config to enforce their framework standards by including a file named <code>.mfc.xml</code> in the packages build folder.</li>
-</ul>
-<h2 id="enhancements">Enhancements</h2>
-<ul>
-<li>Support for Visual Studio Mac 7.2.</li>
-<li>Support for Roslyn 2.3.</li>
-<li>MFractor now regularly checks for updates against the addin server and let's you know when there's been a new release.</li>
-<li>Enhanced code completion for MFractor configuration files.</li>
-<li>Specify a new width and height for the highest density image when you import an image with the image importing wizard.</li>
-<li>Use the new Mvvm resolution configuration to specify the project in a solution that contains your views or view models. This lets MFractor resolve the MVVM relationship across project boundaries!</li>
-<li>The <code>Generate constructor for all readonly members</code> will now include constructor arguments for auto properties as well as readonly fields.</li>
-<li>The empty XAML attribute and node analysers have been removed as they were plain annoying (and frequently incorrect).</li>
-<li>MFractor Lite now allows up to 5 pro feature uses per day.</li>
-<li>Internally, MFractor now uses Roslyn's concept of text spans instead of line/columns. This reduces MFractors memory footprint and improves the speed of all analysers.</li>
-<li>The following features are now professional only:</li>
-<li>Image tooltips.</li>
-<li>Go To View Model, Go To Code Behind and Go To View.</li>
-<li>Android resource IntelliSense.</li>
-<li>Code snippet support added for:</li>
+<li>A localisation wizard for XAML and C# so you can quickly move strings into ResX files.</li>
+<li>Code Snippets are now generally supported throughout MFractor. They are available for:<ul>
 <li>View Model Properties.</li>
 <li>Bindable Properties.</li>
 <li>Command Implementations.</li>
@@ -555,11 +518,44 @@
 <li>Value Conversion Attribute.</li>
 <li>Code Behind class declarations.</li>
 </ul>
+</li>
+<li>Use the <em>Extract XAML layout into new control</em> code action to move a XAML section into its own code file.</li>
+<li>Use the <em>Generate Platform Effect</em> code action to easily generate the routing effect and platform effects.</li>
+<li>Use the <em>Generate interface implementation</em> code action to quickly create a new class implementation from an existing C# interface;</li>
+<li>The <em>Add <code>UsesLayout</code> to class code action</em> will append an <code>MFractor.Annotations.Android.UsesLayout</code> annotation to an Android class to specify the layout that class uses. Use this to quickly enable MFractors Android layout usage validation.</li>
+<li>Support for config files that are included within a nuget packages build folder. Framework authors can now include an MFractor config to enforce their framework standards by including a file named <code>.mfc.xml</code> in the packages build folder.</li>
+</ul>
+<h2 id="enhancements">Enhancements</h2>
+<ul>
+<li>Support for Visual Studio Mac 7.2 + 7.3</li>
+<li>Support for Roslyn 2.3.</li>
+<li>MFractor now regularly checks for updates against the addin server and let's you know when there's been a new release.</li>
+<li>Enhanced code completion for MFractor configuration files.</li>
+<li>Code analysis for MFractor configuration files to check for common gotchas.</li>
+<li>Specify a new width and height for the highest density when you import an image with the importing wizard.</li>
+<li>The <code>Generate constructor for all readonly members</code> will now include constructor arguments for auto properties as well as readonly fields.</li>
+<li>The empty XAML attribute and node analysers have been removed as they were plain annoying (and frequently incorrect).</li>
+<li>MFractor Lite now allows up to 5 pro feature uses per day.</li>
+<li>Internally, MFractor now uses Roslyn's concept of text spans instead of line/columns. This significantly reduces MFractors memory footprint and improves the speed of all analysers.</li>
+<li>The following features are now professional only:<ul>
+<li>Image tooltips.</li>
+<li>Go To View Model, Go To Code Behind and Go To View.</li>
+<li>Android resource IntelliSense.</li>
+</ul>
+</li>
+<li>Significantly expanded documentation, we now, where possible, show a preview of the code MFractor will generate under default settings.</li>
+<li>Branded MFractor code completion.</li>
+</ul>
 <h2 id="bug-fixes">Bug Fixes</h2>
 <ul>
-<li>Fixed: MFractor no longer bundles the Microsoft.CodeAnalysis (Roslyn) assemblies into its distribution package. This caused critical issues in VSMac 7.2.</li>
+<li>Fixed: MFractor no longer bundles the Microsoft.CodeAnalysis (Roslyn) assemblies into its distribution package. This caused critical issues in VSMac 7.2 😱</li>
 <li>Fixed: Upgraded MFractor to use Microsoft.CodeAnalysis (Roslyn) 2.3. This required several code generators to be upgraded.</li>
 <li>Fixed: A regression in the <em>Migrate OnPlatform</em> code action caused it to failed.</li>
+<li>Fixed: When generating property bindings with a string value, the string would inserted as syntax rather than a string literal in the view model. (EG: <code>"mystring"</code>).</li>
+<li>Fixed: When generating a bindable property, MFractor would always use <code>bool</code> as the instance property type.</li>
+<li>Fixed: The XAML analyser would frequently fail to infer the BindingContext. It now uses the same MVVM resolution logic as the MVVM shortcuts.</li>
+<li>Fixed: The ValueConversionAttribute would occasionally fail to generate.</li>
+<li>Fixed: The Android XML text editor would always trigger license notifications.</li>
 </ul>
 <h2 id="deprecations">Deprecations</h2>
 <ul>
@@ -576,7 +572,7 @@
         <a href="../v3-2/" class="btn btn-neutral float-right" title="v3.2">Next <span class="icon icon-circle-arrow-right"></span></a>
       
       
-        <a href="../../configuration/resx/" class="btn btn-neutral" title="ResX"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../../code-generation/xml/" class="btn btn-neutral" title="XML"><span class="icon icon-circle-arrow-left"></span> Previous</a>
       
     </div>
   
@@ -607,7 +603,7 @@
           <a href="https://github.com/mfractor/mfractor.github.io" class="icon icon-github" style="float: left; color: #fcfcfc"> GitHub</a>
       
       
-        <span><a href="../../configuration/resx/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+        <span><a href="../../code-generation/xml/" style="color: #fcfcfc;">&laquo; Previous</a></span>
       
       
         <span style="margin-left: 15px"><a href="../v3-2/" style="color: #fcfcfc">Next &raquo;</a></span>

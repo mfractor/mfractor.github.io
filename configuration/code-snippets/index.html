@@ -9,7 +9,7 @@
   <meta name="author" content="Matthew Robbins">
   <link rel="shortcut icon" href="../../img/favicon.ico">
   
-  <title>Navigation Tools - mfractor docs</title>
+  <title>Code Snippets - mfractor docs</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="../../css/theme.css" type="text/css" />
@@ -23,9 +23,9 @@
   
   <script>
     // Current page data
-    var mkdocs_page_name = "Navigation Tools";
-    var mkdocs_page_input_path = "xamarin-android/navigation-tools.md";
-    var mkdocs_page_url = "/xamarin-android/navigation-tools/";
+    var mkdocs_page_name = "Code Snippets";
+    var mkdocs_page_input_path = "configuration/code-snippets.md";
+    var mkdocs_page_url = "/configuration/code-snippets/";
   </script>
   
   <script src="../../js/jquery-2.1.1.min.js"></script>
@@ -124,35 +124,57 @@
   
   
 <li class="toctree-l1 ">
-  <a class="" href="../../configuration/getting-started/">Getting Started</a>
+  <a class="" href="../getting-started/">Getting Started</a>
+  
+</li>
+
+  
+  
+<li class="toctree-l1 current">
+  <a class="current" href="./">Code Snippets</a>
+  
+  <ul>
+    
+      
+    
+      
+      <li class="toctree-l3"><a href="#introduction">Introduction</a></li>
+      
+    
+      
+      <li class="toctree-l3"><a href="#code-snippet-basics">Code Snippet Basics</a></li>
+      
+    
+      
+      <li class="toctree-l3"><a href="#using-visual-studio-macs-code-snippets">Using Visual Studio Macs Code Snippets</a></li>
+      
+    
+      
+      <li class="toctree-l3"><a href="#using-project-code-snippets">Using Project Code Snippets</a></li>
+      
+    
+  </ul>
   
 </li>
 
   
   
 <li class="toctree-l1 ">
-  <a class="" href="../../configuration/code-snippets/">Code Snippets</a>
+  <a class="" href="../configuration-property-types/">Types</a>
   
 </li>
 
   
   
 <li class="toctree-l1 ">
-  <a class="" href="../../configuration/configuration-property-types/">Types</a>
+  <a class="" href="../resx/">ResX</a>
   
 </li>
 
   
   
 <li class="toctree-l1 ">
-  <a class="" href="../../configuration/resx/">ResX</a>
-  
-</li>
-
-  
-  
-<li class="toctree-l1 ">
-  <a class="" href="../../configuration/xamarin-forms/">Xamarin.Forms</a>
+  <a class="" href="../xamarin-forms/">Xamarin.Forms</a>
   
 </li>
 
@@ -207,49 +229,15 @@
   <li><span>Xamarin.Android</span></li>
   
   
-<li class="toctree-l1 current">
-  <a class="current" href="./">Navigation Tools</a>
-  
-  <ul>
-    
-      
-    
-      
-      <li class="toctree-l3"><a href="#overview">Overview</a></li>
-      
-    
-      
-      <li class="toctree-l3"><a href="#c-resource-expressions">C# Resource Expressions</a></li>
-      
-    
-      
-      <li class="toctree-l3"><a href="#xml-resource-expressions">Xml Resource Expressions</a></li>
-      
-    
-      
-      <li class="toctree-l3"><a href="#go-to-resource-declaration">Go To Resource Declaration</a></li>
-      
-    
-      
-      <li class="toctree-l3"><a href="#find-all-resource-usages">Find All Resource Usages</a></li>
-      
-    
-      
-      <li class="toctree-l3"><a href="#resource-tooltips">Resource Tooltips</a></li>
-      
-    
-      
-      <li class="toctree-l3"><a href="#image-tooltips">Image Tooltips</a></li>
-      
-    
-  </ul>
+<li class="toctree-l1 ">
+  <a class="" href="../../xamarin-android/navigation-tools/">Navigation Tools</a>
   
 </li>
 
   
   
 <li class="toctree-l1 ">
-  <a class="" href="../resource-intellisense/">Resource IntelliSense</a>
+  <a class="" href="../../xamarin-android/resource-intellisense/">Resource IntelliSense</a>
   
 </li>
 
@@ -496,92 +484,107 @@
     
       
         
-          <li>Xamarin.Android &raquo;</li>
+          <li>Configuring MFractor &raquo;</li>
         
       
     
-    <li>Navigation Tools</li>
+    <li>Code Snippets</li>
   </ul>
   <hr/>
 </div>
           <div role="main">
             <div class="section">
               
-                <h2 id="resource-expressions-and-code-navigation">Resource Expressions And Code Navigation</h2>
-<p><em>Learn the C# and xml expressions that activate tooltips and go-to declaration in MFractor for Android</em></p>
-<h2 id="overview">Overview</h2>
-<p>If you’re a Xamarin.Android developer building apps using the native APIs then chances are you spend a lot of time navigating resource code.</p>
-<p>This becomes tedious when you are constantly doing manual searches for your target, browsing through the find results and then clicking the search result to jump to it. What’s more, using go-to declaration on a C# resource symbol takes you to its integer id! It’s tremendously frustrating and a massive time-waster.</p>
-<p>And this problem gets worse the bigger your project is; large Android applications can have dozens to hundreds of xml resources that need to be scanned each time a search takes place.</p>
-<p>MFractor addresses these navigation issues by overriding the default “go to declaration” keyboard shortcuts when you are in the context of a resource expression.</p>
-<p>These expressions come in 2 flavours:</p>
-<ul>
-<li>C#: Code expressions within C# that access the generated Resources class contained in the Resources.Designer.cs file. For instance; Resource.Layout.myLayout.</li>
-<li>XML: Code expressions within Android xml resources that point to another resource. For instance; @layout/myLayout.</li>
-</ul>
-<p>When MFractor detects the cursor is within one of these expressions, resource tooltips and go-to-declaration become active. This enables fast and efficient code navigation.</p>
-<p>That is much faster than manual searching! Now lets go over each of these expression types.</p>
-<h2 id="c-resource-expressions">C# Resource Expressions</h2>
-<p>For C#, resource expressions are always resolved against the Resource.Designer.cs file that is generated alongside a project. This section assumes a basic familiarity of the Resource.Designer.cs file; if this is a new concept I suggested reading the <a href="https://developer.xamarin.com/guides/android/application_fundamentals/resources_in_android/part_1_-_android_resource_basics/">Android Resource Basics</a> page in Xamarins documentation.</p>
-<p>The components of a supported resource expression are formatted like so:</p>
-<pre><code>[Project Namespace].[Resource].[ResourceType].[ResourceName]
+                <h2 id="code-snippets">Code Snippets</h2>
+<p><em>Using Code Snippets to completely customise the code that MFractor generates</em></p>
+<h2 id="introduction">Introduction</h2>
+<p>As a software developer and MFractor user you'll likely find that MFractor, by default, doesn't quite generate code that's suited to your projects conventions.</p>
+<p>Luckily, we can configure many of MFractor's code actions to use a custom code snippet when generating code!</p>
+<h2 id="code-snippet-basics">Code Snippet Basics</h2>
+<p>MFractor uses the same conventions for code snippets as the Visual Studio family; you write a C# code block and replace areas that can be substituted with arguments enclosed in <code>$</code>.</p>
+<p>For example, the following code snippet specifies the body for a property that calls the <code>NotifyPropertyChanged</code> method:</p>
+<pre><code>private $type$ _$name$;
+public $type$ $name$
+{
+    get
+    {
+        return _$name$;
+    }
+    set
+    {
+        _$name$ = value;
+        NotifyPropertyChanged(nameof($name$));
+    }
+}
 </code></pre>
 
-<p>Where:</p>
-<ul>
-<li>[Project Namespace] is the project namespace that the Resources designer class resides. This component is either:</li>
-<li>Implicit: The encapsulating namespace is the same as the resource designers namespace or a using statement provides the resource designer class.</li>
-<li>Explicit: The expression explicitly uses the namespace that owns the resource class.</li>
-<li>Resource is the constant Resource class that wraps the declarations of the ResourceType sub-classes.</li>
-<li>ResourceType is the nested resource type class.</li>
-<li>ResourceName is the name of the resource being referenced. MFractor will only trigger its behaviour when your caret or mouse cursor is over this component of the c# resource expression.</li>
-</ul>
-<p>An example of a valid expression would be:</p>
-<pre><code>Resources.String.my_string;
+<p>To control the type of the new property, we've replaced each spot where the property type would be used with the code snippet argument <code>$type$</code>. Likewise, we've done the same with the <code>$name$</code> argument.</p>
+<p>If the new property was a <code>string</code> with the name <code>Message</code>, MFractor would subsitute each occurance of <code>$type$</code> with <code>string</code> and each occurance of <code>$name$</code> with <code>Message</code> like so:</p>
+<pre><code>private string _Message;
+public string Message
+{
+    get
+    {
+        return _Message;
+    }
+    set
+    {
+        _Message = value;
+        NotifyPropertyChanged(nameof(Message));
+    }
+}
 </code></pre>
 
-<p>When your cursor is over the my_string component of this expression, MFractor will attempt to resolve a string resource named my_string.</p>
-<h2 id="xml-resource-expressions">Xml Resource Expressions</h2>
-<p>Xml resource expressions come in 3 different categories:</p>
-<ul>
-<li>Reference expressions point directly to a resource. They begin with the ‘@’ character.</li>
-<li>Declarative expressions declare a new resource. These are only used with ids. They begin with a ‘@+’ character sequence.</li>
-<li>Theme expression point to a component of the currently scoped theme. They begin with a ‘?’ character.</li>
-</ul>
-<p>Reference and declarative expression are structured with the following syntax:</p>
-<pre><code>@[+][PackageName:]resourceType/resourceName
+<p>When possible, MFractor's internal code generators use a code snippet to create code. These code snippets are exposed as configurable properties and are named <code>Snippet</code>.</p>
+<p>To identify what you can</p>
+<p>We can customise MFractor by providing code snippets through two sources: <a href="#using-visual-studio-macs-code-snippets">Visual Studio for Macs snippets</a> and <a href="#using-project-code-snippets">code snippets included within your project</a>.</p>
+<h2 id="using-visual-studio-macs-code-snippets">Using Visual Studio Macs Code Snippets</h2>
+<p>To enable MFractor to use a code snippet from Visual Studio Mac, we need to create a code snippet inside Visual Studio Mac and then link it up through an MFractor config file.</p>
+<p>In the top menu bar, click on <strong>Visual Studio</strong> and then <strong>Preferences</strong>:</p>
+<p><img alt="Access Visual Studio Macs code snippet editor through the preferences menu" src="../../img/code-snippets/code-snippets-preferences-menu.png" /></p>
+<p>In the preferences window that opens, browse to <strong>Code Snippets...</strong> and then select <strong>Add</strong>:</p>
+<p><img alt="Visual Studio for Macs code snippets pane" src="../../img/code-snippets/code-snippets-preferences-window.png" /></p>
+<p>This will open the <strong>New template</strong> wizard. For this code snippet we'll create a template for a new property that triggers a property changed method.</p>
+<p>We'll set our code snippets name to <code>notify_changed_property</code> and enter the , define our code as below:</p>
+<p><img alt="Visual Studio for Macs code template pane" src="../../img/code-snippets/code-template-window.png" /></p>
+<p>Lastly, we need to tell MFractor to use our code snippet when generating view model properties. We do this through an MFractor configuraiton file.</p>
+<p>Create a file named <code>app.mfc.xml</code> in the root directory with the following content:</p>
+<pre><code>&lt;mfractor&gt;
+  &lt;configure id=&quot;com.mfractor.code_gen.forms.csharp.view_model_property&quot;
+    &lt;property name=&quot;Snippet&quot; source=&quot;ide&quot; value=&quot;notify_changed_property&quot;/&gt;
+  &lt;/configure&gt;
+&lt;/mfractor&gt;
 </code></pre>
 
-<p>Where:</p>
-<ul>
-<li>
-<p>@[+] is the resource reference symbol.</p>
-</li>
-<li>
-<p>PackageName is an optional component that points to the package the resource is within.</p>
-</li>
-<li>resourceType is the resource type.</li>
-<li>resourceName is the name of the resource.</li>
-</ul>
-<p>An example of this would be:</p>
-<pre><code>@string/my_string
+<p>This code connects the <a href="../../code-generation/xamarin-forms/#view-model-property-generator">View Model Property Generator</a> <code>Snippet</code> to the <code>notify_changed_property</code> code snippet in Visual Studio for Mac.</p>
+<h2 id="using-project-code-snippets">Using Project Code Snippets</h2>
+<p>MFractor can also use code snippets that are included within your project. This is useful as it allows you to include  code snippets amongst you team</p>
+<p>To do this, create a new folder named <strong>Snippets</strong> in the root of your project:</p>
+<p><img alt="Creating the code snippets folder" src="../../img/code-snippets/code-snippets-folders.png" /></p>
+<p>Next, create a new text file inside the <code>Snippets</code> folder named <code>notify_changed_property.txt</code> and enter the following content:</p>
+<pre><code>private $type$ _$name$;
+public $type$ $name$
+{
+    get
+    {
+        return _$name$;
+    }
+    set
+    {
+        _$name$ = value;
+        NotifyPropertyChanged(nameof($name$));
+    }
+}
 </code></pre>
 
-<p>When your cursor is any component of this expression, MFractor will attempt to resolve a pre-existing string resource named my_string.</p>
-<p>Lastly, theme resource expressions point to a component of the current theme. These are structured with the following syntax:</p>
-<pre><code>?[PackageName:][ResourceType/]themeItemName
+<p>Lastly, we need to connect the <a href="../../code-generation/xamarin-forms/#view-model-property-generator">View Model Property Generator</a> <code>Snippet</code> to <code>notify_changed_property.txt</code> code snippet included in our project.</p>
+<p>Create a file named <code>app.mfc.xml</code> in the root directory with the following content:</p>
+<pre><code>&lt;mfractor&gt;
+  &lt;configure id=&quot;com.mfractor.code_gen.forms.csharp.view_model_property&quot;
+    &lt;property name=&quot;Snippet&quot; source=&quot;file&quot; value=&quot;Snippets/notify_changed_property.txt&quot;/&gt;
+  &lt;/configure&gt;
+&lt;/mfractor&gt;
 </code></pre>
-
-<p>Where:</p>
-<ul>
-<li>PackageName is the optional package name the theme component resides within.</li>
-<li>ResourceType is the optional resource type of the theme component. This is typically inferred.</li>
-<li>themeItemName the name of the theme item.</li>
-</ul>
-<h2 id="go-to-resource-declaration">Go To Resource Declaration</h2>
-<h2 id="find-all-resource-usages">Find All Resource Usages</h2>
-<h2 id="resource-tooltips">Resource Tooltips</h2>
-<h2 id="image-tooltips">Image Tooltips</h2>
               
             </div>
           </div>
@@ -589,10 +592,10 @@
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="../resource-intellisense/" class="btn btn-neutral float-right" title="Resource IntelliSense">Next <span class="icon icon-circle-arrow-right"></span></a>
+        <a href="../configuration-property-types/" class="btn btn-neutral float-right" title="Types">Next <span class="icon icon-circle-arrow-right"></span></a>
       
       
-        <a href="../../xamarin-forms/value-converter-type-safety/" class="btn btn-neutral" title="Value Converter Type Safety"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../getting-started/" class="btn btn-neutral" title="Getting Started"><span class="icon icon-circle-arrow-left"></span> Previous</a>
       
     </div>
   
@@ -623,10 +626,10 @@
           <a href="https://github.com/mfractor/mfractor.github.io" class="icon icon-github" style="float: left; color: #fcfcfc"> GitHub</a>
       
       
-        <span><a href="../../xamarin-forms/value-converter-type-safety/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+        <span><a href="../getting-started/" style="color: #fcfcfc;">&laquo; Previous</a></span>
       
       
-        <span style="margin-left: 15px"><a href="../resource-intellisense/" style="color: #fcfcfc">Next &raquo;</a></span>
+        <span style="margin-left: 15px"><a href="../configuration-property-types/" style="color: #fcfcfc">Next &raquo;</a></span>
       
     </span>
 </div>
