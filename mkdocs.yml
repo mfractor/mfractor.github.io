@@ -66,6 +66,7 @@ pages:
   - ResX: code-generation/resx.md
   - XML: code-generation/xml.md
 - Release Notes:
+    - v3.4: release-notes/v3-4.md
     - v3.3: release-notes/v3-3.md
     - v3.2: release-notes/v3-2.md
     - v3.1: release-notes/v3-1.md

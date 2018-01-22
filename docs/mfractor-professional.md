@@ -2,23 +2,13 @@
 
 *Everything you need to know about the Lite and Professional version of MFractor for Visual Studio Mac*
 
-## MFractor Lite VS MFractor Professional
+## Lite VS Professional
 
 MFractor comes in both a free (lite) and a paid (Professional) version.
 
-The free version contains most features that are included in MFractor Professional; as a Xamarin developer you will find the free version will still help out your day-to-day Xamarin.Android and Xamarin.Forms development a heck of a lot!
+MFractor Lite is restricted to 2 XAML documents per day and does not include C# inspections or refactorings.
 
-If you would like C# code refactoring support, mobile-specific code diagnostics or wish to tweak the code that MFractor creates then you will need to pay for a MFractor Professional license.
 
-## Feature Map
-
-| Feature | Lite | Professional  |
-|------|:----:|:-----------:|
-| Xamarin.Forms | Limited | Full |
-| Xamarin.Android | Limited | Full |
-| C# |  | Full |
-| Customisation |  | Full |
-| Support | Slack, Twitter | Slack, Twitter, Direct Email, Priority Bug Fixes |
 
 ## Purchase An MFractor Professional License
 
@@ -32,11 +22,13 @@ Professional licenses:
  * Include 1 year of maintenance for Professional features.
  * Include priority for feature requests and bug fixes.
 
+To purchase a license, head to
+
 To enquire about purchasing an MFractor Professional license, please email **hello@mfractor.com**.
 
 ## Renewing A Professional License
 
-When your license is about to expire, you can purchase a new license by contacting me at **hello@mfractor.com**. I will issue a new license for 366 + the period until your current license expires.
+When your license is about to expire, you can purchase a new license by contacting me at **hello@mfractor.com**. We will issue a new license for 366 + the period until your current license expires.
 
 ## Refund Policy
 
