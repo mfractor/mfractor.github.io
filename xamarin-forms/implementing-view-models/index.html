@@ -214,10 +214,6 @@
       
     
       
-      <li class="toctree-l3"><a href="#limitations">Limitations</a></li>
-      
-    
-      
       <li class="toctree-l3"><a href="#summary">Summary</a></li>
       
     
@@ -229,27 +225,6 @@
   
 <li class="toctree-l1 ">
   <a class="" href="../value-converter-type-safety/">Value Converter Type Safety</a>
-  
-</li>
-
-  
-</ul>
-<li>
-          
-            <li>
-<ul class="subnav">
-  <li><span>Xamarin.Android</span></li>
-  
-  
-<li class="toctree-l1 ">
-  <a class="" href="../../xamarin-android/navigation-tools/">Navigation Tools</a>
-  
-</li>
-
-  
-  
-<li class="toctree-l1 ">
-  <a class="" href="../../xamarin-android/resource-intellisense/">Resource IntelliSense</a>
   
 </li>
 
@@ -425,6 +400,20 @@
   
 <li class="toctree-l1 ">
   <a class="" href="../../code-generation/xml/">XML</a>
+  
+</li>
+
+  
+</ul>
+<li>
+          
+            <li>
+<ul class="subnav">
+  <li><span>Localisation</span></li>
+  
+  
+<li class="toctree-l1 ">
+  <a class="" href="../../localisation/">Localisation</a>
   
 </li>
 
@@ -677,11 +666,6 @@ public class LoginViewModel
 }
 </code></pre>
 
-<h2 id="limitations">Limitations</h2>
-<p>There are a some limitations in the <strong>Implement View Model</strong> refactoring:</p>
-<ul>
-<li>When a Xaml view has an item that uses a <code>DataTemplate</code> to declare an inline view, MFractor <em>will not</em> gather the bindings inside the data template. A refactoring action to generate bindings for data templates will be coming in a future MFractor release.</li>
-</ul>
 <h2 id="summary">Summary</h2>
 <p>By building our apps using the <strong>Xaml first</strong> mindset, we can leverage MFractor's binding generation to implement our view models quickly.</p>
 <p>In this tutorial we learnt:</p>

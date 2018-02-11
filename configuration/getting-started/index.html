@@ -131,19 +131,23 @@
       
     
       
-      <li class="toctree-l3"><a href="#configuration-files">Configuration Files</a></li>
+      <li class="toctree-l3"><a href="#configuring-mfractor-files">Configuring MFractor Files</a></li>
       
     
       
-      <li class="toctree-l3"><a href="#configuration-identifiers">Configuration Identifiers</a></li>
+      <li class="toctree-l3"><a href="#targeting-an-element-for-configuration">Targeting An Element for Configuration</a></li>
       
     
       
-      <li class="toctree-l3"><a href="#configurable-properties">Configurable Properties</a></li>
+      <li class="toctree-l3"><a href="#configuring-properties">Configuring Properties</a></li>
       
     
       
       <li class="toctree-l3"><a href="#code-generation-dependencies">Code Generation Dependencies</a></li>
+      
+    
+      
+      <li class="toctree-l3"><a href="#hidden-configuration-files">Hidden Configuration Files</a></li>
       
     
   </ul>
@@ -217,27 +221,6 @@
   
 <li class="toctree-l1 ">
   <a class="" href="../../xamarin-forms/value-converter-type-safety/">Value Converter Type Safety</a>
-  
-</li>
-
-  
-</ul>
-<li>
-          
-            <li>
-<ul class="subnav">
-  <li><span>Xamarin.Android</span></li>
-  
-  
-<li class="toctree-l1 ">
-  <a class="" href="../../xamarin-android/navigation-tools/">Navigation Tools</a>
-  
-</li>
-
-  
-  
-<li class="toctree-l1 ">
-  <a class="" href="../../xamarin-android/resource-intellisense/">Resource IntelliSense</a>
   
 </li>
 
@@ -422,6 +405,20 @@
           
             <li>
 <ul class="subnav">
+  <li><span>Localisation</span></li>
+  
+  
+<li class="toctree-l1 ">
+  <a class="" href="../../localisation/">Localisation</a>
+  
+</li>
+
+  
+</ul>
+<li>
+          
+            <li>
+<ul class="subnav">
   <li><span>Release Notes</span></li>
   
   
@@ -504,8 +501,9 @@
               
                 <h2 id="configuration">Configuration</h2>
 <p><em>Learn to customise MFractor to your project needs</em></p>
-<h2 id="configuration-files">Configuration Files</h2>
-<p>MFractor configuration files are XML based and end with the extension <code>.mfc.xml</code>; a configuration file can be named anything and be placed in any directory in a project as long as it ends in the extension <code>.mfc.xml</code>.</p>
+<h2 id="configuring-mfractor-files">Configuring MFractor Files</h2>
+<p>MFractor configuration files allow you to change the behaviour of MFractor to better suite it to your own working style.</p>
+<p>MFractor configuration files are an XML based file  <code>.mfc.xml</code>; a configuration file can be named anything and be placed in any directory in a project as long as it ends in the extension <code>.mfc.xml</code>.</p>
 <p>How does it work? Let's consider the following configuration file:</p>
 <p><strong>app.mfc.xml</strong></p>
 <pre><code>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; ?&gt;
@@ -530,9 +528,10 @@
 </ul>
 </li>
 </ul>
-<h2 id="configuration-identifiers">Configuration Identifiers</h2>
-<p>Every element inside MFractor that can be configured has it's own unique <strong>configuration identifier</strong>. This a package based string that indicates the software, element type and element name inside the name.</p>
-<p>For example, the Xamarin.Forms <a href="../../code-actions/xaml/generate/#implement-view-model">Implement View Model</a> code action has the configuration identifier <code>com.mfractor.code_actions.xaml.implement_view_model</code>. A features id is located below the heading inside the documentation:</p>
+<h2 id="targeting-an-element-for-configuration">Targeting An Element for Configuration</h2>
+<p>Every element inside MFractor that can be configured has it's own unique <strong>configuration identifier</strong>. This a unique string that can be used to reference a particular code action, code generator, code analyser etc within MFractor.</p>
+<p>For example, the Xamarin.Forms <a href="../../code-actions/xaml/generate/#implement-view-model">Implement View Model</a> code action has the configuration identifier <code>com.mfractor.code_actions.xaml.implement_view_model</code>.</p>
+<p>To discover the ID of a feature you want to customise, locate that feature in MFractor's documentation; a features id is located below the heading inside the documentation:</p>
 <p><img alt="Location of configuration identifier" src="../../img/configuration/config-id.png" /></p>
 <p>If we wanted to change the behaviour of the <em>Implement View Model</em> code action, we add a <code>configure</code> element into our <code>.mfc.xml</code> and target the identifier <code>com.mfractor.code_actions.xaml.implement_view_model</code>:</p>
 <pre><code>&lt;configure id=&quot;com.mfractor.code_actions.xaml.implement_view_model&quot;&gt;
@@ -540,7 +539,7 @@
 </code></pre>
 
 <p>Inside the <code>configure</code> element we can now specify multiple <code>property</code> tags to change properties inside the configurable.</p>
-<h2 id="configurable-properties">Configurable Properties</h2>
+<h2 id="configuring-properties">Configuring Properties</h2>
 <p>After targeting a configurable, we can use <strong>Configurable Properties</strong> to change the behaviour of that feature.</p>
 <p>Configurable properties are settings that can be edited on a configurable through the use of the <code>property</code> tag.</p>
 <p>We place a <code>property</code> tag inside a <code>configure</code> tag; we can then target the property name using the <code>name</code> attribute and apply a new value using the <code>value</code> attribute.</p>
@@ -554,6 +553,7 @@
 <p>Often multiple code actions need to generate the same source; rather than configuring each code action separately each code action reuses a common <strong>code generator</strong>. A code generator is a configurable that encapsulates the logic needed to generate a specific piece of code.</p>
 <p>For example, both the <a href="../../code-actions/xaml/generate/#implement-view-model">Implement View Model</a> and <a href="../../code-actions/xaml/fix/#generate-missing-binding-command-stub">Generate Missing Command</a> use the <a href="../../code-generation/xamarin-forms/#generate-icommand-implementation">Generate ICommand Implementation</a> code generator; this allows us to set the <code>ICommand</code> type once and have the behaviour propagate through all code-actions that need to generate an ICommand implementation.</p>
 <p>This documentation site lists the code-generation dependencies under the <strong>Uses:</strong> section.</p>
+<h2 id="hidden-configuration-files">Hidden Configuration Files</h2>
               
             </div>
           </div>
