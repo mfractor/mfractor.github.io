@@ -37,9 +37,6 @@ pages:
   - Analysis: xamarin-forms/analysis.md
   - Implementing View Models: xamarin-forms/implementing-view-models.md
   - Value Converter Type Safety: xamarin-forms/value-converter-type-safety.md
-- Xamarin.Android:
-  - Navigation Tools: xamarin-android/navigation-tools.md
-  - Resource IntelliSense: xamarin-android/resource-intellisense.md
 - Code Actions:
   - C#:
     - C# Code Actions: code-actions/csharp.md
@@ -65,6 +62,8 @@ pages:
   - Xaml: code-generation/xaml.md
   - ResX: code-generation/resx.md
   - XML: code-generation/xml.md
+- Localisation:
+  - Localisation: localisation.md
 - Release Notes:
     - v3.4: release-notes/v3-4.md
     - v3.3: release-notes/v3-3.md

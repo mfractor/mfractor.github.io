@@ -102,6 +102,38 @@ The inner `DataTemplate` has a `TextCell` where the `Text` property is provided 
 
 When the return type is an `IEnumerable` or array, MFractor unwraps the generic or array and grabs the inner type. This provides the binding context type for the binding expressions used within the data template.
 
+## Cross Project Binding Context resolution
+
+If your views and view models are in separate projects and you'd like to use implicit MVVM resolution, you'll need to give MFractor a nudge in the right direction.
+
+Unfortunately, it is too expensive to scan the solution to match view models to pages; the scan takes anywhere between 10's to 100's of milliseconds in a moderately sized solution. Therefore, for efficiency reasons, you need to use an MFractor configuration to enable cross-project MVVM resolution.
+
+To make MFractor use View Models in a project separate to your views, you'll need to create an MFractor config for each project.
+
+In the project that contains your views, create a file named app.mfc.xml with the following content:
+
+```
+<?xml version="1.0" encoding="UTF-8" ?>
+<mfractor>
+    <configure id="com.mfractor.configuration.forms.mvvm_resolution">
+        <property name="ViewModelsProjectName" value="TODO: Insert the name of your view models project as it appears in the solution explorer"/>
+    </configure>
+</mfractor>  
+```
+
+In the project that contains your view models, create a file named app.mfc.xml with the following content:
+
+```
+<?xml version="1.0" encoding="UTF-8" ?>
+<mfractor>
+    <configure id="com.mfractor.configuration.forms.mvvm_resolution">
+        <property name="ViewsProjectName" value="TODO: Insert the name of your views project as it appears in the solution explorer"/>
+    </configure>
+</mfractor>
+```
+
+I've attached a sample project that supports cross-project MVVM resolution to help you set up.
+
 ##Summary
 In summary, we've learnt that MFractor will use the binding context to power the Xaml analyser and navigation improvements.
 
@@ -109,3 +141,4 @@ In summary, we've learnt that MFractor will use the binding context to power the
  * We can explicitly specify a binding context by assigning the `BindingContext` property of any Xaml element.
  * When we name our code files using the Page.xaml, Page.xaml.cs and ViewModel convention, MFractor will assume an implicit MVVM relationship.
  * Data templates use the return type of the wrapping views `ItemSource` property.
+ * We can setup a cross project  templates use the return type of the wrapping views `ItemSource` property.

@@ -197,11 +197,6 @@ public System.Object Password
 }
 ```
 
-##Limitations
-There are a some limitations in the **Implement View Model** refactoring:
-
-* When a Xaml view has an item that uses a `DataTemplate` to declare an inline view, MFractor *will not* gather the bindings inside the data template. A refactoring action to generate bindings for data templates will be coming in a future MFractor release.
-
 ##Summary
 By building our apps using the **Xaml first** mindset, we can leverage MFractor's binding generation to implement our view models quickly.
 

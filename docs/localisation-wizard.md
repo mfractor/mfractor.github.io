@@ -20,6 +20,7 @@
 ![Using the localisation wizard to extract XAML strings into resource files](/img/forms/localisation-wizard.gif)
 
  - Follows Xamarins recommended approach
+ - Generating the necessary infrastructure automatically using MFractors localisation code action.
  - Need TranslateExtension (can customise this)
  - Need a ResX file.
  - Open through the code actions menus.

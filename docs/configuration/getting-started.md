@@ -3,9 +3,11 @@
 
 *Learn to customise MFractor to your project needs*
 
-## Configuration Files
+## Configuring MFractor Files
 
-MFractor configuration files are XML based and end with the extension `.mfc.xml`; a configuration file can be named anything and be placed in any directory in a project as long as it ends in the extension `.mfc.xml`.
+MFractor configuration files allow you to change the behaviour of MFractor to better suite it to your own working style.
+
+MFractor configuration files are an XML based file  `.mfc.xml`; a configuration file can be named anything and be placed in any directory in a project as long as it ends in the extension `.mfc.xml`.
 
 How does it work? Let's consider the following configuration file:
 
@@ -30,11 +32,13 @@ Let's examine each of the each element in the above configuration in depth:
     - The `name` attribute specifies the configurable property we wish to edit.
     - The `value` attribute specifies the value we wish to set the property to.
 
-## Configuration Identifiers
+## Targeting An Element for Configuration
 
-Every element inside MFractor that can be configured has it's own unique **configuration identifier**. This a package based string that indicates the software, element type and element name inside the name.
+Every element inside MFractor that can be configured has it's own unique **configuration identifier**. This a unique string that can be used to reference a particular code action, code generator, code analyser etc within MFractor.
 
-For example, the Xamarin.Forms [Implement View Model](/code-actions/xaml/generate.md#implement-view-model) code action has the configuration identifier `com.mfractor.code_actions.xaml.implement_view_model`. A features id is located below the heading inside the documentation:
+For example, the Xamarin.Forms [Implement View Model](/code-actions/xaml/generate.md#implement-view-model) code action has the configuration identifier `com.mfractor.code_actions.xaml.implement_view_model`.
+
+To discover the ID of a feature you want to customise, locate that feature in MFractor's documentation; a features id is located below the heading inside the documentation:
 
 ![Location of configuration identifier](/img/configuration/config-id.png)
 
@@ -47,7 +51,7 @@ If we wanted to change the behaviour of the *Implement View Model* code action, 
 
 Inside the `configure` element we can now specify multiple `property` tags to change properties inside the configurable.
 
-## Configurable Properties
+## Configuring Properties
 
 After targeting a configurable, we can use **Configurable Properties** to change the behaviour of that feature.
 
@@ -70,3 +74,5 @@ Often multiple code actions need to generate the same source; rather than config
 For example, both the [Implement View Model](/code-actions/xaml/generate/#implement-view-model) and [Generate Missing Command](/code-actions/xaml/fix/#generate-missing-binding-command-stub) use the [Generate ICommand Implementation](/code-generation/xamarin-forms/#generate-icommand-implementation) code generator; this allows us to set the `ICommand` type once and have the behaviour propagate through all code-actions that need to generate an ICommand implementation.
 
 This documentation site lists the code-generation dependencies under the **Uses:** section.
+
+## Hidden Configuration Files
