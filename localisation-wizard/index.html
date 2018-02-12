@@ -114,11 +114,15 @@
       
     
       
-      <li class="toctree-l3"><a href="#c">C</a></li>
+      <li class="toctree-l3"><a href="#the-localisation-wizard_1">The Localisation Wizard</a></li>
       
     
       
-      <li class="toctree-l3"><a href="#xamarinforms">Xamarin.Forms</a></li>
+      <li class="toctree-l3"><a href="#localising-xaml">Localising XAML</a></li>
+      
+    
+      
+      <li class="toctree-l3"><a href="#localising-csharp">Localising CSharp</a></li>
       
     
       
@@ -498,35 +502,39 @@
                 <h2 id="the-localisation-wizard">The Localisation Wizard</h2>
 <p><em>Using the localisation wizard to quickly and easily migrate string literals into application resources for localisation</em></p>
 <h2 id="introduction">Introduction</h2>
+<p>When building apps, it's very common to put text that displays in the user interface directly inside your C# or XAML. However, there is usually a point where you will need to support more than just one language.</p>
+<p>This presents a problem; you now need to convert all inline strings in XAML and C# into a localisation lookup, typically to a .resx file. The process of replacing each of these strings with a resource lookup is cumbersome, time-consume and error prone.</p>
+<p>To make the process faster, you can use MFractor's Localisation Wizard.</p>
+<h2 id="the-localisation-wizard_1">The Localisation Wizard</h2>
+<p>The localisation wizard finds all localisable strings in a C# or XAML file and allows you to migrate them into your projects .resx files.</p>
+<p>Once opened, the localisation wizard let's you step through all localisable strings within a document. You can choose the <code>.resx</code> file to place that string into, enter a key for the new resource and then selecting replace. Alternatively, you can apply the localisation action by press the <code>Return</code> key.</p>
+<p>If the string value already exists in the <code>.resx</code> file that you have chosen, MFractor warns you that it's a duplicate with a yellow exclamation icon. If you'd like to use the existing key for the string value, you can press <code>Shift+Return</code>.</p>
+<h2 id="localising-xaml">Localising XAML</h2>
+<p>When localising XAML, MFractor expects that you are following Xamarins recommended localisation practices as outlined in <a href="https://developer.xamarin.com/guides/xamarin-forms/advanced/localization/">Localizing Xamarin.Forms Apps with RESX Resource Files</a></p>
+<p>If you are just getting started with localising your XAML, you can use the <a href="../code-actions/xaml/generate/#generate-xaml-localisation-infrastructure">Generate Localisation Infrastructure</a> code action to quickly setup the needed files.</p>
+<p>Otherwise, for the localisation wizard to activate in XAML you will need the following:</p>
 <ul>
-<li>Why localise?</li>
-<li>Why use the</li>
+<li>A class named <code>TranslateExtension</code> located in a folder named <code>il8n</code>. It should resolve to the symbol <code>MyAppsDefaultNamespace.il8n.TranslateExtension</code>.</li>
+<li>One or more .rex files.</li>
 </ul>
-<h2 id="c">C</h2>
-<p><img alt="Using the localisation wizard to extract C# strings into resource files" src="../img/code-actions/csharp/localisation-wizard.gif" /></p>
-<ul>
-<li>Opening the localisation wizard in C#.</li>
-</ul>
-<h2 id="xamarinforms">Xamarin.Forms</h2>
+<p>If you'd like to use your own custom translation extension, you can target a different symbol by providing it's fully qualified type to the <a href="../code-generation/xamarin-forms/#stringlocalisation-generator">TranslateExtensionSymbol property in the string localisation generator</a>.</p>
+<p>Once you have setup the necessary infrastructure, you can open the localisation wizard by right clicking on any string literal that's provided to a bindable property and selecting <strong>Replace with a localised value lookup</strong>.</p>
 <p><img alt="Using the localisation wizard to extract XAML strings into resource files" src="../img/forms/localisation-wizard.gif" /></p>
-<ul>
-<li>Follows Xamarins recommended approach</li>
-<li>Generating the necessary infrastructure automatically using MFractors localisation code action.</li>
-<li>Need TranslateExtension (can customise this)</li>
-<li>Need a ResX file.</li>
-<li>Open through the code actions menus.</li>
-<li>Pick the resource file that MFractor should write the ResX entry into (MFractor will default to the first it finds)</li>
-<li>Optionally choose the resource file</li>
-<li>Enter a resource key</li>
-<li>Optionally enter a resource description</li>
-<li><em>Enter</em> to submit the localisation key and continue</li>
-<li>If a match</li>
-</ul>
+<h2 id="localising-csharp">Localising CSharp</h2>
+<p>In order to localise a C# file, you will need to have at least one .resx file present in the project you are localising.</p>
+<p>When you have at least one <code>.resx</code> file, you can access the localisation wizard by pressing <code>Option+Return</code> on a string literal.</p>
+<p>Under the quick fix menu that opens, choose <strong>Replace with resx lookup</strong>.</p>
+<p><img alt="Using the localisation wizard to extract C# strings into resource files" src="../img/code-actions/csharp/localisation-wizard.gif" /></p>
 <h2 id="configuration">Configuration</h2>
-<ul>
-<li>Targetting a default file.
- -</li>
-</ul>
+<p>When using the loclaisation wizard, MFractor will choose the first resource file it finds; for some users this may be undesirable.</p>
+<p>If you'd like to change the default <code>.resx</code> file that MFractor uses for localisation, you can customise it by including an MFractor configuration and targeting the <a href="../configuration/resx/#default-resource-file">Default Resource File</a> configuration.</p>
+<p><strong>app.mfc.xml</strong></p>
+<pre><code>&lt;mfractor&gt;
+  &lt;configure id=&quot;com.mfractor.configuration.resx.default_resource_file&quot;&gt;
+    &lt;property Name=&quot;ProjectFilePath&quot; value=&quot;Resources/Strings.resx&quot;/&gt;
+  &lt;/configure&gt;
+&lt;/mfractor&gt;
+</code></pre>
               
             </div>
           </div>
