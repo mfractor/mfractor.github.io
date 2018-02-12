@@ -12,5 +12,3 @@ The android localisation source gets all string values inside an Android project
 **Configuration Id: com.mfractor.localisation.resx.provider**
 
 Retrives all localisation values from ResX files in a project
-
-
