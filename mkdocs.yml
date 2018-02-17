@@ -41,6 +41,7 @@ pages:
   - C#:
     - C# Code Actions: code-actions/csharp.md
     - Android: code-actions/csharp/android.md
+    - Xamarin.Forms: code-actions/csharp/forms.md
   - Xamarin.Forms Xaml Code Actions:
     - Issue Fixing: code-actions/xaml/fix.md
     - Code Generation: code-actions/xaml/generate.md
@@ -62,8 +63,12 @@ pages:
   - Xaml: code-generation/xaml.md
   - ResX: code-generation/resx.md
   - XML: code-generation/xml.md
+- Code Completion:
+  - XAML IntelliSense: code-completion/xaml.md
 - Localisation:
   - Localisation: localisation.md
+- Utilities:
+  - Utilities: utilities.md
 - Release Notes:
     - v3.4: release-notes/v3-4.md
     - v3.3: release-notes/v3-3.md
