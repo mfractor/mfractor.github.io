@@ -67,7 +67,9 @@ pages:
   - XAML IntelliSense: code-completion/xaml.md
 - Localisation:
   - Localisation: localisation.md
-- Utilities:
+  - Translation: translation.md
+- Misc:
+  - Search: search.md
   - Utilities: utilities.md
 - Release Notes:
     - v3.4: release-notes/v3-4.md
