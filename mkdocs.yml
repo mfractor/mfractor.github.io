@@ -72,6 +72,7 @@ pages:
   - Search: search.md
   - Utilities: utilities.md
 - Release Notes:
+    - v3.5: release-notes/v3-5.md
     - v3.4: release-notes/v3-4.md
     - v3.3: release-notes/v3-3.md
     - v3.2: release-notes/v3-2.md
