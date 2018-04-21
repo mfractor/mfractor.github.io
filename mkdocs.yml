@@ -71,6 +71,7 @@ pages:
 - Misc:
   - Search: search.md
   - Utilities: utilities.md
+  - Debugging: debugging.md
 - Release Notes:
     - v3.5: release-notes/v3-5.md
     - v3.4: release-notes/v3-4.md
