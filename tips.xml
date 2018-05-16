@@ -1,2 +1,12 @@
-<tips>
-</tips>
+<?xml version="1.0" encoding="utf-16"?>
+<ProductTipManifest xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Tips>
+    <ProductTip>
+      <Text>You can quickly create an interface implementation using MFractors **Generate Interface** code action by tapping **Alt+Return** on an interface name and then choosing **Generate Interface**.</Text>
+      <ImageUrl>Resources/Images/generate-interface.gif</ImageUrl>
+      <FeatureUrl>code-actions/csharp#generate-interface-implementation</FeatureUrl>
+      <Identifier>com.mfractor.code_actions.csharp.generate_interface_implementation</Identifier>
+      <IsPaid>true</IsPaid>
+    </ProductTip>
+  </Tips>
+</ProductTipManifest>
