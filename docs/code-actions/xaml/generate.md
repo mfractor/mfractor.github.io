@@ -122,6 +122,9 @@ Generates a value converter to convert the return type of a binding expression i
 
 **Configuration Id: com.mfractor.code_actions.xaml.implement_view_model**
 
+
+![Need to create a view model for a XAML file? Use the generate view model action to generate a new class with default implementations of each data-binding!](/img/code-actions/xaml/generategenerate-view-model.gif)
+
 The **Implement View Model** code action detects when a xaml document has unimplemented bindings, gathers them all and then implements them in bulk into a new or existing view model.
 
 Consider the following Xaml code:
@@ -234,6 +237,9 @@ This code action will create the following:
 **[Professional Only](https://www.mfractor.com/buy?utm_source=docs&utm_medium=professional_only)**
 
 **Configuration Id: com.mfractor.code_actions.xaml.implement_missing_members**
+
+
+![Need to create a new bindable property for a custom control? Use the Generate Bindable Properties action to quickly create new bindable properties; it'll even figure out the property types for you!](/img/code-actions/xaml/generategenerate-bindable-properties.gif)
 
 When a control uses undefined members/properties in a Xaml view, this refactoring collects all missing properties, attempts to resolve their types and then generates them onto the control/class.
 

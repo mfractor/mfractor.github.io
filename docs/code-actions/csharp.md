@@ -91,6 +91,9 @@ Creates a new implementation of the selected interface.
 
 **Configuration Id: com.mfractor.code_actions.csharp.go_to_interface_implementation**
 
+
+![Need to find an interfaces implementation? MFractors Go-To Implementation shortcut will find classes that implement that interface and then jump you to that class!](/img/code-actions/csharpgo-to-implementation.gif)
+
 **Shortcut:** `Option + D`
 
 Navigates to the implementation of an interface, abstract class or any members of that interface/abstract class. If there are multiple implementations of this interface/class/member, shows a list of everywhere it is declared.

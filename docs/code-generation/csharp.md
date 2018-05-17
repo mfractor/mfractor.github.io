@@ -78,7 +78,7 @@ Generates an `event EventHandler<EventArgs>` declaration that can be bound again
 
 | Name | Type | Defaults To | Description |
 |------|------|-------------|-------------|
-| **Snippet** | `Code Snippet`<br/><br/>**Arguments**:<ul><li>`arguments_type`: The fully qualified type of the event arguments.</li><li>`event_type`: The fully qualified type of the event handler.</li><li>`name`: The name of the new event handler.</li></ul> | <code>public event <> ;</code> | What is the code snippet to use when creating a new event handler? |
+| **Snippet** | `Code Snippet`<br/><br/>**Arguments**:<ul><li>`name`: The name of the new event handler.</li><li>`event_type`: The fully qualified type of the event handler.</li><li>`arguments_type`: The fully qualified type of the event arguments.</li></ul> | <code>public event <> ;</code> | What is the code snippet to use when creating a new event handler? |
 
 ## Generate Event Handler Method
 
@@ -104,7 +104,7 @@ Generates a instance property with a getter and setter.
 
 | Name | Type | Defaults To | Description |
 |------|------|-------------|-------------|
-| **Snippet** | `Code Snippet`<br/><br/>**Arguments**:<ul><li>`name`: The name of the new propety.</li><li>`type`: The fully qualified type of the new property.</li><li>`value`: The value to assign to the new property.</li></ul> | <code>public  <br/>{<br/>    set;<br/>}</code> | What is the code snippet to use when creating the property declaration? |
+| **Snippet** | `Code Snippet`<br/><br/>**Arguments**:<ul><li>`value`: The value to assign to the new property.</li><li>`name`: The name of the new propety.</li><li>`type`: The fully qualified type of the new property.</li></ul> | <code>public  <br/>{<br/>    set;<br/>}</code> | What is the code snippet to use when creating the property declaration? |
 | **ReadOnlySnippet** | `Code Snippet`<br/><br/>**Arguments**:<ul><li>`value`: The value to assign to the new property.</li><li>`type`: The fully qualified type of the new property.</li><li>`name`: The name of the new propety.</li></ul> | <code>public  <br/>{<br/>    get;<br/>}</code> | What is the code snippet to use when creating a readonly property declaration? |
 | **WriteOnlySnippet** | `Code Snippet`<br/><br/>**Arguments**:<ul><li>`value`: The value to assign to the new property.</li><li>`name`: The name of the new propety.</li><li>`type`: The fully qualified type of the new property.</li></ul> | <code>public  <br/>{<br/>    get;<br/>    set;<br/>}</code> | What is the code snippet to use when creating a write only property declaration? |
 

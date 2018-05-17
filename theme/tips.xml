@@ -8,5 +8,40 @@
       <Identifier>com.mfractor.code_actions.csharp.generate_interface_implementation</Identifier>
       <IsPaid>true</IsPaid>
     </ProductTip>
+    <ProductTip>
+      <Text>Need to find an interfaces implementation? MFractors Go-To Implementation shortcut will find classes that implement that interface and then jump you to that class!</Text>
+      <ImageUrl>Resources/Images/go-to-implementation.gif</ImageUrl>
+      <FeatureUrl>code-actions/csharp#go-to-implementation</FeatureUrl>
+      <Identifier>com.mfractor.code_actions.csharp.go_to_interface_implementation</Identifier>
+      <IsPaid>true</IsPaid>
+    </ProductTip>
+    <ProductTip>
+      <Text>Did you know you can create new controls from XAML? Right click on a missing control in XAML to create a new control implementation!</Text>
+      <ImageUrl>Resources/Images/generate-custom-controls.gif</ImageUrl>
+      <FeatureUrl>code-actions/xaml/fix#generate-xaml-view-from-xaml-node</FeatureUrl>
+      <Identifier>com.mfractor.code_fixes.xaml.generate_missing_class_as_xaml_view</Identifier>
+      <IsPaid>true</IsPaid>
+    </ProductTip>
+    <ProductTip>
+      <Text>Need to create a view model for a XAML file? Use the generate view model action to generate a new class with default implementations of each data-binding!</Text>
+      <ImageUrl>Resources/Images/generate-view-model.gif</ImageUrl>
+      <FeatureUrl>code-actions/xaml/generate#generate-new-view-model</FeatureUrl>
+      <Identifier>com.mfractor.code_actions.xaml.implement_view_model</Identifier>
+      <IsPaid>true</IsPaid>
+    </ProductTip>
+    <ProductTip>
+      <Text>Need to create a new bindable property for a custom control? Use the Generate Bindable Properties action to quickly create new bindable properties; it'll even figure out the property types for you!</Text>
+      <ImageUrl>Resources/Images/generate-bindable-properties.gif</ImageUrl>
+      <FeatureUrl>code-actions/xaml/generate#implement-missing-members</FeatureUrl>
+      <Identifier>com.mfractor.code_actions.xaml.implement_missing_members</Identifier>
+      <IsPaid>true</IsPaid>
+    </ProductTip>
+    <ProductTip>
+      <Text>When you are missing an image resource, MFractor will warn you and give you the option to import it into your Android and iOS projects.</Text>
+      <ImageUrl>Resources/Images/import-image-fix.gif</ImageUrl>
+      <FeatureUrl>code-actions/xaml/fix#import-missing-image-resource</FeatureUrl>
+      <Identifier>com.mfractor.code_fixes.xaml.import_missing_image_resource</Identifier>
+      <IsPaid>true</IsPaid>
+    </ProductTip>
   </Tips>
 </ProductTipManifest>
