@@ -6,11 +6,12 @@
 
 **Configuration Id: com.mfractor.code_actions.xaml.edit_color**
 
+
+![Use the Edit Color code action to visually edit a color from your Xaml.](/img/code-actions/xaml/refactor/edit-color.gif)
+
 The **Edit Color Declaration** code actions allows visual editing of colors from your Xaml.
 
 Simply right click on a Xaml node that is a `System.Drawing.Color` or `Xamarin.Forms.Color` and select **Edit Color**. Then you can use the color picker dialog to select a new color value:
-
-![Edit colour refactoring action](/img/code-actions/forms/edit-color.gif)
 
 
 ## Extract Attribute Value Into Property Binding
@@ -22,8 +23,6 @@ Simply right click on a Xaml node that is a `System.Drawing.Color` or `Xamarin.F
 When a Xaml attribute is initialised by a literal value (rather than an expression), this refactoring action allows a developer to extract that literal value as a property into the binding context and replace the attribute initialiser with a binding expression.
 
 For example, given the attribute initialiser `Text=\"Hello Xamarin.Forms!\"`, this refactoring would generate a user named property (EG: Message) in the binding context, initiliase it with the string literal `\"Message\"` and replace the attribute value with the binding expresion `{Binding Message}`.";
-
-![Extract value into property binding](/img/code-actions/forms/extract-property-binding.gif)
 
 
 ### Uses:
@@ -60,6 +59,9 @@ Extracts a XAML layout container that derives from `Xamarin.Forms.Layout` into a
 
 **Configuration Id: com.mfractor.code_actions.xaml.migrate_on_platform_usage**
 
+
+![Use the Migrate OnPlatform code action to convert OnPlatform declarations to the Xamarin.Forms 2.3.4 format.](/img/code-actions/xaml/refactor/migrate-onplatform.gif)
+
 In Xamarin.Forms 2.3.4, there were changes made to the `OnPlatform` class to enable greater platform-specifics flexibility in the future. These changes deprecated the `OnPlatform.iOS`, `OnPlatform.Android` and `OnPlatform.WinPhone` properties in favour of a generic `On` element to control the platform specifics.
 
 The **Migrate OnPlatform Usage** code action is a refactoring that converts a pre-2.3.4 Xamarin.Forms `OnPlatform` usage to the new methodology using the nested `On` element.
@@ -85,8 +87,6 @@ MFractor would migrate the code to use the `On` element:
     <On Platform="WinPhone">0, 0, 0, 0</On>
 </OnPlatform>
 ```
-
-![Example of using the Migrate OnPlatform usage XAML refactoring](/img/code-actions/forms/migrate-onplatform.gif)
 
 
 ## Rename Xaml Namespace

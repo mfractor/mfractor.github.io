@@ -146,10 +146,6 @@ public class MyClass : View
 
 ```
 
-**Example**
-
-![Implementing a base classes constructors](/img/code-actions/csharp/implement-base-constructors.gif)
-
 
 ### Uses:
 

@@ -6,7 +6,8 @@
 
 **Configuration Id: com.mfractor.code_actions.xaml.generate_platform_effect**
 
-![Creating a platform effect](/img/code-actions/forms/generate-effect.gif)
+
+![Use the Generate Effect code action to create an effect and it's platform specific implementations](/img/code-actions/xaml/generate/generate-effect.gif)
 
 When a Xaml node cannot be resolved and it's name ends with effect, this fix will create a new routing effect and an iOS and Android implemenation in any referenced projects.
 

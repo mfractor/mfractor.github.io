@@ -101,9 +101,7 @@ public class MyCustomControl : Xamarin.Forms.View
 }
 ```
 
-When the class derives from `Xamarin.Forms.View`, this code action can be used to generate a bindable property implementation:
-
-![Generating a bindable property](/img/code-actions/forms/generate-bindable-property.gif)
+When the class derives from `Xamarin.Forms.View`, this code action can be used to generate a bindable property implementation.
 
 The code action will attempt to resolve the new properties type by inspecting the value of the source attribute. If the value is an expression, MFractor will evaluate the expression and use the return type as the new properties type.
 
@@ -357,6 +355,9 @@ In the above example, the expression `{x:Static local:AppSettings.TextColor}` po
 
 **Fixes Code Issue:** [Event Handler Exists In Code Behind Class](/code-analysis/xaml.md#event-handler-exists-in-code-behind-class)
 
+
+![When an event handler Xaml attribute references a method that does not exist on the code behind class, the Generate Missing Event Handler code fix will generate a method on the code behind class.](/img/code-actions/xaml/fix/generate-event-handler.gif)
+
 When an event handler Xaml attribute references a method that does not exist on the code behind class, the **Generate Missing Event Handler** code fix will generate a method on the code behind class.
 
 Consider the following code:
@@ -386,8 +387,6 @@ public partial class MainPage : ContentPage
 The referenced method `OnButtonClicked` does not exist in the views code behind class, `MainPage`. The corresponding [analyser](http://docs.mfractor.com/code-analysis/xamarin-forms-xaml.ms/#event-handler-exists-in-code-behind-class) will detect this issue and annotate it in your source code.
 
 From here, we can action the code fix to generate a method stub in `MainPage.xaml.cs`:
-
-![Generating an event handler](/img/code-actions/forms/generate-event-handler.gif)
 
 
 
@@ -504,7 +503,8 @@ When the namespace inside c# symbol reference expression can be resolved to a .N
 
 **Fixes Code Issue:** [Unresolved Xml Namespace](/code-analysis/xaml.md#unresolved-xml-namespace)
 
-![Resolving an unknown XAML namespace by importing a controls namespace and assembly](/img/code-actions/forms/import-xaml-node.gif)
+
+![When working with controls in XAML, use the Import Reference fix to resolve the namespace and assembly of a missing control and then generate the xmlns import for it.](/img/code-actions/xaml/fix/import-xaml-node.gif)
 
 When building XAML documents, developers frequently use 3rd party or custom controls to build great UIs for their app.
 
