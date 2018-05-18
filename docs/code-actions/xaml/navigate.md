@@ -6,7 +6,10 @@
 
 **Configuration Id: com.mfractor.navigation.forms.go_to_code_behind**
 
-Jumps to the code behind class for a view model or XAML view.
+
+![When you are in a ViewModel or XAML file, the Go-To Code Behind code action will navigate you to it's code behind class](/img/code-actions/xaml/navigate/go-to-code-behind.gif)
+
+When you are in a ViewModel or XAML file, the Go-To Code Behind code action will navigate you to it's code behind class
 
 
 ## Go To View Model
@@ -15,7 +18,10 @@ Jumps to the code behind class for a view model or XAML view.
 
 **Configuration Id: com.mfractor.navigation.forms.go_to_view_model**
 
-Jumps to the view models for a code behind class or XAML view.
+
+![When you are in a XAML file or it's code behind, the Go-To ViewModel code action will infer your view model and navigate to it.](/img/code-actions/xaml/navigate/go-to-view-model.gif)
+
+When you are in a XAML file or it's code behind, the Go-To ViewModel code action will infer your view model and navigate to it.
 
 
 ## Go To XAML Symbol Declaration
@@ -32,6 +38,9 @@ Jumps to the location of XAML symbol in either source code or the assembly brows
 **[Professional Only](https://www.mfractor.com/buy?utm_source=docs&utm_medium=professional_only)**
 
 **Configuration Id: com.mfractor.navigation.forms.go_to_view**
+
+
+![When you are in a ViewModel or code-behind, the Go-To Code XAML View code action will navigate you to it's XAML view.](/img/code-actions/xaml/navigate/go-to-xaml-view.gif)
 
 Jumps to the XAML view for a code behind or view model.
 

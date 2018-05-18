@@ -5,7 +5,7 @@
 **[Professional Only](https://www.mfractor.com/buy?utm_source=docs&utm_medium=professional_only)**
 
 
-![Use MFractor's Add Debug Watch shortcut to add a variable into the watch pad.](/img/debuggingadd-debug-watch.gif)
+![Use MFractor's Add Debug Watch shortcut to add a variable into the watch pad.](/img/debugging/add-debug-watch.gif)
 
 This code action adds the symbol or expression under the cursor to the debug watch pad.
 

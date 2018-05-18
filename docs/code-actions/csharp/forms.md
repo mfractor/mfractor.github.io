@@ -14,3 +14,31 @@ Generates a platform specific custom renderer for a control. This code action wi
  * [Generate Custom Renderer For Xamarin.Forms Control](/code-generation/xamarin-forms.md#generate-custom-renderer-for-xamarin.forms-control)
 
 
+## Insert Bindable Property
+
+**[Professional Only](https://www.mfractor.com/buy?utm_source=docs&utm_medium=professional_only)**
+
+**Configuration Id: com.mfractor.code_actions.forms.insert_bindable_property**
+
+When inside a Visual Element, this code action generates a new bindable property declaration.
+
+
+### Uses:
+
+ * [Generate Bindable Property](/code-generation/xamarin-forms.md#generate-bindable-property)
+
+
+## Insert View Model Command
+
+**[Professional Only](https://www.mfractor.com/buy?utm_source=docs&utm_medium=professional_only)**
+
+**Configuration Id: com.mfractor.code_actions.forms.insert_view_model_command**
+
+When inside a View Model, this code action generates a new command implementation.
+
+
+### Uses:
+
+ * [Generate ICommand Implementation](/code-generation/xamarin-forms.md#generate-icommand-implementation)
+
+

@@ -459,7 +459,7 @@ When a Xaml node cannot be resolved and it ends with '[cC]onverter', this fix wi
 **Fixes Code Issue:** [Xaml Node Resolves](/code-analysis/xaml.md#xaml-node-resolves)
 
 
-![Did you know you can create new controls from XAML? Right click on a missing control in XAML to create a new control implementation!](/img/code-actions/xaml/fixgenerate-custom-controls.gif)
+![Did you know you can create new controls from XAML? Right click on a missing control in XAML to create a new control implementation!](/img/code-actions/xaml/fix/generate-custom-controls.gif)
 
 When a Xaml node cannot be resolved, this fix will create a new view that uses XAML and a code-behind class.
 
@@ -478,7 +478,7 @@ When a Xaml node cannot be resolved, this fix will create a new view that uses X
 **Fixes Code Issue:** [Detect Missing Image In Linked Projects](/code-analysis/xaml.md#detect-missing-image-in-linked-projects)
 
 
-![When you are missing an image resource, MFractor will warn you and give you the option to import it into your Android and iOS projects.](/img/code-actions/xaml/fiximport-image-fix.gif)
+![When you are missing an image resource, MFractor will warn you and give you the option to import it into your Android and iOS projects.](/img/code-actions/xaml/fix/import-image-fix.gif)
 
 ![Using MFractors Image Wizard](/img/image-wizard/import-image.gif)
 

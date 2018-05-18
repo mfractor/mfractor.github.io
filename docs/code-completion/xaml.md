@@ -129,7 +129,7 @@ For more information on markup extensions, see [XAML Markup Extensions](https://
 ## Select Image Asset Completion
 
 
-![Use the select image completion to visually choose the image asset you'd like to use in your XAML.](/img/code-completion/xamlselect-image-completion.gif)
+![Use the select image completion to visually choose the image asset you'd like to use in your XAML.](/img/code-completion/xaml/select-image-completion.gif)
 
 When editing the `Source` attribute for an `Image` view or any `Image` view subclass, this completion will open the image browser view so that you can visually choose the image you'd like to use.
 

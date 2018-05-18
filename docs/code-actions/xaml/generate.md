@@ -102,7 +102,7 @@ When this refactoring is used, the `<Grid>` node will have the following code in
 
 **Configuration Id: com.mfractor.code_fixes.code_actions.generate_value_converter_for_type_flow**
 
-Generates a value converter to convert the return type of a binding expression into the input type of 
+Generates a value converter to convert the return type of a binding expression into the input type of the property.
 
 
 ### Configurable Properties
@@ -123,7 +123,7 @@ Generates a value converter to convert the return type of a binding expression i
 **Configuration Id: com.mfractor.code_actions.xaml.implement_view_model**
 
 
-![Need to create a view model for a XAML file? Use the generate view model action to generate a new class with default implementations of each data-binding!](/img/code-actions/xaml/generategenerate-view-model.gif)
+![Use the Generate View Model code action to create a new view model for a XAML file with default implementations of each data-binding!](/img/code-actions/xaml/generate/generate-view-model.gif)
 
 The **Implement View Model** code action detects when a xaml document has unimplemented bindings, gathers them all and then implements them in bulk into a new or existing view model.
 
@@ -206,6 +206,9 @@ The **Generate Resource Dictionary** code action adds a `MyView.ResourceDictiona
 
 **Configuration Id: com.mfractor.code_actions.xaml.generate_xaml_localisation_infrastructure**
 
+
+![The Generate Localisation Infrastructure code action will generate the necessary code files to power XAML localisation according to Xamarins best practices.](/img/code-actions/xaml/generate/generate-localisation-infrastructure.gif)
+
 Builds the necessary infrustructure needed for XAML localisation using the best practice outlined in [Localizing Xamarin.Forms Apps with RESX Resource Files](https://developer.xamarin.com/guides/xamarin-forms/advanced/localization/).
 
 This code action will create the following:
@@ -239,7 +242,7 @@ This code action will create the following:
 **Configuration Id: com.mfractor.code_actions.xaml.implement_missing_members**
 
 
-![Need to create a new bindable property for a custom control? Use the Generate Bindable Properties action to quickly create new bindable properties; it'll even figure out the property types for you!](/img/code-actions/xaml/generategenerate-bindable-properties.gif)
+![You can use the Generate Bindable Properties action to quickly create new bindable properties; it'll even figure out the property types for you!](/img/code-actions/xaml/generate/generate-bindable-properties.gif)
 
 When a control uses undefined members/properties in a Xaml view, this refactoring collects all missing properties, attempts to resolve their types and then generates them onto the control/class.
 

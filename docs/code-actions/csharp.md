@@ -73,7 +73,7 @@ public class MyImmutableClass
 **Configuration Id: com.mfractor.code_actions.csharp.generate_interface_implementation**
 
 
-![Creating a new interface implementation](/img/code-actions/csharpgenerate-interface.gif)
+![Creating a new interface implementation](/img/code-actions/csharp/generate-interface.gif)
 
 Creates a new implementation of the selected interface.
 
@@ -92,7 +92,7 @@ Creates a new implementation of the selected interface.
 **Configuration Id: com.mfractor.code_actions.csharp.go_to_interface_implementation**
 
 
-![Need to find an interfaces implementation? MFractors Go-To Implementation shortcut will find classes that implement that interface and then jump you to that class!](/img/code-actions/csharpgo-to-implementation.gif)
+![You can use MFractors Go-To Implementation shortcut to find classes that implement that interface and then jump to that class!](/img/code-actions/csharp/go-to-implementation.gif)
 
 **Shortcut:** `Option + D`
 
@@ -182,7 +182,8 @@ When a type reference is fully qualified, this refactoring inserts a using state
 
 **Configuration Id: com.mfractor.code_actions.resx.replace_csharp_string_with_resource_lookup**
 
-![Using the localisation wizard to extract string literals into a ResX file](/img/code-actions/csharp/localisation-wizard.gif)
+
+![You can use the localisation wizard to find and move all string literals in C# into a RESX file, replacing the original string with a resource lookup!](/img/code-actions/csharp/localise-csharp.gif)
 
 This code refactoring will open the localisation wizard, allowing you to walk through all strings in a C# code file and replace inline strings with resource lookups.
 
