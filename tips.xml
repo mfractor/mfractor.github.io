@@ -16,10 +16,31 @@
       <IsPaid>true</IsPaid>
     </ProductTip>
     <ProductTip>
+      <Text>When an event handler Xaml attribute references a method that does not exist on the code behind class, the Generate Missing Event Handler code fix will generate a method on the code behind class.</Text>
+      <ImageUrl>img/code-actions/xaml/fix/generate-event-handler.gif</ImageUrl>
+      <FeatureUrl>code-actions/xaml/fix#generate-event-handler</FeatureUrl>
+      <Identifier>com.mfractor.code_fixes.xaml.generate_event_handler</Identifier>
+      <IsPaid>true</IsPaid>
+    </ProductTip>
+    <ProductTip>
       <Text>Did you know you can create new controls from XAML? Right click on a missing control in XAML to create a new control implementation!</Text>
       <ImageUrl>img/code-actions/xaml/fix/generate-custom-controls.gif</ImageUrl>
       <FeatureUrl>code-actions/xaml/fix#generate-xaml-view-from-xaml-node</FeatureUrl>
       <Identifier>com.mfractor.code_fixes.xaml.generate_missing_class_as_xaml_view</Identifier>
+      <IsPaid>true</IsPaid>
+    </ProductTip>
+    <ProductTip>
+      <Text>When working with controls in XAML, use the Import Reference fix to resolve the namespace and assembly of a missing control and then generate the xmlns import for it.</Text>
+      <ImageUrl>img/code-actions/xaml/fix/import-xaml-node.gif</ImageUrl>
+      <FeatureUrl>code-actions/xaml/fix#import-namespace-and-assembly-for-unresolved-xaml-node</FeatureUrl>
+      <Identifier>com.mfractor.code_fixes.xaml.import_reference</Identifier>
+      <IsPaid>true</IsPaid>
+    </ProductTip>
+    <ProductTip>
+      <Text>Use the Generate Effect code action to create an effect and it's platform specific implementations</Text>
+      <ImageUrl>img/code-actions/xaml/generate/generate-effect.gif</ImageUrl>
+      <FeatureUrl>code-actions/xaml/generate#generate-effect-from-xaml-declaration</FeatureUrl>
+      <Identifier>com.mfractor.code_actions.xaml.generate_platform_effect</Identifier>
       <IsPaid>true</IsPaid>
     </ProductTip>
     <ProductTip>
@@ -41,6 +62,20 @@
       <ImageUrl>img/code-actions/xaml/navigate/go-to-view-model.gif</ImageUrl>
       <FeatureUrl>code-actions/xaml/navigate#go-to-view-model</FeatureUrl>
       <Identifier>com.mfractor.navigation.forms.go_to_view_model</Identifier>
+      <IsPaid>true</IsPaid>
+    </ProductTip>
+    <ProductTip>
+      <Text>Use the Edit Color code action to visually edit a color from your Xaml.</Text>
+      <ImageUrl>img/code-actions/xaml/refactor/edit-color.gif</ImageUrl>
+      <FeatureUrl>code-actions/xaml/refactor#edit-color-declaration</FeatureUrl>
+      <Identifier>com.mfractor.code_actions.xaml.edit_color</Identifier>
+      <IsPaid>true</IsPaid>
+    </ProductTip>
+    <ProductTip>
+      <Text>Use the Migrate OnPlatform code action to convert OnPlatform declarations to the Xamarin.Forms 2.3.4 format.</Text>
+      <ImageUrl>img/code-actions/xaml/refactor/migrate-onplatform.gif</ImageUrl>
+      <FeatureUrl>code-actions/xaml/refactor#migrate-onplatform-usage</FeatureUrl>
+      <Identifier>com.mfractor.code_actions.xaml.migrate_on_platform_usage</Identifier>
       <IsPaid>true</IsPaid>
     </ProductTip>
     <ProductTip>

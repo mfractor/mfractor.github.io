@@ -575,15 +575,14 @@
 <h2 id="edit-color-declaration">Edit Color Declaration</h2>
 <p><strong><a href="https://www.mfractor.com/buy?utm_source=docs&amp;utm_medium=professional_only">Professional Only</a></strong></p>
 <p><strong>Configuration Id: com.mfractor.code_actions.xaml.edit_color</strong></p>
+<p><img alt="Use the Edit Color code action to visually edit a color from your Xaml." src="../../../img/code-actions/xaml/refactor/edit-color.gif" /></p>
 <p>The <strong>Edit Color Declaration</strong> code actions allows visual editing of colors from your Xaml.</p>
 <p>Simply right click on a Xaml node that is a <code>System.Drawing.Color</code> or <code>Xamarin.Forms.Color</code> and select <strong>Edit Color</strong>. Then you can use the color picker dialog to select a new color value:</p>
-<p><img alt="Edit colour refactoring action" src="../../../img/code-actions/forms/edit-color.gif" /></p>
 <h2 id="extract-attribute-value-into-property-binding">Extract Attribute Value Into Property Binding</h2>
 <p><strong><a href="https://www.mfractor.com/buy?utm_source=docs&amp;utm_medium=professional_only">Professional Only</a></strong></p>
 <p><strong>Configuration Id: com.mfractor.code_actions.xaml.extract_into_property_binding</strong></p>
 <p>When a Xaml attribute is initialised by a literal value (rather than an expression), this refactoring action allows a developer to extract that literal value as a property into the binding context and replace the attribute initialiser with a binding expression.</p>
 <p>For example, given the attribute initialiser <code>Text=\"Hello Xamarin.Forms!\"</code>, this refactoring would generate a user named property (EG: Message) in the binding context, initiliase it with the string literal <code>\"Message\"</code> and replace the attribute value with the binding expresion <code>{Binding Message}</code>.";</p>
-<p><img alt="Extract value into property binding" src="../../../img/code-actions/forms/extract-property-binding.gif" /></p>
 <h3 id="uses">Uses:</h3>
 <ul>
 <li><a href="../../../code-generation/xamarin-forms/#view-model-property-generator">View Model Property Generator</a></li>
@@ -625,6 +624,7 @@
 <h2 id="migrate-onplatform-usage">Migrate OnPlatform Usage</h2>
 <p><strong><a href="https://www.mfractor.com/buy?utm_source=docs&amp;utm_medium=professional_only">Professional Only</a></strong></p>
 <p><strong>Configuration Id: com.mfractor.code_actions.xaml.migrate_on_platform_usage</strong></p>
+<p><img alt="Use the Migrate OnPlatform code action to convert OnPlatform declarations to the Xamarin.Forms 2.3.4 format." src="../../../img/code-actions/xaml/refactor/migrate-onplatform.gif" /></p>
 <p>In Xamarin.Forms 2.3.4, there were changes made to the <code>OnPlatform</code> class to enable greater platform-specifics flexibility in the future. These changes deprecated the <code>OnPlatform.iOS</code>, <code>OnPlatform.Android</code> and <code>OnPlatform.WinPhone</code> properties in favour of a generic <code>On</code> element to control the platform specifics.</p>
 <p>The <strong>Migrate OnPlatform Usage</strong> code action is a refactoring that converts a pre-2.3.4 Xamarin.Forms <code>OnPlatform</code> usage to the new methodology using the nested <code>On</code> element.</p>
 <p>For example, given the following <code>OnPlatform</code>:</p>
@@ -645,7 +645,6 @@
 &lt;/OnPlatform&gt;
 </code></pre>
 
-<p><img alt="Example of using the Migrate OnPlatform usage XAML refactoring" src="../../../img/code-actions/forms/migrate-onplatform.gif" /></p>
 <h2 id="rename-xaml-namespace">Rename Xaml Namespace</h2>
 <p><strong><a href="https://www.mfractor.com/buy?utm_source=docs&amp;utm_medium=professional_only">Professional Only</a></strong></p>
 <p><strong>Configuration Id: com.mfractor.code_actions.xaml.rename_xaml_namespace</strong></p>

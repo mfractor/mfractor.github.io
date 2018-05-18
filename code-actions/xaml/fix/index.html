@@ -758,8 +758,7 @@
 }
 </code></pre>
 
-<p>When the class derives from <code>Xamarin.Forms.View</code>, this code action can be used to generate a bindable property implementation:</p>
-<p><img alt="Generating a bindable property" src="../../../img/code-actions/forms/generate-bindable-property.gif" /></p>
+<p>When the class derives from <code>Xamarin.Forms.View</code>, this code action can be used to generate a bindable property implementation.</p>
 <p>The code action will attempt to resolve the new properties type by inspecting the value of the source attribute. If the value is an expression, MFractor will evaluate the expression and use the return type as the new properties type.</p>
 <p>If the attributes value isn't an expression, MFractor will attempt to infer type based on the literal input. For example, an attribute value of <code>true</code> would trigger MFractor to output a boolean typed property. This behaviour can be disabled by configuring the <code>TryInferUnknownTypes</code> to false.</p>
 <h3 id="configurable-properties">Configurable Properties</h3>
@@ -980,6 +979,7 @@
 <p><strong><a href="https://www.mfractor.com/buy?utm_source=docs&amp;utm_medium=professional_only">Professional Only</a></strong></p>
 <p><strong>Configuration Id: com.mfractor.code_fixes.xaml.generate_event_handler</strong></p>
 <p><strong>Fixes Code Issue:</strong> <a href="../../../code-analysis/xaml/#event-handler-exists-in-code-behind-class">Event Handler Exists In Code Behind Class</a></p>
+<p><img alt="When an event handler Xaml attribute references a method that does not exist on the code behind class, the Generate Missing Event Handler code fix will generate a method on the code behind class." src="../../../img/code-actions/xaml/fix/generate-event-handler.gif" /></p>
 <p>When an event handler Xaml attribute references a method that does not exist on the code behind class, the <strong>Generate Missing Event Handler</strong> code fix will generate a method on the code behind class.</p>
 <p>Consider the following code:</p>
 <p><strong>View: MainPage.xaml</strong></p>
@@ -1003,7 +1003,6 @@
 
 <p>The referenced method <code>OnButtonClicked</code> does not exist in the views code behind class, <code>MainPage</code>. The corresponding <a href="http://docs.mfractor.com/code-analysis/xamarin-forms-xaml.ms/#event-handler-exists-in-code-behind-class">analyser</a> will detect this issue and annotate it in your source code.</p>
 <p>From here, we can action the code fix to generate a method stub in <code>MainPage.xaml.cs</code>:</p>
-<p><img alt="Generating an event handler" src="../../../img/code-actions/forms/generate-event-handler.gif" /></p>
 <h3 id="uses_8">Uses:</h3>
 <ul>
 <li><a href="../../../code-generation/csharp/#generate-event-handler-method">Generate Event Handler Method</a></li>
@@ -1062,7 +1061,7 @@
 <p><strong><a href="https://www.mfractor.com/buy?utm_source=docs&amp;utm_medium=professional_only">Professional Only</a></strong></p>
 <p><strong>Configuration Id: com.mfractor.code_fixes.xaml.import_reference</strong></p>
 <p><strong>Fixes Code Issue:</strong> <a href="../../../code-analysis/xaml/#unresolved-xml-namespace">Unresolved Xml Namespace</a></p>
-<p><img alt="Resolving an unknown XAML namespace by importing a controls namespace and assembly" src="../../../img/code-actions/forms/import-xaml-node.gif" /></p>
+<p><img alt="When working with controls in XAML, use the Import Reference fix to resolve the namespace and assembly of a missing control and then generate the xmlns import for it." src="../../../img/code-actions/xaml/fix/import-xaml-node.gif" /></p>
 <p>When building XAML documents, developers frequently use 3rd party or custom controls to build great UIs for their app.</p>
 <p>This comes with one little quirk, each time a custom control is used in XAML, the .NET namespace and assembly needs to be imported as a custom XAML namespace.</p>
 <p>For example, consider we wanted to use FFImageLoadings <code>CachedImage</code> control like so:</p>
