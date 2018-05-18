@@ -2,45 +2,87 @@
 <ProductTipManifest xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <Tips>
     <ProductTip>
-      <Text>You can quickly create an interface implementation using MFractors **Generate Interface** code action by tapping **Alt+Return** on an interface name and then choosing **Generate Interface**.</Text>
-      <ImageUrl>Resources/Images/generate-interface.gif</ImageUrl>
+      <Text>You can quickly create an interface implementation using MFractors Generate Interface code action by tapping Alt+Return on an interface name and then choosing **Generate Interface**.</Text>
+      <ImageUrl>img/code-actions/csharp/generate-interface.gif</ImageUrl>
       <FeatureUrl>code-actions/csharp#generate-interface-implementation</FeatureUrl>
       <Identifier>com.mfractor.code_actions.csharp.generate_interface_implementation</Identifier>
       <IsPaid>true</IsPaid>
     </ProductTip>
     <ProductTip>
-      <Text>Need to find an interfaces implementation? MFractors Go-To Implementation shortcut will find classes that implement that interface and then jump you to that class!</Text>
-      <ImageUrl>Resources/Images/go-to-implementation.gif</ImageUrl>
+      <Text>You can use MFractors Go-To Implementation shortcut to find classes that implement that interface and then jump to that class!</Text>
+      <ImageUrl>img/code-actions/csharp/go-to-implementation.gif</ImageUrl>
       <FeatureUrl>code-actions/csharp#go-to-implementation</FeatureUrl>
       <Identifier>com.mfractor.code_actions.csharp.go_to_interface_implementation</Identifier>
       <IsPaid>true</IsPaid>
     </ProductTip>
     <ProductTip>
       <Text>Did you know you can create new controls from XAML? Right click on a missing control in XAML to create a new control implementation!</Text>
-      <ImageUrl>Resources/Images/generate-custom-controls.gif</ImageUrl>
+      <ImageUrl>img/code-actions/xaml/fix/generate-custom-controls.gif</ImageUrl>
       <FeatureUrl>code-actions/xaml/fix#generate-xaml-view-from-xaml-node</FeatureUrl>
       <Identifier>com.mfractor.code_fixes.xaml.generate_missing_class_as_xaml_view</Identifier>
       <IsPaid>true</IsPaid>
     </ProductTip>
     <ProductTip>
-      <Text>Need to create a view model for a XAML file? Use the generate view model action to generate a new class with default implementations of each data-binding!</Text>
-      <ImageUrl>Resources/Images/generate-view-model.gif</ImageUrl>
+      <Text>When you are in a ViewModel or XAML file, the Go-To Code Behind code action will navigate you to it's code behind class</Text>
+      <ImageUrl>img/code-actions/xaml/navigate/go-to-code-behind.gif</ImageUrl>
+      <FeatureUrl>code-actions/xaml/navigate#go-to-code-behind-class</FeatureUrl>
+      <Identifier>com.mfractor.navigation.forms.go_to_code_behind</Identifier>
+      <IsPaid>true</IsPaid>
+    </ProductTip>
+    <ProductTip>
+      <Text>When you are in a ViewModel or code-behind, the Go-To Code XAML View code action will navigate you to it's XAML view.</Text>
+      <ImageUrl>img/code-actions/xaml/navigate/go-to-xaml-view.gif</ImageUrl>
+      <FeatureUrl>code-actions/xaml/navigate#go-to-xaml-view</FeatureUrl>
+      <Identifier>com.mfractor.navigation.forms.go_to_view</Identifier>
+      <IsPaid>true</IsPaid>
+    </ProductTip>
+    <ProductTip>
+      <Text>When you are in a XAML file or it's code behind, the Go-To ViewModel code action will infer your view model and navigate to it.</Text>
+      <ImageUrl>img/code-actions/xaml/navigate/go-to-view-model.gif</ImageUrl>
+      <FeatureUrl>code-actions/xaml/navigate#go-to-view-model</FeatureUrl>
+      <Identifier>com.mfractor.navigation.forms.go_to_view_model</Identifier>
+      <IsPaid>true</IsPaid>
+    </ProductTip>
+    <ProductTip>
+      <Text>Need to localise your XAML? Use MFractors localisation wizard to move string literals into RESX files and replace the original string with a localisation lookup!</Text>
+      <ImageUrl>img/code-actions/xaml/refactor/localise-xaml.gif</ImageUrl>
+      <FeatureUrl>code-actions/xaml/refactor#replace-string-with-localisation-lookup</FeatureUrl>
+      <Identifier>com.mfractor.code_actions.xaml.replace_with_localisation_lookup</Identifier>
+      <IsPaid>true</IsPaid>
+    </ProductTip>
+    <ProductTip>
+      <Text>Use the Generate View Model code action to create a new view model for a XAML file with default implementations of each data-binding!</Text>
+      <ImageUrl>img/code-actions/xaml/generate/generate-view-model.gif</ImageUrl>
       <FeatureUrl>code-actions/xaml/generate#generate-new-view-model</FeatureUrl>
       <Identifier>com.mfractor.code_actions.xaml.implement_view_model</Identifier>
       <IsPaid>true</IsPaid>
     </ProductTip>
     <ProductTip>
-      <Text>Need to create a new bindable property for a custom control? Use the Generate Bindable Properties action to quickly create new bindable properties; it'll even figure out the property types for you!</Text>
-      <ImageUrl>Resources/Images/generate-bindable-properties.gif</ImageUrl>
+      <Text>You can use the Generate Bindable Properties action to quickly create new bindable properties; it'll even figure out the property types for you!</Text>
+      <ImageUrl>img/code-actions/xaml/generate/generate-bindable-properties.gif</ImageUrl>
       <FeatureUrl>code-actions/xaml/generate#implement-missing-members</FeatureUrl>
       <Identifier>com.mfractor.code_actions.xaml.implement_missing_members</Identifier>
       <IsPaid>true</IsPaid>
     </ProductTip>
     <ProductTip>
+      <Text>The Generate Localisation Infrastructure code action will generate the necessary code files to power XAML localisation according to Xamarins best practices.</Text>
+      <ImageUrl>img/code-actions/xaml/generate/generate-localisation-infrastructure.gif</ImageUrl>
+      <FeatureUrl>code-actions/xaml/generate#generate-xaml-localisation-infrastructure</FeatureUrl>
+      <Identifier>com.mfractor.code_actions.xaml.generate_xaml_localisation_infrastructure</Identifier>
+      <IsPaid>true</IsPaid>
+    </ProductTip>
+    <ProductTip>
       <Text>When you are missing an image resource, MFractor will warn you and give you the option to import it into your Android and iOS projects.</Text>
-      <ImageUrl>Resources/Images/import-image-fix.gif</ImageUrl>
+      <ImageUrl>img/code-actions/xaml/fix/import-image-fix.gif</ImageUrl>
       <FeatureUrl>code-actions/xaml/fix#import-missing-image-resource</FeatureUrl>
       <Identifier>com.mfractor.code_fixes.xaml.import_missing_image_resource</Identifier>
+      <IsPaid>true</IsPaid>
+    </ProductTip>
+    <ProductTip>
+      <Text>You can use the localisation wizard to find and move all string literals in C# into a RESX file, replacing the original string with a resource lookup!</Text>
+      <ImageUrl>img/code-actions/csharp/localise-csharp.gif</ImageUrl>
+      <FeatureUrl>code-actions/csharp#replace-string-with-resource-lookup</FeatureUrl>
+      <Identifier>com.mfractor.code_actions.resx.replace_csharp_string_with_resource_lookup</Identifier>
       <IsPaid>true</IsPaid>
     </ProductTip>
   </Tips>
