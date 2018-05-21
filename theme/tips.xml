@@ -3,7 +3,7 @@
   <Tips>
     <Tip>
       <Title>Generate Interface Implementation</Title>
-      <Description>Need to implement an interface? Tap Alt+Return on an interface and use the Generate Interface action to create a class for that interface.</Description>
+      <Description>Need to implement an interface? Tap Alt+Return on an interface and use Generate Interface to create a class for that interface.</Description>
       <Image>img/code-actions/csharp/generate-interface.gif</Image>
       <FeatureUrl>code-actions/csharp#generate-interface-implementation</FeatureUrl>
       <Identifier>com.mfractor.code_actions.csharp.generate_interface_implementation</Identifier>
