@@ -123,7 +123,7 @@ Your new namespace will be applied across the document:
 **Configuration Id: com.mfractor.code_actions.xaml.replace_with_localisation_lookup**
 
 
-![Need to localise your XAML? MFractors localisation wizard moves string literals into RESX files and replaces that string with a localisation lookup!](/img/code-actions/xaml/refactor/localise-xaml.gif)
+![Need to localise your XAML? The Localisation Wizard moves string literals into RESX files and replaces that string with a localisation lookup!](/img/code-actions/xaml/refactor/localise-xaml.gif)
 
 This refactoring action will open the document localisation wizard, a dialog that walks through all strings in the current document and lets you easily replace them with a localised value lookup.
 

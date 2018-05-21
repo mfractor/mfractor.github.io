@@ -208,7 +208,7 @@ The **Generate Resource Dictionary** code action adds a `MyView.ResourceDictiona
 **Configuration Id: com.mfractor.code_actions.xaml.generate_xaml_localisation_infrastructure**
 
 
-![The Generate Localisation Infrastructure code action creates the necessary code files to power XAML localisation according to Xamarins best practices.](/img/code-actions/xaml/generate/generate-localisation-infrastructure.gif)
+![The Generate Localisation Infrastructure action creates the code to power XAML localisation according to Xamarins best practices.](/img/code-actions/xaml/generate/generate-localisation-infrastructure.gif)
 
 Builds the necessary infrustructure needed for XAML localisation using the best practice outlined in [Localizing Xamarin.Forms Apps with RESX Resource Files](https://developer.xamarin.com/guides/xamarin-forms/advanced/localization/).
 
@@ -243,7 +243,7 @@ This code action will create the following:
 **Configuration Id: com.mfractor.code_actions.xaml.implement_missing_members**
 
 
-![Use the Generate Bindable Properties code action to quickly create new bindable properties; it'll even figure out the property types for you!](/img/code-actions/xaml/generate/generate-bindable-properties.gif)
+![Use the Generate Bindable Properties code action to create new bindable properties; it'll even figure out the property types for you!](/img/code-actions/xaml/generate/generate-bindable-properties.gif)
 
 When a control uses undefined members/properties in a Xaml view, this refactoring collects all missing properties, attempts to resolve their types and then generates them onto the control/class.
 

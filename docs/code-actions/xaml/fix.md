@@ -356,7 +356,7 @@ In the above example, the expression `{x:Static local:AppSettings.TextColor}` po
 **Fixes Code Issue:** [Event Handler Exists In Code Behind Class](/code-analysis/xaml.md#event-handler-exists-in-code-behind-class)
 
 
-![Need to create a new event handler? Use the Generate Missing Event Handler code fix to generate an event handler method on the code behind class.](/img/code-actions/xaml/fix/generate-event-handler.gif)
+![Use the Generate Event Handler code fix to generate an event handler method on a XAML files code behind class.](/img/code-actions/xaml/fix/generate-event-handler.gif)
 
 When an event handler Xaml attribute references a method that does not exist on the code behind class, the **Generate Missing Event Handler** code fix will generate a method on the code behind class.
 
@@ -458,7 +458,7 @@ When a Xaml node cannot be resolved and it ends with '[cC]onverter', this fix wi
 **Fixes Code Issue:** [Xaml Node Resolves](/code-analysis/xaml.md#xaml-node-resolves)
 
 
-![Did you know you can create new controls from XAML? Right click on a missing control in XAML to create a new control implementation!](/img/code-actions/xaml/fix/generate-custom-controls.gif)
+![Did you know you can create new controls from XAML? Right click on a missing control to create a new control implementation!](/img/code-actions/xaml/fix/generate-custom-controls.gif)
 
 When a Xaml node cannot be resolved, this fix will create a new view that uses XAML and a code-behind class.
 
