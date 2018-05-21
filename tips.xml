@@ -3,7 +3,7 @@
   <Tips>
     <Tip>
       <Title>Generate Interface Implementation</Title>
-      <Description>Need to implement an interface? Tap Alt+Return on an interface and use the Generate Interface action to create a class implementing that interface.</Description>
+      <Description>Need to implement an interface? Tap Alt+Return on an interface and use the Generate Interface action to create a class for that interface.</Description>
       <Image>img/code-actions/csharp/generate-interface.gif</Image>
       <FeatureUrl>code-actions/csharp#generate-interface-implementation</FeatureUrl>
       <Identifier>com.mfractor.code_actions.csharp.generate_interface_implementation</Identifier>
@@ -19,7 +19,7 @@
     </Tip>
     <Tip>
       <Title>Generate Event Handler</Title>
-      <Description>Need to create a new event handler? Use the Generate Missing Event Handler code fix to generate an event handler method on the code behind class.</Description>
+      <Description>Use the Generate Event Handler code fix to generate an event handler method on a XAML files code behind class.</Description>
       <Image>img/code-actions/xaml/fix/generate-event-handler.gif</Image>
       <FeatureUrl>code-actions/xaml/fix#generate-event-handler</FeatureUrl>
       <Identifier>com.mfractor.code_fixes.xaml.generate_event_handler</Identifier>
@@ -27,7 +27,7 @@
     </Tip>
     <Tip>
       <Title>Generate XAML View From XAML Node</Title>
-      <Description>Did you know you can create new controls from XAML? Right click on a missing control in XAML to create a new control implementation!</Description>
+      <Description>Did you know you can create new controls from XAML? Right click on a missing control to create a new control implementation!</Description>
       <Image>img/code-actions/xaml/fix/generate-custom-controls.gif</Image>
       <FeatureUrl>code-actions/xaml/fix#generate-xaml-view-from-xaml-node</FeatureUrl>
       <Identifier>com.mfractor.code_fixes.xaml.generate_missing_class_as_xaml_view</Identifier>
@@ -91,7 +91,7 @@
     </Tip>
     <Tip>
       <Title>Replace String With Localisation Lookup</Title>
-      <Description>Need to localise your XAML? MFractors localisation wizard moves string literals into RESX files and replaces that string with a localisation lookup!</Description>
+      <Description>Need to localise your XAML? The Localisation Wizard moves string literals into RESX files and replaces that string with a localisation lookup!</Description>
       <Image>img/code-actions/xaml/refactor/localise-xaml.gif</Image>
       <FeatureUrl>code-actions/xaml/refactor#replace-string-with-localisation-lookup</FeatureUrl>
       <Identifier>com.mfractor.code_actions.xaml.replace_with_localisation_lookup</Identifier>
@@ -107,7 +107,7 @@
     </Tip>
     <Tip>
       <Title>Implement Missing Members</Title>
-      <Description>Use the Generate Bindable Properties code action to quickly create new bindable properties; it'll even figure out the property types for you!</Description>
+      <Description>Use the Generate Bindable Properties code action to create new bindable properties; it'll even figure out the property types for you!</Description>
       <Image>img/code-actions/xaml/generate/generate-bindable-properties.gif</Image>
       <FeatureUrl>code-actions/xaml/generate#implement-missing-members</FeatureUrl>
       <Identifier>com.mfractor.code_actions.xaml.implement_missing_members</Identifier>
@@ -115,7 +115,7 @@
     </Tip>
     <Tip>
       <Title>Generate Xaml Localisation Infrastructure</Title>
-      <Description>The Generate Localisation Infrastructure code action creates the necessary code files to power XAML localisation according to Xamarins best practices.</Description>
+      <Description>The Generate Localisation Infrastructure action creates the code to power XAML localisation according to Xamarins best practices.</Description>
       <Image>img/code-actions/xaml/generate/generate-localisation-infrastructure.gif</Image>
       <FeatureUrl>code-actions/xaml/generate#generate-xaml-localisation-infrastructure</FeatureUrl>
       <Identifier>com.mfractor.code_actions.xaml.generate_xaml_localisation_infrastructure</Identifier>
