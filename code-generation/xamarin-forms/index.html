@@ -617,6 +617,7 @@
 <ul>
 <li><a href="../../configuration/xamarin-forms/#ios-custom-renderer-code-snippets">IOS Custom Renderer Code Snippets</a></li>
 <li><a href="../../configuration/xamarin-forms/#android-custom-renderer-code-snippets">Android Custom Renderer Code Snippets</a></li>
+<li><a href="../../configuration/xamarin-forms/#gtk-custom-renderer-code-snippets">GTK Custom Renderer Code Snippets</a></li>
 </ul>
 <h2 id="generate-icommand-implementation">Generate ICommand Implementation</h2>
 <p><strong>Configuration Id: com.mfractor.code_gen.forms.csharp.command_implementation</strong></p>
@@ -706,6 +707,12 @@
 <td>What is the folder that Android platform-specific effects should be placed into?</td>
 </tr>
 <tr>
+<td><strong>GtkEffectsFolder</strong></td>
+<td>System.String</td>
+<td>Effects</td>
+<td>What is the folder that GTK platform-specific effects should be placed into?</td>
+</tr>
+<tr>
 <td><strong>EffectsFolder</strong></td>
 <td>System.String</td>
 <td>Effects</td>
@@ -728,6 +735,12 @@
 <td><code>Code Snippet</code><br/><br/><strong>Arguments</strong>:<ul><li><code>name</code>: The name of the new effect.</li><li><code>group_name</code>: The resolution group name of the new effect.</li><li><code>namespace</code>: The Android projects default namespace.</li><li><code>platform</code>: If you wish to shared the platform-specific effect template, this is the name of the effects platform.</li></ul></td>
 <td><code>using .Effects;<br/>using Xamarin.Forms;<br/>using Xamarin.Forms.Platform.;<br/><br/>[assembly: ResolutionGroupName("")]<br/>[assembly: ExportEffect(typeof(), "")]<br/>namespace .Effects<br/>{<br/>    public class  : PlatformEffect<br/>    {<br/>        protected override void OnAttached()<br/>        {<br/>            // TODO: Apply your effect.<br/>        }<br/><br/>        protected override void OnDetached()<br/>        {<br/>            // TODO: Remove your effect.<br/>        }<br/>    }<br/>}<br/></code></td>
 <td>What is the code snippet for the Android platform-specific effect?</td>
+</tr>
+<tr>
+<td><strong>GtkEffectSnippet</strong></td>
+<td><code>Code Snippet</code><br/><br/><strong>Arguments</strong>:<ul><li><code>name</code>: The name of the new effect.</li><li><code>group_name</code>: The resolution group name of the new effect.</li><li><code>namespace</code>: The GTK projects default namespace.</li><li><code>platform</code>: If you wish to shared the platform-specific effect template, this is the name of the effects platform.</li></ul></td>
+<td><code>using .Effects;<br/>using Xamarin.Forms;<br/>using Xamarin.Forms.Platform.;<br/><br/>[assembly: ResolutionGroupName("")]<br/>[assembly: ExportEffect(typeof(), "")]<br/>namespace .Effects<br/>{<br/>    public class  : PlatformEffect<br/>    {<br/>        protected override void OnAttached()<br/>        {<br/>            // TODO: Apply your effect.<br/>        }<br/><br/>        protected override void OnDetached()<br/>        {<br/>            // TODO: Remove your effect.<br/>        }<br/>    }<br/>}<br/></code></td>
+<td>What is the code snippet for the GTK platform-specific effect?</td>
 </tr>
 <tr>
 <td><strong>EffectSnippet</strong></td>

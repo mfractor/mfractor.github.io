@@ -3,11 +3,10 @@
   <Tips>
     <Tip>
       <Title>Generate Interface Implementation</Title>
-      <Description>You can quickly create an interface implementation using MFractors Generate Interface code action by tapping Alt+Return on an interface name and then choosing **Generate Interface**.</Description>
+      <Description>Need to implement an interface? Tap Alt+Return on an interface and use the Generate Interface action to create a class implementing that interface.</Description>
       <Image>img/code-actions/csharp/generate-interface.gif</Image>
       <FeatureUrl>code-actions/csharp#generate-interface-implementation</FeatureUrl>
       <Identifier>com.mfractor.code_actions.csharp.generate_interface_implementation</Identifier>
-      <IsPaid>true</IsPaid>
       <IsRemote>true</IsRemote>
     </Tip>
     <Tip>
@@ -16,16 +15,14 @@
       <Image>img/code-actions/csharp/go-to-implementation.gif</Image>
       <FeatureUrl>code-actions/csharp#go-to-implementation</FeatureUrl>
       <Identifier>com.mfractor.code_actions.csharp.go_to_interface_implementation</Identifier>
-      <IsPaid>true</IsPaid>
       <IsRemote>true</IsRemote>
     </Tip>
     <Tip>
       <Title>Generate Event Handler</Title>
-      <Description>When an event handler Xaml attribute references a method that does not exist on the code behind class, the Generate Missing Event Handler code fix will generate a method on the code behind class.</Description>
+      <Description>Need to create a new event handler? Use the Generate Missing Event Handler code fix to generate an event handler method on the code behind class.</Description>
       <Image>img/code-actions/xaml/fix/generate-event-handler.gif</Image>
       <FeatureUrl>code-actions/xaml/fix#generate-event-handler</FeatureUrl>
       <Identifier>com.mfractor.code_fixes.xaml.generate_event_handler</Identifier>
-      <IsPaid>true</IsPaid>
       <IsRemote>true</IsRemote>
     </Tip>
     <Tip>
@@ -34,16 +31,14 @@
       <Image>img/code-actions/xaml/fix/generate-custom-controls.gif</Image>
       <FeatureUrl>code-actions/xaml/fix#generate-xaml-view-from-xaml-node</FeatureUrl>
       <Identifier>com.mfractor.code_fixes.xaml.generate_missing_class_as_xaml_view</Identifier>
-      <IsPaid>true</IsPaid>
       <IsRemote>true</IsRemote>
     </Tip>
     <Tip>
       <Title>Import Namespace And Assembly For Unresolved XAML Node</Title>
-      <Description>When working with controls in XAML, use the Import Reference fix to resolve the namespace and assembly of a missing control and then generate the xmlns import for it.</Description>
+      <Description>Use the Import Reference fix to generate an xmlns namespace import for a missing control in your XAML.</Description>
       <Image>img/code-actions/xaml/fix/import-xaml-node.gif</Image>
       <FeatureUrl>code-actions/xaml/fix#import-namespace-and-assembly-for-unresolved-xaml-node</FeatureUrl>
       <Identifier>com.mfractor.code_fixes.xaml.import_reference</Identifier>
-      <IsPaid>true</IsPaid>
       <IsRemote>true</IsRemote>
     </Tip>
     <Tip>
@@ -52,7 +47,6 @@
       <Image>img/code-actions/xaml/generate/generate-effect.gif</Image>
       <FeatureUrl>code-actions/xaml/generate#generate-effect-from-xaml-declaration</FeatureUrl>
       <Identifier>com.mfractor.code_actions.xaml.generate_platform_effect</Identifier>
-      <IsPaid>true</IsPaid>
       <IsRemote>true</IsRemote>
     </Tip>
     <Tip>
@@ -61,7 +55,6 @@
       <Image>img/code-actions/xaml/navigate/go-to-code-behind.gif</Image>
       <FeatureUrl>code-actions/xaml/navigate#go-to-code-behind-class</FeatureUrl>
       <Identifier>com.mfractor.navigation.forms.go_to_code_behind</Identifier>
-      <IsPaid>true</IsPaid>
       <IsRemote>true</IsRemote>
     </Tip>
     <Tip>
@@ -70,7 +63,6 @@
       <Image>img/code-actions/xaml/navigate/go-to-xaml-view.gif</Image>
       <FeatureUrl>code-actions/xaml/navigate#go-to-xaml-view</FeatureUrl>
       <Identifier>com.mfractor.navigation.forms.go_to_view</Identifier>
-      <IsPaid>true</IsPaid>
       <IsRemote>true</IsRemote>
     </Tip>
     <Tip>
@@ -79,7 +71,6 @@
       <Image>img/code-actions/xaml/navigate/go-to-view-model.gif</Image>
       <FeatureUrl>code-actions/xaml/navigate#go-to-view-model</FeatureUrl>
       <Identifier>com.mfractor.navigation.forms.go_to_view_model</Identifier>
-      <IsPaid>true</IsPaid>
       <IsRemote>true</IsRemote>
     </Tip>
     <Tip>
@@ -88,7 +79,6 @@
       <Image>img/code-actions/xaml/refactor/edit-color.gif</Image>
       <FeatureUrl>code-actions/xaml/refactor#edit-color-declaration</FeatureUrl>
       <Identifier>com.mfractor.code_actions.xaml.edit_color</Identifier>
-      <IsPaid>true</IsPaid>
       <IsRemote>true</IsRemote>
     </Tip>
     <Tip>
@@ -97,16 +87,14 @@
       <Image>img/code-actions/xaml/refactor/migrate-onplatform.gif</Image>
       <FeatureUrl>code-actions/xaml/refactor#migrate-onplatform-usage</FeatureUrl>
       <Identifier>com.mfractor.code_actions.xaml.migrate_on_platform_usage</Identifier>
-      <IsPaid>true</IsPaid>
       <IsRemote>true</IsRemote>
     </Tip>
     <Tip>
       <Title>Replace String With Localisation Lookup</Title>
-      <Description>Need to localise your XAML? Use MFractors localisation wizard to move string literals into RESX files and replace the original string with a localisation lookup!</Description>
+      <Description>Need to localise your XAML? MFractors localisation wizard moves string literals into RESX files and replaces that string with a localisation lookup!</Description>
       <Image>img/code-actions/xaml/refactor/localise-xaml.gif</Image>
       <FeatureUrl>code-actions/xaml/refactor#replace-string-with-localisation-lookup</FeatureUrl>
       <Identifier>com.mfractor.code_actions.xaml.replace_with_localisation_lookup</Identifier>
-      <IsPaid>true</IsPaid>
       <IsRemote>true</IsRemote>
     </Tip>
     <Tip>
@@ -115,25 +103,22 @@
       <Image>img/code-actions/xaml/generate/generate-view-model.gif</Image>
       <FeatureUrl>code-actions/xaml/generate#generate-new-view-model</FeatureUrl>
       <Identifier>com.mfractor.code_actions.xaml.implement_view_model</Identifier>
-      <IsPaid>true</IsPaid>
       <IsRemote>true</IsRemote>
     </Tip>
     <Tip>
       <Title>Implement Missing Members</Title>
-      <Description>You can use the Generate Bindable Properties action to quickly create new bindable properties; it'll even figure out the property types for you!</Description>
+      <Description>Use the Generate Bindable Properties code action to quickly create new bindable properties; it'll even figure out the property types for you!</Description>
       <Image>img/code-actions/xaml/generate/generate-bindable-properties.gif</Image>
       <FeatureUrl>code-actions/xaml/generate#implement-missing-members</FeatureUrl>
       <Identifier>com.mfractor.code_actions.xaml.implement_missing_members</Identifier>
-      <IsPaid>true</IsPaid>
       <IsRemote>true</IsRemote>
     </Tip>
     <Tip>
       <Title>Generate Xaml Localisation Infrastructure</Title>
-      <Description>The Generate Localisation Infrastructure code action will generate the necessary code files to power XAML localisation according to Xamarins best practices.</Description>
+      <Description>The Generate Localisation Infrastructure code action creates the necessary code files to power XAML localisation according to Xamarins best practices.</Description>
       <Image>img/code-actions/xaml/generate/generate-localisation-infrastructure.gif</Image>
       <FeatureUrl>code-actions/xaml/generate#generate-xaml-localisation-infrastructure</FeatureUrl>
       <Identifier>com.mfractor.code_actions.xaml.generate_xaml_localisation_infrastructure</Identifier>
-      <IsPaid>true</IsPaid>
       <IsRemote>true</IsRemote>
     </Tip>
     <Tip>
@@ -142,16 +127,14 @@
       <Image>img/code-actions/xaml/fix/import-image-fix.gif</Image>
       <FeatureUrl>code-actions/xaml/fix#import-missing-image-resource</FeatureUrl>
       <Identifier>com.mfractor.code_fixes.xaml.import_missing_image_resource</Identifier>
-      <IsPaid>true</IsPaid>
       <IsRemote>true</IsRemote>
     </Tip>
     <Tip>
       <Title>Replace String With Resource Lookup</Title>
-      <Description>You can use the localisation wizard to find and move all string literals in C# into a RESX file, replacing the original string with a resource lookup!</Description>
+      <Description>You can use the localisation wizard to find and move all C# strings into a RESX file, replacing the original string with a resource lookup!</Description>
       <Image>img/code-actions/csharp/localise-csharp.gif</Image>
       <FeatureUrl>code-actions/csharp#replace-string-with-resource-lookup</FeatureUrl>
       <Identifier>com.mfractor.code_actions.resx.replace_csharp_string_with_resource_lookup</Identifier>
-      <IsPaid>true</IsPaid>
       <IsRemote>true</IsRemote>
     </Tip>
   </Tips>

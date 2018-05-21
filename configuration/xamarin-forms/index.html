@@ -171,6 +171,10 @@
       
     
       
+      <li class="toctree-l3"><a href="#gtk-custom-renderer-code-snippets">GTK Custom Renderer Code Snippets</a></li>
+      
+    
+      
       <li class="toctree-l3"><a href="#ios-custom-renderer-code-snippets">IOS Custom Renderer Code Snippets</a></li>
       
     
@@ -688,10 +692,44 @@
 </tr>
 </tbody>
 </table>
+<h2 id="gtk-custom-renderer-code-snippets">GTK Custom Renderer Code Snippets</h2>
+<p><strong>Configuration Id: com.mfractor.configuration.forms.gtk_custom_renderers</strong></p>
+<p>Groups the GTK specific custom renderer code snippets for pages, layouts, controls and view cells into a single configuration point. When customising the code snippets for GTK, this configuration should be changed in the GTK project rather than the PCL/Shared Project/netstandard library.</p>
+<h3 id="configurable-properties_3">Configurable Properties</h3>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Defaults To</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Snippet</strong></td>
+<td><code>Code Snippet</code><br/><br/><strong>Arguments</strong>:<ul><li><code>control_type</code>: The fully qualified type of the page that this custom renderer is for.</li><li><code>control_name</code>: The name of the page that this custom renderer is for.</li><li><code>namespace</code>: The namespace that the custom renderer will be placed into.</li><li><code>renderer_name</code>: The name of the new custom renderer.</li><li><code>renderer_control</code>: The name of the base control type. For example, if your control is <code>MyCustomLabel</code> that extends a <code>Label</code>, <strong>renderer_control</strong> will be <code>Label</code>.</li><li><code>base_type</code>: The fully qualified type of the renderers base type.</li></ul></td>
+<td><code>using Xamarin.Forms.Platform.iOS;<br/>using Xamarin.Forms;<br/>using UIKit;<br/><br/>[assembly: Xamarin.Forms.ExportRenderer (typeof(), typeof(.))]<br/><br/>namespace <br/>{<br/>    public class  : <br/>    {<br/>    }<br/>}</code></td>
+<td>The code snippet to use for GTK custom renderers pages.</td>
+</tr>
+<tr>
+<td><strong>RenderersFolder</strong></td>
+<td>System.String</td>
+<td>Renderers</td>
+<td>What is the folder path that new renderers should be placed into?</td>
+</tr>
+<tr>
+<td><strong>RenderersNamespace</strong></td>
+<td>System.String</td>
+<td>.Renderers</td>
+<td>What is the fully qualifed namespace that new renderers should be placed into? Prepend the namespace name with a dot to make it relative to the projects default namespace.</td>
+</tr>
+</tbody>
+</table>
 <h2 id="ios-custom-renderer-code-snippets">IOS Custom Renderer Code Snippets</h2>
 <p><strong>Configuration Id: com.mfractor.configuration.forms.ios_custom_renderers</strong></p>
 <p>Groups the iOS specific custom renderer code snippets for pages, layouts, controls and view cells into a single configuration point. When customising the code snippets for iOS, this configuration should be changed in the iOS project rather than the PCL/Shared Project/netstandard library.</p>
-<h3 id="configurable-properties_3">Configurable Properties</h3>
+<h3 id="configurable-properties_4">Configurable Properties</h3>
 <table>
 <thead>
 <tr>
@@ -743,7 +781,7 @@
 <h2 id="mvvm-resolution-settings">MVVM Resolution Settings</h2>
 <p><strong>Configuration Id: com.mfractor.configuration.forms.mvvm_resolution</strong></p>
 <p>The MVVM resolution settings can be used to specify the project that your views or view models sit within. If you prefer to separate your views and view models into separate projects, these settings enable MFractor to resolve the MVVM relationship across project boundaries.</p>
-<h3 id="configurable-properties_4">Configurable Properties</h3>
+<h3 id="configurable-properties_5">Configurable Properties</h3>
 <table>
 <thead>
 <tr>
@@ -771,7 +809,7 @@
 <h2 id="value-conversion-settings">Value Conversion Settings</h2>
 <p><strong>Configuration Id: com.mfractor.configuration.forms.value_conversions</strong></p>
 <p>A collection of common settings to use for value converters.</p>
-<h3 id="configurable-properties_5">Configurable Properties</h3>
+<h3 id="configurable-properties_6">Configurable Properties</h3>
 <table>
 <thead>
 <tr>
