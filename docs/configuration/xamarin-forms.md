@@ -48,6 +48,21 @@ Groups all configuration settings and code snippets for the Event to Command cod
 | **EventToCommandBehaviorName** | System.String | EventToCommandBehavior | The class name of the event to command behavior. |
 | **SelectedItemEventArgsToSelectedItemConverterName** | System.String | SelectedItemEventArgsToSelectedItemConverter | The class name of the event to command behavior class. |
 
+## GTK Custom Renderer Code Snippets
+
+**Configuration Id: com.mfractor.configuration.forms.gtk_custom_renderers**
+
+Groups the GTK specific custom renderer code snippets for pages, layouts, controls and view cells into a single configuration point. When customising the code snippets for GTK, this configuration should be changed in the GTK project rather than the PCL/Shared Project/netstandard library.
+
+
+### Configurable Properties
+
+| Name | Type | Defaults To | Description |
+|------|------|-------------|-------------|
+| **Snippet** | `Code Snippet`<br/><br/>**Arguments**:<ul><li>`control_type`: The fully qualified type of the page that this custom renderer is for.</li><li>`control_name`: The name of the page that this custom renderer is for.</li><li>`namespace`: The namespace that the custom renderer will be placed into.</li><li>`renderer_name`: The name of the new custom renderer.</li><li>`renderer_control`: The name of the base control type. For example, if your control is `MyCustomLabel` that extends a `Label`, **renderer_control** will be `Label`.</li><li>`base_type`: The fully qualified type of the renderers base type.</li></ul> | <code>using Xamarin.Forms.Platform.iOS;<br/>using Xamarin.Forms;<br/>using UIKit;<br/><br/>[assembly: Xamarin.Forms.ExportRenderer (typeof(), typeof(.))]<br/><br/>namespace <br/>{<br/>    public class  : <br/>    {<br/>    }<br/>}</code> | The code snippet to use for GTK custom renderers pages. |
+| **RenderersFolder** | System.String | Renderers | What is the folder path that new renderers should be placed into? |
+| **RenderersNamespace** | System.String | .Renderers | What is the fully qualifed namespace that new renderers should be placed into? Prepend the namespace name with a dot to make it relative to the projects default namespace. |
+
 ## IOS Custom Renderer Code Snippets
 
 **Configuration Id: com.mfractor.configuration.forms.ios_custom_renderers**

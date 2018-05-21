@@ -179,7 +179,7 @@ When a type reference is fully qualified, this refactoring inserts a using state
 **Configuration Id: com.mfractor.code_actions.resx.replace_csharp_string_with_resource_lookup**
 
 
-![You can use the localisation wizard to find and move all string literals in C# into a RESX file, replacing the original string with a resource lookup!](/img/code-actions/csharp/localise-csharp.gif)
+![You can use the localisation wizard to find and move all C# strings into a RESX file, replacing the original string with a resource lookup!](/img/code-actions/csharp/localise-csharp.gif)
 
 This code refactoring will open the localisation wizard, allowing you to walk through all strings in a C# code file and replace inline strings with resource lookups.
 

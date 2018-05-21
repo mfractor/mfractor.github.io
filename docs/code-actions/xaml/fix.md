@@ -356,7 +356,7 @@ In the above example, the expression `{x:Static local:AppSettings.TextColor}` po
 **Fixes Code Issue:** [Event Handler Exists In Code Behind Class](/code-analysis/xaml.md#event-handler-exists-in-code-behind-class)
 
 
-![When an event handler Xaml attribute references a method that does not exist on the code behind class, the Generate Missing Event Handler code fix will generate a method on the code behind class.](/img/code-actions/xaml/fix/generate-event-handler.gif)
+![Need to create a new event handler? Use the Generate Missing Event Handler code fix to generate an event handler method on the code behind class.](/img/code-actions/xaml/fix/generate-event-handler.gif)
 
 When an event handler Xaml attribute references a method that does not exist on the code behind class, the **Generate Missing Event Handler** code fix will generate a method on the code behind class.
 
@@ -504,7 +504,7 @@ When the namespace inside c# symbol reference expression can be resolved to a .N
 **Fixes Code Issue:** [Unresolved Xml Namespace](/code-analysis/xaml.md#unresolved-xml-namespace)
 
 
-![When working with controls in XAML, use the Import Reference fix to resolve the namespace and assembly of a missing control and then generate the xmlns import for it.](/img/code-actions/xaml/fix/import-xaml-node.gif)
+![Use the Import Reference fix to generate an xmlns namespace import for a missing control in your XAML.](/img/code-actions/xaml/fix/import-xaml-node.gif)
 
 When building XAML documents, developers frequently use 3rd party or custom controls to build great UIs for their app.
 
