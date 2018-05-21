@@ -125,8 +125,6 @@ Your new namespace will be applied across the document:
 
 ![Need to localise your XAML? Use MFractors localisation wizard to move string literals into RESX files and replace the original string with a localisation lookup!](/img/code-actions/xaml/refactor/localise-xaml.gif)
 
-![Localising a XAML file using the localisation wizard](/img/forms/localisation-wizard.gif)
-
 This refactoring action will open the document localisation wizard, a dialog that walks through all strings in the current document and lets you easily replace them with a localised value lookup.
 
 When localising XAML files, MFractor assumes you are adhering to the best practices as outlined in [Localizing Xamarin.Forms Apps with RESX Resource Files](https://developer.xamarin.com/guides/xamarin-forms/advanced/localization/).
