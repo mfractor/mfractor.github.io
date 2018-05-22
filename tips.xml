@@ -1,4 +1,208 @@
 <?xml version="1.0" encoding="utf-16"?>
 <Manifest xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-  <Tips />
+  <Tips>
+    <Tip>
+      <Title>Generate Interface Implementation</Title>
+      <Description>Need to implement an interface? Tap Alt+Return on an interface and use Generate Interface to create a class for that interface.</Description>
+      <Image>img/code-actions/csharp/generate-interface.gif</Image>
+      <FeatureUrl>code-actions/csharp#generate-interface-implementation</FeatureUrl>
+      <IsRemote>true</IsRemote>
+    </Tip>
+    <Tip>
+      <Title>Go To Implementation</Title>
+      <Description>You can use MFractors Go-To Implementation shortcut to find classes that implement that interface and then jump to that class!</Description>
+      <Image>img/code-actions/csharp/go-to-implementation.gif</Image>
+      <FeatureUrl>code-actions/csharp#go-to-implementation</FeatureUrl>
+      <IsRemote>true</IsRemote>
+    </Tip>
+    <Tip>
+      <Title>Generate Event Handler</Title>
+      <Description>Use the Generate Event Handler code fix to generate an event handler method on a XAML files code behind class.</Description>
+      <Image>img/code-actions/xaml/fix/generate-event-handler.gif</Image>
+      <FeatureUrl>code-actions/xaml/fix#generate-event-handler</FeatureUrl>
+      <IsRemote>true</IsRemote>
+    </Tip>
+    <Tip>
+      <Title>Generate XAML View From XAML Node</Title>
+      <Description>Did you know you can create new controls from XAML? Right click on a missing control to create a new control implementation!</Description>
+      <Image>img/code-actions/xaml/fix/generate-custom-controls.gif</Image>
+      <FeatureUrl>code-actions/xaml/fix#generate-xaml-view-from-xaml-node</FeatureUrl>
+      <IsRemote>true</IsRemote>
+    </Tip>
+    <Tip>
+      <Title>Import Namespace And Assembly For Unresolved XAML Node</Title>
+      <Description>Use the Import Reference fix to generate an xmlns namespace import for a missing control in your XAML.</Description>
+      <Image>img/code-actions/xaml/fix/import-xaml-node.gif</Image>
+      <FeatureUrl>code-actions/xaml/fix#import-namespace-and-assembly-for-unresolved-xaml-node</FeatureUrl>
+      <IsRemote>true</IsRemote>
+    </Tip>
+    <Tip>
+      <Title>Generate Effect From XAML Declaration</Title>
+      <Description>Use the Generate Effect code action to create an effect and it's platform specific implementations</Description>
+      <Image>img/code-actions/xaml/generate/generate-effect.gif</Image>
+      <FeatureUrl>code-actions/xaml/generate#generate-effect-from-xaml-declaration</FeatureUrl>
+      <IsRemote>true</IsRemote>
+    </Tip>
+    <Tip>
+      <Title>Go To Code Behind Class</Title>
+      <Description>When you are in a ViewModel or XAML file, the Go-To Code Behind code action will navigate you to it's code behind class</Description>
+      <Image>img/code-actions/xaml/navigate/go-to-code-behind.gif</Image>
+      <FeatureUrl>code-actions/xaml/navigate#go-to-code-behind-class</FeatureUrl>
+      <IsRemote>true</IsRemote>
+    </Tip>
+    <Tip>
+      <Title>Go To XAML View</Title>
+      <Description>When you are in a ViewModel or code-behind, the Go-To Code XAML View code action will navigate you to it's XAML view.</Description>
+      <Image>img/code-actions/xaml/navigate/go-to-xaml-view.gif</Image>
+      <FeatureUrl>code-actions/xaml/navigate#go-to-xaml-view</FeatureUrl>
+      <IsRemote>true</IsRemote>
+    </Tip>
+    <Tip>
+      <Title>Go To View Model</Title>
+      <Description>When you are in a XAML file or it's code behind, the Go-To ViewModel code action will infer your view model and navigate to it.</Description>
+      <Image>img/code-actions/xaml/navigate/go-to-view-model.gif</Image>
+      <FeatureUrl>code-actions/xaml/navigate#go-to-view-model</FeatureUrl>
+      <IsRemote>true</IsRemote>
+    </Tip>
+    <Tip>
+      <Title>Edit Color Declaration</Title>
+      <Description>Use the Edit Color code action to visually edit a color from your Xaml.</Description>
+      <Image>img/code-actions/xaml/refactor/edit-color.gif</Image>
+      <FeatureUrl>code-actions/xaml/refactor#edit-color-declaration</FeatureUrl>
+      <IsRemote>true</IsRemote>
+    </Tip>
+    <Tip>
+      <Title>Migrate OnPlatform Usage</Title>
+      <Description>Use the Migrate OnPlatform code action to convert OnPlatform declarations to the Xamarin.Forms 2.3.4 format.</Description>
+      <Image>img/code-actions/xaml/refactor/migrate-onplatform.gif</Image>
+      <FeatureUrl>code-actions/xaml/refactor#migrate-onplatform-usage</FeatureUrl>
+      <IsRemote>true</IsRemote>
+    </Tip>
+    <Tip>
+      <Title>Replace String With Localisation Lookup</Title>
+      <Description>Need to localise your XAML? The Localisation Wizard moves string literals into RESX files and replaces that string with a localisation lookup!</Description>
+      <Image>img/code-actions/xaml/refactor/localise-xaml.gif</Image>
+      <FeatureUrl>code-actions/xaml/refactor#replace-string-with-localisation-lookup</FeatureUrl>
+      <IsRemote>true</IsRemote>
+    </Tip>
+    <Tip>
+      <Title>Generate New View Model</Title>
+      <Description>Use the Generate View Model code action to create a new view model for a XAML file with default implementations of each data-binding!</Description>
+      <Image>img/code-actions/xaml/generate/generate-view-model.gif</Image>
+      <FeatureUrl>code-actions/xaml/generate#generate-new-view-model</FeatureUrl>
+      <IsRemote>true</IsRemote>
+    </Tip>
+    <Tip>
+      <Title>Implement Missing Members</Title>
+      <Description>Use the Generate Bindable Properties code action to create new bindable properties; it'll even figure out the property types for you!</Description>
+      <Image>img/code-actions/xaml/generate/generate-bindable-properties.gif</Image>
+      <FeatureUrl>code-actions/xaml/generate#implement-missing-members</FeatureUrl>
+      <IsRemote>true</IsRemote>
+    </Tip>
+    <Tip>
+      <Title>Generate Xaml Localisation Infrastructure</Title>
+      <Description>The Generate Localisation Infrastructure action creates the code to power XAML localisation according to Xamarins best practices.</Description>
+      <Image>img/code-actions/xaml/generate/generate-localisation-infrastructure.gif</Image>
+      <FeatureUrl>code-actions/xaml/generate#generate-xaml-localisation-infrastructure</FeatureUrl>
+      <IsRemote>true</IsRemote>
+    </Tip>
+    <Tip>
+      <Title>Import Missing Image Resource</Title>
+      <Description>When you are missing an image resource, MFractor will warn you and give you the option to import it into your Android and iOS projects.</Description>
+      <Image>img/code-actions/xaml/fix/import-image-fix.gif</Image>
+      <FeatureUrl>code-actions/xaml/fix#import-missing-image-resource</FeatureUrl>
+      <IsRemote>true</IsRemote>
+    </Tip>
+    <Tip>
+      <Title>Replace String With Resource Lookup</Title>
+      <Description>You can use the localisation wizard to find and move all C# strings into a RESX file, replacing the original string with a resource lookup!</Description>
+      <Image>img/code-actions/csharp/localise-csharp.gif</Image>
+      <FeatureUrl>code-actions/csharp#replace-string-with-resource-lookup</FeatureUrl>
+      <IsRemote>true</IsRemote>
+    </Tip>
+    <Tip>
+      <Title>Color Suggestions Completions</Title>
+      <Description>MFractor suggests all available colors and even lets you open a color picker to visually select a color.</Description>
+      <Image>img/code-completion/xaml/color-intellisense.gif</Image>
+      <FeatureUrl>code-completion/xaml#color-suggestions-completions</FeatureUrl>
+      <IsRemote>true</IsRemote>
+    </Tip>
+    <Tip>
+      <Title>Color Picker IntelliSense Code Action</Title>
+      <Description>MFractor suggests all available colors and even lets you open a color picker to visually select a color.</Description>
+      <Image>img/code-completion/xaml/color-intellisense.gif</Image>
+      <FeatureUrl>code-completion/xaml#color-picker-intellisense-code-action</FeatureUrl>
+      <IsRemote>true</IsRemote>
+    </Tip>
+    <Tip>
+      <Title>Generate Value Converter Resource Completion</Title>
+      <Description>Use the Generate Value Converter IntelliSense action to create a new value converter from a resource dictionary.</Description>
+      <Image>img/code-completion/xaml/generate-value-converter-intellisense.gif</Image>
+      <FeatureUrl>code-completion/xaml#generate-value-converter-resource-completion</FeatureUrl>
+      <IsRemote>true</IsRemote>
+    </Tip>
+    <Tip>
+      <Title>Generate Binding Context Command Completion</Title>
+      <Description>When MFractor can infer your view model, you can generate commands onto your view model from IntelliSense.</Description>
+      <Image>img/code-completion/xaml/generate-command-intellisense.gif</Image>
+      <FeatureUrl>code-completion/xaml#generate-binding-context-command-completion</FeatureUrl>
+      <IsRemote>true</IsRemote>
+    </Tip>
+    <Tip>
+      <Title>Generate View Model Property Completion</Title>
+      <Description>When MFractor can infer your view model, you can generate new properties your view model from IntelliSense.</Description>
+      <Image>img/code-completion/xaml/generate-property-intellisense.gif</Image>
+      <FeatureUrl>code-completion/xaml#generate-view-model-property-completion</FeatureUrl>
+      <IsRemote>true</IsRemote>
+    </Tip>
+    <Tip>
+      <Title>Import Xml Namespace Completion</Title>
+      <Description>MFractors import namespace completion takes the hard work out of writing new xml namespaces.</Description>
+      <Image>img/code-completion/xaml/namespace-importing-intellisense.gif</Image>
+      <FeatureUrl>code-completion/xaml#import-xml-namespace-completion</FeatureUrl>
+      <IsRemote>true</IsRemote>
+    </Tip>
+    <Tip>
+      <Title>Select Image Asset Completion</Title>
+      <Description>Use the select image completion to visually choose the image asset you'd like to use in your XAML.</Description>
+      <Image>img/code-completion/xaml/select-image-completion.gif</Image>
+      <FeatureUrl>code-completion/xaml#select-image-asset-completion</FeatureUrl>
+      <IsRemote>true</IsRemote>
+    </Tip>
+    <Tip>
+      <Title>Setter Property Shorthand Completion</Title>
+      <Description>When creating new styles, MFractor will suggest available properties for the control and then insert a full Setter for it!</Description>
+      <Image>img/code-completion/xaml/setter-shorthand-intellisense.gif</Image>
+      <FeatureUrl>code-completion/xaml#setter-property-shorthand-completion</FeatureUrl>
+      <IsRemote>true</IsRemote>
+    </Tip>
+    <Tip>
+      <Title>Grid ColumnSpan Completion</Title>
+      <Description>When working inside Grids, MFractor will suggest available grid columns and grid column spans.</Description>
+      <Image>img/code-completion/xaml/grid-column-intellisense.gif</Image>
+      <FeatureUrl>code-completion/xaml#grid-columnspan-completion</FeatureUrl>
+      <IsRemote>true</IsRemote>
+    </Tip>
+    <Tip>
+      <Title>Grid Row Completion</Title>
+      <Description>When working inside Grids, MFractor will suggest available grid rows and grid row spans.</Description>
+      <Image>img/code-completion/xaml/grid-row-intellisense.gif</Image>
+      <FeatureUrl>code-completion/xaml#grid-row-completion</FeatureUrl>
+      <IsRemote>true</IsRemote>
+    </Tip>
+    <Tip>
+      <Title>Grid RowSpan Completion</Title>
+      <Description>When working inside Grids, MFractor will suggest available grid rows and grid row spans.</Description>
+      <Image>img/code-completion/xaml/grid-row-intellisense.gif</Image>
+      <FeatureUrl>code-completion/xaml#grid-rowspan-completion</FeatureUrl>
+      <IsRemote>true</IsRemote>
+    </Tip>
+    <Tip>
+      <Title>Add Watch To Debugger</Title>
+      <Description>Use MFractor's Add Debug Watch shortcut to add a variable into the watch pad.</Description>
+      <Image>img/debugging/add-debug-watch.gif</Image>
+      <FeatureUrl>debugging#add-watch-to-debugger</FeatureUrl>
+      <IsRemote>true</IsRemote>
+    </Tip>
+  </Tips>
 </Manifest>
