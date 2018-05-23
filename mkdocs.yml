@@ -27,6 +27,7 @@ pages:
   - Using MFractor.Annotations: annotations.md
 - Configuring MFractor:
   - Getting Started: configuration/getting-started.md
+  - Configurable Items: configuration/configurable-items.md
   - Code Snippets: configuration/code-snippets.md
   - Types: configuration/configuration-property-types.md
   - ResX: configuration/resx.md
