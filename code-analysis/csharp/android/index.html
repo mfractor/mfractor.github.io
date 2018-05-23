@@ -315,10 +315,6 @@
       
     
       
-      <li class="toctree-l3"><a href="#check-views-exist-in-layout">Check Views Exist In Layout</a></li>
-      
-    
-      
       <li class="toctree-l3"><a href="#class-derives-from-ijavaobject">Class Derives From IJavaObject</a></li>
       
     
@@ -628,52 +624,6 @@ public class MyApplication : Application
 </ul>
 <h2 id="check-androidcontentresresources-usages">Check Android.Content.Res.Resources Usages</h2>
 <p>When using the Android.Content.Res.Resources class, all Get* expressions expect the correct resource type identifier. For example, when using Resource.GetString(), a resource identifier of Resources.String.myString is expected. Passing any other resource identifier such as Resource.Color.myColor may result in unintended data being used or runtime exceptions. This code analyser validates that the correct resource type is being provided to the API call.</p>
-<h2 id="check-views-exist-in-layout">Check Views Exist In Layout</h2>
-<p>When connecting Android layouts (<code>axml</code> files located under <code>Resources/Layout</code>), developers pull views out of their bound layout with the <code>FindViewById</code> method.</p>
-<p>Take this example layout:</p>
-<p><strong>Main.axml</strong></p>
-<pre><code>&lt;LinearLayout&gt;
-    &lt;Button android:id=&quot;+@id/mainButton&quot;/&gt;
-&lt;/LinearLayout&gt;
-</code></pre>
-
-<p><strong>MyActivity.cs</strong></p>
-<pre><code>public class MyActivity : Activity
-{
-    public void OnCreate()
-    {
-        SetContentView(Resource.Layout.Main);
-        var button = FindViewById&lt;Button&gt;(Resource.Id.mainButton);
-    }
-}
-</code></pre>
-
-<p>The developer is retrieving the <code>mainButton</code> from the <code>Main.axml</code> layout that was bound using the <code>SetContentView(Resource.Layout.Main)</code> invocation.</p>
-<p>In large scale applications, as the amount of layouts grows, it becomes very easy to accidentally retrieve the wrong button from the layout.</p>
-<p>Say another layout defined <code>secondaryButton</code>... Consider the following:</p>
-<p><strong>MyActivity.cs</strong></p>
-<pre><code>public class MyActivity : Activity
-{
-    public void OnCreate()
-    {
-        SetContentView(Resource.Layout.Main);
-        var button = FindViewById&lt;Button&gt;(Resource.Id.secondaryButton);
-    }
-}
-</code></pre>
-
-<p>The developer is accidentally pulling out the <code>secondaryButton</code> id from <code>Main.axml</code> but <code>Main.axml</code> defines <code>mainButton</code>; this will cause a runtime exception when the <code>MainActivity</code> is created.</p>
-<p>MFractor provides the <a href="../../../annotations/">MFractor.Annotations</a> library that lets developers declare their layout uses for a class, enabling MFractor to inspect <code>FindViewById</code> calls and check that the <code>Resource.Id</code> provided exists in a particular layout.</p>
-<p><strong>MyActivity.cs</strong></p>
-<pre><code>[MFractor.Annotations.Android.UsesLayout(Resource.Layout.Main)]
-public class MyActivity : Activity
-{
-    // ...
-}
-</code></pre>
-
-<p>MFractor will look for a <code>secondaryButton</code> declaration in all configurations of <code>Main.axml</code> and provide a code warning if it cannot be found:</p>
-<p><img alt="Inspecting for missing views in a layout using the UsesLayout analyser" src="../../../img/code-analysis/android/uses-layout-analysis.png" /></p>
 <h2 id="class-derives-from-ijavaobject">Class Derives From IJavaObject</h2>
 <p>Often when creating new classes in a Xamarin.Android codebase developers will need a new class to be usable between Java and C#. Xamarin.Android provides the IJavaObject interface to expose a class to Java. Instead of directly inheriting from the IJavaObject interface, a developer should instead inherit from Java.Lang.Object which implements the required interface members.</p>
 <h2 id="incorrect-activity-creation">Incorrect Activity Creation</h2>

@@ -1,0 +1,12 @@
+using System;
+using System.Globalization;
+
+namespace $namespace$
+{
+    public interface ILocalise
+    {
+        CultureInfo GetCurrentCultureInfo();
+
+        void SetLocale();
+    }
+}

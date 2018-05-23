@@ -701,7 +701,7 @@
 <tr>
 <td><strong>Snippet</strong></td>
 <td><code>Code Snippet</code><br/><br/><strong>Arguments</strong>:<ul><li><code>name</code>: The name of the new event handler.</li><li><code>event_type</code>: The fully qualified type of the event handler.</li><li><code>arguments_type</code>: The fully qualified type of the event arguments.</li></ul></td>
-<td><code>public event &lt;&gt; ;</code></td>
+<td><code>public event $event_type$&lt;$argument_type$&gt; $name$;</code></td>
 <td>What is the code snippet to use when creating a new event handler?</td>
 </tr>
 </tbody>
@@ -723,7 +723,7 @@
 <tr>
 <td><strong>Snippet</strong></td>
 <td><code>Code Snippet</code><br/><br/><strong>Arguments</strong>:<ul><li><code>type</code>: The fully qualified type of the event arguments.</li><li><code>name</code>: The name of the new method.</li></ul></td>
-<td><code>public void (object sender,  e)<br/>{<br/>    throw new System.NotImplementedException();<br/>}</code></td>
+<td><code>public void $name$(object sender, $type$ e)<br/>{<br/>    throw new System.NotImplementedException();<br/>}</code></td>
 <td>What is the code snippet to use when creating the new event handler method declaration?</td>
 </tr>
 </tbody>
@@ -745,19 +745,19 @@
 <tr>
 <td><strong>Snippet</strong></td>
 <td><code>Code Snippet</code><br/><br/><strong>Arguments</strong>:<ul><li><code>value</code>: The value to assign to the new property.</li><li><code>name</code>: The name of the new propety.</li><li><code>type</code>: The fully qualified type of the new property.</li></ul></td>
-<td><code>public  <br/>{<br/>    set;<br/>}</code></td>
+<td><code>public $type$ $name$<br/>{<br/>    set;<br/>}</code></td>
 <td>What is the code snippet to use when creating the property declaration?</td>
 </tr>
 <tr>
 <td><strong>ReadOnlySnippet</strong></td>
 <td><code>Code Snippet</code><br/><br/><strong>Arguments</strong>:<ul><li><code>value</code>: The value to assign to the new property.</li><li><code>type</code>: The fully qualified type of the new property.</li><li><code>name</code>: The name of the new propety.</li></ul></td>
-<td><code>public  <br/>{<br/>    get;<br/>}</code></td>
+<td><code>public $type$ $name$<br/>{<br/>    get;<br/>}</code></td>
 <td>What is the code snippet to use when creating a readonly property declaration?</td>
 </tr>
 <tr>
 <td><strong>WriteOnlySnippet</strong></td>
 <td><code>Code Snippet</code><br/><br/><strong>Arguments</strong>:<ul><li><code>value</code>: The value to assign to the new property.</li><li><code>name</code>: The name of the new propety.</li><li><code>type</code>: The fully qualified type of the new property.</li></ul></td>
-<td><code>public  <br/>{<br/>    get;<br/>    set;<br/>}</code></td>
+<td><code>public $type$ $name$<br/>{<br/>    get;<br/>    set;<br/>}</code></td>
 <td>What is the code snippet to use when creating a write only property declaration?</td>
 </tr>
 </tbody>

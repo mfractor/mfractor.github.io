@@ -605,7 +605,7 @@
 <tr>
 <td><strong>Snippet</strong></td>
 <td><code>Code Snippet</code><br/><br/><strong>Arguments</strong>:<ul><li><code>name</code>: The name of the new bindable property.</li><li><code>type</code>: The type of the new bindable property.</li><li><code>control_type</code>: The control type that the new bindable property has been created inside.</li></ul></td>
-<td><code>public static readonly Xamarin.Forms.BindableProperty Property = Xamarin.Forms.BindableProperty.Create(nameof(), typeof(), typeof(), default());<br/>public  <br/>{<br/>    get<br/>    {<br/>        return ()GetValue(Property);<br/>    }<br/><br/>    set<br/>    {<br/>        SetValue(Property, value);<br/>    }<br/>}</code></td>
+<td><a href="../../code-generation/xamarin-forms/snippets/generate-bindable-property/snippet.txt">View Code Snippet</a></td>
 <td>When creating the new bindable property, what is the default code snippet MFractor should use?</td>
 </tr>
 </tbody>
@@ -636,7 +636,7 @@
 <tr>
 <td><strong>Snippet</strong></td>
 <td><code>Code Snippet</code><br/><br/><strong>Arguments</strong>:<ul><li><code>name</code>: The name of the new command.</li><li><code>type</code>: The fully qualified type of the new command</li></ul></td>
-<td><code>public System.Windows.Input.ICommand <br/>{<br/>    get<br/>    {<br/>        return new (() =&gt;<br/>        {<br/>            throw new System.NotImplementedException();<br/>        });<br/>    }<br/>}</code></td>
+<td><a href="../../code-generation/xamarin-forms/snippets/generate-icommand-implementation/snippet.txt">View Code Snippet</a></td>
 <td>What is the code snippet to use when creating the command stub? If not set, this code generator will default to generating a stub <code>Xamarin.Forms.Command</code> implementation</td>
 </tr>
 <tr>
@@ -670,7 +670,7 @@
 <tr>
 <td><strong>Snippet</strong></td>
 <td><code>Code Snippet</code><br/><br/><strong>Arguments</strong>:<ul><li><code>name</code>: The name of the new value converter.</li><li><code>namespace</code>: The namespace the new converter will be placed inside.</li><li><code>value_conversion_attribute</code>: The fully qualified type of the value conversion attribute (if available).</li><li><code>input_type</code>: The fully qualified type that the value converter should accept as it's input type. If unavailable, defaults to <code>System.Object</code>.</li><li><code>output_type</code>: The fully qualified type that the value converter should accept as it's output type. If unavailable, defaults to <code>System.Object</code>.</li><li><code>parameter_type</code>: The fully qualified type that the value converter should accept as it's parameter type. If unavailable, defaults to <code>System.Object</code>.</li></ul></td>
-<td><code>using System;<br/>using System.Globalization;<br/>using Xamarin.Forms;<br/><br/>namespace <br/>{<br/>    [(typeof(), typeof())]<br/>    public class  : IValueConverter<br/>    {<br/>        public object Convert(object value, Type targetType, object parameter, CultureInfo culture)<br/>        {<br/>            if (value is  == false)<br/>            {<br/>                return default();<br/>            }<br/><br/>            var input = ()value;<br/><br/>            // TODO: Put your value conversion logic here.<br/><br/>            return default();<br/>        }<br/><br/>        public object ConvertBack(object value, Type targetType, object parameter, CultureInfo culture)<br/>        {<br/>            throw new NotImplementedException();<br/>        }<br/>    }<br/>}</code></td>
+<td><a href="../../code-generation/xamarin-forms/snippets/generate-ivalueconverter-implementation/snippet.txt">View Code Snippet</a></td>
 <td>What is the code snippet to use when generating the value converter class file?</td>
 </tr>
 </tbody>
@@ -727,25 +727,25 @@
 <tr>
 <td><strong>iOSEffectSnippet</strong></td>
 <td><code>Code Snippet</code><br/><br/><strong>Arguments</strong>:<ul><li><code>name</code>: The name of the new effect.</li><li><code>group_name</code>: The resolution group name of the new effect.</li><li><code>namespace</code>: The iOS projects default namespace.</li><li><code>platform</code>: If you wish to shared the platform-specific effect template, this is the name of the effects platform.</li></ul></td>
-<td><code>using .Effects;<br/>using Xamarin.Forms;<br/>using Xamarin.Forms.Platform.;<br/><br/>[assembly: ResolutionGroupName("")]<br/>[assembly: ExportEffect(typeof(), "")]<br/>namespace .Effects<br/>{<br/>    public class  : PlatformEffect<br/>    {<br/>        protected override void OnAttached()<br/>        {<br/>            // TODO: Apply your effect.<br/>        }<br/><br/>        protected override void OnDetached()<br/>        {<br/>            // TODO: Remove your effect.<br/>        }<br/>    }<br/>}<br/></code></td>
+<td><a href="../../code-generation/xamarin-forms/snippets/generate-platform-specific-effect/ioseffectsnippet.txt">View Code Snippet</a></td>
 <td>What is the code snippet for the iOS platform-specific effect?</td>
 </tr>
 <tr>
 <td><strong>AndroidEffectSnippet</strong></td>
 <td><code>Code Snippet</code><br/><br/><strong>Arguments</strong>:<ul><li><code>name</code>: The name of the new effect.</li><li><code>group_name</code>: The resolution group name of the new effect.</li><li><code>namespace</code>: The Android projects default namespace.</li><li><code>platform</code>: If you wish to shared the platform-specific effect template, this is the name of the effects platform.</li></ul></td>
-<td><code>using .Effects;<br/>using Xamarin.Forms;<br/>using Xamarin.Forms.Platform.;<br/><br/>[assembly: ResolutionGroupName("")]<br/>[assembly: ExportEffect(typeof(), "")]<br/>namespace .Effects<br/>{<br/>    public class  : PlatformEffect<br/>    {<br/>        protected override void OnAttached()<br/>        {<br/>            // TODO: Apply your effect.<br/>        }<br/><br/>        protected override void OnDetached()<br/>        {<br/>            // TODO: Remove your effect.<br/>        }<br/>    }<br/>}<br/></code></td>
+<td><a href="../../code-generation/xamarin-forms/snippets/generate-platform-specific-effect/androideffectsnippet.txt">View Code Snippet</a></td>
 <td>What is the code snippet for the Android platform-specific effect?</td>
 </tr>
 <tr>
 <td><strong>GtkEffectSnippet</strong></td>
 <td><code>Code Snippet</code><br/><br/><strong>Arguments</strong>:<ul><li><code>name</code>: The name of the new effect.</li><li><code>group_name</code>: The resolution group name of the new effect.</li><li><code>namespace</code>: The GTK projects default namespace.</li><li><code>platform</code>: If you wish to shared the platform-specific effect template, this is the name of the effects platform.</li></ul></td>
-<td><code>using .Effects;<br/>using Xamarin.Forms;<br/>using Xamarin.Forms.Platform.;<br/><br/>[assembly: ResolutionGroupName("")]<br/>[assembly: ExportEffect(typeof(), "")]<br/>namespace .Effects<br/>{<br/>    public class  : PlatformEffect<br/>    {<br/>        protected override void OnAttached()<br/>        {<br/>            // TODO: Apply your effect.<br/>        }<br/><br/>        protected override void OnDetached()<br/>        {<br/>            // TODO: Remove your effect.<br/>        }<br/>    }<br/>}<br/></code></td>
+<td><a href="../../code-generation/xamarin-forms/snippets/generate-platform-specific-effect/gtkeffectsnippet.txt">View Code Snippet</a></td>
 <td>What is the code snippet for the GTK platform-specific effect?</td>
 </tr>
 <tr>
 <td><strong>EffectSnippet</strong></td>
 <td><code>Code Snippet</code><br/><br/><strong>Arguments</strong>:<ul><li><code>name</code>: The name of the new effect.</li><li><code>group_name</code>: The resolution group name of the new effect.</li><li><code>namespace</code>: The common projects default namespace.</li></ul></td>
-<td><code><br/>using System;<br/>using Xamarin.Forms;<br/><br/>namespace <br/>{<br/>    public class  : RoutingEffect<br/>    {<br/>        public () : base(".")<br/>        {<br/>        }<br/>    }<br/>}<br/></code></td>
+<td><a href="../../code-generation/xamarin-forms/snippets/generate-platform-specific-effect/effectsnippet.txt">View Code Snippet</a></td>
 <td>What is the code snippet for the effect?</td>
 </tr>
 </tbody>
@@ -767,7 +767,7 @@
 <tr>
 <td><strong>Snippet</strong></td>
 <td><code>Code Snippet</code><br/><br/><strong>Arguments</strong>:<ul><li><code>namespace</code>: The namespace that the new value conversion attribute should be placed within.</li></ul></td>
-<td><code>using System;<br/>namespace <br/>{<br/>    /// <summary><br/>    /// When annotated onto an IValueConverter implementation, enables third party tools to analyse the type-flow of binding expressions.<br/>    /// </summary><br/>    [AttributeUsage(AttributeTargets.Class, AllowMultiple = true)]<br/>    public class ValueConversionAttribute : Attribute<br/>    {<br/>        public ValueConversionAttribute(Type input, Type output)<br/>        {<br/>        }<br/><br/>        public Type ParameterType<br/>        {<br/>            get;<br/>            set;<br/>        }<br/>    }<br/>}</code></td>
+<td><a href="../../code-generation/xamarin-forms/snippets/generate-value-conversion-attribute/snippet.txt">View Code Snippet</a></td>
 <td>What is the default code snippet to use when creating the value conversion attribute implementation?</td>
 </tr>
 </tbody>
@@ -799,7 +799,7 @@
 <tr>
 <td><strong>CodeBehindSnippet</strong></td>
 <td><code>Code Snippet</code><br/><br/><strong>Arguments</strong>:<ul><li><code>name</code>: The name of the new class.</li><li><code>namespace</code>: The namespace that the new class resides inside.</li><li><code>type</code>: The base type of the new class.</li></ul></td>
-<td><code>using System;<br/><br/>namespace <br/>{<br/>    public partial class  : <br/>    {<br/>        public ()<br/>        {<br/>            InitializeComponent();<br/>        }<br/>    }<br/>}</code></td>
+<td><a href="../../code-generation/xamarin-forms/snippets/generate-view-with-xaml-and-code-behind-class/codebehindsnippet.txt">View Code Snippet</a></td>
 <td>What is the default implementation of the new XAML control's code behind class?</td>
 </tr>
 </tbody>
@@ -826,7 +826,7 @@
 <tr>
 <td><strong>Snippet</strong></td>
 <td><code>Code Snippet</code><br/><br/><strong>Arguments</strong>:<ul><li><code>control</code>: The name of the control that this style sheet is for. EG: <code>stackLayout</code>, <code>entry</code>, <code>view</code> etc</li></ul></td>
-<td><code>  {<br/>    margin:10;<br/>}</code></td>
+<td><code>$control$  {<br/>    margin:10;<br/>}</code></td>
 <td>The default cascading style sheet to</td>
 </tr>
 <tr>
@@ -872,7 +872,7 @@
 <tr>
 <td><strong>XamlLocalisationExpression</strong></td>
 <td><code>Code Snippet</code><br/><br/><strong>Arguments</strong>:<ul><li><code>namespace</code>: The xml namespace for the translate extension symbol when used in XAML.</li><li><code>translate_extension</code>: The name of the translation extension that's used to lookup a localised value for a given key.</li><li><code>key</code>: The key that's used to lookup a localised value in this applications resources.</li><li><code>resx_name</code>: The name of the RESX file to look into for the given key, excluding the <code>.resx</code> file extension.</li></ul></td>
-<td><code>{: }</code></td>
+<td><code>{$namespace$:$translate_extension$ $key$}</code></td>
 <td>When importing a XAML namespace reference to the translation extension, what is the default namespace name that should be used?</td>
 </tr>
 </tbody>
@@ -900,13 +900,13 @@
 <tr>
 <td><strong>Snippet</strong></td>
 <td><code>Code Snippet</code><br/><br/><strong>Arguments</strong>:<ul><li><code>type</code>: The fully qualified type of the new property.</li><li><code>name</code>: The name of the new property.</li></ul></td>
-<td><code>public  <br/>{<br/>    get;<br/>    set;<br/>}</code></td>
+<td><code>public $type$ $name$<br/>{<br/>    get;<br/>    set;<br/>}</code></td>
 <td>What is the code snippet to use when creating the property declaration?</td>
 </tr>
 <tr>
 <td><strong>ValueSnippet</strong></td>
 <td><code>Code Snippet</code><br/><br/><strong>Arguments</strong>:<ul><li><code>type</code>: The fully qualified type of the new property.</li><li><code>name</code>: The name of the new property.</li><li><code>value</code>: The value to assign to the new property.</li></ul></td>
-<td><code>public  <br/>{<br/>    get;<br/>    set;<br/>} = ;</code></td>
+<td><code>public $type$ $name$<br/>{<br/>    get;<br/>    set;<br/>} = $value$;</code></td>
 <td>What is the code snippet to use when creating a property declaration with a default value?</td>
 </tr>
 <tr>
@@ -956,25 +956,25 @@
 <tr>
 <td><strong>ILocaliseSnippet</strong></td>
 <td><code>Code Snippet</code><br/><br/><strong>Arguments</strong>:<ul><li><code>namespace</code>: The projects namespace</li><li><code>name</code>: The name of the new localiser interface. Defaults to <code>ILocalise</code></li></ul></td>
-<td><code>using System;<br/>using System.Globalization;<br/><br/>namespace <br/>{<br/>    public interface ILocalise<br/>    {<br/>        CultureInfo GetCurrentCultureInfo();<br/><br/>        void SetLocale();<br/>    }<br/>}</code></td>
+<td><a href="../../code-generation/xamarin-forms/snippets/xaml-localisation-infrastructure-generation/ilocalisesnippet.txt">View Code Snippet</a></td>
 <td>The code snippet to use for the <code>ILocalise</code> interface that each platform project should implement.</td>
 </tr>
 <tr>
 <td><strong>TranslateExtensionSnippet</strong></td>
 <td><code>Code Snippet</code><br/><br/><strong>Arguments</strong>:<ul><li><code>namespace</code>: The projects namespace</li><li><code>name</code>: The name of the translation extension class. This will be derived from the string localisation generations <em>TranslateExtensionSymbol</em> property.</li><li><code>resource</code>: The fully qualified type of the resource file that the translate extension should use when looking for localisation values. This will be provided by the apps default resource file config.</li><li><code>localiser</code>: The name of the localisation interface that provides the current culture.</li></ul></td>
-<td><code>using System;<br/>using System.Globalization;<br/>using System.Reflection;<br/>using System.Resources;<br/>using Xamarin.Forms;<br/>using Xamarin.Forms.Xaml;<br/><br/>namespace <br/>{<br/>    // You exclude the 'Extension' suffix when using in Xaml markup<br/>    [ContentProperty ("Text")]<br/>    public class  : IMarkupExtension<br/>    {<br/>        readonly CultureInfo ci;<br/>        const string ResourceId = "";<br/><br/>        private static readonly Lazy<ResourceManager> ResMgr = new Lazy<ResourceManager>(()=&gt; new ResourceManager(ResourceId, typeof().GetTypeInfo().Assembly));<br/><br/>        public ()<br/>        {<br/>            if (Device.RuntimePlatform == Device.iOS</td>
-<td>Device.RuntimePlatform == Device.Android)<br/>            {<br/>                ci = DependencyService.Get&lt;&gt;().GetCurrentCultureInfo();<br/>            }<br/>        }<br/><br/>        public string Text { get; set; }<br/><br/>        public object ProvideValue (IServiceProvider serviceProvider)<br/>        {<br/>            if (Text == null)<br/>                return "";<br/><br/>            var translation = ResMgr.Value.GetString(Text, ci);<br/><br/>            if (translation == null)<br/>            {<br/>                #if DEBUG<br/>                throw new ArgumentException(<br/>                    String.Format("Key '{0}' was not found in resources '{1}' for culture '{2}'.", Text, ResourceId, ci.Name),<br/>                    "Text");<br/>                #else<br/>                translation = Text; // returns the key, which GETS DISPLAYED TO THE USER<br/>                #endif<br/>            }<br/>            return translation;<br/>        }<br/>    }<br/>}</code></td>
+<td><a href="../../code-generation/xamarin-forms/snippets/xaml-localisation-infrastructure-generation/translateextensionsnippet.txt">View Code Snippet</a></td>
+<td>The code snippet to use for the translation extension.</td>
 </tr>
 <tr>
 <td><strong>AndroidLocaliseSnippet</strong></td>
 <td><code>Code Snippet</code><br/><br/><strong>Arguments</strong>:<ul><li><code>namespace</code>: The projects namespace</li><li><code>i18n_namespace</code>: The namespace that the translate extension and ILocalise interface live within</li><li><code>localiser</code>: The name of the localisation interface that provides the current culture.</li></ul></td>
-<td><code>using System;<br/>using System.Globalization;<br/>using System.Linq;<br/>using System.Threading;<br/>using Java.Util;<br/>using Xamarin.Forms;<br/>using ;<br/><br/>[assembly: Dependency(typeof(.Localise))]<br/><br/>namespace <br/>{<br/>    public class Localise : <br/>    {<br/>        public void SetLocale(CultureInfo ci)<br/>        {<br/>            Thread.CurrentThread.CurrentCulture = ci;<br/>            Thread.CurrentThread.CurrentUICulture = ci;<br/>        }<br/><br/>        public CultureInfo GetCurrentCultureInfo()<br/>        {<br/>            var netLanguage = "en";<br/>            var androidLocale = Java.Util.Locale.Default;<br/>            netLanguage = AndroidToDotnetLanguage(androidLocale.ToString().Replace("_", "-"));<br/>            // this gets called a lot - try/catch can be expensive so consider caching or something<br/>            System.Globalization.CultureInfo ci = null;<br/>            try<br/>            {<br/>                ci = new System.Globalization.CultureInfo(netLanguage);<br/>            }<br/>            catch (CultureNotFoundException e1)<br/>            {<br/>                // iOS locale not valid .NET culture (eg. "en-ES" : English in Spain)<br/>                // fallback to first characters, in this case "en"<br/>                try<br/>                {<br/>                    var fallback = ToDotnetFallbackLanguage(new PlatformCulture(netLanguage));<br/>                    ci = new System.Globalization.CultureInfo(fallback);<br/>                }<br/>                catch (CultureNotFoundException e2)<br/>                {<br/>                    // iOS language not valid .NET culture, falling back to English<br/>                    ci = new System.Globalization.CultureInfo("en");<br/>                }<br/>            }<br/>            return ci;<br/>        }<br/>        string AndroidToDotnetLanguage(string androidLanguage)<br/>        {<br/>            var netLanguage = androidLanguage;<br/>            //certain languages need to be converted to CultureInfo equivalent<br/>            switch (androidLanguage)<br/>            {<br/>                case "ms-BN":   // "Malaysian (Brunei)" not supported .NET culture<br/>                case "ms-MY":   // "Malaysian (Malaysia)" not supported .NET culture<br/>                case "ms-SG":   // "Malaysian (Singapore)" not supported .NET culture<br/>                    netLanguage = "ms"; // closest supported<br/>                    break;<br/>                case "in-ID":  // "Indonesian (Indonesia)" has different code in  .NET<br/>                    netLanguage = "id-ID"; // correct code for .NET<br/>                    break;<br/>                case "gsw-CH":  // "Schwiizertüütsch (Swiss German)" not supported .NET culture<br/>                    netLanguage = "de-CH"; // closest supported<br/>                    break;<br/>                    // add more application-specific cases here (if required)<br/>                    // ONLY use cultures that have been tested and known to work<br/>            }<br/>            return netLanguage;<br/>        }<br/>        string ToDotnetFallbackLanguage(PlatformCulture platCulture)<br/>        {<br/>            var netLanguage = platCulture.LanguageCode; // use the first part of the identifier (two chars, usually);<br/>            switch (platCulture.LanguageCode)<br/>            {<br/>                case "gsw":<br/>                    netLanguage = "de-CH"; // equivalent to German (Switzerland) for this app<br/>                    break;<br/>                    // add more application-specific cases here (if required)<br/>                    // ONLY use cultures that have been tested and known to work<br/>            }<br/>            return netLanguage;<br/>        }<br/>    }<br/>    }<br/>}<br/></code></td>
+<td><a href="../../code-generation/xamarin-forms/snippets/xaml-localisation-infrastructure-generation/androidlocalisesnippet.txt">View Code Snippet</a></td>
 <td>The code snippet to use for the Android implementation of the localization interface to provide the current culture.</td>
 </tr>
 <tr>
 <td><strong>iOSLocaliseSnippet</strong></td>
 <td><code>Code Snippet</code><br/><br/><strong>Arguments</strong>:<ul><li><code>namespace</code>: The projects namespace</li><li><code>i18n_namespace</code>: The namespace that the translate extension and ILocalise interface live within</li><li><code>localiser</code>: The name of the localisation interface that provides the current culture.</li></ul></td>
-<td><code>using System;<br/>using System.Globalization;<br/>using System.Threading;<br/>using Foundation;<br/>using Xamarin.Forms;<br/>using ;<br/><br/>[assembly: Dependency(typeof(.Localise))]<br/><br/>namespace <br/>{<br/>    public class Localise : <br/>    {<br/>        public void SetLocale (CultureInfo ci)<br/>        {<br/>            Thread.CurrentThread.CurrentCulture = ci;<br/>            Thread.CurrentThread.CurrentUICulture = ci;<br/>        }<br/><br/>        public CultureInfo GetCurrentCultureInfo ()<br/>        {<br/>            var netLanguage = "en";<br/>            if (NSLocale.PreferredLanguages.Length &gt; 0)<br/>            {<br/>                var pref = NSLocale.PreferredLanguages [0];<br/>                netLanguage = iOSToDotnetLanguage(pref);<br/>            }<br/>            // this gets called a lot - try/catch can be expensive so consider caching or something<br/>            System.Globalization.CultureInfo ci = null;<br/>            try<br/>            {<br/>                ci = new System.Globalization.CultureInfo(netLanguage);<br/>            }<br/>            catch (CultureNotFoundException e1)<br/>            {<br/>                // iOS locale not valid .NET culture (eg. "en-ES" : English in Spain)<br/>                // fallback to first characters, in this case "en"<br/>                try<br/>                {<br/>                    var fallback = ToDotnetFallbackLanguage(new PlatformCulture(netLanguage));<br/>                    ci = new System.Globalization.CultureInfo(fallback);<br/>                }<br/>                catch (CultureNotFoundException e2)<br/>                {<br/>                    // iOS language not valid .NET culture, falling back to English<br/>                    ci = new System.Globalization.CultureInfo("en");<br/>                }<br/>            }<br/>            return ci;<br/>        }<br/><br/>        string iOSToDotnetLanguage(string iOSLanguage)<br/>        {<br/>            var netLanguage = iOSLanguage;<br/>            //certain languages need to be converted to CultureInfo equivalent<br/>            switch (iOSLanguage)<br/>            {<br/>                case "ms-MY":   // "Malaysian (Malaysia)" not supported .NET culture<br/>                case "ms-SG":   // "Malaysian (Singapore)" not supported .NET culture<br/>                    netLanguage = "ms"; // closest supported<br/>                    break;<br/>                case "gsw-CH":  // "Schwiizertüütsch (Swiss German)" not supported .NET culture<br/>                    netLanguage = "de-CH"; // closest supported<br/>                    break;<br/>                // add more application-specific cases here (if required)<br/>                // ONLY use cultures that have been tested and known to work<br/>            }<br/>            return netLanguage;<br/>        }<br/><br/>        string ToDotnetFallbackLanguage (PlatformCulture platCulture)<br/>        {<br/>            var netLanguage = platCulture.LanguageCode; // use the first part of the identifier (two chars, usually);<br/>            switch (platCulture.LanguageCode)<br/>            {<br/>                case "pt":<br/>                    netLanguage = "pt-PT"; // fallback to Portuguese (Portugal)<br/>                    break;<br/>                case "gsw":<br/>                    netLanguage = "de-CH"; // equivalent to German (Switzerland) for this app<br/>                    break;<br/>                // add more application-specific cases here (if required)<br/>                // ONLY use cultures that have been tested and known to work<br/>            }<br/>            return netLanguage;<br/>        }<br/>    }<br/>}</code></td>
+<td><a href="../../code-generation/xamarin-forms/snippets/xaml-localisation-infrastructure-generation/ioslocalisesnippet.txt">View Code Snippet</a></td>
 <td>The code snippet to use for the iOS implementation of the localization interface to provide the current culture.</td>
 </tr>
 </tbody>
