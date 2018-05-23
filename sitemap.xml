@@ -58,6 +58,12 @@
     </url>
         
     <url>
+     <loc>/configuration/configurable-items/</loc>
+     <lastmod>2018-05-23</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
      <loc>/configuration/code-snippets/</loc>
      <lastmod>2018-05-23</lastmod>
      <changefreq>daily</changefreq>
