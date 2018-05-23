@@ -1,0 +1,13 @@
+public static readonly Xamarin.Forms.BindableProperty $name$Property = Xamarin.Forms.BindableProperty.Create(nameof($name$), typeof($type$), typeof($control_type$), default($type$));
+public $type$ $name$
+{
+    get
+    {
+        return ($type$)GetValue($name$Property);
+    }
+
+    set
+    {
+        SetValue($name$Property, value);
+    }
+}

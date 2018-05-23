@@ -165,11 +165,6 @@ Inspects usages of the `x:Reference` expression and validates the referenced ele
 Validates the elements provided to a resource dictionary supply an `x:Key` attribute to declare their resource dictionary key.
 
 
-## Root Element Defines Code Behind Class
-
-Checks that the root xaml node defines a code behind class using the `x:Class` directive
-
-
 ## Row Is Outside Grid Boundaries
 
 This code analyser inspects usages of the `Grid.Row` attribute and validates that the row provided is within the total rows declared by the parent grid.
