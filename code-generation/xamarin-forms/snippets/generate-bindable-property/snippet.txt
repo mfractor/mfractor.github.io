@@ -1,4 +1,4 @@
-public static readonly Xamarin.Forms.BindableProperty $name$Property = Xamarin.Forms.BindableProperty.Create(nameof($name$), typeof($type$), typeof($control_type$), default($type$));
+public static readonly Xamarin.Forms.BindableProperty $name$Property = Xamarin.Forms.BindableProperty.Create(nameof($name$), typeof($type$), typeof($control_type$), default($type$), propertyChanged: On$name$Changed);
 public $type$ $name$
 {
     get
@@ -10,4 +10,14 @@ public $type$ $name$
     {
         SetValue($name$Property, value);
     }
+}
+
+static void On$name$Changed (BindableObject bindable, object oldValue, object newValue)
+{
+    var control = ($control_type$)bindable;
+    
+    var existing = ($type$)oldValue;
+    var incoming = ($type$)newValue;
+    
+    // TODO: Logic for the property changed here.
 }
