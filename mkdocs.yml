@@ -61,6 +61,7 @@ pages:
     - C#: code-generation/csharp.md
   - Android (C#):  code-generation/csharp/android.md
   - Xamarin.Forms (C#): code-generation/xamarin-forms.md
+  - Linker: code-generation/linker.md
   - Xaml: code-generation/xaml.md
   - ResX: code-generation/resx.md
   - XML: code-generation/xml.md
