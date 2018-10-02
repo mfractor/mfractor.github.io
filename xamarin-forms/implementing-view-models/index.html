@@ -179,20 +179,6 @@
 
   
   
-<li class="toctree-l1 ">
-  <a class="" href="../navigation/">Navigation Tools</a>
-  
-</li>
-
-  
-  
-<li class="toctree-l1 ">
-  <a class="" href="../analysis/">Analysis</a>
-  
-</li>
-
-  
-  
 <li class="toctree-l1 current">
   <a class="current" href="./">Implementing View Models</a>
   
@@ -581,11 +567,11 @@
             <div class="section">
               
                 <h2 id="implementing-view-models">Implementing View Models</h2>
-<p><em>Generate properties and view models from Xaml to C# using code fixes and the Implement View Model refactoring</em></p>
+<p><em>Generate properties and view models from XAML to C# using code fixes and the Implement View Model refactoring</em></p>
 <h2 id="introduction">Introduction</h2>
 <p>In Xamarin.Forms apps, we design our applications using the Model - View - ViewModel design pattern; relying on binding mechanisms to mirror data back and forth between the view and view model.</p>
 <p>We accomplish this data-transfer behaviour through the <a href="https://developer.xamarin.com/api/type/Xamarin.Forms.Binding/">Binding Markup Extension</a>. This is a Xamarin.Forms API that implements the <a href="https://developer.xamarin.com/api/type/Xamarin.Forms.Xaml.IMarkupExtension/">IMarkupExtension interface</a>; it reflects changes from the binding context to the view and vice-versa.</p>
-<p>We use the binding markup extension syntax in our Xaml views:</p>
+<p>We use the binding markup extension syntax in our XAML views:</p>
 <p><strong>LoginPage.xaml.cs</strong></p>
 <pre><code>&lt;Entry Text=&quot;{Binding Username}&quot;/&gt;
 </code></pre>
@@ -604,10 +590,10 @@
 &lt;Entry Text=&quot;{Binding Password}&quot;/&gt;
 </code></pre>
 
-<p>Provided we have configured the views binding context correctly, the <a href="../analysis/">Xaml analyser</a> recognises this is a runtime bug and marks it:</p>
+<p>Provided we have configured the views binding context correctly, the XAML analyser recognises this is a runtime bug and marks it:</p>
 <p><img alt="" src="../../img/tutorials/implementing-view-models/missing-binding.png" /></p>
-<p>MFractor encourages a <strong>Xaml first</strong> workflow; you write out bindings in Xaml and then generate the implementation on the view model.</p>
-<p>This is a big change to existing workflows. Previously, we coded these properties by hand and wire them up manually in the Xaml; an approach both time-consuming and error prone. You have to remember property names, property types, control types and then you need to write this all out by hand!</p>
+<p>MFractor encourages a <strong>XAML first</strong> workflow; you write out bindings in XAML and then generate the implementation on the view model.</p>
+<p>This is a big change to existing workflows. Previously, we coded these properties by hand and wire them up manually in the XAML; an approach both time-consuming and error prone. You have to remember property names, property types, control types and then you need to write this all out by hand!</p>
 <p>Using binding generation we can <em>literally</em> eliminate minutes of work and hundreds of keystrokes in a few clicks.</p>
 <p>MFractor provides the following shortcuts to implement our bound properties:</p>
 <ul>
@@ -651,15 +637,15 @@ public string Password
 </ul>
 <h2 id="the-implement-viewmodel-refactoring">The Implement ViewModel Refactoring</h2>
 <p>Another way to generate properties for a view model is to use the <strong>Implement View Model</strong> refactoring. This shortcut collects <em>all</em> missing binding expressions (excluding bindings inside DataTemplates) and generates them in bulk onto the binding context.</p>
-<p>We can access this short cut by right clicking anywhere in a Xaml file, navigating to <strong>Generate</strong> and then selecting the <strong>Implement View Model</strong> action:</p>
+<p>We can access this short cut by right clicking anywhere in a XAML file, navigating to <strong>Generate</strong> and then selecting the <strong>Implement View Model</strong> action:</p>
 <p><img alt="" src="../../img/tutorials/implementing-view-models/implement-view-model.gif" /></p>
 <p>You'll notice that there are 2 actions:</p>
 <ul>
-<li><strong>Implement View Model</strong> gathers all missing bindings in the xaml document and implements them all as public properties with a public <code>get</code> and <code>set</code> accessor.</li>
-<li><strong>Implement View Model (Use Backing Fields)</strong> gathers all missing bindings in the xaml document and implements them all as public properties with a public <code>get</code> and <code>set</code> accessor that sets or gets a backing field.</li>
+<li><strong>Implement View Model</strong> gathers all missing bindings in the XAML document and implements them all as public properties with a public <code>get</code> and <code>set</code> accessor.</li>
+<li><strong>Implement View Model (Use Backing Fields)</strong> gathers all missing bindings in the XAML document and implements them all as public properties with a public <code>get</code> and <code>set</code> accessor that sets or gets a backing field.</li>
 </ul>
-<p>There are often cases when a binding context isn't specified <a href="../configure-binding-context/#explicit-binding-context-resolution">explicitly </a> and can't be inferred <a href="../configure-binding-context/#implicit-binding-context-resolution">implicitly</a>. A common example of this is that you have just started to build a Xaml view and haven't yet got around to building the corresponding view model.</p>
-<p>The <strong>Implement View Model</strong> action can also generate a view model class for the Xaml view if one is not already defined. Using Mvvm naming conventions, MFractor generates a view model class for your xaml view under the <code>MyDefaultNamespace.ViewModels</code> namespace.</p>
+<p>There are often cases when a binding context isn't specified <a href="../configure-binding-context/#explicit-binding-context-resolution">explicitly </a> and can't be inferred <a href="../configure-binding-context/#implicit-binding-context-resolution">implicitly</a>. A common example of this is that you have just started to build a XAML view and haven't yet got around to building the corresponding view model.</p>
+<p>The <strong>Implement View Model</strong> action can also generate a view model class for the XAML view if one is not already defined. Using Mvvm naming conventions, MFractor generates a view model class for your XAML view under the <code>MyDefaultNamespace.ViewModels</code> namespace.</p>
 <p>For example:</p>
 <p><strong>LoginPage.xaml.cs</strong></p>
 <pre><code>&lt;Entry Text=&quot;{Binding Username}&quot;/&gt;
@@ -744,7 +730,7 @@ public class LoginViewModel
 </code></pre>
 
 <h2 id="summary">Summary</h2>
-<p>By building our apps using the <strong>Xaml first</strong> mindset, we can leverage MFractor's binding generation to implement our view models quickly.</p>
+<p>By building our apps using the <strong>XAML first</strong> mindset, we can leverage MFractor's binding generation to implement our view models quickly.</p>
 <p>In this tutorial we learnt:</p>
 <ul>
 <li>We can generate entire view models using the <strong>Implement View Model</strong> refactoring action.</li>
@@ -762,7 +748,7 @@ public class LoginViewModel
         <a href="../value-converter-type-safety/" class="btn btn-neutral float-right" title="Value Converter Type Safety">Next <span class="icon icon-circle-arrow-right"></span></a>
       
       
-        <a href="../analysis/" class="btn btn-neutral" title="Analysis"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../configure-binding-context/" class="btn btn-neutral" title="Configuring A Binding Context"><span class="icon icon-circle-arrow-left"></span> Previous</a>
       
     </div>
   
@@ -793,7 +779,7 @@ public class LoginViewModel
           <a href="https://github.com/mfractor/mfractor.github.io" class="icon icon-github" style="float: left; color: #fcfcfc"> GitHub</a>
       
       
-        <span><a href="../analysis/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+        <span><a href="../configure-binding-context/" style="color: #fcfcfc;">&laquo; Previous</a></span>
       
       
         <span style="margin-left: 15px"><a href="../value-converter-type-safety/" style="color: #fcfcfc">Next &raquo;</a></span>

@@ -98,18 +98,6 @@
     </url>
         
     <url>
-     <loc>/xamarin-forms/navigation/</loc>
-     <lastmod>2018-10-02</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-        
-    <url>
-     <loc>/xamarin-forms/analysis/</loc>
-     <lastmod>2018-10-02</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-        
-    <url>
      <loc>/xamarin-forms/implementing-view-models/</loc>
      <lastmod>2018-10-02</lastmod>
      <changefreq>daily</changefreq>
