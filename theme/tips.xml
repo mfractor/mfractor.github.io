@@ -79,6 +79,13 @@
       <IsRemote>true</IsRemote>
     </Tip>
     <Tip>
+      <Title>Rename Xaml Namespace</Title>
+      <Description>Easily rename a XAML namespace by tapping Option+Return on a XAML namespace and choosing Rename Namespace.</Description>
+      <Image>img/code-actions/xaml/refactor/rename-xaml-namespace.gif</Image>
+      <FeatureUrl>code-actions/xaml/refactor#rename-xaml-namespace</FeatureUrl>
+      <IsRemote>true</IsRemote>
+    </Tip>
+    <Tip>
       <Title>Replace String With Localisation Lookup</Title>
       <Description>Need to localise your XAML? The Localisation Wizard moves string literals into RESX files and replaces that string with a localisation lookup!</Description>
       <Image>img/code-actions/xaml/refactor/localise-xaml.gif</Image>
@@ -111,6 +118,13 @@
       <Description>When you are missing an image resource, MFractor will warn you and give you the option to import it into your Android and iOS projects.</Description>
       <Image>img/code-actions/xaml/fix/import-image-fix.gif</Image>
       <FeatureUrl>code-actions/xaml/fix#import-missing-image-resource</FeatureUrl>
+      <IsRemote>true</IsRemote>
+    </Tip>
+    <Tip>
+      <Title>Exclude Symbol From Linker</Title>
+      <Description>The Exclude From Linking code action creates linker config files and ensures a symbol isn't remove by the linker.</Description>
+      <Image>img/code-actions/csharp/exclude-from-linking.gif</Image>
+      <FeatureUrl>code-actions/csharp#exclude-symbol-from-linker</FeatureUrl>
       <IsRemote>true</IsRemote>
     </Tip>
     <Tip>
@@ -223,6 +237,13 @@
       <Description>When working inside Grids, MFractor will suggest available grid rows and grid row spans.</Description>
       <Image>img/code-completion/xaml/grid-row-intellisense.gif</Image>
       <FeatureUrl>code-completion/xaml#grid-rowspan-completion</FeatureUrl>
+      <IsRemote>true</IsRemote>
+    </Tip>
+    <Tip>
+      <Title>Linker Symbol Completion</Title>
+      <Description>Our Linker IntelliSense engine provides an easy way to exclude symbols from linking.</Description>
+      <Image>img/code-completion/linker/linker-intellisense.gif</Image>
+      <FeatureUrl>code-completion/linker#linker-symbol-completion</FeatureUrl>
       <IsRemote>true</IsRemote>
     </Tip>
     <Tip>

@@ -95,6 +95,9 @@ MFractor would migrate the code to use the `On` element:
 
 **Configuration Id: com.mfractor.code_actions.xaml.rename_xaml_namespace**
 
+
+![Easily rename a XAML namespace by tapping Option+Return on a XAML namespace and choosing Rename Namespace.](/img/code-actions/xaml/refactor/rename-xaml-namespace.gif)
+
 The **Rename Xaml Namespace** code action will perform a symbolic rename-refactor on a particular Xaml within your document.
 
 This is handy as you can then rename namespaces in a document without using a Find+Replace action; the rename xaml namespace action works against symbols so it will always rename only the namespace symbols.

@@ -50,6 +50,9 @@ public class MyImmutableClass
 
 **Configuration Id: com.mfractor.code_actions.linker.exclude_symbol_from_linking**
 
+
+![The Exclude From Linking code action creates linker config files and ensures a symbol isn't remove by the linker.](/img/code-actions/csharp/exclude-from-linking.gif)
+
 When creating Android and iOS applications, the Xamarin toolchain uses the Linker to remove unused symbols from the final application build. The **Exclude Symbol From Linker** code action generates a linker.xml entry for the symbol that is selected.
 
 
