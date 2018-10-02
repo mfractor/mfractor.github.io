@@ -584,14 +584,14 @@
 <p><em>Power the refactoring engine and xaml analyser by targeting a binding context</em></p>
 <h2 id="introduction">Introduction</h2>
 <p>In Mvvm architected applications, views use a <strong>Binding Context</strong> to display and transfer data between the application logic layer and the view layer with minimal dependencies. This is accomplished through <strong>data binding</strong>; properties on a view are bound to properties on a backing object through binding mechanisms allowing two-way data transfer between the UI and application logic. For a full tutorial on Mvvm architecture, please Microsofts <a href="https://msdn.microsoft.com/en-us/library/hh848246.aspx"><strong>The Mvvm Pattern</strong></a> article.</p>
-<p>When working with Xaml, we can specify a binding context to activate binding expression analysis and a variety of BindingContext specific refactorings.</p>
-<p>We can specify a binding context <a href="#explicit-binding-context-resolution"><em>explicitly</em></a> via in inline Xaml expression or <a href="#implicit-binding-context-resolution"><em>implicitly</em></a> through the use of common MVVM naming conventions.</p>
+<p>When working with XAML, we can specify a binding context to activate binding expression analysis and a variety of BindingContext specific refactorings.</p>
+<p>We can specify a binding context <a href="#explicit-binding-context-resolution"><em>explicitly</em></a> via in inline XAML expression or <a href="#implicit-binding-context-resolution"><em>implicitly</em></a> through the use of common MVVM naming conventions.</p>
 <h2 id="implicit-binding-context-resolution">Implicit Binding Context Resolution</h2>
-<p>MFractor will attempt to infer the relationship between your view models and xaml views via <em>implicit binding context resolution</em>. This is done by looking for classes and Xaml views that share a common naming convention.</p>
+<p>MFractor will attempt to infer the relationship between your view models and XAML views via <em>implicit binding context resolution</em>. This is done by looking for classes and XAML views that share a common naming convention.</p>
 <p>Let's consider the following files:</p>
 <ul>
-<li><strong>LoginPage.xaml</strong> - The xaml view.</li>
-<li><strong>LoginPage.xaml.cs</strong> - The code behind for the xaml view.</li>
+<li><strong>LoginPage.xaml</strong> - The XAML view.</li>
+<li><strong>LoginPage.xaml.cs</strong> - The code behind for the XAML view.</li>
 <li><strong>LoginViewModel</strong> - The a C# class that is the view model for the LoginPage view.</li>
 </ul>
 <p><img alt="mvvm relationships" src="../../img/forms/implicit-mvvm-relationship.png" /></p>
@@ -599,21 +599,30 @@
 <ul>
 <li>The <em>.xaml</em> extension denotes that <strong>LoginPage.xaml</strong> is a xaml view.</li>
 <li>The <em>.xaml.cs</em> extension and the <em>LoginPage</em> component denotes that <strong>LoginPage.xaml.cs</strong> is the code behind implementation <strong>LoginPage</strong> view.</li>
-<li>The <strong>ViewModel</strong> suffix implies that <strong>LoginViewModel</strong> is a view model. When <em>ViewModel</em> is removed from <em>LoginViewModel</em> and <em>Page</em> is removed from <em>LoginPage</em>, the <strong>Login</strong> component implies that the <strong>LoginViewModel</strong> is related to the <strong>LoginPage</strong> xaml view and it's code behind file.</li>
+<li>The <strong>ViewModel</strong> suffix implies that <strong>LoginViewModel</strong> is a view model. When <em>ViewModel</em> is removed from <em>LoginViewModel</em> and <em>Page</em> is removed from <em>LoginPage</em>, the <strong>Login</strong> component implies that the <strong>LoginViewModel</strong> is related to the <strong>LoginPage</strong> XAML view and it's code behind file.</li>
 </ul>
 <p>MFractor uses these common naming conventions of Page.xaml, Page.xaml.cs and ViewModel to decide that <strong>LoginViewModel</strong> will probably be the BindingContext for <strong>LoginPage</strong>. The <code>Page</code> &lt;-&gt; <code>ViewModel</code> naming convention is used by several popular MVVM frameworks such as Prism and FreshMVVM.</p>
-<p>The following suffixes are supported for Xaml views:</p>
+<p>The following suffixes are supported for XAML views:</p>
 <ul>
 <li><strong>Page</strong>: EG LoginPage.xaml &lt;-&gt; LoginViewModel</li>
 <li><strong>View</strong>: EG LoginView.xaml &lt;-&gt; LoginViewModel</li>
 </ul>
+<p>The following suffixes are supported for View Models.</p>
+<ul>
+<li><strong>ViewModel</strong>: EG LoginPage.xaml &lt;-&gt; LoginViewModel</li>
+<li><strong>PageModel</strong>: EG LoginView.xaml &lt;-&gt; LoginPageModel</li>
+<li><strong>PageViewModel</strong>: EG LoginView.xaml &lt;-&gt; LoginPageViewModel</li>
+<li><strong>Model</strong>: EG LoginView.xaml &lt;-&gt; LoginModel</li>
+<li><strong>VM</strong>: EG LoginView.xaml &lt;-&gt; LoginVM</li>
+<li><strong>PageVM</strong>: EG LoginView.xaml &lt;-&gt; LoginPageVM</li>
+</ul>
 <h2 id="explicit-binding-context-resolution">Explicit Binding Context Resolution</h2>
-<p>In Xamarin.Forms, all views have the property <code>BindingContext</code>; this specifies the object that a view should data-bind with. When coding with Xaml, we can use the <code>x:Static</code> markup extension to reference a static C# property and explicitly provide an instance of a C# class as the binding context:</p>
+<p>In Xamarin.Forms, all views have the property <code>BindingContext</code>; this specifies the object that a view should data-bind with. When coding with XAML, we can use the <code>x:Static</code> markup extension to reference a static C# property and explicitly provide an instance of a C# class as the binding context:</p>
 <pre><code> &lt;Entry BindingContext=&quot;{x:Static local:MyStaticClass.MyStaticProperty}&quot;/&gt;
 </code></pre>
 
-<p>This is known as the <em>View Model Locator Pattern</em>. We implement a static class named <code>ViewModelLocator</code> and use a static, readonly property to return an instance of the object we want our Xaml view to data-bind with. Historically the <em>View Model Locator Pattern</em> has been used to provide design time data to the Xamarin.Forms Xaml previewer. For a deeper insight into this pattern, read James Montemagnos excellent <a href="http://motzcod.es/post/143702671962/xamarinforms-xaml-previewer-design-time-data">View Model Locator</a> article.</p>
-<p>For example, given a Xaml page named <code>LoginPage</code>, we can explicitly provide an instance of <code>LoginViewModel</code> as the binding context like so:</p>
+<p>This is known as the <em>View Model Locator Pattern</em>. We implement a static class named <code>ViewModelLocator</code> and use a static, readonly property to return an instance of the object we want our XAML view to data-bind with. Historically the <em>View Model Locator Pattern</em> has been used to provide design time data to the Xamarin.Forms XAML previewer. For a deeper insight into this pattern, read James Montemagnos excellent <a href="http://motzcod.es/post/143702671962/xamarinforms-xaml-previewer-design-time-data">View Model Locator</a> article.</p>
+<p>For example, given a XAML page named <code>LoginPage</code>, we can explicitly provide an instance of <code>LoginViewModel</code> as the binding context like so:</p>
 <p><strong>ViewModelLocator.cs</strong></p>
 <pre><code>public namespace MyApp
 {
@@ -630,7 +639,7 @@
   BindingContext=&quot;{x:Static local:ViewModelLocator.LoginViewModel}&quot;/&gt;
 </code></pre>
 
-<p>When MFractor begins analysis on LoginPage.xaml it will check if any <code>BindingContext</code> properties have been assigned to. As the root <code>ContentPage</code> assigns a binding context, it will inspect the value component of the <code>BindingContext</code> attribute, check if it is a Xaml expression and then evaluate it for the return type.</p>
+<p>When MFractor begins analysis on LoginPage.xaml it will check if any <code>BindingContext</code> properties have been assigned to. As the root <code>ContentPage</code> assigns a binding context, it will inspect the value component of the <code>BindingContext</code> attribute, check if it is a XAML expression and then evaluate it for the return type.</p>
 <p>For the <code>{x:Static local:ViewModelLocator.LoginViewModel}</code> expression, MFractor will resolve the <code>ViewModelLocator</code> class in the <code>local</code> namespace and then grab the C# type of the <code>LoginViewModel</code> property. This informs MFractor that the page will be bound to a <code>LoginViewModel</code> instance and therefore to analyse all <code>Binding</code> expressions against the <code>LoginViewModel</code> type.</p>
 <p>Explicit binding context resolution will also work when referencing another element using <code>x:Reference</code> expressions. For example, we can bind the on/off state of a switch to the visibility of a text label like so:</p>
 <pre><code>  &lt;Switch x:Name=&quot;mySwitch&quot; /&gt;
@@ -638,9 +647,9 @@
 </code></pre>
 
 <p>When MFractor analyses the <code>{Binding IsToggled}</code> expression, it will evaluate the <code>{x:Reference mySwitch}</code> expression and use the type of mySwitch as the BindingContext (Xamarin.Forms.Switch).</p>
-<p>Explicit binding context resolution will <strong>always</strong> override implicit binding context resolution. If your xaml views are named using the conventions listed above but your page or a view explicitly assigns the <code>BindingContext</code> property then MFractor will use the <code>BindingContext</code> return type instead of the implicit Mvvm relationship.</p>
+<p>Explicit binding context resolution will <strong>always</strong> override implicit binding context resolution. If your XAML views are named using the conventions listed above but your page or a view explicitly assigns the <code>BindingContext</code> property then MFractor will use the <code>BindingContext</code> return type instead of the implicit Mvvm relationship.</p>
 <h2 id="data-template-binding-context-resolution">Data Template Binding Context Resolution</h2>
-<p>Data templates are used to provide a nested Xaml view to a view that displays many occurances of that view. For example, a ListView uses a <code>DataTemplate</code> to specify the view appearance of each instance provided through the <code>ItemsSource</code> property.</p>
+<p>Data templates are used to provide a nested XAML view to a view that displays many occurrences of that view. For example, a ListView uses a <code>DataTemplate</code> to specify the view appearance of each instance provided through the <code>ItemsSource</code> property.</p>
 <p>MFractor will attempt to infer the BindingContext for a data templates view by resolving the <code>ItemsSource</code> property on the wrapping view.</p>
 <p>Consider the following code:</p>
 <pre><code>  &lt;ListView ItemsSource=&quot;{Binding Contacts}&quot;&gt;
@@ -678,10 +687,10 @@
 
 <p>I've attached a sample project that supports cross-project MVVM resolution to help you set up.</p>
 <h2 id="summary">Summary</h2>
-<p>In summary, we've learnt that MFractor will use the binding context to power the Xaml analyser and navigation improvements.</p>
+<p>In summary, we've learnt that MFractor will use the binding context to power the XAML analyser and navigation improvements.</p>
 <ul>
 <li>Binding expressions require a binding context to be analysed.</li>
-<li>We can explicitly specify a binding context by assigning the <code>BindingContext</code> property of any Xaml element.</li>
+<li>We can explicitly specify a binding context by assigning the <code>BindingContext</code> property of any XAML element.</li>
 <li>When we name our code files using the Page.xaml, Page.xaml.cs and ViewModel convention, MFractor will assume an implicit MVVM relationship.</li>
 <li>Data templates use the return type of the wrapping views <code>ItemSource</code> property.</li>
 <li>We can setup a cross project  templates use the return type of the wrapping views <code>ItemSource</code> property.</li>
