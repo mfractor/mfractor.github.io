@@ -1,6 +1,6 @@
 ##Implementing View Models
 
-*Generate properties and view models from Xaml to C# using code fixes and the Implement View Model refactoring*
+*Generate properties and view models from XAML to C# using code fixes and the Implement View Model refactoring*
 
 ##Introduction
 
@@ -8,7 +8,7 @@ In Xamarin.Forms apps, we design our applications using the Model - View - ViewM
 
 We accomplish this data-transfer behaviour through the [Binding Markup Extension](https://developer.xamarin.com/api/type/Xamarin.Forms.Binding/). This is a Xamarin.Forms API that implements the [IMarkupExtension interface](https://developer.xamarin.com/api/type/Xamarin.Forms.Xaml.IMarkupExtension/); it reflects changes from the binding context to the view and vice-versa.
 
-We use the binding markup extension syntax in our Xaml views:
+We use the binding markup extension syntax in our XAML views:
 
 **LoginPage.xaml.cs**
 ```
@@ -33,13 +33,13 @@ But what if we introduced a new `Entry` bound to `Password`, a property that doe
 <Entry Text="{Binding Password}"/>
 ```
 
-Provided we have configured the views binding context correctly, the [Xaml analyser](/xamarin-forms/analysis.md) recognises this is a runtime bug and marks it:
+Provided we have configured the views binding context correctly, the XAML analyser recognises this is a runtime bug and marks it:
 
 ![](/img/tutorials/implementing-view-models/missing-binding.png)
 
-MFractor encourages a **Xaml first** workflow; you write out bindings in Xaml and then generate the implementation on the view model.
+MFractor encourages a **XAML first** workflow; you write out bindings in XAML and then generate the implementation on the view model.
 
-This is a big change to existing workflows. Previously, we coded these properties by hand and wire them up manually in the Xaml; an approach both time-consuming and error prone. You have to remember property names, property types, control types and then you need to write this all out by hand!
+This is a big change to existing workflows. Previously, we coded these properties by hand and wire them up manually in the XAML; an approach both time-consuming and error prone. You have to remember property names, property types, control types and then you need to write this all out by hand!
 
 Using binding generation we can *literally* eliminate minutes of work and hundreds of keystrokes in a few clicks.
 
@@ -95,18 +95,18 @@ The backing field fix is most useful when:
 ##The Implement ViewModel Refactoring
 Another way to generate properties for a view model is to use the **Implement View Model** refactoring. This shortcut collects *all* missing binding expressions (excluding bindings inside DataTemplates) and generates them in bulk onto the binding context.
 
-We can access this short cut by right clicking anywhere in a Xaml file, navigating to **Generate** and then selecting the **Implement View Model** action:
+We can access this short cut by right clicking anywhere in a XAML file, navigating to **Generate** and then selecting the **Implement View Model** action:
 
 ![](/img/tutorials/implementing-view-models/implement-view-model.gif)
 
 You'll notice that there are 2 actions:
 
- * **Implement View Model** gathers all missing bindings in the xaml document and implements them all as public properties with a public `get` and `set` accessor.
- * **Implement View Model (Use Backing Fields)** gathers all missing bindings in the xaml document and implements them all as public properties with a public `get` and `set` accessor that sets or gets a backing field.
+ * **Implement View Model** gathers all missing bindings in the XAML document and implements them all as public properties with a public `get` and `set` accessor.
+ * **Implement View Model (Use Backing Fields)** gathers all missing bindings in the XAML document and implements them all as public properties with a public `get` and `set` accessor that sets or gets a backing field.
 
-There are often cases when a binding context isn't specified [explicitly ](/xamarin-forms/configure-binding-context.md#explicit-binding-context-resolution) and can't be inferred [implicitly](/xamarin-forms/configure-binding-context.md#implicit-binding-context-resolution). A common example of this is that you have just started to build a Xaml view and haven't yet got around to building the corresponding view model.
+There are often cases when a binding context isn't specified [explicitly ](/xamarin-forms/configure-binding-context.md#explicit-binding-context-resolution) and can't be inferred [implicitly](/xamarin-forms/configure-binding-context.md#implicit-binding-context-resolution). A common example of this is that you have just started to build a XAML view and haven't yet got around to building the corresponding view model.
 
-The **Implement View Model** action can also generate a view model class for the Xaml view if one is not already defined. Using Mvvm naming conventions, MFractor generates a view model class for your xaml view under the `MyDefaultNamespace.ViewModels` namespace.
+The **Implement View Model** action can also generate a view model class for the XAML view if one is not already defined. Using Mvvm naming conventions, MFractor generates a view model class for your XAML view under the `MyDefaultNamespace.ViewModels` namespace.
 
 For example:
 
@@ -198,7 +198,7 @@ public System.Object Password
 ```
 
 ##Summary
-By building our apps using the **Xaml first** mindset, we can leverage MFractor's binding generation to implement our view models quickly.
+By building our apps using the **XAML first** mindset, we can leverage MFractor's binding generation to implement our view models quickly.
 
 In this tutorial we learnt:
 
