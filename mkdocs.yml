@@ -34,8 +34,6 @@ pages:
   - Xamarin.Forms: configuration/xamarin-forms.md
 - Xamarin.Forms:
   - Configuring A Binding Context: xamarin-forms/configure-binding-context.md
-  - Navigation Tools: xamarin-forms/navigation.md
-  - Analysis: xamarin-forms/analysis.md
   - Implementing View Models: xamarin-forms/implementing-view-models.md
   - Value Converter Type Safety: xamarin-forms/value-converter-type-safety.md
 - Code Actions:

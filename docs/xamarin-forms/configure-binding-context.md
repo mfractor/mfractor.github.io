@@ -1,18 +1,20 @@
 
 ##Configuring A Binding Context
 
-*Power the refactoring engine and xaml analyser by targeting a binding context*
+*Power the code action engine and XAML analyser by targeting a binding context*
 
 ##Introduction
-In Mvvm architected applications, views use a **Binding Context** to display and transfer data between the application logic layer and the view layer with minimal dependencies. This is accomplished through **data binding**; properties on a view are bound to properties on a backing object through binding mechanisms allowing two-way data transfer between the UI and application logic. For a full tutorial on Mvvm architecture, please Microsofts [**The Mvvm Pattern**](https://msdn.microsoft.com/en-us/library/hh848246.aspx) article.
+MFractor includes many features to make working with XAML and the MVVM pattern easier. To power these features, MFractor is capable of intelligently resolving a XAML files binding context (even when none is specified) and can also evaluate markup expressions (such as x:Static or Binding expressions) or can walk through the XAML hierarchy to evaulate the correct binding context for a given node.
 
-When working with XAML, we can specify a binding context to activate binding expression analysis and a variety of BindingContext specific refactorings.
+So, what is a binding context?
 
-We can specify a binding context [*explicitly*](#explicit-binding-context-resolution) via in inline XAML expression or [*implicitly*](#implicit-binding-context-resolution) through the use of common MVVM naming conventions.
+When using the Model-View-ViewModel architecture pattern, views use a **Binding Context** to display and transfer data between the application logic layer and the view layer with minimal dependencies. This is accomplished through **data binding**; properties on a view are bound to properties on a backing object through binding mechanisms allowing two-way data transfer between the UI and application logic. For a full tutorial on Mvvm architecture, please Microsofts [**The MVVM Pattern**](https://msdn.microsoft.com/en-us/library/hh848246.aspx) article.
+
+MFractor supports two methods of binding context resolution: we can specify a binding context [*explicitly*](#explicit-binding-context-resolution) via in inline XAML expression or [*implicitly*](#implicit-binding-context-resolution) through the use of common MVVM naming conventions.
 
 ##Implicit Binding Context Resolution
 
-MFractor will attempt to infer the relationship between your view models and XAML views via *implicit binding context resolution*. This is done by looking for classes and XAML views that share a common naming convention.
+MFractor uses *implicit binding context resolution* to infer the relationship between your view models and XAML views. This is done by looking for classes and XAML views that follow industry standard naming convention.
 
 Let's consider the following files:
 
@@ -75,7 +77,7 @@ public namespace MyApp
   BindingContext="{x:Static local:ViewModelLocator.LoginViewModel}"/>
 ```
 
-When MFractor begins analysis on LoginPage.xaml it will check if any `BindingContext` properties have been assigned to. As the root `ContentPage` assigns a binding context, it will inspect the value component of the `BindingContext` attribute, check if it is a XAML expression and then evaluate it for the return type.
+When MFractor starts analysis on LoginPage.xaml, it will check if any `BindingContext` properties have been assigned to. As the root `ContentPage` assigns a binding context, it will inspect the value component of the `BindingContext` attribute, check if it is a XAML expression and then evaluate it for the return type.
 
 For the `{x:Static local:ViewModelLocator.LoginViewModel}` expression, MFractor will resolve the `ViewModelLocator` class in the `local` namespace and then grab the C# type of the `LoginViewModel` property. This informs MFractor that the page will be bound to a `LoginViewModel` instance and therefore to analyse all `Binding` expressions against the `LoginViewModel` type.
 
@@ -140,8 +142,6 @@ In the project that contains your view models, create a file named app.mfc.xml w
     </configure>
 </mfractor>
 ```
-
-I've attached a sample project that supports cross-project MVVM resolution to help you set up.
 
 ##Summary
 In summary, we've learnt that MFractor will use the binding context to power the XAML analyser and navigation improvements.
