@@ -177,6 +177,34 @@
       <IsRemote>true</IsRemote>
     </Tip>
     <Tip>
+      <Title>Trigger Completion</Title>
+      <Description>MFractors Trigger Intellisense provides binding and target type completions and then makes it easy to apply your setter!</Description>
+      <Image>img/code-completion/xaml/trigger-intellisense.gif</Image>
+      <FeatureUrl>code-completion/xaml#trigger-completion</FeatureUrl>
+      <IsRemote>true</IsRemote>
+    </Tip>
+    <Tip>
+      <Title>Binding Context Property Completion</Title>
+      <Description>Need to setup a binding onto your ViewModel? Use ViewModel property IntelliSense to quickly find the one you're looking for.</Description>
+      <Image>img/code-completion/xaml/view-model-property-intellisense.gif</Image>
+      <FeatureUrl>code-completion/xaml#binding-context-property-completion</FeatureUrl>
+      <IsRemote>true</IsRemote>
+    </Tip>
+    <Tip>
+      <Title>x:Static Namespace Completion</Title>
+      <Description>Easily import new XAML namespaces by using MFractors namespace IntelliSense.</Description>
+      <Image>img/code-completion/xaml/xaml-namespace-intellisense.gif</Image>
+      <FeatureUrl>code-completion/xaml#x:static-namespace-completion</FeatureUrl>
+      <IsRemote>true</IsRemote>
+    </Tip>
+    <Tip>
+      <Title>x:Reference Value Completion</Title>
+      <Description>When using an x:Reference expression, MFractor will suggest available x:Names declared in the XAML file.</Description>
+      <Image>img/code-completion/xaml/xreference-value-intellisense.gif</Image>
+      <FeatureUrl>code-completion/xaml#x:reference-value-completion</FeatureUrl>
+      <IsRemote>true</IsRemote>
+    </Tip>
+    <Tip>
       <Title>Grid ColumnSpan Completion</Title>
       <Description>When working inside Grids, MFractor will suggest available grid columns and grid column spans.</Description>
       <Image>img/code-completion/xaml/grid-column-intellisense.gif</Image>
