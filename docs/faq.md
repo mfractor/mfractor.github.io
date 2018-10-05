@@ -16,14 +16,7 @@ The latest version of MFractor always targets the current stable channel version
 
 ## Does MFractor support Visual Studio Windows?
 
-MFractor **does not** support Visual Studio Windows. This is on the roadmap for the future but there is no concrete timeline. A news announcement will be published work commences on MFractor for Visual Studio Windows.
-
-## How do I get started using MFractor?
-
-MFractor does a lot so it may take a little while to learn its ins and outs. If you'd like to learn how to best use it, you have a few options:
-
- * Read the in-depth docs for both Xamarin.Forms and Xamarin.Android (see the menu to the left). Each article covers a feature in-depth and fully explains how to use it.
- * Drop into the [#mfractor Xamarin Slack sub-channel](https://xamarinchat.slack.com/archives/mfractor) and start chatting to me (Matthew Robbins). I'm happy to answer any questions you have.
+MFractor **does not** support Visual Studio Windows. This is on the roadmap for the future but there is no concrete timeline. A news announcement will be published when MFractor for Visual Studio Windows is nearing an alpha release.
 
 ## How do I file a bug report?
 
@@ -45,6 +38,5 @@ No, you should not check `.mfractor` into your source control.
 If you are using git, append the following text to the end of your `.gitignore` to exclude `.mfractor`:
 
 ```
-# MFractor's is a Xamarin coding add-on.
 *.mfractor/
 ```
