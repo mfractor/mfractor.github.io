@@ -1,7 +1,7 @@
 
 ##Configuring A Binding Context
 
-*Power the code action engine and XAML analyser by targeting a binding context*
+*Power the code action engine, code analysis and data-binding IntelliSense by targeting a binding context for your XAML*
 
 ##Introduction
 MFractor includes many features to make working with XAML and the MVVM pattern easier. To power these features, MFractor is capable of intelligently resolving a XAML files binding context (even when none is specified) and can also evaluate markup expressions (such as x:Static or Binding expressions) or can walk through the XAML hierarchy to evaulate the correct binding context for a given node.
@@ -92,6 +92,60 @@ When MFractor analyses the `{Binding IsToggled}` expression, it will evaluate th
 
 Explicit binding context resolution will **always** override implicit binding context resolution. If your XAML views are named using the conventions listed above but your page or a view explicitly assigns the `BindingContext` property then MFractor will use the `BindingContext` return type instead of the implicit Mvvm relationship.
 
+##Design Time Binding Contexts
+It's also possible to explicitly specify a desired binding context by applying the `DesignTimeBindingContext` attribute to the code behind class.
+
+To get started, add the following code file to your project:
+
+**DesignTimeBindingContextAttribute.cs**
+```
+using System;
+
+namespace MyApp.Attributes
+{
+    /// <summary>
+    /// Apply the design time binding context attribute to your code-behind class to inform tools of your intended runtime binding context.
+    /// </summary>
+    [AttributeUsage(AttributeTargets.Class, AllowMultiple = false)]
+    public class DesignTimeBindingContextAttribute : Attribute
+    {
+        /// <summary>
+        /// Specifies the design time binding context using a fully qualified type name.
+        ///
+        /// For example: MyApp.ViewModels.LoginViewModel.
+        /// </summary>
+        /// <param name="typeName">The fully qualified type name for the design time binding context.</param>
+        public DesignTimeBindingContextAttribute(string typeName)
+        {
+        }
+
+        /// <summary>
+        /// Specifies the design time binding context using typeof().
+        ///
+        /// For example: typeof(LoginViewModel)
+        /// </summary>
+        /// <param name="type">The <see cref="System.Type"/> for the design time binding context, using typeof().</param>
+        public DesignTimeBindingContextAttribute(Type type)
+        {
+        }
+    }
+}
+```
+
+Next, apply this attribute onto the code-behind class for your XAML file:
+
+**Applying By Type**
+```
+[DesignTimeBindingContext(typeof(MyBindingContext))]
+```
+
+**Applying By String**
+```
+[DesignTimeBindingContext("MyApp.MyBindingContext")]
+```
+
+Applying this attribute directs MFractor at your binding context to enable data-binding IntelliSense, code actions and code analysis for that XAML file.
+
 ##Data Template Binding Context Resolution
 Data templates are used to provide a nested XAML view to a view that displays many occurrences of that view. For example, a ListView uses a `DataTemplate` to specify the view appearance of each instance provided through the `ItemsSource` property.
 
@@ -113,7 +167,7 @@ The inner `DataTemplate` has a `TextCell` where the `Text` property is provided 
 
 When the return type is an `IEnumerable` or array, MFractor unwraps the generic or array and grabs the inner type. This provides the binding context type for the binding expressions used within the data template.
 
-## Cross Project Binding Context resolution
+## Cross Project Binding Context Resolution
 
 If your views and view models are in separate projects and you'd like to use implicit MVVM resolution, you'll need to give MFractor a nudge in the right direction.
 
