@@ -192,11 +192,15 @@
       
     
       
+      <li class="toctree-l3"><a href="#design-time-binding-contexts">Design Time Binding Contexts</a></li>
+      
+    
+      
       <li class="toctree-l3"><a href="#data-template-binding-context-resolution">Data Template Binding Context Resolution</a></li>
       
     
       
-      <li class="toctree-l3"><a href="#cross-project-binding-context-resolution">Cross Project Binding Context resolution</a></li>
+      <li class="toctree-l3"><a href="#cross-project-binding-context-resolution">Cross Project Binding Context Resolution</a></li>
       
     
       
@@ -574,7 +578,7 @@
             <div class="section">
               
                 <h2 id="configuring-a-binding-context">Configuring A Binding Context</h2>
-<p><em>Power the code action engine and XAML analyser by targeting a binding context</em></p>
+<p><em>Power the code action engine, code analysis and data-binding IntelliSense by targeting a binding context for your XAML</em></p>
 <h2 id="introduction">Introduction</h2>
 <p>MFractor includes many features to make working with XAML and the MVVM pattern easier. To power these features, MFractor is capable of intelligently resolving a XAML files binding context (even when none is specified) and can also evaluate markup expressions (such as x:Static or Binding expressions) or can walk through the XAML hierarchy to evaulate the correct binding context for a given node.</p>
 <p>So, what is a binding context?</p>
@@ -642,6 +646,53 @@
 
 <p>When MFractor analyses the <code>{Binding IsToggled}</code> expression, it will evaluate the <code>{x:Reference mySwitch}</code> expression and use the type of mySwitch as the BindingContext (Xamarin.Forms.Switch).</p>
 <p>Explicit binding context resolution will <strong>always</strong> override implicit binding context resolution. If your XAML views are named using the conventions listed above but your page or a view explicitly assigns the <code>BindingContext</code> property then MFractor will use the <code>BindingContext</code> return type instead of the implicit Mvvm relationship.</p>
+<h2 id="design-time-binding-contexts">Design Time Binding Contexts</h2>
+<p>It's also possible to explicitly specify a desired binding context by applying the <code>DesignTimeBindingContext</code> attribute to the code behind class.</p>
+<p>To get started, add the following code file to your project:</p>
+<p><strong>DesignTimeBindingContextAttribute.cs</strong></p>
+<pre><code>using System;
+
+namespace MyApp.Attributes
+{
+    /// &lt;summary&gt;
+    /// Apply the design time binding context attribute to your code-behind class to inform tools of your intended runtime binding context.
+    /// &lt;/summary&gt;
+    [AttributeUsage(AttributeTargets.Class, AllowMultiple = false)]
+    public class DesignTimeBindingContextAttribute : Attribute
+    {
+        /// &lt;summary&gt;
+        /// Specifies the design time binding context using a fully qualified type name.
+        ///
+        /// For example: MyApp.ViewModels.LoginViewModel.
+        /// &lt;/summary&gt;
+        /// &lt;param name=&quot;typeName&quot;&gt;The fully qualified type name for the design time binding context.&lt;/param&gt;
+        public DesignTimeBindingContextAttribute(string typeName)
+        {
+        }
+
+        /// &lt;summary&gt;
+        /// Specifies the design time binding context using typeof().
+        ///
+        /// For example: typeof(LoginViewModel)
+        /// &lt;/summary&gt;
+        /// &lt;param name=&quot;type&quot;&gt;The &lt;see cref=&quot;System.Type&quot;/&gt; for the design time binding context, using typeof().&lt;/param&gt;
+        public DesignTimeBindingContextAttribute(Type type)
+        {
+        }
+    }
+}
+</code></pre>
+
+<p>Next, apply this attribute onto the code-behind class for your XAML file:</p>
+<p><strong>Applying By Type</strong></p>
+<pre><code>[DesignTimeBindingContext(typeof(MyBindingContext))]
+</code></pre>
+
+<p><strong>Applying By String</strong></p>
+<pre><code>[DesignTimeBindingContext(&quot;MyApp.MyBindingContext&quot;)]
+</code></pre>
+
+<p>Applying this attribute directs MFractor at your binding context to enable data-binding IntelliSense, code actions and code analysis for that XAML file.</p>
 <h2 id="data-template-binding-context-resolution">Data Template Binding Context Resolution</h2>
 <p>Data templates are used to provide a nested XAML view to a view that displays many occurrences of that view. For example, a ListView uses a <code>DataTemplate</code> to specify the view appearance of each instance provided through the <code>ItemsSource</code> property.</p>
 <p>MFractor will attempt to infer the BindingContext for a data templates view by resolving the <code>ItemsSource</code> property on the wrapping view.</p>
@@ -657,7 +708,7 @@
 
 <p>The inner <code>DataTemplate</code> has a <code>TextCell</code> where the <code>Text</code> property is provided by the binding expression <code>{Binding DisplayName}</code>. To analyse this expression, MFractor requires a binding context; MFractor will walk out to the encapsulating view (ListView), locate the <code>ItemsSource</code> property and evaluate the expression.</p>
 <p>When the return type is an <code>IEnumerable</code> or array, MFractor unwraps the generic or array and grabs the inner type. This provides the binding context type for the binding expressions used within the data template.</p>
-<h2 id="cross-project-binding-context-resolution">Cross Project Binding Context resolution</h2>
+<h2 id="cross-project-binding-context-resolution">Cross Project Binding Context Resolution</h2>
 <p>If your views and view models are in separate projects and you'd like to use implicit MVVM resolution, you'll need to give MFractor a nudge in the right direction.</p>
 <p>Unfortunately, it is too expensive to scan the solution to match view models to pages; the scan takes anywhere between 10's to 100's of milliseconds in a moderately sized solution. Therefore, for efficiency reasons, you need to use an MFractor configuration to enable cross-project MVVM resolution.</p>
 <p>To make MFractor use View Models in a project separate to your views, you'll need to create an MFractor config for each project.</p>
