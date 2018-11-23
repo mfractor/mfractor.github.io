@@ -247,6 +247,13 @@
       <IsRemote>true</IsRemote>
     </Tip>
     <Tip>
+      <Title>Delete Image Asset</Title>
+      <Description>Use the delete image asset tool to remove an image and all it's sizes from your application.</Description>
+      <Image>img/image-tools/delete-image-asset.gif</Image>
+      <FeatureUrl>image-tools#delete-image-asset</FeatureUrl>
+      <IsRemote>true</IsRemote>
+    </Tip>
+    <Tip>
       <Title>Add Watch To Debugger</Title>
       <Description>Use MFractor's Add Debug Watch shortcut to add a variable into the watch pad.</Description>
       <Image>img/debugging/add-debug-watch.gif</Image>
