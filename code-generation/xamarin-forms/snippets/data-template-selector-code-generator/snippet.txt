@@ -1,0 +1,52 @@
+using System;
+using Xamarin.Forms;
+
+namespace $namespace$
+{
+    public class $name$ : DataTemplateSelector
+    {
+        private static DataTemplate CreateDataTemplate(View view)
+        {
+            return new DataTemplate(() => new ViewCell()
+            {
+                View = view
+            });
+        }
+
+        private static DataTemplate CreateDataTemplate<TView>() where TView : View, new()
+        {
+            return new DataTemplate(() => new ViewCell()
+            {
+                View = new TView()
+            });
+        }
+
+        static DataTemplate CreateDataTemplate<TViewCell, TView>() where TView : View, new()
+                                                                   where TViewCell : ViewCell, new()
+        {
+            return new DataTemplate(() => new TViewCell()
+            {
+                View = new TView()
+            });
+        }
+
+        public DataTemplate DefaultTemplate 
+        { 
+            get; 
+            set; 
+        } = CreateDataTemplate(new ContentView()
+        {
+            Content = new Label() 
+            { 
+                Text = "Ooops!"
+            },
+        });
+
+        protected override DataTemplate OnSelectTemplate(object item, BindableObject container)
+        {
+            // TODO: Inspect the "item"" here and return the relevant data template
+
+            return DefaultTemplate;
+        }
+    }
+}
