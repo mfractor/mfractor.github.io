@@ -93,6 +93,13 @@
       <IsRemote>true</IsRemote>
     </Tip>
     <Tip>
+      <Title>Extract Resource Dictionary</Title>
+      <Description>You can use the Extract Resource Dictionary refactoring to move a resource dictionary into its own file.</Description>
+      <Image>img/code-actions/xaml/refactor/extract-resource-dictionary.gif</Image>
+      <FeatureUrl>code-actions/xaml/refactor#extract-resource-dictionary</FeatureUrl>
+      <IsRemote>true</IsRemote>
+    </Tip>
+    <Tip>
       <Title>Generate New View Model</Title>
       <Description>Use the Generate View Model code action to create a new view model for a XAML file with default implementations of each data-binding!</Description>
       <Image>img/code-actions/xaml/generate/generate-view-model.gif</Image>
@@ -132,6 +139,13 @@
       <Description>You can use the localisation wizard to find and move all C# strings into a RESX file, replacing the original string with a resource lookup!</Description>
       <Image>img/code-actions/csharp/localise-csharp.gif</Image>
       <FeatureUrl>code-actions/csharp#replace-string-with-resource-lookup</FeatureUrl>
+      <IsRemote>true</IsRemote>
+    </Tip>
+    <Tip>
+      <Title>Simplify Qualified Type</Title>
+      <Description>Use the Simplify Qualified Type refactoring to introduce usings for a qualified type reference.</Description>
+      <Image>img/code-actions/csharp/simplify-qualified-type.gif</Image>
+      <FeatureUrl>code-actions/csharp#simplify-qualified-type</FeatureUrl>
       <IsRemote>true</IsRemote>
     </Tip>
     <Tip>
