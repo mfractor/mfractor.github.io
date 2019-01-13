@@ -65,13 +65,6 @@
       <IsRemote>true</IsRemote>
     </Tip>
     <Tip>
-      <Title>Edit Color Declaration</Title>
-      <Description>Use the Edit Color code action to visually edit a color from your Xaml.</Description>
-      <Image>img/code-actions/xaml/refactor/edit-color.gif</Image>
-      <FeatureUrl>code-actions/xaml/refactor#edit-color-declaration</FeatureUrl>
-      <IsRemote>true</IsRemote>
-    </Tip>
-    <Tip>
       <Title>Migrate OnPlatform Usage</Title>
       <Description>Use the Migrate OnPlatform code action to convert OnPlatform declarations to the Xamarin.Forms 2.3.4 format.</Description>
       <Image>img/code-actions/xaml/refactor/migrate-onplatform.gif</Image>
@@ -97,6 +90,13 @@
       <Description>You can use the Extract Resource Dictionary refactoring to move a resource dictionary into its own file.</Description>
       <Image>img/code-actions/xaml/refactor/extract-resource-dictionary.gif</Image>
       <FeatureUrl>code-actions/xaml/refactor#extract-resource-dictionary</FeatureUrl>
+      <IsRemote>true</IsRemote>
+    </Tip>
+    <Tip>
+      <Title>Edit Color Declaration</Title>
+      <Description>Use the Edit Color code action to visually edit a color from your Xaml.</Description>
+      <Image>img/code-actions/xaml/refactor/edit-color.gif</Image>
+      <FeatureUrl>code-actions/xaml/refactor#edit-color-declaration</FeatureUrl>
       <IsRemote>true</IsRemote>
     </Tip>
     <Tip>
@@ -181,6 +181,13 @@
       <Description>When MFractor can infer your view model, you can generate new properties your view model from IntelliSense.</Description>
       <Image>img/code-completion/xaml/generate-property-intellisense.gif</Image>
       <FeatureUrl>code-completion/xaml#generate-view-model-property-completion</FeatureUrl>
+      <IsRemote>true</IsRemote>
+    </Tip>
+    <Tip>
+      <Title>Image Asset Completion</Title>
+      <Description>Use MFractors Image Intellisense to visually locate an image using the Image Manager.</Description>
+      <Image>img/code-completion/xaml/image-intellisense-drag-drop.gif</Image>
+      <FeatureUrl>code-completion/xaml#image-asset-completion</FeatureUrl>
       <IsRemote>true</IsRemote>
     </Tip>
     <Tip>
