@@ -9,6 +9,15 @@
 Given a color literal defined by a hex value, this code action adds a transparency channel to that color.
 
 
+## Convert Named Color To Hexadecimal
+
+**[Professional Only](https://www.mfractor.com/buy?utm_source=docs&utm_medium=professional_only)**
+
+**Configuration Id: com.mfractor.code_actions.xaml.convert_named_color_to_hexadecimal**
+
+Given a color that is defined by a named color literal (such as Red, Green etc), this code action converts that 
+
+
 ## Edit Color Declaration
 
 **[Professional Only](https://www.mfractor.com/buy?utm_source=docs&utm_medium=professional_only)**

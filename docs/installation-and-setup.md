@@ -15,13 +15,11 @@ Next, click on the **Gallery** tab and under **IDE Extensions** choose **MFracto
 
 When you first install MFractor, the activation dialog will open shortly after installation.
 
-In the activation dialog, enter your email and then click **Activate**.
+In the activation dialog, enter your email and name and then click **Activate**.
 
 ![activation dialog](img/setup/mfractor-activation-dialog.png)
 
-Tada! You are now ready to rock.
-
-## Importing An MFractor Professional License
+## Importing A Professional License
 
 Download and locate your license file (which ends with the extension `.lic`). When purchasing MFractor Professional, this license file will be provided in an email. In this example, our license file is located on our desktop called `license.lic`.
 
@@ -31,13 +29,11 @@ Open Visual Studio for Mac. If you have not activated MFractor with an email add
 
  ![Close Activation Dialog](/img/licensing/close-activation-dialog.png)
 
-In the main Visual Studio for Mac menu bar, select **Help**, then **MFractor** and then finally **License Information**. This will open the licensing window where you can import or remove an MFractor Professional license.
+In the main Visual Studio for Mac menu bar, select **MFractor** and then **Licensing**. This will open the licensing window where you can import or remove an MFractor Professional license.
 
-Next, click on the **Import License** button, browse to where our license is located (`license.lic`) and double click it to import the license into MFractor.
+Next, click on the **Import License** button, browse to the license file (`license.lic`) and double click it to import the license into MFractor.
 
 ![Importing an MFractor Professional license file](/img/licensing/import-license.gif)
-
-Voila, you now have a valid, active MFractor Professional installation.
 
 **It is safe to delete the license file from its original location. MFractor stores the license inside itself.**
 
@@ -59,7 +55,7 @@ After removing a license, you will be automatically downgraded to a free MFracto
 
 ## Updating MFractor
 
-MFractor will perdiocally notify you when an update is available.
+MFractor will periodically notify you when an update is available.
 
 You can also check for updates at any time by opening the **Visual Studio Mac** main menu and selecting **Check for Updates...**
 

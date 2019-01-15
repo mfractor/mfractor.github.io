@@ -4,14 +4,22 @@
 
 Welcome to the documentation for MFractor, a mobile first productivity tool for Visual Studio Mac.
 
-## Support
+## Installing MFractor
 
-If something doesn't work quite right or you'd like a sweet new feature added, be patient and contact me:
+## Purchase MFractor
 
- * Via Twitter: Give me a holla at [@matthewrdev](https://twitter.com/matthewrdev)
- * Via Slack: Drop in to chat anytime in the [#mfractor Xamarin Slack sub-channel](https://xamarinchat.slack.com/archives/mfractor).
- * Via Email: Shoot an email to hello@mfractor.com
+## Activate MFractor
 
-Thank you for installing and using MFractor.
+## Key Features
+
+ *
+
+## Help And Support
+
+ * Twitter: [@matthewrdev](https://twitter.com/matthewrdev)
+ * Slack: [MFractor Slack Channel](https://xamarinchat.slack.com/archives/mfractor).
+ * Gitter: [MFractor Gitter Channel](https://gitter.im/mfractor/Lobby#).
+ * Email: Please email [matthew@mfractor.com](matthew@mfractor.com)
+ * OfficeHours: Please book me at [https://officehours.io/people/matthewrdev](https://officehours.io/people/matthewrdev)
 
 Matthew Robbins - Creator of MFractor. ✌️
