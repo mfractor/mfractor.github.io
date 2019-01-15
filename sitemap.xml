@@ -4,7 +4,7 @@
     
     <url>
      <loc>/</loc>
-     <lastmod>2019-01-14</lastmod>
+     <lastmod>2019-01-15</lastmod>
      <changefreq>daily</changefreq>
     </url>
     
@@ -13,37 +13,37 @@
         
     <url>
      <loc>/installation-and-setup/</loc>
-     <lastmod>2019-01-14</lastmod>
+     <lastmod>2019-01-15</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/mfractor-professional/</loc>
-     <lastmod>2019-01-14</lastmod>
+     <lastmod>2019-01-15</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/code-actions/</loc>
-     <lastmod>2019-01-14</lastmod>
+     <lastmod>2019-01-15</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/image-importing-wizard/</loc>
-     <lastmod>2019-01-14</lastmod>
+     <lastmod>2019-01-15</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/localisation-wizard/</loc>
-     <lastmod>2019-01-14</lastmod>
+     <lastmod>2019-01-15</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/annotations/</loc>
-     <lastmod>2019-01-14</lastmod>
+     <lastmod>2019-01-15</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
@@ -53,37 +53,37 @@
         
     <url>
      <loc>/configuration/getting-started/</loc>
-     <lastmod>2019-01-14</lastmod>
+     <lastmod>2019-01-15</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/configuration/configurable-items/</loc>
-     <lastmod>2019-01-14</lastmod>
+     <lastmod>2019-01-15</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/configuration/code-snippets/</loc>
-     <lastmod>2019-01-14</lastmod>
+     <lastmod>2019-01-15</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/configuration/configuration-property-types/</loc>
-     <lastmod>2019-01-14</lastmod>
+     <lastmod>2019-01-15</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/configuration/resx/</loc>
-     <lastmod>2019-01-14</lastmod>
+     <lastmod>2019-01-15</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/configuration/xamarin-forms/</loc>
-     <lastmod>2019-01-14</lastmod>
+     <lastmod>2019-01-15</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
@@ -93,19 +93,19 @@
         
     <url>
      <loc>/xamarin-forms/configure-binding-context/</loc>
-     <lastmod>2019-01-14</lastmod>
+     <lastmod>2019-01-15</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/xamarin-forms/implementing-view-models/</loc>
-     <lastmod>2019-01-14</lastmod>
+     <lastmod>2019-01-15</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/xamarin-forms/value-converter-type-safety/</loc>
-     <lastmod>2019-01-14</lastmod>
+     <lastmod>2019-01-15</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
@@ -127,7 +127,7 @@
         
     <url>
      <loc>/code-actions/xml/</loc>
-     <lastmod>2019-01-14</lastmod>
+     <lastmod>2019-01-15</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
@@ -143,13 +143,13 @@
         
     <url>
      <loc>/code-analysis/xaml/</loc>
-     <lastmod>2019-01-14</lastmod>
+     <lastmod>2019-01-15</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/code-analysis/configuration/</loc>
-     <lastmod>2019-01-14</lastmod>
+     <lastmod>2019-01-15</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
@@ -165,37 +165,37 @@
         
     <url>
      <loc>/code-generation/csharp/android/</loc>
-     <lastmod>2019-01-14</lastmod>
+     <lastmod>2019-01-15</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/code-generation/xamarin-forms/</loc>
-     <lastmod>2019-01-14</lastmod>
+     <lastmod>2019-01-15</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/code-generation/linker/</loc>
-     <lastmod>2019-01-14</lastmod>
+     <lastmod>2019-01-15</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/code-generation/xaml/</loc>
-     <lastmod>2019-01-14</lastmod>
+     <lastmod>2019-01-15</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/code-generation/resx/</loc>
-     <lastmod>2019-01-14</lastmod>
+     <lastmod>2019-01-15</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/code-generation/xml/</loc>
-     <lastmod>2019-01-14</lastmod>
+     <lastmod>2019-01-15</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
@@ -205,7 +205,7 @@
         
     <url>
      <loc>/code-completion/xaml/</loc>
-     <lastmod>2019-01-14</lastmod>
+     <lastmod>2019-01-15</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
@@ -215,13 +215,13 @@
         
     <url>
      <loc>/localisation/</loc>
-     <lastmod>2019-01-14</lastmod>
+     <lastmod>2019-01-15</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/translation/</loc>
-     <lastmod>2019-01-14</lastmod>
+     <lastmod>2019-01-15</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
@@ -231,25 +231,25 @@
         
     <url>
      <loc>/search/</loc>
-     <lastmod>2019-01-14</lastmod>
+     <lastmod>2019-01-15</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/utilities/</loc>
-     <lastmod>2019-01-14</lastmod>
+     <lastmod>2019-01-15</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/debugging/</loc>
-     <lastmod>2019-01-14</lastmod>
+     <lastmod>2019-01-15</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/image-tools/</loc>
-     <lastmod>2019-01-14</lastmod>
+     <lastmod>2019-01-15</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
@@ -259,49 +259,49 @@
         
     <url>
      <loc>/release-notes/v3-6/</loc>
-     <lastmod>2019-01-14</lastmod>
+     <lastmod>2019-01-15</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/release-notes/v3-5/</loc>
-     <lastmod>2019-01-14</lastmod>
+     <lastmod>2019-01-15</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/release-notes/v3-4/</loc>
-     <lastmod>2019-01-14</lastmod>
+     <lastmod>2019-01-15</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/release-notes/v3-3/</loc>
-     <lastmod>2019-01-14</lastmod>
+     <lastmod>2019-01-15</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/release-notes/v3-2/</loc>
-     <lastmod>2019-01-14</lastmod>
+     <lastmod>2019-01-15</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/release-notes/v3-1/</loc>
-     <lastmod>2019-01-14</lastmod>
+     <lastmod>2019-01-15</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/release-notes/v3-0/</loc>
-     <lastmod>2019-01-14</lastmod>
+     <lastmod>2019-01-15</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/release-notes/v2/</loc>
-     <lastmod>2019-01-14</lastmod>
+     <lastmod>2019-01-15</lastmod>
      <changefreq>daily</changefreq>
     </url>
         

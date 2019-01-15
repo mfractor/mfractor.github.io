@@ -2,7 +2,7 @@
     "docs": [
         {
             "location": "/", 
-            "text": "Welcome\n\n\nWelcome to the documentation for MFractor, a mobile first productivity tool for Visual Studio Mac.\n\n\nSupport\n\n\nIf something doesn't work quite right or you'd like a sweet new feature added, be patient and contact me:\n\n\n\n\nVia Twitter: Give me a holla at \n@matthewrdev\n\n\nVia Slack: Drop in to chat anytime in the \n#mfractor Xamarin Slack sub-channel\n.\n\n\nVia Email: Shoot an email to hello@mfractor.com\n\n\n\n\nThank you for installing and using MFractor.\n\n\nMatthew Robbins - Creator of MFractor. \u270c\ufe0f", 
+            "text": "Welcome\n\n\nWelcome to the documentation for MFractor, a mobile first productivity tool for Visual Studio Mac.\n\n\nInstalling MFractor\n\n\nPurchase MFractor\n\n\nActivate MFractor\n\n\nKey Features\n\n\n*\n\n\nHelp And Support\n\n\n\n\nTwitter: \n@matthewrdev\n\n\nSlack: \nMFractor Slack Channel\n.\n\n\nGitter: \nMFractor Gitter Channel\n.\n\n\nEmail: Please email \nmatthew@mfractor.com\n\n\nOfficeHours: Please book me at \nhttps://officehours.io/people/matthewrdev\n\n\n\n\nMatthew Robbins - Creator of MFractor. \u270c\ufe0f", 
             "title": "Home"
         }, 
         {
@@ -11,13 +11,33 @@
             "title": "Welcome"
         }, 
         {
-            "location": "/#support", 
-            "text": "If something doesn't work quite right or you'd like a sweet new feature added, be patient and contact me:   Via Twitter: Give me a holla at  @matthewrdev  Via Slack: Drop in to chat anytime in the  #mfractor Xamarin Slack sub-channel .  Via Email: Shoot an email to hello@mfractor.com   Thank you for installing and using MFractor.  Matthew Robbins - Creator of MFractor. \u270c\ufe0f", 
-            "title": "Support"
+            "location": "/#installing-mfractor", 
+            "text": "", 
+            "title": "Installing MFractor"
+        }, 
+        {
+            "location": "/#purchase-mfractor", 
+            "text": "", 
+            "title": "Purchase MFractor"
+        }, 
+        {
+            "location": "/#activate-mfractor", 
+            "text": "", 
+            "title": "Activate MFractor"
+        }, 
+        {
+            "location": "/#key-features", 
+            "text": "*", 
+            "title": "Key Features"
+        }, 
+        {
+            "location": "/#help-and-support", 
+            "text": "Twitter:  @matthewrdev  Slack:  MFractor Slack Channel .  Gitter:  MFractor Gitter Channel .  Email: Please email  matthew@mfractor.com  OfficeHours: Please book me at  https://officehours.io/people/matthewrdev   Matthew Robbins - Creator of MFractor. \u270c\ufe0f", 
+            "title": "Help And Support"
         }, 
         {
             "location": "/installation-and-setup/", 
-            "text": "Installation And Setup\n\n\nInstalling, activating and updating MFractor for Visual Studio Mac\n\n\nInstall MFractor\n\n\nTo install MFractor, start Visual Studio for Mac.\n\n\nNext, navigate to the top left \nVisual Studio Menu\n and select \nExtensions\n.\n\n\nNext, click on the \nGallery\n tab and under \nIDE Extensions\n choose \nMFractor\n.\n\n\nActivating MFractor\n\n\nWhen you first install MFractor, the activation dialog will open shortly after installation.\n\n\nIn the activation dialog, enter your email and then click \nActivate\n.\n\n\n\n\nTada! You are now ready to rock.\n\n\nImporting An MFractor Professional License\n\n\nDownload and locate your license file (which ends with the extension \n.lic\n). When purchasing MFractor Professional, this license file will be provided in an email. In this example, our license file is located on our desktop called \nlicense.lic\n.\n\n\n\n\nOpen Visual Studio for Mac. If you have not activated MFractor with an email address, close the activation window.\n\n\n\n\nIn the main Visual Studio for Mac menu bar, select \nHelp\n, then \nMFractor\n and then finally \nLicense Information\n. This will open the licensing window where you can import or remove an MFractor Professional license.\n\n\nNext, click on the \nImport License\n button, browse to where our license is located (\nlicense.lic\n) and double click it to import the license into MFractor.\n\n\n\n\nVoila, you now have a valid, active MFractor Professional installation.\n\n\nIt is safe to delete the license file from its original location. MFractor stores the license inside itself.\n\n\n\n\nThe licensing window will list:\n\n\n\n\nLicensed To\n - The full name of the person that the MFractor Professional license is issued to.\n\n\nLicense Email:\n - The email that this MFractor Professional license is issued against.\n\n\nLicense Type and Expiry Date\n - The type of license issued (Professional, Trial or Lite) and when that license expires.\n\n\n\n\nDeactivating Your Professional License\n\n\nIf you'd like to remove a license from MFractor, you can open the MFractor license information window and click \nRemove License\n.\n\n\nIMPORTANT: This is a destructive operation, you cannot undo removing a license but you can re-import a new license.\n\n\nAfter removing a license, you will be automatically downgraded to a free MFractor license. This allows usage of most features apart from C# code actions, mobile-specific C# code diagnostics, and configuration file support.\n\n\nUpdating MFractor\n\n\nMFractor will perdiocally notify you when an update is available.\n\n\nYou can also check for updates at any time by opening the \nVisual Studio Mac\n main menu and selecting \nCheck for Updates...\n\n\n\n\nVisual Studio Mac will check the MFractor extension server for updates and prompt you to update if there is a new version!\n\n\nUninstalling MFractor\n\n\nYou can uninstall MFractor through the Extension Manager at any time.\n\n\nSelect the \nVisual Studio Mac\n main menu and then \nAddins\n\n\nUnder \nGallery\n then \nIDE extensions\n select the MFractor extension list item and then click \nUninstall\n\n\nYou will be prompted to uninstall the extension, confirm uninstallation by clicking \nUninstall", 
+            "text": "Installation And Setup\n\n\nInstalling, activating and updating MFractor for Visual Studio Mac\n\n\nInstall MFractor\n\n\nTo install MFractor, start Visual Studio for Mac.\n\n\nNext, navigate to the top left \nVisual Studio Menu\n and select \nExtensions\n.\n\n\nNext, click on the \nGallery\n tab and under \nIDE Extensions\n choose \nMFractor\n.\n\n\nActivating MFractor\n\n\nWhen you first install MFractor, the activation dialog will open shortly after installation.\n\n\nIn the activation dialog, enter your email and name and then click \nActivate\n.\n\n\n\n\nImporting A Professional License\n\n\nDownload and locate your license file (which ends with the extension \n.lic\n). When purchasing MFractor Professional, this license file will be provided in an email. In this example, our license file is located on our desktop called \nlicense.lic\n.\n\n\n\n\nOpen Visual Studio for Mac. If you have not activated MFractor with an email address, close the activation window.\n\n\n\n\nIn the main Visual Studio for Mac menu bar, select \nMFractor\n and then \nLicensing\n. This will open the licensing window where you can import or remove an MFractor Professional license.\n\n\nNext, click on the \nImport License\n button, browse to the license file (\nlicense.lic\n) and double click it to import the license into MFractor.\n\n\n\n\nIt is safe to delete the license file from its original location. MFractor stores the license inside itself.\n\n\n\n\nThe licensing window will list:\n\n\n\n\nLicensed To\n - The full name of the person that the MFractor Professional license is issued to.\n\n\nLicense Email:\n - The email that this MFractor Professional license is issued against.\n\n\nLicense Type and Expiry Date\n - The type of license issued (Professional, Trial or Lite) and when that license expires.\n\n\n\n\nDeactivating Your Professional License\n\n\nIf you'd like to remove a license from MFractor, you can open the MFractor license information window and click \nRemove License\n.\n\n\nIMPORTANT: This is a destructive operation, you cannot undo removing a license but you can re-import a new license.\n\n\nAfter removing a license, you will be automatically downgraded to a free MFractor license. This allows usage of most features apart from C# code actions, mobile-specific C# code diagnostics, and configuration file support.\n\n\nUpdating MFractor\n\n\nMFractor will periodically notify you when an update is available.\n\n\nYou can also check for updates at any time by opening the \nVisual Studio Mac\n main menu and selecting \nCheck for Updates...\n\n\n\n\nVisual Studio Mac will check the MFractor extension server for updates and prompt you to update if there is a new version!\n\n\nUninstalling MFractor\n\n\nYou can uninstall MFractor through the Extension Manager at any time.\n\n\nSelect the \nVisual Studio Mac\n main menu and then \nAddins\n\n\nUnder \nGallery\n then \nIDE extensions\n select the MFractor extension list item and then click \nUninstall\n\n\nYou will be prompted to uninstall the extension, confirm uninstallation by clicking \nUninstall", 
             "title": "Installation And Setup"
         }, 
         {
@@ -32,13 +52,13 @@
         }, 
         {
             "location": "/installation-and-setup/#activating-mfractor", 
-            "text": "When you first install MFractor, the activation dialog will open shortly after installation.  In the activation dialog, enter your email and then click  Activate .   Tada! You are now ready to rock.", 
+            "text": "When you first install MFractor, the activation dialog will open shortly after installation.  In the activation dialog, enter your email and name and then click  Activate .", 
             "title": "Activating MFractor"
         }, 
         {
-            "location": "/installation-and-setup/#importing-an-mfractor-professional-license", 
-            "text": "Download and locate your license file (which ends with the extension  .lic ). When purchasing MFractor Professional, this license file will be provided in an email. In this example, our license file is located on our desktop called  license.lic .   Open Visual Studio for Mac. If you have not activated MFractor with an email address, close the activation window.   In the main Visual Studio for Mac menu bar, select  Help , then  MFractor  and then finally  License Information . This will open the licensing window where you can import or remove an MFractor Professional license.  Next, click on the  Import License  button, browse to where our license is located ( license.lic ) and double click it to import the license into MFractor.   Voila, you now have a valid, active MFractor Professional installation.  It is safe to delete the license file from its original location. MFractor stores the license inside itself.   The licensing window will list:   Licensed To  - The full name of the person that the MFractor Professional license is issued to.  License Email:  - The email that this MFractor Professional license is issued against.  License Type and Expiry Date  - The type of license issued (Professional, Trial or Lite) and when that license expires.", 
-            "title": "Importing An MFractor Professional License"
+            "location": "/installation-and-setup/#importing-a-professional-license", 
+            "text": "Download and locate your license file (which ends with the extension  .lic ). When purchasing MFractor Professional, this license file will be provided in an email. In this example, our license file is located on our desktop called  license.lic .   Open Visual Studio for Mac. If you have not activated MFractor with an email address, close the activation window.   In the main Visual Studio for Mac menu bar, select  MFractor  and then  Licensing . This will open the licensing window where you can import or remove an MFractor Professional license.  Next, click on the  Import License  button, browse to the license file ( license.lic ) and double click it to import the license into MFractor.   It is safe to delete the license file from its original location. MFractor stores the license inside itself.   The licensing window will list:   Licensed To  - The full name of the person that the MFractor Professional license is issued to.  License Email:  - The email that this MFractor Professional license is issued against.  License Type and Expiry Date  - The type of license issued (Professional, Trial or Lite) and when that license expires.", 
+            "title": "Importing A Professional License"
         }, 
         {
             "location": "/installation-and-setup/#deactivating-your-professional-license", 
@@ -47,7 +67,7 @@
         }, 
         {
             "location": "/installation-and-setup/#updating-mfractor", 
-            "text": "MFractor will perdiocally notify you when an update is available.  You can also check for updates at any time by opening the  Visual Studio Mac  main menu and selecting  Check for Updates...   Visual Studio Mac will check the MFractor extension server for updates and prompt you to update if there is a new version!", 
+            "text": "MFractor will periodically notify you when an update is available.  You can also check for updates at any time by opening the  Visual Studio Mac  main menu and selecting  Check for Updates...   Visual Studio Mac will check the MFractor extension server for updates and prompt you to update if there is a new version!", 
             "title": "Updating MFractor"
         }, 
         {
@@ -57,7 +77,7 @@
         }, 
         {
             "location": "/mfractor-professional/", 
-            "text": "About MFractor Professional\n\n\nEverything you need to know about the Lite and Professional version of MFractor for Visual Studio Mac\n\n\nLite VS Professional\n\n\nMFractor comes in both a free (lite) and a paid (Professional) version.\n\n\nMFractor Lite is restricted to 2 XAML documents per day and does not include C# inspections or refactorings.\n\n\nPurchase An MFractor Professional License\n\n\nRRP: $299AUD per user per year\n\n\nProfessional licenses:\n\n\n\n\nAre issued against a single developer.\n\n\nCan be used on up to 3 separate machines for a single developer.\n\n\nExpired 366 days after being issued.\n\n\nInclude 1 year of maintenance for Professional features.\n\n\nInclude priority for feature requests and bug fixes.\n\n\n\n\nTo purchase a license, head to\n\n\nTo enquire about purchasing an MFractor Professional license, please email \nhello@mfractor.com\n.\n\n\nRenewing A Professional License\n\n\nWhen your license is about to expire, you can purchase a new license by contacting me at \nhello@mfractor.com\n. We will issue a new license for 366 + the period until your current license expires.\n\n\nRefund Policy\n\n\nEach purchase of MFractor comes with a 30 day refund period; If you would like a refund, email \nhello@mfractor.com\n requesting a refund and the account details to transfer to. I will refund the full amount minus a $30AUD processing fee.\n\n\nTerms Of Use\n\n\n\n\nEach individual developer must have their own MFractor Professional license.\n\n\nAn individual developer can activate MFractor Professional on up-to 3 separate machines.\n\n\nMFractor Professional licenses expire after 366 days.\n\n\nIf an MFractor Professional license is not renewed, MFractor will automatically downgrade to the free license tier.", 
+            "text": "About MFractor Professional\n\n\nEverything you need to know about the Lite and Professional version of MFractor for Visual Studio Mac\n\n\nLite VS Professional\n\n\nMFractor comes in both a free (Lite) and a paid (Professional) version.\n\n\nMFractor Lite is restricted to 4 XAML documents per day and does not include the Image Manager, C# tools or project pad actions.\n\n\nPurchase An MFractor Professional License\n\n\nRRP: $200AUD per user per year\n\n\nProfessional licenses:\n\n\n\n\nAre issued against a single developer.\n\n\nCan be used on up to 3 separate machines for a single developer.\n\n\nExpired 366 days after being issued.\n\n\nIncludes 1 year of maintenance for Professional features.\n\n\nIncludes priority for feature requests and bug fixes.\n\n\n\n\nMFractor Professional licenses can be purchased at \nhttps://www.mfractor.com/buy\n.\n\n\nRenewing A Professional License\n\n\nWhen your license has expired, you can purchase a new license at \nhttps://www.mfractor.com/buy\n. We will issue a new license for 366 + the period until your current license expires.\n\n\nRefund Policy\n\n\nEach purchase of MFractor comes with a 30 day refund period; If you would like a refund, please email \nmatthew@mfractor.com\n requesting a refund and the account details to transfer to. I will refund the full amount minus a $30AUD processing fee.\n\n\nTerms Of Use\n\n\n\n\nEach individual developer must have their own MFractor Professional license.\n\n\nAn individual developer can activate MFractor Professional on up-to 3 separate machines.\n\n\nMFractor Professional licenses expire after 366 days.\n\n\nIf an MFractor Professional license is not renewed, MFractor will automatically downgrade to the free license tier.", 
             "title": "About MFractor Professional"
         }, 
         {
@@ -67,22 +87,22 @@
         }, 
         {
             "location": "/mfractor-professional/#lite-vs-professional", 
-            "text": "MFractor comes in both a free (lite) and a paid (Professional) version.  MFractor Lite is restricted to 2 XAML documents per day and does not include C# inspections or refactorings.", 
+            "text": "MFractor comes in both a free (Lite) and a paid (Professional) version.  MFractor Lite is restricted to 4 XAML documents per day and does not include the Image Manager, C# tools or project pad actions.", 
             "title": "Lite VS Professional"
         }, 
         {
             "location": "/mfractor-professional/#purchase-an-mfractor-professional-license", 
-            "text": "RRP: $299AUD per user per year  Professional licenses:   Are issued against a single developer.  Can be used on up to 3 separate machines for a single developer.  Expired 366 days after being issued.  Include 1 year of maintenance for Professional features.  Include priority for feature requests and bug fixes.   To purchase a license, head to  To enquire about purchasing an MFractor Professional license, please email  hello@mfractor.com .", 
+            "text": "RRP: $200AUD per user per year  Professional licenses:   Are issued against a single developer.  Can be used on up to 3 separate machines for a single developer.  Expired 366 days after being issued.  Includes 1 year of maintenance for Professional features.  Includes priority for feature requests and bug fixes.   MFractor Professional licenses can be purchased at  https://www.mfractor.com/buy .", 
             "title": "Purchase An MFractor Professional License"
         }, 
         {
             "location": "/mfractor-professional/#renewing-a-professional-license", 
-            "text": "When your license is about to expire, you can purchase a new license by contacting me at  hello@mfractor.com . We will issue a new license for 366 + the period until your current license expires.", 
+            "text": "When your license has expired, you can purchase a new license at  https://www.mfractor.com/buy . We will issue a new license for 366 + the period until your current license expires.", 
             "title": "Renewing A Professional License"
         }, 
         {
             "location": "/mfractor-professional/#refund-policy", 
-            "text": "Each purchase of MFractor comes with a 30 day refund period; If you would like a refund, email  hello@mfractor.com  requesting a refund and the account details to transfer to. I will refund the full amount minus a $30AUD processing fee.", 
+            "text": "Each purchase of MFractor comes with a 30 day refund period; If you would like a refund, please email  matthew@mfractor.com  requesting a refund and the account details to transfer to. I will refund the full amount minus a $30AUD processing fee.", 
             "title": "Refund Policy"
         }, 
         {
@@ -1727,7 +1747,7 @@
         }, 
         {
             "location": "/code-actions/xaml/refactor/", 
-            "text": "XAML Refactoring\n\n\nAutogenerated by MFractor v3.7.1\n\n\nAdd Transparency Channel To Color\n\n\nProfessional Only\n\n\nConfiguration Id: com.mfractor.code_actions.xaml.add_transparency_to_color\n\n\nGiven a color literal defined by a hex value, this code action adds a transparency channel to that color.\n\n\nEdit Color Declaration\n\n\nProfessional Only\n\n\nConfiguration Id: com.mfractor.code_actions.xaml.edit_color\n\n\n\n\nThe \nEdit Color Declaration\n code actions allows visual editing of colors from your Xaml.\n\n\nSimply right click on a Xaml node that is a \nSystem.Drawing.Color\n or \nXamarin.Forms.Color\n and select \nEdit Color\n. Then you can use the color picker dialog to select a new color value:\n\n\nExtract Attribute Value Into Property Binding\n\n\nProfessional Only\n\n\nConfiguration Id: com.mfractor.code_actions.xaml.extract_into_property_binding\n\n\nWhen a Xaml attribute is initialised by a literal value (rather than an expression), this refactoring action allows a developer to extract that literal value as a property into the binding context and replace the attribute initialiser with a binding expression.\n\n\nFor example, given the attribute initialiser \nText=\\\"Hello Xamarin.Forms!\\\"\n, this refactoring would generate a user named property (EG: Message) in the binding context, initiliase it with the string literal \n\\\"Message\\\"\n and replace the attribute value with the binding expresion \n{Binding Message}\n.\";\n\n\nUses:\n\n\n\n\nView Model Property Generator\n\n\n\n\nExtract Resource Dictionary\n\n\nProfessional Only\n\n\nConfiguration Id: com.mfractor.code_actions.xaml.extract_resource_dictionary", 
+            "text": "XAML Refactoring\n\n\nAutogenerated by MFractor v3.7.1\n\n\nAdd Transparency Channel To Color\n\n\nProfessional Only\n\n\nConfiguration Id: com.mfractor.code_actions.xaml.add_transparency_to_color\n\n\nGiven a color literal defined by a hex value, this code action adds a transparency channel to that color.\n\n\nConvert Named Color To Hexadecimal\n\n\nProfessional Only\n\n\nConfiguration Id: com.mfractor.code_actions.xaml.convert_named_color_to_hexadecimal\n\n\nGiven a color that is defined by a named color literal (such as Red, Green etc), this code action converts that \n\n\nEdit Color Declaration\n\n\nProfessional Only\n\n\nConfiguration Id: com.mfractor.code_actions.xaml.edit_color\n\n\n\n\nThe \nEdit Color Declaration\n code actions allows visual editing of colors from your Xaml.\n\n\nSimply right click on a Xaml node that is a \nSystem.Drawing.Color\n or \nXamarin.Forms.Color\n and select \nEdit Color\n. Then you can use the color picker dialog to select a new color value:\n\n\nExtract Attribute Value Into Property Binding\n\n\nProfessional Only\n\n\nConfiguration Id: com.mfractor.code_actions.xaml.extract_into_property_binding\n\n\nWhen a Xaml attribute is initialised by a literal value (rather than an expression), this refactoring action allows a developer to extract that literal value as a property into the binding context and replace the attribute initialiser with a binding expression.\n\n\nFor example, given the attribute initialiser \nText=\\\"Hello Xamarin.Forms!\\\"\n, this refactoring would generate a user named property (EG: Message) in the binding context, initiliase it with the string literal \n\\\"Message\\\"\n and replace the attribute value with the binding expresion \n{Binding Message}\n.\";\n\n\nUses:\n\n\n\n\nView Model Property Generator\n\n\n\n\nExtract Resource Dictionary\n\n\nProfessional Only\n\n\nConfiguration Id: com.mfractor.code_actions.xaml.extract_resource_dictionary", 
             "title": "Refactoring"
         }, 
         {
@@ -1739,6 +1759,11 @@
             "location": "/code-actions/xaml/refactor/#add-transparency-channel-to-color", 
             "text": "Professional Only  Configuration Id: com.mfractor.code_actions.xaml.add_transparency_to_color  Given a color literal defined by a hex value, this code action adds a transparency channel to that color.", 
             "title": "Add Transparency Channel To Color"
+        }, 
+        {
+            "location": "/code-actions/xaml/refactor/#convert-named-color-to-hexadecimal", 
+            "text": "Professional Only  Configuration Id: com.mfractor.code_actions.xaml.convert_named_color_to_hexadecimal  Given a color that is defined by a named color literal (such as Red, Green etc), this code action converts that", 
+            "title": "Convert Named Color To Hexadecimal"
         }, 
         {
             "location": "/code-actions/xaml/refactor/#edit-color-declaration", 
@@ -3022,7 +3047,7 @@
         }, 
         {
             "location": "/image-tools/", 
-            "text": "Image Tools\n\n\nAutogenerated by MFractor v3.7.1\n\n\n__gtksharp_45_Xwt_GtkBackend_CustomContainer", 
+            "text": "Image Tools\n\n\nAutogenerated by MFractor v3.7.1\n\n\n__gtksharp_53_Xwt_GtkBackend_CustomContainer", 
             "title": "Image Tools"
         }, 
         {
@@ -3031,9 +3056,9 @@
             "title": "Image Tools"
         }, 
         {
-            "location": "/image-tools/#__gtksharp_45_xwt_gtkbackend_customcontainer", 
+            "location": "/image-tools/#__gtksharp_53_xwt_gtkbackend_customcontainer", 
             "text": "", 
-            "title": "__gtksharp_45_Xwt_GtkBackend_CustomContainer"
+            "title": "__gtksharp_53_Xwt_GtkBackend_CustomContainer"
         }, 
         {
             "location": "/release-notes/v3-6/", 
