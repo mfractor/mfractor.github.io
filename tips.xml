@@ -9,6 +9,13 @@
       <IsRemote>true</IsRemote>
     </Tip>
     <Tip>
+      <Title>Align Namespace To Folder Path</Title>
+      <Description>The Align Namespace To Folder Path refactoring will make a namespace match the project folder path for the file!</Description>
+      <Image>img/code-actions/csharp/align-namespace.gif</Image>
+      <FeatureUrl>code-actions/csharp#align-namespace-to-folder-path</FeatureUrl>
+      <IsRemote>true</IsRemote>
+    </Tip>
+    <Tip>
       <Title>Go To Implementation</Title>
       <Description>You can use MFractors Go-To Implementation shortcut to find classes that implement that interface and then jump to that class!</Description>
       <Image>img/code-actions/csharp/go-to-implementation.gif</Image>
@@ -88,8 +95,22 @@
     <Tip>
       <Title>Extract Resource Dictionary</Title>
       <Description>You can use the Extract Resource Dictionary refactoring to move a resource dictionary into its own file.</Description>
-      <Image>img/code-actions/xaml/refactor/extract-resource-dictionary.gif</Image>
+      <Image>img/code-actions/xaml/refactor/extract-resource-dictonary.gif</Image>
       <FeatureUrl>code-actions/xaml/refactor#extract-resource-dictionary</FeatureUrl>
+      <IsRemote>true</IsRemote>
+    </Tip>
+    <Tip>
+      <Title>Convert StackLayout To Grid</Title>
+      <Description>User the Convert StackLayout To Grid refactoring to change a StackLayout layout to a Grid</Description>
+      <Image>img/code-actions/xaml/refactor/convert-stacklayout-to-grid.gif</Image>
+      <FeatureUrl>code-actions/xaml/refactor#convert-stacklayout-to-grid</FeatureUrl>
+      <IsRemote>true</IsRemote>
+    </Tip>
+    <Tip>
+      <Title>Fix Node Closing Tag And Children</Title>
+      <Description>When refactoring XAML, change an elements opening tag and then use MFractor to fix the names of the end tag and property setters.</Description>
+      <Image>img/code-actions/xaml/refactor/change-closing-tag-and-children.gif</Image>
+      <FeatureUrl>code-actions/xaml/refactor#fix-node-closing-tag-and-children</FeatureUrl>
       <IsRemote>true</IsRemote>
     </Tip>
     <Tip>
@@ -237,6 +258,13 @@
       <Description>When using an x:Reference expression, MFractor will suggest available x:Names declared in the XAML file.</Description>
       <Image>img/code-completion/xaml/xreference-value-intellisense.gif</Image>
       <FeatureUrl>code-completion/xaml#x:reference-value-completion</FeatureUrl>
+      <IsRemote>true</IsRemote>
+    </Tip>
+    <Tip>
+      <Title>Rename Element Completion</Title>
+      <Description>When you change the opening tag of XAML symbol, MFractor will automatically update it's closing tag and all its children!</Description>
+      <Image>img/code-completion/xaml/rename-type-completion.gif</Image>
+      <FeatureUrl>code-completion/xaml#rename-element-completion</FeatureUrl>
       <IsRemote>true</IsRemote>
     </Tip>
     <Tip>
