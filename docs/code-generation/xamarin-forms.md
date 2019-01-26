@@ -53,7 +53,6 @@ For a given Xamarin.Forms user control in C#, the **Generate Custom Renderer For
 
  * [IOS Custom Renderer Code Snippets](/configuration/xamarin-forms.md#ios-custom-renderer-code-snippets)
  * [Android Custom Renderer Code Snippets](/configuration/xamarin-forms.md#android-custom-renderer-code-snippets)
- * [GTK Custom Renderer Code Snippets](/configuration/xamarin-forms.md#gtk-custom-renderer-code-snippets)
 
 
 ## Generate ICommand Implementation
@@ -103,6 +102,7 @@ Generates a new ContentPage with an associated view model.
 |------|------|-------------|-------------|
 | **ViewBaseClass** | System.String | Xamarin.Forms.ContentPage | What is the default base class that should be used when creating the page and it's code behind? |
 | **ViewSuffix** | System.String | Page | What is the suffix to use when creating a new page? |
+| **ViewsFolder** | System.String | Pages | Where should new views be placed? |
 
 ### Uses:
 
@@ -125,12 +125,11 @@ Generates a new effect, creating the effect inside the common project as well as
 
 | Name | Type | Defaults To | Description |
 |------|------|-------------|-------------|
-| **iOSEffectsFolder** | System.String | Effects | What is the folder that iOS platform-specific effects should be placed into? |
+| **IOSEffectsFolder** | System.String | Effects | What is the folder that iOS platform-specific effects should be placed into? |
 | **AndroidEffectsFolder** | System.String | Effects | What is the folder that Android platform-specific effects should be placed into? |
-| **GtkEffectsFolder** | System.String | Effects | What is the folder that GTK platform-specific effects should be placed into? |
 | **EffectsFolder** | System.String | Effects | What is the folder that the effects declaration be placed into? |
 | **ResolutionGroupName** | System.String | Effects | What is the name of the resolution group? |
-| **iOSEffectSnippet** | `Code Snippet`<br/><br/>**Arguments**:<ul><li>`name`: The name of the new effect.</li><li>`group_name`: The resolution group name of the new effect.</li><li>`namespace`: The iOS projects default namespace.</li><li>`platform`: If you wish to shared the platform-specific effect template, this is the name of the effects platform.</li></ul> | [View Code Snippet](/code-generation/xamarin-forms/snippets/generate-platform-specific-effect/ioseffectsnippet.txt) | What is the code snippet for the iOS platform-specific effect? |
+| **IOSEffectSnippet** | `Code Snippet`<br/><br/>**Arguments**:<ul><li>`name`: The name of the new effect.</li><li>`group_name`: The resolution group name of the new effect.</li><li>`namespace`: The iOS projects default namespace.</li><li>`platform`: If you wish to shared the platform-specific effect template, this is the name of the effects platform.</li></ul> | [View Code Snippet](/code-generation/xamarin-forms/snippets/generate-platform-specific-effect/ioseffectsnippet.txt) | What is the code snippet for the iOS platform-specific effect? |
 | **AndroidEffectSnippet** | `Code Snippet`<br/><br/>**Arguments**:<ul><li>`name`: The name of the new effect.</li><li>`group_name`: The resolution group name of the new effect.</li><li>`namespace`: The Android projects default namespace.</li><li>`platform`: If you wish to shared the platform-specific effect template, this is the name of the effects platform.</li></ul> | [View Code Snippet](/code-generation/xamarin-forms/snippets/generate-platform-specific-effect/androideffectsnippet.txt) | What is the code snippet for the Android platform-specific effect? |
 | **GtkEffectSnippet** | `Code Snippet`<br/><br/>**Arguments**:<ul><li>`name`: The name of the new effect.</li><li>`group_name`: The resolution group name of the new effect.</li><li>`namespace`: The GTK projects default namespace.</li><li>`platform`: If you wish to shared the platform-specific effect template, this is the name of the effects platform.</li></ul> | [View Code Snippet](/code-generation/xamarin-forms/snippets/generate-platform-specific-effect/gtkeffectsnippet.txt) | What is the code snippet for the GTK platform-specific effect? |
 | **EffectSnippet** | `Code Snippet`<br/><br/>**Arguments**:<ul><li>`name`: The name of the new effect.</li><li>`group_name`: The resolution group name of the new effect.</li><li>`namespace`: The common projects default namespace.</li></ul> | [View Code Snippet](/code-generation/xamarin-forms/snippets/generate-platform-specific-effect/effectsnippet.txt) | What is the code snippet for the effect? |

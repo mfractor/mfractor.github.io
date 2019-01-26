@@ -229,6 +229,9 @@ namespace MyApp.ViewModels
 
 **Configuration Id: com.mfractor.code_actions.xaml.generate_resource_dictionary**
 
+
+![Quickly add a resource dictionary to a XAML file with the Generate Resource Dictionary code action.](/img/code-actions/xaml/generate/generate-resource-dictionary.gif)
+
 The **Generate Resource Dictionary** code action adds a `MyView.ResourceDictionary` property with a nested resource dictionary to any Xaml node that derives from `Xamarin.Forms.VisualElement` or is the root application class. Developers can quickly add a resource dictionary in just a few keystrokes; this is especially useful when you need to add a resource dictionary to the root xaml node on a control or page.
 
 

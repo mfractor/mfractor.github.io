@@ -498,8 +498,6 @@ When a Xaml node cannot be resolved, this fix will create a new view that uses X
 
 ![When you are missing an image resource, MFractor will warn you and give you the option to import it into your Android and iOS projects.](/img/code-actions/xaml/fix/import-image-fix.gif)
 
-![Using MFractors Image Wizard](/img/image-wizard/import-image.gif)
-
 This code fix will open the [Image Wizard](http://docs.mfractor.com/working-with-images/#using-the-image-wizard) from a missing image reference, allowing you to quickly import a new image resource into all projects that are missing that image resource.
 
 

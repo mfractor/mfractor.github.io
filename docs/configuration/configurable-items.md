@@ -472,6 +472,7 @@
 |------|------|-------------|-------------|
 | **ViewBaseClass** | System.String | Xamarin.Forms.ContentPage | What is the default base class that should be used when creating the page and it's code behind? |
 | **ViewSuffix** | System.String | Page | What is the suffix to use when creating a new page? |
+| **ViewsFolder** | System.String | Pages | Where should new views be placed? |
 
 
 ### Uses:
@@ -493,12 +494,11 @@
 
 | Name | Type | Defaults To | Description |
 |------|------|-------------|-------------|
-| **iOSEffectsFolder** | System.String | Effects | What is the folder that iOS platform-specific effects should be placed into? |
+| **IOSEffectsFolder** | System.String | Effects | What is the folder that iOS platform-specific effects should be placed into? |
 | **AndroidEffectsFolder** | System.String | Effects | What is the folder that Android platform-specific effects should be placed into? |
-| **GtkEffectsFolder** | System.String | Effects | What is the folder that GTK platform-specific effects should be placed into? |
 | **EffectsFolder** | System.String | Effects | What is the folder that the effects declaration be placed into? |
 | **ResolutionGroupName** | System.String | Effects | What is the name of the resolution group? |
-| **iOSEffectSnippet** | `Code Snippet`<br/><br/>**Arguments**:<ul><li>`name`: The name of the new effect.</li><li>`group_name`: The resolution group name of the new effect.</li><li>`namespace`: The iOS projects default namespace.</li><li>`platform`: If you wish to shared the platform-specific effect template, this is the name of the effects platform.</li></ul> | [View Code Snippet](/code-generation/xamarin-forms/snippets/generate-platform-specific-effect/ioseffectsnippet.txt) | What is the code snippet for the iOS platform-specific effect? |
+| **IOSEffectSnippet** | `Code Snippet`<br/><br/>**Arguments**:<ul><li>`name`: The name of the new effect.</li><li>`group_name`: The resolution group name of the new effect.</li><li>`namespace`: The iOS projects default namespace.</li><li>`platform`: If you wish to shared the platform-specific effect template, this is the name of the effects platform.</li></ul> | [View Code Snippet](/code-generation/xamarin-forms/snippets/generate-platform-specific-effect/ioseffectsnippet.txt) | What is the code snippet for the iOS platform-specific effect? |
 | **AndroidEffectSnippet** | `Code Snippet`<br/><br/>**Arguments**:<ul><li>`name`: The name of the new effect.</li><li>`group_name`: The resolution group name of the new effect.</li><li>`namespace`: The Android projects default namespace.</li><li>`platform`: If you wish to shared the platform-specific effect template, this is the name of the effects platform.</li></ul> | [View Code Snippet](/code-generation/xamarin-forms/snippets/generate-platform-specific-effect/androideffectsnippet.txt) | What is the code snippet for the Android platform-specific effect? |
 | **GtkEffectSnippet** | `Code Snippet`<br/><br/>**Arguments**:<ul><li>`name`: The name of the new effect.</li><li>`group_name`: The resolution group name of the new effect.</li><li>`namespace`: The GTK projects default namespace.</li><li>`platform`: If you wish to shared the platform-specific effect template, this is the name of the effects platform.</li></ul> | [View Code Snippet](/code-generation/xamarin-forms/snippets/generate-platform-specific-effect/gtkeffectsnippet.txt) | What is the code snippet for the GTK platform-specific effect? |
 | **EffectSnippet** | `Code Snippet`<br/><br/>**Arguments**:<ul><li>`name`: The name of the new effect.</li><li>`group_name`: The resolution group name of the new effect.</li><li>`namespace`: The common projects default namespace.</li></ul> | [View Code Snippet](/code-generation/xamarin-forms/snippets/generate-platform-specific-effect/effectsnippet.txt) | What is the code snippet for the effect? |
@@ -595,20 +595,6 @@
 | Name | Type | Defaults To | Description |
 |------|------|-------------|-------------|
 | **ApiKey** | System.String | <code>null</code> | What is the API key for the Google Cloud Translation API? |
-
-
-## GTK Custom Renderer Code Snippets
-
-[Full Documentation](/configuration/xamarin-forms.md#gtk-custom-renderer-code-snippets)
-
-
-### Configurable Properties
-
-| Name | Type | Defaults To | Description |
-|------|------|-------------|-------------|
-| **Snippet** | `Code Snippet`<br/><br/>**Arguments**:<ul><li>`control_type`: The fully qualified type of the page that this custom renderer is for.</li><li>`control_name`: The name of the page that this custom renderer is for.</li><li>`namespace`: The namespace that the custom renderer will be placed into.</li><li>`renderer_name`: The name of the new custom renderer.</li><li>`renderer_control`: The name of the base control type. For example, if your control is `MyCustomLabel` that extends a `Label`, **renderer_control** will be `Label`.</li><li>`base_type`: The fully qualified type of the renderers base type.</li></ul> | [View Code Snippet](/configuration/xamarin-forms/snippets/gtk-custom-renderer-code-snippets/snippet.txt) | The code snippet to use for GTK custom renderers pages. |
-| **RenderersFolder** | System.String | Renderers | What is the folder path that new renderers should be placed into? |
-| **RenderersNamespace** | System.String | .Renderers | What is the fully qualifed namespace that new renderers should be placed into? Prepend the namespace name with a dot to make it relative to the projects default namespace. |
 
 
 ## IOS Custom Renderer Code Snippets

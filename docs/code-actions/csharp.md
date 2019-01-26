@@ -17,11 +17,23 @@ For the namespace under the users cursor, this will make the namespace declarati
  * [Namespace Declaration](/code-generation/csharp.md#namespace-declaration)
 
 
+## Copy Var Type To Clipboard
+
+**[Professional Only](https://www.mfractor.com/buy?utm_source=docs&utm_medium=professional_only)**
+
+**Configuration Id: com.mfractor.code_actions.csharp.misc.copy_var_type_to_clipboard**
+
+For the given `var` variable declaration under the cursor, copies the fully qualified name of the symbol.
+
+
 ## Create Immutable Constructor
 
 **[Professional Only](https://www.mfractor.com/buy?utm_source=docs&utm_medium=professional_only)**
 
 **Configuration Id: com.mfractor.code_actions.csharp.create_immutable_constuctor**
+
+
+![Use the Create Immutable Constructor refactoring to create a constructor that initializes all readonly members of a class.](/img/code-actions/csharp/create-immutable-constructor.gif)
 
 This code action creates a constructor that assigns all of a classes readonly fields from constructor arguments
 

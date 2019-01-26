@@ -57,6 +57,9 @@ Simply right click on a Xaml node that is a `System.Drawing.Color` or `Xamarin.F
 
 **Configuration Id: com.mfractor.code_actions.xaml.extract_into_property_binding**
 
+
+![Move a XAML value into your ViewModel and replace it with a data-binding using the Extract Attribute Value Into Property Binding refactoring.](/img/code-actions/xaml/refactor/extract-value-into-property-binding.gif)
+
 When a Xaml attribute is initialised by a literal value (rather than an expression), this refactoring action allows a developer to extract that literal value as a property into the binding context and replace the attribute initialiser with a binding expression.
 
 For example, given the attribute initialiser `Text=\"Hello Xamarin.Forms!\"`, this refactoring would generate a user named property (EG: Message) in the binding context, initiliase it with the string literal `\"Message\"` and replace the attribute value with the binding expresion `{Binding Message}`.";
