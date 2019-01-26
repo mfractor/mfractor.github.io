@@ -72,6 +72,13 @@
       <IsRemote>true</IsRemote>
     </Tip>
     <Tip>
+      <Title>Extract Attribute Value Into Property Binding</Title>
+      <Description>Move a XAML value into your ViewModel and replace it with a data-binding using the Extract Attribute Value Into Property Binding refactoring.</Description>
+      <Image>img/code-actions/xaml/refactor/extract-value-into-property-binding.gif</Image>
+      <FeatureUrl>code-actions/xaml/refactor#extract-attribute-value-into-property-binding</FeatureUrl>
+      <IsRemote>true</IsRemote>
+    </Tip>
+    <Tip>
       <Title>Migrate OnPlatform Usage</Title>
       <Description>Use the Migrate OnPlatform code action to convert OnPlatform declarations to the Xamarin.Forms 2.3.4 format.</Description>
       <Image>img/code-actions/xaml/refactor/migrate-onplatform.gif</Image>
@@ -128,6 +135,13 @@
       <IsRemote>true</IsRemote>
     </Tip>
     <Tip>
+      <Title>Generate Resource Dictionary</Title>
+      <Description>Quickly add a resource dictionary to a XAML file with the Generate Resource Dictionary code action.</Description>
+      <Image>img/code-actions/xaml/generate/generate-resource-dictionary.gif</Image>
+      <FeatureUrl>code-actions/xaml/generate#generate-resource-dictionary</FeatureUrl>
+      <IsRemote>true</IsRemote>
+    </Tip>
+    <Tip>
       <Title>Implement Missing Members</Title>
       <Description>Use the Generate Bindable Properties code action to create new bindable properties; it'll even figure out the property types for you!</Description>
       <Image>img/code-actions/xaml/generate/generate-bindable-properties.gif</Image>
@@ -139,6 +153,27 @@
       <Description>The Generate Localisation Infrastructure action creates the code to power XAML localisation according to Xamarins best practices.</Description>
       <Image>img/code-actions/xaml/generate/generate-localisation-infrastructure.gif</Image>
       <FeatureUrl>code-actions/xaml/generate#generate-xaml-localisation-infrastructure</FeatureUrl>
+      <IsRemote>true</IsRemote>
+    </Tip>
+    <Tip>
+      <Title>Generate Custom Renderers</Title>
+      <Description>Use the Generate Custom Renderers refactoring to create custom renderers for a C# control in all mobile projects in your solution.</Description>
+      <Image>img/code-actions/csharp/forms/generate-custom-renderers.gif</Image>
+      <FeatureUrl>code-actions/csharp/forms#generate-custom-renderers</FeatureUrl>
+      <IsRemote>true</IsRemote>
+    </Tip>
+    <Tip>
+      <Title>Create Bindable Property</Title>
+      <Description>Need to create a bindable property for a Xamarin.Forms control? Use the Create Bindable Property refactoring to quickly create the necessary code!</Description>
+      <Image>img/code-actions/csharp/forms/create-bindable-property-csharp.gif</Image>
+      <FeatureUrl>code-actions/csharp/forms#create-bindable-property</FeatureUrl>
+      <IsRemote>true</IsRemote>
+    </Tip>
+    <Tip>
+      <Title>Insert ViewModel Command</Title>
+      <Description>When inside a ViewModel, use the Insert ViewModel Command refactoring to create a new property that returns an ICommand.</Description>
+      <Image>img/code-actions/csharp/forms/create-command-csharp.gif</Image>
+      <FeatureUrl>code-actions/csharp/forms#insert-viewmodel-command</FeatureUrl>
       <IsRemote>true</IsRemote>
     </Tip>
     <Tip>
@@ -160,6 +195,13 @@
       <Description>You can use the localisation wizard to find and move all C# strings into a RESX file, replacing the original string with a resource lookup!</Description>
       <Image>img/code-actions/csharp/localise-csharp.gif</Image>
       <FeatureUrl>code-actions/csharp#replace-string-with-resource-lookup</FeatureUrl>
+      <IsRemote>true</IsRemote>
+    </Tip>
+    <Tip>
+      <Title>Create Immutable Constructor</Title>
+      <Description>Use the Create Immutable Constructor refactoring to create a constructor that initializes all readonly members of a class.</Description>
+      <Image>img/code-actions/csharp/create-immutable-constructor.gif</Image>
+      <FeatureUrl>code-actions/csharp#create-immutable-constructor</FeatureUrl>
       <IsRemote>true</IsRemote>
     </Tip>
     <Tip>

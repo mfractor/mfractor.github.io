@@ -294,10 +294,6 @@
       
     
       
-      <li class="toctree-l3"><a href="#gtk-custom-renderer-code-snippets">GTK Custom Renderer Code Snippets</a></li>
-      
-    
-      
       <li class="toctree-l3"><a href="#ios-custom-renderer-code-snippets">IOS Custom Renderer Code Snippets</a></li>
       
     
@@ -1660,6 +1656,12 @@
 <td>Page</td>
 <td>What is the suffix to use when creating a new page?</td>
 </tr>
+<tr>
+<td><strong>ViewsFolder</strong></td>
+<td>System.String</td>
+<td>Pages</td>
+<td>Where should new views be placed?</td>
+</tr>
 </tbody>
 </table>
 <h3 id="uses_9">Uses:</h3>
@@ -1685,7 +1687,7 @@
 </thead>
 <tbody>
 <tr>
-<td><strong>iOSEffectsFolder</strong></td>
+<td><strong>IOSEffectsFolder</strong></td>
 <td>System.String</td>
 <td>Effects</td>
 <td>What is the folder that iOS platform-specific effects should be placed into?</td>
@@ -1695,12 +1697,6 @@
 <td>System.String</td>
 <td>Effects</td>
 <td>What is the folder that Android platform-specific effects should be placed into?</td>
-</tr>
-<tr>
-<td><strong>GtkEffectsFolder</strong></td>
-<td>System.String</td>
-<td>Effects</td>
-<td>What is the folder that GTK platform-specific effects should be placed into?</td>
 </tr>
 <tr>
 <td><strong>EffectsFolder</strong></td>
@@ -1715,7 +1711,7 @@
 <td>What is the name of the resolution group?</td>
 </tr>
 <tr>
-<td><strong>iOSEffectSnippet</strong></td>
+<td><strong>IOSEffectSnippet</strong></td>
 <td><code>Code Snippet</code><br/><br/><strong>Arguments</strong>:<ul><li><code>name</code>: The name of the new effect.</li><li><code>group_name</code>: The resolution group name of the new effect.</li><li><code>namespace</code>: The iOS projects default namespace.</li><li><code>platform</code>: If you wish to shared the platform-specific effect template, this is the name of the effects platform.</li></ul></td>
 <td><a href="../../code-generation/xamarin-forms/snippets/generate-platform-specific-effect/ioseffectsnippet.txt">View Code Snippet</a></td>
 <td>What is the code snippet for the iOS platform-specific effect?</td>
@@ -1909,42 +1905,9 @@
 </tr>
 </tbody>
 </table>
-<h2 id="gtk-custom-renderer-code-snippets">GTK Custom Renderer Code Snippets</h2>
-<p><a href="../xamarin-forms/#gtk-custom-renderer-code-snippets">Full Documentation</a></p>
-<h3 id="configurable-properties_39">Configurable Properties</h3>
-<table>
-<thead>
-<tr>
-<th>Name</th>
-<th>Type</th>
-<th>Defaults To</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><strong>Snippet</strong></td>
-<td><code>Code Snippet</code><br/><br/><strong>Arguments</strong>:<ul><li><code>control_type</code>: The fully qualified type of the page that this custom renderer is for.</li><li><code>control_name</code>: The name of the page that this custom renderer is for.</li><li><code>namespace</code>: The namespace that the custom renderer will be placed into.</li><li><code>renderer_name</code>: The name of the new custom renderer.</li><li><code>renderer_control</code>: The name of the base control type. For example, if your control is <code>MyCustomLabel</code> that extends a <code>Label</code>, <strong>renderer_control</strong> will be <code>Label</code>.</li><li><code>base_type</code>: The fully qualified type of the renderers base type.</li></ul></td>
-<td><a href="../../configuration/xamarin-forms/snippets/gtk-custom-renderer-code-snippets/snippet.txt">View Code Snippet</a></td>
-<td>The code snippet to use for GTK custom renderers pages.</td>
-</tr>
-<tr>
-<td><strong>RenderersFolder</strong></td>
-<td>System.String</td>
-<td>Renderers</td>
-<td>What is the folder path that new renderers should be placed into?</td>
-</tr>
-<tr>
-<td><strong>RenderersNamespace</strong></td>
-<td>System.String</td>
-<td>.Renderers</td>
-<td>What is the fully qualifed namespace that new renderers should be placed into? Prepend the namespace name with a dot to make it relative to the projects default namespace.</td>
-</tr>
-</tbody>
-</table>
 <h2 id="ios-custom-renderer-code-snippets">IOS Custom Renderer Code Snippets</h2>
 <p><a href="../xamarin-forms/#ios-custom-renderer-code-snippets">Full Documentation</a></p>
-<h3 id="configurable-properties_40">Configurable Properties</h3>
+<h3 id="configurable-properties_39">Configurable Properties</h3>
 <table>
 <thead>
 <tr>
@@ -1995,7 +1958,7 @@
 </table>
 <h2 id="linker-file-generation">Linker File Generation</h2>
 <p><a href="../../code-generation/linker/#linker-file-generation">Full Documentation</a></p>
-<h3 id="configurable-properties_41">Configurable Properties</h3>
+<h3 id="configurable-properties_40">Configurable Properties</h3>
 <table>
 <thead>
 <tr>
@@ -2026,7 +1989,7 @@
 </ul>
 <h2 id="member-field-generator">Member Field Generator</h2>
 <p><a href="../../code-generation/csharp/#member-field-generator">Full Documentation</a></p>
-<h3 id="configurable-properties_42">Configurable Properties</h3>
+<h3 id="configurable-properties_41">Configurable Properties</h3>
 <table>
 <thead>
 <tr>
@@ -2051,7 +2014,7 @@
 </ul>
 <h2 id="mvvm-resolution-settings">MVVM Resolution Settings</h2>
 <p><a href="../xamarin-forms/#mvvm-resolution-settings">Full Documentation</a></p>
-<h3 id="configurable-properties_43">Configurable Properties</h3>
+<h3 id="configurable-properties_42">Configurable Properties</h3>
 <table>
 <thead>
 <tr>
@@ -2078,7 +2041,7 @@
 </table>
 <h2 id="remove-unused-namespaces">Remove Unused Namespaces</h2>
 <p><a href="../../code-actions/xaml/organise/#remove-unused-namespaces">Full Documentation</a></p>
-<h3 id="configurable-properties_44">Configurable Properties</h3>
+<h3 id="configurable-properties_43">Configurable Properties</h3>
 <table>
 <thead>
 <tr>
@@ -2103,7 +2066,7 @@
 </ul>
 <h2 id="string-localisation-generator">String Localisation Generator</h2>
 <p><a href="../../code-generation/xamarin-forms/#string-localisation-generator">Full Documentation</a></p>
-<h3 id="configurable-properties_45">Configurable Properties</h3>
+<h3 id="configurable-properties_44">Configurable Properties</h3>
 <table>
 <thead>
 <tr>
@@ -2142,7 +2105,7 @@
 </ul>
 <h2 id="value-conversion-settings">Value Conversion Settings</h2>
 <p><a href="../xamarin-forms/#value-conversion-settings">Full Documentation</a></p>
-<h3 id="configurable-properties_46">Configurable Properties</h3>
+<h3 id="configurable-properties_45">Configurable Properties</h3>
 <table>
 <thead>
 <tr>
@@ -2175,7 +2138,7 @@
 </table>
 <h2 id="view-model-property-generator">View Model Property Generator</h2>
 <p><a href="../../code-generation/xamarin-forms/#view-model-property-generator">Full Documentation</a></p>
-<h3 id="configurable-properties_47">Configurable Properties</h3>
+<h3 id="configurable-properties_46">Configurable Properties</h3>
 <table>
 <thead>
 <tr>
@@ -2208,7 +2171,7 @@
 </table>
 <h2 id="xaml-localisation-infrastructure-generation">XAML Localisation Infrastructure Generation</h2>
 <p><a href="../../code-generation/xamarin-forms/#xaml-localisation-infrastructure-generation">Full Documentation</a></p>
-<h3 id="configurable-properties_48">Configurable Properties</h3>
+<h3 id="configurable-properties_47">Configurable Properties</h3>
 <table>
 <thead>
 <tr>
