@@ -1,84 +1,37 @@
-site_name: mfractor docs
-theme: readthedocs
-copyright: Copyright &copy; 2016 <a href="https://www.mfractor.com">MFractor</a>
-site_author: "Matthew Robbins"
-site_description: "Documentation for MFractor for Mac, incredible Xamarin tools"
-site_favicon: "img/favicon.ico"
+site_name: MFractor Documentation
+copyright: Copyright &copy; 2015-2019 <a href="https://www.mfractor.com">MFractor Pty Ltd</a>
+site_author: "MFractor Pty Ltd"
+site_description: "Documentation for MFractor, a powerful productivity tool for Visual Studio"
 repo_url: "https://github.com/mfractor/mfractor.github.io"
 remote_branch: "master"
 google_analytics: ['UA-71910290-3', 'docs.mfractor.com']
 strict: true
-theme_dir: theme
-extra_css:
-    - css/breadcrumbs.css
-    - css/code.css
-    - css/fabric.css
-    - css/sidenav.css
-    - css/mfractor.css
+theme:
+  name: 'material'
+  logo: 'images/logo.svg'
+  favicon: 'images/favicon.ico'
+  palette:
+    primary: 'blue'
 
-pages:
+nav:
 - Home: index.md
-- Getting Started:
-  - Installation And Setup: installation-and-setup.md
-  - About MFractor Professional: mfractor-professional.md
-  - Code Actions: code-actions.md
-  - Image Importing Wizard: image-importing-wizard.md
-  - Localisation Wizard: localisation-wizard.md
-  - Using MFractor.Annotations: annotations.md
-- Configuring MFractor:
-  - Getting Started: configuration/getting-started.md
-  - Configurable Items: configuration/configurable-items.md
-  - Code Snippets: configuration/code-snippets.md
-  - Types: configuration/configuration-property-types.md
-  - ResX: configuration/resx.md
-  - Xamarin.Forms: configuration/xamarin-forms.md
-- Xamarin.Forms:
-  - Configuring A Binding Context: xamarin-forms/configure-binding-context.md
-  - Implementing View Models: xamarin-forms/implementing-view-models.md
-  - Value Converter Type Safety: xamarin-forms/value-converter-type-safety.md
-- Code Actions:
-  - C#:
-    - C# Code Actions: code-actions/csharp.md
-    - Android: code-actions/csharp/android.md
-    - Xamarin.Forms: code-actions/csharp/forms.md
-  - Xamarin.Forms Xaml Code Actions:
-    - Issue Fixing: code-actions/xaml/fix.md
-    - Code Generation: code-actions/xaml/generate.md
-    - Xaml Organisation: code-actions/xaml/organise.md
-    - Refactoring: code-actions/xaml/refactor.md
-    - Navigation: code-actions/xaml/navigate.md
-  - XML Code Actions: code-actions/xml.md
-- Code Analysis:
-  - C#:
-    - Android C# Analysis: code-analysis/csharp/android.md
-    - Xamarin.Forms C# Analysis: code-analysis/csharp/xamarin-forms.md
-  - XAML Analysis: code-analysis/xaml.md
-  - MFractor Configuration Analysis: code-analysis/configuration.md
-- Code Generation:
-  - C#:
-    - C#: code-generation/csharp.md
-  - Android (C#):  code-generation/csharp/android.md
-  - Xamarin.Forms (C#): code-generation/xamarin-forms.md
-  - Linker: code-generation/linker.md
-  - Xaml: code-generation/xaml.md
-  - ResX: code-generation/resx.md
-  - XML: code-generation/xml.md
-- Code Completion:
-  - XAML IntelliSense: code-completion/xaml.md
-- Localisation:
-  - Localisation: localisation.md
-  - Translation: translation.md
-- Misc:
-  - Search: search.md
-  - Utilities: utilities.md
-  - Debugging: debugging.md
-  - Image Tools: image-tools.md
-- Release Notes:
-    - v3.6: release-notes/v3-6.md
-    - v3.5: release-notes/v3-5.md
-    - v3.4: release-notes/v3-4.md
-    - v3.3: release-notes/v3-3.md
-    - v3.2: release-notes/v3-2.md
-    - v3.1: release-notes/v3-1.md
-    - v3.0: release-notes/v3-0.md
-    - v2: release-notes/v2.md
+- Getting Started - Windows:
+  - Quickstart: windows/quickstart.md
+  - Installation: windows/installation.md
+  - Licensing And Activation: windows/activation.md
+  - Upgrades: windows/upgrades.md
+  - Uninstallation: windows/uninstallation.md
+  - Reporting Issues: windows/reporting-issues.md
+  - Frequently Asked Questions: windows/faq.md
+- Getting Started  - Mac:
+  - Quickstart: mac/quickstart.md
+  - Installation: mac/installation.md
+  - Licensing And Activation: mac/activation.md
+  - Upgrades: mac/upgrades.md
+  - Uninstallation: mac/uninstallation.md
+  - Reporting Issues: mac/reporting-issues.md
+  - Frequently Asked Questions: mac/faq.md
+- Support: support.md
+- Legal:
+  - Privacy Policy: legal/privacy-policy.pdf
+  - End User License: legal/end-user-license.pdf

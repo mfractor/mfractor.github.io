@@ -1,25 +1,17 @@
-![mfractor logo](img/logo-horizontal.png)
+## Welcome
 
-##Welcome
+Welcome to the documentation for MFractor, a powerful productivity tool for Visual Studio Windows and Mac to streamline the development of Xamarin applications.
 
-Welcome to the documentation for MFractor, a mobile first productivity tool for Visual Studio Mac.
+**We are currently rebuilding our documentation site to prepare for the release of MFractor for Windows.**
 
-## Installing MFractor
+## Quick Start Guides
 
-## Purchase MFractor
+### Visual Studio Windows
 
-## Activate MFractor
+To get started with MFractor with Visual Studio Windows, see [MFractor Quickstart for Visual Studio Windows](windows/quickstart.md).
 
-## Key Features
+### Visual Studio Mac
 
- *
+To get started with MFractor with Visual Studio Mac, see [MFractor Quickstart for Visual Studio Mac](mac/quickstart.md).
 
-## Help And Support
-
- * Twitter: [@matthewrdev](https://twitter.com/matthewrdev)
- * Slack: [MFractor Slack Channel](https://xamarinchat.slack.com/archives/mfractor).
- * Gitter: [MFractor Gitter Channel](https://gitter.im/mfractor/Lobby#).
- * Email: Please email [matthew@mfractor.com](matthew@mfractor.com)
- * OfficeHours: Please book me at [https://officehours.io/people/matthewrdev](https://officehours.io/people/matthewrdev)
-
-Matthew Robbins - Creator of MFractor. ✌️
+## Features
