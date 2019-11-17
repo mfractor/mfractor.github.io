@@ -1,3 +1,7 @@
-# Uninstalling MFractor for Visual Studio Windows
+# Upgrading MFractor
 
-# Uninstalling MFractor for Visual Studio Mac
+## Extension Manager
+
+## File
+
+See http://addins.monodevelop.com/Project/Index/300

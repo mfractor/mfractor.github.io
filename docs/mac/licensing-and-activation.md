@@ -1,6 +1,3 @@
-
-**Under construction**
-
 # Licensing Levels
 
 ## MFractor Lite
@@ -14,5 +11,7 @@
 ## License Key
 
 ## License File
+
+# Retrieving Your License
 
 # Deactivating MFractor

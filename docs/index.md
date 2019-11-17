@@ -4,14 +4,8 @@ Welcome to the documentation for MFractor, a powerful productivity tool for Visu
 
 **We are currently rebuilding our documentation site to prepare for the release of MFractor for Windows.**
 
-## Quick Start Guides
+## Installing MFractor for Visual Studio Windows
 
-### Visual Studio Windows
 
-To get started with MFractor with Visual Studio Windows, see [MFractor Quickstart for Visual Studio Windows](windows/quickstart.md).
 
-### Visual Studio Mac
-
-To get started with MFractor with Visual Studio Mac, see [MFractor Quickstart for Visual Studio Mac](mac/quickstart.md).
-
-## Features
+## Installing MFractor for Visual Studio Mac

@@ -1,3 +1,3 @@
-# Uninstalling MFractor for Visual Studio Windows
+# Uninstalling MFractor for Visual Studio windows
 
-# Uninstalling MFractor for Visual Studio Mac
+To uninstall MFractor for Visual Studio Windows,

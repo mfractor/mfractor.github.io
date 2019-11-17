@@ -15,23 +15,34 @@ theme:
 
 nav:
 - Home: index.md
-- Getting Started - Windows:
-  - Quickstart: windows/quickstart.md
-  - Installation: windows/installation.md
-  - Licensing And Activation: windows/activation.md
-  - Upgrades: windows/upgrades.md
-  - Uninstallation: windows/uninstallation.md
-  - Reporting Issues: windows/reporting-issues.md
-  - Frequently Asked Questions: windows/faq.md
-- Getting Started  - Mac:
-  - Quickstart: mac/quickstart.md
-  - Installation: mac/installation.md
-  - Licensing And Activation: mac/activation.md
-  - Upgrades: mac/upgrades.md
-  - Uninstallation: mac/uninstallation.md
-  - Reporting Issues: mac/reporting-issues.md
-  - Frequently Asked Questions: mac/faq.md
+#- Getting Started - Windows:
+#  - Quickstart: windows/quickstart.md
+#  - Installation: windows/installation.md
+#  - Licensing And Activation: windows/licensing-activation.md
+#  - Upgrades: windows/upgrades.md
+#  - Uninstallation: windows/uninstallation.md
+#  - Reporting Issues: windows/reporting-issues.md
+#  - Frequently Asked Questions: windows/faq.md
+#- Getting Started  - Mac:
+#  - Quickstart: mac/quickstart.md
+#  - Installation: mac/installation.md
+#  - Licensing And Activation: mac/licensing-activation.md
+#  - Upgrades: mac/upgrades.md
+#  - Uninstallation: mac/uninstallation.md
+#  - Reporting Issues: mac/reporting-issues.md
+#  - Frequently Asked Questions: mac/faq.md
+- Installation And Setup: installation-and-setup.md
+- Licensing: licensing.md
 - Support: support.md
+- FAQ: faq.md
+- Xamarin.Forms:
+  - Binding Context Resolution:
+    - Overview: xamarin-forms/binding-context-resolution/overview.md
+    - Automatic ViewModel Detection: xamarin-forms/binding-context-resolution/automatic-viewmodel-detection.md
+    - BindingContext Evaluation: xamarin-forms/binding-context-resolution/binding-context-evaluation.md
+    - DataTemplate Binding Context Resolution: xamarin-forms/binding-context-resolution/data-template-binding-context-resolution.md
+    - Using The DesignTimeBindingContextAttribute: xamarin-forms/binding-context-resolution/design-time-binding-context-attribute.md
+    - Cross Project Binding Context Resolution: xamarin-forms/binding-context-resolution/cross-project-binding-context-resolution.md
 - Legal:
   - Privacy Policy: legal/privacy-policy.pdf
   - End User License: legal/end-user-license.pdf

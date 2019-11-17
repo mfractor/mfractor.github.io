@@ -2,10 +2,6 @@
 
 *Answers to some commonly asked questions*
 
-## What version of Visual Studio Windows is MFractor compatible with?
-
-MFractor target Visual Studio 2019.
-
 ## What version of Visual Studio Mac is MFractor compatible with?
 
 The latest version of MFractor always targets the current stable channel version of Visual Studio Mac.

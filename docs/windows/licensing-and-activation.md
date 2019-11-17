@@ -1,6 +1,3 @@
-
-**Under construction**
-
 # Licensing Levels
 
 ## MFractor Lite

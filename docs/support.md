@@ -1,4 +1,3 @@
-
 ## Reporting a Bug
 
 1.
@@ -9,9 +8,10 @@
 
 ### Visual Studio Windows Log Files
 
+ * Top menu
+ * Open log directory
 
 ## Support Channels
-
 
 * Twitter: [@matthewrdev](https://twitter.com/matthewrdev)
 * Slack: [MFractor Slack Channel](https://xamarinchat.slack.com/archives/mfractor).
