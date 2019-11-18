@@ -2,7 +2,7 @@
 
 ## MFractor Professional
 
-MFractor Professional is our paid version of MFractor that can be purchased at [www.mfractor.com/buy](www.mfractor.com/buy).
+MFractor Professional is our paid version of MFractor that can be purchased at [www.mfractor.com/buy](https://www.mfractor.com/buy).
 
 Our terms:
 

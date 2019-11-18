@@ -28,7 +28,7 @@ Please email matthew@mfractor.com and request a refund within 30 days of purchas
 
 Yes! We can issue your company a license for any number of seats.
 
-To get a company license, please purchase your license at [www.mfractor.com/buy](www.mfractor.com/buy).
+To get a company license, please purchase your license at [www.mfractor.com/buy](https://www.mfractor.com/buy).
 
 Alternatively, please email matthew@mfractor.com requesting an invoice for purchasing.
 
@@ -42,7 +42,7 @@ We can also provide quotes on the cost of an MFractor License purchase should yo
 
 To report a bug, please file an issue on our GitHub issues tracker at https://github.com/mfractor/mfractor-feedback/issues
 
-Please see our [Support](/support.md) documentation for detailed information on reporting a bug.
+Please see our [Support](/support) documentation for detailed information on reporting a bug.
 
 ## I've got a great feature idea, how do I request it?
 
@@ -64,8 +64,8 @@ To recover your MFractor Professional license, please email matthew@mfractor.com
 
 MFractors release notes can be found here:
 
- * [MFractor for Visual Studio Mac Release Notes](/release-notes/mac/curent.md)
- * [MFractor for Visual Studio Windows Release Notes](/release-notes/windows/curent.md)
+ * [MFractor for Visual Studio Mac Release Notes](/release-notes/mac/current)
+ * [MFractor for Visual Studio Windows Release Notes](/release-notes/windows/current)
 
 ## Where do I find the latest version of MFractor?
 
@@ -103,7 +103,7 @@ MFractor is usually found in the Gallery tab of the Extension Manager under **ID
 
 If you are unable to see MFractor in the Extension Manager, firstly, please check that you are on the stable channel of Visual Studio Mac.
 
-If you are on the stable channel and are unable to locate MFractor, please download a suitable release from the [Extensions Site](http://addins.monodevelop.com/Project/Index/300) and then [install from file](/installation-and-setup.md#);
+If you are on the stable channel and are unable to locate MFractor, please download a suitable release from the [Extensions Site](http://addins.monodevelop.com/Project/Index/300) and then [install from file](/installation-and-setup);
 
 ## I'd like to write a blog about MFractor.
 

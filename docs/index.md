@@ -8,11 +8,11 @@ Welcome to the documentation for MFractor, a powerful productivity tool for Visu
 
 ## Installation and Setup
 
-Please see [Installation And Setup](installation-and-setup.md)
+Please see [Installation And Setup](/installation-and-setup)
 
 ## Help And Support
 
-Please see [Support](support.md)
+Please see [Support](/support)
 
 ## Getting Started
 
@@ -22,5 +22,5 @@ Please see [Support](support.md)
 
 MFractors release notes can be found at:
 
- * [Visual Studio Mac](/release-notes/mac/current.md)
- * [Visual Studio Windows](/release-notes/windows/current.md)
+ * [Visual Studio Mac](/release-notes/mac/current)
+ * [Visual Studio Windows](/release-notes/windows/current)
