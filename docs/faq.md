@@ -10,13 +10,11 @@ To request an MFractor Professional trial, please email matthew@mfractor.com.
 
 ## How do I recover my MFractor Professional license?
 
-To recover your MFractor Professional license, please email matthew@mfractor.com with a
-
-##
+To recover your MFractor Professional license, please email matthew@mfractor.com requesting
 
 ## I'd like to write a blog about MFractor.
 
-Great! We love
+Great! We love people blogging about
 
 ## What is the .mfractor folder?
 The `.mfractor` folder is MFractors working directory for your solution.
