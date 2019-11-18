@@ -12,6 +12,8 @@ theme:
   favicon: 'images/favicon.ico'
   palette:
     primary: 'blue'
+extra:
+  disqus: 'mfractor'
 
 nav:
 - Home: index.md
@@ -43,6 +45,15 @@ nav:
     - DataTemplate Binding Context Resolution: xamarin-forms/binding-context-resolution/data-template-binding-context-resolution.md
     - Using The DesignTimeBindingContextAttribute: xamarin-forms/binding-context-resolution/design-time-binding-context-attribute.md
     - Cross Project Binding Context Resolution: xamarin-forms/binding-context-resolution/cross-project-binding-context-resolution.md
+- Release Notes:
+  - Mac:
+    - Current: release-notes/mac/current.md
+    - v3:
+      - v3.9: release-notes/mac/v3/v3.9.md
+  - Windows:
+    - Current: release-notes/windows/current.md
+    - v0:
+      - v0.1: release-notes/windows/v0/v0.1.md
 - Legal:
   - Privacy Policy: legal/privacy-policy.pdf
   - End User License: legal/end-user-license.pdf
