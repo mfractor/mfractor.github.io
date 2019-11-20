@@ -45,6 +45,12 @@ nav:
     - DataTemplate Binding Context Resolution: xamarin-forms/binding-context-resolution/data-template-binding-context-resolution.md
     - Using The DesignTimeBindingContextAttribute: xamarin-forms/binding-context-resolution/design-time-binding-context-attribute.md
     - Cross Project Binding Context Resolution: xamarin-forms/binding-context-resolution/cross-project-binding-context-resolution.md
+- Image Management:
+  - Overview: image-management/overview.md
+  - Managing Images: image-management/managing-image-assets.md
+  - Importing Images: image-management/importing-image-assets.md
+  - Deleting Images: image-management/deleting-image-assets.md
+  - Optimising Images: image-management/optimising-image-assets.md
 - Release Notes:
   - Mac:
     - Current: release-notes/mac/current.md
