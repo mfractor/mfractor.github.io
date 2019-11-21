@@ -17,27 +17,12 @@ extra:
 
 nav:
 - Home: index.md
-#- Getting Started - Windows:
-#  - Quickstart: windows/quickstart.md
-#  - Installation: windows/installation.md
-#  - Licensing And Activation: windows/licensing-activation.md
-#  - Upgrades: windows/upgrades.md
-#  - Uninstallation: windows/uninstallation.md
-#  - Reporting Issues: windows/reporting-issues.md
-#  - Frequently Asked Questions: windows/faq.md
-#- Getting Started  - Mac:
-#  - Quickstart: mac/quickstart.md
-#  - Installation: mac/installation.md
-#  - Licensing And Activation: mac/licensing-activation.md
-#  - Upgrades: mac/upgrades.md
-#  - Uninstallation: mac/uninstallation.md
-#  - Reporting Issues: mac/reporting-issues.md
-#  - Frequently Asked Questions: mac/faq.md
 - Installation And Setup: installation-and-setup.md
 - Licensing: licensing.md
 - Support: support.md
 - FAQ: faq.md
 - Xamarin.Forms:
+  - Overview: xamarin-forms/overview.md
   - Binding Context Resolution:
     - Overview: xamarin-forms/binding-context-resolution/overview.md
     - Automatic ViewModel Detection: xamarin-forms/binding-context-resolution/automatic-viewmodel-detection.md
@@ -45,12 +30,24 @@ nav:
     - DataTemplate Binding Context Resolution: xamarin-forms/binding-context-resolution/data-template-binding-context-resolution.md
     - Using The DesignTimeBindingContextAttribute: xamarin-forms/binding-context-resolution/design-time-binding-context-attribute.md
     - Cross Project Binding Context Resolution: xamarin-forms/binding-context-resolution/cross-project-binding-context-resolution.md
+  - Working With ViewModels:
+    - View-ViewModel Navigation: xamarin-forms/working-with-viewmodels/view-viewmodel-navigation.md
+    - Data Binding IntelliSense: xamarin-forms/working-with-viewmodels/data-binding-intellisense.md
+    - Data Binding Analysis: xamarin-forms/working-with-viewmodels/data-binding-analysis.md
+    - Generating Properties/Commands: xamarin-forms/working-with-viewmodels/generating-properties-and-commands.md
+    - MVVM Wizard: xamarin-forms/working-with-viewmodels/mvvm-wizard.md
+  - Custom Controls:
+    - Extracting Custom Controls: xamarin-forms/custom-controls/extracting-custom-controls.md
+    - Bindable Property Wizard: xamarin-forms/custom-controls/bindable-property-wizard.md
 - Image Management:
   - Overview: image-management/overview.md
   - Managing Images: image-management/managing-image-assets.md
   - Importing Images: image-management/importing-image-assets.md
   - Deleting Images: image-management/deleting-image-assets.md
   - Optimising Images: image-management/optimising-image-assets.md
+- Utilities:
+  - Delete Output Folders: utilities/delete-output-folders.md
+  - Clean And Compress: utilities/clean-and-compress.md
 - Release Notes:
   - Mac:
     - Current: release-notes/mac/current.md
