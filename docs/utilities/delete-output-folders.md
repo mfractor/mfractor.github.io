@@ -10,8 +10,12 @@ MFractors **Delete Output Folders** shortcut deletes both the `bin` and `obj` fo
 
 The delete output folders utility is available in both Visual Studio Windows and Mac.
 
-## Delete Output Folders (Solution Pad)
+## Using Delete Output Folders
 
 To delete the output folders to for a solution or project, right click on the solution or project in the solution explorer and then choose **Delete Output Folders**.
 
 MFractor will find the `bin` and `obj` folders that are alongside the solutions projects and perform a physical delete on them, removing them from the file system.
+
+## Example
+
+![Using the delete output folders tool](/img/utilities/delete-output-folders.png)

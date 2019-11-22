@@ -1,6 +1,6 @@
 ## Introduction
 
-MFractor provides many, many tools and utilies that make building apps with Xamarin.Forms significantly easier.
+MFractor provides many, many tools and utilities that make building apps with Xamarin.Forms significantly easier.
 
 This section of the documentation outlines the features on offer for a Xamarin.Forms developer and how they improve your productivity.
 
@@ -33,10 +33,13 @@ Before diving into the MVVM feature suite, please read our [Binding Context Reso
 
 ### Localisation
 
+ * Generating localisation infrastructure.
+ * Localising XAML files.
+
 ### Custom Renderers
 
- * Find Custom Renderers.
- * Creating Custom Renderers.
+ * Finding custom renderers.
+ * Creating custom renderers.
 
 ### Custom Controls
 

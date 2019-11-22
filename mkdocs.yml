@@ -14,10 +14,14 @@ theme:
     primary: 'blue'
 extra:
   disqus: 'mfractor'
+markdown_extensions:
+  - attr_list
 
 nav:
 - Home: index.md
 - Installation And Setup: installation-and-setup.md
+- Visual Studio Windows: visual-studio-mac.md
+- Visual Studio Mac: visual-studio-windows.md
 - Licensing: licensing.md
 - Support: support.md
 - FAQ: faq.md
@@ -50,11 +54,11 @@ nav:
   - Clean And Compress: utilities/clean-and-compress.md
 - Release Notes:
   - Mac:
-    - Current: release-notes/mac/current.md
+    - Current Release: release-notes/mac/current.md
     - v3:
       - v3.9: release-notes/mac/v3/v3.9.md
   - Windows:
-    - Current: release-notes/windows/current.md
+    - Current Release: release-notes/windows/current.md
     - v0:
       - v0.1: release-notes/windows/v0/v0.1.md
 - Legal:

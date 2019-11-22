@@ -16,7 +16,7 @@ Please see [Support](/support)
 
 ## Getting Started
 
-**Coming soon**
+To get started using MFractor, please read our getting started guide for
 
 ## Release Notes
 
