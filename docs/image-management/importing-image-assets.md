@@ -1,14 +1,10 @@
-**🔨🔨🔨 Under construction 🔨🔨🔨**
+**Generate all image densities for iOS and Android from a single source image.**
 
 ## Introduction
 
-The image importer takes a source image and generates all densities for iOS and Android apps.
-
 Xamarin applications
 
-To
-
-## Overview
+The image importer generates
 
 ## Launching The Image Importer
 
@@ -26,7 +22,7 @@ The **Image Asset** option will only appear in iOS or Android projects, or solut
 
 ### Import Menu
 
-The image importer can be accessed by selecting the top **MFractor** menu, then choosing **Import** and then **Image Asset**
+The image importer can be accessed by selecting the top **MFractor** menu, then choosing **Import** and then **Image Asset**.
 
 ### Image Manager
 
@@ -44,7 +40,7 @@ If MFractor detects that an image asset reference in XAML is missing in one or m
 
 The image importer creates new lower density image assets using the
 
-## iOS
+## Image Resource Types
 
 ### Asset Catalogs
 
@@ -59,6 +55,10 @@ When importing new image assets into
 ### Drawables
 
 ### Mipmap
+
+## Import Dark Mode Assets
+
+**Coming soon**
 
 ## Preferences
 
