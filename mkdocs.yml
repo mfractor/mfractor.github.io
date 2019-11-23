@@ -43,6 +43,7 @@ nav:
   - Custom Controls:
     - Extracting Custom Controls: xamarin-forms/custom-controls/extracting-custom-controls.md
     - Bindable Property Wizard: xamarin-forms/custom-controls/bindable-property-wizard.md
+    - Attached Property Wizard: xamarin-forms/custom-controls/attached-property-wizard.md
 - Image Management:
   - Overview: image-management/overview.md
   - Managing Images: image-management/managing-image-assets.md

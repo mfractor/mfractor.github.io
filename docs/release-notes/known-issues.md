@@ -1,4 +1,4 @@
-**A list of current, known issues in our Visual Studio Windows and Mac products**
+**A list of currently known issues in our Visual Studio Windows and Mac products**
 
 ## Known Issues
 

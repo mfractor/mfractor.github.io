@@ -6,7 +6,7 @@ MFractor Professional is our paid version of MFractor that can be purchased at [
 
 Our terms:
 
- * A Professional license if valid for one developer only. Please purchase a license for each developer in your team.
+ * A Professional license is valid for one developer only. Please purchase a license for each developer in your team.
  * Licenses valid for 366 days from the date of purchase.
  * A single license can be used on up to 3 developer machines. As cross-platform developers it is very likely we have a Windows machine, a Mac and a personal machine.
 
@@ -19,7 +19,7 @@ MFractor Lite:
  * Does not allow usage of our C# features.
  * Does not allow usage of our asset management features.
  * Does not allow usage of our code generation wizards.
- * Is not available for MFractor for Visual Studio Windows.
+ * Is not available in MFractor for Visual Studio Windows.
 
 ## End User License
 

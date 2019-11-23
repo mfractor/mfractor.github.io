@@ -1,4 +1,5 @@
 **Answers to some commonly asked questions**
+
 ## What is MFractor Professional?
 
 MFractor Professional is our paid version of MFractor.
@@ -22,7 +23,9 @@ MFractor Lite:
 
 ## How do I get a refund?
 
-Please email matthew@mfractor.com and request a refund within 30 days of purchase. We are sad to see your go! 😭
+Please email matthew@mfractor.com and request a refund within 30 days of purchase.
+
+But, boy oh boy, we are sad to see your go! 😭
 
 ## Do you offer company licenses?
 
@@ -83,11 +86,11 @@ https://marketplace.visualstudio.com/items?itemName=MFractorPtyLtd.MFRACTOR-VS-W
 
 ## What version of Visual Studio does MFractor support?
 
-### Visual Studio Macs
+### Visual Studio Mac
 
 MFractor for Visual Studio Mac supports Visual Studio 2019 and higher. We always track the latest stable release.
 
-### Visual Studio Windows
+### Visual Studio Window
 
 MFractor for Visual Studio Windows supports Visual Studio 2019 and higher.
 
@@ -97,7 +100,9 @@ No, we do not officially support the preview versions of Visual Studio Mac or Wi
 
 The extension *may* work if installed from file, however, we do not officially target or support any form of the Visual Studio previews.
 
-## MFractor is not visible in Visual Studio Macs Extension Manager.
+Install and use MFractor within the preview versions of Visual Studio at your own risk.
+
+## Help! MFractor is not visible in Visual Studio Macs Extension Manager.
 
 MFractor is usually found in the Gallery tab of the Extension Manager under **IDE Extensions**; you can use the top right search bar to locate
 
@@ -142,7 +147,7 @@ Please email matthew@mfractor.com requesting assistance and he'll get in touch t
 
 ## Are you available for hire to develop Xamarin applications?
 
-Yes we are.
+Yes, we are.
 
 As tools developers, we are very skilled at building Xamarin applications.
 
@@ -152,7 +157,7 @@ If we are unable to develop your app, we have a network trusted development part
 
 ## Are you available for hire to develop Visual Studio extension?
 
-Yes we are.
+Yes, we are.
 
 Please make a services enquiry to Matthew Robbins at matthew@mfractor.
 

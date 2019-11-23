@@ -2,9 +2,7 @@
 
 ## Introduction
 
-This guide is a
-
-At a glance, we will run through how to install, activate and use MFractor for Visual Studio Windows.
+This guide is outlines how to install, activate, maintain and use MFractor for Visual Studio Windows.
 
 To learn more about installation, licensing or a particular feature, please refer to the relevant linked documentation.
 
