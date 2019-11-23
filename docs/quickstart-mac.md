@@ -2,6 +2,12 @@
 
 ## Introduction
 
+## Installation
+
+## Activation
+
 ## Main Menu Overview
+
+## Feature Overview
 
 ## Preferences

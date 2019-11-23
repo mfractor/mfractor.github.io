@@ -2,21 +2,20 @@
 
 Welcome to the documentation for MFractor, a powerful productivity tool for Visual Studio Windows and Mac to streamline the development of Xamarin applications.
 
-**🔨🔨🔨 Under construction 🔨🔨🔨**
+## Getting Started
 
-**We are currently rebuilding our documentation site to prepare for the release of MFractor for Windows.**
+To get started using MFractor, please read our getting started guides:
 
-## Installation and Setup
-
-Please see [Installation And Setup](/installation-and-setup)
+ * [Getting Started - Visual Studio Windows](/quickstart-windows)
+ * [Getting Started - Visual Studio Mac](/quickstart-mac)
 
 ## Help And Support
 
-Please see [Support](/support)
+To get help using MFractor, please see our [Support](/support) article.
 
-## Getting Started
+## Licensing
 
-To get started using MFractor, please read our getting started guide for
+MFractor's licensing levels and end user license can be found in our [Licensing](/licensing) article.
 
 ## Release Notes
 

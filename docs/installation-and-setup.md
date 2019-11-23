@@ -3,15 +3,16 @@
 ## Install From Marketplace
 
 ### Visual Studio Mac
-To install MFractor, start Visual Studio for Mac.
 
-Next, navigate to the top **Visual Studio** menu item and select **Extensions**.
+MFractor for Visual Studio Mac can be installed using Visual Studio Macs **Extension Manager**. This is the repository of extensions that are available for Visual Studio Mac.
 
-Next, click on the Gallery tab and under IDE Extensions choose MFractor.
+To install MFractor:
 
-### Visual Studio Windows
-
-MFractor for Visual Studio Windows can be installed through the
+ 1. Start Visual Studio for Mac.
+ 2. Navigate to the top **Visual Studio** menu item and select **Extensions**.
+ 3. Click on the Gallery tab and under IDE Extensions choose MFractor.
+ 4. In the right panel, select **Install**
+ 5. After installation finishes, restart Visual Studio to complete installation.
 
 ## Install From File
 
@@ -30,20 +31,6 @@ Next, navigate to the top **Visual Studio** menu item and select **Extensions**.
 In the Extension Manager, click on the **Install from file...**
 
 In the dialog that opens, locate the
-
-### Visual Studio Windows
-
-Visual Studio Windows extensions are bundled and distributed as `.vsix` files.
-
-The latest version of MFractor for Visual Studio Mac can be found here:
-
-**[https://marketplace.visualstudio.com/items?itemName=MFractorPtyLtd.MFRACTOR-VS-WINDOWS](https://marketplace.visualstudio.com/items?itemName=MFractorPtyLtd.MFRACTOR-VS-WINDOWS)**
-
-To install MFractor from file, firstly, close all open instances of Visual Studio.
-
-Next, locate the MFractor `.vsix` and double click on it.
-
-This will launch the **VSIX Installer** and then install MFractor for Visual Studio Windows.
 
 ## Activating MFractor
 
@@ -109,12 +96,6 @@ Visual Studio Mac will check the MFractor extension server for updates and promp
 
 ### Visual Studio Windows
 
-Visual Studio Windows will automatically check for updates for MFractor and will update it for you.
-
-For further instructions on updating Visual Studio extensions, please see the official documentation:
-
-[https://docs.microsoft.com/en-us/visualstudio/extensibility/how-to-update-a-visual-studio-extension?view=vs-2019](https://docs.microsoft.com/en-us/visualstudio/extensibility/how-to-update-a-visual-studio-extension?view=vs-2019)
-
 ## Uninstall MFractor
 
 ### Visual Studio Mac
@@ -129,14 +110,3 @@ Next, select the **MFractor** item from the extensions list and then click **Uni
 You will be prompted to uninstall the extension, confirm uninstallation by clicking **Uninstall**.
 
 Finally, restart Visual Studio Mac to complete the uninstallation of MFractor.
-
-### Visual Studio Windows
-MFractor for Visual Studio Windows can be uninstalled using the **Manage Extensions** dialog.
-
-To uninstall, select the **Extension** main menu item and then click on **Manage Extensions**.
-
-Under the **Installed** tab, select **MFractor**. To quickly locate the MFractor extension, type **MFractor** enter the search bar in the extension managers search bar.
-
-After selecting **MFractor**, click on **Uninstall**. This will schedule MFractor to be uninstalled.
-
-Lastly,  close Visual Studio Windows and then confirm to complete uninstallation of MFractor.

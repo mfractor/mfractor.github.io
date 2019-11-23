@@ -20,8 +20,8 @@ markdown_extensions:
 nav:
 - Home: index.md
 - Installation And Setup: installation-and-setup.md
-- Visual Studio Windows: visual-studio-mac.md
-- Visual Studio Mac: visual-studio-windows.md
+- Quickstart - Windows: quickstart-windows.md
+- Quickstart - Mac: quickstart-mac.md
 - Licensing: licensing.md
 - Support: support.md
 - FAQ: faq.md
@@ -61,6 +61,7 @@ nav:
     - Current Release: release-notes/windows/current.md
     - v0:
       - v0.1: release-notes/windows/v0/v0.1.md
+  - Known Issues: release-notes/known-issues.md
 - Legal:
   - Privacy Policy: legal/privacy-policy.pdf
   - End User License: legal/end-user-license.pdf
