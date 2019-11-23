@@ -6,8 +6,8 @@ Welcome to the documentation for MFractor, a powerful productivity tool for Visu
 
 To get started using MFractor, please read our getting started guides:
 
- * [Getting Started - Visual Studio Windows](/quickstart-windows)
- * [Getting Started - Visual Studio Mac](/quickstart-mac)
+ * [Quickstart - Visual Studio Windows](/quickstart-windows)
+ * [Quickstart - Visual Studio Mac](/quickstart-mac)
 
 ## Help And Support
 

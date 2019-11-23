@@ -21,6 +21,18 @@ MFractor Lite:
  * Does not allow usage of our code generation wizards.
  * Is not available in MFractor for Visual Studio Windows.
 
+## Checking Licensing Status
+
+### Visual Studio Windows
+
+The status of your Professional license can be found at:
+
+ * 
+
+### Visual Studio Mac
+
+
+
 ## End User License
 
 [Please find our End User License here.](/legal/end-user-license.pdf)

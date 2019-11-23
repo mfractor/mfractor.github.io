@@ -1,30 +1,12 @@
 **Installing, activating and updating MFractor.**
 
+## Introduction
 
-## Activating MFractor
+This
 
-### Visual Studio Mac
-When you first install MFractor, the activation dialog will open shortly after installation.
+## Visual Studio Mac
 
-In the activation dialog, enter your email and name and then click **Activate**.
-
-Download and locate your license file (which ends with the extension .lic). When purchasing MFractor Professional, this license file will be provided in an email. In this example, our license file is located on our desktop called license.lic.
-
-Open Visual Studio for Mac. If you have not activated MFractor with an email address, close the activation window.
-
-In the main Visual Studio for Mac menu bar, select MFractor and then Licensing. This will open the licensing window where you can import or remove an MFractor Professional license.
-
-Next, click on the Import License button, browse to the license file (license.lic) and double click it to import the license into MFractor.
-
-It is safe to delete the license file from its original location. MFractor stores the license inside itself.
-
-The licensing window will list:
-
- * Licensed To - The full name of the person that the MFractor Professional license is issued to.
- * License Email: - The email that this MFractor Professional license is issued against.
- * License Type and Expiry Date - The type of license issued (Professional, Trial or Lite) and when that license expires.
-
-### Visual Studio Windows
+## Visual Studio Windows
 Open Visual Studio
 
 In the activation dialog, enter your email and name and then click **Activate**.
@@ -54,28 +36,61 @@ After removing a license, you will be automatically downgraded to a free MFracto
 
 If you are using MFractor for Visual Studio Windows, you will be unable to use any MFractor features.
 
-## Updating MFractor
+## Visual Studio Windows
 
-### Visual Studio Mac
-MFractor will periodically notify you when an update is available.
+This section contains
 
-You can also check for updates at any time by opening the Visual Studio Mac main menu and selecting **Check for Updates...**
+### Installation (Marketplace)
 
-Visual Studio Mac will check the MFractor extension server for updates and prompt you to update if there is a new version.
+MFractor for Visual Studio Windows is available through the **Manage Extensions** dialog.
 
-### Visual Studio Windows
+To install MFractor:
 
-## Uninstall MFractor
+ 1. Start Visual Studio Windows.
+ 2. Navigate to the top **Visual Studio** menu item, select **Extensions** and then **Manage Extensions**.
+ 3. Select the **Online** tab in the left hand panel.
+ 4. In the top right panel, seach for **MFractor**.
+ 5. When MFractor appears in the list, click on it and then select **Download**
+ 6. After installation finishes, restart Visual Studio to complete installation.
 
-### Visual Studio Mac
-MFractor for Visual Studio Mac can be uninstalled using the **Extension Manager**.
+### Installation (File)
 
-To uninstall, Select the **Visual Studio Mac** main menu item and then click on **Extensions...**.
+Visual Studio Windows extensions are bundled and distributed as `.vsix` files.
 
-Under the **Gallery** tab, locate the **IDE extensions** category and expand it.
+The latest version of MFractor for Visual Studio Mac can be found here:
 
-Next, select the **MFractor** item from the extensions list and then click **Uninstall**.
+**[https://marketplace.visualstudio.com/items?itemName=MFractorPtyLtd.MFRACTOR-VS-WINDOWS](https://marketplace.visualstudio.com/items?itemName=MFractorPtyLtd.MFRACTOR-VS-WINDOWS)**
 
-You will be prompted to uninstall the extension, confirm uninstallation by clicking **Uninstall**.
+To install MFractor from file:
 
-Finally, restart Visual Studio Mac to complete the uninstallation of MFractor.
+ 1. Close all open instances of Visual Studio.
+ 2. Locate the MFractor `.vsix` and double click on it.
+ 3. This will launch the **VSIX Installer** and then install MFractor for Visual Studio Windows.
+
+### Activation
+
+### License Activation
+
+### Upgrades
+
+Visual Studio Windows will automatically check for updates for MFractor and will update it for you.
+
+For further instructions on updating Visual Studio extensions, please see the official documentation:
+
+[https://docs.microsoft.com/en-us/visualstudio/extensibility/how-to-update-a-visual-studio-extension?view=vs-2019](https://docs.microsoft.com/en-us/visualstudio/extensibility/how-to-update-a-visual-studio-extension?view=vs-2019)
+
+### Uninstallation
+
+MFractor for Visual Studio Windows can be uninstalled using the **Manage Extensions** dialog.
+
+To uninstall:
+
+ 1. In the top menu bar, select the **Extension** main menu item and then click on **Manage Extensions**.
+ 2. Under the **Installed** tab, select **MFractor**.
+ 3. To quickly locate the MFractor extension, type **MFractor** enter the search bar in the extension managers search bar.
+ 4. Selecting **MFractor**, click on **Uninstall**. This will schedule MFractor to be uninstalled.
+ 5. Close Visual Studio Windows and then confirm to complete uninstallation of MFractor.
+
+### Release Notes
+
+The release notes for MFractor for Visual Studio Windows can be found in our [MFractor for Visual Studio Windows - Current Release](/release-notes/windows/current) article.

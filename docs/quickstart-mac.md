@@ -30,7 +30,33 @@ To install MFractor from file:
  4. Browse to the location of the MFractor `.mpack` file and select it.
  5. After installation finishes, restart Visual Studio to complete installation.
 
-## Activation
+### Activation
+
+MFractor requires you to activate the software in order to use the extension.
+
+After installing MFractor for Visual Studio Mac and then launching the IDE, MFractor's wi
+
+### Importing A License
+
+### Upgrades
+
+MFractor is distributed by Visual Studio Mac and, as such, you be automatically updated when an update is available.
+
+You can also check for updates at any time by opening the Visual Studio Mac main menu and selecting **Check for Updates...**
+
+Visual Studio Mac will check it's extension server for updates and prompt you to update if there is a new version.
+
+### Uninstallation
+
+MFractor for Visual Studio Mac can be uninstalled using the **Extension Manager**.
+
+To uninstall:
+
+  1. Select the **Visual Studio Mac** main menu item and then click on **Extensions...**.
+  2. Under the **Gallery** tab, locate the **IDE extensions** category and expand it.
+  3. Select the **MFractor** item from the extensions list and then click **Uninstall**.
+  4. You will be prompted to uninstall the extension, confirm uninstallation by clicking **Uninstall**.
+  5. Restart Visual Studio Mac to complete the uninstallation of MFractor.
 
 ## Main Menu Overview
 

@@ -16,6 +16,12 @@ extra:
   disqus: 'mfractor'
 markdown_extensions:
   - attr_list
+extra_css:
+  - css/tabs.css
+extra_javascript:
+  - js/tabs.js
+  - js/set-cookie.js
+  - js/get-cookie.js
 
 nav:
 - Home: index.md
