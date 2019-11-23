@@ -2,47 +2,89 @@
 
 ## Introduction
 
-This
+This document outlines how to install, activate and upgrade MFractor for Visual Studio Mac and Windows.
 
 ## Visual Studio Mac
 
+### Installation (Marketplace)
+
+MFractor for Visual Studio Mac can be installed using Visual Studio Macs **Extension Manager**. This is the repository of extensions that are available for Visual Studio Mac.
+
+To install MFractor:
+
+ 1. Start Visual Studio for Mac.
+ 2. Navigate to the top **Visual Studio** menu item and select **Extensions**.
+ 3. Click on the Gallery tab and under IDE Extensions choose MFractor.
+ 4. In the right panel, select **Install**
+ 5. After installation finishes, restart Visual Studio to complete installation.
+
+### Installation (File)
+
+Visual Studio Mac extensions are bundled and distributed as `.mpack` files.
+
+The latest version of MFractor for Visual Studio Mac can be found here: **[http://addins.monodevelop.com/Project/Index/300](http://addins.monodevelop.com/Project/Index/300)**
+
+To install MFractor from file:
+
+ 1. Start Visual Studio for Mac.
+ 2. Navigate to the top **Visual Studio** menu item and select **Extensions**.
+ 3. In the Extension Manager, click on the **Install from file...**.
+ 4. Browse to the location of the MFractor `.mpack` file and select it.
+ 5. After installation finishes, restart Visual Studio to complete installation.
+
+### Activation
+
+MFractor requires you to activate the software in order to use the extension.
+
+After installing MFractor for Visual Studio Mac and then launching the IDE, MFractor will automatically open the activation window.
+
+To activate MFractor, enter your name and email address and then press **Activate MFractor**.
+
+If you have purchased an MFractor Professional license, you press the **Import License** button to locate your `license.lic` file and import it.
+
+See the following section for more information on importing a Professional license.
+
+### Importing Professional License
+
+To activate your MFractor Professional license, you will need to import the license file.
+
+To import your license file:
+
+ 1. In the top menu, choose **MFractor**.
+ 2. Select **License Information**.
+ 3. Press the **Import License** button and locate your `license.lic` file.
+ 4. Confirm the location of your license.
+ 5. MFractor will import the license and activate all Professional features.
+
+### Upgrades
+
+MFractor is distributed by Visual Studio Mac and, as such, you be automatically updated when an update is available.
+
+You can also check for updates at any time by opening the Visual Studio Mac main menu and selecting **Check for Updates...**
+
+Visual Studio Mac will check it's extension server for updates and prompt you to update if there is a new version.
+
+### Uninstallation
+
+MFractor for Visual Studio Mac can be uninstalled using the **Extension Manager**.
+
+To uninstall:
+
+  1. Select the **Visual Studio Mac** main menu item and then click on **Extensions...**.
+  2. Under the **Gallery** tab, locate the **IDE extensions** category and expand it.
+  3. Select the **MFractor** item from the extensions list and then click **Uninstall**.
+  4. You will be prompted to uninstall the extension, confirm uninstallation by clicking **Uninstall**.
+  5. Restart Visual Studio Mac to complete the uninstallation of MFractor.
+
+### Release Note
+
+The release notes for MFractor for Visual Studio Mac can be found in our [MFractor for Visual Studio Mac - Current Release](/release-notes/mac/current) article.
+
 ## Visual Studio Windows
-Open Visual Studio
-
-In the activation dialog, enter your email and name and then click **Activate**.
-
-Download and locate your license file (which ends with the extension .lic). When purchasing MFractor Professional, this license file will be provided in an email. In this example, our license file is located on our desktop called license.lic.
-
-Open Visual Studio for Mac. If you have not activated MFractor with an email address, close the activation window.
-
-In the main Visual Studio for Mac menu bar, select MFractor and then Licensing. This will open the licensing window where you can import or remove an MFractor Professional license.
-
-Next, click on the Import License button, browse to the license file (license.lic) and double click it to import the license into MFractor.
-
-It is safe to delete the license file from its original location. MFractor stores the license inside itself.
-
-The licensing window will list:
-
-* Licensed To - The full name of the person that the MFractor Professional license is issued to.
-* License Email: - The email that this MFractor Professional license is issued against.
-* License Type and Expiry Date - The type of license issued (Professional, Trial or Lite) and when that license expires.
-
-## Deactivating Your Professional License
-If you'd like to remove a license from MFractor, you can open the MFractor license information window and click Remove License.
-
-**This is a destructive operation, you cannot undo removing a license but you can re-import a new license.**
-
-After removing a license, you will be automatically downgraded to a free MFractor license. This allows usage of most features apart from C# code actions, mobile-specific C# code diagnostics, and configuration file support.
-
-If you are using MFractor for Visual Studio Windows, you will be unable to use any MFractor features.
-
-## Visual Studio Windows
-
-This section contains
 
 ### Installation (Marketplace)
 
-MFractor for Visual Studio Windows is available through the **Manage Extensions** dialog.
+MFractor for Visual Studio Windows can be installed using Visual Studios **Manage Extensions** dialog.
 
 To install MFractor:
 
@@ -69,7 +111,27 @@ To install MFractor from file:
 
 ### Activation
 
-### License Activation
+MFractor requires you to activate the software in order to use the extension.
+
+After installing MFractor for Visual Studio Windows and then launching the IDE, MFractor will automatically open the activation window.
+
+To activate MFractor, enter your name and email address and then press **Activate MFractor**.
+
+If you have purchased an MFractor Professional license, you press the **Import License** button to locate your `license.lic` file and import it.
+
+See the following section for more information on importing a Professional license.
+
+### Importing Professional License
+
+To activate your MFractor Professional license, you will need to import the license file.
+
+To import your license file:
+
+ 1. In the top menu, choose **Extensions** and then **MFractor**
+ 2. Select **License Information**.
+ 3. Press the **Import License** button and locate your `license.lic` file.
+ 4. Confirm the location of your license.
+ 5. MFractor will import the license and activate all Professional features.
 
 ### Upgrades
 
