@@ -10,7 +10,7 @@
       <meta name="viewport" content="width=device-width,initial-scale=1">
       <meta http-equiv="x-ua-compatible" content="ie=edge">
       
-        <meta name="description" content="Documentation for MFractor, a powerful productivity tool for Visual Studio">
+        <meta name="description" content="Documentation for MFractor, a powerful productivity tool for Xamarin developers">
       
       
       
@@ -40,7 +40,7 @@
     
     
       
-        <title>Deleting Images - MFractor Documentation</title>
+        <title>Deleting image assets - MFractor Documentation</title>
       
     
     
@@ -142,7 +142,7 @@
             </span>
             <span class="md-header-nav__topic">
               
-                Deleting Images
+                Deleting image assets
               
             </span>
           
@@ -611,19 +611,17 @@
       
       
 
-  
 
-
-  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+  <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-9" type="checkbox" id="nav-9" checked>
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-9" type="checkbox" id="nav-9">
     
     <label class="md-nav__link" for="nav-9">
-      Image Management
+      Fonts
     </label>
     <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
       <label class="md-nav__title" for="nav-9">
-        Image Management
+        Fonts
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
         
@@ -634,8 +632,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../overview/" title="Overview" class="md-nav__link">
-      Overview
+    <a href="../../fonts/importing-fonts/" title="Importing Fonts" class="md-nav__link">
+      Importing Fonts
     </a>
   </li>
 
@@ -646,8 +644,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../managing-image-assets/" title="Managing Images" class="md-nav__link">
-      Managing Images
+    <a href="../../fonts/add-uiappfonts-plist-entry/" title="Add UIAppFonts Entry" class="md-nav__link">
+      Add UIAppFonts Entry
     </a>
   </li>
 
@@ -658,72 +656,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../importing-image-assets/" title="Importing Images" class="md-nav__link">
-      Importing Images
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-  
-
-
-  <li class="md-nav__item md-nav__item--active">
-    
-    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-    
-    
-      <label class="md-nav__link md-nav__link--active" for="__toc">
-        Deleting Images
-      </label>
-    
-    <a href="./" title="Deleting Images" class="md-nav__link md-nav__link--active">
-      Deleting Images
-    </a>
-    
-      
-<nav class="md-nav md-nav--secondary">
-  
-  
-  
-    <label class="md-nav__title" for="__toc">Table of contents</label>
-    <ul class="md-nav__list" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#introduction" class="md-nav__link">
-    Introduction
-  </a>
-  
-</li>
-      
-      
-      
-      
-      
-        <li class="md-nav__item">
-          <a href="#__comments" class="md-nav__link md-nav__link--active">
-            Comments
-          </a>
-        </li>
-      
-    </ul>
-  
-</nav>
-    
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../optimising-image-assets/" title="Optimising Images" class="md-nav__link">
-      Optimising Images
+    <a href="../../fonts/generate-fontfamily-xaml/" title="Creating Font Xaml Code" class="md-nav__link">
+      Creating Font Xaml Code
     </a>
   </li>
 
@@ -772,6 +706,18 @@
   <li class="md-nav__item">
     <a href="../../utilities/clean-and-compress/" title="Clean And Compress" class="md-nav__link">
       Clean And Compress
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../utilities/edit-shared-project-items/" title="Edit Shared Project Items" class="md-nav__link">
+      Edit Shared Project Items
     </a>
   </li>
 
@@ -1032,6 +978,60 @@
     Introduction
   </a>
   
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#android" class="md-nav__link">
+    Android
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ios" class="md-nav__link">
+    iOS
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#launching-the-deletion-tool" class="md-nav__link">
+    Launching The Deletion Tool
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#solution-explorer" class="md-nav__link">
+    Solution Explorer
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#image-manager" class="md-nav__link">
+    Image Manager
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#using-the-deletion-tool" class="md-nav__link">
+    Using The Deletion Tool
+  </a>
+  
 </li>
       
       
@@ -1059,12 +1059,67 @@
                   <a href="https://github.com/mfractor/mfractor.github.io/edit/master/docs/image-management/deleting-image-assets.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>
                 
                 
-                  <h1>Deleting Images</h1>
+                  <h1>Deleting image assets</h1>
                 
                 <p><strong>🔨🔨🔨 Under construction 🔨🔨🔨</strong></p>
 <h2 id="introduction">Introduction</h2>
 <p>The image deletion tool removes all densities of an image asset in all mobile projects. As a developer, you can delete all occurrences of an asset in one action instead of needing to track down and delete each density independently.</p>
-<h2 id="_1"></h2>
+<h3 id="android">Android</h3>
+<p>When the image manager deletes an image asset in an Android project, it will remove all matching files in the <code>drawable</code> and <code>mipmap</code> files.</p>
+<p>For example, let's consider an image asset named <code>logo</code> with the following project structure:</p>
+<p><strong>MyApp.Android</strong></p>
+<pre><code> drawable/
+  logo.xml
+ drawable-ldpi/
+  logo.png
+ drawable-mdpi/
+  logo.png
+ drawable-hdpi/
+  logo.png
+ mipmap-ldpi/
+  logo.png
+ mipmap-mdpi/
+  logo.png
+ mipmap-hdpi/
+  logo1.png
+</code></pre>
+
+<p>MFractor would delete the following assets:</p>
+<pre><code> drawable-ldpi/
+  logo.png
+ drawable-night-mdpi/
+  logo.png
+ drawable-landscape-hdpi/
+  logo.png
+ mipmap-de-ldpi/
+  logo.png
+ mipmap/
+  logo.png
+</code></pre>
+
+<p>MFractor would ignore the following assets:</p>
+<pre><code> drawable/
+  logo.xml (Excluded as it's an xml drawable)
+ mipmap-hdpi/
+  logo1.png (Excluded as logo1 is not a match with logo).
+</code></pre>
+
+<h3 id="ios">iOS</h3>
+<h2 id="launching-the-deletion-tool">Launching The Deletion Tool</h2>
+<h3 id="solution-explorer">Solution Explorer</h3>
+<p>The image deletion can be launched from the solution explorer by:</p>
+<ol>
+<li>Right click on an Android or iOS image asset.</li>
+<li>Choosing the <strong>Delete Image Asset</strong> menu option.</li>
+</ol>
+<h3 id="image-manager">Image Manager</h3>
+<p>The image deletion tool can be launched from the image manager by:</p>
+<ol>
+<li>Right click on an image asset in the left hand summary list.</li>
+<li>Select the <strong>Delete Image Asset</strong>.</li>
+</ol>
+<h2 id="using-the-deletion-tool">Using The Deletion Tool</h2>
+<p>After launching the image deletion tool, you will be presented</p>
                 
                   
                 
@@ -1097,41 +1152,6 @@
       
         
 <footer class="md-footer">
-  
-    <div class="md-footer-nav">
-      <nav class="md-footer-nav__inner md-grid">
-        
-          <a href="../importing-image-assets/" title="Importing Images" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
-            <div class="md-flex__cell md-flex__cell--shrink">
-              <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
-            </div>
-            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
-              <span class="md-flex__ellipsis">
-                <span class="md-footer-nav__direction">
-                  Previous
-                </span>
-                Importing Images
-              </span>
-            </div>
-          </a>
-        
-        
-          <a href="../optimising-image-assets/" title="Optimising Images" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
-            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
-              <span class="md-flex__ellipsis">
-                <span class="md-footer-nav__direction">
-                  Next
-                </span>
-                Optimising Images
-              </span>
-            </div>
-            <div class="md-flex__cell md-flex__cell--shrink">
-              <i class="md-icon md-icon--arrow-forward md-footer-nav__button"></i>
-            </div>
-          </a>
-        
-      </nav>
-    </div>
   
   <div class="md-footer-meta md-typeset">
     <div class="md-footer-meta__inner md-grid">

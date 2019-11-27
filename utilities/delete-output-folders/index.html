@@ -10,7 +10,7 @@
       <meta name="viewport" content="width=device-width,initial-scale=1">
       <meta http-equiv="x-ua-compatible" content="ie=edge">
       
-        <meta name="description" content="Documentation for MFractor, a powerful productivity tool for Visual Studio">
+        <meta name="description" content="Documentation for MFractor, a powerful productivity tool for Xamarin developers">
       
       
       
@@ -617,11 +617,11 @@
       <input class="md-toggle md-nav__toggle" data-md-toggle="nav-9" type="checkbox" id="nav-9">
     
     <label class="md-nav__link" for="nav-9">
-      Image Management
+      Fonts
     </label>
     <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
       <label class="md-nav__title" for="nav-9">
-        Image Management
+        Fonts
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
         
@@ -632,8 +632,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../../image-management/overview/" title="Overview" class="md-nav__link">
-      Overview
+    <a href="../../fonts/importing-fonts/" title="Importing Fonts" class="md-nav__link">
+      Importing Fonts
     </a>
   </li>
 
@@ -644,8 +644,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../../image-management/managing-image-assets/" title="Managing Images" class="md-nav__link">
-      Managing Images
+    <a href="../../fonts/add-uiappfonts-plist-entry/" title="Add UIAppFonts Entry" class="md-nav__link">
+      Add UIAppFonts Entry
     </a>
   </li>
 
@@ -656,32 +656,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../../image-management/importing-image-assets/" title="Importing Images" class="md-nav__link">
-      Importing Images
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../../image-management/deleting-image-assets/" title="Deleting Images" class="md-nav__link">
-      Deleting Images
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../../image-management/optimising-image-assets/" title="Optimising Images" class="md-nav__link">
-      Optimising Images
+    <a href="../../fonts/generate-fontfamily-xaml/" title="Creating Font Xaml Code" class="md-nav__link">
+      Creating Font Xaml Code
     </a>
   </li>
 
@@ -761,6 +737,13 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#configuring-delete-output-folders-mac-only" class="md-nav__link">
+    Configuring Delete Output Folders (Mac Only)
+  </a>
+  
+</li>
+      
       
       
       
@@ -786,6 +769,18 @@
   <li class="md-nav__item">
     <a href="../clean-and-compress/" title="Clean And Compress" class="md-nav__link">
       Clean And Compress
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../edit-shared-project-items/" title="Edit Shared Project Items" class="md-nav__link">
+      Edit Shared Project Items
     </a>
   </li>
 
@@ -1062,6 +1057,13 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#configuring-delete-output-folders-mac-only" class="md-nav__link">
+    Configuring Delete Output Folders (Mac Only)
+  </a>
+  
+</li>
+      
       
       
       
@@ -1091,15 +1093,35 @@
                 
                 <p><strong>Remove the working and output folders for a solution or project</strong></p>
 <h2 id="introduction">Introduction</h2>
-<p>The <strong>Delete Output Folders</strong> utility deletes the <code>bin</code> and <code>obj</code> folders for a solution or project.</p>
-<p>When developing software, a common troubleshooting strategy for build issues is removING all build artifacts and then rebuilding the solution. while Visual Studios offers a <strong>Clean Solution</strong> utility, this tool often does not effectively remove the build artifacts.</p>
-<p>MFractors <strong>Delete Output Folders</strong> shortcut deletes both the <code>bin</code> and <code>obj</code> folders and is easily accessible via the right click menu in the solution explorer.</p>
+<p>The <strong>Delete Output Folders</strong> utility deletes the intermediate folders for a solution or project.</p>
+<p>When developing software, a common troubleshooting strategy for build issues is removing all build artefacts and then rebuilding the solution. while Visual Studios offers a <strong>Clean Solution</strong> utility, this tool often does not effectively remove the build artefacts.</p>
+<p>MFractors <strong>Delete Output Folders</strong> shortcut deletes the <code>bin</code> and <code>obj</code> folders and is easily accessible via the right click menu in the solution explorer.</p>
 <p>The delete output folders utility is available in both Visual Studio Windows and Mac.</p>
 <h2 id="using-delete-output-folders">Using Delete Output Folders</h2>
 <p>To delete the output folders to for a solution or project, right click on the solution or project in the solution explorer and then choose <strong>Delete Output Folders</strong>.</p>
 <p>MFractor will find the <code>bin</code> and <code>obj</code> folders that are alongside the solutions projects and perform a physical delete on them, removing them from the file system.</p>
 <h2 id="example">Example</h2>
 <p><img alt="Using the delete output folders tool" src="/img/utilities/delete-output-folders.png" /></p>
+<h2 id="configuring-delete-output-folders-mac-only">Configuring Delete Output Folders (Mac Only)</h2>
+<p>In Visual Studio for Mac, the first that you use the <strong>Delete Output Folders</strong> feature for a solution or project, you will be prompted to choose which folders to delete:</p>
+<p><img alt="Configuring which output folders to delete" src="/img/utilities/delete-output-folders-configure.png" /></p>
+<p>These options are:</p>
+<ul>
+<li><strong>bin</strong>: Delete the bin folder that contains the output binaries.</li>
+<li><strong>obj</strong>: Delete the intermediate files contained in the obj folder. If <code>packages</code> is uncheck, the obj folder will be preserved to keep the nuget package configuration, however, the inner build configuration folders will be deleted.</li>
+<li><strong>packages</strong>: Delete the NuGet packages cache that is within the obj folder.</li>
+<li><strong>.vs</strong>: Delete the .vs working folder. Only applicable to solutions.</li>
+</ul>
+<p>After you choose the defaults for a solution or project, these settings are remembered and are used by default next time you use Delete Output Folders.</p>
+<p>After configuing the foldels you wish to delete, you can change the preferences for a project or solution through the preferences panel.</p>
+<p>To do so:</p>
+<ol>
+<li>Go to the top <strong>MFractor</strong> menu.</li>
+<li>Select <strong>Preferences</strong>.</li>
+<li>Select <strong>Delete Output Folders</strong>.</li>
+</ol>
+<p>In the preferences panel, you can enable or disable each of the individual settings in the list view. You can also clear all settings by pressing the <strong>Clear</strong> button.</p>
+<p><img alt="Configuring which output folders to delete" src="/img/utilities/delete-output-folders-configure.png" /></p>
                 
                   
                 
@@ -1136,7 +1158,7 @@
     <div class="md-footer-nav">
       <nav class="md-footer-nav__inner md-grid">
         
-          <a href="../../image-management/optimising-image-assets/" title="Optimising Images" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+          <a href="../../fonts/generate-fontfamily-xaml/" title="Creating Font Xaml Code" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
             <div class="md-flex__cell md-flex__cell--shrink">
               <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
             </div>
@@ -1145,7 +1167,7 @@
                 <span class="md-footer-nav__direction">
                   Previous
                 </span>
-                Optimising Images
+                Creating Font Xaml Code
               </span>
             </div>
           </a>
