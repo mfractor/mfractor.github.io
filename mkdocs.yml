@@ -1,7 +1,7 @@
 site_name: MFractor Documentation
 copyright: Copyright &copy; 2015-2019 <a href="https://www.mfractor.com">MFractor Pty Ltd</a>
 site_author: "MFractor Pty Ltd"
-site_description: "Documentation for MFractor, a powerful productivity tool for Visual Studio"
+site_description: "Documentation for MFractor, a powerful productivity tool for Xamarin developers"
 repo_url: "https://github.com/mfractor/mfractor.github.io"
 remote_branch: "master"
 google_analytics: ['UA-71910290-3', 'docs.mfractor.com']
@@ -50,15 +50,14 @@ nav:
     - Extracting Custom Controls: xamarin-forms/custom-controls/extracting-custom-controls.md
     - Bindable Property Wizard: xamarin-forms/custom-controls/bindable-property-wizard.md
     - Attached Property Wizard: xamarin-forms/custom-controls/attached-property-wizard.md
-- Image Management:
-  - Overview: image-management/overview.md
-  - Managing Images: image-management/managing-image-assets.md
-  - Importing Images: image-management/importing-image-assets.md
-  - Deleting Images: image-management/deleting-image-assets.md
-  - Optimising Images: image-management/optimising-image-assets.md
+- Fonts:
+  - Importing Fonts: fonts/importing-fonts.md
+  - Add UIAppFonts Entry: fonts/add-uiappfonts-plist-entry.md
+  - Creating Font Xaml Code: fonts/generate-fontfamily-xaml.md
 - Utilities:
   - Delete Output Folders: utilities/delete-output-folders.md
   - Clean And Compress: utilities/clean-and-compress.md
+  - Edit Shared Project Items: utilities/edit-shared-project-items.md
 - Release Notes:
   - Mac:
     - Current Release: release-notes/mac/current.md
