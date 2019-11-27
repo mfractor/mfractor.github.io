@@ -33,9 +33,9 @@ These options are:
  * **packages**: Delete the NuGet packages cache that is within the obj folder.
  * **.vs**: Delete the .vs working folder. Only applicable to solutions.
 
-After you choose the defaults for a solution or project, these settings are remembered and are used by default next time you use Delete Output Folders.
+After you choosing your defaults, these settings are remembered and will used by default next time you use **Delete Output Folders**.
 
-After configuing the foldels you wish to delete, you can change the preferences for a project or solution through the preferences panel.
+At any time you can change the preferences for a project or solution through the preferences panel.
 
 To do so:
 

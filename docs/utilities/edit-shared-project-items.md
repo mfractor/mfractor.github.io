@@ -4,11 +4,11 @@
 
 One of the common project types when building Xamarin applications is the **Shared Assets Project**.
 
-These projects are a collection of source code files and assets that are bundled into standalone projects, however, when you reference one of these projects and compile, the compiler treats these files as though they are part of the project referencing them.
+These projects are a collection of source code files and assets that are bundled into standalone projects. However, when you reference one of these projects and compile, the compiler treats these files like they are part of the project referencing them.
 
 For a full breakdown on shared projects, please see Microsofts [Shared Projects Documentation](https://docs.microsoft.com/en-us/xamarin/cross-platform/app-fundamentals/shared-projects).
 
-On disk, a shared project is structured as two distinct project projects:
+On disk, a shared project is structured as two distinct projects:
 
  * The `.shproj` file is the project that is reference by other compilable projects.
  * The `.projitems` file defines what the `.shproj` file will add to the compilation.
@@ -17,7 +17,7 @@ When we work with shared projects in our Visual Studio, the `.projitems` is not 
 
 ## Editing Shared Project Items
 
-Include in MFractor for Visual Studio Mac is an **Edit Shared Project Items** solution explorer action; we can use this to open the `.projitems` for a shared project in the MSBuild editor.
+Included in MFractor for Visual Studio Mac is an **Edit Shared Project Items** solution explorer action; we can use this to open the `.projitems` for a shared project in the MSBuild editor.
 
 To open the `.projitems` items for a shared project:
 
