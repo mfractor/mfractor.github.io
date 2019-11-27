@@ -45,4 +45,4 @@ To do so:
 
 In the preferences panel, you can enable or disable each of the individual settings in the list view. You can also clear all settings by pressing the **Clear** button.
 
-![Configuring which output folders to delete](/img/utilities/delete-output-folders-configure.png)
+![The delete output folders preferences panel](/img/utilities/delete-output-folders-preferences.png)
