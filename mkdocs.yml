@@ -54,6 +54,8 @@ nav:
   - Importing Fonts: fonts/importing-fonts.md
   - Add UIAppFonts Entry: fonts/add-uiappfonts-plist-entry.md
   - Creating Font Xaml Code: fonts/generate-fontfamily-xaml.md
+- Image Management:
+  - Image Importer: image-management/image-importer.md
 - Utilities:
   - Delete Output Folders: utilities/delete-output-folders.md
   - Clean And Compress: utilities/clean-and-compress.md
