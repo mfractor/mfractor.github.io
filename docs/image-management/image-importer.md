@@ -52,10 +52,12 @@ There you can see a correlation between density multipliers and the density buck
 
 On the bottom pane of the importer dialog window you can preview how the images are going to be imported on the selected target project. The sample image from the following screenshot is a 1600x463 banner. If you check the preview pane of the Android target you will notice that its going to generate a image for each of the densities listed above, applying its multiplier to determine the correct image size:
 
-![]()
+![Image Importer Tool with loaded image](/img/image-management/image-importer-02.png)
 
 When you select the iOS project, you will notice that there's way less densities to manage, and also that the bigger density is smaller than the image size:
 
-
+![Image Importer Tool with loaded image](/img/image-management/image-importer-01.png)
 
 This happens because the selected maximum density of the Android target project is greater than the maximum density of the iOS project, so the tool automatically downsizes it to keep the image sizes consistent between platforms. If you set the Image Density of the Android target to `xxhdpi` and check back the preview pane of the iOS target, you will notice that the maximum density will preserve the maximum size of the image.
+
+### Import Image
