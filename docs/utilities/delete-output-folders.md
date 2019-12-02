@@ -20,9 +20,9 @@ MFractor will find the `bin` and `obj` folders that are alongside the solutions 
 
 ![Using the delete output folders tool](/img/utilities/delete-output-folders.png)
 
-## Configuring Delete Output Folders (Mac Only)
+## Configuring Delete Output Folders
 
-In Visual Studio for Mac, the first that you use the **Delete Output Folders** feature for a solution or project, you will be prompted to choose which folders to delete:
+The first that you use the **Delete Output Folders** feature for a solution or project, you will be prompted to choose which folders to delete:
 
 ![Configuring which output folders to delete](/img/utilities/delete-output-folders-configure.png)
 

@@ -1,4 +1,10 @@
-**MFractors licensing levels and terms of use**
+**Information about MFractor's licensing and terms of use**
+
+## Do I need to buy a separate license for Mac for Windows?
+
+An MFractor license works in both MFractor for Windows and Mac.
+
+## MFractor Lite
 
 ## MFractor Professional
 
@@ -20,18 +26,6 @@ MFractor Lite:
  * Does not allow usage of our asset management features.
  * Does not allow usage of our code generation wizards.
  * Is not available in MFractor for Visual Studio Windows.
-
-## Checking Licensing Status
-
-### Visual Studio Windows
-
-The status of your Professional license can be found at:
-
- * 
-
-### Visual Studio Mac
-
-
 
 ## End User License
 

@@ -21,6 +21,10 @@ MFractor Lite:
  * Does not allow usage of our code generation wizards.
  * Is not available for MFractor for Visual Studio Windows.
 
+## Do I need to buy a separate license for Mac for Windows?
+
+An MFractor license works in both MFractor for Windows and Mac. 
+
 ## How do I get a refund?
 
 Please email matthew@mfractor.com and request a refund within 30 days of purchase.
