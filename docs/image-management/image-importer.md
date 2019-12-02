@@ -61,3 +61,8 @@ When you select the iOS project, you will notice that there's way less densities
 This happens because the selected maximum density of the Android target project is greater than the maximum density of the iOS project, so the tool automatically downsizes it to keep the image sizes consistent between platforms. If you set the Image Density of the Android target to `xxhdpi` and check back the preview pane of the iOS target, you will notice that the maximum density will preserve the maximum size of the image.
 
 ### Import Image
+When you're satisfied with the settings you can import the image by clicking on the `Import Image` button. MFractor will generate and add the images to the projects you've set as target. Check the projects to verify the results:
+
+![](/img/image-management/image-importer-result-01.png)
+![](/img/image-management/image-importer-result-02.png)
+

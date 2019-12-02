@@ -7,12 +7,17 @@ The image asset manager summarises all image assets across your solution from yo
 As a developer, you gain a birds-eye view of all image assets in your solution and that then allows you to delete, import, search and optimise all images from a centralised location.
 
 ## Opening The Image Manager
+The image manager is presented as a pad on the IDE by default on the right side of the Window, below the _Toolbox_, _Properties_ and _Document Outline_ pads. You can access it from several places if hidden:
 
-The image manager is accesible
+#### Top Menu
+By acessing the top menu selecting the `Manage Image Assets` options.
 
-### Top Menu
+![Opening the Image Asset Manager from the top menu](/img/image-management/manage-images-top-menu.png)
 
-### Solution Pad
+#### Solution Pad
+You can right click on a _Xamarin.Android_ and _Xamarin.iOS_ project files and you'll find `Manage Image Assets` under the `Tools` menu.
+
+Also if you double click to open an image file from a Android or iOS project, MFractor will automatically present it on the Image Asset Manager tool window.
 
 ###
 
