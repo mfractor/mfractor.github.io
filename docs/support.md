@@ -27,7 +27,7 @@ To get the last 5 log files:
 
 ### Visual Studio Windows
 
-To obtain the log files for Visual Studio Mac:
+To obtain the log files for Visual Studio Windows:
 
  1. Go to the top menu bar and click on the **Extensions** menu item.
  2. Under **Extensions**, select **MFractor** then **Help** and finally **Submit Feedback**.

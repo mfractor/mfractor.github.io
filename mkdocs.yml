@@ -3,6 +3,7 @@ copyright: Copyright &copy; 2015-2019 <a href="https://www.mfractor.com">MFracto
 site_author: "MFractor Pty Ltd"
 site_description: "Documentation for MFractor, a powerful productivity tool for Xamarin developers"
 repo_url: "https://github.com/mfractor/mfractor.github.io"
+edit_uri: tree/docs/docs
 remote_branch: "master"
 google_analytics: ['UA-71910290-3', 'docs.mfractor.com']
 strict: true
