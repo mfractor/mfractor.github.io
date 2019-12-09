@@ -1,8 +1,8 @@
-**Please note that no release notes for MFractor for Visual Studio Mac are available before v3.9**
-
 ## Current Release
 
-**The current version of MFractor for Visual Studio Mac is v3.9.2.**
+The current version of MFractor for Visual Studio Mac is v3.9.2.
+
+**Please note that no release notes for MFractor for Visual Studio Mac are available before v3.9**
 
 ## Releases (v3.9)
 
