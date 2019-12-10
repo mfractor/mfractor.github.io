@@ -51,6 +51,8 @@ nav:
     - Extracting Custom Controls: xamarin-forms/custom-controls/extracting-custom-controls.md
     - Bindable Property Wizard: xamarin-forms/custom-controls/bindable-property-wizard.md
     - Attached Property Wizard: xamarin-forms/custom-controls/attached-property-wizard.md
+  - Value Converters:
+    - Value Converter Wizard: xamarin-forms/value-converters/value-converter-wizard.md
 - Fonts:
   - Importing Fonts: fonts/importing-fonts.md
   - Add UIAppFonts Entry: fonts/add-uiappfonts-plist-entry.md
