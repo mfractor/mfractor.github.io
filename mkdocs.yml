@@ -33,6 +33,9 @@ nav:
 - Licensing: licensing.md
 - Support: support.md
 - FAQ: faq.md
+- C#:
+  - Code Actions:
+    - Generate Interface Implementation: csharp/code-actions/generate-interface-implementation.md
 - Xamarin.Forms:
   - Overview: xamarin-forms/overview.md
   - Binding Context Resolution:
