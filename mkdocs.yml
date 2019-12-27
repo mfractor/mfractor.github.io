@@ -17,6 +17,7 @@ extra:
   disqus: 'mfractor'
 markdown_extensions:
   - attr_list
+  - admonition
 extra_css:
   - css/tabs.css
 extra_javascript:
@@ -55,8 +56,8 @@ nav:
     - Value Converter Wizard: xamarin-forms/value-converters/value-converter-wizard.md
 - Fonts:
   - Importing Fonts: fonts/importing-fonts.md
-  - Add UIAppFonts Entry: fonts/add-uiappfonts-plist-entry.md
-  - Creating Font Xaml Code: fonts/generate-fontfamily-xaml.md
+  - UIAppFonts Entry: fonts/uiappfonts-plist-entry.md
+  - FontFamily XAML Entry: fonts/fontfamily-xaml-entry.md
 - Image Management:
   - Overview: image-management/overview.md
   - Managing Images Assets: image-management/managing-image-assets.md
