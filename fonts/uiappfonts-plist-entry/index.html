@@ -36,11 +36,11 @@
         <meta name="lang:search.tokenizer" content="[\s\-]+">
       
       <link rel="shortcut icon" href="../../images/favicon.ico">
-      <meta name="generator" content="mkdocs-1.0.4, mkdocs-material-4.5.0">
+      <meta name="generator" content="mkdocs-1.0.4, mkdocs-material-4.6.0">
     
     
       
-        <title>Add UIAppFonts Entry - MFractor Documentation</title>
+        <title>UIAppFonts Entry - MFractor Documentation</title>
       
     
     
@@ -60,7 +60,7 @@
     
       
         <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700|Roboto+Mono&display=fallback">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&display=fallback">
         <style>body,input{font-family:"Roboto","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono","Courier New",Courier,monospace}</style>
       
     
@@ -142,7 +142,7 @@
             </span>
             <span class="md-header-nav__topic">
               
-                Add UIAppFonts Entry
+                UIAppFonts Entry
               
             </span>
           
@@ -689,11 +689,11 @@
     
     
       <label class="md-nav__link md-nav__link--active" for="__toc">
-        Add UIAppFonts Entry
+        UIAppFonts Entry
       </label>
     
-    <a href="./" title="Add UIAppFonts Entry" class="md-nav__link md-nav__link--active">
-      Add UIAppFonts Entry
+    <a href="./" title="UIAppFonts Entry" class="md-nav__link md-nav__link--active">
+      UIAppFonts Entry
     </a>
     
       
@@ -712,8 +712,8 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#adding-uiappfontentry" class="md-nav__link">
-    Adding UIAppFontEntry
+  <a href="#example-of-using-custom-font-in-uikit" class="md-nav__link">
+    Example of using custom font in UIKit
   </a>
   
 </li>
@@ -741,8 +741,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../generate-fontfamily-xaml/" title="Creating Font Xaml Code" class="md-nav__link">
-      Creating Font Xaml Code
+    <a href="../fontfamily-xaml-entry/" title="FontFamily XAML Entry" class="md-nav__link">
+      FontFamily XAML Entry
     </a>
   </li>
 
@@ -1162,8 +1162,8 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#adding-uiappfontentry" class="md-nav__link">
-    Adding UIAppFontEntry
+  <a href="#example-of-using-custom-font-in-uikit" class="md-nav__link">
+    Example of using custom font in UIKit
   </a>
   
 </li>
@@ -1190,16 +1190,28 @@
             <article class="md-content__inner md-typeset">
               
                 
-                  <a href="https://github.com/mfractor/mfractor.github.io/tree/docs/docs/fonts/add-uiappfonts-plist-entry.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>
+                  <a href="https://github.com/mfractor/mfractor.github.io/tree/docs/docs/fonts/uiappfonts-plist-entry.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>
                 
                 
-                  <h1>Add UIAppFonts Entry</h1>
+                  <h1>UIAppFonts Entry</h1>
                 
                 <p><strong>Inject the UIAppFonts entry for a font asset into the info.plist</strong></p>
 <h2 id="introduction">Introduction</h2>
-<h2 id="adding-uiappfontentry">Adding UIAppFontEntry</h2>
+<p>When a font is imported to an iOS project, MFractor automatically takes care of adding it's declaration to the <code>Info.plist</code> file of the project. This is required by the UIKit framework, as stated on <a href="https://developer.apple.com/documentation/uikit/text_display_and_fonts/adding_a_custom_font_to_your_app">Apple Official Documentation on how to add custom fonts to native iOS project</a>.</p>
+<p>The code snippet for the entry is as follows:</p>
+<pre><code class="xml">&lt;key&gt;UIAppFonts&lt;/key&gt;
+&lt;array&gt;
+    &lt;string&gt;OpenSans-Regular.ttf&lt;/string&gt;
+&lt;/array&gt;
+</code></pre>
+
+<p>You can also check if the entry was added correctly from the <em>Source</em> view of the <code>Info.plist</code> file on Visual Studio:</p>
+<p><img alt="The UIAppFonts entry view in the Info.plist tool on Visual Studio for Mac" src="/img/fonts/uiappfonts-entry.png" /></p>
+<p>With this settings in place you can start using the imported font in UIKit components that allows font customization, such as <code>UILabel</code>, <code>UIButton</code> and <code>UITextField</code>, and also on a Xamarin.Forms app for components that declare the <code>FontFamily</code> property, such as <code>Label</code> or <code>Button</code>.</p>
+<h2 id="example-of-using-custom-font-in-uikit">Example of using custom font in UIKit</h2>
                 
                   
+                
                 
               
               
@@ -1249,13 +1261,13 @@
           </a>
         
         
-          <a href="../generate-fontfamily-xaml/" title="Creating Font Xaml Code" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+          <a href="../fontfamily-xaml-entry/" title="FontFamily XAML Entry" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
             <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
               <span class="md-flex__ellipsis">
                 <span class="md-footer-nav__direction">
                   Next
                 </span>
-                Creating Font Xaml Code
+                FontFamily XAML Entry
               </span>
             </div>
             <div class="md-flex__cell md-flex__cell--shrink">
@@ -1287,7 +1299,7 @@
       
     </div>
     
-      <script src="../../assets/javascripts/application.a8b5e56f.js"></script>
+      <script src="../../assets/javascripts/application.808e90bb.js"></script>
       
       <script>app.initialize({version:"1.0.4",url:{base:"../.."}})</script>
       

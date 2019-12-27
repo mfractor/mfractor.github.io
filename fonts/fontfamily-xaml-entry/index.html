@@ -36,11 +36,11 @@
         <meta name="lang:search.tokenizer" content="[\s\-]+">
       
       <link rel="shortcut icon" href="../../images/favicon.ico">
-      <meta name="generator" content="mkdocs-1.0.4, mkdocs-material-4.5.0">
+      <meta name="generator" content="mkdocs-1.0.4, mkdocs-material-4.6.0">
     
     
       
-        <title>Creating Font Xaml Code - MFractor Documentation</title>
+        <title>FontFamily XAML Entry - MFractor Documentation</title>
       
     
     
@@ -60,7 +60,7 @@
     
       
         <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700|Roboto+Mono&display=fallback">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&display=fallback">
         <style>body,input{font-family:"Roboto","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono","Courier New",Courier,monospace}</style>
       
     
@@ -142,7 +142,7 @@
             </span>
             <span class="md-header-nav__topic">
               
-                Creating Font Xaml Code
+                FontFamily XAML Entry
               
             </span>
           
@@ -682,8 +682,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../add-uiappfonts-plist-entry/" title="Add UIAppFonts Entry" class="md-nav__link">
-      Add UIAppFonts Entry
+    <a href="../uiappfonts-plist-entry/" title="UIAppFonts Entry" class="md-nav__link">
+      UIAppFonts Entry
     </a>
   </li>
 
@@ -701,11 +701,11 @@
     
     
       <label class="md-nav__link md-nav__link--active" for="__toc">
-        Creating Font Xaml Code
+        FontFamily XAML Entry
       </label>
     
-    <a href="./" title="Creating Font Xaml Code" class="md-nav__link md-nav__link--active">
-      Creating Font Xaml Code
+    <a href="./" title="FontFamily XAML Entry" class="md-nav__link md-nav__link--active">
+      FontFamily XAML Entry
     </a>
     
       
@@ -724,8 +724,8 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#generating-fontfamily-xaml" class="md-nav__link">
-    Generating FontFamily XAML
+  <a href="#references" class="md-nav__link">
+    References
   </a>
   
 </li>
@@ -1162,8 +1162,8 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#generating-fontfamily-xaml" class="md-nav__link">
-    Generating FontFamily XAML
+  <a href="#references" class="md-nav__link">
+    References
   </a>
   
 </li>
@@ -1190,16 +1190,48 @@
             <article class="md-content__inner md-typeset">
               
                 
-                  <a href="https://github.com/mfractor/mfractor.github.io/tree/docs/docs/fonts/generate-fontfamily-xaml.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>
+                  <a href="https://github.com/mfractor/mfractor.github.io/tree/docs/docs/fonts/fontfamily-xaml-entry.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>
                 
                 
-                  <h1>Creating Font Xaml Code</h1>
+                  <h1>FontFamily XAML Entry</h1>
                 
-                <p><strong>Create the FontFamily XAML for a font asset</strong></p>
+                <p><strong>Inject the Font Family XAML entry for a font asset the Resource Dictionary of a Xamarin.Forms App</strong></p>
 <h2 id="introduction">Introduction</h2>
-<h2 id="generating-fontfamily-xaml">Generating FontFamily XAML</h2>
+<p>Xamarin.Forms projects allows declaring font references as Resources in Resource Dictionaries, which can be set on <code>Font</code> property of most of the Forms components that has some form of text (such as <code>Labels</code> and <code>Buttons</code>). </p>
+<p>Fonts references in Xamarin.Forms are declared as plain strings, but each platform expects the string in a different format. For this reason we use the <code>OnPlatform</code> element to reference the font in the expected way for each platform. The code snippet below shows an example of this is done:</p>
+<pre><code class="xml">&lt;ResourceDictionary&gt;
+    &lt;OnPlatform x:TypeArguments=&quot;x:String&quot; x:Key=&quot;OpenSans&quot;&gt;
+        &lt;On Platform=&quot;iOS&quot; Value=&quot;OpenSans&quot;/&gt;
+        &lt;On Platform=&quot;Android&quot; Value=&quot;OpenSans-Regular.ttf#Regular&quot;/&gt;
+    &lt;/OnPlatform&gt;
+    &lt;!-- Other dictionary resources --&gt;
+&lt;/ResourceDictionary&gt;
+</code></pre>
+
+<p>The Font Importer tool add this declaration to the <code>App.xaml</code> file, which makes the font reference available to any XAML file in the project, but it can also be added to the Resources Dictionary of a specific file.</p>
+<p>To customized the font of a component based on this entry, you should use the <code>StaticResource</code> markup extension of XAML. As an example, suppose a Page where we have a label that we want to apply the custom font:</p>
+<pre><code class="xml">&lt;ContentPage
+    xmlns=&quot;http://xamarin.com/schemas/2014/forms&quot;
+    xmlns:x=&quot;http://schemas.microsoft.com/winfx/2009/xaml&quot;
+    x:Class=&quot;MFractor.Samples.Pages.CustomFontPage&quot;&gt;
+    &lt;StackLayout VerticalOptions=&quot;Center&quot;&gt;
+        &lt;Label
+            HorizontalTextAlignment=&quot;Center&quot;
+            FontFamily=&quot;{StaticResource OpenSans}&quot;
+            FontSize=&quot;Large&quot;
+            Text=&quot;Welcome to MFractor Docs!&quot; /&gt;
+    &lt;/StackLayout&gt;
+&lt;/ContentPage&gt;
+</code></pre>
+
+<p><img alt="Screenshot of the page with a custom font applied in iOS" src="/img/fonts/font-family-xaml-01.png" /> <img alt="Screenshot of the page with a custom font applied in Android" src="/img/fonts/font-family-xaml-02.png" /></p>
+<h2 id="references">References</h2>
+<ul>
+<li><a href="https://docs.microsoft.com/en-us/xamarin/xamarin-forms/user-interface/text/fonts#use-a-custom-font">Fonts in Xamarin.Forms</a></li>
+</ul>
                 
                   
+                
                 
               
               
@@ -1234,7 +1266,7 @@
     <div class="md-footer-nav">
       <nav class="md-footer-nav__inner md-grid">
         
-          <a href="../add-uiappfonts-plist-entry/" title="Add UIAppFonts Entry" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+          <a href="../uiappfonts-plist-entry/" title="UIAppFonts Entry" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
             <div class="md-flex__cell md-flex__cell--shrink">
               <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
             </div>
@@ -1243,7 +1275,7 @@
                 <span class="md-footer-nav__direction">
                   Previous
                 </span>
-                Add UIAppFonts Entry
+                UIAppFonts Entry
               </span>
             </div>
           </a>
@@ -1287,7 +1319,7 @@
       
     </div>
     
-      <script src="../../assets/javascripts/application.a8b5e56f.js"></script>
+      <script src="../../assets/javascripts/application.808e90bb.js"></script>
       
       <script>app.initialize({version:"1.0.4",url:{base:"../.."}})</script>
       

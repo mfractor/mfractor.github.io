@@ -36,7 +36,7 @@
         <meta name="lang:search.tokenizer" content="[\s\-]+">
       
       <link rel="shortcut icon" href="../../images/favicon.ico">
-      <meta name="generator" content="mkdocs-1.0.4, mkdocs-material-4.5.0">
+      <meta name="generator" content="mkdocs-1.0.4, mkdocs-material-4.6.0">
     
     
       
@@ -60,7 +60,7 @@
     
       
         <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700|Roboto+Mono&display=fallback">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&display=fallback">
         <style>body,input{font-family:"Roboto","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono","Courier New",Courier,monospace}</style>
       
     
@@ -700,56 +700,9 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#accessing-the-font-importer" class="md-nav__link">
-    Accessing The Font Importer
-  </a>
-  
-    <nav class="md-nav">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#solution-explorer" class="md-nav__link">
-    Solution Explorer
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#main-menu" class="md-nav__link">
-    Main Menu
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
   <a href="#using-the-font-importer" class="md-nav__link">
-    Using The Font Importer
+    Using the Font Importer
   </a>
-  
-    <nav class="md-nav">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#fontfamily-xaml" class="md-nav__link">
-    FontFamily XAML
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#uiappfonts-entry" class="md-nav__link">
-    UIAppFonts Entry
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
@@ -776,8 +729,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../add-uiappfonts-plist-entry/" title="Add UIAppFonts Entry" class="md-nav__link">
-      Add UIAppFonts Entry
+    <a href="../uiappfonts-plist-entry/" title="UIAppFonts Entry" class="md-nav__link">
+      UIAppFonts Entry
     </a>
   </li>
 
@@ -788,8 +741,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../generate-fontfamily-xaml/" title="Creating Font Xaml Code" class="md-nav__link">
-      Creating Font Xaml Code
+    <a href="../fontfamily-xaml-entry/" title="FontFamily XAML Entry" class="md-nav__link">
+      FontFamily XAML Entry
     </a>
   </li>
 
@@ -1209,56 +1162,9 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#accessing-the-font-importer" class="md-nav__link">
-    Accessing The Font Importer
-  </a>
-  
-    <nav class="md-nav">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#solution-explorer" class="md-nav__link">
-    Solution Explorer
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#main-menu" class="md-nav__link">
-    Main Menu
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
   <a href="#using-the-font-importer" class="md-nav__link">
-    Using The Font Importer
+    Using the Font Importer
   </a>
-  
-    <nav class="md-nav">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#fontfamily-xaml" class="md-nav__link">
-    FontFamily XAML
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#uiappfonts-entry" class="md-nav__link">
-    UIAppFonts Entry
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
@@ -1289,30 +1195,49 @@
                 
                   <h1>Importing Fonts</h1>
                 
-                <p><strong>Add new assets into your Android and iOS applications</strong></p>
+                <div class="admonition info">
+<p class="admonition-title">Info</p>
+<p>This feature is available for <strong>MFractor Professional Edition</strong>.</p>
+</div>
+<p><strong>Add new assets into your Android and iOS applications</strong></p>
 <h2 id="introduction">Introduction</h2>
-<h2 id="accessing-the-font-importer">Accessing The Font Importer</h2>
-<h3 id="solution-explorer">Solution Explorer</h3>
-<p>To launch the font importer through the solution explorer:</p>
-<ol>
-<li>In the solution explorer, right click on an Android or iOS project OR a solution containing an Android or iOS project.</li>
-<li>Navigate to the <strong>Add Files...</strong> menu.</li>
-<li>Select <strong>Font</strong>.</li>
-</ol>
-<h3 id="main-menu">Main Menu</h3>
-<p>To launch the font importer through the main menu=:</p>
-<ol>
-<li>In the top menu,</li>
-<li>Navigate to the <strong>Add Files...</strong> menu.</li>
-<li>Select <strong>Font</strong>.</li>
-</ol>
-<h2 id="using-the-font-importer">Using The Font Importer</h2>
-<p>When the</p>
+<p>The <strong>Font Importer</strong> utilities allows you to import custom fonts into the Android and iOS projects of your solution, while adding required boilerplate code to make it available through Xamarin.Forms in a unified way.</p>
+<h2 id="using-the-font-importer">Using the Font Importer</h2>
+<p>The font importer tool is presented as a dialog that can be invoked from several places in Visual Studio IDE. The more straighforward way is from the MFractor main menu:</p>
+<p><img alt="Invoking the Font Importer tool from the MFractor Main Menu" src="/img/fonts/font-importer-main-menu.png" /></p>
+<blockquote>
+<p>The MFractor Font Importer tool menu option will only be available if the solution has at least one Xamarin.Android or Xamarin.iOS project.</p>
+</blockquote>
+<p>The tool can also be invoked from the context menu of an Android or iOS project, in the Add submenu you should find the option for <code>Font</code>:</p>
+<p><img alt="Invoking the Font Importer tool from the Solution Explorer Context Menu" src="/img/fonts/font-importer-solution-explorer.png" /></p>
+<p>The Font Importer tool dialog window allows you to select a single font file of TTF or OTF types (the ones currently supported by the mobile plaforms) and to set several options for the import processing. </p>
 <p><img alt="The font importer" src="/img/fonts/font-importer.png" /></p>
-<h3 id="fontfamily-xaml">FontFamily XAML</h3>
-<h3 id="uiappfonts-entry">UIAppFonts Entry</h3>
+<p>The first step is to select the desired font to import. After selecting the font, MFractor will try to infer most of the options and use conventions. The following options are available to the importer:</p>
+<ul>
+<li><strong>Projects</strong>: this section of the dialog lists the projects in the solution that is compatible with the font importer tool, which are <code>Xamarin.iOS</code> and <code>Xamarin.Android</code> projects. In the list you can use the checkbox on the <em>Include Font?</em> column to select the targets to which you want to import the font. Other columns are:<ul>
+<li><strong>Project Name</strong>: the name of the project.</li>
+<li><strong>Result</strong>: displays where the font will be imported in the project structure. By convention fonts are imported based on the project type:<ul>
+<li>iOS projects import to the <code>Resources</code> folder.</li>
+<li>Android projects import to the <code>Assets</code> folder.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><strong>FontFamily XAML</strong>: if your solution contains a Xamarin.Forms project, the Font Importer tool will suggest adding a XAML Font Declaratio to the <code>App.xaml</code> of the projects. This allows referencing the font from components that allows custom fonts, such as <code>Labels</code> and <code>Button</code>. This section provides the following options:<ul>
+<li><strong>Resource Key</strong>: this is the name to use as the Resource Key in the App Resources Dictionary, and will be used to reference the font on the components you may wish to customize it. Defaults to the name of the font file. If the font is of the regular style, the tool will automatically supress the style suffix.</li>
+<li><strong>Add Font Declaration</strong>: this section lists the <code>App.xaml</code> files that are found to the current solution, and allows checking to include the font declaration.</li>
+<li><strong>Font Declaration</strong>: this section provides a preview of the code that will be added to the files selected in the previous pane.</li>
+</ul>
+</li>
+</ul>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>the Font Importer tool currently doesn't support importing font as Android Resources. This is planned for future releases.</p>
+</div>
+<p>By clicking on the <code>Import Font</code> the tool will process your import based on the options you've set. This processing includes adding required references to the projects such as the <a href="../uiappfonts-plist-entry/"><code>UIAppFonts</code> entry</a> in the <a href=""><code>Info.plist</code></a> of a project, and optionally adding the <a href="../fontfamily-xaml-entry/">Font Family reference resource</a> in a Xamarin.Forms project. For specific information about those topics read on their sections linked above.</p>
                 
                   
+                
                 
               
               
@@ -1362,13 +1287,13 @@
           </a>
         
         
-          <a href="../add-uiappfonts-plist-entry/" title="Add UIAppFonts Entry" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+          <a href="../uiappfonts-plist-entry/" title="UIAppFonts Entry" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
             <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
               <span class="md-flex__ellipsis">
                 <span class="md-footer-nav__direction">
                   Next
                 </span>
-                Add UIAppFonts Entry
+                UIAppFonts Entry
               </span>
             </div>
             <div class="md-flex__cell md-flex__cell--shrink">
@@ -1400,7 +1325,7 @@
       
     </div>
     
-      <script src="../../assets/javascripts/application.a8b5e56f.js"></script>
+      <script src="../../assets/javascripts/application.808e90bb.js"></script>
       
       <script>app.initialize({version:"1.0.4",url:{base:"../.."}})</script>
       
