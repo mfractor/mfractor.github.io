@@ -1,6 +1,3 @@
-!!! info
-    This feature is available for **MFractor Professional Edition**.
-
 **Add new assets into your Android and iOS applications**
 
 ## Introduction
