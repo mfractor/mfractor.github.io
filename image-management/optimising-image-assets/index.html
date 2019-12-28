@@ -879,6 +879,40 @@
     Launching The Optimiser
   </a>
   
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#to-optimise-a-single-image-file" class="md-nav__link">
+    To optimise a single image file
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#to-optimise-all-files-of-an-asset" class="md-nav__link">
+    To optimise all files of an asset
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#to-optimise-all-images" class="md-nav__link">
+    To optimise all images
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#processing-the-files" class="md-nav__link">
+    Processing the files
+  </a>
+  
 </li>
       
       
@@ -1240,6 +1274,40 @@
     Launching The Optimiser
   </a>
   
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#to-optimise-a-single-image-file" class="md-nav__link">
+    To optimise a single image file
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#to-optimise-all-files-of-an-asset" class="md-nav__link">
+    To optimise all files of an asset
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#to-optimise-all-images" class="md-nav__link">
+    To optimise all images
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#processing-the-files" class="md-nav__link">
+    Processing the files
+  </a>
+  
 </li>
       
       
@@ -1269,10 +1337,53 @@
                 
                   <h1>Optimising Image Assets</h1>
                 
-                <p><strong>Reducing the size your image assets using the image optimiser</strong></p>
+                <div class="admonition quote">
+<p class="admonition-title">Reducing the size your image assets using the image optimiser</p>
+</div>
 <h2 id="introduction">Introduction</h2>
+<p>MFractor has a built-in tool that allows automatic compression of the image assets of your projects using the <a href="https://tinypng.com">TinyPNG</a> service. This automated optimisation tool allows you to quickly reduce the size of your assets and produce smaller application binaries.</p>
 <h2 id="configuring-tinypng-api-key">Configuring TinyPNG API Key</h2>
+<p>MFractor relies on TinyPNG for optimizing the image sizes, an industry standard online image optimization service. For the optimization tool to work you should configure a API Key on the MFractor settings page. Creating an API is quick and straighforward. Head to <a href="https://tinypng.com/developers">developer API Page</a> of TinyPNG service:</p>
+<p><img alt="The TinyPNG API Key Creation website" src="/img/image-management/tiny-png-api-key-create.png" /></p>
+<p>All you need to is provide your full name and email. A link will be sent to your address with a link to your Dashboard, where you will be able to copy your key and check the service usage.</p>
+<p><img alt="The TinyPNG Dashboard website" src="/img/image-management/tiny-png-dashboard.png" /></p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The TinyPNG offers a free tier that allows processing 500 images per month. After passing this limit you'll have to wait until the month to close or subscribe for a paid plan.</p>
+</div>
+<p>Copy the API Key from your Dashboard. Back to Visual Studio open the Preferences and go to the MFractor Settings pane. The last option on this page presents a field where you can copy your TinyPNG key.</p>
+<p><img alt="The TinyPNG Dashboard website" src="/img/image-management/tiny-png-config.png" /></p>
 <h2 id="launching-the-optimiser">Launching The Optimiser</h2>
+<p>The optimiser tool is avaiable through the Image Asset Manager pad/toolwindow. There you can invoke the optimiser on a single file, an entire asset or all the image files in the current solution.</p>
+<h3 id="to-optimise-a-single-image-file">To optimise a single image file</h3>
+<p>Follow the steps to optimise a single image file:</p>
+<ol>
+<li>On the left-pane of the Image Asset Manager select the asset where the file you want to optimise</li>
+<li>On the right-pane below the preview, select the project where the file resides</li>
+<li>In the list below the project selection drop-down, select the file you want to optimise</li>
+<li>Right click on the file and select <code>Optimise</code></li>
+</ol>
+<p><img alt="How to optimise a single file" src="/img/image-management/optimise-file.png" /></p>
+<h3 id="to-optimise-all-files-of-an-asset">To optimise all files of an asset</h3>
+<p>Follow the steps to optimise all files that compose the image set of a single asset:</p>
+<ol>
+<li>On the left-pane of the Image Asset Manager select the asset you want to optimise</li>
+<li>Right click on the file and select <code>Optimise</code></li>
+</ol>
+<p><img alt="How to optimise all files from an image asset" src="/img/image-management/optimise-asset.png" /></p>
+<h3 id="to-optimise-all-images">To optimise all images</h3>
+<p>To optimise all image files in the solution, open the Image Asset Manager and click <code>Optimise All Images</code> button, in the bottom part of the left-pane. MFractor will scan all images and present a dialog showing how many optimisation operations will be run for your project:</p>
+<p><img alt="How to optimise all images" src="/img/image-management/optimise-all.png" /></p>
+<div class="admonition warning">
+<p class="admonition-title">Track your TinyPNG API Usage</p>
+<p>Always check if your TinyPNG service account has enough compressions credits left for the operations you're about to run. MFractor doesn't check service availability, so the compressions will run until your account run out of credits.</p>
+<p>If you're using a paid plan, always check your usage before running compressions. TinyPNG bills monthly based on the usage that exceeds the free 500 compressions. MFractor doesn't provide any tool for managing usage or limiting the utilization so this should be managed directly by the end user.</p>
+</div>
+<h2 id="processing-the-files">Processing the files</h2>
+<p>Weather you select a single file, an asset or all images, the processing is reported through a dialog:</p>
+<p><img alt="The dialog displaying the optimisation running status" src="/img/image-management/optimise-running.png" /></p>
+<p>When the processing is completed, MFractor will display the summary of the optimisation, where you can check how much space has been saved by running the optimisation.</p>
+<p><img alt="The dialog displaying the optimisation running status" src="/img/image-management/optimise-summary.png" /></p>
                 
                   
                 
