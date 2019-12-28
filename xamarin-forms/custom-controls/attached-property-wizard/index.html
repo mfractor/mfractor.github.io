@@ -1282,20 +1282,22 @@
 <li>The <code>set</code> method for the property. This must be a static method named <code>Set[Name]</code> that returns <code>void</code> with two parameters of <code>BindableObject, [Type]</code>.</li>
 </ul>
 <p><strong>Attached Property Example</strong></p>
-<pre><code>public static readonly BindableProperty HasShadowProperty = BindableProperty.CreateAttached(&quot;HasShadow&quot;, typeof(bool), typeof(MyClass), default(bool));
-public static bool GetHasShadow(BindableObject target)
-{
-    return (bool)target.GetValue(HasShadowProperty);
-}
-public static void SetHasShadow(BindableObject target, bool value)
-{
-    target.SetValue(HasShadowProperty, value);
-}
-</code></pre>
+<div class="codehilite"><pre><span></span><span class="err">public static readonly BindableProperty HasShadowProperty = BindableProperty.CreateAttached(&quot;HasShadow&quot;, typeof(bool), typeof(MyClass), default(bool));</span>
+<span class="err">public static bool GetHasShadow(BindableObject target)</span>
+<span class="err">{</span>
+<span class="err">    return (bool)target.GetValue(HasShadowProperty);</span>
+<span class="err">}</span>
+<span class="err">public static void SetHasShadow(BindableObject target, bool value)</span>
+<span class="err">{</span>
+<span class="err">    target.SetValue(HasShadowProperty, value);</span>
+<span class="err">}</span>
+</pre></div>
+
 
 <p><strong>Usage Example</strong></p>
-<pre><code>&lt;Label local:MyClass.HasShadow=&quot;true&quot;/&gt;
-</code></pre>
+<div class="codehilite"><pre><span></span><span class="err">&lt;Label local:MyClass.HasShadow=&quot;true&quot;/&gt;</span>
+</pre></div>
+
 
 <p>One of the main difficulties  with attached properties is remembering the full syntax and correct structure for a new property.</p>
 <p>To simplify their creation, the wizard generates the C# code for a new attached property.</p>

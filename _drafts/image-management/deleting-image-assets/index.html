@@ -1260,41 +1260,44 @@
 <p>When the image manager deletes an image asset in an Android project, it will remove all matching files in the <code>drawable</code> and <code>mipmap</code> files.</p>
 <p>For example, let's consider an image asset named <code>logo</code> with the following project structure:</p>
 <p><strong>MyApp.Android</strong></p>
-<pre><code> drawable/
-  logo.xml
- drawable-ldpi/
-  logo.png
- drawable-mdpi/
-  logo.png
- drawable-hdpi/
-  logo.png
- mipmap-ldpi/
-  logo.png
- mipmap-mdpi/
-  logo.png
- mipmap-hdpi/
-  logo1.png
-</code></pre>
+<div class="codehilite"><pre><span></span><span class="err"> drawable/</span>
+<span class="err">  logo.xml</span>
+<span class="err"> drawable-ldpi/</span>
+<span class="err">  logo.png</span>
+<span class="err"> drawable-mdpi/</span>
+<span class="err">  logo.png</span>
+<span class="err"> drawable-hdpi/</span>
+<span class="err">  logo.png</span>
+<span class="err"> mipmap-ldpi/</span>
+<span class="err">  logo.png</span>
+<span class="err"> mipmap-mdpi/</span>
+<span class="err">  logo.png</span>
+<span class="err"> mipmap-hdpi/</span>
+<span class="err">  logo1.png</span>
+</pre></div>
+
 
 <p>MFractor would delete the following assets:</p>
-<pre><code> drawable-ldpi/
-  logo.png
- drawable-night-mdpi/
-  logo.png
- drawable-landscape-hdpi/
-  logo.png
- mipmap-de-ldpi/
-  logo.png
- mipmap/
-  logo.png
-</code></pre>
+<div class="codehilite"><pre><span></span><span class="err"> drawable-ldpi/</span>
+<span class="err">  logo.png</span>
+<span class="err"> drawable-night-mdpi/</span>
+<span class="err">  logo.png</span>
+<span class="err"> drawable-landscape-hdpi/</span>
+<span class="err">  logo.png</span>
+<span class="err"> mipmap-de-ldpi/</span>
+<span class="err">  logo.png</span>
+<span class="err"> mipmap/</span>
+<span class="err">  logo.png</span>
+</pre></div>
+
 
 <p>MFractor would ignore the following assets:</p>
-<pre><code> drawable/
-  logo.xml (Excluded as it's an xml drawable)
- mipmap-hdpi/
-  logo1.png (Excluded as logo1 is not a match with logo).
-</code></pre>
+<div class="codehilite"><pre><span></span><span class="err"> drawable/</span>
+<span class="err">  logo.xml (Excluded as it&#39;s an xml drawable)</span>
+<span class="err"> mipmap-hdpi/</span>
+<span class="err">  logo1.png (Excluded as logo1 is not a match with logo).</span>
+</pre></div>
+
 
 <h3 id="ios">iOS</h3>
 <h2 id="launching-the-deletion-tool">Launching The Deletion Tool</h2>

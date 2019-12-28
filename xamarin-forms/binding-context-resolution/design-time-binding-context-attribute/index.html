@@ -1174,38 +1174,39 @@
                 <p>It's also possible to explicitly specify a desired binding context by applying the DesignTimeBindingContext attribute to the code behind class.</p>
 <p>To get started, add the following code file to your project:</p>
 <p><strong>DesignTimeBindingContextAttribute.cs</strong></p>
-<pre><code>using System;
+<div class="codehilite"><pre><span></span>using System;
 
 namespace MyApp.Attributes
 {
-    /// &lt;summary&gt;
+    /// <span class="nt">&lt;summary&gt;</span>
     /// Apply the design time binding context attribute to your code-behind class to inform tools of your intended runtime binding context.
-    /// &lt;/summary&gt;
+    /// <span class="nt">&lt;/summary&gt;</span>
     [AttributeUsage(AttributeTargets.Class, AllowMultiple = false)]
     public class DesignTimeBindingContextAttribute : Attribute
     {
-        /// &lt;summary&gt;
+        /// <span class="nt">&lt;summary&gt;</span>
         /// Specifies the design time binding context using a fully qualified type name.
         ///
         /// For example: MyApp.ViewModels.LoginViewModel.
-        /// &lt;/summary&gt;
-        /// &lt;param name=&quot;typeName&quot;&gt;The fully qualified type name for the design time binding context.&lt;/param&gt;
+        /// <span class="nt">&lt;/summary&gt;</span>
+        /// <span class="nt">&lt;param</span> <span class="na">name=</span><span class="s">&quot;typeName&quot;</span><span class="nt">&gt;</span>The fully qualified type name for the design time binding context.<span class="nt">&lt;/param&gt;</span>
         public DesignTimeBindingContextAttribute(string typeName)
         {
         }
 
-        /// &lt;summary&gt;
+        /// <span class="nt">&lt;summary&gt;</span>
         /// Specifies the design time binding context using typeof().
         ///
         /// For example: typeof(LoginViewModel)
-        /// &lt;/summary&gt;
-        /// &lt;param name=&quot;type&quot;&gt;The &lt;see cref=&quot;System.Type&quot;/&gt; for the design time binding context, using typeof().&lt;/param&gt;
+        /// <span class="nt">&lt;/summary&gt;</span>
+        /// <span class="nt">&lt;param</span> <span class="na">name=</span><span class="s">&quot;type&quot;</span><span class="nt">&gt;</span>The <span class="nt">&lt;see</span> <span class="na">cref=</span><span class="s">&quot;System.Type&quot;</span><span class="nt">/&gt;</span> for the design time binding context, using typeof().<span class="nt">&lt;/param&gt;</span>
         public DesignTimeBindingContextAttribute(Type type)
         {
         }
     }
 }
-</code></pre>
+</pre></div>
+
 
 <p>Next, apply this attribute onto the code-behind class for your XAML file:</p>
 <p><strong>Applying By Type</strong></p>

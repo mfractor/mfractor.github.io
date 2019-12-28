@@ -1195,22 +1195,23 @@
 <p>Unfortunately, it is too expensive to scan the solution to match view models to pages; the scan takes anywhere between 10's to 100's of milliseconds in a moderately sized solution. Therefore, for efficiency reasons, you need to use an MFractor configuration to enable cross-project MVVM resolution.</p>
 <p>To make MFractor use View Models in a project separate to your views, you'll need to create an MFractor config for each project.</p>
 <p>In the project that contains your views, create a file named app.mfc.xml with the following content:</p>
-<pre><code>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; ?&gt;
-&lt;mfractor&gt;
-    &lt;configure id=&quot;com.mfractor.configuration.forms.mvvm_resolution&quot;&gt;
-        &lt;property name=&quot;ViewModelsProjectName&quot; value=&quot;TODO: Insert the name of your view models project as it appears in the solution explorer&quot;/&gt;
-    &lt;/configure&gt;
-&lt;/mfractor&gt;  
-</code></pre>
+<div class="codehilite"><pre><span></span><span class="cp">&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; ?&gt;</span>
+<span class="nt">&lt;mfractor&gt;</span>
+    <span class="nt">&lt;configure</span> <span class="na">id=</span><span class="s">&quot;com.mfractor.configuration.forms.mvvm_resolution&quot;</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;property</span> <span class="na">name=</span><span class="s">&quot;ViewModelsProjectName&quot;</span> <span class="na">value=</span><span class="s">&quot;TODO: Insert the name of your view models project as it appears in the solution explorer&quot;</span><span class="nt">/&gt;</span>
+    <span class="nt">&lt;/configure&gt;</span>
+<span class="nt">&lt;/mfractor&gt;</span>  
+</pre></div>
+
 
 <p>In the project that contains your view models, create a file named app.mfc.xml with the following content:</p>
-<pre><code>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; ?&gt;
-&lt;mfractor&gt;
-    &lt;configure id=&quot;com.mfractor.configuration.forms.mvvm_resolution&quot;&gt;
-        &lt;property name=&quot;ViewsProjectName&quot; value=&quot;TODO: Insert the name of your views project as it appears in the solution explorer&quot;/&gt;
-    &lt;/configure&gt;
-&lt;/mfractor&gt;
-</code></pre>
+<div class="codehilite"><pre><span></span><span class="cp">&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; ?&gt;</span>
+<span class="nt">&lt;mfractor&gt;</span>
+    <span class="nt">&lt;configure</span> <span class="na">id=</span><span class="s">&quot;com.mfractor.configuration.forms.mvvm_resolution&quot;</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;property</span> <span class="na">name=</span><span class="s">&quot;ViewsProjectName&quot;</span> <span class="na">value=</span><span class="s">&quot;TODO: Insert the name of your views project as it appears in the solution explorer&quot;</span><span class="nt">/&gt;</span>
+    <span class="nt">&lt;/configure&gt;</span>
+<span class="nt">&lt;/mfractor&gt;</span>
+</pre></div>
                 
                   
                 

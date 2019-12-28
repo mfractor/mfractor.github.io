@@ -1432,10 +1432,11 @@
 <p>Represents the type of the output parameter, that is the data that will be returned from the converter. This information is used to feed the <code>ValueConversion</code> attribute that is added to your Value Converter on the default Code Snippet. Even though not being used directly in the method body, this information is used by the Analyzers to identify when you used a converter on a property which the type is different from what is expected to be returned.</p>
 <h5 id="parameter-type">Parameter Type</h5>
 <p>Value converters allow passing an additional parameter that can be used for further customize its behavior. Parameters are passed along with the binding declaraction on the property, such as:</p>
-<pre><code class="xml">&lt;Label Text=&quot;{Binding Text, 
-                      Converter={StaticResource converterReference},
-                      ConverterParameter='parameter data'}&quot; /&gt;
-</code></pre>
+<div class="codehilite"><pre><span></span><span class="nt">&lt;Label</span> <span class="na">Text=</span><span class="s">&quot;{Binding Text, </span>
+<span class="s">                      Converter={StaticResource converterReference},</span>
+<span class="s">                      ConverterParameter=&#39;parameter data&#39;}&quot;</span> <span class="nt">/&gt;</span>
+</pre></div>
+
 
 <p>The value <code>parameter data</code> is passed through the <code>parameter</code> argument on the <code>Convert</code> method. In this case the value is a string, but you can also bind to the converter parameter itself.</p>
 <p>The <em>Parameter Type</em> field allows you to specify the type of this parameter and it will be made available through the <code>param</code> local variable on the method body cast to this type.</p>
@@ -1445,10 +1446,11 @@
 <li><strong>Add XAML Entry To</strong>: select the file to which you want to add the entry of the new Value Converter. Only supported files (.xaml) will be listed here.</li>
 </ul>
 <p>If you check this option and select a destination file MFractor will add a declaration for the Value Converter on the <code>ResourceDictionary</code> of that file, such as:</p>
-<pre><code class="xml">&lt;ResourceDictionary&gt;
-    &lt;converters:BoolNegationConverter x:Key=&quot;boolNegationConverter&quot;/&gt;
-&lt;/ResourceDictionary&gt;
-</code></pre>
+<div class="codehilite"><pre><span></span><span class="nt">&lt;ResourceDictionary&gt;</span>
+    <span class="nt">&lt;converters:BoolNegationConverter</span> <span class="na">x:Key=</span><span class="s">&quot;boolNegationConverter&quot;</span><span class="nt">/&gt;</span>
+<span class="nt">&lt;/ResourceDictionary&gt;</span>
+</pre></div>
+
 
 <p>MFractor will also take care of adding the required namespace imports to the file.</p>
 <h2 id="the-valueconversionattribute-class">The ValueConversionAttribute Class</h2>
@@ -1457,93 +1459,96 @@
 <p>To learn about the Value Converter Analysis check its topic on the documentation.</p>
 </blockquote>
 <p>The template for the <code>ValueConversionAttribute</code> class is as follows:</p>
-<pre><code class="csharp">using System;
+<div class="codehilite"><pre><span></span><span class="k">using</span> <span class="nn">System</span><span class="p">;</span>
 
-namespace [DefaultProjectNamespace].Converters
-{
-    /// &lt;summary&gt;
-    /// When annotated onto an &lt;see cref=&quot;Xamarin.Forms.IValueConverter&quot;/&gt; implementation, enables third party tools to analyse the type-flow of binding expressions.
-    /// &lt;para/&gt;
-    /// Usage: [ValueConversion(typeof(InputType), typeof(OutputType))]
-    /// &lt;/summary&gt;
-    [AttributeUsage(AttributeTargets.Class, AllowMultiple = true)]
-    public class ValueConversionAttribute : Attribute
-    {
-        /// &lt;summary&gt;
-        /// Initializes a new instance of the &lt;see cref=&quot;MFractor.Samples.Converters.ValueConversionAttribute&quot;/&gt; class.
-        /// &lt;/summary&gt;
-        /// &lt;param name=&quot;input&quot;&gt;The input type of the value converter.&lt;/param&gt;
-        /// &lt;param name=&quot;output&quot;&gt;The output type of the value converter.&lt;/param&gt;
-        public ValueConversionAttribute(Type input, Type output)
-        {
-        }
+<span class="k">namespace</span> <span class="err">[</span><span class="nn">DefaultProjectNamespace</span><span class="p">].</span><span class="n">Converters</span>
+<span class="p">{</span>
+    <span class="c1">/// &lt;summary&gt;</span>
+    <span class="c1">/// When annotated onto an &lt;see cref=&quot;Xamarin.Forms.IValueConverter&quot;/&gt; implementation, enables third party tools to analyse the type-flow of binding expressions.</span>
+    <span class="c1">/// &lt;para/&gt;</span>
+    <span class="c1">/// Usage: [ValueConversion(typeof(InputType), typeof(OutputType))]</span>
+    <span class="c1">/// &lt;/summary&gt;</span>
+<span class="na">    [AttributeUsage(AttributeTargets.Class, AllowMultiple = true)]</span>
+    <span class="k">public</span> <span class="k">class</span> <span class="nc">ValueConversionAttribute</span> <span class="p">:</span> <span class="n">Attribute</span>
+    <span class="p">{</span>
+        <span class="c1">/// &lt;summary&gt;</span>
+        <span class="c1">/// Initializes a new instance of the &lt;see cref=&quot;MFractor.Samples.Converters.ValueConversionAttribute&quot;/&gt; class.</span>
+        <span class="c1">/// &lt;/summary&gt;</span>
+        <span class="c1">/// &lt;param name=&quot;input&quot;&gt;The input type of the value converter.&lt;/param&gt;</span>
+        <span class="c1">/// &lt;param name=&quot;output&quot;&gt;The output type of the value converter.&lt;/param&gt;</span>
+        <span class="k">public</span> <span class="nf">ValueConversionAttribute</span><span class="p">(</span><span class="n">Type</span> <span class="n">input</span><span class="p">,</span> <span class="n">Type</span> <span class="n">output</span><span class="p">)</span>
+        <span class="p">{</span>
+        <span class="p">}</span>
 
-        /// &lt;summary&gt;
-        /// The parameter type of the value converter.
-        /// &lt;/summary&gt;
-        /// &lt;value&gt;The type of the parameter.&lt;/value&gt;
-        public Type ParameterType
-        {
-            get;
-            set;
-        }
-    }
-}
-</code></pre>
+        <span class="c1">/// &lt;summary&gt;</span>
+        <span class="c1">/// The parameter type of the value converter.</span>
+        <span class="c1">/// &lt;/summary&gt;</span>
+        <span class="c1">/// &lt;value&gt;The type of the parameter.&lt;/value&gt;</span>
+        <span class="k">public</span> <span class="n">Type</span> <span class="n">ParameterType</span>
+        <span class="p">{</span>
+            <span class="k">get</span><span class="p">;</span>
+            <span class="k">set</span><span class="p">;</span>
+        <span class="p">}</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</pre></div>
+
 
 <p>This template doesn't require any additional coding and modification and will exists in the project only to support MFractor analysis features. You can delete this class safely and it won't affect the runtime functionality of any of your value converters, just don't forget to remove declaration of the attribute from each of the converters generated through the wizard.</p>
 <h2 id="default-code-snippet">Default Code Snippet</h2>
 <p>This is the default code snippet of a Value Converter file.</p>
-<pre><code class="csharp">using System;
-using System.Globalization;
-using Xamarin.Forms;
+<div class="codehilite"><pre><span></span><span class="k">using</span> <span class="nn">System</span><span class="p">;</span>
+<span class="k">using</span> <span class="nn">System.Globalization</span><span class="p">;</span>
+<span class="k">using</span> <span class="nn">Xamarin.Forms</span><span class="p">;</span>
 
-namespace [DefaultProjectNamespace].Converters
-{
-    [ValueConversion(typeof(object), typeof(object))]
-    public class $name$ : IValueConverter
-    {
-        public object Convert(object value, Type targetType, object parameter, CultureInfo culture)
-        {
-            if (value is object == false)
-            {
-                return default(object);
-            }
+<span class="k">namespace</span> <span class="err">[</span><span class="nn">DefaultProjectNamespace</span><span class="p">].</span><span class="n">Converters</span>
+<span class="p">{</span>
+<span class="na">    [ValueConversion(typeof(object), typeof(object))]</span>
+    <span class="k">public</span> <span class="k">class</span> <span class="err">$</span><span class="n">name</span><span class="err">$</span> <span class="p">:</span> <span class="n">IValueConverter</span>
+    <span class="p">{</span>
+        <span class="k">public</span> <span class="kt">object</span> <span class="nf">Convert</span><span class="p">(</span><span class="kt">object</span> <span class="k">value</span><span class="p">,</span> <span class="n">Type</span> <span class="n">targetType</span><span class="p">,</span> <span class="kt">object</span> <span class="n">parameter</span><span class="p">,</span> <span class="n">CultureInfo</span> <span class="n">culture</span><span class="p">)</span>
+        <span class="p">{</span>
+            <span class="k">if</span> <span class="p">(</span><span class="k">value</span> <span class="k">is</span> <span class="kt">object</span> <span class="p">==</span> <span class="k">false</span><span class="p">)</span>
+            <span class="p">{</span>
+                <span class="k">return</span> <span class="nf">default</span><span class="p">(</span><span class="kt">object</span><span class="p">);</span>
+            <span class="p">}</span>
 
-            var input = (object)value;
-            var param = (object)parameter;
+            <span class="kt">var</span> <span class="n">input</span> <span class="p">=</span> <span class="p">(</span><span class="kt">object</span><span class="p">)</span><span class="k">value</span><span class="p">;</span>
+            <span class="kt">var</span> <span class="n">param</span> <span class="p">=</span> <span class="p">(</span><span class="kt">object</span><span class="p">)</span><span class="n">parameter</span><span class="p">;</span>
 
-            // TODO: Put your value conversion logic here.
+            <span class="c1">// TODO: Put your value conversion logic here.</span>
 
-            return default(object);
-        }
+            <span class="k">return</span> <span class="nf">default</span><span class="p">(</span><span class="kt">object</span><span class="p">);</span>
+        <span class="p">}</span>
 
-        public object ConvertBack(object value, Type targetType, object parameter, CultureInfo culture)
-        {
-            throw new NotImplementedException();
-        }
-    }
-}
-</code></pre>
+        <span class="k">public</span> <span class="kt">object</span> <span class="nf">ConvertBack</span><span class="p">(</span><span class="kt">object</span> <span class="k">value</span><span class="p">,</span> <span class="n">Type</span> <span class="n">targetType</span><span class="p">,</span> <span class="kt">object</span> <span class="n">parameter</span><span class="p">,</span> <span class="n">CultureInfo</span> <span class="n">culture</span><span class="p">)</span>
+        <span class="p">{</span>
+            <span class="k">throw</span> <span class="k">new</span> <span class="nf">NotImplementedException</span><span class="p">();</span>
+        <span class="p">}</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</pre></div>
+
 
 <h2 id="example-creating-a-bool-negation-converter">Example: Creating a bool negation converter</h2>
 <p>We'll be using the Value Converter Wizard to create a new Value Converter that negates a boolean value. This is useful for binding to properties that expect bool values but the true/false meaning are the opposite from its source data.</p>
 <p>Open the Value Converter Wizard and fill the options of the dialog such as the screenshot below:</p>
 <p><img alt="Value Converter Wizard with the options filled for the sample" src="/img/xamarin-forms/value-converter-wizard.png" /></p>
 <p>This should create a new file <code>Converters/NullOrEmptyStringConverter.cs</code> with similar code that from the default code snippet above. Now we'll replace the body of the Convert method as follows:</p>
-<pre><code class="csharp">public object Convert(object value, Type targetType, object parameter, CultureInfo culture)
-{
-    if (value is string == false)
-    {
-        return default(string);
-    }
+<div class="codehilite"><pre><span></span><span class="k">public</span> <span class="kt">object</span> <span class="nf">Convert</span><span class="p">(</span><span class="kt">object</span> <span class="k">value</span><span class="p">,</span> <span class="n">Type</span> <span class="n">targetType</span><span class="p">,</span> <span class="kt">object</span> <span class="n">parameter</span><span class="p">,</span> <span class="n">CultureInfo</span> <span class="n">culture</span><span class="p">)</span>
+<span class="p">{</span>
+    <span class="k">if</span> <span class="p">(</span><span class="k">value</span> <span class="k">is</span> <span class="kt">string</span> <span class="p">==</span> <span class="k">false</span><span class="p">)</span>
+    <span class="p">{</span>
+        <span class="k">return</span> <span class="nf">default</span><span class="p">(</span><span class="kt">string</span><span class="p">);</span>
+    <span class="p">}</span>
 
-    var input = (string)value;
-    var param = (string)parameter;
+    <span class="kt">var</span> <span class="n">input</span> <span class="p">=</span> <span class="p">(</span><span class="kt">string</span><span class="p">)</span><span class="k">value</span><span class="p">;</span>
+    <span class="kt">var</span> <span class="n">param</span> <span class="p">=</span> <span class="p">(</span><span class="kt">string</span><span class="p">)</span><span class="n">parameter</span><span class="p">;</span>
 
-    return string.IsNullOrEmpty(input) ? param : input;
-}
-</code></pre>
+    <span class="k">return</span> <span class="kt">string</span><span class="p">.</span><span class="n">IsNullOrEmpty</span><span class="p">(</span><span class="n">input</span><span class="p">)</span> <span class="p">?</span> <span class="n">param</span> <span class="p">:</span> <span class="n">input</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></div>
+
 
 <p>This implementation just receive a boolean parameter and apply the logical negation operator to produce the inverse of the curret boolean value. This type of conversion is useful in scenarios where the source data represents a boolean information and we want to apply it to a boolean parameter in a control, but the meaning of the boolean operation is reverse in the target property.</p>
 <p>As an example, suppose you have a Page with a flag indicating if the data was res</p>

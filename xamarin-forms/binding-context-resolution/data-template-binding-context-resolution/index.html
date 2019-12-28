@@ -1194,14 +1194,15 @@
 <p>Data templates are used to provide a nested XAML view to a view that displays many occurrences of that view. For example, a ListView uses a DataTemplate to specify the view appearance of each instance provided through the ItemsSource property.</p>
 <p>MFractor will attempt to infer the BindingContext for a data templates view by resolving the ItemsSource property on the wrapping view.</p>
 <p>Consider the following code:</p>
-<pre><code>  &lt;ListView ItemsSource=&quot;{Binding Contacts}&quot;&gt;
-      &lt;ListView.ItemTemplate&gt;
-        &lt;DataTemplate&gt;
-          &lt;TextCell Text=&quot;{Binding DisplayName}&quot; /&gt;
-        &lt;/DataTemplate&gt;
-      &lt;/ListView.ItemTemplate&gt;
-  &lt;/ListView&gt;
-</code></pre>
+<div class="codehilite"><pre><span></span>  <span class="nt">&lt;ListView</span> <span class="na">ItemsSource=</span><span class="s">&quot;{Binding Contacts}&quot;</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;ListView.ItemTemplate&gt;</span>
+        <span class="nt">&lt;DataTemplate&gt;</span>
+          <span class="nt">&lt;TextCell</span> <span class="na">Text=</span><span class="s">&quot;{Binding DisplayName}&quot;</span> <span class="nt">/&gt;</span>
+        <span class="nt">&lt;/DataTemplate&gt;</span>
+      <span class="nt">&lt;/ListView.ItemTemplate&gt;</span>
+  <span class="nt">&lt;/ListView&gt;</span>
+</pre></div>
+
 
 <p>The inner DataTemplate has a TextCell where the Text property is provided by the binding expression {Binding DisplayName}. To analyse this expression, MFractor requires a binding context; MFractor will walk out to the encapsulating view (ListView), locate the ItemsSource property and evaluate the expression.</p>
 <p>When the return type is an IEnumerable or array, MFractor unwraps the generic or array and grabs the inner type. This provides the binding context type for the binding expressions used within the data template.</p>

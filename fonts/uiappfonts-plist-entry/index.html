@@ -1259,11 +1259,12 @@
 <h2 id="introduction">Introduction</h2>
 <p>When a font is imported to an iOS project, MFractor automatically takes care of adding it's declaration to the <code>Info.plist</code> file of the project. This is required by the UIKit framework, as stated on <a href="https://developer.apple.com/documentation/uikit/text_display_and_fonts/adding_a_custom_font_to_your_app">Apple Official Documentation on how to add custom fonts to native iOS project</a>.</p>
 <p>The code snippet for the entry is as follows:</p>
-<pre><code class="xml">&lt;key&gt;UIAppFonts&lt;/key&gt;
-&lt;array&gt;
-    &lt;string&gt;OpenSans-Regular.ttf&lt;/string&gt;
-&lt;/array&gt;
-</code></pre>
+<div class="codehilite"><pre><span></span><span class="nt">&lt;key&gt;</span>UIAppFonts<span class="nt">&lt;/key&gt;</span>
+<span class="nt">&lt;array&gt;</span>
+    <span class="nt">&lt;string&gt;</span>OpenSans-Regular.ttf<span class="nt">&lt;/string&gt;</span>
+<span class="nt">&lt;/array&gt;</span>
+</pre></div>
+
 
 <p>You can also check if the entry was added correctly from the <em>Source</em> view of the <code>Info.plist</code> file on Visual Studio:</p>
 <p><img alt="The UIAppFonts entry view in the Info.plist tool on Visual Studio for Mac" src="/img/fonts/uiappfonts-entry.png" /></p>
