@@ -18,7 +18,7 @@ Or using the context menu from the right click of the mouse:
 
 Either way will display the _Generate Interface Implementation_ dialog, that allows you to setup a few options and see a preview of the code that will be generated:
 
-![](/img/csharp/code-actions/generate-interface-implementation-03.png)
+![The Generate Inteface Implementation Dial](/img/csharp/code-actions/generate-interface-implementation-03.png)
 
 The available options on this dialog are:
 

@@ -18,6 +18,7 @@ extra:
 markdown_extensions:
   - attr_list
   - admonition
+  - codehilite
 extra_css:
   - css/tabs.css
 extra_javascript:
