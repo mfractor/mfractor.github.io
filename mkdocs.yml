@@ -52,6 +52,9 @@ nav:
     - Data Binding Analysis: xamarin-forms/working-with-viewmodels/data-binding-analysis.md
     - Generating Properties/Commands: xamarin-forms/working-with-viewmodels/generating-properties-and-commands.md
     - MVVM Wizard: xamarin-forms/working-with-viewmodels/mvvm-wizard.md
+  - Working with Styles:
+    - Extracting Styles: xamarin-forms/working-with-styles/extracting-styles.md
+    - Matching Style Analysis: xamarin-forms/working-with-styles/matching-style-analysis.md
   - Custom Controls:
     - Extracting Custom Controls: xamarin-forms/custom-controls/extracting-custom-controls.md
     - Bindable Property Wizard: xamarin-forms/custom-controls/bindable-property-wizard.md
