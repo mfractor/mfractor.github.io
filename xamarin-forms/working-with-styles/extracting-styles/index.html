@@ -40,7 +40,7 @@
     
     
       
-        <title>Extracting styles - MFractor Documentation</title>
+        <title>Extracting Styles - MFractor Documentation</title>
       
     
     
@@ -116,6 +116,10 @@
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
     <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
     
+      <a href="#introduction" tabindex="1" class="md-skip">
+        Skip to content
+      </a>
+    
     
       <header class="md-header" data-md-component="header">
   <nav class="md-header-nav md-grid">
@@ -138,7 +142,7 @@
             </span>
             <span class="md-header-nav__topic">
               
-                Extracting styles
+                Extracting Styles
               
             </span>
           
@@ -391,10 +395,12 @@
       
       
 
+  
 
-  <li class="md-nav__item md-nav__item--nested">
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-9" type="checkbox" id="nav-9">
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-9" type="checkbox" id="nav-9" checked>
     
     <label class="md-nav__link" for="nav-9">
       Xamarin.Forms
@@ -602,16 +608,195 @@
           
           
 
+  
 
-  <li class="md-nav__item md-nav__item--nested">
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-9-4" type="checkbox" id="nav-9-4">
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-9-4" type="checkbox" id="nav-9-4" checked>
     
     <label class="md-nav__link" for="nav-9-4">
-      Custom Controls
+      Working with Styles
     </label>
     <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
       <label class="md-nav__title" for="nav-9-4">
+        Working with Styles
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        Extracting Styles
+      </label>
+    
+    <a href="./" title="Extracting Styles" class="md-nav__link md-nav__link--active">
+      Extracting Styles
+    </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#introduction" class="md-nav__link">
+    Introduction
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#how-to-extract-a-style" class="md-nav__link">
+    How to Extract a style
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#configuring-the-style-extraction" class="md-nav__link">
+    Configuring the Style Extraction
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#name" class="md-nav__link">
+    Name
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#targettype" class="md-nav__link">
+    TargetType
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#target-type-xmlns" class="md-nav__link">
+    Target Type Xmlns
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#file" class="md-nav__link">
+    File
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#parent" class="md-nav__link">
+    Parent
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#properties" class="md-nav__link">
+    Properties
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#previewing-the-new-style" class="md-nav__link">
+    Previewing the new Style
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#extracting-the-style" class="md-nav__link">
+    Extracting the Style
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#summary" class="md-nav__link">
+    Summary
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+        <li class="md-nav__item">
+          <a href="#__comments" class="md-nav__link md-nav__link--active">
+            Comments
+          </a>
+        </li>
+      
+    </ul>
+  
+</nav>
+    
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../matching-style-analysis/" title="Matching Style Analysis" class="md-nav__link">
+      Matching Style Analysis
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-9-5" type="checkbox" id="nav-9-5">
+    
+    <label class="md-nav__link" for="nav-9-5">
+      Custom Controls
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-9-5">
         Custom Controls
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
@@ -665,13 +850,13 @@
 
   <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-9-5" type="checkbox" id="nav-9-5">
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-9-6" type="checkbox" id="nav-9-6">
     
-    <label class="md-nav__link" for="nav-9-5">
+    <label class="md-nav__link" for="nav-9-6">
       Value Converters
     </label>
     <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
-      <label class="md-nav__title" for="nav-9-5">
+      <label class="md-nav__title" for="nav-9-6">
         Value Converters
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
@@ -1150,6 +1335,130 @@
               </div>
             
             
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary">
+  
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#introduction" class="md-nav__link">
+    Introduction
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#how-to-extract-a-style" class="md-nav__link">
+    How to Extract a style
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#configuring-the-style-extraction" class="md-nav__link">
+    Configuring the Style Extraction
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#name" class="md-nav__link">
+    Name
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#targettype" class="md-nav__link">
+    TargetType
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#target-type-xmlns" class="md-nav__link">
+    Target Type Xmlns
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#file" class="md-nav__link">
+    File
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#parent" class="md-nav__link">
+    Parent
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#properties" class="md-nav__link">
+    Properties
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#previewing-the-new-style" class="md-nav__link">
+    Previewing the new Style
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#extracting-the-style" class="md-nav__link">
+    Extracting the Style
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#summary" class="md-nav__link">
+    Summary
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+        <li class="md-nav__item">
+          <a href="#__comments" class="md-nav__link md-nav__link--active">
+            Comments
+          </a>
+        </li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
           
           <div class="md-content">
             <article class="md-content__inner md-typeset">
@@ -1158,9 +1467,109 @@
                   <a href="https://github.com/mfractor/mfractor.github.io/tree/docs/docs/xamarin-forms/working-with-styles/extracting-styles.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>
                 
                 
-                  <h1>Extracting styles</h1>
+                  <h1>Extracting Styles</h1>
                 
-                
+                <div class="admonition quote">
+<p class="admonition-title">A rich toolbox for quickly extract and organize XAML styles.</p>
+</div>
+<h2 id="introduction">Introduction</h2>
+<p>Styles are a basic construction block for UI components that allows configuring a set of common properties that we may want to apply to several views. They're very useful, but also, very hard to manage. With MFractor XAML Style toolset, which includes the Style Extraction Tool and the Matching Style Code Analysis, you can quickly create styles from existing views and identify ones which a existing style may apply.</p>
+<h2 id="how-to-extract-a-style">How to Extract a style</h2>
+<p>The XAML Style extraction tool is presented as a Code Action in the XAML editor. The option becomes available to the context menu when the cursor is placed over any XAML element.</p>
+<p>For example, considering you have the declaration of a Label with some properties set:</p>
+<div class="codehilite"><pre><span></span><span class="nt">&lt;Label</span>
+    <span class="na">HorizontalTextAlignment=</span><span class="s">&quot;Center&quot;</span>
+    <span class="na">FontFamily=</span><span class="s">&quot;{StaticResource OpenSans}&quot;</span>
+    <span class="na">FontSize=</span><span class="s">&quot;Large&quot;</span>
+    <span class="na">Text=</span><span class="s">&quot;Welcome to MFractor Docs!&quot;</span> <span class="nt">/&gt;</span>
+</pre></div>
+
+
+<p>If you right-click on the <code>Label</code> declaration, the extraction tool will be available as option on the <code>Refactor</code> menu:</p>
+<p><img alt="How to access the Extract Style Code Action using the context menu of the Code Editor" src="/img/xamarin-forms/extract-style-menu.png" /></p>
+<p>Selecting this option will present the <strong>XAML Style Editor</strong> dialog, that allows you to extract the properties currently set for the select element (or any additional properties you wish) into a new style, and substitute the properties declaration with the newly created style.</p>
+<h3 id="configuring-the-style-extraction">Configuring the Style Extraction</h3>
+<p>The extraction dialog offer several options to control how the extraction will be done.</p>
+<p><img alt="The XAML Style Extraction Dialog" src="/img/xamarin-forms/extract-style-dialog.png" /></p>
+<h4 id="name">Name</h4>
+<p>The name of the new style. This will be used as the key for the Resource Dictionary entry of the style declaration, and is the key to reference on the <code>Style</code> property of a XAML element.</p>
+<h4 id="targettype">TargetType</h4>
+<p>The <code>TargetType</code> is the .NET Fully Qualified Name of the type to which the new style is intended to be applied. In the example above, we are extracting a style from a Label component, which is a native Xamarin.Forms component represented by the <code>Xamarin.Forms.Label</code> type.</p>
+<p>The value you set here will be used on the <code>TargetType</code> property of the style declaration in XAML, and defines the type of components to which the style can be applied. By default MFractor will fill in with the type from where you´ve invoked the Code Action, but you can change to any type you wish.</p>
+<p>The more specific is the type you set as the Target of your style, the more properties of this type becomes available to the setters of the style, but you can also create more generic styles by referencing a common ancestor of the XAML elements, like <code>View</code> or <code>VisualElement</code>. A style with one of those target types may be applied both to a <code>Button</code> or a <code>Label</code>, as to any component that derives from those base classes.</p>
+<h4 id="target-type-xmlns">Target Type Xmlns</h4>
+<p>This is a second field related to the Target Type declaration. This one is used when you're extracting a style that you may wish to apply to non-standard Xamarin.Forms components, such as custom XAML Views or Third-Party components.</p>
+<p>Here you specify the single name of the XML namespace you want to declare to reference the type. Adding this information will impact how the Target Type field is rendered on the code of the new style. For example, if you set this field <code>views</code>, the output code will be:</p>
+<div class="codehilite"><pre><span></span><span class="nt">&lt;Style</span> <span class="na">x:Key=</span><span class="s">&quot;[styleName]&quot;</span>
+<span class="hll">    <span class="na">TargetType=</span><span class="s">&quot;views:Label&quot;</span><span class="nt">&gt;</span>
+</span>    <span class="c">&lt;!-- The rest of the style declaration --&gt;</span>
+<span class="nt">&lt;/Style&gt;</span>
+</pre></div>
+
+
+<h4 id="file">File</h4>
+<p>The File field is a drop-down that you can select where to add the new style that will be created. Defaults to the current XAML from where you've invoked the code action, but you can also add the style to the <code>App.xaml</code> file of the project (if exists) and make the new style shared among the whole application.</p>
+<h4 id="parent">Parent</h4>
+<p>The XAML Styles framework allows the creation of a hierarchy of styles, much like you can do with Cascading Style Sheets (CSS, which are also available to Xamarin.Forms components but currently not supported by the MFractor tooling). This means that you can create more generic styles that can be used as the base or template of a new style.</p>
+<p>When you create a hierarchy of styles, every property set on a parent style is propagated to the child ones, unless a property is explicitly overriden by  being declared on this child.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>There are several ways of organizing styles into hierarchies but this topic is beyond the scope of this documentation.</p>
+</div>
+<p>Parenting also has implications on dynamic styles, that allows it to be dynamically changed during the runtime of the application, typically for applying different themes, such as light and dark variations of the app visuals.</p>
+<p>The XAML Style Extraction tool allows you to specify the parent of the new style. There are two fields to this section:</p>
+<ul>
+<li><strong>Parent Type</strong>: a drop-down that allows selecting between <code>BaseResourceKey</code> and <code>BasedOn</code> properties to specify the parent resolution.</li>
+<li><strong>Resource Key</strong>: the text field below the parent type where you can type the resource key of the style that should be parent of this one.</li>
+</ul>
+<p>Combined, this two fields controls how the declaration of the parent will be added to the new style that will be generated.</p>
+<p>For a <code>BaseResourceKey</code> parent type, the output will be:</p>
+<div class="codehilite"><pre><span></span>BaseResourceKey=&quot;[ParentResourceKey]&quot;
+</pre></div>
+
+
+<p>For a <code>BasedOn</code> parent type, the output will be:</p>
+<div class="codehilite"><pre><span></span>BasedOn=&quot;{StaticResource [ParentResourceKey]}&quot;
+</pre></div>
+
+
+<p>If you leave the parent resource key field blank the parent declaration will be supressed.</p>
+<h4 id="properties">Properties</h4>
+<p>The Properties section presents a grid that allows you to define which properties you want to include to the new style. MFractor will automatically load all the properties it find from the element declaration in the XAML. This tool allows you to:</p>
+<ul>
+<li>Check/Uncheck a single property entry to be added or excluded from the new style</li>
+<li>Change value of a property</li>
+</ul>
+<p>By clicking on the checkbox to <code>Show All Properties</code>, MFractor will load every property from the specified target type, allowing you to include properties that wasn't initially declared on the component from where you've invoked the code action:</p>
+<p><img alt="The list of properties to set in the XAML Style" src="/img/xamarin-forms/extract-style-properties.png" /></p>
+<p>In the field above the list you can type for searching for specific properties:</p>
+<p><img alt="Filtering properties in the XAML Style" src="/img/xamarin-forms/extract-style-properties-filter.png" /></p>
+<p>This tool allow for fine-grained tuning of the new style you want to create and is a powerful editor to avoid having to type all the setters on the XAML style.</p>
+<h3 id="previewing-the-new-style">Previewing the new Style</h3>
+<p>The right pane of the Extraction dialog presents a preview of the style that will be generated, based on the properties previously set. This allows you to review your settings before executing the extraction.</p>
+<p>The default snippet for the style generation is:</p>
+<div class="codehilite"><pre><span></span><span class="nt">&lt;Style</span> 
+    <span class="na">x:Key=</span><span class="s">&quot;[styleName]&quot;</span> 
+    <span class="na">TargetType=</span><span class="s">&quot;[TargetType]&quot;</span> 
+    <span class="na">BaseResourceKey=</span><span class="s">&quot;[ParentResouceKey]&quot;</span>
+    <span class="na">BasedOn=</span><span class="s">&quot;{StaticResource [ParentResourceKey]}&quot;</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;Setter</span> <span class="na">Property=</span><span class="s">&quot;[PropertyName]&quot;</span> <span class="na">Value=</span><span class="s">&quot;[PropertyValue]&quot;</span> <span class="nt">/&gt;</span>
+  <span class="c">&lt;!-- Repeats for each property set in the dialog... --&gt;</span>
+<span class="nt">&lt;/Style&gt;</span>
+</pre></div>
+
+
+<p>Notice that <code>BaseResourceKey</code> and <code>BasedOn</code> are mutually excludent based on the selection you make from the Parent options, like mentioned in the <a href="#parent">Parent</a> section.</p>
+<h3 id="extracting-the-style">Extracting the Style</h3>
+<p>By clicking on the <code>Extract Styles</code> button the extraction will be processed accordingly to the options you've set.</p>
+<p>The newly created style will be applied to the element where you have invoked the tool and all the properties selected to be included in the new style will be removed from its declaration.</p>
+<p>Following on our previous example, if we create a new style with the name <code>defaultLabel</code> and include all the properties previously set to the component this is the end result:</p>
+<div class="codehilite"><pre><span></span><span class="nt">&lt;Label</span> <span class="na">Style=</span><span class="s">&quot;{StaticResource defaultLabel}&quot;</span> <span class="nt">/&gt;</span>
+</pre></div>
+
+
+<h2 id="summary">Summary</h2>
+<p>The extraction XAML Style tool allows you to quickly extract common properties that you may want to set on several controls into a XAML Style. MFractor also provides the <a href="../matching-style-analysis/"><strong>Matching Style Code Analysis</strong></a> that helps identify places where existing styles can be applied. Check its documentation for further details.</p>
                 
                   
                 
@@ -1194,6 +1603,41 @@
       
         
 <footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid">
+        
+          <a href="../../working-with-viewmodels/mvvm-wizard/" title="MVVM Wizard" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
+            </div>
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Previous
+                </span>
+                MVVM Wizard
+              </span>
+            </div>
+          </a>
+        
+        
+          <a href="../matching-style-analysis/" title="Matching Style Analysis" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Next
+                </span>
+                Matching Style Analysis
+              </span>
+            </div>
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-forward md-footer-nav__button"></i>
+            </div>
+          </a>
+        
+      </nav>
+    </div>
   
   <div class="md-footer-meta md-typeset">
     <div class="md-footer-meta__inner md-grid">
