@@ -12,7 +12,7 @@ The image importer tool is presented as a dialog that can be invoked from severa
 
 >The MFractor Image Importer tool menu option will only be available if the solution has at least one Xamarin.Android or Xamarin.iOS project.
 
-The tool can also be imported from the context menu of an Android or iOS project, in the `Add` submenu you should find the option for `Image Asset`:
+The tool can also be invoked from the context menu of an Android or iOS project, in the `Add` submenu you should find the option for `Image Asset`:
 
 ![Invoking Image Importer from the Project Context Menu](/img/image-management/image-importer-from-project.png)
 

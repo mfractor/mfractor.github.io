@@ -17,6 +17,8 @@ extra:
   disqus: 'mfractor'
 markdown_extensions:
   - attr_list
+  - admonition
+  - codehilite
 extra_css:
   - css/tabs.css
 extra_javascript:
@@ -32,6 +34,9 @@ nav:
 - Licensing: licensing.md
 - Support: support.md
 - FAQ: faq.md
+- C#:
+  - Code Actions:
+    - Generate Interface Implementation: csharp/code-actions/generate-interface-implementation.md
 - Xamarin.Forms:
   - Overview: xamarin-forms/overview.md
   - Binding Context Resolution:
@@ -47,6 +52,9 @@ nav:
     - Data Binding Analysis: xamarin-forms/working-with-viewmodels/data-binding-analysis.md
     - Generating Properties/Commands: xamarin-forms/working-with-viewmodels/generating-properties-and-commands.md
     - MVVM Wizard: xamarin-forms/working-with-viewmodels/mvvm-wizard.md
+  - Working with Styles:
+    - Extracting Styles: xamarin-forms/working-with-styles/extracting-styles.md
+    - Matching Style Analysis: xamarin-forms/working-with-styles/matching-style-analysis.md
   - Custom Controls:
     - Extracting Custom Controls: xamarin-forms/custom-controls/extracting-custom-controls.md
     - Bindable Property Wizard: xamarin-forms/custom-controls/bindable-property-wizard.md
@@ -55,8 +63,8 @@ nav:
     - Value Converter Wizard: xamarin-forms/value-converters/value-converter-wizard.md
 - Fonts:
   - Importing Fonts: fonts/importing-fonts.md
-  - Add UIAppFonts Entry: fonts/add-uiappfonts-plist-entry.md
-  - Creating Font Xaml Code: fonts/generate-fontfamily-xaml.md
+  - UIAppFonts Entry: fonts/uiappfonts-plist-entry.md
+  - FontFamily XAML Entry: fonts/fontfamily-xaml-entry.md
 - Image Management:
   - Overview: image-management/overview.md
   - Managing Images Assets: image-management/managing-image-assets.md
