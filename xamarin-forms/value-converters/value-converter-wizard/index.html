@@ -36,7 +36,7 @@
         <meta name="lang:search.tokenizer" content="[\s\-]+">
       
       <link rel="shortcut icon" href="../../../images/favicon.ico">
-      <meta name="generator" content="mkdocs-1.0.4, mkdocs-material-4.6.0">
+      <meta name="generator" content="mkdocs-1.0.4, mkdocs-material-4.4.3">
     
     
       
@@ -44,7 +44,7 @@
       
     
     
-      <link rel="stylesheet" href="../../../assets/stylesheets/application.1b62728e.css">
+      <link rel="stylesheet" href="../../../assets/stylesheets/application.30686662.css">
       
         <link rel="stylesheet" href="../../../assets/stylesheets/application-palette.a8b3c06d.css">
       
@@ -55,12 +55,12 @@
       
     
     
-      <script src="../../../assets/javascripts/modernizr.268332fc.js"></script>
+      <script src="../../../assets/javascripts/modernizr.74668098.js"></script>
     
     
       
         <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&display=fallback">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700|Roboto+Mono&display=fallback">
         <style>body,input{font-family:"Roboto","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono","Courier New",Courier,monospace}</style>
       
     
@@ -830,22 +830,8 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#the-valueconversionattribute-class" class="md-nav__link">
-    The ValueConversionAttribute Class
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
   <a href="#default-code-snippet" class="md-nav__link">
     Default Code Snippet
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#example-creating-a-bool-negation-converter" class="md-nav__link">
-    Example: Creating a bool negation converter
   </a>
   
 </li>
@@ -1408,22 +1394,8 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#the-valueconversionattribute-class" class="md-nav__link">
-    The ValueConversionAttribute Class
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
   <a href="#default-code-snippet" class="md-nav__link">
     Default Code Snippet
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#example-creating-a-bool-negation-converter" class="md-nav__link">
-    Example: Creating a bool negation converter
   </a>
   
 </li>
@@ -1501,48 +1473,6 @@
 
 
 <p>MFractor will also take care of adding the required namespace imports to the file.</p>
-<h2 id="the-valueconversionattribute-class">The ValueConversionAttribute Class</h2>
-<p>When you create the first Value Converter using the Wizard, MFractor will automatically generate a file named <code>ValueConversionAttribute.cs</code> in the same folder you've set to generate the converter class. This attribute is used to annotate your custom Value Converters and allows the analyzer to check on the types that are are being sourced and targeted to the converter and warns if a type conversion could fail on runtime.</p>
-<blockquote>
-<p>To learn about the Value Converter Analysis check its topic on the documentation.</p>
-</blockquote>
-<p>The template for the <code>ValueConversionAttribute</code> class is as follows:</p>
-<div class="codehilite"><pre><span></span><span class="k">using</span> <span class="nn">System</span><span class="p">;</span>
-
-<span class="k">namespace</span> <span class="err">[</span><span class="nn">DefaultProjectNamespace</span><span class="p">].</span><span class="n">Converters</span>
-<span class="p">{</span>
-    <span class="c1">/// &lt;summary&gt;</span>
-    <span class="c1">/// When annotated onto an &lt;see cref=&quot;Xamarin.Forms.IValueConverter&quot;/&gt; implementation, enables third party tools to analyse the type-flow of binding expressions.</span>
-    <span class="c1">/// &lt;para/&gt;</span>
-    <span class="c1">/// Usage: [ValueConversion(typeof(InputType), typeof(OutputType))]</span>
-    <span class="c1">/// &lt;/summary&gt;</span>
-<span class="na">    [AttributeUsage(AttributeTargets.Class, AllowMultiple = true)]</span>
-    <span class="k">public</span> <span class="k">class</span> <span class="nc">ValueConversionAttribute</span> <span class="p">:</span> <span class="n">Attribute</span>
-    <span class="p">{</span>
-        <span class="c1">/// &lt;summary&gt;</span>
-        <span class="c1">/// Initializes a new instance of the &lt;see cref=&quot;MFractor.Samples.Converters.ValueConversionAttribute&quot;/&gt; class.</span>
-        <span class="c1">/// &lt;/summary&gt;</span>
-        <span class="c1">/// &lt;param name=&quot;input&quot;&gt;The input type of the value converter.&lt;/param&gt;</span>
-        <span class="c1">/// &lt;param name=&quot;output&quot;&gt;The output type of the value converter.&lt;/param&gt;</span>
-        <span class="k">public</span> <span class="nf">ValueConversionAttribute</span><span class="p">(</span><span class="n">Type</span> <span class="n">input</span><span class="p">,</span> <span class="n">Type</span> <span class="n">output</span><span class="p">)</span>
-        <span class="p">{</span>
-        <span class="p">}</span>
-
-        <span class="c1">/// &lt;summary&gt;</span>
-        <span class="c1">/// The parameter type of the value converter.</span>
-        <span class="c1">/// &lt;/summary&gt;</span>
-        <span class="c1">/// &lt;value&gt;The type of the parameter.&lt;/value&gt;</span>
-        <span class="k">public</span> <span class="n">Type</span> <span class="n">ParameterType</span>
-        <span class="p">{</span>
-            <span class="k">get</span><span class="p">;</span>
-            <span class="k">set</span><span class="p">;</span>
-        <span class="p">}</span>
-    <span class="p">}</span>
-<span class="p">}</span>
-</pre></div>
-
-
-<p>This template doesn't require any additional coding and modification and will exists in the project only to support MFractor analysis features. You can delete this class safely and it won't affect the runtime functionality of any of your value converters, just don't forget to remove declaration of the attribute from each of the converters generated through the wizard.</p>
 <h2 id="default-code-snippet">Default Code Snippet</h2>
 <p>This is the default code snippet of a Value Converter file.</p>
 <div class="codehilite"><pre><span></span><span class="k">using</span> <span class="nn">System</span><span class="p">;</span>
@@ -1576,33 +1506,8 @@
     <span class="p">}</span>
 <span class="p">}</span>
 </pre></div>
-
-
-<h2 id="example-creating-a-bool-negation-converter">Example: Creating a bool negation converter</h2>
-<p>We'll be using the Value Converter Wizard to create a new Value Converter that negates a boolean value. This is useful for binding to properties that expect bool values but the true/false meaning are the opposite from its source data.</p>
-<p>Open the Value Converter Wizard and fill the options of the dialog such as the screenshot below:</p>
-<p><img alt="Value Converter Wizard with the options filled for the sample" src="/img/xamarin-forms/value-converter-wizard.png" /></p>
-<p>This should create a new file <code>Converters/NullOrEmptyStringConverter.cs</code> with similar code that from the default code snippet above. Now we'll replace the body of the Convert method as follows:</p>
-<div class="codehilite"><pre><span></span><span class="k">public</span> <span class="kt">object</span> <span class="nf">Convert</span><span class="p">(</span><span class="kt">object</span> <span class="k">value</span><span class="p">,</span> <span class="n">Type</span> <span class="n">targetType</span><span class="p">,</span> <span class="kt">object</span> <span class="n">parameter</span><span class="p">,</span> <span class="n">CultureInfo</span> <span class="n">culture</span><span class="p">)</span>
-<span class="p">{</span>
-    <span class="k">if</span> <span class="p">(</span><span class="k">value</span> <span class="k">is</span> <span class="kt">string</span> <span class="p">==</span> <span class="k">false</span><span class="p">)</span>
-    <span class="p">{</span>
-        <span class="k">return</span> <span class="nf">default</span><span class="p">(</span><span class="kt">string</span><span class="p">);</span>
-    <span class="p">}</span>
-
-    <span class="kt">var</span> <span class="n">input</span> <span class="p">=</span> <span class="p">(</span><span class="kt">string</span><span class="p">)</span><span class="k">value</span><span class="p">;</span>
-    <span class="kt">var</span> <span class="n">param</span> <span class="p">=</span> <span class="p">(</span><span class="kt">string</span><span class="p">)</span><span class="n">parameter</span><span class="p">;</span>
-
-    <span class="k">return</span> <span class="kt">string</span><span class="p">.</span><span class="n">IsNullOrEmpty</span><span class="p">(</span><span class="n">input</span><span class="p">)</span> <span class="p">?</span> <span class="n">param</span> <span class="p">:</span> <span class="n">input</span><span class="p">;</span>
-<span class="p">}</span>
-</pre></div>
-
-
-<p>This implementation just receive a boolean parameter and apply the logical negation operator to produce the inverse of the curret boolean value. This type of conversion is useful in scenarios where the source data represents a boolean information and we want to apply it to a boolean parameter in a control, but the meaning of the boolean operation is reverse in the target property.</p>
-<p>As an example, suppose you have a Page with a flag indicating if the data was res</p>
                 
                   
-                
                 
               
               
@@ -1690,7 +1595,7 @@
       
     </div>
     
-      <script src="../../../assets/javascripts/application.808e90bb.js"></script>
+      <script src="../../../assets/javascripts/application.ac79c3b0.js"></script>
       
       <script>app.initialize({version:"1.0.4",url:{base:"../../.."}})</script>
       

@@ -36,7 +36,7 @@
         <meta name="lang:search.tokenizer" content="[\s\-]+">
       
       <link rel="shortcut icon" href="../../../images/favicon.ico">
-      <meta name="generator" content="mkdocs-1.0.4, mkdocs-material-4.6.0">
+      <meta name="generator" content="mkdocs-1.0.4, mkdocs-material-4.4.3">
     
     
       
@@ -44,7 +44,7 @@
       
     
     
-      <link rel="stylesheet" href="../../../assets/stylesheets/application.1b62728e.css">
+      <link rel="stylesheet" href="../../../assets/stylesheets/application.30686662.css">
       
         <link rel="stylesheet" href="../../../assets/stylesheets/application-palette.a8b3c06d.css">
       
@@ -55,12 +55,12 @@
       
     
     
-      <script src="../../../assets/javascripts/modernizr.268332fc.js"></script>
+      <script src="../../../assets/javascripts/modernizr.74668098.js"></script>
     
     
       
         <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&display=fallback">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700|Roboto+Mono&display=fallback">
         <style>body,input{font-family:"Roboto","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono","Courier New",Courier,monospace}</style>
       
     
@@ -1308,42 +1308,42 @@
 <p>When the image manager deletes an image asset in an Android project, it will remove all matching files in the <code>drawable</code> and <code>mipmap</code> files.</p>
 <p>For example, let's consider an image asset named <code>logo</code> with the following project structure:</p>
 <p><strong>MyApp.Android</strong></p>
-<div class="codehilite"><pre><span></span><span class="err"> drawable/</span>
-<span class="err">  logo.xml</span>
-<span class="err"> drawable-ldpi/</span>
-<span class="err">  logo.png</span>
-<span class="err"> drawable-mdpi/</span>
-<span class="err">  logo.png</span>
-<span class="err"> drawable-hdpi/</span>
-<span class="err">  logo.png</span>
-<span class="err"> mipmap-ldpi/</span>
-<span class="err">  logo.png</span>
-<span class="err"> mipmap-mdpi/</span>
-<span class="err">  logo.png</span>
-<span class="err"> mipmap-hdpi/</span>
-<span class="err">  logo1.png</span>
+<div class="codehilite"><pre><span></span> <span class="n">drawable</span><span class="o">/</span>
+  <span class="n">logo</span><span class="p">.</span><span class="n">xml</span>
+ <span class="n">drawable</span><span class="o">-</span><span class="n">ldpi</span><span class="o">/</span>
+  <span class="n">logo</span><span class="p">.</span><span class="n">png</span>
+ <span class="n">drawable</span><span class="o">-</span><span class="n">mdpi</span><span class="o">/</span>
+  <span class="n">logo</span><span class="p">.</span><span class="n">png</span>
+ <span class="n">drawable</span><span class="o">-</span><span class="n">hdpi</span><span class="o">/</span>
+  <span class="n">logo</span><span class="p">.</span><span class="n">png</span>
+ <span class="n">mipmap</span><span class="o">-</span><span class="n">ldpi</span><span class="o">/</span>
+  <span class="n">logo</span><span class="p">.</span><span class="n">png</span>
+ <span class="n">mipmap</span><span class="o">-</span><span class="n">mdpi</span><span class="o">/</span>
+  <span class="n">logo</span><span class="p">.</span><span class="n">png</span>
+ <span class="n">mipmap</span><span class="o">-</span><span class="n">hdpi</span><span class="o">/</span>
+  <span class="n">logo1</span><span class="p">.</span><span class="n">png</span>
 </pre></div>
 
 
 <p>MFractor would delete the following assets:</p>
-<div class="codehilite"><pre><span></span><span class="err"> drawable-ldpi/</span>
-<span class="err">  logo.png</span>
-<span class="err"> drawable-night-mdpi/</span>
-<span class="err">  logo.png</span>
-<span class="err"> drawable-landscape-hdpi/</span>
-<span class="err">  logo.png</span>
-<span class="err"> mipmap-de-ldpi/</span>
-<span class="err">  logo.png</span>
-<span class="err"> mipmap/</span>
-<span class="err">  logo.png</span>
+<div class="codehilite"><pre><span></span> <span class="n">drawable</span><span class="o">-</span><span class="n">ldpi</span><span class="o">/</span>
+  <span class="n">logo</span><span class="p">.</span><span class="n">png</span>
+ <span class="n">drawable</span><span class="o">-</span><span class="n">night</span><span class="o">-</span><span class="n">mdpi</span><span class="o">/</span>
+  <span class="n">logo</span><span class="p">.</span><span class="n">png</span>
+ <span class="n">drawable</span><span class="o">-</span><span class="n">landscape</span><span class="o">-</span><span class="n">hdpi</span><span class="o">/</span>
+  <span class="n">logo</span><span class="p">.</span><span class="n">png</span>
+ <span class="n">mipmap</span><span class="o">-</span><span class="n">de</span><span class="o">-</span><span class="n">ldpi</span><span class="o">/</span>
+  <span class="n">logo</span><span class="p">.</span><span class="n">png</span>
+ <span class="n">mipmap</span><span class="o">/</span>
+  <span class="n">logo</span><span class="p">.</span><span class="n">png</span>
 </pre></div>
 
 
 <p>MFractor would ignore the following assets:</p>
-<div class="codehilite"><pre><span></span><span class="err"> drawable/</span>
-<span class="err">  logo.xml (Excluded as it&#39;s an xml drawable)</span>
-<span class="err"> mipmap-hdpi/</span>
-<span class="err">  logo1.png (Excluded as logo1 is not a match with logo).</span>
+<div class="codehilite"><pre><span></span> <span class="n">drawable</span><span class="o">/</span>
+  <span class="n">logo</span><span class="p">.</span><span class="n">xml</span> <span class="p">(</span><span class="n">Excluded</span> <span class="k">as</span> <span class="n">it</span><span class="err">&#39;</span><span class="n">s</span> <span class="n">an</span> <span class="n">xml</span> <span class="n">drawable</span><span class="p">)</span>
+ <span class="n">mipmap</span><span class="o">-</span><span class="n">hdpi</span><span class="o">/</span>
+  <span class="n">logo1</span><span class="p">.</span><span class="n">png</span> <span class="p">(</span><span class="n">Excluded</span> <span class="k">as</span> <span class="n">logo1</span> <span class="k">is</span> <span class="k">not</span> <span class="n">a</span> <span class="k">match</span> <span class="k">with</span> <span class="n">logo</span><span class="p">).</span>
 </pre></div>
 
 
@@ -1365,7 +1365,6 @@
 <p>After launching the image deletion tool, you will be presented</p>
                 
                   
-                
                 
               
               
@@ -1418,7 +1417,7 @@
       
     </div>
     
-      <script src="../../../assets/javascripts/application.808e90bb.js"></script>
+      <script src="../../../assets/javascripts/application.ac79c3b0.js"></script>
       
       <script>app.initialize({version:"1.0.4",url:{base:"../../.."}})</script>
       
