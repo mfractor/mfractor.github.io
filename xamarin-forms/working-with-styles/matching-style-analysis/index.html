@@ -36,7 +36,7 @@
         <meta name="lang:search.tokenizer" content="[\s\-]+">
       
       <link rel="shortcut icon" href="../../../images/favicon.ico">
-      <meta name="generator" content="mkdocs-1.0.4, mkdocs-material-4.4.3">
+      <meta name="generator" content="mkdocs-1.0.4, mkdocs-material-4.6.0">
     
     
       
@@ -44,7 +44,7 @@
       
     
     
-      <link rel="stylesheet" href="../../../assets/stylesheets/application.30686662.css">
+      <link rel="stylesheet" href="../../../assets/stylesheets/application.1b62728e.css">
       
         <link rel="stylesheet" href="../../../assets/stylesheets/application-palette.a8b3c06d.css">
       
@@ -55,12 +55,12 @@
       
     
     
-      <script src="../../../assets/javascripts/modernizr.74668098.js"></script>
+      <script src="../../../assets/javascripts/modernizr.268332fc.js"></script>
     
     
       
         <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700|Roboto+Mono&display=fallback">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&display=fallback">
         <style>body,input{font-family:"Roboto","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono","Courier New",Courier,monospace}</style>
       
     
@@ -686,6 +686,13 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#disabling-this-code-analysis" class="md-nav__link">
+    Disabling this Code Analysis
+  </a>
+  
+</li>
+      
       
       
       
@@ -1292,6 +1299,13 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#disabling-this-code-analysis" class="md-nav__link">
+    Disabling this Code Analysis
+  </a>
+  
+</li>
+      
       
       
       
@@ -1320,13 +1334,32 @@
                   <h1>Matching Style Analysis</h1>
                 
                 <div class="admonition quote">
-<p class="admonition-title">Identify and apply existing styles to controls that declares equivalent properties.</p>
+<p class="admonition-title">Inspects XAML elements that do not have a style applied and, if possible, matches them to an available style that targets the element type and also applies the same properties.</p>
 </div>
 <h2 id="introduction">Introduction</h2>
+<p>Styles are a core building block of complex UI applications in Xamarin.Forms. They allow the creation of specifications that can be easily applied to common visual components. Although being very useful and simple to use, styles can become hard to track and manage overtime.</p>
+<p>This code analysis aids in managing the complexity of styles by inspecting elements that do not have a style applied and, if possible, matching them to an available style that targets the element type and also applying the same properties.</p>
 <h2 id="matching-style-detection">Matching style detection</h2>
+<p>The steps to find a matching style are:</p>
+<ul>
+<li>Check if the element has any attributes declared</li>
+<li>Check if an exising style attribute hasn't been declared</li>
+</ul>
+<p>If both predicates are true, MFractor will load a list of the styles declared locally or globally that can be applied to that Target Type, which includes not just the type itself, but any of it's ancestor types.</p>
+<p>Then, for each of the styles, MFractor will check if the declared attributes matches the setters of the style, and also if the values matches. In that case the style is identified as a match, and the code analysis presents a warning to indicate the user an available style that can be applied to that element.</p>
 <h2 id="applying-a-matching-style">Applying a matching style</h2>
+<p>When MFractor Code Analysis identify an element that may be simplified by replacing the property declarations with an existing style, it will add yellow squiggles on the bottom of the component to indicate the available refactoring.</p>
+<p><img alt="The code analysis tool highlighting a possible fix" src="/img/xamarin-forms/style-detection-code-analysis.png" /></p>
+<p>Right-click on the element and on the <code>Fix</code> menu an option should appear as <code>Apply style 'styleName'</code>:</p>
+<p><img alt="How to Apply the code analysis" src="/img/xamarin-forms/style-detection-apply.gif" /></p>
+<p>Applying the fix will replace all the attributes declared in the property to a single attribute <code>Style</code> referecing the matching style.</p>
+<h2 id="disabling-this-code-analysis">Disabling this Code Analysis</h2>
+<p>The matching style code analysis can be disabled on MFractor settings. Open the Visual Studio Preferences and on the <strong>Code Analysis</strong> on the MFractor section of the preferences pages, search for <code>MF1082</code>:</p>
+<p><img alt="Disabling the Matching Style Code Analysis on the Preferences of MFractor" src="/img/xamarin-forms/matching-style-disable.png" /></p>
+<p>This is code of the analyzer that implements this feature, and is identified by the <code>Element Can Use Available Styler (MF1082)</code> name. Click on the checkbox to enable or disable it.</p>
                 
                   
+                
                 
               
               
@@ -1414,7 +1447,7 @@
       
     </div>
     
-      <script src="../../../assets/javascripts/application.ac79c3b0.js"></script>
+      <script src="../../../assets/javascripts/application.808e90bb.js"></script>
       
       <script>app.initialize({version:"1.0.4",url:{base:"../../.."}})</script>
       
