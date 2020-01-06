@@ -36,7 +36,7 @@
         <meta name="lang:search.tokenizer" content="[\s\-]+">
       
       <link rel="shortcut icon" href="../../../images/favicon.ico">
-      <meta name="generator" content="mkdocs-1.0.4, mkdocs-material-4.6.0">
+      <meta name="generator" content="mkdocs-1.0.4, mkdocs-material-4.4.3">
     
     
       
@@ -44,7 +44,7 @@
       
     
     
-      <link rel="stylesheet" href="../../../assets/stylesheets/application.1b62728e.css">
+      <link rel="stylesheet" href="../../../assets/stylesheets/application.30686662.css">
       
         <link rel="stylesheet" href="../../../assets/stylesheets/application-palette.a8b3c06d.css">
       
@@ -55,12 +55,12 @@
       
     
     
-      <script src="../../../assets/javascripts/modernizr.268332fc.js"></script>
+      <script src="../../../assets/javascripts/modernizr.74668098.js"></script>
     
     
       
         <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&display=fallback">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700|Roboto+Mono&display=fallback">
         <style>body,input{font-family:"Roboto","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono","Courier New",Courier,monospace}</style>
       
     
@@ -1427,7 +1427,9 @@
                 
                   <h1>Value Converter Wizard</h1>
                 
-                <p><strong>Quickly create a Value Converter and reference it on your XAML code</strong></p>
+                <div class="admonition quote">
+<p class="admonition-title">Quickly create a Value Converter and reference it on your XAML code</p>
+</div>
 <h2 id="introduction">Introduction</h2>
 <p><em>Value Converters</em> extends Xamarin.Forms binding engine by allowing custom logic to run when you need to bind a value from a source in which the type is different from the destiation where it will be consumed. The <a href="https://docs.microsoft.com/en-us/xamarin/xamarin-forms/app-fundamentals/data-binding/converters">official documentation</a> provides further information about the feature itself.</p>
 <p>To create a Value Converter you need to create a class that implements the <code>IValueConverter</code> interface and then reference it on the Resources Dictionary of the Page or Application that you wish to use it. That's where the <em>Value Converter Wizard</em> comes in, to facilitate this creation and reference, by providing a stub of the converter and let you focus on the conversion logic.</p>
@@ -1452,7 +1454,7 @@
 <p>Represents the type of the output parameter, that is the data that will be returned from the converter. This information is used to feed the <code>ValueConversion</code> attribute that is added to your Value Converter on the default Code Snippet. Even though not being used directly in the method body, this information is used by the Analyzers to identify when you used a converter on a property which the type is different from what is expected to be returned.</p>
 <h5 id="parameter-type">Parameter Type</h5>
 <p>Value converters allow passing an additional parameter that can be used for further customize its behavior. Parameters are passed along with the binding declaraction on the property, such as:</p>
-<div class="codehilite"><pre><span></span><span class="nt">&lt;Label</span> <span class="na">Text=</span><span class="s">&quot;{Binding Text, </span>
+<div class="codehilite"><pre><span></span><span class="nt">&lt;Label</span> <span class="na">Text=</span><span class="s">&quot;{Binding Text,</span>
 <span class="s">                      Converter={StaticResource converterReference},</span>
 <span class="s">                      ConverterParameter=&#39;parameter data&#39;}&quot;</span> <span class="nt">/&gt;</span>
 </pre></div>
@@ -1508,7 +1510,6 @@
 </pre></div>
                 
                   
-                
                 
               
               
@@ -1596,7 +1597,7 @@
       
     </div>
     
-      <script src="../../../assets/javascripts/application.808e90bb.js"></script>
+      <script src="../../../assets/javascripts/application.ac79c3b0.js"></script>
       
       <script>app.initialize({version:"1.0.4",url:{base:"../../.."}})</script>
       

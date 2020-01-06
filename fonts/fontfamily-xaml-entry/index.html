@@ -36,7 +36,7 @@
         <meta name="lang:search.tokenizer" content="[\s\-]+">
       
       <link rel="shortcut icon" href="../../images/favicon.ico">
-      <meta name="generator" content="mkdocs-1.0.4, mkdocs-material-4.6.0">
+      <meta name="generator" content="mkdocs-1.0.4, mkdocs-material-4.4.3">
     
     
       
@@ -44,7 +44,7 @@
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/application.1b62728e.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/application.30686662.css">
       
         <link rel="stylesheet" href="../../assets/stylesheets/application-palette.a8b3c06d.css">
       
@@ -55,12 +55,12 @@
       
     
     
-      <script src="../../assets/javascripts/modernizr.268332fc.js"></script>
+      <script src="../../assets/javascripts/modernizr.74668098.js"></script>
     
     
       
         <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&display=fallback">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700|Roboto+Mono&display=fallback">
         <style>body,input{font-family:"Roboto","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono","Courier New",Courier,monospace}</style>
       
     
@@ -1303,9 +1303,11 @@
                 
                   <h1>FontFamily XAML Entry</h1>
                 
-                <p><strong>Inject the Font Family XAML entry for a font asset the Resource Dictionary of a Xamarin.Forms App</strong></p>
+                <div class="admonition quote">
+<p class="admonition-title">Inject the Font Family XAML entry for a font asset the Resource Dictionary of a Xamarin.Forms App</p>
+</div>
 <h2 id="introduction">Introduction</h2>
-<p>Xamarin.Forms projects allows declaring font references as Resources in Resource Dictionaries, which can be set on <code>Font</code> property of most of the Forms components that has some form of text (such as <code>Labels</code> and <code>Buttons</code>). </p>
+<p>Xamarin.Forms projects allows declaring font references as Resources in Resource Dictionaries, which can be set on <code>Font</code> property of most of the Forms components that has some form of text (such as <code>Labels</code> and <code>Buttons</code>).</p>
 <p>Fonts references in Xamarin.Forms are declared as plain strings, but each platform expects the string in a different format. For this reason we use the <code>OnPlatform</code> element to reference the font in the expected way for each platform. The code snippet below shows an example of this is done:</p>
 <div class="codehilite"><pre><span></span><span class="nt">&lt;ResourceDictionary&gt;</span>
     <span class="nt">&lt;OnPlatform</span> <span class="na">x:TypeArguments=</span><span class="s">&quot;x:String&quot;</span> <span class="na">x:Key=</span><span class="s">&quot;OpenSans&quot;</span><span class="nt">&gt;</span>
@@ -1341,7 +1343,6 @@
 </ul>
                 
                   
-                
                 
               
               
@@ -1429,7 +1430,7 @@
       
     </div>
     
-      <script src="../../assets/javascripts/application.808e90bb.js"></script>
+      <script src="../../assets/javascripts/application.ac79c3b0.js"></script>
       
       <script>app.initialize({version:"1.0.4",url:{base:"../.."}})</script>
       
