@@ -1,1 +1,1 @@
-**Exclude assemblies, classes or members from the Xamarin linker**
+!!! quote "Exclude assemblies, classes or members from the Xamarin linker"

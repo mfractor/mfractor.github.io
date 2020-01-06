@@ -1,4 +1,4 @@
-**Edit the msbuild for a shared project**
+!!! quote "Edit the msbuild for a shared project"
 
 ## Introduction
 

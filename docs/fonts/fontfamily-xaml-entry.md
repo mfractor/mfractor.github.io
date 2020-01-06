@@ -1,7 +1,7 @@
-**Inject the Font Family XAML entry for a font asset the Resource Dictionary of a Xamarin.Forms App**
+!!! quote "Inject the Font Family XAML entry for a font asset the Resource Dictionary of a Xamarin.Forms App"
 
 ## Introduction
-Xamarin.Forms projects allows declaring font references as Resources in Resource Dictionaries, which can be set on `Font` property of most of the Forms components that has some form of text (such as `Labels` and `Buttons`). 
+Xamarin.Forms projects allows declaring font references as Resources in Resource Dictionaries, which can be set on `Font` property of most of the Forms components that has some form of text (such as `Labels` and `Buttons`).
 
 Fonts references in Xamarin.Forms are declared as plain strings, but each platform expects the string in a different format. For this reason we use the `OnPlatform` element to reference the font in the expected way for each platform. The code snippet below shows an example of this is done:
 

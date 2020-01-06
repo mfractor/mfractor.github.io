@@ -1,4 +1,4 @@
-**Add new image assets into your Android and iOS applications**
+!!! quote "Add new image assets into your Android and iOS applications"
 
 ## Introduction
 
@@ -65,4 +65,3 @@ When you're satisfied with the settings you can import the image by clicking on 
 
 ![](/img/image-management/image-importer-result-01.png)
 ![](/img/image-management/image-importer-result-02.png)
-

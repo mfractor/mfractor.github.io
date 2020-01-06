@@ -1,4 +1,4 @@
-**Remove the working and output folders for a solution or project**
+!!! quote "Remove the working and output folders for a solution or project"
 
 ## Introduction
 

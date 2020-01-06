@@ -1,4 +1,4 @@
-**Quickly create a Value Converter and reference it on your XAML code**
+!!! quote "Quickly create a Value Converter and reference it on your XAML code"
 
 ## Introduction
 
@@ -34,7 +34,7 @@ Represents the type of the output parameter, that is the data that will be retur
 Value converters allow passing an additional parameter that can be used for further customize its behavior. Parameters are passed along with the binding declaraction on the property, such as:
 
 ```xml
-<Label Text="{Binding Text, 
+<Label Text="{Binding Text,
                       Converter={StaticResource converterReference},
                       ConverterParameter='parameter data'}" />
 ```

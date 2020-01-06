@@ -1,4 +1,4 @@
-**Use MFractors image management suite to import, delete, optimise and manage the image assets in your iOS and Android apps**
+!!! quote "Use MFractors image management suite to import, delete, optimise and manage the image assets in your iOS and Android apps"
 
 ## Image Management Tool Suite
 

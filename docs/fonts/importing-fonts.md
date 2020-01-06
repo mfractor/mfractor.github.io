@@ -1,4 +1,4 @@
-**Add new assets into your Android and iOS applications**
+!!! quote "Add new assets into your Android and iOS applications"
 
 ## Introduction
 
@@ -16,7 +16,7 @@ The tool can also be invoked from the context menu of an Android or iOS project,
 
 ![Invoking the Font Importer tool from the Solution Explorer Context Menu](/img/fonts/font-importer-solution-explorer.png)
 
-The Font Importer tool dialog window allows you to select a single font file of TTF or OTF types (the ones currently supported by the mobile plaforms) and to set several options for the import processing. 
+The Font Importer tool dialog window allows you to select a single font file of TTF or OTF types (the ones currently supported by the mobile plaforms) and to set several options for the import processing.
 
 ![The font importer](/img/fonts/font-importer.png)
 

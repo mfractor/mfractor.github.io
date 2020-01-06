@@ -1,4 +1,4 @@
-**Remove all traces of image assets from your Android and iOS projects**
+!!! quote "Remove all traces of image assets from your Android and iOS projects"
 
 ## Introduction
 
@@ -14,8 +14,8 @@ Image assets are tracked differently on Android and iOS projects. The following 
     An **image set** is the set the of files that compose a single asset. When we develop an app we don't reference the individual files of an image set directly, but we of that as a single entity, the image asset.
 
 !!! note
-    **Image Assets are Considered Unique Among Projects**. 
-    
+    **Image Assets are Considered Unique Among Projects**.
+
     An image asset with the same name on iOS and Android projects that are of the same solution will be treated as single Image Asset of that application, considering they are different platform implementations of the same app, thus sharing the same set of assets among them.
 
 The rules below describes how MFractor identifies image assets in specific projects, but the tool will scan through all the projects of the solution and provides a unified view.

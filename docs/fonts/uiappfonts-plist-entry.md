@@ -1,4 +1,4 @@
-**Inject the UIAppFonts entry for a font asset into the info.plist**
+!!! quote "Inject the UIAppFonts entry for a font asset into the info.plist"
 
 ## Introduction
 

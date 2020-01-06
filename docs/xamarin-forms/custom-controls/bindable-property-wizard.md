@@ -1,4 +1,4 @@
-**Generate the C# code to declare a new bindable property for a custom control**
+!!! quote "Generate the C# code to declare a new bindable property for a custom control"
 
 ## Introduction
 

@@ -1,4 +1,4 @@
-**Quickly create a zip archive for solution or projects**
+!!! quote "Quickly create a zip archive for solution or projects"
 
 ## Introduction
 

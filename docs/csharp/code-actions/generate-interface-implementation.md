@@ -1,4 +1,4 @@
-**Quickly generate a class stub implementation for an interface**
+!!! quote "Quickly generate a class stub implementation for an interface"
 
 ## Introduction
 

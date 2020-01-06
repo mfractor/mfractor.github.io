@@ -1,4 +1,4 @@
-**Move a XAML layout usage into its own reusable custom control**
+!!! quote "Move a XAML layout usage into its own reusable custom control"
 
 ## Introduction
 

@@ -1,4 +1,4 @@
-**A centralised location to easily manage the image assets in your mobile solution**
+!!! quote "A centralised location to easily manage the image assets in your mobile solution"
 
 ## Introduction
 

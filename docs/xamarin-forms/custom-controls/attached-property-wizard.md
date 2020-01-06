@@ -1,4 +1,4 @@
-**Generate the C# code to declare a new attached property declaration**
+!!! quote "Generate the C# code to declare a new attached property declaration"
 
 ## Introduction
 
