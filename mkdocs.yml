@@ -34,9 +34,20 @@ nav:
 - Licensing: licensing.md
 - Support: support.md
 - FAQ: faq.md
+- Image Management:
+  - Overview: image-management/overview.md
+  - Managing Images Assets: image-management/managing-image-assets.md
+  - Importing Images: image-management/image-importer.md
+  - Deleting Image Assets: image-management/deleting-image-assets.md
+  - Optimising Image Assets: image-management/optimising-image-assets.md
 - C#:
   - Code Actions:
     - Generate Interface Implementation: csharp/code-actions/generate-interface-implementation.md
+    - Simplifying Qualified Types: csharp/code-actions/simplify-qualified-types.md
+    - Locate In Solution Explorer: csharp/code-actions/locate-in-solution-explorer.md
+    - Create Lazy Field Property: csharp/code-actions/create-lazy-field-property.md
+    - Convert To Interpolated String: csharp/code-actions/convert-to-interpolated-string.md
+    #- Generate ReadOnly Constructor: csharp/code-actions/generate-readonly-constructor.md
 - Xamarin.Forms:
   - Overview: xamarin-forms/overview.md
   - Binding Context Resolution:
@@ -65,12 +76,6 @@ nav:
   - Importing Fonts: fonts/importing-fonts.md
   - UIAppFonts Entry: fonts/uiappfonts-plist-entry.md
   - FontFamily XAML Entry: fonts/fontfamily-xaml-entry.md
-- Image Management:
-  - Overview: image-management/overview.md
-  - Managing Images Assets: image-management/managing-image-assets.md
-  - Importing Images: image-management/image-importer.md
-  - Deleting Image Assets: image-management/deleting-image-assets.md
-  - Optimising Image Assets: image-management/optimising-image-assets.md
 - Utilities:
   - Delete Output Folders: utilities/delete-output-folders.md
   - Clean And Compress: utilities/clean-and-compress.md
