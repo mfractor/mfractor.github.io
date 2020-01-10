@@ -22,8 +22,8 @@
     <ProductTip>
       <Title>Mobile Image Asset Manager</Title>
       <Description>The image manager is a centralised location to easily manage the image assets in your mobile solution. To open it, go to the top MFractor menu and choose Manage Image Assets.</Description>
-      <Image>https://docs.mfractor.com/MFRACTOR-VS-MAC/img/import-image-asset.png</Image>
-      <DocumentationUrl>https://docs.mfractor.com/image-management/deleting-image-assets/</DocumentationUrl>
+      <Image>https://docs.mfractor.com/MFRACTOR-VS-MAC/img/image-manager.png</Image>
+      <DocumentationUrl>https://docs.mfractor.com/image-management/managing-image-assets/</DocumentationUrl>
     </ProductTip>
     <ProductTip>
       <Title>Importing Font Assets</Title>
