@@ -4,49 +4,49 @@
     <ProductTip>
       <Title>Extracting XAML Styles</Title>
       <Description>Right click on any XAML element and choose Refactor -> Extract XAML Style to create a new style from the attributes on that element.</Description>
-      <Image>https://docs.mfactor.com/MFRACTOR-VS-MAC/img/extract-style.png</Image>
+      <Image>https://docs.mfractor.com/MFRACTOR-VS-MAC/img/extract-style.png</Image>
       <DocumentationUrl>https://docs.mfractor.com/xamarin-forms/working-with-styles/extracting-styles/</DocumentationUrl>
     </ProductTip>
     <ProductTip>
       <Title>Deleting iOS+Android Image Assets</Title>
       <Description>The image deletion tool can remove all densities of an image asset from your Android and iOS projects. To use, right click on an image in an iOS or Android project and choose Delete Image Asset.</Description>
-      <Image>https://docs.mfactor.com/MFRACTOR-VS-MAC/img/delete-image-asset.png</Image>
+      <Image>https://docs.mfractor.com/MFRACTOR-VS-MAC/img/delete-image-asset.png</Image>
       <DocumentationUrl>https://docs.mfractor.com/image-management/deleting-image-assets/</DocumentationUrl>
     </ProductTip>
     <ProductTip>
       <Title>Importing New iOS+Android Image Assets</Title>
       <Description>The image importer can generates all iOS and Android image densities from a single source image. To use, right click on an iOS or Android project and choose Add -> Image Asset.</Description>
-      <Image>https://docs.mfactor.com/MFRACTOR-VS-MAC/img/image-importer.png</Image>
+      <Image>https://docs.mfractor.com/MFRACTOR-VS-MAC/img/image-importer.png</Image>
       <DocumentationUrl>https://docs.mfractor.com/image-management/image-importer/</DocumentationUrl>
     </ProductTip>
     <ProductTip>
       <Title>Mobile Image Asset Manager</Title>
       <Description>The image manager is a centralised location to easily manage the image assets in your mobile solution. To open it, go to the top MFractor menu and choose Manage Image Assets.</Description>
-      <Image>https://docs.mfactor.com/MFRACTOR-VS-MAC/img/import-image-asset.png</Image>
+      <Image>https://docs.mfractor.com/MFRACTOR-VS-MAC/img/import-image-asset.png</Image>
       <DocumentationUrl>https://docs.mfractor.com/image-management/deleting-image-assets/</DocumentationUrl>
     </ProductTip>
     <ProductTip>
       <Title>Importing Font Assets</Title>
       <Description>The font importer adds new font assets into your Android and iOS projects, creating the plist entry and generating the XAML code for the font into the App.xaml. To use, right click on an iOS or Android project and choose Add -> Font.</Description>
-      <Image>https://docs.mfactor.com/MFRACTOR-VS-MAC/img/font-importer.png</Image>
+      <Image>https://docs.mfractor.com/MFRACTOR-VS-MAC/img/font-importer.png</Image>
       <DocumentationUrl>https://docs.mfractor.com/fonts/importing-fonts/</DocumentationUrl>
     </ProductTip>
     <ProductTip>
       <Title>Extracting XAML Controls</Title>
       <Description>The Extract XAML Control refactoring can move a layout element into its own reusable control. Right click on a layout in XAML (such as a StackLayout or Grid) and then choose Refactor -> Extract into new XAML control.</Description>
-      <Image>https://docs.mfactor.com/MFRACTOR-VS-MAC/img/extract-xaml-control.png</Image>
+      <Image>https://docs.mfractor.com/MFRACTOR-VS-MAC/img/extract-xaml-control.png</Image>
       <DocumentationUrl>https://docs.mfractor.com/xamarin-forms/custom-controls/extracting-custom-controls/</DocumentationUrl>
     </ProductTip>
     <ProductTip>
       <Title>Bindable Property Wizard</Title>
       <Description>Quickly create bindable properties for custom controls using the bindable property wizard. Press Alt+Return in the code behind of a XAML file and choose Create a bindable property.</Description>
-      <Image>https://docs.mfactor.com/MFRACTOR-VS-MAC/img/bindable-property-wizard.png</Image>
+      <Image>https://docs.mfractor.com/MFRACTOR-VS-MAC/img/bindable-property-wizard.png</Image>
       <DocumentationUrl>https://docs.mfractor.com/xamarin-forms/custom-controls/bindable-property-wizard/</DocumentationUrl>
     </ProductTip>
     <ProductTip>
       <Title>Generating Interface Implementations</Title>
       <Description>Quickly create bindable properties for custom controls using the bindable property wizard. Press Alt+Return on an Interface declaration and choose Generate Interface Implementation.</Description>
-      <Image>https://docs.mfactor.com/MFRACTOR-VS-MAC/img/generate-interface-implementation.png</Image>
+      <Image>https://docs.mfractor.com/MFRACTOR-VS-MAC/img/generate-interface-implementation.png</Image>
       <DocumentationUrl>https://docs.mfractor.com/csharp/code-actions/generate-interface-implementation/</DocumentationUrl>
     </ProductTip>
   </Tips>
