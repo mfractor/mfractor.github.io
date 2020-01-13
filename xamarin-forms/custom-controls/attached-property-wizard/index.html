@@ -36,7 +36,7 @@
         <meta name="lang:search.tokenizer" content="[\s\-]+">
       
       <link rel="shortcut icon" href="../../../images/favicon.ico">
-      <meta name="generator" content="mkdocs-1.0.4, mkdocs-material-4.6.0">
+      <meta name="generator" content="mkdocs-1.0.4, mkdocs-material-4.4.3">
     
     
       
@@ -44,7 +44,7 @@
       
     
     
-      <link rel="stylesheet" href="../../../assets/stylesheets/application.1b62728e.css">
+      <link rel="stylesheet" href="../../../assets/stylesheets/application.30686662.css">
       
         <link rel="stylesheet" href="../../../assets/stylesheets/application-palette.a8b3c06d.css">
       
@@ -55,12 +55,12 @@
       
     
     
-      <script src="../../../assets/javascripts/modernizr.268332fc.js"></script>
+      <script src="../../../assets/javascripts/modernizr.74668098.js"></script>
     
     
       
         <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&display=fallback">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700|Roboto+Mono&display=fallback">
         <style>body,input{font-family:"Roboto","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono","Courier New",Courier,monospace}</style>
       
     
@@ -922,46 +922,10 @@
       <input class="md-toggle md-nav__toggle" data-md-toggle="nav-11-6" type="checkbox" id="nav-11-6">
     
     <label class="md-nav__link" for="nav-11-6">
-      Custom Renderers
-    </label>
-    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
-      <label class="md-nav__title" for="nav-11-6">
-        Custom Renderers
-      </label>
-      <ul class="md-nav__list" data-md-scrollfix>
-        
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../../custom-renderers/generate-custom-renderers/" title="Generate Custom Renderers" class="md-nav__link">
-      Generate Custom Renderers
-    </a>
-  </li>
-
-        
-      </ul>
-    </nav>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item md-nav__item--nested">
-    
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-11-7" type="checkbox" id="nav-11-7">
-    
-    <label class="md-nav__link" for="nav-11-7">
       Value Converters
     </label>
     <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
-      <label class="md-nav__title" for="nav-11-7">
+      <label class="md-nav__title" for="nav-11-6">
         Value Converters
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
@@ -1428,20 +1392,20 @@
 <li>The <code>set</code> method for the property. This must be a static method named <code>Set[Name]</code> that returns <code>void</code> with two parameters of <code>BindableObject, [Type]</code>.</li>
 </ul>
 <p><strong>Attached Property Example</strong></p>
-<div class="codehilite"><pre><span></span><span class="err">public static readonly BindableProperty HasShadowProperty = BindableProperty.CreateAttached(&quot;HasShadow&quot;, typeof(bool), typeof(MyClass), default(bool));</span>
-<span class="err">public static bool GetHasShadow(BindableObject target)</span>
-<span class="err">{</span>
-<span class="err">    return (bool)target.GetValue(HasShadowProperty);</span>
-<span class="err">}</span>
-<span class="err">public static void SetHasShadow(BindableObject target, bool value)</span>
-<span class="err">{</span>
-<span class="err">    target.SetValue(HasShadowProperty, value);</span>
-<span class="err">}</span>
+<div class="codehilite"><pre><span></span><span class="nv">public</span> <span class="nv">static</span> <span class="nv">readonly</span> <span class="nv">BindableProperty</span> <span class="nv">HasShadowProperty</span> <span class="o">=</span> <span class="nv">BindableProperty</span>.<span class="nv">CreateAttached</span><span class="ss">(</span><span class="s2">&quot;</span><span class="s">HasShadow</span><span class="s2">&quot;</span>, <span class="nv">typeof</span><span class="ss">(</span><span class="nv">bool</span><span class="ss">)</span>, <span class="nv">typeof</span><span class="ss">(</span><span class="nv">MyClass</span><span class="ss">)</span>, <span class="nv">default</span><span class="ss">(</span><span class="nv">bool</span><span class="ss">))</span><span class="c1">;</span>
+<span class="nv">public</span> <span class="nv">static</span> <span class="nv">bool</span> <span class="nv">GetHasShadow</span><span class="ss">(</span><span class="nv">BindableObject</span> <span class="nv">target</span><span class="ss">)</span>
+{
+    <span class="k">return</span> <span class="ss">(</span><span class="nv">bool</span><span class="ss">)</span><span class="nv">target</span>.<span class="nv">GetValue</span><span class="ss">(</span><span class="nv">HasShadowProperty</span><span class="ss">)</span><span class="c1">;</span>
+}
+<span class="nv">public</span> <span class="nv">static</span> <span class="nv">void</span> <span class="nv">SetHasShadow</span><span class="ss">(</span><span class="nv">BindableObject</span> <span class="nv">target</span>, <span class="nv">bool</span> <span class="nv">value</span><span class="ss">)</span>
+{
+    <span class="nv">target</span>.<span class="nv">SetValue</span><span class="ss">(</span><span class="nv">HasShadowProperty</span>, <span class="nv">value</span><span class="ss">)</span><span class="c1">;</span>
+}
 </pre></div>
 
 
 <p><strong>Usage Example</strong></p>
-<div class="codehilite"><pre><span></span><span class="err">&lt;Label local:MyClass.HasShadow=&quot;true&quot;/&gt;</span>
+<div class="codehilite"><pre><span></span><span class="o">&lt;</span><span class="n">Label</span> <span class="k">local</span><span class="p">:</span><span class="n">MyClass</span><span class="p">.</span><span class="n">HasShadow</span><span class="o">=</span><span class="ss">&quot;true&quot;</span><span class="o">/&gt;</span>
 </pre></div>
 
 
@@ -1465,7 +1429,6 @@
 <p>Please see <a href="../bindable-property-wizard/#automatic-type-inference">Bindable Property Wizard - Automatic Type Inference</a> for a full breakdown of this feature.</p>
                 
                   
-                
                 
               
               
@@ -1515,13 +1478,13 @@
           </a>
         
         
-          <a href="../../custom-renderers/generate-custom-renderers/" title="Generate Custom Renderers" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+          <a href="../../value-converters/value-converter-wizard/" title="Value Converter Wizard" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
             <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
               <span class="md-flex__ellipsis">
                 <span class="md-footer-nav__direction">
                   Next
                 </span>
-                Generate Custom Renderers
+                Value Converter Wizard
               </span>
             </div>
             <div class="md-flex__cell md-flex__cell--shrink">
@@ -1553,7 +1516,7 @@
       
     </div>
     
-      <script src="../../../assets/javascripts/application.808e90bb.js"></script>
+      <script src="../../../assets/javascripts/application.ac79c3b0.js"></script>
       
       <script>app.initialize({version:"1.0.4",url:{base:"../../.."}})</script>
       
