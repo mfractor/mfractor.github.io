@@ -1,3 +1,5 @@
+!!! quote "A summary of our current release of MFractor for Visual Studio Windows"
+
 The current version of MFractor for Visual Studio Windows is v0.2.0
 
 ## Releases (v0.2)

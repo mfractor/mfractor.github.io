@@ -1,4 +1,4 @@
-**A list of currently known issues in our Visual Studio Windows and Mac products**
+!!! quote "A list of currently known issues in our Visual Studio Windows and Mac products"
 
 ## Known Issues
 

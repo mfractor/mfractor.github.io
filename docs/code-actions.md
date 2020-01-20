@@ -2,7 +2,7 @@
 
 ## Introduction
 
-Code Actions enhance developer productivity by providing tools that allows you to quickly refactor and generate new code from your existing code. MFractor constantly inspects your code and shows suggestions of the most common operations done from the code of code you're writing at that time. 
+Code Actions enhance developer productivity by providing tools that allows you to quickly refactor and generate new code from your existing code. MFractor constantly inspects your code and shows suggestions of the most common operations done from the code of code you're writing at that time.
 
 !!! important
     MFractor Code Inspector works entirely locally and doesn't track any of your code.

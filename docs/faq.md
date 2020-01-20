@@ -1,4 +1,4 @@
-**Answers to some commonly asked questions**
+!!! quote "Answers to commonly asked questions"
 
 ## What is MFractor Professional?
 
@@ -23,7 +23,7 @@ MFractor Lite:
 
 ## Do I need to buy a separate license for Mac for Windows?
 
-An MFractor license works in both MFractor for Windows and Mac. 
+An MFractor license works in both MFractor for Windows and Mac.
 
 ## How do I get a refund?
 

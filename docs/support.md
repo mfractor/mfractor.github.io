@@ -1,4 +1,4 @@
-**How to get support or report issues for MFractor**
+!!! quote "How to get support or report issues for MFractor"
 
 ## Reporting a Bug
 

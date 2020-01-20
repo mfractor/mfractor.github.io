@@ -1,4 +1,4 @@
-**Getting started with MFractor for Visual Studio Windows**
+!!! quote "Getting started with MFractor for Visual Studio Mac"
 
 ## Introduction
 

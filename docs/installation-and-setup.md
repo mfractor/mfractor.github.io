@@ -1,4 +1,4 @@
-**Installing, activating and updating MFractor.**
+!!! quote "Installing, activating and updating MFractor."
 
 ## Introduction
 

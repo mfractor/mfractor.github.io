@@ -1,4 +1,4 @@
-**Information about MFractor's licensing and terms of use**
+!!! quote "Information about MFractor's licensing and terms of use"
 
 ## Do I need to buy a separate license for Mac for Windows?
 

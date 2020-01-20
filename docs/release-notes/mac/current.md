@@ -1,3 +1,5 @@
+!!! quote "A summary of our current release of MFractor for Visual Studio Mac"
+
 ## Current Release
 
 The current version of MFractor for Visual Studio Mac is v3.9.8.
