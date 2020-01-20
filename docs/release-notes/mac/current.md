@@ -6,9 +6,13 @@ The current version of MFractor for Visual Studio Mac is v3.9.8.
 
 **Please note that no release notes for MFractor for Visual Studio Mac are available before v3.9**
 
+## Releases (v3.10)
+
+ * [v3.10.0 - Released on January 23rd 2020](v3/v3.10.md#v3.10.0) - Focuses improving our on-boarding workflow, improving the UX and discoverability of code actions plus improving tooltips.
+
 ## Releases (v3.9)
 
- * [v3.9.8 - Released on January 14th 2020](v3/v3.9.md#v3.9.9) - Enables image and color tooltips in XAML plus refactorings to move attribute values into static resources.
+ * [v3.9.8 - Released on January 14th 2020](v3/v3.9.md#v3.9.8) - Enables image and color tooltips in XAML plus refactorings to move attribute values into static resources.
  * [v3.9.7 - Released on January 10th 2020](v3/v3.9.md#v3.9.7) - Adds product tips that show once per week.
  * [v3.9.6 - Released on January 9th 2020](v3/v3.9.md#v3.9.6) - Support for Visual Studio Mac 8.4 and introduces the Simplify Types wizard.
  * [v3.9.5 - Released on December 31st 2019](v3/v3.9.md#v3.9.5) - Fixes several data-binding and style analysis bugs.

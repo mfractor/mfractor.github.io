@@ -15,9 +15,9 @@ Fonts references in Xamarin.Forms are declared as plain strings, but each platfo
 </ResourceDictionary>
 ```
 
-The Font Importer tool add this declaration to the `App.xaml` file, which makes the font reference available to any XAML file in the project, but it can also be added to the Resources Dictionary of a specific file.
+The Font Importer can add this to the `App.xaml` file, which makes the font reference available to any XAML file in the project, but it can also be added to the Resources Dictionary of a specific file.
 
-To customized the font of a component based on this entry, you should use the `StaticResource` markup extension of XAML. As an example, suppose a Page where we have a label that we want to apply the custom font:
+To customise the font of a component based on this entry, you should use the `StaticResource` markup extension of XAML. As an example, suppose a Page where we have a label that we want to apply the custom font:
 
 ```xml
 <ContentPage

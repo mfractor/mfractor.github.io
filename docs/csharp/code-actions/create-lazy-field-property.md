@@ -1,5 +1,7 @@
 !!! quote "Create a property to access the inner value of a Lazy<> field"
 
+!!! info "This feature is available in [MFractor Professional](https://www.mfractor.com/products/mfractor-professional)"
+
 ## Introduction
 
 In .NET, the `System.Lazy<T>` class can be used to provide *lazy initialisation*. That is, `System.Lazy<T>` defers the creation cost of something until the first time it's used.

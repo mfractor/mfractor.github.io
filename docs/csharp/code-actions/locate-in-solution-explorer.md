@@ -1,5 +1,7 @@
 !!! quote "Locate the project file in the solution pad for a given type declaration"
 
+!!! info "This feature is available in [MFractor Professional](https://www.mfractor.com/products/mfractor-professional)"
+
 ## Introduction
 
 When browsing a code base in Visual Studio, it's common to need to select the current project file in the solution explorer to use the right click context actions.

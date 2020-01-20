@@ -1,5 +1,7 @@
 !!! quote "Quickly convert a string literal to a interpolated string"
 
+!!! info "This feature is available in [MFractor Professional](https://www.mfractor.com/products/mfractor-professional)"
+
 ## Introduction
 
 When working with strings in C#, it's common to replace string literal with interpolated strings to simplify string concatenation.

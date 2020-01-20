@@ -1,5 +1,7 @@
 !!! quote "Quickly generate a class stub implementation for an interface"
 
+!!! info "This feature is available in [MFractor Professional](https://www.mfractor.com/products/mfractor-professional)"
+
 ## Introduction
 
 The _Generate Implementation for Interface_ code action allows you to quickly generate a class implementing stubs for the members of an interface in a convenient and quick way, avoiding the hurdle of having to create a file from the standard interface and having to type the class implementation.

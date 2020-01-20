@@ -1,5 +1,7 @@
 !!! quote "Generate a new using statement from a qualified type usage"
 
+!!! info "This feature is available in [MFractor Professional](https://www.mfractor.com/products/mfractor-professional)"
+
 ## Introduction
 
 In C#, a *qualified type* refers to the usage of a type (such as a class or interface) that also includes the namespace.

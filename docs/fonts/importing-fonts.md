@@ -1,5 +1,7 @@
 !!! quote "Add new assets into your Android and iOS applications"
 
+!!! info "This feature is available in [MFractor Professional](https://www.mfractor.com/products/mfractor-professional)"
+
 ## Introduction
 
 The **Font Importer** utilities allows you to import custom fonts into the Android and iOS projects of your solution, while adding required boilerplate code to make it available through Xamarin.Forms in a unified way.

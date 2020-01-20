@@ -1,6 +1,6 @@
 !!! quote "Quickly and easily create a new MVVM Component"
 
-!!! info "This feature is available to [MFractor Professional](https://www.mfractor.com/products/mfractor-professional)"
+!!! info "This feature is available in [MFractor Professional](https://www.mfractor.com/products/mfractor-professional)"
 
 
 ## Introduction
@@ -100,8 +100,8 @@ In the MVVM Pattern the `BindingContext` property of the View part is usually in
 The MVVM Wizard can add initialization code to the new MVVM Component and you can choose the initialization strategy from 3 templates.
 
 !!! info
-    The first two options for BindingContext initialization relies on the View Model class having a parameterless constructor. 
-    
+    The first two options for BindingContext initialization relies on the View Model class having a parameterless constructor.
+
     If your implementation of the View Model relies on custom initialization, such as relying on dependency injection, you should avoid using those initializers.
 
 
@@ -141,8 +141,8 @@ This option will append initialization code in the XAML View file, and affects t
 This code snippet examples the additions to the View code:
 
 ```xml hl_lines="5 6 7 8"
-<ContentPage 
-    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+<ContentPage
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     xmlns="http://xamarin.com/schemas/2014/forms"
     x:Class="MFractor.Samples.Pages.Page"
     xmlns:viewModels="clr-namespace:MFractor.Samples.ViewModels">
@@ -165,7 +165,7 @@ protected override void RegisterTypes(IContainerRegistry containerRegistry)
 {
     //
     // Previous container registrations
-    
+
     containerRegistry.RegisterForNavigation<Pages.HomePage, ViewModels.HomeViewModel>();
 }
 ```
@@ -205,4 +205,3 @@ MFractor will consider a class as a View Model based on all the previous setting
 ### Reseting Settings
 
 If you want to restore the settings for the default conventions, just click the **Reset Settings** buttons and they will be set to its defaults. You need to click the **Save** button to persist this changes.
-

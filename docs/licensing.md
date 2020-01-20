@@ -4,8 +4,6 @@
 
 An MFractor license works in both MFractor for Windows and Mac.
 
-## MFractor Lite
-
 ## MFractor Professional
 
 MFractor Professional is our paid version of MFractor that can be purchased at [www.mfractor.com/buy](https://www.mfractor.com/buy).

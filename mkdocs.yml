@@ -87,6 +87,7 @@ nav:
   - Mac:
     - Current Release: release-notes/mac/current.md
     - v3:
+      - v3.10: release-notes/mac/v3/v3.10.md
       - v3.9: release-notes/mac/v3/v3.9.md
   - Windows:
     - Current Release: release-notes/windows/current.md
