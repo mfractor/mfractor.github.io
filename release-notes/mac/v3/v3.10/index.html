@@ -36,7 +36,7 @@
         <meta name="lang:search.tokenizer" content="[\s\-]+">
       
       <link rel="shortcut icon" href="../../../../images/favicon.ico">
-      <meta name="generator" content="mkdocs-1.0.4, mkdocs-material-4.6.0">
+      <meta name="generator" content="mkdocs-1.0.4, mkdocs-material-4.4.3">
     
     
       
@@ -44,7 +44,7 @@
       
     
     
-      <link rel="stylesheet" href="../../../../assets/stylesheets/application.1b62728e.css">
+      <link rel="stylesheet" href="../../../../assets/stylesheets/application.30686662.css">
       
         <link rel="stylesheet" href="../../../../assets/stylesheets/application-palette.a8b3c06d.css">
       
@@ -55,12 +55,12 @@
       
     
     
-      <script src="../../../../assets/javascripts/modernizr.268332fc.js"></script>
+      <script src="../../../../assets/javascripts/modernizr.74668098.js"></script>
     
     
       
         <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&display=fallback">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700|Roboto+Mono&display=fallback">
         <style>body,input{font-family:"Roboto","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono","Courier New",Courier,monospace}</style>
       
     
@@ -1343,24 +1343,57 @@
                 
                   <h1>V3.10</h1>
                 
-                <h2 id="v3100">v3.10.0</h2>
-<p><strong>Released on TBD</strong></p>
-<p>The v3.10 release adds a several refactorings for static resources, localisation tooling, a bulk image deletion tool and fixes several bugs.</p>
+                <div class="admonition quote">
+<p class="admonition-title">Release notes for our 3.10 versions of MFractor for Visual Studio Mac</p>
+</div>
+<h2 id="v3100">v3.10.0</h2>
+<p><strong>Released on 23rd of January 2020</strong></p>
+<p>The v3.10 release focuses improving our on-boarding workflow, improving the UX and discoverability of code actions plus improving tooltips for images and colors and adding better refactoring support for static resources.</p>
 <p><strong>Features:</strong></p>
 <ul>
-<li>Localisation Tooling:</li>
-<li>iOS Bundled Image to ImageSet migration tool.</li>
-<li>Bulk delete images tool.</li>
+<li>Our new code issue tooltip window present available fixes for a code issue in the tooltip. You can them click on the suggestion to apply the fix.</li>
+<li>Color Tooltips in XAML.<ul>
+<li>Hover over a color value to preview the color.</li>
+<li>When MFractor suggests color values via IntelliSense, it also provides a preview as a tooltip.</li>
+<li>Click on the color value to copy the hex value to the clipboard.</li>
+</ul>
+</li>
+<li>Image tooltips in XAML and C#.<ul>
+<li>Hover over an image name to preview the image.</li>
+<li>Click on the image preview to open it in the image manager.</li>
+<li>When MFractor suggests image assets values via IntelliSense, it will present a preview of that image.</li>
+</ul>
+</li>
+<li>Static Resource refactorings:</li>
+<li>Use the <strong>Move to App.xaml</strong> refactoring to shift a resource from a page or control into the App.xaml file.</li>
+<li>Use the <strong>Refactor into static resource</strong> code action to shift an attributes value into a resource entry in the current file or in the App.xaml.</li>
+<li>The new <strong>Generate Font Character Code Class</strong> creates a C# class with all font character names and icons available as string constants.</li>
 </ul>
 <p><strong>Enhancements:</strong></p>
 <ul>
-<li>The Product Tip window will show once per week to help you to learn more about MFractor.</li>
-<li>We now su</li>
+<li>We've cleaned up our Activation Dialog UI structure and direct you to the documentation site after you activate.</li>
+<li>We've addd a new <strong>Request Trial</strong> main menu option so you can quickly request a trial license.</li>
+<li>We've addd a new <strong>Recover Professional License</strong> menu option so that you can recover you MFractor license.</li>
+<li>We've addd a new <strong>View Release Notes</strong> menu option under the About menu so that you can view the release notes for the current release.</li>
+<li>We've added help links to the following features:</li>
+<li>Generate custom renderers.</li>
+<li>Image Importer.</li>
+<li>Image manager.</li>
+<li>Image deletion tool.</li>
+<li>Image optimisation tool.</li>
+<li>Bindable property wizard.</li>
+<li>Attached property wizard.</li>
+<li>Generate Interface Implementation.</li>
+<li>We've added a help links section to our XAML analysis preferences panel. As we document each analyser, a link to view the docs for that analyser become available.</li>
+<li>The <strong>Find Custom Renderers</strong> code action is now accessible through the Alt+Return menu in C#.</li>
 </ul>
 <p><strong>Issues Fixed:</strong></p>
+<ul>
+<li>We've multiple issues where MFractor Lite wouldn't properly record and inform you that you were on a restriction of 4 documents per day.</li>
+<li>Fixed: The <strong>Start Accessibility Inspector</strong> command would not appear or launch.</li>
+</ul>
                 
                   
-                
                 
               
               
@@ -1413,7 +1446,7 @@
       
     </div>
     
-      <script src="../../../../assets/javascripts/application.808e90bb.js"></script>
+      <script src="../../../../assets/javascripts/application.ac79c3b0.js"></script>
       
       <script>app.initialize({version:"1.0.4",url:{base:"../../../.."}})</script>
       

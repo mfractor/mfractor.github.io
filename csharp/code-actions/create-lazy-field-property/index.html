@@ -36,7 +36,7 @@
         <meta name="lang:search.tokenizer" content="[\s\-]+">
       
       <link rel="shortcut icon" href="../../../images/favicon.ico">
-      <meta name="generator" content="mkdocs-1.0.4, mkdocs-material-4.6.0">
+      <meta name="generator" content="mkdocs-1.0.4, mkdocs-material-4.4.3">
     
     
       
@@ -44,7 +44,7 @@
       
     
     
-      <link rel="stylesheet" href="../../../assets/stylesheets/application.1b62728e.css">
+      <link rel="stylesheet" href="../../../assets/stylesheets/application.30686662.css">
       
         <link rel="stylesheet" href="../../../assets/stylesheets/application-palette.a8b3c06d.css">
       
@@ -55,12 +55,12 @@
       
     
     
-      <script src="../../../assets/javascripts/modernizr.268332fc.js"></script>
+      <script src="../../../assets/javascripts/modernizr.74668098.js"></script>
     
     
       
         <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&display=fallback">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700|Roboto+Mono&display=fallback">
         <style>body,input{font-family:"Roboto","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono","Courier New",Courier,monospace}</style>
       
     
@@ -1409,13 +1409,13 @@
 <p>Please refer to the <a href="https://docs.microsoft.com/en-us/dotnet/api/system.lazy-1?view=netframework-4.8#examples">System.Lazy documentation</a> for more in-depth documentation.</p>
 <p>Each time we use <code>Lazy&lt;T&gt;</code>, we use the <code>.Value</code> property to retrieve the underlying object. When the <code>Lazy&lt;T&gt;</code> is a field, it's common to create a property that accesses the value.</p>
 <p>For example:</p>
-<div class="codehilite"><pre><span></span><span class="err">readonly Lazy&lt;IIconService&gt; iconService;</span>
-<span class="err">public IIconService IconService =&gt; iconService.Value;</span>
+<div class="codehilite"><pre><span></span><span class="n">readonly</span> <span class="n">Lazy</span><span class="o">&lt;</span><span class="n">IIconService</span><span class="o">&gt;</span> <span class="n">iconService</span><span class="p">;</span>
+<span class="k">public</span> <span class="n">IIconService</span> <span class="n">IconService</span> <span class="o">=&gt;</span> <span class="n">iconService</span><span class="p">.</span><span class="n">Value</span><span class="p">;</span>
 </pre></div>
 
 
 <p>We would then use <code>IIconService</code> like so:</p>
-<div class="codehilite"><pre><span></span><span class="err">IconService.MyMethod(); // Equates to iconService.Value.MyMethod().</span>
+<div class="codehilite"><pre><span></span><span class="n">IconService</span><span class="p">.</span><span class="n">MyMethod</span><span class="p">();</span> <span class="o">//</span> <span class="n">Equates</span> <span class="k">to</span> <span class="n">iconService</span><span class="p">.</span><span class="n">Value</span><span class="p">.</span><span class="n">MyMethod</span><span class="p">().</span>
 </pre></div>
 
 
@@ -1428,7 +1428,6 @@
 <p><img alt="The result of the Create Lazy Field Property code action" src="/img/csharp/code-actions/generate-lazy-field-property-02.png" /></p>
                 
                   
-                
                 
               
               
@@ -1516,7 +1515,7 @@
       
     </div>
     
-      <script src="../../../assets/javascripts/application.808e90bb.js"></script>
+      <script src="../../../assets/javascripts/application.ac79c3b0.js"></script>
       
       <script>app.initialize({version:"1.0.4",url:{base:"../../.."}})</script>
       
