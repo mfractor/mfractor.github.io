@@ -1340,6 +1340,18 @@
 
 
   <li class="md-nav__item">
+    <a href="../../../release-notes/mac/v3/v3.10/" title="v3.10" class="md-nav__link">
+      v3.10
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
     <a href="../../../release-notes/mac/v3/v3.9/" title="v3.9" class="md-nav__link">
       v3.9
     </a>
@@ -1731,7 +1743,7 @@
 <p class="admonition-title">Quickly and easily create a new MVVM Component</p>
 </div>
 <div class="admonition info">
-<p class="admonition-title">This feature is available to <a href="https://www.mfractor.com/products/mfractor-professional">MFractor Professional</a></p>
+<p class="admonition-title">This feature is available in <a href="https://www.mfractor.com/products/mfractor-professional">MFractor Professional</a></p>
 </div>
 <h2 id="introduction">Introduction</h2>
 <p>When working on Xamarin.Forms projects and applying the MVVM pattern, most of the time you will be creating a XAML Page or View alongside with it's View Model. This is normally a two step process where you need to create the Page/View and then a new class file for it's View Model.</p>
@@ -1802,7 +1814,7 @@
 <p>The MVVM Wizard can add initialization code to the new MVVM Component and you can choose the initialization strategy from 3 templates.</p>
 <div class="admonition info">
 <p class="admonition-title">Info</p>
-<p>The first two options for BindingContext initialization relies on the View Model class having a parameterless constructor. </p>
+<p>The first two options for BindingContext initialization relies on the View Model class having a parameterless constructor.</p>
 <p>If your implementation of the View Model relies on custom initialization, such as relying on dependency injection, you should avoid using those initializers.</p>
 </div>
 <h5 id="initialise-bindingcontext-in-code-behind">Initialise BindingContext in Code-Behind</h5>
@@ -1836,8 +1848,8 @@
 <li>Adds a declaration of the View Model object to the <code>BindingContext</code> property below the root View element.</li>
 </ul>
 <p>This code snippet examples the additions to the View code:</p>
-<div class="codehilite"><pre><span></span><span class="nt">&lt;ContentPage</span> 
-    <span class="na">xmlns:x=</span><span class="s">&quot;http://schemas.microsoft.com/winfx/2009/xaml&quot;</span> 
+<div class="codehilite"><pre><span></span><span class="nt">&lt;ContentPage</span>
+    <span class="na">xmlns:x=</span><span class="s">&quot;http://schemas.microsoft.com/winfx/2009/xaml&quot;</span>
     <span class="na">xmlns=</span><span class="s">&quot;http://xamarin.com/schemas/2014/forms&quot;</span>
     <span class="na">x:Class=</span><span class="s">&quot;MFractor.Samples.Pages.Page&quot;</span>
 <span class="hll">    <span class="na">xmlns:viewModels=</span><span class="s">&quot;clr-namespace:MFractor.Samples.ViewModels&quot;</span><span class="nt">&gt;</span>
