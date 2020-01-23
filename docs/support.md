@@ -4,7 +4,7 @@
 
 We use GitHub issues to track bug reports and also to track user-requested features.
 
-Our issue tracker can be found at: https://github.com/mfractor/mfractor-feedback/
+Our issue tracker can be found at: [https://github.com/mfractor/mfractor-feedback/](https://github.com/mfractor/mfractor-feedback/)
 
 When reporting an issue, please include the following information:
 
