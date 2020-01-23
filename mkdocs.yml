@@ -96,5 +96,6 @@ nav:
       - v0.1: release-notes/windows/v0/v0.1.md
   - Known Issues: release-notes/known-issues.md
 - Legal:
+  - Third Party Software: legal/third-party-software.md
   - Privacy Policy: legal/privacy-policy.pdf
   - End User License: legal/end-user-license.pdf
