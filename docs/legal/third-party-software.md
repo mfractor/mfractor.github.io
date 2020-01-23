@@ -11,6 +11,11 @@ This document lists the third party software and libraries that MFractor uses.
  * Url: [https://developer.android.com/distribute/marketing-tools/brand-guidelines#android_robot](https://developer.android.com/distribute/marketing-tools/brand-guidelines#android_robot)
  * License (Creative Commons): [https://creativecommons.org/licenses/by/3.0/legalcode](https://creativecommons.org/licenses/by/3.0/legalcode)
 
+### DeviceId
+
+ * Url: [https://github.com/MatthewKing/DeviceId](https://github.com/MatthewKing/DeviceId)
+ * License (MIT): [https://github.com/MatthewKing/DeviceId/blob/master/license.txt](https://github.com/MatthewKing/DeviceId/blob/master/license.txt)
+
 ### Microsoft.ApplicationInsights
 
  * URL: [https://github.com/Microsoft/ApplicationInsights-Home](https://github.com/Microsoft/ApplicationInsights-Home)
