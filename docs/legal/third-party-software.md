@@ -1,8 +1,8 @@
-!!! quote "Attribution to the third party software and libraries that are used in MFractor"
+!!! quote "Attribution to the third party software and libraries used by MFractor"
 
 ## Introduction
 
-This document lists the third party software and libraries that MFractor uses.
+This document lists the third party software and libraries used by MFractor.
 
 ## Third Party Attribution
 
@@ -35,6 +35,12 @@ This document lists the third party software and libraries that MFractor uses.
 
 * URL: [https://github.com/LayoutFarm/Typography](https://github.com/LayoutFarm/Typography)
 * License (MIT): [https://github.com/LayoutFarm/Typography/blob/master/LICENSE.md](https://github.com/LayoutFarm/Typography/blob/master/LICENSE.md)
+
+### tinify-net
+
+* URL: [https://github.com/tinify/tinify-net](https://github.com/tinify/tinify-net)
+* License (MIT): [https://github.com/tinify/tinify-net/blob/master/LICENSE](https://github.com/tinify/tinify-net/blob/master/LICENSE)
+
 
 ### WebKit Sharp
 
