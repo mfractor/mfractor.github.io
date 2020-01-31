@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-16"?>
+<Manifest xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Releases>
+    <Release>
+      <Version>Extracting XAML Styles</Version>
+      <Description>Right click on any XAML element and choose Refactor -> Extract XAML Style to create a new style from the attributes on that element.</Description>
+      <Image>https://docs.mfractor.com/MFRACTOR-VS-MAC/img/extract-style.png</Image>
+      <Url>https://docs.mfractor.com/xamarin-forms/working-with-styles/extracting-styles/</Url>
+    </Release>
+  </Releases>
+</Manifest>
