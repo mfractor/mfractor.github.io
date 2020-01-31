@@ -73,6 +73,7 @@ nav:
     - Attached Property Wizard: xamarin-forms/custom-controls/attached-property-wizard.md
   - Custom Renderers:
     - Generate Custom Renderers: xamarin-forms/custom-renderers/generate-custom-renderers.md
+    - Find Custom Renderers: xamarin-forms/custom-renderers/find-custom-renderers.md
   - Value Converters:
     - Value Converter Wizard: xamarin-forms/value-converters/value-converter-wizard.md
 - Fonts:
