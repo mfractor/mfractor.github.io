@@ -36,7 +36,7 @@
         <meta name="lang:search.tokenizer" content="[\s\-]+">
       
       <link rel="shortcut icon" href="../../../images/favicon.ico">
-      <meta name="generator" content="mkdocs-1.0.4, mkdocs-material-4.4.3">
+      <meta name="generator" content="mkdocs-1.0.4, mkdocs-material-4.6.0">
     
     
       
@@ -44,7 +44,7 @@
       
     
     
-      <link rel="stylesheet" href="../../../assets/stylesheets/application.30686662.css">
+      <link rel="stylesheet" href="../../../assets/stylesheets/application.1b62728e.css">
       
         <link rel="stylesheet" href="../../../assets/stylesheets/application-palette.a8b3c06d.css">
       
@@ -55,12 +55,12 @@
       
     
     
-      <script src="../../../assets/javascripts/modernizr.74668098.js"></script>
+      <script src="../../../assets/javascripts/modernizr.268332fc.js"></script>
     
     
       
         <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700|Roboto+Mono&display=fallback">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&display=fallback">
         <style>body,input{font-family:"Roboto","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono","Courier New",Courier,monospace}</style>
       
     
@@ -956,6 +956,18 @@
   </li>
 
         
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../find-custom-renderers/" title="Find Custom Renderers" class="md-nav__link">
+      Find Custom Renderers
+    </a>
+  </li>
+
+        
       </ul>
     </nav>
   </li>
@@ -1493,13 +1505,13 @@
 <p class="admonition-title">Quickly generate custom renderers for Xamarin.Forms visual elements</p>
 </div>
 <h2 id="introduction">Introduction</h2>
-<p>The Generate Custom Renderers is code action that allows you to quickly create the stubs for implementing a custom renderer for a Xamarin.Forms element. When applying it to a eligible element, it will create the renderer class stubs in each of the selected projects including the propert Export attributes.</p>
+<p>MFractor allows you to quickly create the stubs for implementing a custom renderer for a Xamarin.Forms element using a Code Action that can be applied to your custom View Components. When invoked it will create the renderer class stubs in each of the selected projects including the proper export attributes.</p>
 <h2 id="using-the-code-action">Using the Code Action</h2>
 <div class="admonition info">
 <p class="admonition-title">Info</p>
 <p>Check the <a href="/code-actions">C# Code Actions</a> docs for details about how to invoke the Code Actions.</p>
 </div>
-<p>This Code Action can be applied to any type derived from <code>Page</code>, <code>Layout</code>, <code>View</code> or <code>Cell</code>, and is available on the class declaration.</p>
+<p>This Code Action can be applied to any type derived from <a href="https://docs.microsoft.com/en-us/dotnet/api/xamarin.forms.page?view=xamarin-forms" title="Xamarin.Forms.Page docs"><code>Page</code></a>, <a href="https://docs.microsoft.com/en-us/dotnet/api/xamarin.forms.layout?view=xamarin-forms" title="Xamarin.Forms.Layout docs"><code>Layout</code></a>, <a href="https://docs.microsoft.com/en-us/dotnet/api/xamarin.forms.view?view=xamarin-forms" title="Xamarin.Forms.View docs"><code>View</code></a> or <a href="https://docs.microsoft.com/en-us/dotnet/api/xamarin.forms.cell?view=xamarin-forms" title="Xamarin.Forms.Cell docs"><code>Cell</code></a> types of the <a href="https://www.nuget.org/packages/Xamarin.Forms/"><code>Xamarin.Forms</code></a> package.</p>
 <p>Suppose you want to create an enhanced button component that implements a platform specific feature of Android or iOS native button components. You can start by creating a new class that derives from <code>Button</code>, such as:</p>
 <div class="codehilite"><pre><span></span><span class="k">using</span> <span class="nn">System</span><span class="p">;</span>
 <span class="k">using</span> <span class="nn">Xamarin.Forms</span><span class="p">;</span>
@@ -1517,7 +1529,7 @@
 
 
 <p>Place the cursor over the class name declaration and use the shortcuts to invoke the list of available Code Actions. The <strong>Generat custom renderers for EnhancedButton</strong> should be available to this list:</p>
-<p><img alt="" src="/img/xamarin-forms/generate-custom-renderer-menu.png" /></p>
+<p><img alt="Invoking the Generate Custom Renderers from the Quick fix menu" src="/img/xamarin-forms/generate-custom-renderer-menu.png" /></p>
 <p>Invoking it will present the <em>Generate Custom Renderers</em> dialog:</p>
 <p><img alt="The Generate Custom Renderers Dialog Template" src="/img/xamarin-forms/generate-custom-renderer-dialog.png" /></p>
 <p>MFractor will identify the projects that has dependencies on the Xamarin.Forms project where the component is declared and add to this to allow selecting the ones to which you want to create the renderers. In the example above, there are an Android and an iOS project. When you confirm the selection the following files will be created:</p>
@@ -1596,6 +1608,7 @@
                 
                   
                 
+                
               
               
                 
@@ -1644,13 +1657,13 @@
           </a>
         
         
-          <a href="../../value-converters/value-converter-wizard/" title="Value Converter Wizard" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+          <a href="../find-custom-renderers/" title="Find Custom Renderers" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
             <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
               <span class="md-flex__ellipsis">
                 <span class="md-footer-nav__direction">
                   Next
                 </span>
-                Value Converter Wizard
+                Find Custom Renderers
               </span>
             </div>
             <div class="md-flex__cell md-flex__cell--shrink">
@@ -1682,7 +1695,7 @@
       
     </div>
     
-      <script src="../../../assets/javascripts/application.ac79c3b0.js"></script>
+      <script src="../../../assets/javascripts/application.808e90bb.js"></script>
       
       <script>app.initialize({version:"1.0.4",url:{base:"../../.."}})</script>
       
