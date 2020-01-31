@@ -1,29 +1,32 @@
 !!! quote "Answers to commonly asked questions"
 
-## What is MFractor Professional?
-
-MFractor Professional is our paid version of MFractor.
-
-Our terms:
-
- * A Professional license if valid for one developer only. Please purchase a license for each developer in your team.
- * Licenses valid for 366 days from the date of purchase.
- * A single license can be used on up to 3 developer machines. As cross-platform developers it is very likely we have a Windows machine, a Mac and a personal machine.
-
-## What is MFractor Lite?
-
-MFractor Lite is our free-for-use version of MFractor that includes our full XAML feature suite for 4 XAML files per day.
-
-MFractor Lite:
-
- * Does not allow usage of our C# features.
- * Does not allow usage of our asset management features.
- * Does not allow usage of our code generation wizards.
- * Is not available for MFractor for Visual Studio Windows.
-
 ## Do I need to buy a separate license for Mac for Windows?
 
 An MFractor license works in both MFractor for Windows and Mac.
+
+## Where do I find the latest version of MFractor?
+
+### Visual Studio Macs
+
+The latest version of MFractor for Visual Studio Mac can be found at:
+
+http://addins.monodevelop.com/Project/Index/300
+
+### Visual Studio Windows
+
+The latest version of MFractor for Visual Studio Windows can be found in the Visual Studio Marketplace:
+
+https://marketplace.visualstudio.com/items?itemName=MFractorPtyLtd.MFRACTOR-VS-WINDOWS
+
+## What version of Visual Studio does MFractor support?
+
+### Visual Studio Mac
+
+MFractor for Visual Studio Mac supports Visual Studio 2019 and higher. We always track the latest stable release.
+
+### Visual Studio Window
+
+MFractor for Visual Studio Windows supports Visual Studio 2019 and higher.
 
 ## How do I get a refund?
 
@@ -74,30 +77,6 @@ MFractors release notes can be found here:
  * [MFractor for Visual Studio Mac Release Notes](/release-notes/mac/current)
  * [MFractor for Visual Studio Windows Release Notes](/release-notes/windows/current)
 
-## Where do I find the latest version of MFractor?
-
-### Visual Studio Macs
-
-The latest version of MFractor for Visual Studio Mac can be found at:
-
-http://addins.monodevelop.com/Project/Index/300
-
-### Visual Studio Windows
-
-The latest version of MFractor for Visual Studio Windows can be found in the Visual Studio Marketplace:
-
-https://marketplace.visualstudio.com/items?itemName=MFractorPtyLtd.MFRACTOR-VS-WINDOWS
-
-## What version of Visual Studio does MFractor support?
-
-### Visual Studio Mac
-
-MFractor for Visual Studio Mac supports Visual Studio 2019 and higher. We always track the latest stable release.
-
-### Visual Studio Window
-
-MFractor for Visual Studio Windows supports Visual Studio 2019 and higher.
-
 ## Does MFractor support the Preview versions of Visual Studio?
 
 No, we do not officially support the preview versions of Visual Studio Mac or Windows.
@@ -106,7 +85,7 @@ The extension *may* work if installed from file, however, we do not officially t
 
 Install and use MFractor within the preview versions of Visual Studio at your own risk.
 
-## Help! MFractor is not visible in Visual Studio Macs Extension Manager.
+## MFractor is not visible in Visual Studio Macs Extension Manager.
 
 MFractor is usually found in the Gallery tab of the Extension Manager under **IDE Extensions**; you can use the top right search bar to locate
 
@@ -142,6 +121,16 @@ If you are using git, append the following text to the end of your `.gitignore` 
 ```
 
 The VisualStudio .gitignore that is available on www.github.com ignores the .mfractor folder by default.
+
+## How do I uninstall MFractor for Visual Studio Windows manually?
+
+Locate the **VSIXInstaller** executable and run the following command:
+
+```
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE>VSIXInstaller.exe /u:9e8ace0e-61dd-486f-bfeb-0c7ad1fc0b1c
+```
+
+Our VSIX identifier is `9e8ace0e-61dd-486f-bfeb-0c7ad1fc0b1c`.
 
 ## Can you help me make a Visual Studio extension?
 
