@@ -1,4 +1,4 @@
-!!! quote "Quickly declare grids with its boilerplate code and manage child positioning"
+!!! quote "Quickly declare grids with its boilerplate code and manage its rows and columns declarations and child positioning"
 
 ## Introduction
 
@@ -12,6 +12,7 @@ MFractor introduces several intellisense commands to aid on writing Xamarin.Form
 
 The Grid intellisense appears on the appropriate contexts when editing XAML files. On the next sections we will build a login form in an XAML Page using the Grid layout. This layout will have 3 rows and two columns, where the first column will have the labels and the second column the entries, and the third row will span among the columns to add the login button. The result will look as below:
 
+![](/img/xamarin-forms/grid-intellisense-form-preview.png)
 
 ### Declaring a Grid with Boilerplate Code
 
@@ -34,7 +35,7 @@ Place the cursor inside the blank line on the `Frame` element (row number 7) and
 
 ![](/img/xamarin-forms/grid-intellisense-all.png)
 
-When the Intellisense suggestions is open you can start typing to filter what you need. Hit the **G** and **r** keys, and the suggestion for `Grid (Boilerplate)` should appear at the end of the list:
+When the Intellisense suggestions is open you can start typing to filter what you need. Hit the `G` and `r` keys, and the suggestion for `Grid (Boilerplate)` should appear at the end of the list:
 
 ![](/img/xamarin-forms/grid-intellisense-boilerplate.png)
 
@@ -99,6 +100,8 @@ First, let's declare the labels. Inside the Grid we declared before add a new `L
 
 ![](/img/xamarin-forms/grid-intellisense-location.png)
 
+Those are the suggestions provided by the MFractor Grid Intellisense location feature. Notice that when you select a suggestion and wait a second a tooltip appears showing details about the width or height of the column or row in question.
+
 !!! important
     The grid location intellisense completion only appears for Grid elements that declares rows or columns definitions. A plain Grid element will not suggest any completion, because MFractor is unable to infer how may rows and columns the grid may contain. If you don't find those suggestions check the rows and columns definitions.
 
@@ -112,11 +115,30 @@ For this first label we want to add it to the first row and the first column of 
     Text="Username" />
 ```
 
-Repeat the steps to create a new label, but change the `Grid.Row` property to **1** and the `Text` property to **Password**. Next add the declarations for the Entries. Using the intellisense completion add the entries to the second column (column 1, since it's zero based) in the first and second rows, to the right side of the labels.
+Repeat the steps to create a new label, but change the `Grid.Row` property to **1** and the `Text` property to **Password**. Next add the declarations for the `Entry` elements, the code rest of the code for this part of the form is as follows:
 
+```xml
+<Label
+    Grid.Column="0"
+    Grid.Row="1"
+    VerticalOptions="Center"
+    Text="Password" />
 
+<Entry
+    Grid.Column="1"
+    Grid.Row="0"
+    Placeholder="Your username" />
 
-The last part is to add the login button. It will take the entire third row of the grid, so we should add a column span to allow it use the entire width of the grid. First you should add the declaration of the button adding its row and column locations. 
+<Entry
+    Grid.Column="1"
+    Grid.Row="1"
+    IsPassword="True"
+    Placeholder="Your password" />
+```
+
+Use the intellisense completions to easily fill the row and column information of each element. 
+
+The last part is to add the login button. It will take the entire third row of the grid, so we should add a column span to allow it use the entire width of the grid. First you should add the declaration of the button adding its row and column locations. As in the preview iterations, hit a new line to add a new attribute for the column span and start typing `G` and `r`, the suggestions for either column and row span should appear wiht intellisense:
 
 ![](/img/xamarin-forms/grid-intellisense-column-span.png)
 
@@ -129,6 +151,9 @@ The final button declaration should be as follow:
     Grid.ColumnSpan="2"
     Text="Login" />
 ```
+
+!!! note
+    For the _span_ completions to appear you should declare both the `Grid.Row` and `Grid.Column` for that element, so MFractor can calculate the available span options for each direction.
 
 ## Summary
 
