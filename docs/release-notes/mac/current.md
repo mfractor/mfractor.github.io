@@ -8,6 +8,7 @@ The current version of MFractor for Visual Studio Mac is v3.10.2.
 
 ### Releases (v3.10)
 
+ * [v3.10.3 - Released on February 1st 2020](v3/v3.10.md#v3.10.3) - Fixes many small XAML IntelliSense issues and adds grouping for MFractors commands in the Key Bindings preferences.
  * [v3.10.2 - Released on January 28th 2020](v3/v3.10.md#v3.10.2) - Bump release to trigger Visual Studio Macs updater mechanisms.
  * [v3.10.1 - Released on January 23rd 2020](v3/v3.10.md#v3.10.1) - Maintenance release to fix a bug in color analysis.
  * [v3.10.0 - Released on January 22nd 2020](v3/v3.10.md#v3.10.0) - Focuses improving our on-boarding workflow, improving the UX and discoverability of code actions plus adding tooltips for colors and images.

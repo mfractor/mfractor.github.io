@@ -80,6 +80,7 @@ nav:
     - Grid Intellisense Commands: xamarin-forms/grids/intellisense.md
 - Fonts:
   - Importing Fonts: fonts/importing-fonts.md
+  - Generate Font Glyph Code Class: fonts/generate-font-character-code-class.md
   - UIAppFonts Entry: fonts/uiappfonts-plist-entry.md
   - FontFamily XAML Entry: fonts/fontfamily-xaml-entry.md
 - Utilities:
