@@ -76,9 +76,8 @@ nav:
     - Find Custom Renderers: xamarin-forms/custom-renderers/find-custom-renderers.md
   - Value Converters:
     - Value Converter Wizard: xamarin-forms/value-converters/value-converter-wizard.md
-  - Working with Layouts:
-    - Grids:
-      - Grid Intellisense Commands: xamarin-forms/grids/intellisense.md
+  - Grids:
+    - Grid Intellisense Commands: xamarin-forms/grids/intellisense.md
 - Fonts:
   - Importing Fonts: fonts/importing-fonts.md
   - UIAppFonts Entry: fonts/uiappfonts-plist-entry.md
