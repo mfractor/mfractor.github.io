@@ -36,7 +36,7 @@
         <meta name="lang:search.tokenizer" content="[\s\-]+">
       
       <link rel="shortcut icon" href="../../images/favicon.ico">
-      <meta name="generator" content="mkdocs-1.0.4, mkdocs-material-4.6.0">
+      <meta name="generator" content="mkdocs-1.0.4, mkdocs-material-4.4.3">
     
     
       
@@ -44,7 +44,7 @@
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/application.1b62728e.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/application.30686662.css">
       
         <link rel="stylesheet" href="../../assets/stylesheets/application-palette.a8b3c06d.css">
       
@@ -55,12 +55,12 @@
       
     
     
-      <script src="../../assets/javascripts/modernizr.268332fc.js"></script>
+      <script src="../../assets/javascripts/modernizr.74668098.js"></script>
     
     
       
         <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&display=fallback">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700|Roboto+Mono&display=fallback">
         <style>body,input{font-family:"Roboto","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono","Courier New",Courier,monospace}</style>
       
     
@@ -474,8 +474,8 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#searching-for-image-asset-usages" class="md-nav__link">
-    Searching For Image Asset Usages
+  <a href="#searching-for-image-usages" class="md-nav__link">
+    Searching For Image Usages
   </a>
   
 </li>
@@ -544,15 +544,15 @@
   
 </li>
         
-          <li class="md-nav__item">
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#search-for-usages" class="md-nav__link">
     Search For Usages
   </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
@@ -1135,10 +1135,29 @@
       <input class="md-toggle md-nav__toggle" data-md-toggle="nav-11-8" type="checkbox" id="nav-11-8">
     
     <label class="md-nav__link" for="nav-11-8">
-      Grids
+      Working with Layouts
     </label>
     <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
       <label class="md-nav__title" for="nav-11-8">
+        Working with Layouts
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-11-8-1" type="checkbox" id="nav-11-8-1">
+    
+    <label class="md-nav__link" for="nav-11-8-1">
+      Grids
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="3">
+      <label class="md-nav__title" for="nav-11-8-1">
         Grids
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
@@ -1153,6 +1172,11 @@
     <a href="../../xamarin-forms/grids/intellisense/" title="Grid Intellisense Commands" class="md-nav__link">
       Grid Intellisense Commands
     </a>
+  </li>
+
+        
+      </ul>
+    </nav>
   </li>
 
         
@@ -1193,6 +1217,18 @@
   <li class="md-nav__item">
     <a href="../../fonts/importing-fonts/" title="Importing Fonts" class="md-nav__link">
       Importing Fonts
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../fonts/generate-font-character-code-class/" title="Generate Font Glyph Code Class" class="md-nav__link">
+      Generate Font Glyph Code Class
     </a>
   </li>
 
@@ -1662,8 +1698,8 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#searching-for-image-asset-usages" class="md-nav__link">
-    Searching For Image Asset Usages
+  <a href="#searching-for-image-usages" class="md-nav__link">
+    Searching For Image Usages
   </a>
   
 </li>
@@ -1732,15 +1768,15 @@
   
 </li>
         
-          <li class="md-nav__item">
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#search-for-usages" class="md-nav__link">
     Search For Usages
   </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
@@ -1786,47 +1822,12 @@
 <p>You can right click on a <em>Xamarin.Android</em> and <em>Xamarin.iOS</em> project file and you'll find <code>Manage Image Assets</code> under the <code>Tools</code> menu.</p>
 <p>Alternatively, double click on and Android or iOS image asset. This will open the image manager, selecting that image in the list.</p>
 <h2 id="overview">Overview</h2>
-<div class="admonition info">
-<p class="admonition-title">What is an image asset?</p>
-<p>MFractor works with the concept of <em>Image Assets</em>, where a single asset is composed by a set of files that represent a single image at each possible density supported by Android or iOS devices. This concept is implemented this concept to facilitate managing those assets, because a single item may be represented by a large number of individual files, and they are also shared among projects.</p>
-<p>For this documentation, every time we use the term <strong>Image Asset</strong>, we are refering the set of images that form a single element as consumed by the user interface engines of the platforms, and we will use the term <strong>Asset File</strong> to refer to a specific item of this set.    </p>
-</div>
-<p>The Image Manager Pad is composed of the following parts:</p>
-<p><img alt="" src="/img/image-management/manage-images-overview.png" /></p>
-<ol>
-<li><strong>The Assets List</strong>: the main listing on the left side of the pane contains all the image assets identified by MFractor in the current solution. The list consider an asset a set of images that compose a single image as recognized by an Android or iOS project.</li>
-<li><strong>The List of Assets File</strong>: when you select an asset from the previous list, MFractor will list the files that compose this asset in this section. Further grouping is provided <em>by project</em> on the Combo Box on the top of this list, where you can select the project of which you want list the files of the asset. The list provides the image size aside with it's path in the solution.</li>
-<li><strong>The Preview Area</strong>: just above the listing of asset files on the Asset, you'll find the preview of the currently selected file along with some metadata of the image: it's current file size and dimensions. </li>
-<li><strong>The Commands Area</strong>: you'll find buttons for the commands available to the image assets on the bottom area of the assets listing.</li>
-</ol>
 <h2 id="filtering-image-assets">Filtering Image assets</h2>
-<p>You can filter image assets using the search bar on the top of the listing. Start typing and MFractor will filter the items that contains the text you've typed.</p>
-<p><img alt="" src="/img/image-management/manage-images-search.png" /></p>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>The filtering tool is case-sensitive.</p>
-</div>
 <h2 id="importing-image-assets">Importing Image Assets</h2>
-<p>Click on the <strong>Import New Image Asset</strong> on the bottom part of the pad to open the <a href="../image-importer/"><strong>Import Image Asset</strong></a> tool. See the section docs for instructions on how to import images.</p>
 <h2 id="deleting-image-assets">Deleting Image Assets</h2>
-<p>You can delete an Image Asset by selecting the image on the assets list and clicking on the <strong>Delete <em>image name</em></strong> on the bottom of the listing. This will present the <em>Delete Image Asset</em> tool dialog, that previews the delete operations that will be run for that asset.</p>
-<p>You can also right click on a asset of the list and select <strong>Delete</strong> from the context menu.</p>
-<p><img alt="" src="/img/image-management/manage-images-delete.png" /></p>
-<p>Click <strong>Delete Images</strong> button to confirm the operation.</p>
-<div class="admonition tip">
-<p class="admonition-title">Tip</p>
-<p>For further information about the MFractor Delete Image Asset tool see the <a href="../deleting-image-assets/">docs of the feature</a>.</p>
-</div>
 <h2 id="optimising-image-assets">Optimising Image Assets</h2>
-<p>Through the Image Asset Manager you can optimise the all images of your solution, a single Image Asset or a specific Asset File. Please check the <a href="../optimising-image-assets/">Optimising Image Assets docs</a> for details on how to setup image optimization and launch it for the desired items of your solution.</p>
-<h2 id="searching-for-image-asset-usages">Searching For Image Asset Usages</h2>
-<p>The Image Asset Manager allows you to search for places where an Image Asset is referenced in your solutions code.</p>
-<div class="admonition warning">
-<p class="admonition-title">Warning</p>
-<p>This feature is currently in preview and will search for the exact name of the asset. This may not detect all usages of this image resource and may detect false positives.</p>
-</div>
-<p>To Invoke the Search Usage feature you should use the context menu over the Image Asset you want to do the search and select the <strong>Find Usages</strong> option. MFractor will present the results on the Search Results Pane on the bottom area of the IDE.</p>
-<p><img alt="" src="/img/image-management/manage-images-find-usages-result.png" /></p>
+<h2 id="searching-for-image-usages">Searching For Image Usages</h2>
+<p><strong>Visual Studio Mac Only</strong></p>
 <h2 id="drag-and-drop">Drag And Drop</h2>
 <p>The image manager supports drag and drop from the image asset list onto a code file.</p>
 <p>When you drag and drop an image onto a code file, the image manager will generate code to access that image.</p>
@@ -1838,7 +1839,7 @@
 <li><strong>C# (Xamarin.Forms)</strong>: <code>"logo.png"</code>;</li>
 </ul>
 <h2 id="context-actions">Context Actions</h2>
-<p>In both the Image Assets list and the Asset Files list, you may right click on any item to launch a context menu that may provide the following options:</p>
+<p>In both the image asset list and the image density list, you may right click on any item to launch a context</p>
 <h3 id="delete">Delete</h3>
 <p>Please see <a href="#deleting-image-assets">Deleting Image Assets</a></p>
 <h3 id="reveal-in-finderexplorer">Reveal In Finder/Explorer</h3>
@@ -1853,11 +1854,10 @@
 <p>Please see <a href="#optimising-image-assets">Optimising Image Assets</a></p>
 <h3 id="open-image">Open Image</h3>
 <p>The <strong>Open</strong> action opens the selected image file in the operating systems default image viewer.</p>
-<h3 id="search-for-usages">Search For Usages</h3>
-<p>Please see <a href="#searching-for-image-asset-usages">Searching For Image Asset Usages</a></p>
+<h2 id="search-for-usages">Search For Usages</h2>
+<p>Please see <a href="#searching-for-image-usages">Searching For Image Usages</a></p>
                 
                   
-                
                 
               
               
@@ -1945,7 +1945,7 @@
       
     </div>
     
-      <script src="../../assets/javascripts/application.808e90bb.js"></script>
+      <script src="../../assets/javascripts/application.ac79c3b0.js"></script>
       
       <script>app.initialize({version:"1.0.4",url:{base:"../.."}})</script>
       
