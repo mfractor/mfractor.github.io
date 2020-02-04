@@ -36,7 +36,7 @@
         <meta name="lang:search.tokenizer" content="[\s\-]+">
       
       <link rel="shortcut icon" href="../../../images/favicon.ico">
-      <meta name="generator" content="mkdocs-1.0.4, mkdocs-material-4.4.3">
+      <meta name="generator" content="mkdocs-1.0.4, mkdocs-material-4.6.0">
     
     
       
@@ -44,7 +44,7 @@
       
     
     
-      <link rel="stylesheet" href="../../../assets/stylesheets/application.30686662.css">
+      <link rel="stylesheet" href="../../../assets/stylesheets/application.1b62728e.css">
       
         <link rel="stylesheet" href="../../../assets/stylesheets/application-palette.a8b3c06d.css">
       
@@ -55,12 +55,12 @@
       
     
     
-      <script src="../../../assets/javascripts/modernizr.74668098.js"></script>
+      <script src="../../../assets/javascripts/modernizr.268332fc.js"></script>
     
     
       
         <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700|Roboto+Mono&display=fallback">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&display=fallback">
         <style>body,input{font-family:"Roboto","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono","Courier New",Courier,monospace}</style>
       
     
@@ -955,29 +955,10 @@
       <input class="md-toggle md-nav__toggle" data-md-toggle="nav-11-8" type="checkbox" id="nav-11-8">
     
     <label class="md-nav__link" for="nav-11-8">
-      Working with Layouts
+      Grids
     </label>
     <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
       <label class="md-nav__title" for="nav-11-8">
-        Working with Layouts
-      </label>
-      <ul class="md-nav__list" data-md-scrollfix>
-        
-        
-          
-          
-          
-
-
-  <li class="md-nav__item md-nav__item--nested">
-    
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-11-8-1" type="checkbox" id="nav-11-8-1">
-    
-    <label class="md-nav__link" for="nav-11-8-1">
-      Grids
-    </label>
-    <nav class="md-nav" data-md-component="collapsible" data-md-level="3">
-      <label class="md-nav__title" for="nav-11-8-1">
         Grids
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
@@ -992,11 +973,6 @@
     <a href="../../grids/intellisense/" title="Grid Intellisense Commands" class="md-nav__link">
       Grid Intellisense Commands
     </a>
-  </li>
-
-        
-      </ul>
-    </nav>
   </li>
 
         
@@ -1037,18 +1013,6 @@
   <li class="md-nav__item">
     <a href="../../../fonts/importing-fonts/" title="Importing Fonts" class="md-nav__link">
       Importing Fonts
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../../../fonts/generate-font-character-code-class/" title="Generate Font Glyph Code Class" class="md-nav__link">
-      Generate Font Glyph Code Class
     </a>
   </li>
 
@@ -1450,33 +1414,33 @@
                 <p>It's also possible to explicitly specify a desired binding context by applying the DesignTimeBindingContext attribute to the code behind class.</p>
 <p>To get started, add the following code file to your project:</p>
 <p><strong>DesignTimeBindingContextAttribute.cs</strong></p>
-<div class="codehilite"><pre><span></span><span class="nv">using</span> <span class="nv">System</span><span class="c1">;</span>
+<div class="codehilite"><pre><span></span>using System;
 
-<span class="nv">namespace</span> <span class="nv">MyApp</span>.<span class="nv">Attributes</span>
+namespace MyApp.Attributes
 {
-    <span class="o">///</span> <span class="o">&lt;</span><span class="nv">summary</span><span class="o">&gt;</span>
-    <span class="o">///</span> <span class="nv">Apply</span> <span class="nv">the</span> <span class="nv">design</span> <span class="nv">time</span> <span class="nv">binding</span> <span class="nv">context</span> <span class="nv">attribute</span> <span class="nv">to</span> <span class="nv">your</span> <span class="nv">code</span><span class="o">-</span><span class="nv">behind</span> <span class="nv">class</span> <span class="nv">to</span> <span class="nv">inform</span> <span class="nv">tools</span> <span class="nv">of</span> <span class="nv">your</span> <span class="nv">intended</span> <span class="nv">runtime</span> <span class="nv">binding</span> <span class="nv">context</span>.
-    <span class="o">///</span> <span class="o">&lt;/</span><span class="nv">summary</span><span class="o">&gt;</span>
-    [<span class="nv">AttributeUsage</span><span class="ss">(</span><span class="nv">AttributeTargets</span>.<span class="nv">Class</span>, <span class="nv">AllowMultiple</span> <span class="o">=</span> <span class="nv">false</span><span class="ss">)</span>]
-    <span class="nv">public</span> <span class="nv">class</span> <span class="nv">DesignTimeBindingContextAttribute</span> : <span class="nv">Attribute</span>
+    /// <span class="nt">&lt;summary&gt;</span>
+    /// Apply the design time binding context attribute to your code-behind class to inform tools of your intended runtime binding context.
+    /// <span class="nt">&lt;/summary&gt;</span>
+    [AttributeUsage(AttributeTargets.Class, AllowMultiple = false)]
+    public class DesignTimeBindingContextAttribute : Attribute
     {
-        <span class="o">///</span> <span class="o">&lt;</span><span class="nv">summary</span><span class="o">&gt;</span>
-        <span class="o">///</span> <span class="nv">Specifies</span> <span class="nv">the</span> <span class="nv">design</span> <span class="nv">time</span> <span class="nv">binding</span> <span class="nv">context</span> <span class="nv">using</span> <span class="nv">a</span> <span class="nv">fully</span> <span class="nv">qualified</span> <span class="nv">type</span> <span class="nv">name</span>.
-        <span class="o">///</span>
-        <span class="o">///</span> <span class="k">For</span> <span class="nv">example</span>: <span class="nv">MyApp</span>.<span class="nv">ViewModels</span>.<span class="nv">LoginViewModel</span>.
-        <span class="o">///</span> <span class="o">&lt;/</span><span class="nv">summary</span><span class="o">&gt;</span>
-        <span class="o">///</span> <span class="o">&lt;</span><span class="nv">param</span> <span class="nv">name</span><span class="o">=</span><span class="s2">&quot;</span><span class="s">typeName</span><span class="s2">&quot;</span><span class="o">&gt;</span><span class="nv">The</span> <span class="nv">fully</span> <span class="nv">qualified</span> <span class="nv">type</span> <span class="nv">name</span> <span class="k">for</span> <span class="nv">the</span> <span class="nv">design</span> <span class="nv">time</span> <span class="nv">binding</span> <span class="nv">context</span>.<span class="o">&lt;/</span><span class="nv">param</span><span class="o">&gt;</span>
-        <span class="nv">public</span> <span class="nv">DesignTimeBindingContextAttribute</span><span class="ss">(</span><span class="nv">string</span> <span class="nv">typeName</span><span class="ss">)</span>
+        /// <span class="nt">&lt;summary&gt;</span>
+        /// Specifies the design time binding context using a fully qualified type name.
+        ///
+        /// For example: MyApp.ViewModels.LoginViewModel.
+        /// <span class="nt">&lt;/summary&gt;</span>
+        /// <span class="nt">&lt;param</span> <span class="na">name=</span><span class="s">&quot;typeName&quot;</span><span class="nt">&gt;</span>The fully qualified type name for the design time binding context.<span class="nt">&lt;/param&gt;</span>
+        public DesignTimeBindingContextAttribute(string typeName)
         {
         }
 
-        <span class="o">///</span> <span class="o">&lt;</span><span class="nv">summary</span><span class="o">&gt;</span>
-        <span class="o">///</span> <span class="nv">Specifies</span> <span class="nv">the</span> <span class="nv">design</span> <span class="nv">time</span> <span class="nv">binding</span> <span class="nv">context</span> <span class="nv">using</span> <span class="nv">typeof</span><span class="ss">()</span>.
-        <span class="o">///</span>
-        <span class="o">///</span> <span class="k">For</span> <span class="nv">example</span>: <span class="nv">typeof</span><span class="ss">(</span><span class="nv">LoginViewModel</span><span class="ss">)</span>
-        <span class="o">///</span> <span class="o">&lt;/</span><span class="nv">summary</span><span class="o">&gt;</span>
-        <span class="o">///</span> <span class="o">&lt;</span><span class="nv">param</span> <span class="nv">name</span><span class="o">=</span><span class="s2">&quot;</span><span class="s">type</span><span class="s2">&quot;</span><span class="o">&gt;</span><span class="nv">The</span> <span class="o">&lt;</span><span class="nv">see</span> <span class="nv">cref</span><span class="o">=</span><span class="s2">&quot;</span><span class="s">System.Type</span><span class="s2">&quot;</span><span class="o">/&gt;</span> <span class="k">for</span> <span class="nv">the</span> <span class="nv">design</span> <span class="nv">time</span> <span class="nv">binding</span> <span class="nv">context</span>, <span class="nv">using</span> <span class="nv">typeof</span><span class="ss">()</span>.<span class="o">&lt;/</span><span class="nv">param</span><span class="o">&gt;</span>
-        <span class="nv">public</span> <span class="nv">DesignTimeBindingContextAttribute</span><span class="ss">(</span><span class="nv">Type</span> <span class="nv">type</span><span class="ss">)</span>
+        /// <span class="nt">&lt;summary&gt;</span>
+        /// Specifies the design time binding context using typeof().
+        ///
+        /// For example: typeof(LoginViewModel)
+        /// <span class="nt">&lt;/summary&gt;</span>
+        /// <span class="nt">&lt;param</span> <span class="na">name=</span><span class="s">&quot;type&quot;</span><span class="nt">&gt;</span>The <span class="nt">&lt;see</span> <span class="na">cref=</span><span class="s">&quot;System.Type&quot;</span><span class="nt">/&gt;</span> for the design time binding context, using typeof().<span class="nt">&lt;/param&gt;</span>
+        public DesignTimeBindingContextAttribute(Type type)
         {
         }
     }
@@ -1492,6 +1456,7 @@
 <p>Applying this attribute directs MFractor at your binding context to enable data-binding IntelliSense, code actions and code analysis for that XAML file.</p>
                 
                   
+                
                 
               
               
@@ -1579,7 +1544,7 @@
       
     </div>
     
-      <script src="../../../assets/javascripts/application.ac79c3b0.js"></script>
+      <script src="../../../assets/javascripts/application.808e90bb.js"></script>
       
       <script>app.initialize({version:"1.0.4",url:{base:"../../.."}})</script>
       
