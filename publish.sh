@@ -1,3 +1,4 @@
+#!/bin/bash
 if [ $# -ne 1 ]
   then
     echo "Please supply a commit message so that the push script can run."

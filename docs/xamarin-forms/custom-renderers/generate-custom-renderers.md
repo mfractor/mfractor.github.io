@@ -2,14 +2,14 @@
 
 ## Introduction
 
-The Generate Custom Renderers is code action that allows you to quickly create the stubs for implementing a custom renderer for a Xamarin.Forms element. When applying it to a eligible element, it will create the renderer class stubs in each of the selected projects including the propert Export attributes.
+MFractor allows you to quickly create the stubs for implementing a custom renderer for a Xamarin.Forms element using a Code Action that can be applied to your custom View Components. When invoked it will create the renderer class stubs in each of the selected projects including the proper export attributes.
 
 ## Using the Code Action
 
 !!! info
     Check the [C# Code Actions](/code-actions) docs for details about how to invoke the Code Actions.
 
-This Code Action can be applied to any type derived from `Page`, `Layout`, `View` or `Cell`, and is available on the class declaration.
+This Code Action can be applied to any type derived from [`Page`](https://docs.microsoft.com/en-us/dotnet/api/xamarin.forms.page?view=xamarin-forms "Xamarin.Forms.Page docs"), [`Layout`](https://docs.microsoft.com/en-us/dotnet/api/xamarin.forms.layout?view=xamarin-forms "Xamarin.Forms.Layout docs"), [`View`](https://docs.microsoft.com/en-us/dotnet/api/xamarin.forms.view?view=xamarin-forms "Xamarin.Forms.View docs") or [`Cell`](https://docs.microsoft.com/en-us/dotnet/api/xamarin.forms.cell?view=xamarin-forms "Xamarin.Forms.Cell docs") types of the [`Xamarin.Forms`](https://www.nuget.org/packages/Xamarin.Forms/) package.
 
 Suppose you want to create an enhanced button component that implements a platform specific feature of Android or iOS native button components. You can start by creating a new class that derives from `Button`, such as:
 
@@ -30,7 +30,7 @@ namespace MFractor.Samples.Views
 
 Place the cursor over the class name declaration and use the shortcuts to invoke the list of available Code Actions. The **Generat custom renderers for EnhancedButton** should be available to this list:
 
-![](/img/xamarin-forms/generate-custom-renderer-menu.png)
+![Invoking the Generate Custom Renderers from the Quick fix menu](/img/xamarin-forms/generate-custom-renderer-menu.png)
 
 Invoking it will present the _Generate Custom Renderers_ dialog:
 
