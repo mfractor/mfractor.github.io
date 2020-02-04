@@ -16,6 +16,11 @@ This document lists the third party software and libraries used by MFractor.
  * URL: [https://github.com/Microsoft/ApplicationInsights-Home](https://github.com/Microsoft/ApplicationInsights-Home)
  * License (MIT): [https://github.com/microsoft/ApplicationInsights-Home/blob/master/LICENSE](https://github.com/microsoft/ApplicationInsights-Home/blob/master/LICENSE)
 
+### Newtonsoft.Json
+
+ * URL: [https://www.newtonsoft.com/json](https://www.newtonsoft.com/json)
+ * License (MIT): [https://github.com/JamesNK/Newtonsoft.Json/blob/master/LICENSE.md](https://github.com/JamesNK/Newtonsoft.Json/blob/master/LICENSE.md)
+
 ### NPOI
 
  * URL: [https://github.com/tonyqus/npoi](https://github.com/tonyqus/npoi)
