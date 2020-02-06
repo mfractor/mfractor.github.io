@@ -36,15 +36,15 @@
         <meta name="lang:search.tokenizer" content="[\s\-]+">
       
       <link rel="shortcut icon" href="../../../images/favicon.ico">
-      <meta name="generator" content="mkdocs-1.0.4, mkdocs-material-4.4.3">
+      <meta name="generator" content="mkdocs-1.0.4, mkdocs-material-4.6.0">
     
     
       
-        <title>Analysis - MFractor Documentation</title>
+        <title>Grid Analysis - MFractor Documentation</title>
       
     
     
-      <link rel="stylesheet" href="../../../assets/stylesheets/application.30686662.css">
+      <link rel="stylesheet" href="../../../assets/stylesheets/application.1b62728e.css">
       
         <link rel="stylesheet" href="../../../assets/stylesheets/application-palette.a8b3c06d.css">
       
@@ -55,12 +55,12 @@
       
     
     
-      <script src="../../../assets/javascripts/modernizr.74668098.js"></script>
+      <script src="../../../assets/javascripts/modernizr.268332fc.js"></script>
     
     
       
         <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700|Roboto+Mono&display=fallback">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&display=fallback">
         <style>body,input{font-family:"Roboto","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono","Courier New",Courier,monospace}</style>
       
     
@@ -116,6 +116,10 @@
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
     <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
     
+      <a href="#introduction" tabindex="1" class="md-skip">
+        Skip to content
+      </a>
+    
     
       <header class="md-header" data-md-component="header">
   <nav class="md-header-nav md-grid">
@@ -138,7 +142,7 @@
             </span>
             <span class="md-header-nav__topic">
               
-                Analysis
+                Grid Analysis
               
             </span>
           
@@ -535,10 +539,12 @@
       
       
 
+  
 
-  <li class="md-nav__item md-nav__item--nested">
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-11" type="checkbox" id="nav-11">
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-11" type="checkbox" id="nav-11" checked>
     
     <label class="md-nav__link" for="nav-11">
       Xamarin.Forms
@@ -938,10 +944,12 @@
           
           
 
+  
 
-  <li class="md-nav__item md-nav__item--nested">
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-11-8" type="checkbox" id="nav-11-8">
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-11-8" type="checkbox" id="nav-11-8" checked>
     
     <label class="md-nav__link" for="nav-11-8">
       Grids
@@ -962,6 +970,112 @@
     <a href="../intellisense/" title="Grid Intellisense Commands" class="md-nav__link">
       Grid Intellisense Commands
     </a>
+  </li>
+
+        
+          
+          
+          
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        Grid Analysis
+      </label>
+    
+    <a href="./" title="Grid Analysis" class="md-nav__link md-nav__link--active">
+      Grid Analysis
+    </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#introduction" class="md-nav__link">
+    Introduction
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#row-and-column-analysis" class="md-nav__link">
+    Row and Column Analysis
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#row-outside-grid-boundary" class="md-nav__link">
+    Row Outside Grid Boundary
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#column-outside-grid-boundary" class="md-nav__link">
+    Column Outside Grid Boundary
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#row-and-column-span-analysis" class="md-nav__link">
+    Row and Column Span Analysis
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#row-span-outside-grid-boundary" class="md-nav__link">
+    Row Span Outside Grid Boundary
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#column-span-outside-grid-boundary" class="md-nav__link">
+    Column Span Outside Grid Boundary
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+      
+      
+      
+      
+        <li class="md-nav__item">
+          <a href="#__comments" class="md-nav__link md-nav__link--active">
+            Comments
+          </a>
+        </li>
+      
+    </ul>
+  
+</nav>
+    
   </li>
 
         
@@ -1402,6 +1516,95 @@
               </div>
             
             
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary">
+  
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#introduction" class="md-nav__link">
+    Introduction
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#row-and-column-analysis" class="md-nav__link">
+    Row and Column Analysis
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#row-outside-grid-boundary" class="md-nav__link">
+    Row Outside Grid Boundary
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#column-outside-grid-boundary" class="md-nav__link">
+    Column Outside Grid Boundary
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#row-and-column-span-analysis" class="md-nav__link">
+    Row and Column Span Analysis
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#row-span-outside-grid-boundary" class="md-nav__link">
+    Row Span Outside Grid Boundary
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#column-span-outside-grid-boundary" class="md-nav__link">
+    Column Span Outside Grid Boundary
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+      
+      
+      
+      
+        <li class="md-nav__item">
+          <a href="#__comments" class="md-nav__link md-nav__link--active">
+            Comments
+          </a>
+        </li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
           
           <div class="md-content">
             <article class="md-content__inner md-typeset">
@@ -1410,11 +1613,32 @@
                   <a href="https://github.com/mfractor/mfractor.github.io/tree/docs/docs/xamarin-forms/grids/analysis.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>
                 
                 
-                  <h1>Analysis</h1>
+                  <h1>Grid Analysis</h1>
                 
-                
+                <div class="admonition quote">
+<p>Inspects XAML Grids child elements to identify if positioning or span is out of boundarys.</p>
+</div>
+<h2 id="introduction">Introduction</h2>
+<p>Grids are one of the most versatile and used layouts provided by Xamarin.Forms. Despite being easy to use, it sometimes hard to keep track of its child elements. MFractor introduces a few Grid Code Analysis to aid on composing your layouts.</p>
+<h2 id="row-and-column-analysis">Row and Column Analysis</h2>
+<p>Those Code Analysis are applied to the <code>Grid.Row</code> and <code>Grid.Column</code> attached properties applied to the child element of a Grid. MFractor inspects the rows and columns definitions of the Grid and check each child element position to check if it's within it's defined bounds.</p>
+<h3 id="row-outside-grid-boundary">Row Outside Grid Boundary</h3>
+<p>If a <code>Grid.Row</code> definition is beyond the Rows Definitions of the parent Grid, MFractor will show a warning for the faulty location:</p>
+<p><img alt="" src="/img/xamarin-forms/grid-analysis-row-out-bounds.png" /></p>
+<h3 id="column-outside-grid-boundary">Column Outside Grid Boundary</h3>
+<p>If a <code>Grid.Column</code> definition is beyond the Columns Definitions of the parent Grid, MFractor will show a warning for the faulty location:</p>
+<p><img alt="" src="/img/xamarin-forms/grid-analysis-column-out-bounds.png" /></p>
+<h2 id="row-and-column-span-analysis">Row and Column Span Analysis</h2>
+<p>Those Code Analysis are applied to the <code>Grid.RowSpan</code> and <code>Grid.ColumnSpan</code> attached properties applied to the child element of a Grid. MFractor inspects the rows and columns definitions of the Grid and check each child element that declares spans to check if they doesn't go beyond the defined bounds.</p>
+<h3 id="row-span-outside-grid-boundary">Row Span Outside Grid Boundary</h3>
+<p>If a <code>Grid.RowSpan</code> definition goes beyond the Rows Definitions from the current Row where the element is placed, MFractor will show a warning for the faulty span size:</p>
+<p><img alt="" src="/img/xamarin-forms/grid-analysis-row-span.png" /></p>
+<h3 id="column-span-outside-grid-boundary">Column Span Outside Grid Boundary</h3>
+<p>If a <code>Grid.RowSpan</code> definition goes beyond the Rows Definitions from the current Row where the element is placed, MFractor will show a warning for the faulty span size:</p>
+<p><img alt="" src="/img/xamarin-forms/grid-analysis-row-span.png" /></p>
                 
                   
+                
                 
               
               
@@ -1446,6 +1670,41 @@
         
 <footer class="md-footer">
   
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid">
+        
+          <a href="../intellisense/" title="Grid Intellisense Commands" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
+            </div>
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Previous
+                </span>
+                Grid Intellisense Commands
+              </span>
+            </div>
+          </a>
+        
+        
+          <a href="../../../fonts/importing-fonts/" title="Importing Fonts" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Next
+                </span>
+                Importing Fonts
+              </span>
+            </div>
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-forward md-footer-nav__button"></i>
+            </div>
+          </a>
+        
+      </nav>
+    </div>
+  
   <div class="md-footer-meta md-typeset">
     <div class="md-footer-meta__inner md-grid">
       <div class="md-footer-copyright">
@@ -1467,7 +1726,7 @@
       
     </div>
     
-      <script src="../../../assets/javascripts/application.ac79c3b0.js"></script>
+      <script src="../../../assets/javascripts/application.808e90bb.js"></script>
       
       <script>app.initialize({version:"1.0.4",url:{base:"../../.."}})</script>
       
