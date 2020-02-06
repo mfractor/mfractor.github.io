@@ -78,6 +78,7 @@ nav:
     - Value Converter Wizard: xamarin-forms/value-converters/value-converter-wizard.md
   - Grids:
     - Grid Intellisense Commands: xamarin-forms/grids/intellisense.md
+    - Grid Analysis: xamarin-forms/grids/analysis.md
 - Fonts:
   - Importing Fonts: fonts/importing-fonts.md
   - Generate Font Glyph Code Class: fonts/generate-font-character-code-class.md
