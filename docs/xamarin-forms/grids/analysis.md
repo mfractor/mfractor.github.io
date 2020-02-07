@@ -1,5 +1,5 @@
 !!! quote ""
-    Inspects XAML Grids child elements to identify if positioning or span is out of boundarys.
+    Inspects XAML `Grid` child elements to identify if positioning or span is out of boundarys.
 
 ## Introduction
 
