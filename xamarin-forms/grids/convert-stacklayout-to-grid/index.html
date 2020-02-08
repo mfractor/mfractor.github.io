@@ -40,7 +40,7 @@
     
     
       
-        <title>Convert stacklayout to grid - MFractor Documentation</title>
+        <title>Convert StackLayout to Grid - MFractor Documentation</title>
       
     
     
@@ -142,7 +142,7 @@
             </span>
             <span class="md-header-nav__topic">
               
-                Convert stacklayout to grid
+                Convert StackLayout to Grid
               
             </span>
           
@@ -539,10 +539,12 @@
       
       
 
+  
 
-  <li class="md-nav__item md-nav__item--nested">
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-11" type="checkbox" id="nav-11">
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-11" type="checkbox" id="nav-11" checked>
     
     <label class="md-nav__link" for="nav-11">
       Xamarin.Forms
@@ -942,10 +944,12 @@
           
           
 
+  
 
-  <li class="md-nav__item md-nav__item--nested">
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-11-8" type="checkbox" id="nav-11-8">
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-11-8" type="checkbox" id="nav-11-8" checked>
     
     <label class="md-nav__link" for="nav-11-8">
       Grids
@@ -978,6 +982,65 @@
     <a href="../analysis/" title="Grid Analysis" class="md-nav__link">
       Grid Analysis
     </a>
+  </li>
+
+        
+          
+          
+          
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        Convert StackLayout to Grid
+      </label>
+    
+    <a href="./" title="Convert StackLayout to Grid" class="md-nav__link md-nav__link--active">
+      Convert StackLayout to Grid
+    </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#introduction" class="md-nav__link">
+    Introduction
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#using-the-converter" class="md-nav__link">
+    Using the Converter
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+        <li class="md-nav__item">
+          <a href="#__comments" class="md-nav__link md-nav__link--active">
+            Comments
+          </a>
+        </li>
+      
+    </ul>
+  
+</nav>
+    
   </li>
 
         
@@ -1468,7 +1531,7 @@
                   <a href="https://github.com/mfractor/mfractor.github.io/tree/docs/docs/xamarin-forms/grids/convert-stacklayout-to-grid.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>
                 
                 
-                  <h1>Convert stacklayout to grid</h1>
+                  <h1>Convert StackLayout to Grid</h1>
                 
                 <div class="admonition quote">
 <p class="admonition-title">Quickly convert a <code>StackLayout</code> to a <code>Grid</code> for refactoring and expanding your layout.</p>
@@ -1477,7 +1540,7 @@
 <p><code>StackLayout</code> is one of the basic layouts provided by Xamarin.Forms and is a common starting point when composing a new view, being fast and easy to use. But it's common to transform a StackLayout into a Grid when the layout starts to become complex, or you need to rethink it to have new column or row.</p>
 <p>MFractor makes easy to convert an existing StackLayout into a Grid with the adequate rows and columns definitions and its elements in place.</p>
 <h2 id="using-the-converter">Using the Converter</h2>
-<p>The Convert StackLayout to Grid tool is presented as a XAML Code Action. The option becomes available to the <strong>Refactor</strong> menu on the Context Menu of a <code>StackLayout</code> element.</p>
+<p>The <em>Convert StackLayout to Grid</em> tool is presented as a XAML Code Action. The option becomes available to the <strong>Refactor</strong> menu on the Context Menu of a <code>StackLayout</code> element.</p>
 <p>Consider a layout for reporting progress to the user. It's composed of an <code>ActivityIndicator</code>, a <code>Label</code> and <code>Button</code> stacked vertically:</p>
 <div class="codehilite"><pre><span></span><span class="nt">&lt;StackLayout&gt;</span>
     <span class="nt">&lt;ActivityIndicator</span>
@@ -1494,6 +1557,12 @@
 
 <p>We may want to transform it into a <code>Grid</code>, so we can add a second column to add new button button to right of the current one. Right-click on the StackLayout element and on the context menu you should find the option <strong>Convert StackLayout to Grid</strong> on the <strong>Refactor</strong> menu:</p>
 <p><img alt="" src="/img/xamarin-forms/convert-stacklayout-to-grid-menu.png" /></p>
+<p>In Visual Studio for Windows this code action will appear in the quick fix menu, the little screwdriver icon that appears to the left of the current line being edited. If you place the cursor under a <code>StackLayout</code> declaration and click on the icon or use the <code>Ctrl + .</code> keyboard shortcut, the option will appear o the menu:</p>
+<p><img alt="" src="/img/xamarin-forms/convert-stacklayout-to-grid-win.png" /></p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The current verison of MFractor for Visual Studio Mac doe not support quick fix actions in XAML, however, this feature should be available in a future version.</p>
+</div>
 <p>By applying this code action, your <code>StackLayout</code> declaration will be transformed into an equivalent Grid declaration, just like below:</p>
 <div class="codehilite"><pre><span></span><span class="nt">&lt;Grid</span>
     <span class="na">HorizontalOptions=</span><span class="s">&quot;Center&quot;</span>
@@ -1562,6 +1631,41 @@
       
         
 <footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid">
+        
+          <a href="../analysis/" title="Grid Analysis" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
+            </div>
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Previous
+                </span>
+                Grid Analysis
+              </span>
+            </div>
+          </a>
+        
+        
+          <a href="../../../fonts/importing-fonts/" title="Importing Fonts" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Next
+                </span>
+                Importing Fonts
+              </span>
+            </div>
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-forward md-footer-nav__button"></i>
+            </div>
+          </a>
+        
+      </nav>
+    </div>
   
   <div class="md-footer-meta md-typeset">
     <div class="md-footer-meta__inner md-grid">
