@@ -79,6 +79,7 @@ nav:
   - Grids:
     - Grid Intellisense Commands: xamarin-forms/grids/intellisense.md
     - Grid Analysis: xamarin-forms/grids/analysis.md
+    - Convert StackLayout to Grid: xamarin-forms/grids/convert-stacklayout-to-grid.md
 - Fonts:
   - Importing Fonts: fonts/importing-fonts.md
   - Generate Font Glyph Code Class: fonts/generate-font-character-code-class.md

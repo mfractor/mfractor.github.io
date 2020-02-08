@@ -9,7 +9,7 @@ MFractor makes easy to convert an existing StackLayout into a Grid with the adeq
 
 ## Using the Converter
 
-The Convert StackLayout to Grid tool is presented as a XAML Code Action. The option becomes available to the **Refactor** menu on the Context Menu of a `StackLayout` element.
+The _Convert StackLayout to Grid_ tool is presented as a XAML Code Action. The option becomes available to the **Refactor** menu on the Context Menu of a `StackLayout` element.
 
 Consider a layout for reporting progress to the user. It's composed of an `ActivityIndicator`, a `Label` and `Button` stacked vertically:
 
@@ -29,6 +29,13 @@ Consider a layout for reporting progress to the user. It's composed of an `Activ
 We may want to transform it into a `Grid`, so we can add a second column to add new button button to right of the current one. Right-click on the StackLayout element and on the context menu you should find the option **Convert StackLayout to Grid** on the **Refactor** menu:
 
 ![](/img/xamarin-forms/convert-stacklayout-to-grid-menu.png)
+
+In Visual Studio for Windows this code action will appear in the quick fix menu, the little screwdriver icon that appears to the left of the current line being edited. If you place the cursor under a `StackLayout` declaration and click on the icon or use the `Ctrl + .` keyboard shortcut, the option will appear o the menu:
+
+![](/img/xamarin-forms/convert-stacklayout-to-grid-win.png)
+
+!!! note
+    The current verison of MFractor for Visual Studio Mac doe not support quick fix actions in XAML, however, this feature should be available in a future version.
 
 By applying this code action, your `StackLayout` declaration will be transformed into an equivalent Grid declaration, just like below:
 
