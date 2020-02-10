@@ -23,7 +23,7 @@ Alternatively, double click on and Android or iOS image asset. This will open th
 ## Overview
 
 !!! info "What is an image asset?"
-    MFractor works with the concept of _Image Assets_, where a single asset is composed by a set of files that represent a single image at each possible density supported by Android or iOS devices. This concept is implemented this concept to facilitate managing those assets, because a single item may be represented by a large number of individual files, and they are also shared among projects.
+    MFractor works with the concept of _Image Assets_, where a single asset is composed by a set of files that represent a single image at each possible density supported by Android or iOS devices. This concept is implemented to facilitate managing those assets, because a single item may be represented by a large number of individual files, that can also be shared among projects.
 
     For this documentation, every time we use the term **Image Asset**, we are refering the set of images that form a single element as consumed by the user interface engines of the platforms, and we will use the term **Asset File** to refer to a specific item of this set.    
 
