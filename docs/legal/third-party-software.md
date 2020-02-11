@@ -21,11 +21,6 @@ This document lists the third party software and libraries used by MFractor.
  * URL: [https://www.newtonsoft.com/json](https://www.newtonsoft.com/json)
  * License (MIT): [https://github.com/JamesNK/Newtonsoft.Json/blob/master/LICENSE.md](https://github.com/JamesNK/Newtonsoft.Json/blob/master/LICENSE.md)
 
-### NPOI
-
- * URL: [https://github.com/tonyqus/npoi](https://github.com/tonyqus/npoi)
- * License (Apache License 2.0): [https://github.com/tonyqus/npoi/blob/master/LICENSE](https://github.com/tonyqus/npoi/blob/master/LICENSE)
-
 ### Open Toolkit Library
 
  * URL: [https://github.com/opentk/opentk](https://github.com/opentk/opentk)
