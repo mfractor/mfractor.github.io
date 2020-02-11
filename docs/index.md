@@ -1,6 +1,8 @@
 ## Welcome
 
-Welcome to the documentation for MFractor, a powerful productivity tool for Visual Studio Windows and Mac to streamline the development of Xamarin applications.
+Welcome to the documentation for MFractor, a powerful productivity tool for Xamarin developers.
+
+MFractor is available for the Visual Studio Windows and Visaul Studio Mac.
 
 ## Getting Started
 
