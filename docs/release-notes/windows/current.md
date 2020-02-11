@@ -1,9 +1,10 @@
 !!! quote "A summary of our current release of MFractor for Visual Studio Windows"
 
-The current version of MFractor for Visual Studio Windows is v0.5.0
+The current version of MFractor for Visual Studio Windows is v0.6.0
 
 ## Releases (v0)
 
+ * [v0.6.0 - Released on February 12th 2020](v0/v0.6.md#v0.6.0): **Preview 6** release of MFractor for Visual Studio Windows.
  * [v0.5.0 - Released on February 11th 2020](v0/v0.5.md#v0.5.0): **Preview 5** release of MFractor for Visual Studio Windows.
  * [v0.4.0 - Released on February 4th 2020](v0/v0.4.md#v0.4.0): **Preview 4** release of MFractor for Visual Studio Windows.
  * [v0.3.0 - Released on January 28th 2020](v0/v0.3.md#v0.3.0): **Preview 3** release of MFractor for Visual Studio Windows.

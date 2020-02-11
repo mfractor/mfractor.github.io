@@ -98,6 +98,7 @@ nav:
   - Windows:
     - Current Release: release-notes/windows/current.md
     - v0:
+      - v0.6: release-notes/windows/v0/v0.6.md
       - v0.5: release-notes/windows/v0/v0.5.md
       - v0.4: release-notes/windows/v0/v0.4.md
       - v0.3: release-notes/windows/v0/v0.3.md
