@@ -25,6 +25,7 @@ All the Features are available to the Visual Studio for Mac extension. The third
 | [Delete Image Tool](https://docs.mfractor.com/image-management/deleting-image-assets/)	|  	| ✅	| Mac	
 | [Optimise Image Tools](https://docs.mfractor.com/image-management/optimising-image-assets/)	|  	| ✅	| Mac	
 | Image Tooltips	|  	| ✅	| Mac	
+
 ### Font Management
 
 | Feature	| Lite	| Pro	| Platforms	
@@ -61,11 +62,13 @@ All the Features are available to the Visual Studio for Mac extension. The third
 | Copy Var Type To Clipboard	|  	| ✅	| Mac	
 | Simplify Qualified Type	|  	| ✅	| Mac	
 | Simplify All Qualified Types	|  	| ✅	| Mac	
+
 ### Xamarin Code Actions
 
 | Feature	| Lite	| Pro	| Platforms	
 |---	|---	|---	|---	
 | Exclude Symbol from Linker	|  	| ✅	| Mac	
+
 ### Xamarin.Forms Code Actions
 
 | Feature	| Lite	| Pro	| Platforms	
@@ -73,6 +76,7 @@ All the Features are available to the Visual Studio for Mac extension. The third
 | Create Bindable Property	|  	| ✅	| Mac	
 | Create Attached Property	|  	| ✅	| Mac	
 | [Generate Custom Renderers](https://docs.mfractor.com/xamarin-forms/custom-renderers/generate-custom-renderers/)	|  	| ✅	| Mac	
+
 ### XAML Code Actions
 
 | Feature	| Lite	| Pro	| Platforms	
