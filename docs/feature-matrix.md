@@ -3,17 +3,6 @@ This feature matrix presents all the features available to MFractor by Category
 
 All the Features are available to the Visual Studio for Mac extension. The third column shows features already available to the Windows version.
 
-
-## Utilities
-
-### Utilities
-
-| Feature	| Lite	| Pro	| Platforms	
-|---	|---	|---	|---	
-| [Delete Output Folder](https://docs.mfractor.com/utilities/delete-output-folders/)	|  	| ✅	| Mac/Win	
-| [Clean and Compress](https://docs.mfractor.com/utilities/clean-and-compress/)	|  	| ✅	| Mac/Win	
-| [Edit Shared Project Items](https://docs.mfractor.com/utilities/edit-shared-project-items/)	|  	| ✅	| Mac	
-
 ## Asset Management
 
 ### Image Management
@@ -22,16 +11,16 @@ All the Features are available to the Visual Studio for Mac extension. The third
 |---	|---	|---	|---	
 | [Import Image Assets](https://docs.mfractor.com/image-management/image-importer/)	|  	| ✅	| Mac/Win	
 | [Manage Image Assets](https://docs.mfractor.com/image-management/managing-image-assets/)	|  	| ✅	| Mac/Win	
-| [Delete Image Tool](https://docs.mfractor.com/image-management/deleting-image-assets/)	|  	| ✅	| Mac	
-| [Optimise Image Tools](https://docs.mfractor.com/image-management/optimising-image-assets/)	|  	| ✅	| Mac	
-| Image Tooltips	|  	| ✅	| Mac	
+| [Delete Image Tool](https://docs.mfractor.com/image-management/deleting-image-assets/)	|  	| ✅	| Mac/Win	
+| [Optimise Image Tools](https://docs.mfractor.com/image-management/optimising-image-assets/)	|  	| ✅	| Mac/Win	
+| Image Tooltips	|  	| ✅	| Mac/Win	
 
 ### Font Management
 
 | Feature	| Lite	| Pro	| Platforms	
 |---	|---	|---	|---	
-| [Import Font](https://docs.mfractor.com/fonts/importing-fonts/)	|  	| ✅	| Mac	
-| [Generate Font Glyph Code Class](https://docs.mfractor.com/fonts/generate-font-character-code-class/)	|  	| ✅	| Mac	
+| [Import Font](https://docs.mfractor.com/fonts/importing-fonts/)	|  	| ✅	| Mac/Win	
+| [Generate Font Glyph Code Class](https://docs.mfractor.com/fonts/generate-font-character-code-class/)	|  	| ✅	| Mac/Win	
 
 ## Wizards
 
@@ -39,9 +28,9 @@ All the Features are available to the Visual Studio for Mac extension. The third
 
 | Feature	| Lite	| Pro	| Platforms	
 |---	|---	|---	|---	
-| Localization Wizard	|  	| ✅	| Mac	
-| MVVM Wizard	|  	| ✅	| Mac	
-| [Value Converter Wizard](https://docs.mfractor.com/xamarin-forms/value-converters/value-converter-wizard/)	|  	| ✅	| Mac	
+| Localization Wizard	|  	| ✅	| Mac/Win	
+| MVVM Wizard	|  	| ✅	| Mac/Win	
+| [Value Converter Wizard](https://docs.mfractor.com/xamarin-forms/value-converters/value-converter-wizard/)	|  	| ✅	| Mac/Win	
 
 ## Code Actions
 
@@ -49,19 +38,19 @@ All the Features are available to the Visual Studio for Mac extension. The third
 
 | Feature	| Lite	| Pro	| Platforms	
 |---	|---	|---	|---	
-| [Generate Interface Implementation](https://docs.mfractor.com/csharp/code-actions/generate-interface-implementation/)|  	| ✅	| Mac	
-| [Simplify Qualified Types](https://docs.mfractor.com/csharp/code-actions/simplify-qualified-types/)	|  	| ✅	| Mac	
-| [Locate in Solution Explorer](https://docs.mfractor.com/csharp/code-actions/locate-in-solution-explorer/)	|  	| ✅	| Mac	
-| [Create Lazy Field Property](https://docs.mfractor.com/csharp/code-actions/create-lazy-field-property/)	|  	| ✅	| Mac	
-| [Convert to Interpolated String](https://docs.mfractor.com/csharp/code-actions/convert-to-interpolated-string/)	|  	| ✅	| Mac	
-| Create constructor to initialize all readonly members	|  	| ✅	| Mac	
-| Create Lazy Field Accessor	|  	| ✅	| Mac	
+| [Generate Interface Implementation](https://docs.mfractor.com/csharp/code-actions/generate-interface-implementation/)|  	| ✅	| Mac/Win	
+| [Simplify Qualified Types](https://docs.mfractor.com/csharp/code-actions/simplify-qualified-types/)	|  	| ✅	| Mac/Win	
+| [Locate in Solution Explorer](https://docs.mfractor.com/csharp/code-actions/locate-in-solution-explorer/)	|  	| ✅	| Mac/Win	
+| [Create Lazy Field Property](https://docs.mfractor.com/csharp/code-actions/create-lazy-field-property/)	|  	| ✅	| Mac/Win	
+| [Convert to Interpolated String](https://docs.mfractor.com/csharp/code-actions/convert-to-interpolated-string/)	|  	| ✅	| Mac/Win	
+| Create constructor to initialize all readonly members	|  	| ✅	| Mac/Win	
+| Create Lazy Field Accessor	|  	| ✅	| Mac/Win	
 | Locate Class File In Solution Explorer	|  	| ✅	| Mac	
 | Select String Span	|  	| ✅	| Mac	
-| Align Namespace To Folder Path	|  	| ✅	| Mac	
-| Copy Var Type To Clipboard	|  	| ✅	| Mac	
-| Simplify Qualified Type	|  	| ✅	| Mac	
-| Simplify All Qualified Types	|  	| ✅	| Mac	
+| Align Namespace To Folder Path	|  	| ✅	| Mac/Win	
+| Copy Var Type To Clipboard	|  	| ✅	| Mac/Win	
+| Simplify Qualified Type	|  	| ✅	| Mac/Win	
+| Simplify All Qualified Types	|  	| ✅	| Mac/Win	
 
 ### Xamarin Code Actions
 
@@ -73,52 +62,52 @@ All the Features are available to the Visual Studio for Mac extension. The third
 
 | Feature	| Lite	| Pro	| Platforms	
 |---	|---	|---	|---	
-| Create Bindable Property	|  	| ✅	| Mac	
-| Create Attached Property	|  	| ✅	| Mac	
+| Create Bindable Property	|  	| ✅	| Mac/Win	
+| Create Attached Property	|  	| ✅	| Mac/Win	
 | [Generate Custom Renderers](https://docs.mfractor.com/xamarin-forms/custom-renderers/generate-custom-renderers/)	|  	| ✅	| Mac	
 
 ### XAML Code Actions
 
 | Feature	| Lite	| Pro	| Platforms	
 |---	|---	|---	|---	
-| Extract XAML Style	|  	| ✅	| Mac	
-| Extract Custom Control	|  	| ✅	| Mac	
-| Generate a new View Model for XAML view	|  	| ✅	| Mac	
-| Convert StackLayout to Grid	|  	| ✅	| Mac	
-| Generate Resource Dictionary	|  	| ✅	| Mac	
-| Generate New Value Converter for Type Flow	|  	| ✅	| Mac	
-| Generate Xaml Localisation Infrastructure	|  	| ✅	| Mac	
-| Encapsulate Content Page Children With StackLayout	|  	| ✅	| Mac	
-| Encapsulate Content Page Children With Grid	|  	| ✅	| Mac	
-| Encapsulate Content View Children With StackLayout	|  	| ✅	| Mac	
-| Encapsulate Content View Children With Grid	|  	| ✅	| Mac	
-| Correct Member Name	|  	| ✅	| Mac	
-| Create Missing Property For Class	|  	| ✅	| Mac	
-| Fixs Malformed Color Using Color Editor	|  	| ✅	| Mac	
-| Replace Color Value With StaticResource	|  	| ✅	| Mac	
-| Replace Hexadecimal Value With Named Color	|  	| ✅	| Mac	
-| Generate Event Handler	|  	| ✅	| Mac	
-| Correct Name To Matching Callback	|  	| ✅	| Mac	
-| Remove Redundant Grid Properties	|  	| ✅	| Mac	
-| Autocorrect Invalid FontSize	|  	| ✅	| Mac	
-| Correct Property Binding Name	|  	| ✅	| Mac	
-| Import Value Converter For Binding Type Flow	|  	| ✅	| Mac	
-| Correct Image Resource name	|  	| ✅	| Mac	
-| Import Missing Image Resource	|  	| ✅	| Mac	
-| Encapsulate Scroll View Children With Grid	|  	| ✅	| Mac	
-| Encapsulate Scroll View Children With StackLayout	|  	| ✅	| Mac	
-| Correct Static Resource Name	|  	| ✅	| Mac	
-| Apply Available Style	|  	| ✅	| Mac	
-| Remove Redundant Style Property Initialisation	|  	| ✅	| Mac	
-| Replace Style Setter Property With Autocorrection	|  	| ✅	| Mac	
-| Add Missing Target Type Attribute	|  	| ✅	| Mac	
-| Replace Thickness Value With Static Resource	|  	| ✅	| Mac	
-| Simplify Thickness Value	|  	| ✅	| Mac	
-| Add Trigger Target Type	|  	| ✅	| Mac	
-| Fix Trigger Target Type	|  	| ✅	| Mac	
-| Import Namespace And Assembly For Unresolved XAML Node	|  	| ✅	| Mac	
-| Replace Node With Auto-Correction	|  	| ✅	| Mac	
-| Rename Duplicate Namespace References	|  	| ✅	| Mac	
+| Extract XAML Style	|  	| ✅	| Mac/Win	
+| Extract Custom Control	|  	| ✅	| Mac/Win	
+| Generate a new View Model for XAML view	|  	| ✅	| Mac/Win	
+| Convert StackLayout to Grid	|  	| ✅	| Mac/Win	
+| Generate Resource Dictionary	|  	| ✅	| Mac/Win	
+| Generate New Value Converter for Type Flow	|  	| ✅	| Mac/Win	
+| Generate Xaml Localisation Infrastructure	|  	| ✅	| Mac/Win	
+| Encapsulate Content Page Children With StackLayout	|  	| ✅	| Mac/Win	
+| Encapsulate Content Page Children With Grid	|  	| ✅	| Mac/Win	
+| Encapsulate Content View Children With StackLayout	|  	| ✅	| Mac/Win	
+| Encapsulate Content View Children With Grid	|  	| ✅	| Mac/Win	
+| Correct Member Name	|  	| ✅	| Mac/Win	
+| Create Missing Property For Class	|  	| ✅	| Mac/Win	
+| Fixs Malformed Color Using Color Editor	|  	| ✅	| Mac/Win	
+| Replace Color Value With StaticResource	|  	| ✅	| Mac/Win	
+| Replace Hexadecimal Value With Named Color	|  	| ✅	| Mac/Win	
+| Generate Event Handler	|  	| ✅	| Mac/Win	
+| Correct Name To Matching Callback	|  	| ✅	| Mac/Win	
+| Remove Redundant Grid Properties	|  	| ✅	| Mac/Win	
+| Autocorrect Invalid FontSize	|  	| ✅	| Mac/Win	
+| Correct Property Binding Name	|  	| ✅	| Mac/Win	
+| Import Value Converter For Binding Type Flow	|  	| ✅	| Mac/Win	
+| Correct Image Resource name	|  	| ✅	| Mac/Win	
+| Import Missing Image Resource	|  	| ✅	| Mac/Win	
+| Encapsulate Scroll View Children With Grid	|  	| ✅	| Mac/Win	
+| Encapsulate Scroll View Children With StackLayout	|  	| ✅	| Mac/Win	
+| Correct Static Resource Name	|  	| ✅	| Mac/Win	
+| Apply Available Style	|  	| ✅	| Mac/Win	
+| Remove Redundant Style Property Initialisation	|  	| ✅	| Mac/Win	
+| Replace Style Setter Property With Autocorrection	|  	| ✅	| Mac/Win	
+| Add Missing Target Type Attribute	|  	| ✅	| Mac/Win	
+| Replace Thickness Value With Static Resource	|  	| ✅	| Mac/Win	
+| Simplify Thickness Value	|  	| ✅	| Mac/Win	
+| Add Trigger Target Type	|  	| ✅	| Mac/Win	
+| Fix Trigger Target Type	|  	| ✅	| Mac/Win	
+| Import Namespace And Assembly For Unresolved XAML Node	|  	| ✅	| Mac/Win	
+| Replace Node With Auto-Correction	|  	| ✅	| Mac/Win	
+| Rename Duplicate Namespace References	|  	| ✅	| Mac/Win	
 
 ## Xamarin.Forms
 
@@ -126,11 +115,11 @@ All the Features are available to the Visual Studio for Mac extension. The third
 
 | Feature	| Lite	| Pro	| Platforms	
 |---	|---	|---	|---	
-| Go To View Model	|  	| ✅	| Mac	
-| Go To Code Behind	|  	| ✅	| Mac	
-| Go To Xaml View	|  	| ✅	| Mac	
-| Go To Xaml Symbol	|  	| ✅	| Mac	
-| [Find Custom Renderers](https://docs.mfractor.com/xamarin-forms/custom-renderers/find-custom-renderers/)	|  	| ✅	| Mac	
+| Go To View Model	|  	| ✅	| Mac/Win	
+| Go To Code Behind	|  	| ✅	| Mac/Win	
+| Go To Xaml View	|  	| ✅	| Mac/Win	
+| Go To Xaml Symbol	|  	| ✅	| Mac/Win	
+| [Find Custom Renderers](https://docs.mfractor.com/xamarin-forms/custom-renderers/find-custom-renderers/)	|  	| ✅	| Mac/Win	
 
 ## Code Analysis
 
@@ -223,4 +212,14 @@ All the Features are available to the Visual Studio for Mac extension. The third
 | Color Value Matches Static Resource	|  	| ✅	| Mac	
 | Color Value Closely Matches Available Static Resource	|  	| ✅	| Mac	
 | Hexadecimal Value Matches Named Color	|  	| ✅	| Mac	
-| Malformed Hexadecimal Color Value	|  	| ✅	| Mac
+| Malformed Hexadecimal Color Value	|  	| ✅	| Mac	
+
+## Utilities
+
+### Utilities
+
+| Feature	| Lite	| Pro	| Platforms	
+|---	|---	|---	|---	
+| [Delete Output Folder](https://docs.mfractor.com/utilities/delete-output-folders/)	|  	| ✅	| Mac/Win	
+| [Clean and Compress](https://docs.mfractor.com/utilities/clean-and-compress/)	|  	| ✅	| Mac/Win	
+| [Edit Shared Project Items](https://docs.mfractor.com/utilities/edit-shared-project-items/)	|  	| ✅	| Mac
