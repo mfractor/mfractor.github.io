@@ -214,12 +214,48 @@ All the Features are available to the Visual Studio for Mac extension. The third
 | Hexadecimal Value Matches Named Color	|  	| ✅	| Mac/Win	
 | Malformed Hexadecimal Color Value	|  	| ✅	| Mac/Win	
 
+## Intellisense
+
+### XAML Intellisense Completions
+
+| Feature	| Lite	| Pro	| Platforms	
+|---	|---	|---	|---	
+| x:Name Shorthand Completion	|  	| ✅	| Mac	
+| x:Key Shorthand Completion	|  	| ✅	| Mac	
+| Color Value Completion	|  	| ✅	| Mac	
+| DataBinding Shorthand Completion	|  	| ✅	| Mac	
+| DataTrigger Binding Shorthand Completion	|  	| ✅	| Mac	
+| Event Handler Completion	|  	| ✅	| Mac	
+| Font Asset Completion	|  	| ✅	| Mac	
+| Grid Boilerplate Completion	|  	| ✅	| Mac	
+| Grid Location Completion	|  	| ✅	| Mac	
+| Grid Unit Completion	|  	| ✅	| Mac	
+| Image Asset Completion	|  	| ✅	| Mac	
+| Import Font Asset Completion	|  	| ✅	| Mac	
+| Property Setter Completion	|  	| ✅	| Mac	
+| RepeaterView Boilerplate Completion	|  	| ✅	| Mac	
+| Row/Column Shorthand Completion	|  	| ✅	| Mac	
+| Setter Shorthand Completion	|  	| ✅	| Mac	
+| StackLayout Orientation Shorthand Completion	|  	| ✅	| Mac	
+| Star/Auto Shorthand Completion	|  	| ✅	| Mac	
+| Thickness Attribute Completion	|  	| ✅	| Mac	
+
 ## Utilities
 
-### Utilities
+### Project and Solution Utilities
 
 | Feature	| Lite	| Pro	| Platforms	
 |---	|---	|---	|---	
 | [Delete Output Folder](https://docs.mfractor.com/utilities/delete-output-folders/)	|  	| ✅	| Mac/Win	
 | [Clean and Compress](https://docs.mfractor.com/utilities/clean-and-compress/)	|  	| ✅	| Mac/Win	
-| [Edit Shared Project Items](https://docs.mfractor.com/utilities/edit-shared-project-items/)	|  	| ✅	| Mac
+| [Edit Shared Project Items](https://docs.mfractor.com/utilities/edit-shared-project-items/)	|  	| ✅	| Mac	
+
+### Search Categories
+
+| Feature	| Lite	| Pro	| Platforms	
+|---	|---	|---	|---	
+| MFractor Commands Search	| ✅	| ✅	| Mac	
+| ResX Localisation Search	| ✅	| ✅	| Mac	
+| Xamarin.Forms Automation Identifiers Search	| ✅	| ✅	| Mac	
+| Xamarin.Forms Static Resources Search	| ✅	| ✅	| Mac	
+| Xamarin.Forms Dynamic Resources Search	| ✅	| ✅	| Mac	
