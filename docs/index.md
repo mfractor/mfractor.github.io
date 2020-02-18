@@ -2,7 +2,11 @@
 
 Welcome to the documentation for MFractor, a powerful productivity tool for Xamarin developers.
 
-MFractor is available for the Visual Studio Windows and Visaul Studio Mac.
+MFractor is available for the Visual Studio Windows and Visual Studio Mac.
+
+## Feature Matrix
+
+Check out the [MFractor Feature Matrix](/feature-matrix) for a list of all the featuers available to the product and to what editions and platforms it's available.
 
 ## Getting Started
 

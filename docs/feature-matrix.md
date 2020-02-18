@@ -123,96 +123,96 @@ All the Features are available to the Visual Studio for Mac extension. The third
 
 ## Code Analysis
 
-### Code Analysis
+### XAML Code Analysis
 
 | Feature	| Lite	| Pro	| Platforms	
 |---	|---	|---	|---	
-| Duplicate AutomationIds	|  	| ✅	| Mac	
-| Empty AutomationId Declaration	|  	| ✅	| Mac	
-| x:Name Has Invalid Characters	|  	| ✅	| Mac	
-| Duplicate Code Behind Field Declarations	|  	| ✅	| Mac	
-| Empty Code Behind Field Declaration	|  	| ✅	| Mac	
-| ContentPage Has Multiple Direct Children	|  	| ✅	| Mac	
-| ContentView Has Multiple Direct Children	|  	| ✅	| Mac	
-| Class Does Not Have Attached Property	|  	| ✅	| Mac	
-| Empty Value Assignment	|  	| ✅	| Mac	
-| Empty Event Handler Assignment	|  	| ✅	| Mac	
-| Event Handler Exists In Code Behind Class	|  	| ✅	| Mac	
-| Event Handler Signature Mismatch	|  	| ✅	| Mac	
-| Referenced Code Behind Field Exists	|  	| ✅	| Mac	
-| Value Converter Input Type Mismatch	|  	| ✅	| Mac	
-| Value Converter Output Type Mismatch	|  	| ✅	| Mac	
-| Unresolved .NET Symbols Within Xaml Expression	|  	| ✅	| Mac	
-| Unresolved Namespace Within Xaml Expression	|  	| ✅	| Mac	
-| Invalid Named Font Size	|  	| ✅	| Mac	
-| Generic Usage Is Missing x:TypeArguments	|  	| ✅	| Mac	
-| x:TypeArguments Used On Non-Generic Class	|  	| ✅	| Mac	
-| Unknown Type Provided To Generic	|  	| ✅	| Mac	
-| Column Is Outside Grid Boundaries	|  	| ✅	| Mac	
-| ColumnSpan Is Outside Grid Boundaries	|  	| ✅	| Mac	
-| ColumnSpan Is Zero	|  	| ✅	| Mac	
-| Grid.Column Usage Is Redundant	|  	| ✅	| Mac	
-| Grid.ColumnSpan Usage Is Redundant	|  	| ✅	| Mac	
-| Grid.Row Usage Is Redundant	|  	| ✅	| Mac	
-| Grid.RowSpan Usage Is Redundant	|  	| ✅	| Mac	
-| Row Is Outside Grid Boundaries	|  	| ✅	| Mac	
-| RowSpan Is Outside Grid Boundaries	|  	| ✅	| Mac	
-| RowSpan Is Zero	|  	| ✅	| Mac	
-| Obsolete Property Used	|  	| ✅	| Mac	
-| OnIdiom Return Type Mismatch	|  	| ✅	| Mac	
-| OnPlatform Return Type Mismatch	|  	| ✅	| Mac	
-| Referenced Attribute Member Exists In Parent Type	|  	| ✅	| Mac	
-| Property Node Maps To Member In Parent Type	|  	| ✅	| Mac	
-| Property Setter Node Misuse	|  	| ✅	| Mac	
-| Property Setter Type Mismatch	|  	| ✅	| Mac	
-| Duplicate Resource Dictionary Keys	|  	| ✅	| Mac	
-| Resource Entry Does Not Define Key	|  	| ✅	| Mac	
-| Unused Resource	|  	| ✅	| Mac	
-| Missing Microsoft Schema	|  	| ✅	| Mac	
-| ScrollView Has Multiple Direct Children	|  	| ✅	| Mac	
-| Style Is Missing TargetType	|  	| ✅	| Mac	
-| Property Setter Does Not Exist In Style TargetType	|  	| ✅	| Mac	
-| Invalid Thickness Attribute Value	|  	| ✅	| Mac	
-| Unknown Field Modifier	|  	| ✅	| Mac	
-| Unknown Static Property Value	|  	| ✅	| Mac	
-| Validate Value Types	|  	| ✅	| Mac	
-| Duplicate Namespace Declaration	|  	| ✅	| Mac	
-| Unresolved Xml Namespace	|  	| ✅	| Mac	
-| Unresolved Xmlns Assembly	|  	| ✅	| Mac	
-| Xaml Node Resolves	|  	| ✅	| Mac	
-| Trigger Is Missing Target Type	|  	| ✅	| Mac	
-| Trigger TargetType Does Not Match Parent	|  	| ✅	| Mac	
-| Thickness Value Can Be Replaced By Static Resource	|  	| ✅	| Mac	
-| Thickness Value Can Be Simplified	|  	| ✅	| Mac	
-| Element Can Use Available Style	|  	| ✅	| Mac	
-| Property Value Is Already Applied By Style	|  	| ✅	| Mac	
-| Style TargetType Does Not Match BasedOn TargetType	|  	| ✅	| Mac	
-| Ambiguous Static Resource Reference	|  	| ✅	| Mac	
-| No Key Provided To Static Resource Expression	|  	| ✅	| Mac	
-| StaticResource Return Type Mismatch	|  	| ✅	| Mac	
-| Static Resource Style Target Type Is Incompatible	|  	| ✅	| Mac	
-| x:Static Return Type Mismatch	|  	| ✅	| Mac	
-| Undefined Static Resource Usage	|  	| ✅	| Mac	
-| Slider Minimum Set Before Maximum	|  	| ✅	| Mac	
-| Duplicate ShellItem Route	|  	| ✅	| Mac	
-| Empty Shell Route Scheme	|  	| ✅	| Mac	
-| Multiple VisualElements Defined In Shell Content	|  	| ✅	| Mac	
-| Shell Requires At Least One Shell Item	|  	| ✅	| Mac	
-| Validate Setter Attached Property Usage	|  	| ✅	| Mac	
-| Setter Property Exists	|  	| ✅	| Mac	
-| Style Or Trigger Has Duplicate Setters	|  	| ✅	| Mac	
-| Resource Key Conflict	|  	| ✅	| Mac	
-| Detect Missing Image In Linked Projects	|  	| ✅	| Mac	
-| Grid Row/Column Setter Is Not A Number	|  	| ✅	| Mac	
-| No Key Provided To DynamicResource Expression	|  	| ✅	| Mac	
-| Validate Binding Expressions Return A Property	|  	| ✅	| Mac	
-| Binding Against Non-Public Property	|  	| ✅	| Mac	
-| Binding Expressions Resolve	|  	| ✅	| Mac	
-| Binding Expression Return Type Mismatch	|  	| ✅	| Mac	
-| Color Value Matches Static Resource	|  	| ✅	| Mac	
-| Color Value Closely Matches Available Static Resource	|  	| ✅	| Mac	
-| Hexadecimal Value Matches Named Color	|  	| ✅	| Mac	
-| Malformed Hexadecimal Color Value	|  	| ✅	| Mac	
+| Duplicate AutomationIds	|  	| ✅	| Mac/Win	
+| Empty AutomationId Declaration	|  	| ✅	| Mac/Win	
+| x:Name Has Invalid Characters	|  	| ✅	| Mac/Win	
+| Duplicate Code Behind Field Declarations	|  	| ✅	| Mac/Win	
+| Empty Code Behind Field Declaration	|  	| ✅	| Mac/Win	
+| ContentPage Has Multiple Direct Children	|  	| ✅	| Mac/Win	
+| ContentView Has Multiple Direct Children	|  	| ✅	| Mac/Win	
+| Class Does Not Have Attached Property	|  	| ✅	| Mac/Win	
+| Empty Value Assignment	|  	| ✅	| Mac/Win	
+| Empty Event Handler Assignment	|  	| ✅	| Mac/Win	
+| Event Handler Exists In Code Behind Class	|  	| ✅	| Mac/Win	
+| Event Handler Signature Mismatch	|  	| ✅	| Mac/Win	
+| Referenced Code Behind Field Exists	|  	| ✅	| Mac/Win	
+| Value Converter Input Type Mismatch	|  	| ✅	| Mac/Win	
+| Value Converter Output Type Mismatch	|  	| ✅	| Mac/Win	
+| Unresolved .NET Symbols Within Xaml Expression	|  	| ✅	| Mac/Win	
+| Unresolved Namespace Within Xaml Expression	|  	| ✅	| Mac/Win	
+| Invalid Named Font Size	|  	| ✅	| Mac/Win	
+| Generic Usage Is Missing x:TypeArguments	|  	| ✅	| Mac/Win	
+| x:TypeArguments Used On Non-Generic Class	|  	| ✅	| Mac/Win	
+| Unknown Type Provided To Generic	|  	| ✅	| Mac/Win	
+| Column Is Outside Grid Boundaries	|  	| ✅	| Mac/Win	
+| ColumnSpan Is Outside Grid Boundaries	|  	| ✅	| Mac/Win	
+| ColumnSpan Is Zero	|  	| ✅	| Mac/Win	
+| Grid.Column Usage Is Redundant	|  	| ✅	| Mac/Win	
+| Grid.ColumnSpan Usage Is Redundant	|  	| ✅	| Mac/Win	
+| Grid.Row Usage Is Redundant	|  	| ✅	| Mac/Win	
+| Grid.RowSpan Usage Is Redundant	|  	| ✅	| Mac/Win	
+| Row Is Outside Grid Boundaries	|  	| ✅	| Mac/Win	
+| RowSpan Is Outside Grid Boundaries	|  	| ✅	| Mac/Win	
+| RowSpan Is Zero	|  	| ✅	| Mac/Win	
+| Obsolete Property Used	|  	| ✅	| Mac/Win	
+| OnIdiom Return Type Mismatch	|  	| ✅	| Mac/Win	
+| OnPlatform Return Type Mismatch	|  	| ✅	| Mac/Win	
+| Referenced Attribute Member Exists In Parent Type	|  	| ✅	| Mac/Win	
+| Property Node Maps To Member In Parent Type	|  	| ✅	| Mac/Win	
+| Property Setter Node Misuse	|  	| ✅	| Mac/Win	
+| Property Setter Type Mismatch	|  	| ✅	| Mac/Win	
+| Duplicate Resource Dictionary Keys	|  	| ✅	| Mac/Win	
+| Resource Entry Does Not Define Key	|  	| ✅	| Mac/Win	
+| Unused Resource	|  	| ✅	| Mac/Win	
+| Missing Microsoft Schema	|  	| ✅	| Mac/Win	
+| ScrollView Has Multiple Direct Children	|  	| ✅	| Mac/Win	
+| Style Is Missing TargetType	|  	| ✅	| Mac/Win	
+| Property Setter Does Not Exist In Style TargetType	|  	| ✅	| Mac/Win	
+| Invalid Thickness Attribute Value	|  	| ✅	| Mac/Win	
+| Unknown Field Modifier	|  	| ✅	| Mac/Win	
+| Unknown Static Property Value	|  	| ✅	| Mac/Win	
+| Validate Value Types	|  	| ✅	| Mac/Win	
+| Duplicate Namespace Declaration	|  	| ✅	| Mac/Win	
+| Unresolved Xml Namespace	|  	| ✅	| Mac/Win	
+| Unresolved Xmlns Assembly	|  	| ✅	| Mac/Win	
+| Xaml Node Resolves	|  	| ✅	| Mac/Win	
+| Trigger Is Missing Target Type	|  	| ✅	| Mac/Win	
+| Trigger TargetType Does Not Match Parent	|  	| ✅	| Mac/Win	
+| Thickness Value Can Be Replaced By Static Resource	|  	| ✅	| Mac/Win	
+| Thickness Value Can Be Simplified	|  	| ✅	| Mac/Win	
+| Element Can Use Available Style	|  	| ✅	| Mac/Win	
+| Property Value Is Already Applied By Style	|  	| ✅	| Mac/Win	
+| Style TargetType Does Not Match BasedOn TargetType	|  	| ✅	| Mac/Win	
+| Ambiguous Static Resource Reference	|  	| ✅	| Mac/Win	
+| No Key Provided To Static Resource Expression	|  	| ✅	| Mac/Win	
+| StaticResource Return Type Mismatch	|  	| ✅	| Mac/Win	
+| Static Resource Style Target Type Is Incompatible	|  	| ✅	| Mac/Win	
+| x:Static Return Type Mismatch	|  	| ✅	| Mac/Win	
+| Undefined Static Resource Usage	|  	| ✅	| Mac/Win	
+| Slider Minimum Set Before Maximum	|  	| ✅	| Mac/Win	
+| Duplicate ShellItem Route	|  	| ✅	| Mac/Win	
+| Empty Shell Route Scheme	|  	| ✅	| Mac/Win	
+| Multiple VisualElements Defined In Shell Content	|  	| ✅	| Mac/Win	
+| Shell Requires At Least One Shell Item	|  	| ✅	| Mac/Win	
+| Validate Setter Attached Property Usage	|  	| ✅	| Mac/Win	
+| Setter Property Exists	|  	| ✅	| Mac/Win	
+| Style Or Trigger Has Duplicate Setters	|  	| ✅	| Mac/Win	
+| Resource Key Conflict	|  	| ✅	| Mac/Win	
+| Detect Missing Image In Linked Projects	|  	| ✅	| Mac/Win	
+| Grid Row/Column Setter Is Not A Number	|  	| ✅	| Mac/Win	
+| No Key Provided To DynamicResource Expression	|  	| ✅	| Mac/Win	
+| Validate Binding Expressions Return A Property	|  	| ✅	| Mac/Win	
+| Binding Against Non-Public Property	|  	| ✅	| Mac/Win	
+| Binding Expressions Resolve	|  	| ✅	| Mac/Win	
+| Binding Expression Return Type Mismatch	|  	| ✅	| Mac/Win	
+| Color Value Matches Static Resource	|  	| ✅	| Mac/Win	
+| Color Value Closely Matches Available Static Resource	|  	| ✅	| Mac/Win	
+| Hexadecimal Value Matches Named Color	|  	| ✅	| Mac/Win	
+| Malformed Hexadecimal Color Value	|  	| ✅	| Mac/Win	
 
 ## Utilities
 

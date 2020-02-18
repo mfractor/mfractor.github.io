@@ -28,6 +28,7 @@ extra_javascript:
 
 nav:
 - Home: index.md
+- Feature Matrix: feature-matrix.md
 - Installation And Setup: installation-and-setup.md
 - Quickstart - Windows: quickstart-windows.md
 - Quickstart - Mac: quickstart-mac.md
