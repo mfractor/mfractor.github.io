@@ -21,6 +21,7 @@ markdown_extensions:
   - codehilite
 extra_css:
   - css/tabs.css
+  - css/all.css
 extra_javascript:
   - js/tabs.js
   - js/set-cookie.js
