@@ -21,6 +21,7 @@ markdown_extensions:
   - codehilite
 extra_css:
   - css/tabs.css
+  - css/all.css
 extra_javascript:
   - js/tabs.js
   - js/set-cookie.js
@@ -28,6 +29,7 @@ extra_javascript:
 
 nav:
 - Home: index.md
+- Feature Matrix: feature-matrix.md
 - Installation And Setup: installation-and-setup.md
 - Quickstart - Windows: quickstart-windows.md
 - Quickstart - Mac: quickstart-mac.md

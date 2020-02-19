@@ -9,18 +9,18 @@ All the Features are available to the Visual Studio for Mac extension. The third
 
 | Feature	| Lite	| Pro	| Platforms	
 |---	|---	|---	|---	
-| [Import Image Assets](https://docs.mfractor.com/image-management/image-importer/)	|  	| ✅	| Mac/Win	
-| [Manage Image Assets](https://docs.mfractor.com/image-management/managing-image-assets/)	|  	| ✅	| Mac/Win	
-| [Delete Image Tool](https://docs.mfractor.com/image-management/deleting-image-assets/)	|  	| ✅	| Mac/Win	
-| [Optimise Image Tools](https://docs.mfractor.com/image-management/optimising-image-assets/)	|  	| ✅	| Mac/Win	
-| Image Tooltips	|  	| ✅	| Mac/Win	
+| [Import Image Assets](https://docs.mfractor.com/image-management/image-importer/)	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>	
+| [Manage Image Assets](https://docs.mfractor.com/image-management/managing-image-assets/)	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>	
+| [Delete Image Tool](https://docs.mfractor.com/image-management/deleting-image-assets/)	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>	
+| [Optimise Image Tools](https://docs.mfractor.com/image-management/optimising-image-assets/)	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>	
+| Image Tooltips	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>	
 
 ### Font Management
 
 | Feature	| Lite	| Pro	| Platforms	
 |---	|---	|---	|---	
-| [Import Font](https://docs.mfractor.com/fonts/importing-fonts/)	|  	| ✅	| Mac/Win	
-| [Generate Font Glyph Code Class](https://docs.mfractor.com/fonts/generate-font-character-code-class/)	|  	| ✅	| Mac/Win	
+| [Import Font](https://docs.mfractor.com/fonts/importing-fonts/)	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>	
+| [Generate Font Glyph Code Class](https://docs.mfractor.com/fonts/generate-font-character-code-class/)	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>	
 
 ## Wizards
 
@@ -28,9 +28,9 @@ All the Features are available to the Visual Studio for Mac extension. The third
 
 | Feature	| Lite	| Pro	| Platforms	
 |---	|---	|---	|---	
-| Localization Wizard	|  	| ✅	| Mac/Win	
-| MVVM Wizard	|  	| ✅	| Mac/Win	
-| [Value Converter Wizard](https://docs.mfractor.com/xamarin-forms/value-converters/value-converter-wizard/)	|  	| ✅	| Mac/Win	
+| Localization Wizard	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>	
+| MVVM Wizard	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>	
+| [Value Converter Wizard](https://docs.mfractor.com/xamarin-forms/value-converters/value-converter-wizard/)	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>	
 
 ## Code Actions
 
@@ -38,76 +38,76 @@ All the Features are available to the Visual Studio for Mac extension. The third
 
 | Feature	| Lite	| Pro	| Platforms	
 |---	|---	|---	|---	
-| [Generate Interface Implementation](https://docs.mfractor.com/csharp/code-actions/generate-interface-implementation/)|  	| ✅	| Mac/Win	
-| [Simplify Qualified Types](https://docs.mfractor.com/csharp/code-actions/simplify-qualified-types/)	|  	| ✅	| Mac/Win	
-| [Locate in Solution Explorer](https://docs.mfractor.com/csharp/code-actions/locate-in-solution-explorer/)	|  	| ✅	| Mac/Win	
-| [Create Lazy Field Property](https://docs.mfractor.com/csharp/code-actions/create-lazy-field-property/)	|  	| ✅	| Mac/Win	
-| [Convert to Interpolated String](https://docs.mfractor.com/csharp/code-actions/convert-to-interpolated-string/)	|  	| ✅	| Mac/Win	
-| Create constructor to initialize all readonly members	|  	| ✅	| Mac/Win	
-| Create Lazy Field Accessor	|  	| ✅	| Mac/Win	
-| Locate Class File In Solution Explorer	|  	| ✅	| Mac	
-| Select String Span	|  	| ✅	| Mac	
-| Align Namespace To Folder Path	|  	| ✅	| Mac/Win	
-| Copy Var Type To Clipboard	|  	| ✅	| Mac/Win	
-| Simplify Qualified Type	|  	| ✅	| Mac/Win	
-| Simplify All Qualified Types	|  	| ✅	| Mac/Win	
+| [Generate Interface Implementation](https://docs.mfractor.com/csharp/code-actions/generate-interface-implementation/)|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>	
+| [Simplify Qualified Types](https://docs.mfractor.com/csharp/code-actions/simplify-qualified-types/)	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>	
+| [Locate in Solution Explorer](https://docs.mfractor.com/csharp/code-actions/locate-in-solution-explorer/)	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>	
+| [Create Lazy Field Property](https://docs.mfractor.com/csharp/code-actions/create-lazy-field-property/)	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>	
+| [Convert to Interpolated String](https://docs.mfractor.com/csharp/code-actions/convert-to-interpolated-string/)	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>	
+| Create constructor to initialize all readonly members	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>	
+| Create Lazy Field Accessor	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>	
+| Locate Class File In Solution Explorer	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i>	
+| Select String Span	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i>	
+| Align Namespace To Folder Path	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>	
+| Copy Var Type To Clipboard	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>	
+| Simplify Qualified Type	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>	
+| Simplify All Qualified Types	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>	
 
 ### Xamarin Code Actions
 
 | Feature	| Lite	| Pro	| Platforms	
 |---	|---	|---	|---	
-| Exclude Symbol from Linker	|  	| ✅	| Mac	
+| Exclude Symbol from Linker	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i>	
 
 ### Xamarin.Forms Code Actions
 
 | Feature	| Lite	| Pro	| Platforms	
 |---	|---	|---	|---	
-| Create Bindable Property	|  	| ✅	| Mac/Win	
-| Create Attached Property	|  	| ✅	| Mac/Win	
-| [Generate Custom Renderers](https://docs.mfractor.com/xamarin-forms/custom-renderers/generate-custom-renderers/)	|  	| ✅	| Mac	
+| Create Bindable Property	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>	
+| Create Attached Property	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>	
+| [Generate Custom Renderers](https://docs.mfractor.com/xamarin-forms/custom-renderers/generate-custom-renderers/)	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i>	
 
 ### XAML Code Actions
 
 | Feature	| Lite	| Pro	| Platforms	
 |---	|---	|---	|---	
-| Extract XAML Style	|  	| ✅	| Mac/Win	
-| Extract Custom Control	|  	| ✅	| Mac/Win	
-| Generate a new View Model for XAML view	|  	| ✅	| Mac/Win	
-| Convert StackLayout to Grid	|  	| ✅	| Mac/Win	
-| Generate Resource Dictionary	|  	| ✅	| Mac/Win	
-| Generate New Value Converter for Type Flow	|  	| ✅	| Mac/Win	
-| Generate Xaml Localisation Infrastructure	|  	| ✅	| Mac/Win	
-| Encapsulate Content Page Children With StackLayout	|  	| ✅	| Mac/Win	
-| Encapsulate Content Page Children With Grid	|  	| ✅	| Mac/Win	
-| Encapsulate Content View Children With StackLayout	|  	| ✅	| Mac/Win	
-| Encapsulate Content View Children With Grid	|  	| ✅	| Mac/Win	
-| Correct Member Name	|  	| ✅	| Mac/Win	
-| Create Missing Property For Class	|  	| ✅	| Mac/Win	
-| Fixs Malformed Color Using Color Editor	|  	| ✅	| Mac/Win	
-| Replace Color Value With StaticResource	|  	| ✅	| Mac/Win	
-| Replace Hexadecimal Value With Named Color	|  	| ✅	| Mac/Win	
-| Generate Event Handler	|  	| ✅	| Mac/Win	
-| Correct Name To Matching Callback	|  	| ✅	| Mac/Win	
-| Remove Redundant Grid Properties	|  	| ✅	| Mac/Win	
-| Autocorrect Invalid FontSize	|  	| ✅	| Mac/Win	
-| Correct Property Binding Name	|  	| ✅	| Mac/Win	
-| Import Value Converter For Binding Type Flow	|  	| ✅	| Mac/Win	
-| Correct Image Resource name	|  	| ✅	| Mac/Win	
-| Import Missing Image Resource	|  	| ✅	| Mac/Win	
-| Encapsulate Scroll View Children With Grid	|  	| ✅	| Mac/Win	
-| Encapsulate Scroll View Children With StackLayout	|  	| ✅	| Mac/Win	
-| Correct Static Resource Name	|  	| ✅	| Mac/Win	
-| Apply Available Style	|  	| ✅	| Mac/Win	
-| Remove Redundant Style Property Initialisation	|  	| ✅	| Mac/Win	
-| Replace Style Setter Property With Autocorrection	|  	| ✅	| Mac/Win	
-| Add Missing Target Type Attribute	|  	| ✅	| Mac/Win	
-| Replace Thickness Value With Static Resource	|  	| ✅	| Mac/Win	
-| Simplify Thickness Value	|  	| ✅	| Mac/Win	
-| Add Trigger Target Type	|  	| ✅	| Mac/Win	
-| Fix Trigger Target Type	|  	| ✅	| Mac/Win	
-| Import Namespace And Assembly For Unresolved XAML Node	|  	| ✅	| Mac/Win	
-| Replace Node With Auto-Correction	|  	| ✅	| Mac/Win	
-| Rename Duplicate Namespace References	|  	| ✅	| Mac/Win	
+| Extract XAML Style	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>	
+| Extract Custom Control	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>	
+| Generate a new View Model for XAML view	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>	
+| Convert StackLayout to Grid	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>	
+| Generate Resource Dictionary	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>	
+| Generate New Value Converter for Type Flow	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>	
+| Generate Xaml Localisation Infrastructure	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>	
+| Encapsulate Content Page Children With StackLayout	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>	
+| Encapsulate Content Page Children With Grid	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>	
+| Encapsulate Content View Children With StackLayout	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>	
+| Encapsulate Content View Children With Grid	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>	
+| Correct Member Name	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>	
+| Create Missing Property For Class	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>	
+| Fixs Malformed Color Using Color Editor	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>	
+| Replace Color Value With StaticResource	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>	
+| Replace Hexadecimal Value With Named Color	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>	
+| Generate Event Handler	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>	
+| Correct Name To Matching Callback	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>	
+| Remove Redundant Grid Properties	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>	
+| Autocorrect Invalid FontSize	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>	
+| Correct Property Binding Name	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>	
+| Import Value Converter For Binding Type Flow	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>	
+| Correct Image Resource name	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>	
+| Import Missing Image Resource	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>	
+| Encapsulate Scroll View Children With Grid	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>	
+| Encapsulate Scroll View Children With StackLayout	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>	
+| Correct Static Resource Name	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>	
+| Apply Available Style	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>	
+| Remove Redundant Style Property Initialisation	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>	
+| Replace Style Setter Property With Autocorrection	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>	
+| Add Missing Target Type Attribute	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>	
+| Replace Thickness Value With Static Resource	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>	
+| Simplify Thickness Value	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>	
+| Add Trigger Target Type	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>	
+| Fix Trigger Target Type	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>	
+| Import Namespace And Assembly For Unresolved XAML Node	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>	
+| Replace Node With Auto-Correction	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>	
+| Rename Duplicate Namespace References	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>	
 
 ## Xamarin.Forms
 
@@ -115,111 +115,147 @@ All the Features are available to the Visual Studio for Mac extension. The third
 
 | Feature	| Lite	| Pro	| Platforms	
 |---	|---	|---	|---	
-| Go To View Model	|  	| ✅	| Mac/Win	
-| Go To Code Behind	|  	| ✅	| Mac/Win	
-| Go To Xaml View	|  	| ✅	| Mac/Win	
-| Go To Xaml Symbol	|  	| ✅	| Mac/Win	
-| [Find Custom Renderers](https://docs.mfractor.com/xamarin-forms/custom-renderers/find-custom-renderers/)	|  	| ✅	| Mac/Win	
+| Go To View Model	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>	
+| Go To Code Behind	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>	
+| Go To Xaml View	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>	
+| Go To Xaml Symbol	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>	
+| [Find Custom Renderers](https://docs.mfractor.com/xamarin-forms/custom-renderers/find-custom-renderers/)	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>	
 
 ## Code Analysis
 
-### Code Analysis
+### XAML Code Analysis
 
 | Feature	| Lite	| Pro	| Platforms	
 |---	|---	|---	|---	
-| Duplicate AutomationIds	|  	| ✅	| Mac	
-| Empty AutomationId Declaration	|  	| ✅	| Mac	
-| x:Name Has Invalid Characters	|  	| ✅	| Mac	
-| Duplicate Code Behind Field Declarations	|  	| ✅	| Mac	
-| Empty Code Behind Field Declaration	|  	| ✅	| Mac	
-| ContentPage Has Multiple Direct Children	|  	| ✅	| Mac	
-| ContentView Has Multiple Direct Children	|  	| ✅	| Mac	
-| Class Does Not Have Attached Property	|  	| ✅	| Mac	
-| Empty Value Assignment	|  	| ✅	| Mac	
-| Empty Event Handler Assignment	|  	| ✅	| Mac	
-| Event Handler Exists In Code Behind Class	|  	| ✅	| Mac	
-| Event Handler Signature Mismatch	|  	| ✅	| Mac	
-| Referenced Code Behind Field Exists	|  	| ✅	| Mac	
-| Value Converter Input Type Mismatch	|  	| ✅	| Mac	
-| Value Converter Output Type Mismatch	|  	| ✅	| Mac	
-| Unresolved .NET Symbols Within Xaml Expression	|  	| ✅	| Mac	
-| Unresolved Namespace Within Xaml Expression	|  	| ✅	| Mac	
-| Invalid Named Font Size	|  	| ✅	| Mac	
-| Generic Usage Is Missing x:TypeArguments	|  	| ✅	| Mac	
-| x:TypeArguments Used On Non-Generic Class	|  	| ✅	| Mac	
-| Unknown Type Provided To Generic	|  	| ✅	| Mac	
-| Column Is Outside Grid Boundaries	|  	| ✅	| Mac	
-| ColumnSpan Is Outside Grid Boundaries	|  	| ✅	| Mac	
-| ColumnSpan Is Zero	|  	| ✅	| Mac	
-| Grid.Column Usage Is Redundant	|  	| ✅	| Mac	
-| Grid.ColumnSpan Usage Is Redundant	|  	| ✅	| Mac	
-| Grid.Row Usage Is Redundant	|  	| ✅	| Mac	
-| Grid.RowSpan Usage Is Redundant	|  	| ✅	| Mac	
-| Row Is Outside Grid Boundaries	|  	| ✅	| Mac	
-| RowSpan Is Outside Grid Boundaries	|  	| ✅	| Mac	
-| RowSpan Is Zero	|  	| ✅	| Mac	
-| Obsolete Property Used	|  	| ✅	| Mac	
-| OnIdiom Return Type Mismatch	|  	| ✅	| Mac	
-| OnPlatform Return Type Mismatch	|  	| ✅	| Mac	
-| Referenced Attribute Member Exists In Parent Type	|  	| ✅	| Mac	
-| Property Node Maps To Member In Parent Type	|  	| ✅	| Mac	
-| Property Setter Node Misuse	|  	| ✅	| Mac	
-| Property Setter Type Mismatch	|  	| ✅	| Mac	
-| Duplicate Resource Dictionary Keys	|  	| ✅	| Mac	
-| Resource Entry Does Not Define Key	|  	| ✅	| Mac	
-| Unused Resource	|  	| ✅	| Mac	
-| Missing Microsoft Schema	|  	| ✅	| Mac	
-| ScrollView Has Multiple Direct Children	|  	| ✅	| Mac	
-| Style Is Missing TargetType	|  	| ✅	| Mac	
-| Property Setter Does Not Exist In Style TargetType	|  	| ✅	| Mac	
-| Invalid Thickness Attribute Value	|  	| ✅	| Mac	
-| Unknown Field Modifier	|  	| ✅	| Mac	
-| Unknown Static Property Value	|  	| ✅	| Mac	
-| Validate Value Types	|  	| ✅	| Mac	
-| Duplicate Namespace Declaration	|  	| ✅	| Mac	
-| Unresolved Xml Namespace	|  	| ✅	| Mac	
-| Unresolved Xmlns Assembly	|  	| ✅	| Mac	
-| Xaml Node Resolves	|  	| ✅	| Mac	
-| Trigger Is Missing Target Type	|  	| ✅	| Mac	
-| Trigger TargetType Does Not Match Parent	|  	| ✅	| Mac	
-| Thickness Value Can Be Replaced By Static Resource	|  	| ✅	| Mac	
-| Thickness Value Can Be Simplified	|  	| ✅	| Mac	
-| Element Can Use Available Style	|  	| ✅	| Mac	
-| Property Value Is Already Applied By Style	|  	| ✅	| Mac	
-| Style TargetType Does Not Match BasedOn TargetType	|  	| ✅	| Mac	
-| Ambiguous Static Resource Reference	|  	| ✅	| Mac	
-| No Key Provided To Static Resource Expression	|  	| ✅	| Mac	
-| StaticResource Return Type Mismatch	|  	| ✅	| Mac	
-| Static Resource Style Target Type Is Incompatible	|  	| ✅	| Mac	
-| x:Static Return Type Mismatch	|  	| ✅	| Mac	
-| Undefined Static Resource Usage	|  	| ✅	| Mac	
-| Slider Minimum Set Before Maximum	|  	| ✅	| Mac	
-| Duplicate ShellItem Route	|  	| ✅	| Mac	
-| Empty Shell Route Scheme	|  	| ✅	| Mac	
-| Multiple VisualElements Defined In Shell Content	|  	| ✅	| Mac	
-| Shell Requires At Least One Shell Item	|  	| ✅	| Mac	
-| Validate Setter Attached Property Usage	|  	| ✅	| Mac	
-| Setter Property Exists	|  	| ✅	| Mac	
-| Style Or Trigger Has Duplicate Setters	|  	| ✅	| Mac	
-| Resource Key Conflict	|  	| ✅	| Mac	
-| Detect Missing Image In Linked Projects	|  	| ✅	| Mac	
-| Grid Row/Column Setter Is Not A Number	|  	| ✅	| Mac	
-| No Key Provided To DynamicResource Expression	|  	| ✅	| Mac	
-| Validate Binding Expressions Return A Property	|  	| ✅	| Mac	
-| Binding Against Non-Public Property	|  	| ✅	| Mac	
-| Binding Expressions Resolve	|  	| ✅	| Mac	
-| Binding Expression Return Type Mismatch	|  	| ✅	| Mac	
-| Color Value Matches Static Resource	|  	| ✅	| Mac	
-| Color Value Closely Matches Available Static Resource	|  	| ✅	| Mac	
-| Hexadecimal Value Matches Named Color	|  	| ✅	| Mac	
-| Malformed Hexadecimal Color Value	|  	| ✅	| Mac	
+| Duplicate AutomationIds	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>	
+| Empty AutomationId Declaration	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>	
+| x:Name Has Invalid Characters	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>	
+| Duplicate Code Behind Field Declarations	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>	
+| Empty Code Behind Field Declaration	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>	
+| ContentPage Has Multiple Direct Children	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>	
+| ContentView Has Multiple Direct Children	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>	
+| Class Does Not Have Attached Property	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>	
+| Empty Value Assignment	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>	
+| Empty Event Handler Assignment	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>	
+| Event Handler Exists In Code Behind Class	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>	
+| Event Handler Signature Mismatch	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>	
+| Referenced Code Behind Field Exists	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>	
+| Value Converter Input Type Mismatch	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>	
+| Value Converter Output Type Mismatch	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>	
+| Unresolved .NET Symbols Within Xaml Expression	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>	
+| Unresolved Namespace Within Xaml Expression	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>	
+| Invalid Named Font Size	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>	
+| Generic Usage Is Missing x:TypeArguments	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>	
+| x:TypeArguments Used On Non-Generic Class	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>	
+| Unknown Type Provided To Generic	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>	
+| Column Is Outside Grid Boundaries	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>	
+| ColumnSpan Is Outside Grid Boundaries	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>	
+| ColumnSpan Is Zero	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>	
+| Grid.Column Usage Is Redundant	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>	
+| Grid.ColumnSpan Usage Is Redundant	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>	
+| Grid.Row Usage Is Redundant	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>	
+| Grid.RowSpan Usage Is Redundant	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>	
+| Row Is Outside Grid Boundaries	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>	
+| RowSpan Is Outside Grid Boundaries	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>	
+| RowSpan Is Zero	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>	
+| Obsolete Property Used	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>	
+| OnIdiom Return Type Mismatch	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>	
+| OnPlatform Return Type Mismatch	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>	
+| Referenced Attribute Member Exists In Parent Type	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>	
+| Property Node Maps To Member In Parent Type	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>	
+| Property Setter Node Misuse	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>	
+| Property Setter Type Mismatch	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>	
+| Duplicate Resource Dictionary Keys	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>	
+| Resource Entry Does Not Define Key	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>	
+| Unused Resource	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>	
+| Missing Microsoft Schema	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>	
+| ScrollView Has Multiple Direct Children	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>	
+| Style Is Missing TargetType	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>	
+| Property Setter Does Not Exist In Style TargetType	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>	
+| Invalid Thickness Attribute Value	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>	
+| Unknown Field Modifier	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>	
+| Unknown Static Property Value	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>	
+| Validate Value Types	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>	
+| Duplicate Namespace Declaration	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>	
+| Unresolved Xml Namespace	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>	
+| Unresolved Xmlns Assembly	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>	
+| Xaml Node Resolves	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>	
+| Trigger Is Missing Target Type	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>	
+| Trigger TargetType Does Not Match Parent	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>	
+| Thickness Value Can Be Replaced By Static Resource	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>	
+| Thickness Value Can Be Simplified	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>	
+| Element Can Use Available Style	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>	
+| Property Value Is Already Applied By Style	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>	
+| Style TargetType Does Not Match BasedOn TargetType	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>	
+| Ambiguous Static Resource Reference	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>	
+| No Key Provided To Static Resource Expression	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>	
+| StaticResource Return Type Mismatch	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>	
+| Static Resource Style Target Type Is Incompatible	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>	
+| x:Static Return Type Mismatch	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>	
+| Undefined Static Resource Usage	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>	
+| Slider Minimum Set Before Maximum	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>	
+| Duplicate ShellItem Route	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>	
+| Empty Shell Route Scheme	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>	
+| Multiple VisualElements Defined In Shell Content	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>	
+| Shell Requires At Least One Shell Item	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>	
+| Validate Setter Attached Property Usage	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>	
+| Setter Property Exists	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>	
+| Style Or Trigger Has Duplicate Setters	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>	
+| Resource Key Conflict	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>	
+| Detect Missing Image In Linked Projects	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>	
+| Grid Row/Column Setter Is Not A Number	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>	
+| No Key Provided To DynamicResource Expression	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>	
+| Validate Binding Expressions Return A Property	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>	
+| Binding Against Non-Public Property	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>	
+| Binding Expressions Resolve	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>	
+| Binding Expression Return Type Mismatch	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>	
+| Color Value Matches Static Resource	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>	
+| Color Value Closely Matches Available Static Resource	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>	
+| Hexadecimal Value Matches Named Color	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>	
+| Malformed Hexadecimal Color Value	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>	
+
+## Intellisense
+
+### XAML Intellisense Completions
+
+| Feature	| Lite	| Pro	| Platforms	
+|---	|---	|---	|---	
+| x:Name Shorthand Completion	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i>	
+| x:Key Shorthand Completion	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i>	
+| Color Value Completion	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i>	
+| DataBinding Shorthand Completion	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i>	
+| DataTrigger Binding Shorthand Completion	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i>	
+| Event Handler Completion	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i>	
+| Font Asset Completion	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i>	
+| Grid Boilerplate Completion	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i>	
+| Grid Location Completion	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i>	
+| Grid Unit Completion	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i>	
+| Image Asset Completion	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i>	
+| Import Font Asset Completion	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i>	
+| Property Setter Completion	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i>	
+| RepeaterView Boilerplate Completion	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i>	
+| Row/Column Shorthand Completion	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i>	
+| Setter Shorthand Completion	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i>	
+| StackLayout Orientation Shorthand Completion	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i>	
+| Star/Auto Shorthand Completion	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i>	
+| Thickness Attribute Completion	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i>	
 
 ## Utilities
 
-### Utilities
+### Project and Solution Utilities
 
 | Feature	| Lite	| Pro	| Platforms	
 |---	|---	|---	|---	
-| [Delete Output Folder](https://docs.mfractor.com/utilities/delete-output-folders/)	|  	| ✅	| Mac/Win	
-| [Clean and Compress](https://docs.mfractor.com/utilities/clean-and-compress/)	|  	| ✅	| Mac/Win	
-| [Edit Shared Project Items](https://docs.mfractor.com/utilities/edit-shared-project-items/)	|  	| ✅	| Mac
+| [Delete Output Folder](https://docs.mfractor.com/utilities/delete-output-folders/)	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>	
+| [Clean and Compress](https://docs.mfractor.com/utilities/clean-and-compress/)	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>	
+| [Edit Shared Project Items](https://docs.mfractor.com/utilities/edit-shared-project-items/)	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i>	
+
+### Search Categories
+
+| Feature	| Lite	| Pro	| Platforms	
+|---	|---	|---	|---	
+| MFractor Commands Search	| <i class="fas fa-check fa-lg"></i>	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i>	
+| ResX Localisation Search	| <i class="fas fa-check fa-lg"></i>	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i>	
+| Xamarin.Forms Automation Identifiers Search	| <i class="fas fa-check fa-lg"></i>	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i>	
+| Xamarin.Forms Static Resources Search	| <i class="fas fa-check fa-lg"></i>	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i>	
+| Xamarin.Forms Dynamic Resources Search	| <i class="fas fa-check fa-lg"></i>	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i>
