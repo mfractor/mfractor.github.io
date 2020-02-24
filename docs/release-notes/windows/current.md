@@ -1,11 +1,12 @@
 !!! quote "A summary of our current release of MFractor for Visual Studio Windows"
 
-The current version of MFractor for Visual Studio Windows is v4.0.0
+The current version of MFractor for Visual Studio Windows is v4.0.1
 
 ## Releases (v4)
 
 ### Releases (v4.0)
 
+ * [v4.0.1 - Released on February 24th 2020](v4/v4.0.md#v4.0.4) - Fixes style and grid refactoring bugs.
  * [v4.0.0 - Released on February 20th 2020](v4/v4.0.md#v4.0.0) - v4.0 is our stable release of MFractor for Visual Studio Windows, reaching approximate feature parity with MFractor for Visual Studio Mac.
 
 ## Releases (v0)
