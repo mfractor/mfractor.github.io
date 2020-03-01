@@ -10,7 +10,7 @@ The color analysis helps you with the following types of issues and enhancements
 * Check for mispelled color values
 * Identify colors declared as static resources
 
-### Identifying mispelled hex color formats
+## Identifying mispelled hex color formats
 
 Xamarin.Forms Color Type allows passing a hexadecimal color value in several different formats:
 
@@ -33,9 +33,9 @@ The picker will try to identify an existing named color (one of the static read-
 
 By setting a color in the picker and clicking choose, MFractor will set the new value to the property. If the value represents one of the named colors this value will be used instead of the hex value.
 
->**Example**: type brown on the **Color** field and the picker channels will be automatically set to red 165, Green 42, Blue 42 and Alpha 255 that represents [`Color.Brown` field](https://docs.microsoft.com/en-us/dotnet/api/xamarin.forms.color.brown?view=xamarin-forms) value of **#FFA52A2A**.
+>**Example**: type brown on the **Color** field and the picker channels will be automatically set to red 165, Green 42, Blue 42 and Alpha 255 that represents [`Color.Brown` field](https://docs.microsoft.com/en-us/dotnet/api/xamarin.forms.color.brown?view=xamarin-forms) value of `#FFA52A2A`.
 
-### Fixing Mispelled Named Colors
+## Fixing Mispelled Named Colors
 
 Visual Studio provides completion for the named colors on properties of the `Color` type, even though, typos may happen. This code analysis checks for non-hex values typed on the color properties and suggests fixes to similar named colors.
 
@@ -45,7 +45,18 @@ Suppose you have a color property with value of **Blu**. This is an invalid colo
 
 By hovering over the typo, the code analysis tooltip will show suggestions of names that closely match the mispelled one. Just click the link to have an instant fix.
 
-### Applying an Existing Color Resource
+## Applying Named Color to Equivalent hex value
+
+Hex values are a useful way of representing and sharing color value, but you can't easily figure a color value just by looking at it (unless you're a very experienced designer). For this reason, its useful to have named colors when they apply, so we can quickly identify what the color value is.
+
+This code analysis will check Color properties that has hex values declared to verify if they match one of the [named colors](https://docs.microsoft.com/en-us/dotnet/api/xamarin.forms.color?view=xamarin-forms) available.
+
+Suppose you have an element that declares a color with the value `#F5F5DC` which matches to the [`Color.Beige`](https://docs.microsoft.com/en-us/dotnet/api/xamarin.forms.color.beige?view=xamarin-forms) named color. A warning will be shown to the color declaration to suggest replacing with the named version:
+
+![The Code Analysis found a hex value that matches one of the named colors](/img/xamarin-forms/color-analysis-matching-named.png)
+
+
+## Applying an Existing Color Resource
 
 Its a common pattern to set theme Color values at the Resources of the `App.xaml` file of a Xamarin.Forms project. MFractor can identify if an explicity hex value set to a color property matches an existing resource at any level it could be declared.
 
@@ -65,7 +76,7 @@ At another part of the code, you add an item that will apply this color value, b
 
 If you hover over the squiggles of the code analysis warning, you'll find information about the existing static resource that matches the hex value you've just typed. You can click on the link for applying the change reference the resource.
 
-![Mispelled hex value in a color property of a XAML page](/img/xamarin-forms/color-analysis-matching-resource.png)
+![The code analysis found a hex color value that match one declared resource](/img/xamarin-forms/color-analysis-matching-resource.png)
 
 The color value will be replaced with the reference to the static resource:
 
