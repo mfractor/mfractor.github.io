@@ -36,7 +36,7 @@
         <meta name="lang:search.tokenizer" content="[\s\-]+">
       
       <link rel="shortcut icon" href="../../../images/favicon.ico">
-      <meta name="generator" content="mkdocs-1.0.4, mkdocs-material-4.6.0">
+      <meta name="generator" content="mkdocs-1.0.4, mkdocs-material-4.4.3">
     
     
       
@@ -44,7 +44,7 @@
       
     
     
-      <link rel="stylesheet" href="../../../assets/stylesheets/application.1b62728e.css">
+      <link rel="stylesheet" href="../../../assets/stylesheets/application.30686662.css">
       
         <link rel="stylesheet" href="../../../assets/stylesheets/application-palette.a8b3c06d.css">
       
@@ -55,12 +55,12 @@
       
     
     
-      <script src="../../../assets/javascripts/modernizr.268332fc.js"></script>
+      <script src="../../../assets/javascripts/modernizr.74668098.js"></script>
     
     
       
         <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&display=fallback">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700|Roboto+Mono&display=fallback">
         <style>body,input{font-family:"Roboto","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono","Courier New",Courier,monospace}</style>
       
     
@@ -1614,35 +1614,35 @@
                 
                 <h1 id="binding-context-evaluation">Binding Context Evaluation</h1>
 <p>In Xamarin.Forms, all views have the property BindingContext; this specifies the object that a view should data-bind with. When coding with XAML, we can use the x:Static markup extension to reference a static C# property and explicitly provide an instance of a C# class as the binding context:</p>
-<div class="codehilite"><pre><span></span><span class="err"> &lt;Entry BindingContext=&quot;{x:Static local:MyStaticClass.MyStaticProperty}&quot;/&gt;</span>
+<div class="codehilite"><pre><span></span> <span class="o">&lt;</span><span class="n">Entry</span> <span class="n">BindingContext</span><span class="o">=</span><span class="ss">&quot;{x:Static local:MyStaticClass.MyStaticProperty}&quot;</span><span class="o">/&gt;</span>
 </pre></div>
 
 
 <p>This is known as the View Model Locator Pattern. We implement a static class named ViewModelLocator and use a static, readonly property to return an instance of the object we want our XAML view to data-bind with. Historically the View Model Locator Pattern has been used to provide design time data to the Xamarin.Forms XAML previewer. For a deeper insight into this pattern, read James Montemagnos excellent View Model Locator article.</p>
 <p>For example, given a XAML page named LoginPage, we can explicitly provide an instance of LoginViewModel as the binding context like so:</p>
 <p><strong>ViewModelLocator.cs</strong></p>
-<div class="codehilite"><pre><span></span><span class="err">public namespace MyApp</span>
+<div class="codehilite"><pre><span></span><span class="k">public</span> <span class="n">namespace</span> <span class="n">MyApp</span>
 <span class="err">{</span>
-<span class="err">  public static class ViewModelLocator</span>
-<span class="err">  {</span>
-<span class="err">      public static readonly LoginViewModel LoginViewModel = new LoginViewModel();</span>
-<span class="err">  }</span>
+  <span class="k">public</span> <span class="k">static</span> <span class="k">class</span> <span class="n">ViewModelLocator</span>
+  <span class="err">{</span>
+      <span class="k">public</span> <span class="k">static</span> <span class="n">readonly</span> <span class="n">LoginViewModel</span> <span class="n">LoginViewModel</span> <span class="o">=</span> <span class="k">new</span> <span class="n">LoginViewModel</span><span class="p">();</span>
+  <span class="err">}</span>
 <span class="err">}</span>
 </pre></div>
 
 
 <p><strong>LoginPage.xaml</strong></p>
-<div class="codehilite"><pre><span></span><span class="err">&lt;ContentPage</span>
-<span class="err">  xmlns:local=&quot;clr-namespace:MyApp;assembly=MyApp&quot;</span>
-<span class="err">  BindingContext=&quot;{x:Static local:ViewModelLocator.LoginViewModel}&quot;/&gt;</span>
+<div class="codehilite"><pre><span></span><span class="o">&lt;</span><span class="nt">ContentPage</span>
+  <span class="nt">xmlns</span><span class="p">:</span><span class="nd">local</span><span class="o">=</span><span class="s2">&quot;clr-namespace:MyApp;assembly=MyApp&quot;</span>
+  <span class="nt">BindingContext</span><span class="o">=</span><span class="s2">&quot;{x:Static local:ViewModelLocator.LoginViewModel}&quot;</span><span class="o">/&gt;</span>
 </pre></div>
 
 
 <p>When MFractor starts analysis on LoginPage.xaml, it will check if any BindingContext properties have been assigned to. As the root ContentPage assigns a binding context, it will inspect the value component of the BindingContext attribute, check if it is a XAML expression and then evaluate it for the return type.</p>
 <p>For the {x:Static local:ViewModelLocator.LoginViewModel} expression, MFractor will resolve the ViewModelLocator class in the local namespace and then grab the C# type of the LoginViewModel property. This informs MFractor that the page will be bound to a LoginViewModel instance and therefore to analyse all Binding expressions against the LoginViewModel type.</p>
 <p>Explicit binding context resolution will also work when referencing another element using x:Reference expressions. For example, we can bind the on/off state of a switch to the visibility of a text label like so:</p>
-<div class="codehilite"><pre><span></span><span class="err">  &lt;Switch x:Name=&quot;mySwitch&quot; /&gt;</span>
-<span class="err">  &lt;Label BindingContext=&quot;{x:Reference mySwitch}&quot; IsVisible=&quot;{Binding IsToggled}&quot;/&gt;</span>
+<div class="codehilite"><pre><span></span>  <span class="o">&lt;</span><span class="n">Switch</span> <span class="n">x</span><span class="p">:</span><span class="n">Name</span><span class="o">=</span><span class="ss">&quot;mySwitch&quot;</span> <span class="o">/&gt;</span>
+  <span class="o">&lt;</span><span class="n">Label</span> <span class="n">BindingContext</span><span class="o">=</span><span class="ss">&quot;{x:Reference mySwitch}&quot;</span> <span class="n">IsVisible</span><span class="o">=</span><span class="ss">&quot;{Binding IsToggled}&quot;</span><span class="o">/&gt;</span>
 </pre></div>
 
 
@@ -1650,7 +1650,6 @@
 <p>Explicit binding context resolution will always override implicit binding context resolution. If your XAML views are named using the conventions listed above but your page or a view explicitly assigns the BindingContext property then MFractor will use the BindingContext return type instead of the implicit Mvvm relationship.</p>
                 
                   
-                
                 
               
               
@@ -1738,7 +1737,7 @@
       
     </div>
     
-      <script src="../../../assets/javascripts/application.808e90bb.js"></script>
+      <script src="../../../assets/javascripts/application.ac79c3b0.js"></script>
       
       <script>app.initialize({version:"1.0.4",url:{base:"../../.."}})</script>
       
