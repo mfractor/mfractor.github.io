@@ -21,6 +21,8 @@ All features are available to the Visual Studio for Mac extension. The third col
 |---	|---	|---	|---
 | [Import Font](https://docs.mfractor.com/fonts/importing-fonts/)	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>
 | [Generate Font Glyph Code Class](https://docs.mfractor.com/fonts/generate-font-character-code-class/)	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>
+| Font Glyph Tooltips	| <i class="fas fa-check fa-lg"></i>	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i>
+| Font Glyph IntelliSense	| <i class="fas fa-check fa-lg"></i>	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i>
 
 ## Wizards
 
@@ -51,6 +53,7 @@ All features are available to the Visual Studio for Mac extension. The third col
 | Copy Var Type To Clipboard	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>
 | [Simplify Qualified Type](https://docs.mfractor.com/csharp/code-actions/simplify-qualified-types/)	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>
 | [Simplify All Qualified Types](https://docs.mfractor.com/csharp/code-actions/simplify-qualified-types/#the-simplify-types-wizard)	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>
+| Invert Event Handler Assignment	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>
 
 ### Xamarin Code Actions
 
@@ -108,6 +111,8 @@ All features are available to the Visual Studio for Mac extension. The third col
 | Import Namespace And Assembly For Unresolved XAML Node	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>
 | Replace Node With Auto-Correction	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>
 | Rename Duplicate Namespace References	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>
+| Move Grid Properties To Parent Element	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>
+| Create Missing Style	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>
 
 ## Xamarin.Forms
 
@@ -213,6 +218,8 @@ All features are available to the Visual Studio for Mac extension. The third col
 | [Color Value Closely Matches Available Static Resource](https://docs.mfractor.com/xamarin-forms/colors/color-analysis/#applying-an-existing-color-resource)	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>
 | [Hexadecimal Value Matches Named Color](https://docs.mfractor.com/xamarin-forms/colors/color-analysis/#identifying-mispelled-hex-color-formats)	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>
 | [Malformed Hexadecimal Color Value](https://docs.mfractor.com/xamarin-forms/colors/color-analysis/#identifying-mispelled-hex-color-formats)	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>
+| Cell Usage Within CollectionView ItemTemplate	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>
+| Glyph Does Not Exist In Font	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>
 
 ## Intellisense
 
