@@ -118,7 +118,7 @@
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
     <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
     
-      <a href="#v402" tabindex="1" class="md-skip">
+      <a href="#v403" tabindex="1" class="md-skip">
         Skip to content
       </a>
     
@@ -1289,6 +1289,13 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#v403" class="md-nav__link">
+    v4.0.3
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#v402" class="md-nav__link">
     v4.0.2
   </a>
@@ -1648,6 +1655,13 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#v403" class="md-nav__link">
+    v4.0.3
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#v402" class="md-nav__link">
     v4.0.2
   </a>
@@ -1698,6 +1712,20 @@
                 <div class="admonition quote">
 <p class="admonition-title">Release notes for our 4.0 versions of MFractor for Visual Studio Mac</p>
 </div>
+<h2 id="v403">v4.0.3</h2>
+<p><strong>Released on 10th of March 2020</strong></p>
+<p>Adds several new XAML analysers, improves performance/memory usage and introduces a new C# refactoring.</p>
+<p><strong>Enhancements:</strong></p>
+<ul>
+<li>We've retired the legacy way we resolved symbols in XAML files to significantly in improve performance and memory consumption in XAML analysis, tooltips, code actions and IntelliSense.</li>
+<li>Code Analysis:</li>
+<li>When a ViewCell is used inside a CollectionView, MFractor will warn you that it is obsolete.</li>
+<li>MFractor now inspects the Glyph codes used with a FontFamily and verify the glyph exists in the font.</li>
+<li>Code Issue Fixes:</li>
+<li>When a style resource does not exists, use the create style fix to start the style wizard and create a new one.</li>
+<li>Refactorings:</li>
+<li>Swap event handler binding between <code>+=</code> and <code>-=</code>.</li>
+</ul>
 <h2 id="v402">v4.0.2</h2>
 <p><strong>Released on 2nd of March 2020</strong></p>
 <p>Adds x:DataType support to binding context resolution and font glyph tooltips and IntelliSense.</p>
