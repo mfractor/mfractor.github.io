@@ -4,6 +4,7 @@
 
 ### Releases (v4.0)
 
+ * [v4.0.3 - Released on March 10th 2020](v4/v4.0.md#v4.0.3) - Fixes the contrast in XAML code issue tooltips, adds several new XAML analysers, improves performance/memory usage and introduces a new C# refactoring.
  * [v4.0.2 - Released on March 2nd 2020](v4/v4.0.md#v4.0.2) - Adds x:DataType support to binding context resolution.
  * [v4.0.1 - Released on February 24th 2020](v4/v4.0.md#v4.0.1) - Fixes style and grid refactoring bugs.
  * [v4.0.0 - Released on February 20th 2020](v4/v4.0.md#v4.0.0) - v4.0 is our stable release of MFractor for Visual Studio Windows, reaching approximate feature parity with MFractor for Visual Studio Mac.
