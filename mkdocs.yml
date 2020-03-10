@@ -36,6 +36,7 @@ nav:
 - Licensing: licensing.md
 - Support: support.md
 - FAQ: faq.md
+#- Contributing: contributing.md
 - Code Actions: code-actions.md
 - Image Management:
   - Overview: image-management/overview.md
@@ -43,6 +44,7 @@ nav:
   - Importing Images: image-management/image-importer.md
   - Deleting Image Assets: image-management/deleting-image-assets.md
   - Optimising Image Assets: image-management/optimising-image-assets.md
+  - Image Tooltips: image-management/image-tooltips.md
 - C#:
   - Code Actions:
     - Generate Interface Implementation: csharp/code-actions/generate-interface-implementation.md

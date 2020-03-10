@@ -33,3 +33,9 @@ The image optimiser squashes the size of all image assets in your application, r
 To do this, it uses [TinyPNG](https://tinypng.com/) to perform intelligent image compression.
 
 Read more about the image optimiser at [Optimising Image Assets](/image-management/optimising-image-assets).
+
+### Image Tooltips
+
+The image tooltips let you preview any image asset.
+
+Read more about image tooltips at [Image Tooltips](/image-management/image-tooltips).
