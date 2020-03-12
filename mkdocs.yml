@@ -36,7 +36,7 @@ nav:
 - Licensing: licensing.md
 - Support: support.md
 - FAQ: faq.md
-#- Contributing: contributing.md
+- Contributing: contributing.md
 - Code Actions: code-actions.md
 - Image Management:
   - Overview: image-management/overview.md
