@@ -248,6 +248,26 @@ All features are available to the Visual Studio for Mac extension. The third col
 | Thickness Attribute Completion	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>
 | ViewModel Data Binding Completion	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>
 
+## Xaml Editor
+
+### Adornments
+
+| Feature	| Lite	| Pro	| Platforms
+|---	|---	|---	|---
+| Grid Index Adornments	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i>
+| Color Adornments	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i>
+
+### Tooltips
+
+| Feature	| Lite	| Pro	| Platforms
+|---	|---	|---	|---
+| Grid Index Tooltips	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>
+| Color Format Tooltips	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i>
+| Named FontSize Platform Values Tooltips	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>
+| Thickness Formats Tooltips	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>
+| Static Resource Tooltips	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>
+| Value Converter Input/Output Type Tootips	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>
+
 ## Utilities
 
 ### Project and Solution Utilities
