@@ -1,5 +1,5 @@
 site_name: MFractor Documentation
-copyright: Copyright &copy; 2015-2019 <a href="https://www.mfractor.com">MFractor Pty Ltd</a>
+copyright: Copyright &copy; 2015-2020 <a href="https://www.mfractor.com">MFractor Pty Ltd</a>
 site_author: "MFractor Pty Ltd"
 site_description: "Documentation for MFractor, a powerful productivity tool for Xamarin developers"
 repo_url: "https://github.com/mfractor/mfractor.github.io"
@@ -36,6 +36,7 @@ nav:
 - Licensing: licensing.md
 - Support: support.md
 - FAQ: faq.md
+#- Contributing: contributing.md
 - Code Actions: code-actions.md
 - Image Management:
   - Overview: image-management/overview.md
@@ -43,6 +44,7 @@ nav:
   - Importing Images: image-management/image-importer.md
   - Deleting Image Assets: image-management/deleting-image-assets.md
   - Optimising Image Assets: image-management/optimising-image-assets.md
+  - Image Tooltips: image-management/image-tooltips.md
 - C#:
   - Code Actions:
     - Generate Interface Implementation: csharp/code-actions/generate-interface-implementation.md
@@ -104,7 +106,7 @@ nav:
   - Windows:
     - Current Release: release-notes/windows/current.md
     - v4:
-      - v3.4: release-notes/windows/v4/v4.0.md
+      - v4.0: release-notes/windows/v4/v4.0.md
     - v0:
       - v0.6: release-notes/windows/v0/v0.6.md
       - v0.5: release-notes/windows/v0/v0.5.md
