@@ -40,7 +40,7 @@
     
     
       
-        <title>Image tooltips - MFractor Documentation</title>
+        <title>Image Tooltips - MFractor Documentation</title>
       
     
     
@@ -144,7 +144,7 @@
             </span>
             <span class="md-header-nav__topic">
               
-                Image tooltips
+                Image Tooltips
               
             </span>
           
@@ -361,10 +361,12 @@
       
       
 
+  
 
-  <li class="md-nav__item md-nav__item--nested">
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-10" type="checkbox" id="nav-10">
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-10" type="checkbox" id="nav-10" checked>
     
     <label class="md-nav__link" for="nav-10">
       Image Management
@@ -433,6 +435,99 @@
     <a href="../optimising-image-assets/" title="Optimising Image Assets" class="md-nav__link">
       Optimising Image Assets
     </a>
+  </li>
+
+        
+          
+          
+          
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        Image Tooltips
+      </label>
+    
+    <a href="./" title="Image Tooltips" class="md-nav__link md-nav__link--active">
+      Image Tooltips
+    </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#introduction" class="md-nav__link">
+    Introduction
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#using-image-tooltips" class="md-nav__link">
+    Using Image Tooltips
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#xaml" class="md-nav__link">
+    XAML
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#android" class="md-nav__link">
+    Android
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#c" class="md-nav__link">
+    C#
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#links" class="md-nav__link">
+    Links
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+      
+      
+      
+      
+        <li class="md-nav__item">
+          <a href="#__comments" class="md-nav__link md-nav__link--active">
+            Comments
+          </a>
+        </li>
+      
+    </ul>
+  
+</nav>
+    
   </li>
 
         
@@ -1380,8 +1475,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../../release-notes/windows/v4/v4.0/" title="v3.4" class="md-nav__link">
-      v3.4
+    <a href="../../release-notes/windows/v4/v4.0/" title="v4.0" class="md-nav__link">
+      v4.0
     </a>
   </li>
 
@@ -1618,7 +1713,14 @@
         
           <li class="md-nav__item">
   <a href="#c" class="md-nav__link">
-    C
+    C#
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#links" class="md-nav__link">
+    Links
   </a>
   
 </li>
@@ -1653,16 +1755,33 @@
                   <a href="https://github.com/mfractor/mfractor.github.io/tree/docs/docs/image-management/image-tooltips.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>
                 
                 
-                  <h1>Image tooltips</h1>
+                  <h1>Image Tooltips</h1>
                 
                 <div class="admonition quote">
 <p class="admonition-title">Visualise the image asset a piece of code is referencing</p>
 </div>
 <h2 id="introduction">Introduction</h2>
+<p>The <strong>Image Tooltips</strong> let you preview any image asset.</p>
 <h2 id="using-image-tooltips">Using Image Tooltips</h2>
+<p>Simply hover your cursor over an image name and a preview of that image will display. We even offer previews of image assets in IntelliSense!</p>
 <h3 id="xaml">XAML</h3>
+<p>Add your <code>Image</code> tag to your <code>xaml</code> file and edit the <code>Source</code> attribute to see the tooltip, or "Import an image asset".</p>
+<div class="codehilite"><pre><span></span><span class="o">&lt;</span><span class="n">Image</span> <span class="k">Source</span><span class="o">=</span><span class="ss">&quot;&quot;</span> <span class="o">/&gt;</span>
+</pre></div>
+
+
+<p><img alt="XAML image tooltips" src="/img/image-management/image-tooltips.gif" /></p>
 <h3 id="android">Android</h3>
-<h3 id="c">C</h3>
+<div class="codehilite"><pre><span></span><span class="n">var</span> <span class="n">dd</span> <span class="o">=</span> <span class="n">Resource</span><span class="o">.</span><span class="na">Drawable</span><span class="o">.</span><span class="na">mfractor</span>
+</pre></div>
+
+
+<p><img alt="Android image tooltips" src="/img/image-management/android-image-tooltip.png" /></p>
+<h3 id="c">C#</h3>
+<h3 id="links">Links</h3>
+<ul>
+<li>See the announcement in the <a href="https://www.mfractor.com/blogs/news/mfractor-3-10-smarter-code-fixes-plus-image-and-color-tooltips">Blog</a> (<a href="https://github.com/mfractor/mfractor.content/blob/master/mfractor-3-10/readme.md">GitHub</a>).</li>
+</ul>
                 
                   
                 
@@ -1696,12 +1815,47 @@
         
 <footer class="md-footer">
   
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid">
+        
+          <a href="../optimising-image-assets/" title="Optimising Image Assets" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
+            </div>
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Previous
+                </span>
+                Optimising Image Assets
+              </span>
+            </div>
+          </a>
+        
+        
+          <a href="../../csharp/code-actions/generate-interface-implementation/" title="Generate Interface Implementation" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Next
+                </span>
+                Generate Interface Implementation
+              </span>
+            </div>
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-forward md-footer-nav__button"></i>
+            </div>
+          </a>
+        
+      </nav>
+    </div>
+  
   <div class="md-footer-meta md-typeset">
     <div class="md-footer-meta__inner md-grid">
       <div class="md-footer-copyright">
         
           <div class="md-footer-copyright__highlight">
-            Copyright &copy; 2015-2019 <a href="https://www.mfractor.com">MFractor Pty Ltd</a>
+            Copyright &copy; 2015-2020 <a href="https://www.mfractor.com">MFractor Pty Ltd</a>
           </div>
         
         powered by
