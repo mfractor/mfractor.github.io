@@ -36,7 +36,7 @@
         <meta name="lang:search.tokenizer" content="[\s\-]+">
       
       <link rel="shortcut icon" href="../images/favicon.ico">
-      <meta name="generator" content="mkdocs-1.0.4, mkdocs-material-4.4.3">
+      <meta name="generator" content="mkdocs-1.0.4, mkdocs-material-4.6.0">
     
     
       
@@ -44,7 +44,7 @@
       
     
     
-      <link rel="stylesheet" href="../assets/stylesheets/application.30686662.css">
+      <link rel="stylesheet" href="../assets/stylesheets/application.1b62728e.css">
       
         <link rel="stylesheet" href="../assets/stylesheets/application-palette.a8b3c06d.css">
       
@@ -55,12 +55,12 @@
       
     
     
-      <script src="../assets/javascripts/modernizr.74668098.js"></script>
+      <script src="../assets/javascripts/modernizr.268332fc.js"></script>
     
     
       
         <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700|Roboto+Mono&display=fallback">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&display=fallback">
         <style>body,input{font-family:"Roboto","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono","Courier New",Courier,monospace}</style>
       
     
@@ -118,7 +118,7 @@
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
     <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
     
-      <a href="#extensions" tabindex="1" class="md-skip">
+      <a href="#introduction" tabindex="1" class="md-skip">
         Skip to content
       </a>
     
@@ -374,8 +374,49 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#introduction" class="md-nav__link">
+    Introduction
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#contribution-workflow" class="md-nav__link">
+    Contribution Workflow
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#requirements" class="md-nav__link">
+    Requirements
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
   <a href="#extensions" class="md-nav__link">
     Extensions
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#troubleshooting" class="md-nav__link">
+    Troubleshooting
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#get-in-touch" class="md-nav__link">
+    Get in touch
   </a>
   
 </li>
@@ -1112,6 +1153,42 @@
   </li>
 
         
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-13-10" type="checkbox" id="nav-13-10">
+    
+    <label class="md-nav__link" for="nav-13-10">
+      Static Resources
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-13-10">
+        Static Resources
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../xamarin-forms/static-resources/refactoring/" title="Refactoring" class="md-nav__link">
+      Refactoring
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
       </ul>
     </nav>
   </li>
@@ -1652,8 +1729,49 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#introduction" class="md-nav__link">
+    Introduction
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#contribution-workflow" class="md-nav__link">
+    Contribution Workflow
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#requirements" class="md-nav__link">
+    Requirements
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
   <a href="#extensions" class="md-nav__link">
     Extensions
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#troubleshooting" class="md-nav__link">
+    Troubleshooting
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#get-in-touch" class="md-nav__link">
+    Get in touch
   </a>
   
 </li>
@@ -1685,32 +1803,76 @@
                 
                   <h1>Contributing</h1>
                 
-                <p>This documentation is written using <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
-<p>To contribute you will need to install a few things.</p>
-<p>First install <a href="https://www.python.org/">Python</a>.</p>
-<p>Next install <a href="https://pip.readthedocs.io/en/stable/installing/">pip</a>.</p>
-<p>Now you can install <em>mkdocs</em>:</p>
-<p><code>pip install mkdocs</code></p>
-<p>This uses a custom theme, <a href="https://squidfunk.github.io/mkdocs-material/">material</a> which needs installing:</p>
-<p><code>pip install mkdocs-material</code></p>
-<p>If this isn't installed when you try to run the project it won't work and you'll get the following error:</p>
-<div class="codehilite"><pre><span></span><span class="n">mkdocs</span> <span class="n">serve</span>
-<span class="n">INFO</span>    <span class="o">-</span>  <span class="n">Building</span> <span class="n">documentation</span><span class="p">...</span> 
-<span class="n">ERROR</span>   <span class="o">-</span>  <span class="n">Config</span> <span class="n">value</span><span class="p">:</span> <span class="s1">&#39;theme&#39;</span><span class="p">.</span> <span class="n">Error</span><span class="p">:</span> <span class="n">Unrecognised</span> <span class="n">theme</span> <span class="n">name</span><span class="p">:</span> <span class="s1">&#39;material&#39;</span><span class="p">.</span> <span class="n">The</span> <span class="n">available</span> <span class="n">installed</span> <span class="n">themes</span> <span class="k">are</span><span class="p">:</span> <span class="n">readthedocs</span><span class="p">,</span> <span class="n">mkdocs</span> 
-</pre></div>
-
-
-<p>Now you can fork this <a href="https://github.com/mfractor/mfractor.github.io">repo</a> and begin working on some missing documentation.</p>
-<p>Check the <a href="https://github.com/mfractor/mfractor.github.io/issues">open issues</a> and comment on any to show you are working on them so there isn't duplication.</p>
+                <div class="admonition quote">
+<p class="admonition-title">Help us enhance and fix MFractor docs so everyone can get the most of this tool.</p>
+</div>
+<h2 id="introduction">Introduction</h2>
+<p>The MFractor Documentation site is an open source project created and maintained by MFractor. Our goal is to provide rich documentation and reference to our users and customers so they can get the most of the tool. The docs is not only about the tool features itself, but we always try to bring knowledge on development platforms that MFractor assists.</p>
+<div class="admonition abstract">
+<p class="admonition-title">Mission</p>
+<p>Our readers must learn something new beyond the product feature they're searching information itself and enrich their knowledge of the platforms that our tool assists.</p>
+</div>
+<p>Documenting a product is critical and hard to do right and keep up to date. The MFractor team is very small and strive to keep up with the ever changing product features. Community contribution is very desired and welcome to achieve the goal of having this site not only as a source of information for MFractor but also as an important knowledge base for developers.</p>
+<h2 id="contribution-workflow">Contribution Workflow</h2>
+<p>Contributing to MFractor Documentation is much like any Git hosted open source project:</p>
+<ol>
+<li>Pick an <a href="https://github.com/mfractor/mfractor.github.io/issues">issue</a> you wish to contribute and comment on</li>
+<li>Fork the <a href="https://github.com/mfractor/mfractor.github.io/">project repository at GitHub</a></li>
+<li>Make your changes to your forked repository</li>
+<li>Open a Pull Request to merge your changes to the main repo<ul>
+<li>If your changes are accepted we'll merge it and notify you about it.</li>
+<li>We may ask you for additional changes or reply with suggestions through comments on the Pull Request.</li>
+</ul>
+</li>
+</ol>
+<p>In case we add suggestions to your Pull Request we will provide a 3 day time-frame for you to review before merging your changes. We may decide to apply the suggestions internally after the merge.</p>
+<p>This is the high level diagram of the Contribution Workflow:</p>
+<p><img alt="" src="/img/contribution-workflow.png" /></p>
+<div class="admonition important">
+<p class="admonition-title">Important</p>
+<p>All the work to this repository is tracked through issues. We can't track forks to know about ongoing contributions to the project, so please keep your comments on the issues you may be working on so we can manage conflicts. If you've found a problem or a missing documentation that is not listed on the issues, please open one before starting your work.</p>
+</div>
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+<p>We may change parts of your contribution to fix typos, correct data or add missing information. This will be done without notice.</p>
+</div>
+<p>Accepted contributions will be acknowledge on a specific section of the home page. <strong>Don't add the acknowledgements to your Pull Requests</strong>, otherwise they will be rejected. Citations will be only handled internally by our moderation team.</p>
+<h2 id="requirements">Requirements</h2>
+<p>This documentation is written using <a href="https://www.mkdocs.org/">MkDocs</a>, a popular platform for software documentation sites.</p>
+<p>To contribute you will need to install a few things:</p>
+<ul>
+<li>Install <a href="https://www.python.org/">Python</a>.</li>
+<li>Install <a href="https://pip.readthedocs.io/en/stable/installing/">pip</a>.</li>
+<li>Install <em>mkdocs</em> from the pip tool <code>pip install mkdocs</code>.</li>
+<li>Install the [Material Theme for mkdocs] from <code>pip install mkdocs-material</code></li>
+</ul>
+<div class="admonition important">
+<p class="admonition-title">Important</p>
+<p>Make sure to install mkdocs and the material theme both using <code>pip</code>. If you install <code>mkdocs</code> from Homebrew and them install the material theme from <code>pip</code> (the only place where its available as a package) you will get errors trying to compile the docs or running it locally.</p>
+</div>
 <h3 id="extensions">Extensions</h3>
 <p><code>admonition</code> and <code>codehilite</code> are part of the <a href="https://squidfunk.github.io/mkdocs-material/">material</a> theme.</p>
-<div class="codehilite"><pre><span></span><span class="n">markdown_extensions</span><span class="p">:</span>
-  <span class="o">-</span> <span class="n">attr_list</span>
-  <span class="o">-</span> <span class="n">admonition</span>
-  <span class="o">-</span> <span class="n">codehilite</span>
+<div class="codehilite"><pre><span></span><span class="c">markdown_extensions:</span>
+<span class="c">  - attr_list</span>
+<span class="c">  - admonition</span>
+<span class="c">  - codehilite</span>
 </pre></div>
+
+
+<h3 id="troubleshooting">Troubleshooting</h3>
+<p>If the Material Theme isn't installed when you try to run the project it won't work and you'll get the following error:</p>
+<div class="codehilite"><pre><span></span><span class="err">mkdocs serve</span>
+<span class="err">INFO    -  Building documentation... </span>
+<span class="err">ERROR   -  Config value: &#39;theme&#39;. Error: Unrecognised theme name: &#39;material&#39;. The available installed themes are: readthedocs, mkdocs </span>
+</pre></div>
+
+
+<p>Make sure to install mkdocs and material theme from <code>pip</code>.</p>
+<h2 id="get-in-touch">Get in touch</h2>
+<p>If you need further assistance on contribution please refer to <a href="https://twitter.com/matthewrdev">Matthew Robins</a> or <a href="https://twitter.com/ravero">Rafael Veronezi</a> or open an issue. We'll be glas to assist.</p>
                 
                   
+                
                 
               
               
@@ -1798,7 +1960,7 @@
       
     </div>
     
-      <script src="../assets/javascripts/application.ac79c3b0.js"></script>
+      <script src="../assets/javascripts/application.808e90bb.js"></script>
       
       <script>app.initialize({version:"1.0.4",url:{base:".."}})</script>
       
