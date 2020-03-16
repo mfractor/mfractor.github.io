@@ -2,11 +2,30 @@
 
 ## Introduction
 
+## Previewing General Resources
 
-## Previewing Color Resources
+When you hover over a static resource expression, MFractor will render an XML preview of that static resource.
+
+![Static resource tooltips](/img/xamarin-forms/resource-tooltips.png)
+
+Static resource tooltips will work for all resource expressions that can be resolved.
+
+## Previewing Colors
+
+When you hover over a static resource expression that returns a `Color`, MFractor will render a preview of the color:
+
+![Color resource tooltips](/img/xamarin-forms/color-resource-tooltips.png)
+
+Color resource tooltips are useful as they allow you to visually preview what a color
 
 ## Previewing Styles
 
-To facilitate navigating among these components, MFractor adds shortcuts to a few places in the Visual Studio IDE, so you can quickly access the counterparts of the current file you're working. They appear in the context menu of the active document and
+If you hover over a static resource expression that returns a `Style`, MFractor will render an XML preview of that style:
 
-## Previewing General Resources
+![Style tooltips](/img/xamarin-forms/style-tooltips.png)
+
+Style tooltips will include the following information:
+
+ * Each `Setter` included in the style.
+ * The x:Key of that style.
+ * If the style has a parent, this inheritance is also included.

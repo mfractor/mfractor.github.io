@@ -1,5 +1,5 @@
 
-This feature matrix presents all the features available to MFractor by Category.
+This feature matrix presents all the features provided by MFractor.
 
 All features are available in MFractor for Visual Studio for Mac. The third column shows the features available to the Windows version.
 

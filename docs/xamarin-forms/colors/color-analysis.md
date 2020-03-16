@@ -2,13 +2,13 @@
 
 ## Introduction
 
-MFractor includes several code analyis to aid on managing color of your Xamarin.Forms projects. Those analysis are applied to active XAML documents on the editor and will check any property of the [`Xamarin.Forms.Color` Struct](https://docs.microsoft.com/en-us/dotnet/api/xamarin.forms.color?view=xamarin-forms), including any custom or third-party component types.
+MFractor includes several code analysers to aid on managing the colors in your Xamarin.Forms projects. Those analysers are applied to active XAML documents on the editor and will check any property of the [`Xamarin.Forms.Color` Struct](https://docs.microsoft.com/en-us/dotnet/api/xamarin.forms.color?view=xamarin-forms), including any custom or third-party component types.
 
-The color analysis helps you with the following types of issues and enhancements:
+Color analysers helps you with the following types of issues and enhancements:
 
-* Check for mispelled hex color formats
-* Check for mispelled color values
-* Identify colors declared as static resources
+* Check for mispelled hex color formats.
+* Check for mispelled color values.
+* Identify colors declared as static resources.
 
 ## Identifying mispelled hex color formats
 
@@ -83,4 +83,3 @@ The color value will be replaced with the reference to the static resource:
 ```xml
 <BoxView Color="{StaticResource primaryColor}" />
 ```
-
