@@ -25,4 +25,4 @@ To apply a completion, type the name of an icon or select it in the completion w
 
 MFractor will then insert the escaped unicode character reference:
 
-![Font glyph code completion with MFractor](/img/xamarin-forms/font-glyph-completion.png)
+![Font glyph code completion with MFractor](/img/xamarin-forms/font-glyph-intellisense.png)
