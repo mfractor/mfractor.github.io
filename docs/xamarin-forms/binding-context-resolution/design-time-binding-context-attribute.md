@@ -1,8 +1,8 @@
+## Using The DesignTimeBindingContextAttribute
 
+It's possible to explicitly specify a desired binding context by applying the DesignTimeBindingContext attribute to the code behind class.
 
-It's also possible to explicitly specify a desired binding context by applying the DesignTimeBindingContext attribute to the code behind class.
-
-To get started, add the following code file to your project:
+To do so, begin by adding the following code file to your project:
 
 **DesignTimeBindingContextAttribute.cs**
 

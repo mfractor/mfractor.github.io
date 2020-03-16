@@ -1,7 +1,7 @@
 
 This feature matrix presents all the features available to MFractor by Category.
 
-All features are available to the Visual Studio for Mac extension. The third column shows the features available to the Windows version.
+All features are available in MFractor for Visual Studio for Mac. The third column shows the features available to the Windows version.
 
 ## Asset Management
 
@@ -286,4 +286,4 @@ All features are available to the Visual Studio for Mac extension. The third col
 | ResX Localisation Search	| <i class="fas fa-check fa-lg"></i>	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i>
 | Xamarin.Forms Automation Identifiers Search	| <i class="fas fa-check fa-lg"></i>	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i>
 | Xamarin.Forms Static Resources Search	| <i class="fas fa-check fa-lg"></i>	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i>
-| Xamarin.Forms Dynamic Resources Search	| <i class="fas fa-check fa-lg"></i>	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i>	
+| Xamarin.Forms Dynamic Resources Search	| <i class="fas fa-check fa-lg"></i>	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i>

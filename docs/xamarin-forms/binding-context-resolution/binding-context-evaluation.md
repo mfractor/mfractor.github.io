@@ -1,4 +1,4 @@
-# Binding Context Evaluation
+## Binding Context Evaluation
 
 In Xamarin.Forms, all views have the property BindingContext; this specifies the object that a view should data-bind with. When coding with XAML, we can use the x:Static markup extension to reference a static C# property and explicitly provide an instance of a C# class as the binding context:
 

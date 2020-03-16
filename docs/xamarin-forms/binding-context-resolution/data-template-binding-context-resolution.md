@@ -18,4 +18,4 @@ Consider the following code:
 
 The inner DataTemplate has a TextCell where the Text property is provided by the binding expression {Binding DisplayName}. To analyse this expression, MFractor requires a binding context; MFractor will walk out to the encapsulating view (ListView), locate the ItemsSource property and evaluate the expression.
 
-When the return type is an IEnumerable or array, MFractor unwraps the generic or array and grabs the inner type. This provides the binding context type for the binding expressions used within the data template.
+When the return type is an `IEnumerable` or array, MFractor unwraps the generic or array and grabs the inner type. This provides the binding context type for the binding expressions used within the data template.

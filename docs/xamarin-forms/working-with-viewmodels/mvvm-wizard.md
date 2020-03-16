@@ -2,7 +2,6 @@
 
 !!! info "This feature is available in [MFractor Professional](https://www.mfractor.com/products/mfractor-professional)"
 
-
 ## Introduction
 
 When working on Xamarin.Forms projects and applying the MVVM pattern, most of the time you will be creating a XAML Page or View alongside with it's View Model. This is normally a two step process where you need to create the Page/View and then a new class file for it's View Model.
