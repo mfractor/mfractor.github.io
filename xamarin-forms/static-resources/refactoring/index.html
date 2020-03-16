@@ -36,15 +36,15 @@
         <meta name="lang:search.tokenizer" content="[\s\-]+">
       
       <link rel="shortcut icon" href="../../../images/favicon.ico">
-      <meta name="generator" content="mkdocs-1.0.4, mkdocs-material-4.6.0">
+      <meta name="generator" content="mkdocs-1.0.4, mkdocs-material-4.4.3">
     
     
       
-        <title>Refactoring Static Resources</title>
+        <title>Refactoring - MFractor Documentation</title>
       
     
     
-      <link rel="stylesheet" href="../../../assets/stylesheets/application.1b62728e.css">
+      <link rel="stylesheet" href="../../../assets/stylesheets/application.30686662.css">
       
         <link rel="stylesheet" href="../../../assets/stylesheets/application-palette.a8b3c06d.css">
       
@@ -55,12 +55,12 @@
       
     
     
-      <script src="../../../assets/javascripts/modernizr.268332fc.js"></script>
+      <script src="../../../assets/javascripts/modernizr.74668098.js"></script>
     
     
       
         <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&display=fallback">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700|Roboto+Mono&display=fallback">
         <style>body,input{font-family:"Roboto","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono","Courier New",Courier,monospace}</style>
       
     
@@ -144,7 +144,7 @@
             </span>
             <span class="md-header-nav__topic">
               
-                Refactoring Static Resources
+                Refactoring
               
             </span>
           
@@ -1033,8 +1033,15 @@
   </li>
 
         
-      </ul>
-    </nav>
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../grids/tooltips/" title="Tooltips" class="md-nav__link">
+      Tooltips
+    </a>
   </li>
 
         
@@ -1043,28 +1050,9 @@
           
 
 
-  <li class="md-nav__item md-nav__item--nested">
-    
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-13-9" type="checkbox" id="nav-13-9">
-    
-    <label class="md-nav__link" for="nav-13-9">
-      Colors
-    </label>
-    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
-      <label class="md-nav__title" for="nav-13-9">
-        Colors
-      </label>
-      <ul class="md-nav__list" data-md-scrollfix>
-        
-        
-          
-          
-          
-
-
   <li class="md-nav__item">
-    <a href="../../colors/color-analysis/" title="Color Analysis" class="md-nav__link">
-      Color Analysis
+    <a href="../../grids/adornments/" title="Adornments" class="md-nav__link">
+      Adornments
     </a>
   </li>
 
@@ -1083,13 +1071,13 @@
 
   <li class="md-nav__item md-nav__item--active md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-13-10" type="checkbox" id="nav-13-10" checked>
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-13-9" type="checkbox" id="nav-13-9" checked>
     
-    <label class="md-nav__link" for="nav-13-10">
+    <label class="md-nav__link" for="nav-13-9">
       Static Resources
     </label>
     <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
-      <label class="md-nav__title" for="nav-13-10">
+      <label class="md-nav__title" for="nav-13-9">
         Static Resources
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
@@ -1128,32 +1116,26 @@
     Introduction
   </a>
   
-    <nav class="md-nav">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#moving-static-resources-definition-to-app-xaml" class="md-nav__link">
-    Moving Static Resources Definition to App XAML
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#extracting-values-into-resources" class="md-nav__link">
+    Extracting Values Into Resources
   </a>
   
 </li>
-        
-          <li class="md-nav__item">
-  <a href="#create-a-static-resource-from-property" class="md-nav__link">
-    Create a Static Resource from Property
+      
+        <li class="md-nav__item">
+  <a href="#moving-resources-up-to-the-appxaml" class="md-nav__link">
+    Moving Resources Up To The App.xaml
   </a>
   
 </li>
-        
-          <li class="md-nav__item">
-  <a href="#create-a-code-behind-lookup-for-a-static-resource" class="md-nav__link">
-    Create a Code-Behind Lookup for a Static Resource
+      
+        <li class="md-nav__item">
+  <a href="#generating-resource-code-behind-lookup" class="md-nav__link">
+    Generating Resource Code Behind Lookup
   </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
@@ -1171,6 +1153,126 @@
   
 </nav>
     
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../tooltips/" title="Tooltips" class="md-nav__link">
+      Tooltips
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-13-10" type="checkbox" id="nav-13-10">
+    
+    <label class="md-nav__link" for="nav-13-10">
+      Colors
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-13-10">
+        Colors
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../colors/color-analysis/" title="Color Analysis" class="md-nav__link">
+      Color Analysis
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../colors/adornments/" title="Adornments" class="md-nav__link">
+      Adornments
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-13-11" type="checkbox" id="nav-13-11">
+    
+    <label class="md-nav__link" for="nav-13-11">
+      Fonts
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-13-11">
+        Fonts
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../fonts/font-family-resolution/" title="FontFamily Resolution" class="md-nav__link">
+      FontFamily Resolution
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../fonts/tooltips/" title="Tooltips" class="md-nav__link">
+      Tooltips
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../fonts/code-completion/" title="Code Completion" class="md-nav__link">
+      Code Completion
+    </a>
   </li>
 
         
@@ -1723,32 +1825,26 @@
     Introduction
   </a>
   
-    <nav class="md-nav">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#moving-static-resources-definition-to-app-xaml" class="md-nav__link">
-    Moving Static Resources Definition to App XAML
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#extracting-values-into-resources" class="md-nav__link">
+    Extracting Values Into Resources
   </a>
   
 </li>
-        
-          <li class="md-nav__item">
-  <a href="#create-a-static-resource-from-property" class="md-nav__link">
-    Create a Static Resource from Property
+      
+        <li class="md-nav__item">
+  <a href="#moving-resources-up-to-the-appxaml" class="md-nav__link">
+    Moving Resources Up To The App.xaml
   </a>
   
 </li>
-        
-          <li class="md-nav__item">
-  <a href="#create-a-code-behind-lookup-for-a-static-resource" class="md-nav__link">
-    Create a Code-Behind Lookup for a Static Resource
+      
+        <li class="md-nav__item">
+  <a href="#generating-resource-code-behind-lookup" class="md-nav__link">
+    Generating Resource Code Behind Lookup
   </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
@@ -1780,26 +1876,30 @@
                   <h1>Refactoring</h1>
                 
                 <div class="admonition quote">
-<p class="admonition-title">Provides refactorings to create and manage Xamarin.Forms Static Resources.</p>
+<p class="admonition-title">Move and refactor your applications XAML resources</p>
 </div>
-<p>https://github.com/mfractor/mfractor.github.io/issues/13</p>
-<p>MoveStaticResourceDefinitionToAppXaml.cs
-MoveValueToResourceEntry.cs
-Create code behind lookup</p>
 <h2 id="introduction">Introduction</h2>
-<p>Static Resources allows you to defined static instances of objects such as Styles, Colors, Strings among Pages and Views of a Xamarin.Forms project. MFractor includes tools that allow creation and management of your static resources.</p>
-<h3 id="moving-static-resources-definition-to-app-xaml">Moving Static Resources Definition to App XAML</h3>
-<p>Static Resources are declared as <code>ResourceDictionary</code> entries. Those can be attached to the <code>Resources</code> property available to any Visual Element, where they create a scoped Resource, one that is available to the element itself and is propagated to any child element. Scoped Resources are useful when you are creating UI's and identify duplicate objects.</p>
+<p>This documentation article outlines the XAML resource refactorings provided by MFractor.</p>
+<h2 id="extracting-values-into-resources">Extracting Values Into Resources</h2>
+<p>The <strong>Extract value into local resource</strong> refactoring enables you to extract an attributes value into a local or global resource, replacing the</p>
+<p><strong>Extracting the value into a local resource</strong>
+<img alt="Extracting values into local resources" src="/img/xamarin-forms/extract-resource-value-local.gif" /></p>
+<p><strong>Extracting the value into the App.xaml</strong>
+<img alt="Extracting values into App.xaml resources" src="/img/xamarin-forms/extract-resource-value-app-xaml.gif" /></p>
+<h2 id="moving-resources-up-to-the-appxaml">Moving Resources Up To The App.xaml</h2>
+<p>The <strong>Move Resource To App.xaml</strong> refactoring allows you to move a local resource to your App.xaml so that it can be used globally.</p>
+<p><img alt="Moving local resources into the App.xaml" src="/img/xamarin-forms/move-resource-to-app-xaml.gif" /></p>
 <div class="admonition tip">
 <p class="admonition-title">Tip</p>
-<p>It's not recommended to put each and every Static Resource to the App.xaml because they are created at application startup and will be hold in memory thoughout the application lifetime. Consider creating application wide Static Resources only for values being shared among two or more Pages or Views.</p>
-<p>You can also split Static Resources into ResourceDictionary library </p>
+<p>After a resource is moved into the App.xaml, any resource analysers that target that resource kind will take affect across your entire project.</p>
+<p>For example, you can move a local color resource into your app.xaml and MFractor will then start to globally match any duplicate inline color values to that color. This allows you to keep your code clean and tidy.</p>
 </div>
-<h3 id="create-a-static-resource-from-property">Create a Static Resource from Property</h3>
-<h3 id="create-a-code-behind-lookup-for-a-static-resource">Create a Code-Behind Lookup for a Static Resource</h3>
+<h2 id="generating-resource-code-behind-lookup">Generating Resource Code Behind Lookup</h2>
+<p>The <strong>Generating Resource Code Behind Lookup</strong> refactoring creates a C# statement in the XAML code-behind that retrieves the resource via a property.</p>
+<p><img alt="Creating a resource code behind lookup" src="/img/xamarin-forms/create-resource-code-behind-lookup.gif" /></p>
+<p>This code action enables you to expose XAML resources to your code behind class.</p>
                 
                   
-                
                 
               
               
@@ -1834,7 +1934,7 @@ Create code behind lookup</p>
     <div class="md-footer-nav">
       <nav class="md-footer-nav__inner md-grid">
         
-          <a href="../../colors/color-analysis/" title="Color Analysis" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+          <a href="../../grids/adornments/" title="Adornments" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
             <div class="md-flex__cell md-flex__cell--shrink">
               <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
             </div>
@@ -1843,19 +1943,19 @@ Create code behind lookup</p>
                 <span class="md-footer-nav__direction">
                   Previous
                 </span>
-                Color Analysis
+                Adornments
               </span>
             </div>
           </a>
         
         
-          <a href="../../../fonts/importing-fonts/" title="Importing Fonts" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+          <a href="../tooltips/" title="Tooltips" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
             <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
               <span class="md-flex__ellipsis">
                 <span class="md-footer-nav__direction">
                   Next
                 </span>
-                Importing Fonts
+                Tooltips
               </span>
             </div>
             <div class="md-flex__cell md-flex__cell--shrink">
@@ -1887,7 +1987,7 @@ Create code behind lookup</p>
       
     </div>
     
-      <script src="../../../assets/javascripts/application.808e90bb.js"></script>
+      <script src="../../../assets/javascripts/application.ac79c3b0.js"></script>
       
       <script>app.initialize({version:"1.0.4",url:{base:"../../.."}})</script>
       
