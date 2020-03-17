@@ -756,13 +756,6 @@
     Introduction
   </a>
   
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#navigating-between-mvvm-components" class="md-nav__link">
-    Navigating Between MVVM Components
-  </a>
-  
     <nav class="md-nav">
       <ul class="md-nav__list">
         
@@ -789,13 +782,6 @@
         
       </ul>
     </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#mvvm-file-group-detection" class="md-nav__link">
-    MVVM File Group Detection
-  </a>
   
 </li>
       
@@ -1745,18 +1731,6 @@
   </li>
 
         
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../../../release-notes/known-issues/" title="Known Issues" class="md-nav__link">
-      Known Issues
-    </a>
-  </li>
-
-        
       </ul>
     </nav>
   </li>
@@ -1845,13 +1819,6 @@
     Introduction
   </a>
   
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#navigating-between-mvvm-components" class="md-nav__link">
-    Navigating Between MVVM Components
-  </a>
-  
     <nav class="md-nav">
       <ul class="md-nav__list">
         
@@ -1878,13 +1845,6 @@
         
       </ul>
     </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#mvvm-file-group-detection" class="md-nav__link">
-    MVVM File Group Detection
-  </a>
   
 </li>
       
@@ -1919,27 +1879,37 @@
 <p class="admonition-title">Quickly switch among the three core components of the MVVM pattern</p>
 </div>
 <h2 id="introduction">Introduction</h2>
-<p>The MVVM (Model-View-ViewModel) Pattern is considered one if core architectural patterns of a Xamarin.Forms application.</p>
-<p>By convention, a single View is composed by three files:</p>
+<p>The MVVM (Model-View-ViewModel) Pattern is one of the most common architectural patterns of a Xamarin.Forms application.</p>
+<p>By convention, the MVVM pattern is composed by three files:</p>
 <ul>
 <li>The XAML View file (<code>.xaml</code>)</li>
 <li>It's code-behind file (<code>.xaml.cs</code>)</li>
-<li>The View Model that will provide the features of the view (a C# class contained on its own <code>.cs</code> file)</li>
+<li>A View Model that will provide the features of the view (a C# class contained on its own <code>.cs</code> file).</li>
 </ul>
-<p>The first two files are kept together, the later is usually kept on a <code>ViewModels</code> folders, where all the View Models are declared. Sometimes this makes hard to navigate between those files. Enters the MVVM Navigation feature of MFractor.</p>
-<p>The convention for this pattern is to keep each part contained on it's on file where Views are kept on it's XAML file,</p>
-<p>What is a view? What is a view model? What is their relationship?</p>
-<h2 id="navigating-between-mvvm-components">Navigating Between MVVM Components</h2>
-<p>To facilitate navigating among these components, MFractor adds shortcuts to a few places in the Visual Studio IDE, so you can quickly access the counterparts of the current file you're working. They appear in the context menu of the active document and</p>
+<p>The first two files are kept together, the later is usually kept on a <code>ViewModels</code> folders, where all the View Models are declared. Sometimes this makes hard to navigate between those files.</p>
+<div class="admonition important">
+<p class="admonition-title">Important</p>
+<p>Please read the <a href="/xamarin-forms/binding-context-resolution/overview.md">Binding Context Resolution documentation</a> to understand how MFractor associates view models with XAML views.</p>
+</div>
 <h3 id="navigating-to-a-view">Navigating to a View</h3>
-<p>Highlight shortcut is Command+Shift+3</p>
+<div class="admonition info">
+<p class="admonition-title">Keyboard Shortcuts</p>
+<p><strong>Mac:</strong> <code>Command+Shift+3</code>
+<strong>Windows:</strong> <code>Alt+3</code></p>
+</div>
 <h3 id="navigating-to-a-viewmodel">Navigating to a ViewModel</h3>
+<div class="admonition info">
+<p class="admonition-title">Keyboard Shortcuts</p>
+<p><strong>Mac:</strong> <code>Command+Shift+1</code>
+<strong>Windows:</strong> <code>Alt+1</code></p>
+</div>
 <p>Highlight shortcut is Command+Shift+1</p>
 <h3 id="navigating-to-a-code-behind">Navigating to a Code Behind</h3>
-<p>Highlight shortcut is Command+Shift+2</p>
-<h2 id="mvvm-file-group-detection">MVVM File Group Detection</h2>
-<p>MFractor will detect the View Model of a View/Code-Behind using the following convention:</p>
-<p>*</p>
+<div class="admonition info">
+<p class="admonition-title">Keyboard Shortcuts</p>
+<p><strong>Mac:</strong> <code>Command+Shift+2</code>
+<strong>Windows:</strong> <code>Alt+2</code></p>
+</div>
                 
                   
                 
