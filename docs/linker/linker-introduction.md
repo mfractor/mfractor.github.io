@@ -1,4 +1,4 @@
-!!! quote "Exclude assemblies, classes or members from the Xamarin linker"
+!!! quote "An introduction to the Xamarin linker\"
 
 ## Introduction
 
@@ -9,7 +9,7 @@ The
 Define what the linker is?
 Why do we use it?
 
-## Using Exclude From Linker
+Linker source code: https://github.com/mono/linker
 
 ### Excluding Assemblies
 

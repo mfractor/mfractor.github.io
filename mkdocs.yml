@@ -124,7 +124,6 @@ nav:
       - v0.3: release-notes/windows/v0/v0.3.md
       - v0.2: release-notes/windows/v0/v0.2.md
       - v0.1: release-notes/windows/v0/v0.1.md
-  - Known Issues: release-notes/known-issues.md
 - Legal:
   - Third Party Software: legal/third-party-software.md
   - Privacy Policy: legal/privacy-policy.pdf

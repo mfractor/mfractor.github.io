@@ -4,6 +4,7 @@
 
 ### Releases (v4.0)
 
+ * [v4.0.4 - Released on March 17th 2020](v4/v4.0.md#v4.0.4) - Adds grid row/column index adornments. Adds color adornments (enabled via a feature flag)/
  * [v4.0.3 - Released on March 10th 2020](v4/v4.0.md#v4.0.3) - Adds several new XAML analysers, improves performance/memory usage and introduces a new C# refactoring.
  * [v4.0.2 - Released on March 2nd 2020](v4/v4.0.md#v4.0.2) - Adds x:DataType support to binding context resolution and font glyph tooltips + IntelliSense.
  * [v4.0.1 - Released on February 24th 2020](v4/v4.0.md#v4.0.1) - Fixes style and grid refactoring bugs.

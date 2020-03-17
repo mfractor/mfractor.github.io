@@ -26,6 +26,11 @@ This document lists the third party software and libraries used by MFractor.
  * URL: [https://github.com/opentk/opentk](https://github.com/opentk/opentk)
  * License (MIT): [https://github.com/opentk/opentk/blob/master/LICENSE.md](https://github.com/opentk/opentk/blob/master/LICENSE.md)
 
+### PeaPdf
+
+ * URL: [https://github.com/elicym/peapdf](https://github.com/elicym/peapdf)
+ * License (Apache 2): [https://github.com/elicym/peapdf/blob/master/LICENSE](https://github.com/elicym/peapdf/blob/master/LICENSE)
+
 ### Portable.Licensing
 
  * URL: [https://github.com/dnauck/Portable.Licensing](https://github.com/dnauck/Portable.Licensing)
