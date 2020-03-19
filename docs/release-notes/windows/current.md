@@ -4,6 +4,7 @@
 
 ### Releases (v4.0)
 
+ * [v4.0.5 - Released on March 19th 2020](v4/v4.0.md#v4.0.5) - Service release to fix bugs in MVVM wizard and x:Reference code behind data bindings.
  * [v4.0.4 - Released on March 17th 2020](v4/v4.0.md#v4.0.4) - Fixes an issue where trial license requests were not going through.
  * [v4.0.3 - Released on March 10th 2020](v4/v4.0.md#v4.0.3) - Fixes the contrast in XAML code issue tooltips, adds several new XAML analysers, improves performance/memory usage and introduces a new C# refactoring.
  * [v4.0.2 - Released on March 2nd 2020](v4/v4.0.md#v4.0.2) - Adds x:DataType support to binding context resolution.
