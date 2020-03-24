@@ -4,7 +4,7 @@
 
 ### Releases (v4.0)
 
- * [v4.0.6 - Released on March 24th 2020](v4/v4.0.md#v4.0.6) - Service release add insert/delete grid row and column refactorings.
+ * [v4.0.6 - Released on March 24th 2020](v4/v4.0.md#v4.0.6) - Support for Visual Studio Mac 8.5 and adds insert/delete grid row and column refactorings.
  * [v4.0.5 - Released on March 19th 2020](v4/v4.0.md#v4.0.5) - Service release to fix bugs in color and grid adornments.
  * [v4.0.4 - Released on March 17th 2020](v4/v4.0.md#v4.0.4) - Adds grid row/column index adornments. Adds color adornments (enabled via a feature flag).
  * [v4.0.3 - Released on March 10th 2020](v4/v4.0.md#v4.0.3) - Adds several new XAML analysers, improves performance/memory usage and introduces a new C# refactoring.

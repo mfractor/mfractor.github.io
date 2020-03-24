@@ -33,6 +33,7 @@ nav:
 - Installation And Setup: installation-and-setup.md
 - Quickstart - Windows: quickstart-windows.md
 - Quickstart - Mac: quickstart-mac.md
+- ReSharper Compatibility: resharper-compatibility.md
 - Licensing: licensing.md
 - Support: support.md
 - FAQ: faq.md
