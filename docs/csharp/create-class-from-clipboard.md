@@ -31,6 +31,8 @@ We can use `Add Class Using Clipboard` to create a new class using the clipboard
 
 ## Creating A Class From Clipboard
 
+!!! important "The Create Class From Clipboard tool does not currently support shared projects"
+
 To use the `Create Class From Clipboard` tool, copy a valid C# class (with or without it's namespace and usings) to the clipboard.
 
 Next, right click on a project or project folder and beneath the **Add** menu, choose the **Add Class Using Clipboard**
