@@ -538,33 +538,6 @@
     Creating A Class From Clipboard
   </a>
   
-    <nav class="md-nav">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#automatic-name-detection" class="md-nav__link">
-    Automatic Name Detection
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#automatic-namespace-creation" class="md-nav__link">
-    Automatic Namespace Creation
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#automatic-namespace-correction" class="md-nav__link">
-    Automatic Namespace Correction
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
 </li>
       
       
@@ -1855,33 +1828,6 @@
     Creating A Class From Clipboard
   </a>
   
-    <nav class="md-nav">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#automatic-name-detection" class="md-nav__link">
-    Automatic Name Detection
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#automatic-namespace-creation" class="md-nav__link">
-    Automatic Namespace Creation
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#automatic-namespace-correction" class="md-nav__link">
-    Automatic Namespace Correction
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
 </li>
       
       
@@ -1923,7 +1869,7 @@
 <ul>
 <li>An answer from StackOverflow.</li>
 <li>Some code from on Github or CodeProject.</li>
-<li>Code from an online code-gen tool like <a href="https://quicktype.io/">QuickType</a> or <a href="https://andreinitescu.github.io/IconFont2Code/">IconFont2Code</a>.</li>
+<li>Code from an online code-generation tool like <a href="https://quicktype.io/">QuickType</a> or <a href="https://andreinitescu.github.io/IconFont2Code/">IconFont2Code</a>.</li>
 <li>Another one of our code bases.</li>
 </ul>
 <p>Let's consider a common example, that we are using a class from an answer on StackOverflow. You discover an answer with a class that solves your problem and now you would like add it to your project.</p>
@@ -1932,22 +1878,29 @@
 <li>Copy the code to the clipboard.</li>
 <li>Open your project and create a new file.</li>
 <li>Paste the class into the new file.</li>
-<li>Rename the file name to match the class name.</li>
+<li>Ensure the file name to match the class name.</li>
 <li>Cleanup the namespace to match the folder path.</li>
 </ul>
 <p>This involves a lot of steps and a lot of manual cleanup work, making it error prone and tedius.</p>
 <p>To simplify this process, MFractor includes the <code>Add Class Using Clipboard</code> tool to make this easier. This tool is very useful when copying code from Github, StackOverflow or other code bases. (Be honest, we all do it).</p>
-<p>We can use <code>Add Class Using Clipboard</code> to create a new class using the clipboards content; it will automatically detect the file name based on the clipboards class and also correct or create the namespace based on project and folder you are creating it from</p>
+<p>We can use <code>Add Class Using Clipboard</code> to create a new class using the clipboards content; it will automatically detect the file name based on the clipboards class and also correct or create the namespace based on project and folder you are creating it from.</p>
 <h2 id="creating-a-class-from-clipboard">Creating A Class From Clipboard</h2>
 <p>To use the <code>Create Class From Clipboard</code> tool, copy a valid C# class (with or without it's namespace and usings) to the clipboard.</p>
 <p>Next, right click on a project or project folder and beneath the <strong>Add</strong> menu, choose the <strong>Add Class Using Clipboard</strong></p>
 <p><img alt="Accessing the create class from clipboard tool" src="/img/csharp/create-class-from-clipboard-1.png" /></p>
-<p>Next</p>
+<p>A window will now appear that previews the code that will be created.</p>
 <p><img alt="Using the create class from clipboard tool" src="/img/csharp/create-class-from-clipboard-2.png" /></p>
-<h3 id="automatic-name-detection">Automatic Name Detection</h3>
-<p>When</p>
-<h3 id="automatic-namespace-creation">Automatic Namespace Creation</h3>
-<h3 id="automatic-namespace-correction">Automatic Namespace Correction</h3>
+<p>In this window we can change the following:</p>
+<ul>
+<li><strong>Name:</strong> The name of the class. By default this is the name of the first class found in the clipboard</li>
+<li><strong>Folder:</strong> The folder path where the new file will be placed. This will also control the namespace of the new class.</li>
+</ul>
+<p>When the <strong>Create Class From Clipboard</strong> window is launched, MFractor will automatically perform the following:</p>
+<ul>
+<li>Inspect the clipboards contents and use the name of the first class found as the file name.</li>
+<li>If no namespaces are declared, MFractor will wrap the class in a namespace based on the projects default namespace and the folder path the file is being placed into.</li>
+<li>If a namespace is defined, MFractor will correct it to use the project and folder path.</li>
+</ul>
                 
                   
                 
