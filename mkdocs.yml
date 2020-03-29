@@ -47,6 +47,7 @@ nav:
   - Optimising Image Assets: image-management/optimising-image-assets.md
   - Image Tooltips: image-management/image-tooltips.md
 - C#:
+  - Create Class From Clipboard: csharp/create-class-from-clipboard.md
   - Code Actions:
     - Generate Interface Implementation: csharp/code-actions/generate-interface-implementation.md
     - Simplifying Qualified Types: csharp/code-actions/simplify-qualified-types.md
