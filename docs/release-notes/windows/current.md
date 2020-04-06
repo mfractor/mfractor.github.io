@@ -4,6 +4,7 @@
 
 ### Releases (v4.0)
 
+ * [v4.0.8 - Released on April 8th 2020](v4/v4.0.md#v4.0.8) - Service release add insert/delete grid row and column refactorings.
  * [v4.0.6 - Released on March 24th 2020](v4/v4.0.md#v4.0.6) - Service release add insert/delete grid row and column refactorings.
  * [v4.0.5 - Released on March 19th 2020](v4/v4.0.md#v4.0.5) - Service release to fix bugs in MVVM wizard and x:Reference code behind data bindings.
  * [v4.0.4 - Released on March 17th 2020](v4/v4.0.md#v4.0.4) - Fixes an issue where trial license requests were not going through.

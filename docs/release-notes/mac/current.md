@@ -4,6 +4,7 @@
 
 ### Releases (v4.0)
 
+ * [v4.0.8 - Released on April 8th 2020](v4/v4.0.md#v4.0.8) - Service release to add thickness consolidation and significant performance improvements to the XAML analysis engine.
  * [v4.0.7 - Released on March 29th 2020](v4/v4.0.md#v4.0.7) - Create class from clipboard tool and Resizetizer image asset support.
  * [v4.0.6 - Released on March 24th 2020](v4/v4.0.md#v4.0.6) - Support for Visual Studio Mac 8.5 and adds insert/delete grid row and column refactorings.
  * [v4.0.5 - Released on March 19th 2020](v4/v4.0.md#v4.0.5) - Service release to fix bugs in color and grid adornments.
