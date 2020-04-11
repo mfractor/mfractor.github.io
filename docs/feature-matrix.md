@@ -34,6 +34,18 @@ All features are available in MFractor for Visual Studio for Mac. The third colu
 | [MVVM Wizard](https://docs.mfractor.com/xamarin-forms/working-with-viewmodels/mvvm-wizard/)	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>
 | [Value Converter Wizard](https://docs.mfractor.com/xamarin-forms/value-converters/value-converter-wizard/)	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>
 
+### C#
+
+| Feature	| Lite	| Pro	| Platforms
+|---	|---	|---	|---
+| Scaffolder	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i>
+
+### C# Language Code Actions
+
+| Feature	| Lite	| Pro	| Platforms
+|---	|---	|---	|---
+| Create Class From Clipboard	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i>
+
 ## Code Actions
 
 ### C# Language Code Actions
@@ -113,6 +125,7 @@ All features are available in MFractor for Visual Studio for Mac. The third colu
 | Rename Duplicate Namespace References	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>
 | Move Grid Properties To Parent Element	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>
 | Create Missing Style	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>
+| Consolidate Thicknesses	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i>
 
 ## Xamarin.Forms
 
@@ -220,6 +233,8 @@ All features are available in MFractor for Visual Studio for Mac. The third colu
 | [Malformed Hexadecimal Color Value](https://docs.mfractor.com/xamarin-forms/colors/color-analysis/#identifying-mispelled-hex-color-formats)	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>
 | Cell Usage Within CollectionView ItemTemplate	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>
 | Glyph Does Not Exist In Font	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>
+| Thickness Value Can Be Consolidated	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>
+| Color Value Can Be Consolidated	| <i class="fas fa-check fa-lg"></i>	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>
 
 ## Intellisense
 
@@ -268,12 +283,19 @@ All features are available in MFractor for Visual Studio for Mac. The third colu
 | [Static Resource Tooltips](https://docs.mfractor.com/xamarin-forms/static-resources/tooltips/)	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>
 | Value Converter Input/Output Type Tootips	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>
 
+### Intellisense
+
+| Feature	| Lite	| Pro	| Platforms
+|---	|---	|---	|---
+| Embedded Font Asset Completion	| <i class="fas fa-check fa-lg"></i>	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i>
+
 ## Utilities
 
 ### Project and Solution Utilities
 
 | Feature	| Lite	| Pro	| Platforms
 |---	|---	|---	|---
+| Copy Android Package ID To Clipboard	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i>
 | [Delete Output Folder](https://docs.mfractor.com/utilities/delete-output-folders/)	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>
 | [Clean and Compress](https://docs.mfractor.com/utilities/clean-and-compress/)	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>
 | [Edit Shared Project Items](https://docs.mfractor.com/utilities/edit-shared-project-items/)	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i>

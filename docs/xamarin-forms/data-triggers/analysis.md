@@ -1,4 +1,4 @@
-!!! quote "Verify the "
+!!! quote "Verifying the usage of triggers"
 
 ## Introduction
 
