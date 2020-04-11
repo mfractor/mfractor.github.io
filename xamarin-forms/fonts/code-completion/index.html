@@ -1263,6 +1263,13 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#embedded-fonts-completion" class="md-nav__link">
+    Embedded Fonts Completion
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#font-glyph-code-completion" class="md-nav__link">
     Font Glyph Code Completion
   </a>
@@ -1826,6 +1833,13 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#embedded-fonts-completion" class="md-nav__link">
+    Embedded Fonts Completion
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#font-glyph-code-completion" class="md-nav__link">
     Font Glyph Code Completion
   </a>
@@ -1864,15 +1878,13 @@
 </div>
 <h2 id="introduction">Introduction</h2>
 <p>When working with font icons in Xamarin.Forms, it's difficult to discover the icons that are available within a font asset.</p>
-<p>To assist with working with font icons in XAML, MFractor provides code completion and previews for all named glyphs within a font asset.</p>
+<p>To assist with working with font icons in XAML, MFractor provides code completion and previews the fonts declared through an <code>ExportFontAttribute</code> and for all named glyphs within a font asset.</p>
 <div class="admonition info">
 <p class="admonition-title">Please see the <a href="../font-family-resolution/">FontFamily resolution</a> article to understand how MFractor resolves your font assets</p>
 </div>
-<div class="admonition warning">
-<p class="admonition-title">Desktop Fonts vs Web Fonts</p>
-<p>MFractor can only provide glyph code completion when the referenced font asset is a web font. Desktop fonts do not contain the meta-data that associates a glyph name to its icon code.</p>
-<p>If no glyphs are suggested, please ensure that your font asset is a web font.</p>
-</div>
+<h2 id="embedded-fonts-completion">Embedded Fonts Completion</h2>
+<p>When your project has declared embedded font resources using the <code>ExportFontAttribute</code>, these font assets will be suggested in IntelliSense when editing the <code>FontFamily</code> attribute.</p>
+<p><img alt="Embedded font asset completion" src="/img/xamarin-forms/embedded-font-completion.jpeg" /></p>
 <h2 id="font-glyph-code-completion">Font Glyph Code Completion</h2>
 <p>To access font glyph tooltips, ensure that the element applies a valid font asset to its <code>FontFamily</code> property.</p>
 <p>To access the list of available glyphs in a font asset, start typing in any property for that element that is a <code>string</code>.</p>
@@ -1880,6 +1892,11 @@
 <p>To apply a completion, type the name of an icon or select it in the completion window, and press enter.</p>
 <p>MFractor will then insert the escaped unicode character reference:</p>
 <p><img alt="Font glyph code completion with MFractor" src="/img/xamarin-forms/font-glyph-intellisense.png" /></p>
+<div class="admonition warning">
+<p class="admonition-title">Desktop Fonts vs Web Fonts</p>
+<p>MFractor can only provide glyph code completion when the referenced font asset is a web font. Desktop fonts do not contain the meta-data that associates a glyph name to its icon code.</p>
+<p>If no glyphs are suggested, please ensure that your font asset is a web font.</p>
+</div>
                 
                   
                 

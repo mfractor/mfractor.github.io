@@ -118,7 +118,7 @@
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
     <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
     
-      <a href="#v409" tabindex="1" class="md-skip">
+      <a href="#v4010" tabindex="1" class="md-skip">
         Skip to content
       </a>
     
@@ -1481,6 +1481,13 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#v4010" class="md-nav__link">
+    v4.0.10
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#v409" class="md-nav__link">
     v4.0.9
   </a>
@@ -1877,6 +1884,13 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#v4010" class="md-nav__link">
+    v4.0.10
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#v409" class="md-nav__link">
     v4.0.9
   </a>
@@ -1976,6 +1990,23 @@
                 <div class="admonition quote">
 <p class="admonition-title">Release notes for our 4.0 versions of MFractor for Visual Studio Mac</p>
 </div>
+<h2 id="v4010">v4.0.10</h2>
+<p><strong>Released on April 10th 2020</strong></p>
+<p>Service release to add color consolidation analysis and refactorings and support for UWP in the image manager.</p>
+<p><strong>Features</strong></p>
+<ul>
+<li>Color consolidation analyser finds colors usages throughout your app and notifies you when you could merge them into a single static resource.</li>
+<li>Color consolidation refactorings to batch replace all duplicate color values with a static resource.</li>
+<li>UWP support for the font importer.</li>
+<li>UWP support for the image manager.</li>
+<li>UWP support for the delete image asset tool.</li>
+<li>When using a custom font and a static resource to resolve the glyph code, MFractor can now render a preview of that glyph.</li>
+</ul>
+<p><strong>Issues Fixed:</strong></p>
+<ul>
+<li>Fixed: The choose file dialog doesn't disappear when importing a license.</li>
+<li>Fixed: Using <code>x:Reference</code> to refer to the root XAML element as a binding context would generate binding validation errors.</li>
+</ul>
 <h2 id="v409">v4.0.9</h2>
 <p><strong>Released on 8th of April 2020</strong></p>
 <p>Hotfix to address thickness simplification analysis bug showing too many warnings.</p>
