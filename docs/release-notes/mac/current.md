@@ -4,7 +4,8 @@
 
 ### Releases (v4.0)
 
- * [v4.0.10 - Released on April 10th 2020](v4/v4.0.md#v4.0.10) -  Service release to add color consolidation, UWP support for the image manager plus bug fixes for binding analysis.
+ * [v4.0.11 - Released on April 14th 2020](v4/v4.0.md#v4.0.11) - Service release to improve font tool suite by adding a font viewer pad and support for embedded font assets.
+ * [v4.0.10 - Released on April 10th 2020](v4/v4.0.md#v4.0.10) - Service release to add color consolidation, UWP support for the image manager plus bug fixes for binding analysis.
  * [v4.0.9 - Released on April 8th 2020](v4/v4.0.md#v4.0.9) -  Hotfix to address thickness simplification analysis bug showing too many warnings.
  * [v4.0.8 - Released on April 7th 2020](v4/v4.0.md#v4.0.8) - Service release to add thickness consolidation and significant performance improvements to the XAML analysis engine.
  * [v4.0.7 - Released on March 29th 2020](v4/v4.0.md#v4.0.7) - Create class from clipboard tool and Resizetizer image asset support.
