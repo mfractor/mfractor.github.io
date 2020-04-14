@@ -12,7 +12,7 @@ To assist with working with font icons in XAML, MFractor provides code completio
 
 When your project has declared embedded font resources using the `ExportFontAttribute`, these font assets will be suggested in IntelliSense when editing the `FontFamily` attribute.
 
-![Embedded font asset completion](/img/xamarin-forms/embedded-font-completion.jpeg)
+![Embedded font asset completion](/img/fonts/embedded-font-completion.jpeg)
 
 ## Font Glyph Code Completion
 
