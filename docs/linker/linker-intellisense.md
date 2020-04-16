@@ -2,6 +2,4 @@
 
 ## Introduction
 
-
-
 ## Linker IntelliSense
