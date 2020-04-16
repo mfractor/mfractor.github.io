@@ -118,6 +118,10 @@
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
     <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
     
+      <a href="#introduction" tabindex="1" class="md-skip">
+        Skip to content
+      </a>
+    
     
       <header class="md-header" data-md-component="header">
   <nav class="md-header-nav md-grid">
@@ -597,10 +601,12 @@
       
       
 
+  
 
-  <li class="md-nav__item md-nav__item--nested">
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-14" type="checkbox" id="nav-14">
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-14" type="checkbox" id="nav-14" checked>
     
     <label class="md-nav__link" for="nav-14">
       Xamarin.Forms
@@ -1084,10 +1090,12 @@
           
           
 
+  
 
-  <li class="md-nav__item md-nav__item--nested">
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-14-9" type="checkbox" id="nav-14-9">
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-14-9" type="checkbox" id="nav-14-9" checked>
     
     <label class="md-nav__link" for="nav-14-9">
       Static Resources
@@ -1120,6 +1128,113 @@
     <a href="../tooltips/" title="Tooltips" class="md-nav__link">
       Tooltips
     </a>
+  </li>
+
+        
+          
+          
+          
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        Analysis
+      </label>
+    
+    <a href="./" title="Analysis" class="md-nav__link md-nav__link--active">
+      Analysis
+    </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#introduction" class="md-nav__link">
+    Introduction
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#missing-static-resource" class="md-nav__link">
+    Missing Static Resource
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#using-a-nearly-named-resource" class="md-nav__link">
+    Using A Nearly Named Resource
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#static-resource-return-type-mismatch" class="md-nav__link">
+    Static Resource Return Type Mismatch
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ambiguous-static-resource" class="md-nav__link">
+    Ambiguous Static Resource
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#no-key-provided-for-static-resource" class="md-nav__link">
+    No Key Provided For Static Resource
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#resource-key-conflict" class="md-nav__link">
+    Resource Key Conflict
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#onplatform-return-type-mismatch" class="md-nav__link">
+    OnPlatform Return Type Mismatch
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+        <li class="md-nav__item">
+          <a href="#__comments" class="md-nav__link md-nav__link--active">
+            Comments
+          </a>
+        </li>
+      
+    </ul>
+  
+</nav>
+    
   </li>
 
         
@@ -1752,6 +1867,96 @@
               </div>
             
             
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary">
+  
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#introduction" class="md-nav__link">
+    Introduction
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#missing-static-resource" class="md-nav__link">
+    Missing Static Resource
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#using-a-nearly-named-resource" class="md-nav__link">
+    Using A Nearly Named Resource
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#static-resource-return-type-mismatch" class="md-nav__link">
+    Static Resource Return Type Mismatch
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ambiguous-static-resource" class="md-nav__link">
+    Ambiguous Static Resource
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#no-key-provided-for-static-resource" class="md-nav__link">
+    No Key Provided For Static Resource
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#resource-key-conflict" class="md-nav__link">
+    Resource Key Conflict
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#onplatform-return-type-mismatch" class="md-nav__link">
+    OnPlatform Return Type Mismatch
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+        <li class="md-nav__item">
+          <a href="#__comments" class="md-nav__link md-nav__link--active">
+            Comments
+          </a>
+        </li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
           
           <div class="md-content">
             <article class="md-content__inner md-typeset">
@@ -1762,7 +1967,40 @@
                 
                   <h1>Analysis</h1>
                 
-                
+                <div class="admonition quote">
+<p class="admonition-title">Inspections that verify static resource declarations and expressions</p>
+</div>
+<h2 id="introduction">Introduction</h2>
+<p>This documentation article outlines the XAML analysers and code fixes that are available for static resource expressions and declarations.</p>
+<h2 id="missing-static-resource">Missing Static Resource</h2>
+<p>When referencing a resource using a <code>StaticResource</code> expression, MFractor will validate that the given resource key is available in the current</p>
+<p><img alt="Example of the undefined static resource analyser" src="/img/xamarin-forms/undefined-static-resource.png" /></p>
+<h3 id="using-a-nearly-named-resource">Using A Nearly Named Resource</h3>
+<p>When MFractor detects that key provided to a <code>StaticResource</code> expression is unresolved, however, it closely matches another the name of another available resource name, MFractor suggests that resource and provides a code-fix to</p>
+<p><img alt="Example of the nearly named static resource fix" src="/img/xamarin-forms/nearly-named-static-resource.png" /></p>
+<h2 id="static-resource-return-type-mismatch">Static Resource Return Type Mismatch</h2>
+<p>When a static resource expression returns a type that does not match the expected type of the targeted attribute, it will warn of a type mismatch between the expected type of that attribute and the expressions return type.</p>
+<p><img alt="Example of the static resource return type mismatch analyser" src="/img/xamarin-forms/static-resource-return-type-mismatch.png" /></p>
+<div class="admonition info">
+<p class="admonition-title">If the property type has a <code>TypeConverterAttribute</code> applied to it (EG: to enable converting a string value into a LayoutOptions), MFractor will not analyse the type flow.</p>
+</div>
+<h2 id="ambiguous-static-resource">Ambiguous Static Resource</h2>
+<p>When two or more resources are defined using the same name but in different scopes, the final result of a <code>StaticResource</code> expression is ambiguous.</p>
+<p>For example, if a page defines a resource named <code>primaryColor</code> and the App.xaml also defined a resource named <code>primaryColor</code>, we now have two resources with the same name available to the page. It is <em>ambiguous</em> which one we are referencing when we use the expression <code>{StaticResource primaryColor}</code>.</p>
+<p>The <strong>Ambiguous Static Resource</strong> analyser detects when an expressions resource key resolves to more than one available resource and provides a warning that the referenced resource is ambiguous.</p>
+<p><img alt="Example of the nearly ambiguous static resource analyser" src="/img/xamarin-forms/ambiguous-static-resource.png" /></p>
+<h2 id="no-key-provided-for-static-resource">No Key Provided For Static Resource</h2>
+<p>When declaring a new resource inside a <code>ResourceDictionary</code>, we include an <code>x:Key</code> attribute to define the key that is used to lookup the resource with a <code>StaticResource</code> expression.</p>
+<p>Unless the element is a style, all resources must include a resource key.</p>
+<p><img alt="Example of the undefined static resource analyser" src="/img/xamarin-forms/missing-resource-key.png" /></p>
+<p>To fix this issue, hover over the code issue and in the tooltip, click on the <strong>Generate a key for this resource</strong> fix.</p>
+<h2 id="resource-key-conflict">Resource Key Conflict</h2>
+<p>When declaring a new resource for a page or control, it is common to accidentally use the same key multiple times (either in the same page or )</p>
+<p>This analyser inspects the <code>x:Key</code> attribute of each resource definition and verifies that it is unique within the current scope.</p>
+<p><img alt="Example of the nearly ambiguous static resource analyser" src="/img/xamarin-forms/resource-key-conflict.png" /></p>
+<h2 id="onplatform-return-type-mismatch">OnPlatform Return Type Mismatch</h2>
+<p>When a static resource expression returns an <code>OnPlatform</code> element, MFractor will verify that the type specified by the <code>x:TypeArguments</code> is compatible with the expected type of the attribute.</p>
+<p><img alt="Example of the OnPlatform return type mismatch" src="/img/xamarin-forms/onplatform-return-type-mismatch.png" /></p>
                 
                   
                 
@@ -1795,6 +2033,41 @@
       
         
 <footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid">
+        
+          <a href="../tooltips/" title="Tooltips" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
+            </div>
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Previous
+                </span>
+                Tooltips
+              </span>
+            </div>
+          </a>
+        
+        
+          <a href="../../colors/color-analysis/" title="Color Analysis" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Next
+                </span>
+                Color Analysis
+              </span>
+            </div>
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-forward md-footer-nav__button"></i>
+            </div>
+          </a>
+        
+      </nav>
+    </div>
   
   <div class="md-footer-meta md-typeset">
     <div class="md-footer-meta__inner md-grid">

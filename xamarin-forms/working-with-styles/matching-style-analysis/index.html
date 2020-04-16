@@ -880,14 +880,14 @@
       
         <li class="md-nav__item">
   <a href="#matching-style-detection" class="md-nav__link">
-    Matching style detection
+    Matching Style Detection
   </a>
   
 </li>
       
         <li class="md-nav__item">
   <a href="#applying-a-matching-style" class="md-nav__link">
-    Applying a matching style
+    Applying A Matching style
   </a>
   
 </li>
@@ -1188,6 +1188,18 @@
   <li class="md-nav__item">
     <a href="../../static-resources/tooltips/" title="Tooltips" class="md-nav__link">
       Tooltips
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../static-resources/analysis/" title="Analysis" class="md-nav__link">
+      Analysis
     </a>
   </li>
 
@@ -1841,14 +1853,14 @@
       
         <li class="md-nav__item">
   <a href="#matching-style-detection" class="md-nav__link">
-    Matching style detection
+    Matching Style Detection
   </a>
   
 </li>
       
         <li class="md-nav__item">
   <a href="#applying-a-matching-style" class="md-nav__link">
-    Applying a matching style
+    Applying A Matching style
   </a>
   
 </li>
@@ -1893,7 +1905,7 @@
 <h2 id="introduction">Introduction</h2>
 <p>Styles are a core building block of complex UI applications in Xamarin.Forms. They allow the creation of specifications that can be easily applied to common visual components. Although being very useful and simple to use, styles can become hard to track and manage overtime.</p>
 <p>This code analysis aids in managing the complexity of styles by inspecting elements that do not have a style applied and, if possible, matching them to an available style that targets the element type and also applying the same properties.</p>
-<h2 id="matching-style-detection">Matching style detection</h2>
+<h2 id="matching-style-detection">Matching Style Detection</h2>
 <p>The steps to find a matching style are:</p>
 <ul>
 <li>Check if the element has any attributes declared</li>
@@ -1901,7 +1913,7 @@
 </ul>
 <p>If both predicates are true, MFractor will load a list of the styles declared locally or globally that can be applied to that Target Type, which includes not just the type itself, but any of it's ancestor types.</p>
 <p>Then, for each of the styles, MFractor will check if the declared attributes matches the setters of the style, and also if the values matches. In that case the style is identified as a match, and the code analysis presents a warning to indicate the user an available style that can be applied to that element.</p>
-<h2 id="applying-a-matching-style">Applying a matching style</h2>
+<h2 id="applying-a-matching-style">Applying A Matching style</h2>
 <p>When MFractor Code Analysis identify an element that may be simplified by replacing the property declarations with an existing style, it will add yellow squiggles on the bottom of the component to indicate the available refactoring.</p>
 <p><img alt="The code analysis tool highlighting a possible fix" src="/img/xamarin-forms/style-detection-code-analysis.png" /></p>
 <p>Right-click on the element and on the <code>Fix</code> menu an option should appear as <code>Apply style 'styleName'</code>:</p>
