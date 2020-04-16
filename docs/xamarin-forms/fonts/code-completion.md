@@ -1,4 +1,4 @@
-!!! quote "Visually previewing glyphs from a font with glyph tooltips"
+!!! quote "Completion for font assets in a Xamarin.Forms project and for glyphs within a font asset"
 
 ## Introduction
 
