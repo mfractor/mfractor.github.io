@@ -91,6 +91,7 @@ nav:
   - Static Resources:
     - Refactoring: xamarin-forms/static-resources/refactoring.md
     - Tooltips: xamarin-forms/static-resources/tooltips.md
+    - Analysis: xamarin-forms/static-resources/analysis.md
   - Colors:
     - Color Analysis: xamarin-forms/colors/color-analysis.md
     - Adornments: xamarin-forms/colors/adornments.md

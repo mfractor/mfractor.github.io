@@ -6,7 +6,7 @@ Styles are a core building block of complex UI applications in Xamarin.Forms. Th
 
 This code analysis aids in managing the complexity of styles by inspecting elements that do not have a style applied and, if possible, matching them to an available style that targets the element type and also applying the same properties.
 
-## Matching style detection
+## Matching Style Detection
 
 The steps to find a matching style are:
 
@@ -17,7 +17,7 @@ If both predicates are true, MFractor will load a list of the styles declared lo
 
 Then, for each of the styles, MFractor will check if the declared attributes matches the setters of the style, and also if the values matches. In that case the style is identified as a match, and the code analysis presents a warning to indicate the user an available style that can be applied to that element.
 
-## Applying a matching style
+## Applying A Matching style
 
 When MFractor Code Analysis identify an element that may be simplified by replacing the property declarations with an existing style, it will add yellow squiggles on the bottom of the component to indicate the available refactoring.
 
