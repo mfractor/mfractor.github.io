@@ -1,8 +1,8 @@
-!!! quote "Inspections "
+!!! quote "Inspections that verify static resource declarations and expressions"
 
 ## Introduction
 
-This documentation article outlines the XAML analysers and code fixes that are available for static resource expressions.
+This documentation article outlines the XAML analysers and code fixes that are available for static resource expressions and declarations.
 
 ## Missing Static Resource
 
