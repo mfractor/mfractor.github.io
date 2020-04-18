@@ -4,6 +4,7 @@
 
 ### Releases (v4.0)
 
+ * [v4.0.12 - Released on April 18th 2020](v4/v4.0.md#v4.0.12) -  Service release to hotfix an XML syntax transformation failure and adds MobileBuildTools image support. 
  * [v4.0.11 - Released on April 14th 2020](v4/v4.0.md#v4.0.11) - Service release to improve font tool suite by adding a font viewer pad and support for embedded font assets.
  * [v4.0.10 - Released on April 10th 2020](v4/v4.0.md#v4.0.10) - Service release to add color consolidation, UWP support for the image manager plus bug fixes for binding analysis.
  * [v4.0.9 - Released on April 8th 2020](v4/v4.0.md#v4.0.9) -  Hotfix to address thickness simplification analysis bug showing too many warnings.
