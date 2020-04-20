@@ -4,10 +4,11 @@
 
 ### Releases (v4.0)
 
- * [v4.0.12 - Released on April 18th 2020](v4/v4.0.md#v4.0.12) -  Service release to hotfix an XML syntax transformation failure and adds MobileBuildTools image support.
- * [v4.0.11 - Released on April 14th 2020](v4/v4.0.md#v4.0.11) -  Hotfix release to fix image manager list items not appearing.
- * [v4.0.10 - Released on April 10th 2020](v4/v4.0.md#v4.0.10) -  Service release to add color consolidation, UWP support for the image manager plus bug fixes for binding analysis.
- * [v4.0.9 - Released on April 8th 2020](v4/v4.0.md#v4.0.9) -  Hotfix to address thickness simplification analysis bug showing too many warnings.
+ * [v4.0.13 - Released on April 20th 2020](v4/v4.0.md#v4.0.13) - Service release to expand the font tooling, new XAML analysers and improved performance for the XAML analyser.
+ * [v4.0.12 - Released on April 18th 2020](v4/v4.0.md#v4.0.12) - Service release to hotfix an XML syntax transformation failure and adds MobileBuildTools image support.
+ * [v4.0.11 - Released on April 14th 2020](v4/v4.0.md#v4.0.11) - Hotfix release to fix image manager list items not appearing.
+ * [v4.0.10 - Released on April 10th 2020](v4/v4.0.md#v4.0.10) - Service release to add color consolidation, UWP support for the image manager plus bug fixes for binding analysis.
+ * [v4.0.9 - Released on April 8th 2020](v4/v4.0.md#v4.0.9) - Hotfix to address thickness simplification analysis bug showing too many warnings.
  * [v4.0.8 - Released on April 7th 2020](v4/v4.0.md#v4.0.8) - Service release to add thickness consolidation and significant performance improvements to the XAML analysis engine.
  * [v4.0.6 - Released on March 24th 2020](v4/v4.0.md#v4.0.6) - Service release add insert/delete grid row and column refactorings.
  * [v4.0.5 - Released on March 19th 2020](v4/v4.0.md#v4.0.5) - Service release to fix bugs in MVVM wizard and x:Reference code behind data bindings.
