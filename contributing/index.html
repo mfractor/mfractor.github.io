@@ -2064,7 +2064,11 @@
 <p class="admonition-title">Important</p>
 <p>Make sure to install mkdocs and the material theme both using <code>pip</code>. If you install <code>mkdocs</code> from Homebrew and them install the material theme from <code>pip</code> (the only place where its available as a package) you will get errors trying to compile the docs or running it locally.</p>
 </div>
-<p>Local installation is error prone. Consider using the docker image for faster and simpler setup. The script file <code>docker-serve</code> at the root of the repository (<code>docs</code> branch) will try to download the correct image and run the local server.</p>
+<p>Local installation is error prone. Consider using the docker image for faster and simpler setup. The script file <code>dsrv</code> at the root of the repository (<code>docs</code> branch) will try to download the correct image and run the local server.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The <code>publish.sh</code> and <code>dpub</code> scripts are intended for publishing are only used internally. Trying to use them without the required permissions will fail.</p>
+</div>
 <h3 id="extensions">Extensions</h3>
 <p><code>admonition</code> and <code>codehilite</code> are part of the <a href="https://squidfunk.github.io/mkdocs-material/">material</a> theme.</p>
 <div class="codehilite"><pre><span></span><code><span class="c">markdown_extensions:</span>
