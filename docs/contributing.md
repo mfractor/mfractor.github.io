@@ -36,9 +36,9 @@ Accepted contributions will be acknowledge on a specific section of the home pag
 
 ## Requirements
 
-This documentation is written using [MkDocs](https://www.mkdocs.org/), a popular platform for software documentation sites.
+This documentation is written using [`mkdocs`](https://www.mkdocs.org/), a popular platform for software documentation sites, and takes advantage of the [`mkdocs-material`](https://squidfunk.github.io/mkdocs-material/) a plugin that adds material design concepts and themes to the site. 
 
-To contribute you will need to install a few things:
+To contribute you can use the mkdocs-material docker image (preferred) or will need to install a few things:
 
 * Install [Python](https://www.python.org/).
 * Install [pip](https://pip.readthedocs.io/en/stable/installing/).
@@ -47,6 +47,8 @@ To contribute you will need to install a few things:
 
 !!! important
     Make sure to install mkdocs and the material theme both using `pip`. If you install `mkdocs` from Homebrew and them install the material theme from `pip` (the only place where its available as a package) you will get errors trying to compile the docs or running it locally.
+
+Local installation is error prone. Consider using the docker image for faster and simpler setup. The script file `docker-serve` at the root of the repository (`docs` branch) will try to download the correct image and run the local server.
 
 ### Extensions
 
