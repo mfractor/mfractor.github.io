@@ -1,0 +1,14 @@
+#!/bin/bash
+
+#------------------------------------------------------------------------------
+# Serve with mkdocs-material image.
+# Reference: https://hub.docker.com/r/squidfunk/mkdocs-material/
+#------------------------------------------------------------------------------
+
+# Check if the image already and download if not
+if [[ "$(docker images -q squidfunk/mkdocs-material) 2> /dev/null" == "" ]]; then
+    docker pull squidfunk/mkdocs-material
+fi
+
+# Run the serve environment
+docker run --rm -it -p 8000:8000 -v ${PWD}:/docs squidfunk/mkdocs-material

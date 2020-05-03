@@ -1,0 +1,28 @@
+#!/bin/bash
+
+#------------------------------------------------------------------------------
+# Publish with mkdocs-material image.
+# Based on the `publish.sh` will get the first parameter as the commit message
+#   push the branch and publish the changes.
+#
+# Reference: https://hub.docker.com/r/squidfunk/mkdocs-material/
+#------------------------------------------------------------------------------
+
+# Gets the commit message
+if [ $# -ne 1 ]; then
+    echo "Please supply a commit message so that the push script can run."
+    exit
+fi
+
+# Check if the image already and download if not
+if [[ "$(docker images -q squidfunk/mkdocs-material) 2> /dev/null" == "" ]]; then
+    docker pull squidfunk/mkdocs-material
+fi
+
+MESSAGE=$1
+
+git add docs/
+git commit -am "$MESSAGE"
+git push
+
+docker run --rm -it -v ~/.ssh:/root/.ssh -v ${PWD}:/docs squidfunk/mkdocs-material gh-deploy
