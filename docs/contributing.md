@@ -48,7 +48,10 @@ To contribute you can use the mkdocs-material docker image (preferred) or will n
 !!! important
     Make sure to install mkdocs and the material theme both using `pip`. If you install `mkdocs` from Homebrew and them install the material theme from `pip` (the only place where its available as a package) you will get errors trying to compile the docs or running it locally.
 
-Local installation is error prone. Consider using the docker image for faster and simpler setup. The script file `docker-serve` at the root of the repository (`docs` branch) will try to download the correct image and run the local server.
+Local installation is error prone. Consider using the docker image for faster and simpler setup. The script file `dsrv` at the root of the repository (`docs` branch) will try to download the correct image and run the local server.
+
+!!! note
+    The `publish.sh` and `dpub` scripts are intended for publishing are only used internally. Trying to use them without the required permissions will fail.
 
 ### Extensions
 
