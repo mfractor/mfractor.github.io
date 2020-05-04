@@ -4,6 +4,7 @@
 
 ### Releases (v4.0)
 
+ * [v4.0.14 - Released on May 4th 2020](v4/v4.0.md#v4.0.14) - Service release to add adornments for XAML in Visual Studio Windows.
  * [v4.0.13 - Released on April 20th 2020](v4/v4.0.md#v4.0.13) - Service release to expand the font tooling, new XAML analysers and improved performance for the XAML analyser.
  * [v4.0.12 - Released on April 18th 2020](v4/v4.0.md#v4.0.12) - Service release to hotfix an XML syntax transformation failure and adds MobileBuildTools image support.
  * [v4.0.11 - Released on April 14th 2020](v4/v4.0.md#v4.0.11) - Hotfix release to fix image manager list items not appearing.
