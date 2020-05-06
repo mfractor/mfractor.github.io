@@ -20,6 +20,9 @@ To install MFractor:
 
 ### Installation (File)
 
+!!! note
+    You can also use this procedure to update an existing installation of MFractor.
+
 Visual Studio Mac extensions are bundled and distributed as `.mpack` files.
 
 The latest version of MFractor for Visual Studio Mac can be found here: **[http://addins.monodevelop.com/Project/Index/300](http://addins.monodevelop.com/Project/Index/300)**

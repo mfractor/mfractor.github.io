@@ -1,5 +1,8 @@
 !!! quote "A summary of our current release of MFractor for Visual Studio Mac"
 
+!!! warning "About installation and upgrade to latest version"
+    Currently there's a bug on the Visual Studio for Mac Extension Gallery where MFractor is stuck on an older version. We are working with Microsoft on a fix for this issue. To get the latest versions of MFractor please check the **[Installation and Setup page](/installation-and-setup#installation-file)** for instructions on manual installation and update.
+
 ## Releases (v4)
 
 ### Releases (v4.0)
