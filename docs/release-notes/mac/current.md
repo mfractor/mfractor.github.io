@@ -7,6 +7,7 @@
 
 ### Releases (v4.0)
 
+ * [v4.0.17 - Released on May 10th 2020](v4/v4.0.md#v4017) - Service release to fix a crash caused by color adornments.
  * [v4.0.16 - Released on May 10th 2020](v4/v4.0.md#v4016) - Service release to include automatic 30-day trials.
  * [v4.0.15 - Released on May 7th 2020](v4/v4.0.md#v4015) - Service release to align Mac version to Windows.
  * [v4.0.14 - Released on May 4th 2020](v4/v4.0.md#v4014) - Service release to align Mac version to Windows.

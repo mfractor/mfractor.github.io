@@ -2,4 +2,4 @@
 
 ## Introduction
 
-This documentation article outlines the XAML analysers refactorings provided by MFractor.
+This documentation article outlines the XAML analysers provided by MFractor.
