@@ -112,6 +112,7 @@ nav:
   - Mac:
     - Current Release: release-notes/mac/current.md
     - v4:
+      - v4.1: release-notes/mac/v4/v4.1.md
       - v4.0: release-notes/mac/v4/v4.0.md
     - v3:
       - v3.10: release-notes/mac/v3/v3.10.md
@@ -119,6 +120,7 @@ nav:
   - Windows:
     - Current Release: release-notes/windows/current.md
     - v4:
+      - v4.1: release-notes/windows/v4/v4.1.md
       - v4.0: release-notes/windows/v4/v4.0.md
     - v0:
       - v0.6: release-notes/windows/v0/v0.6.md

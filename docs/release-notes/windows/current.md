@@ -2,6 +2,10 @@
 
 ## Releases (v4)
 
+### Releases (v4.1)
+
+ * [v4.0.17 - Released on May 12th 2020](v4/v4.1.md#v410) - MFractor 4.1 for Visual Studio Windows is a major release that adds automatic 30-day trials, adornments, font tooling, additional XAML analysers and much more.
+
 ### Releases (v4.0)
 
  * [v4.0.17 - Released on May 10th 2020](v4/v4.0.md#v4017) - Service release to fix a crash caused by color adornments.
