@@ -7,6 +7,7 @@
 
 ### Releases (v4.1)
 
+ * [v4.1.2 - Released on May 17th 2020](v4/v4.1.md#v412) - Service release to fix several small issues in the code actions Alt+Return menu.
  * [v4.1.1 - Released on May 16th 2020](v4/v4.1.md#v411) - Service release to fix multiple user reported bugs, adds the ability to disable analysers at a document level, color adornment editing support and moves the scaffolder out of preview.
  * [v4.1.0 - Released on May 12th 2020](v4/v4.1.md#v410) - MFractor 4.1 for Visual Studio Mac is a major release that adds automatic 30-day trials, adornments, font tooling, additional XAML analysers and much more.
 
