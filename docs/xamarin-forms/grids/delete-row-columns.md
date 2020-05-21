@@ -14,7 +14,8 @@ The same is available for columns
 
 ### Mac
 
-![Inserting and deleting rows into a grid](/img/xamarin-forms/grid-insert-delete-row.gif)
+![Deleting rows into a grid](/img/xamarin-forms/grid-delete-row.gif)
+![Deleting columns into a grid](/img/xamarin-forms/grid-delete-column.gif)
 
 ### Windows
 
