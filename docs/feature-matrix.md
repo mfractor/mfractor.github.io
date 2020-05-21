@@ -1,3 +1,4 @@
+!!! quote "An overview of all features provided by MFractor"
 
 This feature matrix presents all the features provided by MFractor.
 
@@ -49,7 +50,7 @@ All features are available in MFractor for Visual Studio for Mac. The third colu
 
 | Feature	| Lite	| Pro	| Platforms
 |---	|---	|---	|---
-| Create Class From Clipboard	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i>
+| [Create Class From Clipboard](https://docs.mfractor.com/csharp/create-class-from-clipboard/)	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i>
 
 ## Code Actions
 
@@ -92,7 +93,6 @@ All features are available in MFractor for Visual Studio for Mac. The third colu
 |---	|---	|---	|---
 | [Extract XAML Style](https://docs.mfractor.com/xamarin-forms/custom-controls/extracting-custom-controls/)	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>
 | [Extract Custom Control](https://docs.mfractor.com/xamarin-forms/custom-controls/extracting-custom-controls/)	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>
-| Generate a new View Model for XAML view	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>
 | [Convert StackLayout to Grid](https://docs.mfractor.com/xamarin-forms/grids/convert-stacklayout-to-grid/)	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>
 | Generate Resource Dictionary	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>
 | Generate New Value Converter for Type Flow	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>
@@ -133,6 +133,12 @@ All features are available in MFractor for Visual Studio for Mac. The third colu
 | Consolidate Thicknesses	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i>
 | Escape Newline Characters	| <i class="fas fa-check fa-lg"></i>	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>
 | Auto-Correct Embedded Font Reference	| <i class="fas fa-check fa-lg"></i>	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>
+| Move Property To Parent Element	| <i class="fas fa-check fa-lg"></i>	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>
+| Migrate Icon To IconImageSource	| <i class="fas fa-check fa-lg"></i>	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>
+| [Insert Grid Row](https://docs.mfractor.com/xamarin-forms/grids/insert-row-columns/)	| <i class="fas fa-check fa-lg"></i>	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>
+| [Insert Grid Column](https://docs.mfractor.com/xamarin-forms/grids/insert-row-columns/)	| <i class="fas fa-check fa-lg"></i>	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>
+| [Delete Grid Row](https://docs.mfractor.com/xamarin-forms/grids/delete-row-columns/)	| <i class="fas fa-check fa-lg"></i>	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>
+| [Delete Grid Column](https://docs.mfractor.com/xamarin-forms/grids/delete-row-columns/)	| <i class="fas fa-check fa-lg"></i>	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>
 
 ## Xamarin.Forms
 
@@ -280,8 +286,8 @@ All features are available in MFractor for Visual Studio for Mac. The third colu
 
 | Feature	| Lite	| Pro	| Platforms
 |---	|---	|---	|---
-| [Grid Index Adornments](https://docs.mfractor.com/xamarin-forms/grids/adornments/)	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i>
-| Color Adornments	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i>
+| [Grid Index Adornments](https://docs.mfractor.com/xamarin-forms/grids/adornments/)	| <i class="fas fa-check fa-lg"></i>	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>
+| [Color Adornments](https://docs.mfractor.com/xamarin-forms/colors/adornments/)	| <i class="fas fa-check fa-lg"></i>	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>
 
 ### Tooltips
 
@@ -319,4 +325,4 @@ All features are available in MFractor for Visual Studio for Mac. The third colu
 | ResX Localisation Search	| <i class="fas fa-check fa-lg"></i>	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i>
 | Xamarin.Forms Automation Identifiers Search	| <i class="fas fa-check fa-lg"></i>	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i>
 | Xamarin.Forms Static Resources Search	| <i class="fas fa-check fa-lg"></i>	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i>
-| Xamarin.Forms Dynamic Resources Search	| <i class="fas fa-check fa-lg"></i>	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i>	
+| Xamarin.Forms Dynamic Resources Search	| <i class="fas fa-check fa-lg"></i>	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i>
