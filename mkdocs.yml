@@ -39,6 +39,10 @@ nav:
 - Installation And Setup: installation-and-setup.md
 - Quickstart - Windows: quickstart-windows.md
 - Quickstart - Mac: quickstart-mac.md
+- Analysis:
+  #- Overview: analysis/overview.md
+  - Disabling Analysers: analysis/disabling-analysers.md
+  #- Solution Analysis: analysis/solution-analysis.md
 - Code Actions: code-actions.md
 - Image Management:
   - Overview: image-management/overview.md
@@ -89,6 +93,8 @@ nav:
     - Convert StackLayout to Grid: xamarin-forms/grids/convert-stacklayout-to-grid.md
     - Tooltips: xamarin-forms/grids/tooltips.md
     - Adornments: xamarin-forms/grids/adornments.md
+    - Insert Grid Row/Column: xamarin-forms/grids/insert-row-columns.md
+    - Delete Grid Row/Column: xamarin-forms/grids/delete-row-columns.md
   - Static Resources:
     - Refactoring: xamarin-forms/static-resources/refactoring.md
     - Tooltips: xamarin-forms/static-resources/tooltips.md
