@@ -397,10 +397,12 @@
       
       
 
+  
 
-  <li class="md-nav__item md-nav__item--nested">
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-7" type="checkbox" id="nav-7">
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-7" type="checkbox" id="nav-7" checked>
     
     <label class="md-nav__link" for="nav-7">
       Analysis
@@ -411,6 +413,72 @@
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
         
+        
+          
+          
+          
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        Overview
+      </label>
+    
+    <a href="./" title="Overview" class="md-nav__link md-nav__link--active">
+      Overview
+    </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#introduction" class="md-nav__link">
+    Introduction
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#managing-analysers" class="md-nav__link">
+    Managing Analysers
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#available-code-analysers" class="md-nav__link">
+    Available Code Analysers
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+        <li class="md-nav__item">
+          <a href="#__comments" class="md-nav__link md-nav__link--active">
+            Comments
+          </a>
+        </li>
+      
+    </ul>
+  
+</nav>
+    
+  </li>
+
         
           
           
@@ -1894,6 +1962,20 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#managing-analysers" class="md-nav__link">
+    Managing Analysers
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#available-code-analysers" class="md-nav__link">
+    Available Code Analysers
+  </a>
+  
+</li>
+      
       
       
       
@@ -1923,138 +2005,500 @@
                 
                 <p><strong>Detect errors, improvements and maintainability suggestions with</strong></p>
 <h2 id="introduction">Introduction</h2>
-<p>There are a number of analysers available in MFractor.</p>
-<p>Click on the MFractor tab then "Preferences".</p>
-<p>Scroll down to "Code Analysis" and you can search for a specific one or toggle to disable at an application level.</p>
-<p>If you want to disable at a Solution/Project level see <a href="../disabling-analysers/">Disabling Analysers</a>.</p>
+<p>MFractor includes a code-analysis engine that inspects your XAML code for a wide range of common issues.</p>
+<h2 id="managing-analysers">Managing Analysers</h2>
+<p>MFractors code analysers can be enabled or disabled at the application-level through the product <strong>Preferences</strong>.</p>
+<p>To enable or disable a particular code analyser, first, navigate to the top menu bar, find the MFractor tab and then click <strong>Preferences</strong>.</p>
+<p>Scroll down to <strong>Code Analysis</strong> and you can search for a specific one or toggle to disable at an application level.</p>
+<p>If you'd like to disable at for only a particular document, please see our <a href="../disabling-analysers/">Disabling Analysers</a> article.</p>
+<p>MFractor currently includes 95 analysers.</p>
+<h2 id="available-code-analysers">Available Code Analysers</h2>
 <table>
 <thead>
 <tr>
-<th>Code</th>
-<th>Anayler</th>
-<th>Link</th>
+<th>Diagnostic ID</th>
+<th>Name</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>Ambiguous Static Resource Reference</td>
-<td>MF1054</td>
-<td></td>
+<td><label title="com.mfractor.analysis.xaml.duplicate_automation_ids">MF1000</label></td>
+<td>Duplicate AutomationIds</td>
+<td>Inspects a Xaml document for occurances of duplicate <code>AutomationId</code> declarations.</td>
 </tr>
 <tr>
+<td><label title="com.mfractor.analysis.xaml.empty_automation_id">MF1001</label></td>
+<td>Empty AutomationId Declaration</td>
+<td>Inspects a Xaml document for occurances of duplicate <code>AutomationId</code> declarations.</td>
+</tr>
+<tr>
+<td><label title="com.mfractor.analysis.xaml.code_behind_field_name_has_invalid_characters">MF1002</label></td>
+<td>x:Name Has Invalid Characters</td>
+<td>Checks that x:Name expressions define a valid code-behind variable name. A value declared by an x:Name attribute must start with a @, _ or a-Z character followed by underscores or alpha-numeric characters.</td>
+</tr>
+<tr>
+<td><label title="com.mfractor.analysis.xaml.duplicate_code_behind_field_name">MF1003</label></td>
+<td>Duplicate Code Behind Field Declarations</td>
+<td>Checks that the value assigned to an <code>x:Name</code> attribute is unique within the scope of the document.</td>
+</tr>
+<tr>
+<td><label title="com.mfractor.analysis.xaml.empty_code_behind_field_name">MF1004</label></td>
+<td>Empty Code Behind Field Declaration</td>
+<td>Inspects occurances of the <code>x:Name</code> attribute and validates that a value is assigned; empty <code>x:Name</code> expressions generate an empty named code-behind field, causing compilation errors.</td>
+</tr>
+<tr>
+<td><label title="com.mfractor.analysis.xaml.content_page_has_multiple_children">MF1005</label></td>
+<td>ContentPage Has Multiple Direct Children</td>
+<td>Inspects usages of <code>ContentPage</code> and checks that it only has a single child view. Assigning multiple children into a <code>ContentPage</code> is a common mistake where the developer usually intended to wrap the chid views with a <code>Grid</code> or a <code>StackLayout</code>.</td>
+</tr>
+<tr>
+<td><label title="com.mfractor.analysis.xaml.content_view_has_multiple_children">MF1006</label></td>
+<td>ContentView Has Multiple Direct Children</td>
+<td>Inspects usages of the <code>ContentView</code> element and checks that it only has a single child view. Assigning multiple children into a <code>ContentView</code> is a common mistake where the developer usually intended to wrap the chid views with a <code>Grid</code> or a <code>StackLayout</code>.</td>
+</tr>
+<tr>
+<td><label title="com.mfractor.analysis.xaml.binding_expression_does_not_return_a_property">MF1007</label></td>
+<td>Validate Binding Expressions Return A Property</td>
+<td>Evaluates a <code>Binding</code> expression and validates that it points to property within the binding context. This analyser requires an explict or implicit binding context.</td>
+</tr>
+<tr>
+<td><label title="com.mfractor.analysis.xaml.binding_expression_is_against_nonpublic_property">MF1008</label></td>
 <td>Binding Against Non-Public Property</td>
-<td>MF1008</td>
-<td></td>
+<td>Inspects data-binding expressions and validates that the property return is a public property. Data-binding against a non-public property causes data-binding to fail.</td>
 </tr>
 <tr>
+<td><label title="com.mfractor.analysis.xaml.binding_expression_resolves">MF1009</label></td>
+<td><a href="https://docs.mfractor.com/xamarin-forms/working-with-viewmodels/data-binding-analysis/">Binding Expressions Resolve</a></td>
+<td>Inspects <code>Binding</code> expressions and validates that the symbol referred to in the binding context exists. This analyser requires an explict or implicit binding context.</td>
+</tr>
+<tr>
+<td><label title="com.mfractor.analysis.xaml.binding_expression_does_not_match_expected_type">MF1010</label></td>
 <td>Binding Expression Return Type Mismatch</td>
-<td>MF1010</td>
-<td></td>
+<td>Validates that the .NET symbol returned by a binding expression matches the expected type for the property.</td>
 </tr>
 <tr>
-<td>Binding Expressions Resolve</td>
-<td>MF1009</td>
-<td><a href="/xamarin-forms/working-with-viewmodels/data-binding-analysis/">Help</a></td>
+<td><label title="com.mfractor.analysis.xaml.no_key_provided_to_dynamic_resource">MF1011</label></td>
+<td>No Key Provided To DynamicResource Expression</td>
+<td>Inspects <code>DynamicResource</code> expressions and validates that a resource key has been provided.</td>
 </tr>
 <tr>
-<td></td>
-<td></td>
-<td></td>
+<td><label title="com.mfractor.analysis.xaml.empty_event_handler_assignment">MF1012</label></td>
+<td>Empty Event Handler Assignment</td>
+<td>Checks that an event handler assignment is not empty as empty event handler assignments will cause a compilation error.</td>
+</tr>
+<tr>
+<td><label title="com.mfractor.analysis.xaml.event_handler_does_not_exist_in_code_behind_classs">MF1013</label></td>
+<td>Event Handler Exists In Code Behind Class</td>
+<td>Checks that an event callback referenced referenced by an attribute value exists in the code behind class.</td>
+</tr>
+<tr>
+<td><label title="com.mfractor.analysis.xaml.event_handler_signature_matches">MF1014</label></td>
+<td>Event Handler Signature Mismatch</td>
+<td>Checks that the signature for the event callback in a code behind class matches the expected signature for the property it is assigned to.</td>
+</tr>
+<tr>
+<td><label title="com.mfractor.analysis.xaml.xreference_element_exists">MF1015</label></td>
+<td>Referenced Code Behind Field Exists</td>
+<td>Inspects usages of the <code>x:Reference</code> expression and validates the referenced element has been declared within the document. <code>x:Reference</code> expressions are used to resolve another Xaml node has a code behind field defined using the <code>x:Name</code> attribute.</td>
+</tr>
+<tr>
+<td><label title="com.mfractor.analysis.xaml.converter_input_type_mismatch">MF1016</label></td>
+<td>Value Converter Input Type Mismatch</td>
+<td>Inspects the <code>Converter</code> property of a <code>Binding</code>expression and validates that the input type is correct. This analyser requires that the <code>IValueConverter</code> implementation uses the <a href="/xamarin-forms/value-converter-type-safety.md"><code>ValueConversion</code></a> attribute to declare it input type.</td>
+</tr>
+<tr>
+<td><label title="com.mfractor.analysis.xaml.converter_output_type_mismatch">MF1017</label></td>
+<td>Value Converter Output Type Mismatch</td>
+<td>Inspects the <code>Converter</code> component of a <code>Binding</code> expression and validates that the returned output type is valid for the parent attribute. This analyser requires that the <code>IValueConverter</code> implementation uses the <a href="/xamarin-forms/value-converter-type-safety.md"><code>ValueConversion</code></a> attribute to declare it input type.</td>
+</tr>
+<tr>
+<td><label title="com.mfractor.analysis.xaml.dotnet_symbol_resolves">MF1018</label></td>
+<td>Unresolved .NET Symbols Within Xaml Expression</td>
+<td>Inspects a .net symbol reference (eg <code>local:MyClass.MyProperty</code>) and validates that the symbol portion ('MyClass.MyProperty') resolves to a .NET symbol within the current project and it's references.</td>
+</tr>
+<tr>
+<td><label title="com.mfractor.analysis.xaml.dotnet_symbol_namespace_resolves">MF1019</label></td>
+<td>Unresolved Namespace Within Xaml Expression</td>
+<td>Inspects a .net symbol reference (eg <code>local:MyClass.MyProperty</code>) and validates that the namespace portion ('local') resolves to a xmlns declaration in the current document.</td>
+</tr>
+<tr>
+<td><label title="com.mfractor.analysis.xaml.invalid_named_font_size">MF1020</label></td>
+<td>Invalid Named Font Size</td>
+<td>Inspects FontSize attributes and validates that the named size provided to it is a valid font size name (Micro, Small, Medium, Large).</td>
+</tr>
+<tr>
+<td><label title="com.mfractor.analysis.xaml.generic_is_missing_type_arguments">MF1021</label></td>
+<td>Generic Usage Is Missing x:TypeArguments</td>
+<td>Inspects generic classes that are instantiated through Xaml and validates that an <code>x:TypeArguments</code> attribute or property assignment node is present.</td>
+</tr>
+<tr>
+<td><label title="com.mfractor.analysis.xaml.type_arguments_misuse">MF1022</label></td>
+<td>x:TypeArguments Used On Non-Generic Class</td>
+<td>Inspects for usages of <code>x:TypeArguments</code> on elements that are non-generic classes.</td>
+</tr>
+<tr>
+<td><label title="com.mfractor.analysis.xaml.unknown_type_provided_to_generic">MF1023</label></td>
+<td>Unknown Type Provided To Generic</td>
+<td>Inspects usages of <code>x:TypeArguments</code> and validates that the type provided exists.</td>
+</tr>
+<tr>
+<td><label title="com.mfractor.analysis.xaml.column_is_outside_grid_boundaries">MF1024</label></td>
+<td><a href="https://docs.mfractor.com/xamarin-forms/grids/analysis/#column-outside-grid-boundary">Column Is Outside Grid Boundaries</a></td>
+<td>This code analyser inspects usages of the <code>Grid.Column</code> attribute and validates that the column provided is within the total columns declared by the parent grid.</td>
+</tr>
+<tr>
+<td><label title="com.mfractor.analysis.xaml.columnspan_is_outside_grid_boundaries">MF1025</label></td>
+<td><a href="https://docs.mfractor.com/xamarin-forms/grids/analysis/#column-span-outside-grid-boundary">ColumnSpan Is Outside Grid Boundaries</a></td>
+<td>This code analyser inspects usages of the <code>Grid.ColumnSpan</code> attribute and validates that the span provided is within the total columns declared by the parent grid.</td>
+</tr>
+<tr>
+<td><label title="com.mfractor.analysis.xaml.columnspan_is_zero">MF1026</label></td>
+<td>ColumnSpan Is Zero</td>
+<td>This code analyser inspects usages of the <code>Grid.ColumnSpan</code> attribute and validates that the span provided is a non-zero value.</td>
+</tr>
+<tr>
+<td><label title="com.mfractor.analysis.xaml.grid_row_column_setter_is_not_a_number">MF1027</label></td>
+<td>Grid Row/Column Setter Is Not A Number</td>
+<td>This code analyser inspects usages of the <code>Grid.Column</code> attribute and validates that the element is inside a <code>Grid</code>.</td>
+</tr>
+<tr>
+<td><label title="com.mfractor.analysis.xaml.redundant_column_property">MF1028</label></td>
+<td>Grid.Column Usage Is Redundant</td>
+<td>This code analyser inspects usages of the <code>Grid.Column</code> attribute and validates that the element is inside a <code>Grid</code>.</td>
+</tr>
+<tr>
+<td><label title="com.mfractor.analysis.xaml.redundant_column_span_property">MF1029</label></td>
+<td>Grid.ColumnSpan Usage Is Redundant</td>
+<td>This code analyser inspects usages of the <code>Grid.ColumnSpan</code> attribute and validates that the element is inside a <code>Grid</code>.</td>
+</tr>
+<tr>
+<td><label title="com.mfractor.analysis.xaml.redundant_row_property">MF1030</label></td>
+<td>Grid.Row Usage Is Redundant</td>
+<td>This code analyser inspects usages of the <code>Grid.Row</code> attribute and validates that the element is inside a <code>Grid</code>.</td>
+</tr>
+<tr>
+<td><label title="com.mfractor.analysis.xaml.redundant_row_span_property">MF1031</label></td>
+<td>Grid.RowSpan Usage Is Redundant</td>
+<td>This code analyser inspects usages of the <code>Grid.RowSpan</code> attribute and validates that the element is inside a <code>Grid</code>.</td>
+</tr>
+<tr>
+<td><label title="com.mfractor.analysis.xaml.row_is_outside_grid_boundaries">MF1032</label></td>
+<td><a href="https://docs.mfractor.com/xamarin-forms/grids/analysis/#row-outside-grid-boundary">Row Is Outside Grid Boundaries</a></td>
+<td>This code analyser inspects usages of the <code>Grid.Row</code> attribute and validates that the row provided is within the total rows declared by the parent grid.</td>
+</tr>
+<tr>
+<td><label title="com.mfractor.analysis.xaml.rowspan_is_outside_grid_boundaries">MF1033</label></td>
+<td><a href="https://docs.mfractor.com/xamarin-forms/grids/analysis/#row-span-outside-grid-boundary">RowSpan Is Outside Grid Boundaries</a></td>
+<td>This code analyser inspects usages of the <code>Grid.RowSpan</code> attribute and validates that the span provided is within the total rows declared by the parent grid.</td>
+</tr>
+<tr>
+<td><label title="com.mfractor.analysis.xaml.rowspan_is_zero">MF1034</label></td>
+<td>RowSpan Is Zero</td>
+<td>This code analyser inspects usages of the <code>Grid.RowSpan</code> attribute and validates that the span provided is a non-zero value.</td>
+</tr>
+<tr>
+<td><label title="com.mfractor.analysis.xaml.missing_image_resource">MF1035</label></td>
+<td>Detect Missing Image In Linked Projects</td>
+<td>This code analyser inspects the value provided into an <code>ImageSource</code> and validates that an image of that name exists within any iOS or Android projects that reference this shared project or PCL.</td>
+</tr>
+<tr>
+<td><label title="com.mfractor.analysis.xaml.on_idiom_return_type_mismatch">MF1036</label></td>
+<td>OnIdiom Return Type Mismatch</td>
+<td>Checks the type returned by a <code>Xamarin.Forms.OnIdiom</code> element is valid with the parent property type.</td>
+</tr>
+<tr>
+<td><label title="com.mfractor.analysis.xaml.on_platform_return_type_mismatch">MF1037</label></td>
+<td>OnPlatform Return Type Mismatch</td>
+<td>Checks the type returned by a <code>Xamarin.Forms.OnPlatform</code> element is valid with the parent property type.</td>
+</tr>
+<tr>
+<td><label title="com.mfractor.analysis.xaml.property_setter_attribute_does_not_exist_in_parent">MF1038</label></td>
+<td>Referenced Attribute Member Exists In Parent Type</td>
+<td>Checks that an attribute resolves to a member within its parent type.</td>
+</tr>
+<tr>
+<td><label title="com.mfractor.analysis.xaml.property_setter_node_does_not_exist_in_parent">MF1039</label></td>
+<td>Property Node Maps To Member In Parent Type</td>
+<td>Checks that a property node resolves to a member within its parent type.</td>
+</tr>
+<tr>
+<td><label title="com.mfractor.analysis.xaml.property_setter_node_misuse">MF1040</label></td>
+<td>Property Setter Node Misuse</td>
+<td>Inspects for property setters that don't apply to the outer class. For example, if a developer used OnIdiom.Phone inside a OnPlatform element, the OnIdiom.Phone property setter makes no sense within the given context.</td>
+</tr>
+<tr>
+<td><label title="com.mfractor.analysis.xaml.property_setter_node_type_mistmatch">MF1041</label></td>
+<td>Property Setter Type Mismatch</td>
+<td>When using MyClass.MyProperty node setter syntax, validate that the inner child node returns a .NET object of the correct type for the property.</td>
+</tr>
+<tr>
+<td><label title="com.mfractor.analysis.xaml.duplicate_resource_dictionary_key">MF1042</label></td>
+<td>Duplicate Resource Dictionary Keys</td>
+<td>Validates the each resource entry within a resource dictionary has a unique key.</td>
+</tr>
+<tr>
+<td><label title="com.mfractor.analysis.xaml.missing_resource_dictionary_key">MF1043</label></td>
+<td>Resource Entry Does Not Define Key</td>
+<td>Validates the elements provided to a resource dictionary supply an <code>x:Key</code> attribute to declare their resource dictionary key.</td>
+</tr>
+<tr>
+<td><label title="com.mfractor.analysis.xaml.resource_key_conflict">MF1044</label></td>
+<td>Resource Key Conflict</td>
+<td>Inspects resource key declarations and validates that the resource key is not already defined in other files that are used by this file.</td>
+</tr>
+<tr>
+<td><label title="com.mfractor.analysis.xaml.unused_resource_entry">MF1045</label></td>
+<td>Unused Resource</td>
+<td>Inspects that resource dictionary entries are used via the <code>StaticResource</code> markup extension expression within this document.</td>
+</tr>
+<tr>
+<td><label title="com.mfractor.analysis.xaml.missing_microsoft_schema_reference">MF1046</label></td>
+<td>Missing Microsoft Schema</td>
+<td>Inspects at the root xaml node and verifies that it references the Microsoft Xaml schema: <code>http://schemas.microsoft.com/winfx/2009/xaml</code>. This schema is required for Xamarin Forms Xaml documents.</td>
+</tr>
+<tr>
+<td><label title="com.mfractor.analysis.xaml.duplicate_shellitem_route">MF1047</label></td>
+<td>Duplicate ShellItem Route</td>
+<td>Inspects <code>Xamarin.Forms.ShellItem</code> elements and validates that their <code>Route</code> is unique.</td>
+</tr>
+<tr>
+<td><label title="com.mfractor.analysis.xaml.validate_setter_attached_property">MF1048</label></td>
+<td>Validate Setter Attached Property Usage</td>
+<td>Inspects the <code>Property</code> attribute for a <code>Xamarin.Forms.Setter</code> and, when it is referencing an attached property, validates that the namespace, class and attached property exist.</td>
+</tr>
+<tr>
+<td><label title="com.mfractor.analysis.xaml.setter_property_does_not_exist">MF1049</label></td>
+<td>Setter Property Exists</td>
+<td>Inspects the <code>Property</code> attribute for a <code>Xamarin.Forms.Setter</code> and validates that it exists in the parents specified <code>TargetType</code>.</td>
+</tr>
+<tr>
+<td><label title="com.mfractor.analysis.xaml.empty_shell_route_scheme">MF1051</label></td>
+<td>Empty Shell Route Scheme</td>
+<td>Providing an empty value into the <code>RouteScheme</code> property of a <code>Xamarin.Forms.Shell</code> element will cause the application to crash. This code inspection validates that a value is provided to the RouteScheme property.</td>
+</tr>
+<tr>
+<td><label title="com.mfractor.analysis.xaml.multiple_visual_elements_defined_in_shell_content">MF1052</label></td>
+<td>Multiple VisualElements Defined In Shell Content</td>
+<td>Inspects usages of the Xamarin.Forms.ShellContent and validates that only one page or view is declared within it.</td>
+</tr>
+<tr>
+<td><label title="com.mfractor.analysis.xaml.shell_requires_at_least_one_shell_item">MF1053</label></td>
+<td>Shell Requires At Least One Item</td>
+<td>When using <code>Xamarin.Forms.Shell</code> you must provide at least one item declaration.</td>
+</tr>
+<tr>
+<td><label title="com.mfractor.analysis.xaml.ambiguous_static_resource">MF1054</label></td>
+<td>Ambiguous Static Resource Reference</td>
+<td>Inspects StaticResource expressions and checks if one or more static resources will be returned from the resource expression.</td>
+</tr>
+<tr>
+<td><label title="com.mfractor.analysis.xaml.no_key_provided_to_static_resource">MF1055</label></td>
+<td>No Key Provided To Static Resource Expression</td>
+<td>Inspects <code>StaticResource</code> expressions and validates that a resource key has been provided.</td>
+</tr>
+<tr>
+<td><label title="com.mfractor.analysis.xaml.static_resource_return_type_mismatch">MF1056</label></td>
+<td>StaticResource Return Type Mismatch</td>
+<td>Validates that the symbol returned by a <code>StaticResource</code> expression matches the expected type for the property.</td>
+</tr>
+<tr>
+<td><label title="com.mfractor.analysis.xaml.static_symbol_type_does_not_match_expected_type">MF1057</label></td>
+<td>x:Static Return Type Mismatch</td>
+<td>Validates that the .NET symbol returned by an <code>x:Static</code> expressions matches the expected type for the property.</td>
+</tr>
+<tr>
+<td><label title="com.mfractor.analysis.xaml.undefined_static_resource">MF1058</label></td>
+<td>Undefined Static Resource Usage</td>
+<td>Validates that the element referenced by a <code>StaticResource</code> expression resource lookup resolves to a resource defined in the xaml file.</td>
+</tr>
+<tr>
+<td><label title="com.mfractor.analysis.xaml.style_is_missing_target_type">MF1059</label></td>
+<td>Style Is Missing TargetType</td>
+<td>When a <code>Style</code> is used within XAML, it should always specify a type it targets using the <code>TargetType</code> property. This analysis check inspects for usages of <code>Style</code> that don't assign the <code>TargetType</code> property.</td>
+</tr>
+<tr>
+<td><label title="com.mfractor.analysis.xaml.style_or_trigger_has_duplicate_setters">MF1060</label></td>
+<td>Style Or Trigger Has Duplicate Setters</td>
+<td>Inspects Style and Trigger declarations and checks if there is are multiple Setter's for a property.</td>
+</tr>
+<tr>
+<td><label title="com.mfractor.analysis.xaml.style_property_setter_does_not_exist">MF1061</label></td>
+<td>Property Setter Does Not Exist In Style TargetType</td>
+<td>This code inspection looks at <code>Setter</code> elements when they are used inside a <code>Style</code> and validates that the member specified in the <code>Property</code> attribute exists on the type symbol referenced in the parent <code>Style</code>s <code>TargetType</code> attribute.</td>
+</tr>
+<tr>
+<td><label title="com.mfractor.analysis.xaml.style_target_type_does_not_match_basedon_target_type">MF1062</label></td>
+<td>Style TargetType Does Not Match BasedOn TargetType</td>
+<td>Inspects XAML styles that use the <code>BasedOn</code> property to inherit from another style and validates the <code>TargetType</code> of the current style matches the <code>TargetType</code> defined by the <code>BasedOn</code> style.</td>
+</tr>
+<tr>
+<td><label title="com.mfractor.analysis.xaml.invalid_thickness_attribute_value">MF1063</label></td>
+<td>Invalid Thickness Attribute Value</td>
+<td>Inspects attribute properties that use the <code>Xamarin.Forms.Thickness</code> type and checks the value used can be translated to a thickness. For example, <code>Thickness</code> could accidentally be provided <code>0,5,05</code>, with the intention of it being <code>0,5,0,5</code>; the first example has three arguments while the second has four. This misuse would cause the app to crash when using inflated XAML or for XAMLC to fail.</td>
+</tr>
+<tr>
+<td><label title="com.mfractor.analysis.xaml.trigger_is_missing_target_type">MF1064</label></td>
+<td>Trigger Is Missing Target Type</td>
+<td>Inspects XAML elements that derive from <code>Xamarin.Forms.TriggerBase</code> and validates that they include a <code>TargetType</code> attribute</td>
+</tr>
+<tr>
+<td><label title="com.mfractor.analysis.xaml.trigger_target_type_does_not_match_parent">MF1065</label></td>
+<td>Trigger TargetType Does Not Match Parent</td>
+<td>Inspects usages of the <code>TargetType</code> property for a <code>Xamarin.Forms.TriggerBase</code> and validates that the type provided matches the outer XAML node.</td>
+</tr>
+<tr>
+<td><label title="com.mfractor.analysis.xaml.multiple_namespace_assembly_references">MF1066</label></td>
+<td>Duplicate Namespace Declaration</td>
+<td>Checks that an xml namespace points to a unique namespace and assembly. For example if both <code>xmlns:local="clr-namespace:MFractor.Licensing.MobileApp"</code> and <code>xmlns:myassembly="clr-namespace:MFractor.Licensing.MobileApp"</code> were declared, this analyser would warn that they both reference the same assembly and namespace.</td>
+</tr>
+<tr>
+<td><label title="com.mfractor.analysis.xaml.xml_namespace_does_not_resolve">MF1067</label></td>
+<td>Unresolved Xml Namespace</td>
+<td>Checks that the namespace used on the xml nodes is defined within the current document.</td>
+</tr>
+<tr>
+<td><label title="com.mfractor.analysis.xaml.xmlns_assembly_does_not_resolve">MF1068</label></td>
+<td>Unresolved Xmlns Assembly</td>
+<td>Checks that the 'assembly' component of an xmlns statement resolves to an assembly referenced by the project.</td>
+</tr>
+<tr>
+<td><label title="com.mfractor.analysis.xaml.element_does_not_have_attached_property">MF1069</label></td>
+<td>Class Does Not Have Attached Property</td>
+<td>Looks for attached properties (for example <code>Grid.Row</code>) and validates they exist in the class that they are attempting to use.</td>
+</tr>
+<tr>
+<td><label title="com.mfractor.analysis.xaml.empty_value_assignment">MF1070</label></td>
+<td>Empty Value Assignment</td>
+<td>Detects when a boolean, double, long or integer value is being assigned an empty value and will cause a compilation error.</td>
+</tr>
+<tr>
+<td><label title="com.mfractor.analysis.xaml.obsolete_property_used">MF1071</label></td>
+<td>Obsolete Property Used</td>
+<td>Checks for attributes that are marked as obsolete/deprecated.</td>
+</tr>
+<tr>
+<td><label title="com.mfractor.analysis.xaml.unknown_static_property_value">MF1072</label></td>
+<td>Unknown Static Property Value</td>
+<td>For attributes that accept a class object, inspects that the literal value maps to a static property or field in the class type. For example, the <code>LayoutOptions</code> class has the static fields <code>Fill</code> or <code>CentreAndExpand</code> that can be used a literal attribute values. If <code>CentreAndFill</code> was provided (an invalid value), this analyser would inspect the <code>LayoutOptions</code> class for a static field named <code>CentreAndFill</code> and trigger an analysis error when it couldn't be found.</td>
+</tr>
+<tr>
+<td><label title="com.mfractor.analysis.xaml.value_type_input_not_valid">MF1074</label></td>
+<td>Validate Value Types</td>
+<td>Inspects the input provided to attributes that expect value types (int, bool, double etc) and validates that the input is valid.</td>
+</tr>
+<tr>
+<td><label title="com.mfractor.analysis.xaml.xaml_node_does_not_resolve">MF1075</label></td>
+<td>Xaml Node Resolves</td>
+<td>Checks that xaml nodes map to a valid .NET symbol.</td>
+</tr>
+<tr>
+<td><label title="com.mfractor.analysis.forms.hexadecimal_value_matches_named_color">MF1076</label></td>
+<td><a href="https://docs.mfractor.com/xamarin-forms/colors/color-analysis/#applying-named-color-to-equivalent-hex-value">Hexadecimal Value Matches Named Color</a></td>
+<td>Inspects HexaDecimal color values and matches them against the named color constants.</td>
+</tr>
+<tr>
+<td><label title="com.mfractor.analysis.xaml.static_resource_target_type_is_incompatible">MF1077</label></td>
+<td>Static Resource Style Target Type Is Incompatible</td>
+<td>When a static resource expression returns a style, this code inspection verifies that the TargetType of the given style is compatible with</td>
+</tr>
+<tr>
+<td><label title="com.mfractor.analysis.xaml.thickness_value_can_be_simplified">MF1078</label></td>
+<td>Thickness Value Can Be Simplified</td>
+<td>Inspect's thickness attribute values and verifies if the values can be simplified. For example, a thickness value of <code>20,0,20,0</code> could be simplified to <code>20,0</code>.</td>
+</tr>
+<tr>
+<td><label title="com.mfractor.analysis.xaml.color_value_can_be_replaced_with_static_resource">MF1079</label></td>
+<td><a href="https://docs.mfractor.com/xamarin-forms/colors/color-analysis/#applying-an-existing-color-resource">Color Value Matches Static Resource</a></td>
+<td>When assigning a color a hexadecimal or named constant, this code inspection detects if that color value matches an available color resource.</td>
+</tr>
+<tr>
+<td><label title="com.mfractor.analysis.xaml.thickness_value_can_be_replaced_with_static_resource">MF1080</label></td>
+<td>Thickness Value Can Be Replaced By Static Resource</td>
+<td>Inspects assignments of Xamarin.Forms.Thickness values in XAML and matches them to declared static resources.</td>
+</tr>
+<tr>
+<td><label title="com.mfractor.analysis.xaml.property_value_is_already_applied_by_style">MF1081</label></td>
+<td>Property Value Is Already Applied By Style</td>
+<td>When a <code>Style</code> is applied  within XAML, it should always specify a type it targets using the <code>TargetType</code> property. This analysis check inspects for usages of <code>Style</code> that don't assign the <code>TargetType</code> property.</td>
+</tr>
+<tr>
+<td><label title="com.mfractor.analysis.xaml.element_can_use_available_style">MF1082</label></td>
+<td>Element Can Use Available Style</td>
+<td>Inspects XAML elements that do not have a style applied and, if possible, matches them to an available style that targets the element type and also applies the same properties.</td>
+</tr>
+<tr>
+<td><label title="com.mfractor.analysis.forms.malformed_hexadecimal_color">MF1084</label></td>
+<td><a href="https://docs.mfractor.com/xamarin-forms/colors/color-analysis/#identifying-mispelled-hex-color-formats">Malformed Hexadecimal Color Value</a></td>
+<td>Inspects hexadecimal color values and validates that they are in a format supported by Xamarin.Forms.</td>
+</tr>
+<tr>
+<td><label title="com.mfractor.analysis.xaml.unknown_field_modifier">MF1085</label></td>
+<td>Unknown Field Modifier</td>
+<td>Inspects occurances of the <code>x:FieldModifer</code> attribute and validates that the value is one of the following keywords.&lt;r&gt;<ul><li>private: Specifies that the generated field for the XAML element is accessible only within the body of the class in which it is declared.</li><li>public: Specifies that the generated field for the XAML element has no access restrictions.</li><li>protected: Specifies that the generated field for the XAML element is accessible within its class and by derived class instances.</li><li>internal: Specifies that the generated field for the XAML element is accessible only within types in the same assembly.</li><li>notpublic: Specifies that the generated field for the XAML element is accessible only within types in the same assembly.</li></ul></td>
+</tr>
+<tr>
+<td><label title="com.mfractor.analysis.xaml.color_value_closely_matches_available_static_resources">MF1086</label></td>
+<td>Color Value Closely Matches Available Static Resource</td>
+<td>Inspects color values and checks if they closely match the color value defined by a static resource.</td>
+</tr>
+<tr>
+<td><label title="com.mfractor.analysis.xaml.slider_minimum_set_before_maximum">MF1088</label></td>
+<td>Slider Minimum Set Before Maximum</td>
+<td>Inspects slider elements and verifies that the user sets the maximum before the minimum</td>
+</tr>
+<tr>
+<td><label title="com.mfractor.analysis.xaml.cell_usage_within_collection_view_item_template">MF1090</label></td>
+<td>Cell Usage Within CollectionView ItemTemplate</td>
+<td>Inspects the DataTemplate within a CollectionViews ItemTemplate property and verify that it does not use a cell.</td>
+</tr>
+<tr>
+<td><label title="com.mfractor.analysis.xaml.glyph_does_not_exist_in_fonts">MF1091</label></td>
+<td>Glyph Does Not Exist In Font</td>
+<td>When a font is applied to a XAML element via the FontFamily attribute, this analyser inspects the character code provided and verifies that it exists in the referenced font asset.</td>
+</tr>
+<tr>
+<td><label title="com.mfractor.analysis.xaml.thickness_value_can_be_consolidated">MF1092</label></td>
+<td>Thickness Value Can Be Consolidated</td>
+<td>Inspects thickness values and verifies if there are other thickness in the projects that also declare</td>
+</tr>
+<tr>
+<td><label title="com.mfractor.analysis.xaml.refresh_view_content_must_be_layout">MF1093</label></td>
+<td>RefreshView Content Should Be Scrollable Layout</td>
+<td>Inspects the inner element of a refresh view and verifies that it derives from either a ListView, ScrollView or CollectionView.</td>
+</tr>
+<tr>
+<td><label title="com.mfractor.analysis.xaml.color_value_can_be_consolidated">MF1094</label></td>
+<td>Color Value Can Be Consolidated</td>
+<td>Inspects color values and verifies if there are other colors in the projects that also declare that specific color.</td>
+</tr>
+<tr>
+<td><label title="com.mfractor.analysis.xaml.unknown_embedded_font_reference">MF1095</label></td>
+<td>Unknown Embedded Font Reference</td>
+<td>Inspects FontFamily attributes and validates that the referenced embedded font asset is defined.</td>
+</tr>
+<tr>
+<td><label title="com.mfractor.analysis.xaml.unescaped_newline_in_string_literal">MF1096</label></td>
+<td>Unescaped Newline In String Literal</td>
+<td>When a newline character, \n, is used within a string literal in XAML, it will not render as expected. Newlines should be added to XAML using the escaped &#10; character code.</td>
+</tr>
+<tr>
+<td><label title="com.mfractor.analysis.xaml.unknown_platform">MF1097</label></td>
+<td>Unknown OnPlatform Value</td>
+<td>Checks the Platform value provided to a <code>Xamarin.Forms.On</code> element and verifies that it is a known platform within the Xamarin.Forms.Device class.</td>
+</tr>
+<tr>
+<td><label title="com.mfractor.analysis.xaml.data_template_expected">MF1098</label></td>
+<td>Data Template Expected</td>
+<td>Inspects property nodes that accept a data template and verifies that the content is a DataTemplate.</td>
+</tr>
+<tr>
+<td><label title="com.mfractor.analysis.xaml.scroll_view_has_multiple_children">MF1099</label></td>
+<td>ScrollView Has Multiple Direct Children</td>
+<td>Inspects usages of ScrollView and checks that it only has a single child view. Assigning multiple children to a ScrollView is a common mistake where the developer usually intended to wrap the chid views with a Grid or a StackLayout.</td>
 </tr>
 </tbody>
 </table>
-<p>TODO: Complete the list.</p>
-<p><code>/Users/{user}/Library/mfractor/.preferences</code></p>
-<div class="codehilite"><pre><span></span><span class="n">com</span><span class="p">.</span><span class="n">mfractor</span><span class="p">.</span><span class="n">analysis</span><span class="p">.</span><span class="n">xaml</span><span class="p">.</span><span class="n">duplicate_automation_ids</span><span class="p">.</span><span class="n">enabled</span>
-<span class="n">com</span><span class="p">.</span><span class="n">mfractor</span><span class="p">.</span><span class="n">analysis</span><span class="p">.</span><span class="n">xaml</span><span class="p">.</span><span class="n">empty_automation_id</span><span class="p">.</span><span class="n">enabled</span>
-<span class="n">com</span><span class="p">.</span><span class="n">mfractor</span><span class="p">.</span><span class="n">analysis</span><span class="p">.</span><span class="n">xaml</span><span class="p">.</span><span class="n">code_behind_field_name_has_invalid_characters</span><span class="p">.</span><span class="n">enabled</span>
-<span class="n">com</span><span class="p">.</span><span class="n">mfractor</span><span class="p">.</span><span class="n">analysis</span><span class="p">.</span><span class="n">xaml</span><span class="p">.</span><span class="n">duplicate_code_behind_field_name</span><span class="p">.</span><span class="n">enabled</span>
-<span class="n">com</span><span class="p">.</span><span class="n">mfractor</span><span class="p">.</span><span class="n">analysis</span><span class="p">.</span><span class="n">xaml</span><span class="p">.</span><span class="n">empty_code_behind_field_name</span><span class="p">.</span><span class="n">enabled</span>
-<span class="n">com</span><span class="p">.</span><span class="n">mfractor</span><span class="p">.</span><span class="n">analysis</span><span class="p">.</span><span class="n">xaml</span><span class="p">.</span><span class="n">cell_usage_within_collection_view_item_template</span><span class="p">.</span><span class="n">enabled</span>
-<span class="n">com</span><span class="p">.</span><span class="n">mfractor</span><span class="p">.</span><span class="n">analysis</span><span class="p">.</span><span class="n">xaml</span><span class="p">.</span><span class="n">content_page_has_multiple_children</span><span class="p">.</span><span class="n">enabled</span>
-<span class="n">com</span><span class="p">.</span><span class="n">mfractor</span><span class="p">.</span><span class="n">analysis</span><span class="p">.</span><span class="n">xaml</span><span class="p">.</span><span class="n">content_view_has_multiple_children</span><span class="p">.</span><span class="n">enabled</span>
-<span class="n">com</span><span class="p">.</span><span class="n">mfractor</span><span class="p">.</span><span class="n">analysis</span><span class="p">.</span><span class="n">xaml</span><span class="p">.</span><span class="n">element_does_not_have_attached_property</span><span class="p">.</span><span class="n">enabled</span>
-<span class="n">com</span><span class="p">.</span><span class="n">mfractor</span><span class="p">.</span><span class="n">analysis</span><span class="p">.</span><span class="n">xaml</span><span class="p">.</span><span class="n">empty_value_assignment</span><span class="p">.</span><span class="n">enabled</span>
-<span class="n">com</span><span class="p">.</span><span class="n">mfractor</span><span class="p">.</span><span class="n">analysis</span><span class="p">.</span><span class="n">xaml</span><span class="p">.</span><span class="n">empty_event_handler_assignment</span><span class="p">.</span><span class="n">enabled</span>
-<span class="n">com</span><span class="p">.</span><span class="n">mfractor</span><span class="p">.</span><span class="n">analysis</span><span class="p">.</span><span class="n">xaml</span><span class="p">.</span><span class="n">event_handler_does_not_exist_in_code_behind_classs</span><span class="p">.</span><span class="n">enabled</span>
-<span class="n">com</span><span class="p">.</span><span class="n">mfractor</span><span class="p">.</span><span class="n">analysis</span><span class="p">.</span><span class="n">xaml</span><span class="p">.</span><span class="n">event_handler_signature_matches</span><span class="p">.</span><span class="n">enabled</span>
-<span class="n">com</span><span class="p">.</span><span class="n">mfractor</span><span class="p">.</span><span class="n">analysis</span><span class="p">.</span><span class="n">xaml</span><span class="p">.</span><span class="n">xreference_element_exists</span><span class="p">.</span><span class="n">enabled</span>
-<span class="n">com</span><span class="p">.</span><span class="n">mfractor</span><span class="p">.</span><span class="n">analysis</span><span class="p">.</span><span class="n">xaml</span><span class="p">.</span><span class="n">converter_input_type_mismatch</span><span class="p">.</span><span class="n">enabled</span>
-<span class="n">com</span><span class="p">.</span><span class="n">mfractor</span><span class="p">.</span><span class="n">analysis</span><span class="p">.</span><span class="n">xaml</span><span class="p">.</span><span class="n">converter_output_type_mismatch</span><span class="p">.</span><span class="n">enabled</span>
-<span class="n">com</span><span class="p">.</span><span class="n">mfractor</span><span class="p">.</span><span class="n">analysis</span><span class="p">.</span><span class="n">xaml</span><span class="p">.</span><span class="n">dotnet_symbol_resolves</span><span class="p">.</span><span class="n">enabled</span>
-<span class="n">com</span><span class="p">.</span><span class="n">mfractor</span><span class="p">.</span><span class="n">analysis</span><span class="p">.</span><span class="n">xaml</span><span class="p">.</span><span class="n">dotnet_symbol_namespace_resolves</span><span class="p">.</span><span class="n">enabled</span>
-<span class="n">com</span><span class="p">.</span><span class="n">mfractor</span><span class="p">.</span><span class="n">analysis</span><span class="p">.</span><span class="n">xaml</span><span class="p">.</span><span class="n">glyph_does_not_exist_in_fonts</span><span class="p">.</span><span class="n">enabled</span>
-<span class="n">com</span><span class="p">.</span><span class="n">mfractor</span><span class="p">.</span><span class="n">analysis</span><span class="p">.</span><span class="n">xaml</span><span class="p">.</span><span class="n">invalid_named_font_size</span><span class="p">.</span><span class="n">enabled</span>
-<span class="n">com</span><span class="p">.</span><span class="n">mfractor</span><span class="p">.</span><span class="n">analysis</span><span class="p">.</span><span class="n">xaml</span><span class="p">.</span><span class="n">generic_is_missing_type_arguments</span><span class="p">.</span><span class="n">enabled</span>
-<span class="n">com</span><span class="p">.</span><span class="n">mfractor</span><span class="p">.</span><span class="n">analysis</span><span class="p">.</span><span class="n">xaml</span><span class="p">.</span><span class="n">type_arguments_misuse</span><span class="p">.</span><span class="n">enabled</span>
-<span class="n">com</span><span class="p">.</span><span class="n">mfractor</span><span class="p">.</span><span class="n">analysis</span><span class="p">.</span><span class="n">xaml</span><span class="p">.</span><span class="n">unknown_type_provided_to_generic</span><span class="p">.</span><span class="n">enabled</span>
-<span class="n">com</span><span class="p">.</span><span class="n">mfractor</span><span class="p">.</span><span class="n">analysis</span><span class="p">.</span><span class="n">xaml</span><span class="p">.</span><span class="n">column_is_outside_grid_boundaries</span><span class="p">.</span><span class="n">enabled</span>
-<span class="n">com</span><span class="p">.</span><span class="n">mfractor</span><span class="p">.</span><span class="n">analysis</span><span class="p">.</span><span class="n">xaml</span><span class="p">.</span><span class="n">columnspan_is_outside_grid_boundaries</span><span class="p">.</span><span class="n">enabled</span>
-<span class="n">com</span><span class="p">.</span><span class="n">mfractor</span><span class="p">.</span><span class="n">analysis</span><span class="p">.</span><span class="n">xaml</span><span class="p">.</span><span class="n">columnspan_is_zero</span><span class="p">.</span><span class="n">enabled</span>
-<span class="n">com</span><span class="p">.</span><span class="n">mfractor</span><span class="p">.</span><span class="n">analysis</span><span class="p">.</span><span class="n">xaml</span><span class="p">.</span><span class="n">redundant_column_property</span><span class="p">.</span><span class="n">enabled</span>
-<span class="n">com</span><span class="p">.</span><span class="n">mfractor</span><span class="p">.</span><span class="n">analysis</span><span class="p">.</span><span class="n">xaml</span><span class="p">.</span><span class="n">redundant_column_span_property</span><span class="p">.</span><span class="n">enabled</span>
-<span class="n">com</span><span class="p">.</span><span class="n">mfractor</span><span class="p">.</span><span class="n">analysis</span><span class="p">.</span><span class="n">xaml</span><span class="p">.</span><span class="n">redundant_row_property</span><span class="p">.</span><span class="n">enabled</span>
-<span class="n">com</span><span class="p">.</span><span class="n">mfractor</span><span class="p">.</span><span class="n">analysis</span><span class="p">.</span><span class="n">xaml</span><span class="p">.</span><span class="n">redundant_row_span_property</span><span class="p">.</span><span class="n">enabled</span>
-<span class="n">com</span><span class="p">.</span><span class="n">mfractor</span><span class="p">.</span><span class="n">analysis</span><span class="p">.</span><span class="n">xaml</span><span class="p">.</span><span class="n">row_is_outside_grid_boundaries</span><span class="p">.</span><span class="n">enabled</span>
-<span class="n">com</span><span class="p">.</span><span class="n">mfractor</span><span class="p">.</span><span class="n">analysis</span><span class="p">.</span><span class="n">xaml</span><span class="p">.</span><span class="n">rowspan_is_outside_grid_boundaries</span><span class="p">.</span><span class="n">enabled</span>
-<span class="n">com</span><span class="p">.</span><span class="n">mfractor</span><span class="p">.</span><span class="n">analysis</span><span class="p">.</span><span class="n">xaml</span><span class="p">.</span><span class="n">rowspan_is_zero</span><span class="p">.</span><span class="n">enabled</span>
-<span class="n">com</span><span class="p">.</span><span class="n">mfractor</span><span class="p">.</span><span class="n">analysis</span><span class="p">.</span><span class="n">xaml</span><span class="p">.</span><span class="n">obsolete_property_used</span><span class="p">.</span><span class="n">enabled</span>
-<span class="n">com</span><span class="p">.</span><span class="n">mfractor</span><span class="p">.</span><span class="n">analysis</span><span class="p">.</span><span class="n">xaml</span><span class="p">.</span><span class="n">on_idiom_return_type_mismatch</span><span class="p">.</span><span class="n">enabled</span>
-<span class="n">com</span><span class="p">.</span><span class="n">mfractor</span><span class="p">.</span><span class="n">analysis</span><span class="p">.</span><span class="n">xaml</span><span class="p">.</span><span class="n">on_platform_return_type_mismatch</span><span class="p">.</span><span class="n">enabled</span>
-<span class="n">com</span><span class="p">.</span><span class="n">mfractor</span><span class="p">.</span><span class="n">analysis</span><span class="p">.</span><span class="n">xaml</span><span class="p">.</span><span class="n">property_setter_attribute_does_not_exist_in_parent</span><span class="p">.</span><span class="n">enabled</span>
-<span class="n">com</span><span class="p">.</span><span class="n">mfractor</span><span class="p">.</span><span class="n">analysis</span><span class="p">.</span><span class="n">xaml</span><span class="p">.</span><span class="n">property_setter_node_does_not_exist_in_parent</span><span class="p">.</span><span class="n">enabled</span>
-<span class="n">com</span><span class="p">.</span><span class="n">mfractor</span><span class="p">.</span><span class="n">analysis</span><span class="p">.</span><span class="n">xaml</span><span class="p">.</span><span class="n">property_setter_node_misuse</span><span class="p">.</span><span class="n">enabled</span>
-<span class="n">com</span><span class="p">.</span><span class="n">mfractor</span><span class="p">.</span><span class="n">analysis</span><span class="p">.</span><span class="n">xaml</span><span class="p">.</span><span class="n">property_setter_node_type_mistmatch</span><span class="p">.</span><span class="n">enabled</span>
-<span class="n">com</span><span class="p">.</span><span class="n">mfractor</span><span class="p">.</span><span class="n">analysis</span><span class="p">.</span><span class="n">xaml</span><span class="p">.</span><span class="n">duplicate_resource_dictionary_key</span><span class="p">.</span><span class="n">enabled</span>
-<span class="n">com</span><span class="p">.</span><span class="n">mfractor</span><span class="p">.</span><span class="n">analysis</span><span class="p">.</span><span class="n">xaml</span><span class="p">.</span><span class="n">missing_resource_dictionary_key</span><span class="p">.</span><span class="n">enabled</span>
-<span class="n">com</span><span class="p">.</span><span class="n">mfractor</span><span class="p">.</span><span class="n">analysis</span><span class="p">.</span><span class="n">xaml</span><span class="p">.</span><span class="n">unused_resource_entry</span><span class="p">.</span><span class="n">enabled</span>
-<span class="n">com</span><span class="p">.</span><span class="n">mfractor</span><span class="p">.</span><span class="n">analysis</span><span class="p">.</span><span class="n">xaml</span><span class="p">.</span><span class="n">missing_microsoft_schema_reference</span><span class="p">.</span><span class="n">enabled</span>
-<span class="n">com</span><span class="p">.</span><span class="n">mfractor</span><span class="p">.</span><span class="n">analysis</span><span class="p">.</span><span class="n">xaml</span><span class="p">.</span><span class="n">scroll_view_has_multiple_children</span><span class="p">.</span><span class="n">enabled</span>
-<span class="n">com</span><span class="p">.</span><span class="n">mfractor</span><span class="p">.</span><span class="n">analysis</span><span class="p">.</span><span class="n">xaml</span><span class="p">.</span><span class="n">style_is_missing_target_type</span><span class="p">.</span><span class="n">enabled</span>
-<span class="n">com</span><span class="p">.</span><span class="n">mfractor</span><span class="p">.</span><span class="n">analysis</span><span class="p">.</span><span class="n">xaml</span><span class="p">.</span><span class="n">style_property_setter_does_not_exist</span><span class="p">.</span><span class="n">enabled</span>
-<span class="n">com</span><span class="p">.</span><span class="n">mfractor</span><span class="p">.</span><span class="n">analysis</span><span class="p">.</span><span class="n">xaml</span><span class="p">.</span><span class="n">unknown_field_modifier</span><span class="p">.</span><span class="n">enabled</span>
-<span class="n">com</span><span class="p">.</span><span class="n">mfractor</span><span class="p">.</span><span class="n">analysis</span><span class="p">.</span><span class="n">xaml</span><span class="p">.</span><span class="n">unknown_static_property_value</span><span class="p">.</span><span class="n">enabled</span>
-<span class="n">com</span><span class="p">.</span><span class="n">mfractor</span><span class="p">.</span><span class="n">analysis</span><span class="p">.</span><span class="n">xaml</span><span class="p">.</span><span class="n">value_type_input_not_valid</span><span class="p">.</span><span class="n">enabled</span>
-<span class="n">com</span><span class="p">.</span><span class="n">mfractor</span><span class="p">.</span><span class="n">analysis</span><span class="p">.</span><span class="n">xaml</span><span class="p">.</span><span class="n">multiple_namespace_assembly_references</span><span class="p">.</span><span class="n">enabled</span>
-<span class="n">com</span><span class="p">.</span><span class="n">mfractor</span><span class="p">.</span><span class="n">analysis</span><span class="p">.</span><span class="n">xaml</span><span class="p">.</span><span class="n">xml_namespace_does_not_resolve</span><span class="p">.</span><span class="n">enabled</span>
-<span class="n">com</span><span class="p">.</span><span class="n">mfractor</span><span class="p">.</span><span class="n">analysis</span><span class="p">.</span><span class="n">xaml</span><span class="p">.</span><span class="n">xmlns_assembly_does_not_resolve</span><span class="p">.</span><span class="n">enabled</span>
-<span class="n">com</span><span class="p">.</span><span class="n">mfractor</span><span class="p">.</span><span class="n">analysis</span><span class="p">.</span><span class="n">xaml</span><span class="p">.</span><span class="n">xaml_node_does_not_resolve</span><span class="p">.</span><span class="n">enabled</span>
-<span class="n">com</span><span class="p">.</span><span class="n">mfractor</span><span class="p">.</span><span class="n">analysis</span><span class="p">.</span><span class="n">xaml</span><span class="p">.</span><span class="n">trigger_is_missing_target_type</span><span class="p">.</span><span class="n">enabled</span>
-<span class="n">com</span><span class="p">.</span><span class="n">mfractor</span><span class="p">.</span><span class="n">analysis</span><span class="p">.</span><span class="n">xaml</span><span class="p">.</span><span class="n">trigger_target_type_does_not_match_parent</span><span class="p">.</span><span class="n">enabled</span>
-<span class="n">com</span><span class="p">.</span><span class="n">mfractor</span><span class="p">.</span><span class="n">analysis</span><span class="p">.</span><span class="n">xaml</span><span class="p">.</span><span class="n">invalid_thickness_attribute_value</span><span class="p">.</span><span class="n">enabled</span>
-<span class="n">com</span><span class="p">.</span><span class="n">mfractor</span><span class="p">.</span><span class="n">analysis</span><span class="p">.</span><span class="n">xaml</span><span class="p">.</span><span class="n">thickness_value_can_be_consolidated</span><span class="p">.</span><span class="n">enabled</span>
-<span class="n">com</span><span class="p">.</span><span class="n">mfractor</span><span class="p">.</span><span class="n">analysis</span><span class="p">.</span><span class="n">xaml</span><span class="p">.</span><span class="n">thickness_value_can_be_replaced_with_static_resource</span><span class="p">.</span><span class="n">enabled</span>
-<span class="n">com</span><span class="p">.</span><span class="n">mfractor</span><span class="p">.</span><span class="n">analysis</span><span class="p">.</span><span class="n">xaml</span><span class="p">.</span><span class="n">thickness_value_can_be_simplified</span><span class="p">.</span><span class="n">enabled</span>
-<span class="n">com</span><span class="p">.</span><span class="n">mfractor</span><span class="p">.</span><span class="n">analysis</span><span class="p">.</span><span class="n">xaml</span><span class="p">.</span><span class="n">element_can_use_available_style</span><span class="p">.</span><span class="n">enabled</span>
-<span class="n">com</span><span class="p">.</span><span class="n">mfractor</span><span class="p">.</span><span class="n">analysis</span><span class="p">.</span><span class="n">xaml</span><span class="p">.</span><span class="n">property_value_is_already_applied_by_style</span><span class="p">.</span><span class="n">enabled</span>
-<span class="n">com</span><span class="p">.</span><span class="n">mfractor</span><span class="p">.</span><span class="n">analysis</span><span class="p">.</span><span class="n">xaml</span><span class="p">.</span><span class="n">style_target_type_does_not_match_basedon_target_type</span><span class="p">.</span><span class="n">enabled</span>
-<span class="n">com</span><span class="p">.</span><span class="n">mfractor</span><span class="p">.</span><span class="n">analysis</span><span class="p">.</span><span class="n">xaml</span><span class="p">.</span><span class="n">ambiguous_static_resource</span><span class="p">.</span><span class="n">enabled</span>
-<span class="n">com</span><span class="p">.</span><span class="n">mfractor</span><span class="p">.</span><span class="n">analysis</span><span class="p">.</span><span class="n">xaml</span><span class="p">.</span><span class="n">no_key_provided_to_static_resource</span><span class="p">.</span><span class="n">enabled</span>
-<span class="n">com</span><span class="p">.</span><span class="n">mfractor</span><span class="p">.</span><span class="n">analysis</span><span class="p">.</span><span class="n">xaml</span><span class="p">.</span><span class="n">static_resource_return_type_mismatch</span><span class="p">.</span><span class="n">enabled</span>
-<span class="n">com</span><span class="p">.</span><span class="n">mfractor</span><span class="p">.</span><span class="n">analysis</span><span class="p">.</span><span class="n">xaml</span><span class="p">.</span><span class="n">static_resource_target_type_is_incompatible</span><span class="p">.</span><span class="n">enabled</span>
-<span class="n">com</span><span class="p">.</span><span class="n">mfractor</span><span class="p">.</span><span class="n">analysis</span><span class="p">.</span><span class="n">xaml</span><span class="p">.</span><span class="n">static_symbol_type_does_not_match_expected_type</span><span class="p">.</span><span class="n">enabled</span>
-<span class="n">com</span><span class="p">.</span><span class="n">mfractor</span><span class="p">.</span><span class="n">analysis</span><span class="p">.</span><span class="n">xaml</span><span class="p">.</span><span class="n">undefined_static_resource</span><span class="p">.</span><span class="n">enabled</span>
-<span class="n">com</span><span class="p">.</span><span class="n">mfractor</span><span class="p">.</span><span class="n">analysis</span><span class="p">.</span><span class="n">xaml</span><span class="p">.</span><span class="n">slider_minimum_set_before_maximum</span><span class="p">.</span><span class="n">enabled</span>
-<span class="n">com</span><span class="p">.</span><span class="n">mfractor</span><span class="p">.</span><span class="n">analysis</span><span class="p">.</span><span class="n">xaml</span><span class="p">.</span><span class="n">duplicate_shellitem_route</span><span class="p">.</span><span class="n">enabled</span>
-<span class="n">com</span><span class="p">.</span><span class="n">mfractor</span><span class="p">.</span><span class="n">analysis</span><span class="p">.</span><span class="n">xaml</span><span class="p">.</span><span class="n">empty_shell_route_scheme</span><span class="p">.</span><span class="n">enabled</span>
-<span class="n">com</span><span class="p">.</span><span class="n">mfractor</span><span class="p">.</span><span class="n">analysis</span><span class="p">.</span><span class="n">xaml</span><span class="p">.</span><span class="n">multiple_visual_elements_defined_in_shell_content</span><span class="p">.</span><span class="n">enabled</span>
-<span class="n">com</span><span class="p">.</span><span class="n">mfractor</span><span class="p">.</span><span class="n">analysis</span><span class="p">.</span><span class="n">xaml</span><span class="p">.</span><span class="n">shell_requires_at_least_one_shell_item</span><span class="p">.</span><span class="n">enabled</span>
-<span class="n">com</span><span class="p">.</span><span class="n">mfractor</span><span class="p">.</span><span class="n">analysis</span><span class="p">.</span><span class="n">xaml</span><span class="p">.</span><span class="n">validate_setter_attached_property</span><span class="p">.</span><span class="n">enabled</span>
-<span class="n">com</span><span class="p">.</span><span class="n">mfractor</span><span class="p">.</span><span class="n">analysis</span><span class="p">.</span><span class="n">xaml</span><span class="p">.</span><span class="n">setter_property_does_not_exist</span><span class="p">.</span><span class="n">enabled</span>
-<span class="n">com</span><span class="p">.</span><span class="n">mfractor</span><span class="p">.</span><span class="n">analysis</span><span class="p">.</span><span class="n">xaml</span><span class="p">.</span><span class="n">style_or_trigger_has_duplicate_setters</span><span class="p">.</span><span class="n">enabled</span>
-<span class="n">com</span><span class="p">.</span><span class="n">mfractor</span><span class="p">.</span><span class="n">analysis</span><span class="p">.</span><span class="n">xaml</span><span class="p">.</span><span class="n">resource_key_conflict</span><span class="p">.</span><span class="n">enabled</span>
-<span class="n">com</span><span class="p">.</span><span class="n">mfractor</span><span class="p">.</span><span class="n">analysis</span><span class="p">.</span><span class="n">xaml</span><span class="p">.</span><span class="n">missing_image_resource</span><span class="p">.</span><span class="n">enabled</span>
-<span class="n">com</span><span class="p">.</span><span class="n">mfractor</span><span class="p">.</span><span class="n">analysis</span><span class="p">.</span><span class="n">xaml</span><span class="p">.</span><span class="n">grid_row_column_setter_is_not_a_number</span><span class="p">.</span><span class="n">enabled</span>
-<span class="n">com</span><span class="p">.</span><span class="n">mfractor</span><span class="p">.</span><span class="n">analysis</span><span class="p">.</span><span class="n">xaml</span><span class="p">.</span><span class="n">no_key_provided_to_dynamic_resource</span><span class="p">.</span><span class="n">enabled</span>
-<span class="n">com</span><span class="p">.</span><span class="n">mfractor</span><span class="p">.</span><span class="n">analysis</span><span class="p">.</span><span class="n">xaml</span><span class="p">.</span><span class="n">binding_expression_does_not_return_a_property</span><span class="p">.</span><span class="n">enabled</span>
-<span class="n">com</span><span class="p">.</span><span class="n">mfractor</span><span class="p">.</span><span class="n">analysis</span><span class="p">.</span><span class="n">xaml</span><span class="p">.</span><span class="n">binding_expression_is_against_nonpublic_property</span><span class="p">.</span><span class="n">enabled</span>
-<span class="n">com</span><span class="p">.</span><span class="n">mfractor</span><span class="p">.</span><span class="n">analysis</span><span class="p">.</span><span class="n">xaml</span><span class="p">.</span><span class="n">binding_expression_resolves</span><span class="p">.</span><span class="n">enabled</span>
-<span class="n">com</span><span class="p">.</span><span class="n">mfractor</span><span class="p">.</span><span class="n">analysis</span><span class="p">.</span><span class="n">xaml</span><span class="p">.</span><span class="n">binding_expression_does_not_match_expected_type</span><span class="p">.</span><span class="n">enabled</span>
-<span class="n">com</span><span class="p">.</span><span class="n">mfractor</span><span class="p">.</span><span class="n">analysis</span><span class="p">.</span><span class="n">xaml</span><span class="p">.</span><span class="n">color_value_can_be_replaced_with_static_resource</span><span class="p">.</span><span class="n">enabled</span>
-<span class="n">com</span><span class="p">.</span><span class="n">mfractor</span><span class="p">.</span><span class="n">analysis</span><span class="p">.</span><span class="n">xaml</span><span class="p">.</span><span class="n">color_value_closely_matches_available_static_resources</span><span class="p">.</span><span class="n">enabled</span>
-<span class="n">com</span><span class="p">.</span><span class="n">mfractor</span><span class="p">.</span><span class="n">analysis</span><span class="p">.</span><span class="n">forms</span><span class="p">.</span><span class="n">hexadecimal_value_matches_named_color</span><span class="p">.</span><span class="n">enabled</span>
-<span class="n">com</span><span class="p">.</span><span class="n">mfractor</span><span class="p">.</span><span class="n">analysis</span><span class="p">.</span><span class="n">forms</span><span class="p">.</span><span class="n">malformed_hexadecimal_color</span><span class="p">.</span><span class="n">enabled</span>
-</pre></div>
                 
                   
                 
@@ -2087,6 +2531,41 @@
       
         
 <footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid">
+        
+          <a href="../../quickstart-mac/" title="Quickstart - Mac" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
+            </div>
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Previous
+                </span>
+                Quickstart - Mac
+              </span>
+            </div>
+          </a>
+        
+        
+          <a href="../disabling-analysers/" title="Disabling Analysers" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Next
+                </span>
+                Disabling Analysers
+              </span>
+            </div>
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-forward md-footer-nav__button"></i>
+            </div>
+          </a>
+        
+      </nav>
+    </div>
   
   <div class="md-footer-meta md-typeset">
     <div class="md-footer-meta__inner md-grid">

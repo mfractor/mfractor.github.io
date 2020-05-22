@@ -418,6 +418,18 @@
           
           
 
+
+  <li class="md-nav__item">
+    <a href="../overview/" title="Overview" class="md-nav__link">
+      Overview
+    </a>
+  </li>
+
+        
+          
+          
+          
+
   
 
 
@@ -2003,14 +2015,24 @@
                 
                   <h1>Disabling Analysers</h1>
                 
-                <p><strong>How to disable unwanted code analysers</strong></p>
+                <div class="admonition quote">
+<p class="admonition-title">How to disable code analysers in MFractor</p>
+</div>
 <h2 id="introduction">Introduction</h2>
-<p>MFractor includes several code analysers to aid managing various parts of you app.</p>
-<p>Sometimes you will want to control when these run on particular files, this is possible with a comment.</p>
+<p>MFractor includes several code analysers that aid in managing various parts of you app and in surfacing issues at design time.</p>
+<p>Sometimes you will want to control whether these run on particular files; this is possible with a suppression comment.</p>
 <h2 id="disabling-a-code-analyser">Disabling A Code Analyser</h2>
-<p>Disable XAML analysers at the document level using the following syntax:</p>
-<p><code>&lt;!-- [MFractor: Suppress(MF1000)] --&gt;</code> or <code>&lt;!-- [MFractor: Suppress(com.mfractor.analysis.xaml.binding_expression_resolves)] --&gt;</code>. <a href="https://github.com/mfractor/mfractor-feedback/issues/202">#202</a></p>
-<p>Released with: <a href="https://docs.mfractor.com/release-notes/mac/v4/v4.1/#v411">4.1</a></p>
+<p>You can disable XAML analysers at the document level by adding a suppress comment, structured as <code>MFractor: Suppress(ID)</code>, to top of your document. MFractor supports disabling analysers by both it's Diagnostic ID (EG: <code>MF1001</code>) or its MFractor ID (EG: <code>com.mfractor.analysis.xaml.binding_expression_resolves</code>)</p>
+<p><strong>Disabling Using Diagnostic ID</strong></p>
+<div class="codehilite"><pre><span></span><span class="o">&lt;!</span><span class="c1">-- [MFractor: Suppress(MF1000)] --&gt;</span>
+</pre></div>
+
+
+<p><strong>Disabling Using MFractor ID</strong></p>
+<div class="codehilite"><pre><span></span><span class="o">&lt;!</span><span class="c1">-- [MFractor: Suppress(com.mfractor.analysis.xaml.binding_expression_resolves)] --&gt;</span>
+</pre></div>
+
+
 <p><img alt="Disable Anaysis" src="/../../img/analysis/disable-analyser.gif" /></p>
 <h3 id="links">Links</h3>
 <ul>
@@ -2052,7 +2074,7 @@
     <div class="md-footer-nav">
       <nav class="md-footer-nav__inner md-grid">
         
-          <a href="../../quickstart-mac/" title="Quickstart - Mac" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+          <a href="../overview/" title="Overview" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
             <div class="md-flex__cell md-flex__cell--shrink">
               <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
             </div>
@@ -2061,7 +2083,7 @@
                 <span class="md-footer-nav__direction">
                   Previous
                 </span>
-                Quickstart - Mac
+                Overview
               </span>
             </div>
           </a>
