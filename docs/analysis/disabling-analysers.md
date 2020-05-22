@@ -1,18 +1,24 @@
-**How to disable unwanted code analysers**
+!!! quote "How to disable code analysers in MFractor"
 
 ## Introduction
 
-MFractor includes several code analysers to aid managing various parts of you app.
+MFractor includes several code analysers that aid in managing various parts of you app and in surfacing issues at design time.
 
-Sometimes you will want to control when these run on particular files, this is possible with a comment.
+Sometimes you will want to control whether these run on particular files; this is possible with a suppression comment.
 
 ## Disabling A Code Analyser
 
-Disable XAML analysers at the document level using the following syntax:
+You can disable XAML analysers at the document level by adding a suppress comment, structured as `MFractor: Suppress(ID)`, to top of your document. MFractor supports disabling analysers by both it's Diagnostic ID (EG: `MF1001`) or its MFractor ID (EG: `com.mfractor.analysis.xaml.binding_expression_resolves`)
 
-`<!-- [MFractor: Suppress(MF1000)] -->` or `<!-- [MFractor: Suppress(com.mfractor.analysis.xaml.binding_expression_resolves)] -->`. [#202](https://github.com/mfractor/mfractor-feedback/issues/202)
+**Disabling Using Diagnostic ID**
+```
+<!-- [MFractor: Suppress(MF1000)] -->
+```
 
-Released with: [4.1](https://docs.mfractor.com/release-notes/mac/v4/v4.1/#v411)
+**Disabling Using MFractor ID**
+```
+<!-- [MFractor: Suppress(com.mfractor.analysis.xaml.binding_expression_resolves)] -->
+```
 
 ![Disable Anaysis](/../../img/analysis/disable-analyser.gif)
 

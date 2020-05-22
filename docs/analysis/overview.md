@@ -2,114 +2,116 @@
 
 ## Introduction
 
-There are a number of analysers available in MFractor.
+MFractor includes a code-analysis engine that inspects your XAML code for a wide range of common issues.
 
-Click on the MFractor tab then "Preferences".
+## Managing Analysers
 
-Scroll down to "Code Analysis" and you can search for a specific one or toggle to disable at an application level.
+MFractors code analysers can be enabled or disabled at the application-level through the product **Preferences**.
 
-If you want to disable at a Solution/Project level see [Disabling Analysers](disabling-analysers.md).
+To enable or disable a particular code analyser, first, navigate to the top menu bar, find the MFractor tab and then click **Preferences**.
 
-| Code | Anayler | Link |
-| -    | -       | -    |
-| Ambiguous Static Resource Reference | MF1054 | |
-| Binding Against Non-Public Property | MF1008 | |
-| Binding Expression Return Type Mismatch | MF1010 | |
-| Binding Expressions Resolve | MF1009 | [Help](/xamarin-forms/working-with-viewmodels/data-binding-analysis/) |
-| | | |
+Scroll down to **Code Analysis** and you can search for a specific one or toggle to disable at an application level.
 
-TODO: Complete the list.
+If you'd like to disable at for only a particular document, please see our [Disabling Analysers](disabling-analysers.md) article.
 
-`/Users/{user}/Library/mfractor/.preferences`
+MFractor currently includes 95 analysers.
 
-```
-com.mfractor.analysis.xaml.duplicate_automation_ids.enabled
-com.mfractor.analysis.xaml.empty_automation_id.enabled
-com.mfractor.analysis.xaml.code_behind_field_name_has_invalid_characters.enabled
-com.mfractor.analysis.xaml.duplicate_code_behind_field_name.enabled
-com.mfractor.analysis.xaml.empty_code_behind_field_name.enabled
-com.mfractor.analysis.xaml.cell_usage_within_collection_view_item_template.enabled
-com.mfractor.analysis.xaml.content_page_has_multiple_children.enabled
-com.mfractor.analysis.xaml.content_view_has_multiple_children.enabled
-com.mfractor.analysis.xaml.element_does_not_have_attached_property.enabled
-com.mfractor.analysis.xaml.empty_value_assignment.enabled
-com.mfractor.analysis.xaml.empty_event_handler_assignment.enabled
-com.mfractor.analysis.xaml.event_handler_does_not_exist_in_code_behind_classs.enabled
-com.mfractor.analysis.xaml.event_handler_signature_matches.enabled
-com.mfractor.analysis.xaml.xreference_element_exists.enabled
-com.mfractor.analysis.xaml.converter_input_type_mismatch.enabled
-com.mfractor.analysis.xaml.converter_output_type_mismatch.enabled
-com.mfractor.analysis.xaml.dotnet_symbol_resolves.enabled
-com.mfractor.analysis.xaml.dotnet_symbol_namespace_resolves.enabled
-com.mfractor.analysis.xaml.glyph_does_not_exist_in_fonts.enabled
-com.mfractor.analysis.xaml.invalid_named_font_size.enabled
-com.mfractor.analysis.xaml.generic_is_missing_type_arguments.enabled
-com.mfractor.analysis.xaml.type_arguments_misuse.enabled
-com.mfractor.analysis.xaml.unknown_type_provided_to_generic.enabled
-com.mfractor.analysis.xaml.column_is_outside_grid_boundaries.enabled
-com.mfractor.analysis.xaml.columnspan_is_outside_grid_boundaries.enabled
-com.mfractor.analysis.xaml.columnspan_is_zero.enabled
-com.mfractor.analysis.xaml.redundant_column_property.enabled
-com.mfractor.analysis.xaml.redundant_column_span_property.enabled
-com.mfractor.analysis.xaml.redundant_row_property.enabled
-com.mfractor.analysis.xaml.redundant_row_span_property.enabled
-com.mfractor.analysis.xaml.row_is_outside_grid_boundaries.enabled
-com.mfractor.analysis.xaml.rowspan_is_outside_grid_boundaries.enabled
-com.mfractor.analysis.xaml.rowspan_is_zero.enabled
-com.mfractor.analysis.xaml.obsolete_property_used.enabled
-com.mfractor.analysis.xaml.on_idiom_return_type_mismatch.enabled
-com.mfractor.analysis.xaml.on_platform_return_type_mismatch.enabled
-com.mfractor.analysis.xaml.property_setter_attribute_does_not_exist_in_parent.enabled
-com.mfractor.analysis.xaml.property_setter_node_does_not_exist_in_parent.enabled
-com.mfractor.analysis.xaml.property_setter_node_misuse.enabled
-com.mfractor.analysis.xaml.property_setter_node_type_mistmatch.enabled
-com.mfractor.analysis.xaml.duplicate_resource_dictionary_key.enabled
-com.mfractor.analysis.xaml.missing_resource_dictionary_key.enabled
-com.mfractor.analysis.xaml.unused_resource_entry.enabled
-com.mfractor.analysis.xaml.missing_microsoft_schema_reference.enabled
-com.mfractor.analysis.xaml.scroll_view_has_multiple_children.enabled
-com.mfractor.analysis.xaml.style_is_missing_target_type.enabled
-com.mfractor.analysis.xaml.style_property_setter_does_not_exist.enabled
-com.mfractor.analysis.xaml.unknown_field_modifier.enabled
-com.mfractor.analysis.xaml.unknown_static_property_value.enabled
-com.mfractor.analysis.xaml.value_type_input_not_valid.enabled
-com.mfractor.analysis.xaml.multiple_namespace_assembly_references.enabled
-com.mfractor.analysis.xaml.xml_namespace_does_not_resolve.enabled
-com.mfractor.analysis.xaml.xmlns_assembly_does_not_resolve.enabled
-com.mfractor.analysis.xaml.xaml_node_does_not_resolve.enabled
-com.mfractor.analysis.xaml.trigger_is_missing_target_type.enabled
-com.mfractor.analysis.xaml.trigger_target_type_does_not_match_parent.enabled
-com.mfractor.analysis.xaml.invalid_thickness_attribute_value.enabled
-com.mfractor.analysis.xaml.thickness_value_can_be_consolidated.enabled
-com.mfractor.analysis.xaml.thickness_value_can_be_replaced_with_static_resource.enabled
-com.mfractor.analysis.xaml.thickness_value_can_be_simplified.enabled
-com.mfractor.analysis.xaml.element_can_use_available_style.enabled
-com.mfractor.analysis.xaml.property_value_is_already_applied_by_style.enabled
-com.mfractor.analysis.xaml.style_target_type_does_not_match_basedon_target_type.enabled
-com.mfractor.analysis.xaml.ambiguous_static_resource.enabled
-com.mfractor.analysis.xaml.no_key_provided_to_static_resource.enabled
-com.mfractor.analysis.xaml.static_resource_return_type_mismatch.enabled
-com.mfractor.analysis.xaml.static_resource_target_type_is_incompatible.enabled
-com.mfractor.analysis.xaml.static_symbol_type_does_not_match_expected_type.enabled
-com.mfractor.analysis.xaml.undefined_static_resource.enabled
-com.mfractor.analysis.xaml.slider_minimum_set_before_maximum.enabled
-com.mfractor.analysis.xaml.duplicate_shellitem_route.enabled
-com.mfractor.analysis.xaml.empty_shell_route_scheme.enabled
-com.mfractor.analysis.xaml.multiple_visual_elements_defined_in_shell_content.enabled
-com.mfractor.analysis.xaml.shell_requires_at_least_one_shell_item.enabled
-com.mfractor.analysis.xaml.validate_setter_attached_property.enabled
-com.mfractor.analysis.xaml.setter_property_does_not_exist.enabled
-com.mfractor.analysis.xaml.style_or_trigger_has_duplicate_setters.enabled
-com.mfractor.analysis.xaml.resource_key_conflict.enabled
-com.mfractor.analysis.xaml.missing_image_resource.enabled
-com.mfractor.analysis.xaml.grid_row_column_setter_is_not_a_number.enabled
-com.mfractor.analysis.xaml.no_key_provided_to_dynamic_resource.enabled
-com.mfractor.analysis.xaml.binding_expression_does_not_return_a_property.enabled
-com.mfractor.analysis.xaml.binding_expression_is_against_nonpublic_property.enabled
-com.mfractor.analysis.xaml.binding_expression_resolves.enabled
-com.mfractor.analysis.xaml.binding_expression_does_not_match_expected_type.enabled
-com.mfractor.analysis.xaml.color_value_can_be_replaced_with_static_resource.enabled
-com.mfractor.analysis.xaml.color_value_closely_matches_available_static_resources.enabled
-com.mfractor.analysis.forms.hexadecimal_value_matches_named_color.enabled
-com.mfractor.analysis.forms.malformed_hexadecimal_color.enabled
-```
+## Available Code Analysers
+
+| Diagnostic ID | Name | Description
+| ---   | ---   | ---
+| <label title="com.mfractor.analysis.xaml.duplicate_automation_ids">MF1000</label>| Duplicate AutomationIds| Inspects a Xaml document for occurances of duplicate `AutomationId` declarations.
+| <label title="com.mfractor.analysis.xaml.empty_automation_id">MF1001</label>| Empty AutomationId Declaration| Inspects a Xaml document for occurances of duplicate `AutomationId` declarations.
+| <label title="com.mfractor.analysis.xaml.code_behind_field_name_has_invalid_characters">MF1002</label>| x:Name Has Invalid Characters| Checks that x:Name expressions define a valid code-behind variable name. A value declared by an x:Name attribute must start with a @, _ or a-Z character followed by underscores or alpha-numeric characters.
+| <label title="com.mfractor.analysis.xaml.duplicate_code_behind_field_name">MF1003</label>| Duplicate Code Behind Field Declarations| Checks that the value assigned to an `x:Name` attribute is unique within the scope of the document.
+| <label title="com.mfractor.analysis.xaml.empty_code_behind_field_name">MF1004</label>| Empty Code Behind Field Declaration| Inspects occurances of the `x:Name` attribute and validates that a value is assigned; empty `x:Name` expressions generate an empty named code-behind field, causing compilation errors.
+| <label title="com.mfractor.analysis.xaml.content_page_has_multiple_children">MF1005</label>| ContentPage Has Multiple Direct Children| Inspects usages of `ContentPage` and checks that it only has a single child view. Assigning multiple children into a `ContentPage` is a common mistake where the developer usually intended to wrap the chid views with a `Grid` or a `StackLayout`.
+| <label title="com.mfractor.analysis.xaml.content_view_has_multiple_children">MF1006</label>| ContentView Has Multiple Direct Children| Inspects usages of the `ContentView` element and checks that it only has a single child view. Assigning multiple children into a `ContentView` is a common mistake where the developer usually intended to wrap the chid views with a `Grid` or a `StackLayout`.
+| <label title="com.mfractor.analysis.xaml.binding_expression_does_not_return_a_property">MF1007</label>| Validate Binding Expressions Return A Property| Evaluates a `Binding` expression and validates that it points to property within the binding context. This analyser requires an explict or implicit binding context.
+| <label title="com.mfractor.analysis.xaml.binding_expression_is_against_nonpublic_property">MF1008</label>| Binding Against Non-Public Property| Inspects data-binding expressions and validates that the property return is a public property. Data-binding against a non-public property causes data-binding to fail.
+| <label title="com.mfractor.analysis.xaml.binding_expression_resolves">MF1009</label>| [Binding Expressions Resolve](https://docs.mfractor.com/xamarin-forms/working-with-viewmodels/data-binding-analysis/)| Inspects `Binding` expressions and validates that the symbol referred to in the binding context exists. This analyser requires an explict or implicit binding context.
+| <label title="com.mfractor.analysis.xaml.binding_expression_does_not_match_expected_type">MF1010</label>| Binding Expression Return Type Mismatch| Validates that the .NET symbol returned by a binding expression matches the expected type for the property.
+| <label title="com.mfractor.analysis.xaml.no_key_provided_to_dynamic_resource">MF1011</label>| No Key Provided To DynamicResource Expression| Inspects `DynamicResource` expressions and validates that a resource key has been provided.
+| <label title="com.mfractor.analysis.xaml.empty_event_handler_assignment">MF1012</label>| Empty Event Handler Assignment| Checks that an event handler assignment is not empty as empty event handler assignments will cause a compilation error.
+| <label title="com.mfractor.analysis.xaml.event_handler_does_not_exist_in_code_behind_classs">MF1013</label>| Event Handler Exists In Code Behind Class| Checks that an event callback referenced referenced by an attribute value exists in the code behind class.
+| <label title="com.mfractor.analysis.xaml.event_handler_signature_matches">MF1014</label>| Event Handler Signature Mismatch| Checks that the signature for the event callback in a code behind class matches the expected signature for the property it is assigned to.
+| <label title="com.mfractor.analysis.xaml.xreference_element_exists">MF1015</label>| Referenced Code Behind Field Exists| Inspects usages of the `x:Reference` expression and validates the referenced element has been declared within the document. `x:Reference` expressions are used to resolve another Xaml node has a code behind field defined using the `x:Name` attribute.
+| <label title="com.mfractor.analysis.xaml.converter_input_type_mismatch">MF1016</label>| Value Converter Input Type Mismatch| Inspects the `Converter` property of a `Binding `expression and validates that the input type is correct. This analyser requires that the `IValueConverter` implementation uses the [`ValueConversion`](/xamarin-forms/value-converter-type-safety.md) attribute to declare it input type.
+| <label title="com.mfractor.analysis.xaml.converter_output_type_mismatch">MF1017</label>| Value Converter Output Type Mismatch| Inspects the `Converter` component of a `Binding` expression and validates that the returned output type is valid for the parent attribute. This analyser requires that the `IValueConverter` implementation uses the [`ValueConversion`](/xamarin-forms/value-converter-type-safety.md) attribute to declare it input type.
+| <label title="com.mfractor.analysis.xaml.dotnet_symbol_resolves">MF1018</label>| Unresolved .NET Symbols Within Xaml Expression| Inspects a .net symbol reference (eg `local:MyClass.MyProperty`) and validates that the symbol portion ('MyClass.MyProperty') resolves to a .NET symbol within the current project and it's references.
+| <label title="com.mfractor.analysis.xaml.dotnet_symbol_namespace_resolves">MF1019</label>| Unresolved Namespace Within Xaml Expression| Inspects a .net symbol reference (eg `local:MyClass.MyProperty`) and validates that the namespace portion ('local') resolves to a xmlns declaration in the current document.
+| <label title="com.mfractor.analysis.xaml.invalid_named_font_size">MF1020</label>| Invalid Named Font Size| Inspects FontSize attributes and validates that the named size provided to it is a valid font size name (Micro, Small, Medium, Large).
+| <label title="com.mfractor.analysis.xaml.generic_is_missing_type_arguments">MF1021</label>| Generic Usage Is Missing x:TypeArguments| Inspects generic classes that are instantiated through Xaml and validates that an `x:TypeArguments` attribute or property assignment node is present.
+| <label title="com.mfractor.analysis.xaml.type_arguments_misuse">MF1022</label>| x:TypeArguments Used On Non-Generic Class| Inspects for usages of `x:TypeArguments` on elements that are non-generic classes.
+| <label title="com.mfractor.analysis.xaml.unknown_type_provided_to_generic">MF1023</label>| Unknown Type Provided To Generic| Inspects usages of `x:TypeArguments` and validates that the type provided exists.
+| <label title="com.mfractor.analysis.xaml.column_is_outside_grid_boundaries">MF1024</label>| [Column Is Outside Grid Boundaries](https://docs.mfractor.com/xamarin-forms/grids/analysis/#column-outside-grid-boundary)| This code analyser inspects usages of the `Grid.Column` attribute and validates that the column provided is within the total columns declared by the parent grid.
+| <label title="com.mfractor.analysis.xaml.columnspan_is_outside_grid_boundaries">MF1025</label>| [ColumnSpan Is Outside Grid Boundaries](https://docs.mfractor.com/xamarin-forms/grids/analysis/#column-span-outside-grid-boundary)| This code analyser inspects usages of the `Grid.ColumnSpan` attribute and validates that the span provided is within the total columns declared by the parent grid.
+| <label title="com.mfractor.analysis.xaml.columnspan_is_zero">MF1026</label>| ColumnSpan Is Zero| This code analyser inspects usages of the `Grid.ColumnSpan` attribute and validates that the span provided is a non-zero value.
+| <label title="com.mfractor.analysis.xaml.grid_row_column_setter_is_not_a_number">MF1027</label>| Grid Row/Column Setter Is Not A Number| This code analyser inspects usages of the `Grid.Column` attribute and validates that the element is inside a `Grid`.
+| <label title="com.mfractor.analysis.xaml.redundant_column_property">MF1028</label>| Grid.Column Usage Is Redundant| This code analyser inspects usages of the `Grid.Column` attribute and validates that the element is inside a `Grid`.
+| <label title="com.mfractor.analysis.xaml.redundant_column_span_property">MF1029</label>| Grid.ColumnSpan Usage Is Redundant| This code analyser inspects usages of the `Grid.ColumnSpan` attribute and validates that the element is inside a `Grid`.
+| <label title="com.mfractor.analysis.xaml.redundant_row_property">MF1030</label>| Grid.Row Usage Is Redundant| This code analyser inspects usages of the `Grid.Row` attribute and validates that the element is inside a `Grid`.
+| <label title="com.mfractor.analysis.xaml.redundant_row_span_property">MF1031</label>| Grid.RowSpan Usage Is Redundant| This code analyser inspects usages of the `Grid.RowSpan` attribute and validates that the element is inside a `Grid`.
+| <label title="com.mfractor.analysis.xaml.row_is_outside_grid_boundaries">MF1032</label>| [Row Is Outside Grid Boundaries](https://docs.mfractor.com/xamarin-forms/grids/analysis/#row-outside-grid-boundary)| This code analyser inspects usages of the `Grid.Row` attribute and validates that the row provided is within the total rows declared by the parent grid.
+| <label title="com.mfractor.analysis.xaml.rowspan_is_outside_grid_boundaries">MF1033</label>| [RowSpan Is Outside Grid Boundaries](https://docs.mfractor.com/xamarin-forms/grids/analysis/#row-span-outside-grid-boundary)| This code analyser inspects usages of the `Grid.RowSpan` attribute and validates that the span provided is within the total rows declared by the parent grid.
+| <label title="com.mfractor.analysis.xaml.rowspan_is_zero">MF1034</label>| RowSpan Is Zero| This code analyser inspects usages of the `Grid.RowSpan` attribute and validates that the span provided is a non-zero value.
+| <label title="com.mfractor.analysis.xaml.missing_image_resource">MF1035</label>| Detect Missing Image In Linked Projects| This code analyser inspects the value provided into an `ImageSource` and validates that an image of that name exists within any iOS or Android projects that reference this shared project or PCL.
+| <label title="com.mfractor.analysis.xaml.on_idiom_return_type_mismatch">MF1036</label>| OnIdiom Return Type Mismatch| Checks the type returned by a `Xamarin.Forms.OnIdiom` element is valid with the parent property type.
+| <label title="com.mfractor.analysis.xaml.on_platform_return_type_mismatch">MF1037</label>| OnPlatform Return Type Mismatch| Checks the type returned by a `Xamarin.Forms.OnPlatform` element is valid with the parent property type.
+| <label title="com.mfractor.analysis.xaml.property_setter_attribute_does_not_exist_in_parent">MF1038</label>| Referenced Attribute Member Exists In Parent Type| Checks that an attribute resolves to a member within its parent type.
+| <label title="com.mfractor.analysis.xaml.property_setter_node_does_not_exist_in_parent">MF1039</label>| Property Node Maps To Member In Parent Type| Checks that a property node resolves to a member within its parent type.
+| <label title="com.mfractor.analysis.xaml.property_setter_node_misuse">MF1040</label>| Property Setter Node Misuse| Inspects for property setters that don't apply to the outer class. For example, if a developer used OnIdiom.Phone inside a OnPlatform element, the OnIdiom.Phone property setter makes no sense within the given context.
+| <label title="com.mfractor.analysis.xaml.property_setter_node_type_mistmatch">MF1041</label>| Property Setter Type Mismatch| When using MyClass.MyProperty node setter syntax, validate that the inner child node returns a .NET object of the correct type for the property.
+| <label title="com.mfractor.analysis.xaml.duplicate_resource_dictionary_key">MF1042</label>| Duplicate Resource Dictionary Keys| Validates the each resource entry within a resource dictionary has a unique key.
+| <label title="com.mfractor.analysis.xaml.missing_resource_dictionary_key">MF1043</label>| Resource Entry Does Not Define Key| Validates the elements provided to a resource dictionary supply an `x:Key` attribute to declare their resource dictionary key.
+| <label title="com.mfractor.analysis.xaml.resource_key_conflict">MF1044</label>| Resource Key Conflict| Inspects resource key declarations and validates that the resource key is not already defined in other files that are used by this file.
+| <label title="com.mfractor.analysis.xaml.unused_resource_entry">MF1045</label>| Unused Resource| Inspects that resource dictionary entries are used via the `StaticResource` markup extension expression within this document.
+| <label title="com.mfractor.analysis.xaml.missing_microsoft_schema_reference">MF1046</label>| Missing Microsoft Schema| Inspects at the root xaml node and verifies that it references the Microsoft Xaml schema: `http://schemas.microsoft.com/winfx/2009/xaml`. This schema is required for Xamarin Forms Xaml documents.
+| <label title="com.mfractor.analysis.xaml.duplicate_shellitem_route">MF1047</label>| Duplicate ShellItem Route| Inspects `Xamarin.Forms.ShellItem` elements and validates that their `Route` is unique.
+| <label title="com.mfractor.analysis.xaml.validate_setter_attached_property">MF1048</label>| Validate Setter Attached Property Usage| Inspects the `Property` attribute for a `Xamarin.Forms.Setter` and, when it is referencing an attached property, validates that the namespace, class and attached property exist.
+| <label title="com.mfractor.analysis.xaml.setter_property_does_not_exist">MF1049</label>| Setter Property Exists| Inspects the `Property` attribute for a `Xamarin.Forms.Setter` and validates that it exists in the parents specified `TargetType`.
+| <label title="com.mfractor.analysis.xaml.empty_shell_route_scheme">MF1051</label>| Empty Shell Route Scheme| Providing an empty value into the `RouteScheme` property of a `Xamarin.Forms.Shell` element will cause the application to crash. This code inspection validates that a value is provided to the RouteScheme property.
+| <label title="com.mfractor.analysis.xaml.multiple_visual_elements_defined_in_shell_content">MF1052</label>| Multiple VisualElements Defined In Shell Content| Inspects usages of the Xamarin.Forms.ShellContent and validates that only one page or view is declared within it.
+| <label title="com.mfractor.analysis.xaml.shell_requires_at_least_one_shell_item">MF1053</label>| Shell Requires At Least One Item| When using `Xamarin.Forms.Shell` you must provide at least one item declaration.
+| <label title="com.mfractor.analysis.xaml.ambiguous_static_resource">MF1054</label>| Ambiguous Static Resource Reference| Inspects StaticResource expressions and checks if one or more static resources will be returned from the resource expression.
+| <label title="com.mfractor.analysis.xaml.no_key_provided_to_static_resource">MF1055</label>| No Key Provided To Static Resource Expression| Inspects `StaticResource` expressions and validates that a resource key has been provided.
+| <label title="com.mfractor.analysis.xaml.static_resource_return_type_mismatch">MF1056</label>| StaticResource Return Type Mismatch| Validates that the symbol returned by a `StaticResource` expression matches the expected type for the property.
+| <label title="com.mfractor.analysis.xaml.static_symbol_type_does_not_match_expected_type">MF1057</label>| x:Static Return Type Mismatch| Validates that the .NET symbol returned by an `x:Static` expressions matches the expected type for the property.
+| <label title="com.mfractor.analysis.xaml.undefined_static_resource">MF1058</label>| Undefined Static Resource Usage| Validates that the element referenced by a `StaticResource` expression resource lookup resolves to a resource defined in the xaml file.
+| <label title="com.mfractor.analysis.xaml.style_is_missing_target_type">MF1059</label>| Style Is Missing TargetType| When a `Style` is used within XAML, it should always specify a type it targets using the `TargetType` property. This analysis check inspects for usages of `Style` that don't assign the `TargetType` property.
+| <label title="com.mfractor.analysis.xaml.style_or_trigger_has_duplicate_setters">MF1060</label>| Style Or Trigger Has Duplicate Setters| Inspects Style and Trigger declarations and checks if there is are multiple Setter's for a property.
+| <label title="com.mfractor.analysis.xaml.style_property_setter_does_not_exist">MF1061</label>| Property Setter Does Not Exist In Style TargetType| This code inspection looks at `Setter` elements when they are used inside a `Style` and validates that the member specified in the `Property` attribute exists on the type symbol referenced in the parent `Style`s `TargetType` attribute.
+| <label title="com.mfractor.analysis.xaml.style_target_type_does_not_match_basedon_target_type">MF1062</label>| Style TargetType Does Not Match BasedOn TargetType| Inspects XAML styles that use the `BasedOn` property to inherit from another style and validates the `TargetType` of the current style matches the `TargetType` defined by the `BasedOn` style.
+| <label title="com.mfractor.analysis.xaml.invalid_thickness_attribute_value">MF1063</label>| Invalid Thickness Attribute Value| Inspects attribute properties that use the `Xamarin.Forms.Thickness` type and checks the value used can be translated to a thickness. For example, `Thickness` could accidentally be provided `0,5,05`, with the intention of it being `0,5,0,5`; the first example has three arguments while the second has four. This misuse would cause the app to crash when using inflated XAML or for XAMLC to fail.
+| <label title="com.mfractor.analysis.xaml.trigger_is_missing_target_type">MF1064</label>| Trigger Is Missing Target Type| Inspects XAML elements that derive from `Xamarin.Forms.TriggerBase` and validates that they include a `TargetType` attribute
+| <label title="com.mfractor.analysis.xaml.trigger_target_type_does_not_match_parent">MF1065</label>| Trigger TargetType Does Not Match Parent| Inspects usages of the `TargetType` property for a `Xamarin.Forms.TriggerBase` and validates that the type provided matches the outer XAML node.
+| <label title="com.mfractor.analysis.xaml.multiple_namespace_assembly_references">MF1066</label>| Duplicate Namespace Declaration| Checks that an xml namespace points to a unique namespace and assembly. For example if both `xmlns:local="clr-namespace:MFractor.Licensing.MobileApp"` and `xmlns:myassembly="clr-namespace:MFractor.Licensing.MobileApp"` were declared, this analyser would warn that they both reference the same assembly and namespace.
+| <label title="com.mfractor.analysis.xaml.xml_namespace_does_not_resolve">MF1067</label>| Unresolved Xml Namespace| Checks that the namespace used on the xml nodes is defined within the current document.
+| <label title="com.mfractor.analysis.xaml.xmlns_assembly_does_not_resolve">MF1068</label>| Unresolved Xmlns Assembly| Checks that the 'assembly' component of an xmlns statement resolves to an assembly referenced by the project.
+| <label title="com.mfractor.analysis.xaml.element_does_not_have_attached_property">MF1069</label>| Class Does Not Have Attached Property| Looks for attached properties (for example `Grid.Row`) and validates they exist in the class that they are attempting to use.
+| <label title="com.mfractor.analysis.xaml.empty_value_assignment">MF1070</label>| Empty Value Assignment| Detects when a boolean, double, long or integer value is being assigned an empty value and will cause a compilation error.
+| <label title="com.mfractor.analysis.xaml.obsolete_property_used">MF1071</label>| Obsolete Property Used| Checks for attributes that are marked as obsolete/deprecated.
+| <label title="com.mfractor.analysis.xaml.unknown_static_property_value">MF1072</label>| Unknown Static Property Value| For attributes that accept a class object, inspects that the literal value maps to a static property or field in the class type. For example, the `LayoutOptions` class has the static fields `Fill` or `CentreAndExpand` that can be used a literal attribute values. If `CentreAndFill` was provided (an invalid value), this analyser would inspect the `LayoutOptions` class for a static field named `CentreAndFill` and trigger an analysis error when it couldn't be found.
+| <label title="com.mfractor.analysis.xaml.value_type_input_not_valid">MF1074</label>| Validate Value Types| Inspects the input provided to attributes that expect value types (int, bool, double etc) and validates that the input is valid.
+| <label title="com.mfractor.analysis.xaml.xaml_node_does_not_resolve">MF1075</label>| Xaml Node Resolves| Checks that xaml nodes map to a valid .NET symbol.
+| <label title="com.mfractor.analysis.forms.hexadecimal_value_matches_named_color">MF1076</label>| [Hexadecimal Value Matches Named Color](https://docs.mfractor.com/xamarin-forms/colors/color-analysis/#applying-named-color-to-equivalent-hex-value)| Inspects HexaDecimal color values and matches them against the named color constants.
+| <label title="com.mfractor.analysis.xaml.static_resource_target_type_is_incompatible">MF1077</label>| Static Resource Style Target Type Is Incompatible| When a static resource expression returns a style, this code inspection verifies that the TargetType of the given style is compatible with
+| <label title="com.mfractor.analysis.xaml.thickness_value_can_be_simplified">MF1078</label>| Thickness Value Can Be Simplified| Inspect's thickness attribute values and verifies if the values can be simplified. For example, a thickness value of `20,0,20,0` could be simplified to `20,0`.
+| <label title="com.mfractor.analysis.xaml.color_value_can_be_replaced_with_static_resource">MF1079</label>| [Color Value Matches Static Resource](https://docs.mfractor.com/xamarin-forms/colors/color-analysis/#applying-an-existing-color-resource)| When assigning a color a hexadecimal or named constant, this code inspection detects if that color value matches an available color resource.
+| <label title="com.mfractor.analysis.xaml.thickness_value_can_be_replaced_with_static_resource">MF1080</label>| Thickness Value Can Be Replaced By Static Resource| Inspects assignments of Xamarin.Forms.Thickness values in XAML and matches them to declared static resources.
+| <label title="com.mfractor.analysis.xaml.property_value_is_already_applied_by_style">MF1081</label>| Property Value Is Already Applied By Style| When a `Style` is applied  within XAML, it should always specify a type it targets using the `TargetType` property. This analysis check inspects for usages of `Style` that don't assign the `TargetType` property.
+| <label title="com.mfractor.analysis.xaml.element_can_use_available_style">MF1082</label>| Element Can Use Available Style| Inspects XAML elements that do not have a style applied and, if possible, matches them to an available style that targets the element type and also applies the same properties.
+| <label title="com.mfractor.analysis.forms.malformed_hexadecimal_color">MF1084</label>| [Malformed Hexadecimal Color Value](https://docs.mfractor.com/xamarin-forms/colors/color-analysis/#identifying-mispelled-hex-color-formats)| Inspects hexadecimal color values and validates that they are in a format supported by Xamarin.Forms.
+| <label title="com.mfractor.analysis.xaml.unknown_field_modifier">MF1085</label>| Unknown Field Modifier| Inspects occurances of the `x:FieldModifer` attribute and validates that the value is one of the following keywords.<r><ul><li>private: Specifies that the generated field for the XAML element is accessible only within the body of the class in which it is declared.</li><li>public: Specifies that the generated field for the XAML element has no access restrictions.</li><li>protected: Specifies that the generated field for the XAML element is accessible within its class and by derived class instances.</li><li>internal: Specifies that the generated field for the XAML element is accessible only within types in the same assembly.</li><li>notpublic: Specifies that the generated field for the XAML element is accessible only within types in the same assembly.</li></ul>
+| <label title="com.mfractor.analysis.xaml.color_value_closely_matches_available_static_resources">MF1086</label>| Color Value Closely Matches Available Static Resource| Inspects color values and checks if they closely match the color value defined by a static resource.
+| <label title="com.mfractor.analysis.xaml.slider_minimum_set_before_maximum">MF1088</label>| Slider Minimum Set Before Maximum| Inspects slider elements and verifies that the user sets the maximum before the minimum
+| <label title="com.mfractor.analysis.xaml.cell_usage_within_collection_view_item_template">MF1090</label>| Cell Usage Within CollectionView ItemTemplate| Inspects the DataTemplate within a CollectionViews ItemTemplate property and verify that it does not use a cell.
+| <label title="com.mfractor.analysis.xaml.glyph_does_not_exist_in_fonts">MF1091</label>| Glyph Does Not Exist In Font| When a font is applied to a XAML element via the FontFamily attribute, this analyser inspects the character code provided and verifies that it exists in the referenced font asset.
+| <label title="com.mfractor.analysis.xaml.thickness_value_can_be_consolidated">MF1092</label>| Thickness Value Can Be Consolidated| Inspects thickness values and verifies if there are other thickness in the projects that also declare
+| <label title="com.mfractor.analysis.xaml.refresh_view_content_must_be_layout">MF1093</label>| RefreshView Content Should Be Scrollable Layout| Inspects the inner element of a refresh view and verifies that it derives from either a ListView, ScrollView or CollectionView.
+| <label title="com.mfractor.analysis.xaml.color_value_can_be_consolidated">MF1094</label>| Color Value Can Be Consolidated| Inspects color values and verifies if there are other colors in the projects that also declare that specific color.
+| <label title="com.mfractor.analysis.xaml.unknown_embedded_font_reference">MF1095</label>| Unknown Embedded Font Reference| Inspects FontFamily attributes and validates that the referenced embedded font asset is defined.
+| <label title="com.mfractor.analysis.xaml.unescaped_newline_in_string_literal">MF1096</label>| Unescaped Newline In String Literal| When a newline character, \n, is used within a string literal in XAML, it will not render as expected. Newlines should be added to XAML using the escaped &#10; character code.
+| <label title="com.mfractor.analysis.xaml.unknown_platform">MF1097</label>| Unknown OnPlatform Value| Checks the Platform value provided to a `Xamarin.Forms.On` element and verifies that it is a known platform within the Xamarin.Forms.Device class.
+| <label title="com.mfractor.analysis.xaml.data_template_expected">MF1098</label>| Data Template Expected| Inspects property nodes that accept a data template and verifies that the content is a DataTemplate.
+| <label title="com.mfractor.analysis.xaml.scroll_view_has_multiple_children">MF1099</label>| ScrollView Has Multiple Direct Children| Inspects usages of ScrollView and checks that it only has a single child view. Assigning multiple children to a ScrollView is a common mistake where the developer usually intended to wrap the chid views with a Grid or a StackLayout.

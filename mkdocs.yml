@@ -40,7 +40,7 @@ nav:
 - Quickstart - Windows: quickstart-windows.md
 - Quickstart - Mac: quickstart-mac.md
 - Analysis:
-  #- Overview: analysis/overview.md
+  - Overview: analysis/overview.md
   - Disabling Analysers: analysis/disabling-analysers.md
   #- Solution Analysis: analysis/solution-analysis.md
 - Code Actions: code-actions.md
