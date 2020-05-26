@@ -5,6 +5,10 @@
 
 ## Releases (v4)
 
+### Releases (v4.2)
+
+ * [v4.2.0 - Released on May 27th 2020](v4/v4.2.md#v420) - MFractor 4.2 for Visual Studio Mac is a major release that adds support for Visual Studio 8.6, serial key license activation and fixes several bugs in the core product.
+
 ### Releases (v4.1)
 
  * [v4.1.3 - Released on May 18th 2020](v4/v4.1.md#v413) - Service release to activate license expiry notification and fix integration issues in the code actions Alt+Return menu.
