@@ -2,7 +2,7 @@
 
 ## Introduction
 
-This guide is outlines how to install, activate, maintain and use MFractor for Visual Studio Mac.
+This guide outlines how to install, activate, maintain and use MFractor for Visual Studio Mac.
 
 To learn more about installation, licensing or a particular feature, please refer to the relevant linked documentation.
 
