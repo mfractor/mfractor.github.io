@@ -39,11 +39,12 @@ nav:
 - Installation And Setup: installation-and-setup.md
 - Quickstart - Windows: quickstart-windows.md
 - Quickstart - Mac: quickstart-mac.md
+- Scaffolder: scaffolder.md
+- Code Actions: code-actions.md
 - Analysis:
   - Overview: analysis/overview.md
   - Disabling Analysers: analysis/disabling-analysers.md
   #- Solution Analysis: analysis/solution-analysis.md
-- Code Actions: code-actions.md
 - Image Management:
   - Overview: image-management/overview.md
   - Managing Images Assets: image-management/managing-image-assets.md
