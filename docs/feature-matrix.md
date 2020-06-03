@@ -40,12 +40,6 @@ All features are available in MFractor for Visual Studio for Mac. The third colu
 | [MVVM Wizard](https://docs.mfractor.com/xamarin-forms/working-with-viewmodels/mvvm-wizard/)	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>
 | [Value Converter Wizard](https://docs.mfractor.com/xamarin-forms/value-converters/value-converter-wizard/)	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>
 
-### C#
-
-| Feature	| Lite	| Pro	| Platforms
-|---	|---	|---	|---
-| Scaffolder	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i>
-
 ### C# Language Code Actions
 
 | Feature	| Lite	| Pro	| Platforms
@@ -67,7 +61,7 @@ All features are available in MFractor for Visual Studio for Mac. The third colu
 | Create Lazy Field Accessor	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>
 | Locate Class File In Solution Explorer	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i>
 | Select String Span	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i>
-| Align Namespace To Folder Path	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>
+| [Align Namespace To Folder Path](https://docs.mfractor.com/csharp/code-actions/align-namespace-to-folder-path/)	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>
 | Copy Var Type To Clipboard	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>
 | [Simplify Qualified Type](https://docs.mfractor.com/csharp/code-actions/simplify-qualified-types/)	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>
 | [Simplify All Qualified Types](https://docs.mfractor.com/csharp/code-actions/simplify-qualified-types/#the-simplify-types-wizard)	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>
@@ -305,6 +299,14 @@ All features are available in MFractor for Visual Studio for Mac. The third colu
 | Feature	| Lite	| Pro	| Platforms
 |---	|---	|---	|---
 | [Embedded Font Asset Completion](https://docs.mfractor.com/xamarin-forms/fonts/code-completion/#embedded-fonts-completion)	| <i class="fas fa-check fa-lg"></i>	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i>
+
+## Scaffolding
+
+### General
+
+| Feature	| Lite	| Pro	| Platforms
+|---	|---	|---	|---
+| [Scaffolder Overview](https://docs.mfractor.com/scaffolder/)	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i>
 
 ## Utilities
 
