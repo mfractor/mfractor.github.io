@@ -51,7 +51,7 @@ If a `Grid.RowSpan` is zero, MFractor will show a warning for the faulty span si
 
 If a `Grid.ColumnSpan` is zero, MFractor will show a warning for the faulty span size:
 
-![](/img/xamarin-forms/grid-row-span-zero.png)
+![](/img/xamarin-forms/grid-column-span-zero.png)
 
 ## Redundant Row And Column Analysis
 
