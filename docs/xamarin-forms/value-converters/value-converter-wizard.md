@@ -12,15 +12,15 @@ The Wizard can be invoked from MFractor Main Menu, under the _Wizards_ sub-menu.
 
 ![Examples the Menu Path the user take to go to the Value Converter Wizard](/img/xamarin-forms/value-converter-menu.png)
 
-The Wizard Window is divided in two sections: parameters and preview. The parameters control the behavior of the newly created Value Converter and the options are as follows:
+The Wizard Window is divided in two sections: parameters and preview. The parameters control the behaviour of the newly created Value Converter and the options are as follows:
 
 #### Name and Location Parameters
-* **Name**: Required. The name of the Value Converter, will also be used to name the file that will hold the code. By convetion Converters adds a `Converter` suffix to its name.
-* **Infer Input/Output Types**: MFractor can infer the input and output data types based on the name you set for the converter. As an example, if you name a converter like `IntToBoolConverter` it will infer that the input parameter is of type `int` and the output parameter will be a `bool`.
+* **Name**: Required. The name of the Value Converter, will also be used to name the file that will hold the code. By convention Converters adds a `Converter` suffix to its name.
+* **Infer Input/Output Types**: MFractor can infer the input and output data types based on the name you set for the converter. As an example, if you name a converter like `IntToBoolConverter` it will infer that the input parameter is of type `int` and the output parameter will be a `bool`. Please see the [Automatic Type Inference documentation](/xamarin-forms/automatic-type-inference.md) to learn more.
 * **Folder**: the folder where the converter will be created inside the project. Defaults to `Converters`.
 
 #### Type Parameters
-Optionally you can specify the types for the arguments you can use to process a value converter. The default code snippet for generating a value converter adds type-casting to the choosen types for each argument. Those fields expects a valid .NET/C# data-type
+Optionally you can specify the types for the arguments you can use to process a value converter. The default code snippet for generating a value converter adds type-casting to the chosen types for each argument. Those fields expects a valid .NET/C# data-type
 
 >Those parameters are optional and if omitted will default to `object`.
 

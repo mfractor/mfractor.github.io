@@ -47,7 +47,7 @@ In the code actions menu that opens, choose `Create an attached property` to lau
 The attached property wizard consists of the following parts:
 
  * **Name**: The name of the new attached property.
- * **Type**: The fully qualified type name for the attached properties type. Defaults to `System.Object`, however, the wizard will attempt to infer the desired type based on the **Name** input. See [Automatic Type Inference](bindable-property-wizard.md#automatic-type-inference).
+ * **Type**: The fully qualified type name for the attached properties type. Defaults to `System.Object`, however, the wizard will attempt to infer the desired type based on the **Name** input. See [Automatic Type Inference](/xamarin-forms/automatic-type-inference.md).
  * **Control Type**: The type of class that declared this attached property.
 
 On the right hand side of the wizard is a preview of the code that will be created.
@@ -58,4 +58,4 @@ To create the new attached property, enter the name and type of the new property
 
 The attached property wizard supports **Automatic Type Inference** based on the name that is provided to the wizard.
 
-Please see [Bindable Property Wizard - Automatic Type Inference](bindable-property-wizard.md#automatic-type-inference) for a full breakdown of this feature.
+Please see [the Automatic Type Inference documentation](/xamarin-forms/automatic-type-inference.md) for a full breakdown of this feature.
