@@ -1232,6 +1232,40 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#row-and-column-span-is-zero-analysis" class="md-nav__link">
+    Row and Column Span Is Zero Analysis
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#row-span-is-zero" class="md-nav__link">
+    Row Span Is Zero
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#column-span-is-zero" class="md-nav__link">
+    Column Span Is Zero
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#redundant-row-and-column-analysis" class="md-nav__link">
+    Redundant Row And Column Analysis
+  </a>
+  
+</li>
+      
       
       
       
@@ -2118,6 +2152,40 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#row-and-column-span-is-zero-analysis" class="md-nav__link">
+    Row and Column Span Is Zero Analysis
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#row-span-is-zero" class="md-nav__link">
+    Row Span Is Zero
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#column-span-is-zero" class="md-nav__link">
+    Column Span Is Zero
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#redundant-row-and-column-analysis" class="md-nav__link">
+    Redundant Row And Column Analysis
+  </a>
+  
+</li>
+      
       
       
       
@@ -2151,7 +2219,7 @@
 <h2 id="introduction">Introduction</h2>
 <p>Grids are one of the most versatile and used layouts provided by Xamarin.Forms. Despite being easy to use, it sometimes hard to keep track of its child elements. MFractor introduces a few Grid Code Analysis to aid on composing your layouts.</p>
 <h2 id="row-and-column-analysis">Row and Column Analysis</h2>
-<p>Those Code Analysis are applied to the <code>Grid.Row</code> and <code>Grid.Column</code> attached properties applied to the child element of a Grid. MFractor inspects the rows and columns definitions of the Grid and check each child element position to check if it's within it's defined bounds.</p>
+<p>These analysers are applied to the <code>Grid.Row</code> and <code>Grid.Column</code> attached properties applied to the child element of a Grid. MFractor inspects the rows and columns definitions of the Grid and check each child element position to check if it's within it's defined bounds.</p>
 <h3 id="row-outside-grid-boundary">Row Outside Grid Boundary</h3>
 <p>If a <code>Grid.Row</code> definition is beyond the Rows Definitions of the parent Grid, MFractor will show a warning for the faulty location:</p>
 <p><img alt="" src="/img/xamarin-forms/grid-analysis-row-out-bounds.png" /></p>
@@ -2159,13 +2227,26 @@
 <p>If a <code>Grid.Column</code> definition is beyond the Columns Definitions of the parent Grid, MFractor will show a warning for the faulty location:</p>
 <p><img alt="" src="/img/xamarin-forms/grid-analysis-column-out-bounds.png" /></p>
 <h2 id="row-and-column-span-analysis">Row and Column Span Analysis</h2>
-<p>Those Code Analysis are applied to the <code>Grid.RowSpan</code> and <code>Grid.ColumnSpan</code> attached properties applied to the child element of a Grid. MFractor inspects the rows and columns definitions of the Grid and check each child element that declares spans to check if they doesn't go beyond the defined bounds.</p>
+<p>These analysers are applied to the <code>Grid.RowSpan</code> and <code>Grid.ColumnSpan</code> attached properties applied to the child element of a Grid. MFractor inspects the rows and columns definitions of the Grid and check each child element that declares spans to check if they doesn't go beyond the defined bounds.</p>
 <h3 id="row-span-outside-grid-boundary">Row Span Outside Grid Boundary</h3>
 <p>If a <code>Grid.RowSpan</code> definition goes beyond the Rows Definitions from the current Row where the element is placed, MFractor will show a warning for the faulty span size:</p>
 <p><img alt="" src="/img/xamarin-forms/grid-analysis-row-span.png" /></p>
 <h3 id="column-span-outside-grid-boundary">Column Span Outside Grid Boundary</h3>
-<p>If a <code>Grid.RowSpan</code> definition goes beyond the Rows Definitions from the current Row where the element is placed, MFractor will show a warning for the faulty span size:</p>
+<p>If a <code>Grid.ColumnSpan</code> definition goes beyond the column Definitions from the current Row where the element is placed, MFractor will show a warning for the faulty span size:</p>
 <p><img alt="" src="/img/xamarin-forms/grid-analysis-row-span.png" /></p>
+<h2 id="row-and-column-span-is-zero-analysis">Row and Column Span Is Zero Analysis</h2>
+<p>These analysers are applied to the <code>Grid.RowSpan</code> and <code>Grid.ColumnSpan</code> attached properties applied to the child element of a Grid. MFractor inspects that the provided span is not zero; using zero as a span value is invalid and may lead to a runtime crash.</p>
+<h3 id="row-span-is-zero">Row Span Is Zero</h3>
+<p>If a <code>Grid.RowSpan</code> is zero, MFractor will show a warning for the faulty span size:</p>
+<p><img alt="" src="/img/xamarin-forms/grid-row-span-zero.png" /></p>
+<h3 id="column-span-is-zero">Column Span Is Zero</h3>
+<p>If a <code>Grid.ColumnSpan</code> is zero, MFractor will show a warning for the faulty span size:</p>
+<p><img alt="" src="/img/xamarin-forms/grid-row-span-zero.png" /></p>
+<h2 id="redundant-row-and-column-analysis">Redundant Row And Column Analysis</h2>
+<p>These analysers inspect when the <code>Grid.Row</code>, <code>Grid.RowSpan</code>, <code>Grid.Column</code> or <code>Grid.ColumnSpan</code> properties are applied an element that is not within a grid. They warn you that the Grid property is redundant and can be removed.</p>
+<p><img alt="" src="/img/xamarin-forms/redundant-grid-property.png" /></p>
+<p>To fix these issues, you can click on <strong>Remove redundant grid properties</strong> code fix to remove the unused properties.</p>
+<p>If the parent of the XAML element is within a grid, you can click on the <strong>Move reduntant grid properties to parent</strong> code fix to push the grid properties up to the parent element.</p>
                 
                   
                 
