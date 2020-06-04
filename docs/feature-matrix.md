@@ -6,6 +6,7 @@ All features are available in MFractor for Visual Studio for Mac. The third colu
 
 MFractor currently provides 222 features. We have currently documented 32% of the product features.
 
+
 ## Asset Management
 
 ### Image Management
@@ -126,14 +127,14 @@ MFractor currently provides 222 features. We have currently documented 32% of th
 | [Move Grid Properties To Parent Element](https://docs.mfractor.com/xamarin-forms/grids/analysis/#redundant-row-and-column-analysis)	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>
 | Create Missing Style	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>
 | Consolidate Thicknesses	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i>
-| Escape Newline Characters	| <i class="fas fa-check fa-lg"></i>	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>
-| Auto-Correct Embedded Font Reference	| <i class="fas fa-check fa-lg"></i>	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>
-| Move Property To Parent Element	| <i class="fas fa-check fa-lg"></i>	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>
-| Migrate Icon To IconImageSource	| <i class="fas fa-check fa-lg"></i>	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>
-| [Insert Grid Row](https://docs.mfractor.com/xamarin-forms/grids/insert-row-columns/)	| <i class="fas fa-check fa-lg"></i>	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>
-| [Insert Grid Column](https://docs.mfractor.com/xamarin-forms/grids/insert-row-columns/)	| <i class="fas fa-check fa-lg"></i>	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>
-| [Delete Grid Row](https://docs.mfractor.com/xamarin-forms/grids/delete-row-columns/)	| <i class="fas fa-check fa-lg"></i>	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>
-| [Delete Grid Column](https://docs.mfractor.com/xamarin-forms/grids/delete-row-columns/)	| <i class="fas fa-check fa-lg"></i>	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>
+| Escape Newline Characters	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>
+| Auto-Correct Embedded Font Reference	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>
+| Move Property To Parent Element	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>
+| Migrate Icon To IconImageSource	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>
+| [Insert Grid Row](https://docs.mfractor.com/xamarin-forms/grids/insert-row-columns/)	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>
+| [Insert Grid Column](https://docs.mfractor.com/xamarin-forms/grids/insert-row-columns/)	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>
+| [Delete Grid Row](https://docs.mfractor.com/xamarin-forms/grids/delete-row-columns/)	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>
+| [Delete Grid Column](https://docs.mfractor.com/xamarin-forms/grids/delete-row-columns/)	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>
 
 ## Xamarin.Forms
 
@@ -281,8 +282,8 @@ MFractor currently provides 222 features. We have currently documented 32% of th
 
 | Feature	| Lite	| Pro	| Platforms
 |---	|---	|---	|---
-| [Grid Index Adornments](https://docs.mfractor.com/xamarin-forms/grids/adornments/)	| <i class="fas fa-check fa-lg"></i>	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>
-| [Color Adornments](https://docs.mfractor.com/xamarin-forms/colors/adornments/)	| <i class="fas fa-check fa-lg"></i>	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>
+| [Grid Index Adornments](https://docs.mfractor.com/xamarin-forms/grids/adornments/)	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>
+| [Color Adornments](https://docs.mfractor.com/xamarin-forms/colors/adornments/)	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>
 | Escaped Characters Adornments	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>
 
 ### Tooltips
