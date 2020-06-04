@@ -1175,22 +1175,29 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#declaring-a-grid-with-boilerplate-code" class="md-nav__link">
-    Declaring a Grid with Boilerplate Code
+  <a href="#grid-boilerplate-code-completion" class="md-nav__link">
+    Grid Boilerplate Code Completion
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#declare-rows-and-columns-definitions" class="md-nav__link">
-    Declare Rows and Columns Definitions
+  <a href="#grid-row-and-column-shorthand-completions" class="md-nav__link">
+    Grid Row and Column Shorthand Completions
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#declare-the-child-elements" class="md-nav__link">
-    Declare the Child Elements
+  <a href="#grid-row-and-column-location-completions" class="md-nav__link">
+    Grid Row and Column Location Completions
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#grid-row-and-column-span-completions" class="md-nav__link">
+    Grid Row and Column Span Completions
   </a>
   
 </li>
@@ -2060,22 +2067,29 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#declaring-a-grid-with-boilerplate-code" class="md-nav__link">
-    Declaring a Grid with Boilerplate Code
+  <a href="#grid-boilerplate-code-completion" class="md-nav__link">
+    Grid Boilerplate Code Completion
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#declare-rows-and-columns-definitions" class="md-nav__link">
-    Declare Rows and Columns Definitions
+  <a href="#grid-row-and-column-shorthand-completions" class="md-nav__link">
+    Grid Row and Column Shorthand Completions
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#declare-the-child-elements" class="md-nav__link">
-    Declare the Child Elements
+  <a href="#grid-row-and-column-location-completions" class="md-nav__link">
+    Grid Row and Column Location Completions
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#grid-row-and-column-span-completions" class="md-nav__link">
+    Grid Row and Column Span Completions
   </a>
   
 </li>
@@ -2132,7 +2146,7 @@
 <h2 id="using-the-grid-intellisense-features">Using the Grid Intellisense Features</h2>
 <p>The Grid intellisense appears on the appropriate contexts when editing XAML files. On the next sections we will build a login form in an XAML Page using the Grid layout. This layout will have 3 rows and two columns, where the first column will have the labels and the second column the entries, and the third row will span among the columns to add the login button. The result will look as below:</p>
 <p><img alt="" src="/img/xamarin-forms/grid-intellisense-form-preview.png" /></p>
-<h3 id="declaring-a-grid-with-boilerplate-code">Declaring a Grid with Boilerplate Code</h3>
+<h3 id="grid-boilerplate-code-completion">Grid Boilerplate Code Completion</h3>
 <p>To start our login form we will declare a new <code>Grid</code> inside a <code>Frame</code> element in a <code>ContentPage</code>. The frame itself will be inside a root grid element. This allows to produce a login form that looks like a floating card on the screen. Start with the following XAML code for the page:</p>
 <div class="codehilite"><pre><span></span><span class="nt">&lt;ContentPage</span>
     <span class="na">xmlns=</span><span class="s">&quot;http://xamarin.com/schemas/2014/forms&quot;</span>
@@ -2161,7 +2175,7 @@
 </pre></div>
 
 
-<h3 id="declare-rows-and-columns-definitions">Declare Rows and Columns Definitions</h3>
+<h3 id="grid-row-and-column-shorthand-completions">Grid Row and Column Shorthand Completions</h3>
 <p>Next we need to declare the Columns and Rows definitions of our grid. This tells the Xamarin.Forms Grid engine how it will apply the available space to it's children elements. Row and Column definitions declares their width or height based on one of the 3 unit types: <strong>Auto</strong>, <strong>Proportional</strong> (also know as star, declared with the * char) or <strong>Absolute</strong>.</p>
 <div class="admonition tip">
 <p class="admonition-title">Tip</p>
@@ -2198,7 +2212,7 @@
 </pre></div>
 
 
-<h3 id="declare-the-child-elements">Declare the Child Elements</h3>
+<h3 id="grid-row-and-column-location-completions">Grid Row and Column Location Completions</h3>
 <p>The last step for our login form is to declare its containing elements. We will declare two <code>Label</code> elements, two <code>Entry</code> elements and a <code>Button</code> element. We'll be using the MFractor intellisense grid location suggestion to easily define where our elements should be put in the available rows and columns of the grid.</p>
 <p>First, let's declare the labels. Inside the Grid we declared before add a new <code>Label</code> declaration. When you hit space to start adding attributes to the element, intellisense will list suggested properties of the label. Type <code>G</code> then <code>r</code> to filter the list and you should see the suggestions for the available columns and rows of the Grid:</p>
 <p><img alt="" src="/img/xamarin-forms/grid-intellisense-location.png" /></p>
@@ -2236,7 +2250,8 @@
 </pre></div>
 
 
-<p>Use the intellisense completions to easily fill the row and column information of each element. </p>
+<p>Use the IntelliSense completions to easily fill the row and column information of each element.</p>
+<h3 id="grid-row-and-column-span-completions">Grid Row and Column Span Completions</h3>
 <p>The last part is to add the login button. It will take the entire third row of the grid, so we should add a column span to allow it use the entire width of the grid. First you should add the declaration of the button adding its row and column locations. As in the preview iterations, hit a new line to add a new attribute for the column span and start typing <code>G</code> and <code>r</code>, the suggestions for either column and row span should appear wiht intellisense:</p>
 <p><img alt="" src="/img/xamarin-forms/grid-intellisense-column-span.png" /></p>
 <p>The final button declaration should be as follow:</p>
