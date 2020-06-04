@@ -4,6 +4,8 @@ This feature matrix presents all the features provided by MFractor.
 
 All features are available in MFractor for Visual Studio for Mac. The third column shows the features available to the Windows version.
 
+MFractor currently provides 222 features. We have currently documented 32% of the product features.
+
 ## Asset Management
 
 ### Image Management
@@ -40,7 +42,7 @@ All features are available in MFractor for Visual Studio for Mac. The third colu
 | [MVVM Wizard](https://docs.mfractor.com/xamarin-forms/working-with-viewmodels/mvvm-wizard/)	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>
 | [Value Converter Wizard](https://docs.mfractor.com/xamarin-forms/value-converters/value-converter-wizard/)	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>
 
-### C# Language Code Actions
+### C#
 
 | Feature	| Lite	| Pro	| Platforms
 |---	|---	|---	|---
@@ -281,6 +283,7 @@ All features are available in MFractor for Visual Studio for Mac. The third colu
 |---	|---	|---	|---
 | [Grid Index Adornments](https://docs.mfractor.com/xamarin-forms/grids/adornments/)	| <i class="fas fa-check fa-lg"></i>	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>
 | [Color Adornments](https://docs.mfractor.com/xamarin-forms/colors/adornments/)	| <i class="fas fa-check fa-lg"></i>	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>
+| Escaped Characters Adornments	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>
 
 ### Tooltips
 
@@ -326,4 +329,7 @@ All features are available in MFractor for Visual Studio for Mac. The third colu
 | ResX Localisation Search	| <i class="fas fa-check fa-lg"></i>	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i>
 | Xamarin.Forms Automation Identifiers Search	| <i class="fas fa-check fa-lg"></i>	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i>
 | Xamarin.Forms Static Resources Search	| <i class="fas fa-check fa-lg"></i>	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i>
-| Xamarin.Forms Dynamic Resources Search	| <i class="fas fa-check fa-lg"></i>	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i>	
+| Xamarin.Forms Dynamic Resources Search	| <i class="fas fa-check fa-lg"></i>	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i>
+
+
+**Last Updated: Thursday 4th of June 2020**
