@@ -14,7 +14,7 @@ The Grid intellisense appears on the appropriate contexts when editing XAML file
 
 ![](/img/xamarin-forms/grid-intellisense-form-preview.png)
 
-### Declaring a Grid with Boilerplate Code
+### Grid Boilerplate Code Completion
 
 To start our login form we will declare a new `Grid` inside a `Frame` element in a `ContentPage`. The frame itself will be inside a root grid element. This allows to produce a login form that looks like a floating card on the screen. Start with the following XAML code for the page:
 
@@ -50,7 +50,7 @@ The intellisense tooltip provides a little preview of what will be generated to 
 </Grid>
 ```
 
-### Declare Rows and Columns Definitions
+### Grid Row and Column Shorthand Completions
 
 Next we need to declare the Columns and Rows definitions of our grid. This tells the Xamarin.Forms Grid engine how it will apply the available space to it's children elements. Row and Column definitions declares their width or height based on one of the 3 unit types: **Auto**, **Proportional** (also know as star, declared with the * char) or **Absolute**.
 
@@ -92,7 +92,7 @@ Next repeat the same process to add 3 new Row Definitions, all of the proportion
 </Grid>
 ```
 
-### Declare the Child Elements
+### Grid Row and Column Location Completions
 
 The last step for our login form is to declare its containing elements. We will declare two `Label` elements, two `Entry` elements and a `Button` element. We'll be using the MFractor intellisense grid location suggestion to easily define where our elements should be put in the available rows and columns of the grid.
 
@@ -136,7 +136,9 @@ Repeat the steps to create a new label, but change the `Grid.Row` property to **
     Placeholder="Your password" />
 ```
 
-Use the intellisense completions to easily fill the row and column information of each element. 
+Use the IntelliSense completions to easily fill the row and column information of each element.
+
+### Grid Row and Column Span Completions
 
 The last part is to add the login button. It will take the entire third row of the grid, so we should add a column span to allow it use the entire width of the grid. First you should add the declaration of the button adding its row and column locations. As in the preview iterations, hit a new line to add a new attribute for the column span and start typing `G` and `r`, the suggestions for either column and row span should appear wiht intellisense:
 
