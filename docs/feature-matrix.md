@@ -18,8 +18,8 @@ MFractor currently provides 222 features. We have currently documented 32% of th
 | [Delete Image Tool](https://docs.mfractor.com/image-management/deleting-image-assets/)	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>
 | [Optimise Image Tools](https://docs.mfractor.com/image-management/optimising-image-assets/)	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>
 | [Image Tooltips](https://docs.mfractor.com/image-management/image-tooltips)	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>
-| Mobile.BuildTools Support	| <i class="fas fa-check fa-lg"></i>	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>
-| ResizetizerNT Support	| <i class="fas fa-check fa-lg"></i>	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i>
+| [Mobile.BuildTools Support](https://docs.mfractor.com/image-management/third-party/mobile-build-tools/)	| <i class="fas fa-check fa-lg"></i>	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>
+| [ResizetizerNT Support](https://docs.mfractor.com/image-management/third-party/resizetizer/)	| <i class="fas fa-check fa-lg"></i>	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i>
 
 ### Font Management
 
@@ -43,7 +43,7 @@ MFractor currently provides 222 features. We have currently documented 32% of th
 | [MVVM Wizard](https://docs.mfractor.com/xamarin-forms/working-with-viewmodels/mvvm-wizard/)	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>
 | [Value Converter Wizard](https://docs.mfractor.com/xamarin-forms/value-converters/value-converter-wizard/)	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>
 
-### C#
+### C# Wizards
 
 | Feature	| Lite	| Pro	| Platforms
 |---	|---	|---	|---
@@ -291,7 +291,7 @@ MFractor currently provides 222 features. We have currently documented 32% of th
 | Feature	| Lite	| Pro	| Platforms
 |---	|---	|---	|---
 | [Grid Index Tooltips](https://docs.mfractor.com/xamarin-forms/grids/tooltips/)	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>
-| Color Format Tooltips	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i>
+| Color Format Tooltips	| <i class="fas fa-check fa-lg"></i>	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>
 | Named FontSize Platform Values Tooltips	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>
 | Thickness Formats Tooltips	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>
 | [Static Resource Tooltips](https://docs.mfractor.com/xamarin-forms/static-resources/tooltips/)	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>
@@ -333,4 +333,4 @@ MFractor currently provides 222 features. We have currently documented 32% of th
 | Xamarin.Forms Dynamic Resources Search	| <i class="fas fa-check fa-lg"></i>	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i>
 
 
-**Last Updated: Thursday 4th of June 2020**
+**Last Updated: Friday 5th of June 2020**
