@@ -52,6 +52,9 @@ nav:
   - Deleting Image Assets: image-management/deleting-image-assets.md
   - Optimising Image Assets: image-management/optimising-image-assets.md
   - Image Tooltips: image-management/image-tooltips.md
+  - Third Party:
+    - Mobile.BuildTools: image-management/third-party/mobile-build-tools.md
+    - ResizetizerNT: image-management/third-party/resizetizer.md
 - C#:
   - Create Class From Clipboard: csharp/create-class-from-clipboard.md
   - Code Actions:

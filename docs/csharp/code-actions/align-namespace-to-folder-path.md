@@ -8,12 +8,12 @@ The _Align Namespace To Folder Path_ code action allows you to change a files na
 
 Consider the following project and folder path:
 
- * MyCompany.MyApp.csproj (Default namespace =  `MyCompany.MyApp`)
+ * MyCompany.MyApp.csproj (Default namespace: `MyCompany.MyApp`)
    * Services/
       * Login/
           * AuthenticationService.cs
 
-In `AuthenticationService.cs`, the current contents are:
+In `AuthenticationService.cs`, the contents are:
 
 ```
 namespace MyCompany.MyApp

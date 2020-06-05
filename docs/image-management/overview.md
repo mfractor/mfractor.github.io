@@ -22,7 +22,7 @@ Read more about the image importer at [Importing Image Assets](/image-management
 
 ### Image Deletion Tool
 
-The image deletion tool removes all densities of an image asset in all mobile projects. As a developer, you can delete all occurances of an asset in one action instead of needing to track down and delete each density independently.
+The image deletion tool removes all densities of an image asset in all mobile projects. As a developer, you can delete all occurrences of an asset in one action instead of needing to track down and delete each density independently.
 
 Read more about the image deletion tool at [Deleting Image Assets](/image-management/deleting-image-assets).
 
@@ -39,3 +39,10 @@ Read more about the image optimiser at [Optimising Image Assets](/image-manageme
 The image tooltips let you preview any image asset.
 
 Read more about image tooltips at [Image Tooltips](/image-management/image-tooltips).
+
+### Third Party Image Tooling Support
+
+MFractor includes built-in image management support for the following third-party tools:
+
+ * [Mobile.BuildTools](/image-management/mobile-build-tools).
+ * [ResizetizerNT](/image-management/resizetizer).
