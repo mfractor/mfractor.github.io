@@ -4,7 +4,7 @@ This feature matrix presents all the features provided by MFractor.
 
 All features are available in MFractor for Visual Studio for Mac. The third column shows the features available to the Windows version.
 
-MFractor currently provides 222 features. We have currently documented 32% of the product features.
+MFractor currently provides 222 features. We have currently documented 33% of the product features.
 
 
 ## Asset Management
@@ -67,7 +67,7 @@ MFractor currently provides 222 features. We have currently documented 32% of th
 | Copy Var Type To Clipboard	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>
 | [Simplify Qualified Type](https://docs.mfractor.com/csharp/code-actions/simplify-qualified-types/)	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>
 | [Simplify All Qualified Types](https://docs.mfractor.com/csharp/code-actions/simplify-qualified-types/#the-simplify-types-wizard)	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>
-| Invert Event Handler Assignment	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>
+| [Invert Event Handler Assignment](https://docs.mfractor.com/csharp/code-actions/invert-event-handler/)	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>
 
 ### Xamarin Code Actions
 
@@ -333,4 +333,4 @@ MFractor currently provides 222 features. We have currently documented 32% of th
 | Xamarin.Forms Dynamic Resources Search	| <i class="fas fa-check fa-lg"></i>	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i>
 
 
-**Last Updated: Friday 5th of June 2020**
+**Last Updated: Sunday 7th of June 2020**
