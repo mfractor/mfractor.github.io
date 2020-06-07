@@ -10,7 +10,7 @@ However, if we have been working for a while, it's likely the current project fi
 
 To make solve this problem, MFractor includes the `Locate in solution explorer` code action to locate the project file for a class, struct or interface declaration.
 
-## Using Locate In Solution Explorer
+## Using The Code Action
 
 To use the code action, locate a type declaration (such as a class or interface) and press `Alt+Return` or right click and select `Quick Fix`. In the menu that opens, choose `Locate declaration in solution explorer`.
 

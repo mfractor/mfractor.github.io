@@ -4,7 +4,7 @@ This feature matrix presents all the features provided by MFractor.
 
 All features are available in MFractor for Visual Studio for Mac. The third column shows the features available to the Windows version.
 
-MFractor currently provides 222 features. We have currently documented 33% of the product features.
+MFractor currently provides 221 features. We have currently documented 34% of the product features.
 
 
 ## Asset Management
@@ -58,13 +58,12 @@ MFractor currently provides 222 features. We have currently documented 33% of th
 | [Generate Interface Implementation](https://docs.mfractor.com/csharp/code-actions/generate-interface-implementation/)	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>
 | [Simplify Qualified Types](https://docs.mfractor.com/csharp/code-actions/simplify-qualified-types/)	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>
 | [Locate in Solution Explorer](https://docs.mfractor.com/csharp/code-actions/locate-in-solution-explorer/)	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i>
-| [Create Lazy Field Property](https://docs.mfractor.com/csharp/code-actions/create-lazy-field-property/)	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>
 | [Convert to Interpolated String](https://docs.mfractor.com/csharp/code-actions/convert-to-interpolated-string/)	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>
-| Create constructor to initialize all readonly members	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>
-| Create Lazy Field Accessor	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>
+| [Create constructor to initialize all readonly members](https://docs.mfractor.com/csharp/code-actions/generate-readonly-constructor/)	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>
+| [Create Lazy Accessor](https://docs.mfractor.com/csharp/code-actions/create-lazy-accessor/)	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>
 | Select String Span	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i>
 | [Align Namespace To Folder Path](https://docs.mfractor.com/csharp/code-actions/align-namespace-to-folder-path/)	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>
-| Copy Var Type To Clipboard	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>
+| [Copy Var Type To Clipboard](https://docs.mfractor.com/csharp/code-actions/copy-var-type-to-clipboard/)	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>
 | [Simplify Qualified Type](https://docs.mfractor.com/csharp/code-actions/simplify-qualified-types/)	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>
 | [Simplify All Qualified Types](https://docs.mfractor.com/csharp/code-actions/simplify-qualified-types/#the-simplify-types-wizard)	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>
 | [Invert Event Handler Assignment](https://docs.mfractor.com/csharp/code-actions/invert-event-handler/)	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>
