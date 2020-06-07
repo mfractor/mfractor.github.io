@@ -4,6 +4,7 @@
 
 ### Releases (v4.2)
 
+ * [v4.2.1 - Released on May 29th 2020](v4/v4.2.md#v422) - Service release to add initial support for Blazor/Razor.
  * [v4.2.1 - Released on May 29th 2020](v4/v4.2.md#v421) - Service release to improve the UX of the Scaffolder.
  * [v4.2.0 - Released on May 27th 2020](v4/v4.2.md#v420) - MFractor 4.2 for Visual Studio Windows is a major release that adds support for Visual Studio 16.6, serial key license activation and fixes several bugs in the core product.
 
