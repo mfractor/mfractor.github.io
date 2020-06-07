@@ -40,7 +40,7 @@
     
     
       
-        <title>Locate In Solution Explorer - MFractor Documentation</title>
+        <title>Copy var type to clipboard - MFractor Documentation</title>
       
     
     
@@ -144,7 +144,7 @@
             </span>
             <span class="md-header-nav__topic">
               
-                Locate In Solution Explorer
+                Copy var type to clipboard
               
             </span>
           
@@ -613,12 +613,10 @@
       
       
 
-  
 
-
-  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+  <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-11" type="checkbox" id="nav-11" checked>
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-11" type="checkbox" id="nav-11">
     
     <label class="md-nav__link" for="nav-11">
       C#
@@ -646,12 +644,10 @@
           
           
 
-  
 
-
-  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+  <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-11-2" type="checkbox" id="nav-11-2" checked>
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-11-2" type="checkbox" id="nav-11-2">
     
     <label class="md-nav__link" for="nav-11-2">
       Code Actions
@@ -691,58 +687,11 @@
           
           
 
-  
 
-
-  <li class="md-nav__item md-nav__item--active">
-    
-    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-    
-    
-      <label class="md-nav__link md-nav__link--active" for="__toc">
-        Locate In Solution Explorer
-      </label>
-    
-    <a href="./" title="Locate In Solution Explorer" class="md-nav__link md-nav__link--active">
+  <li class="md-nav__item">
+    <a href="../locate-in-solution-explorer/" title="Locate In Solution Explorer" class="md-nav__link">
       Locate In Solution Explorer
     </a>
-    
-      
-<nav class="md-nav md-nav--secondary">
-  
-  
-  
-    <label class="md-nav__title" for="__toc">Table of contents</label>
-    <ul class="md-nav__list" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#introduction" class="md-nav__link">
-    Introduction
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#using-locate-in-solution-explorer" class="md-nav__link">
-    Using Locate In Solution Explorer
-  </a>
-  
-</li>
-      
-      
-      
-      
-      
-        <li class="md-nav__item">
-          <a href="#__comments" class="md-nav__link md-nav__link--active">
-            Comments
-          </a>
-        </li>
-      
-    </ul>
-  
-</nav>
-    
   </li>
 
         
@@ -2130,23 +2079,22 @@
             <article class="md-content__inner md-typeset">
               
                 
-                  <a href="https://github.com/mfractor/mfractor.github.io/tree/docs/docs/csharp/code-actions/locate-in-solution-explorer.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>
+                  <a href="https://github.com/mfractor/mfractor.github.io/tree/docs/docs/csharp/code-actions/copy-var-type-to-clipboard.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>
                 
                 
-                  <h1>Locate In Solution Explorer</h1>
+                  <h1>Copy var type to clipboard</h1>
                 
                 <div class="admonition quote">
-<p class="admonition-title">Locate the project file in the solution pad for a given type declaration</p>
+<p class="admonition-title">Select the span of a string literal in the C# code editor</p>
 </div>
 <div class="admonition info">
 <p class="admonition-title">This feature is available in <a href="https://www.mfractor.com/products/mfractor-professional">MFractor Professional</a></p>
 </div>
 <h2 id="introduction">Introduction</h2>
-<p>When browsing a code base in Visual Studio, it's common to need to select the current project file in the solution explorer to use the right click context actions.</p>
-<p>However, if we have been working for a while, it's likely the current project file is hidden from view and locating it requires us to manually find it.</p>
-<p>To make solve this problem, MFractor includes the <code>Locate in solution explorer</code> code action to locate the project file for a class, struct or interface declaration.</p>
+<p>When editing a string within C# code, sometimes you would
+To make solve this problem, MFractor includes the <code>Locate in solution explorer</code> code action to locate the project file for a class, struct or interface declaration.</p>
 <h2 id="using-locate-in-solution-explorer">Using Locate In Solution Explorer</h2>
-<p>To use the code action, locate a type declaration (such as a class or interface) and press <code>Alt+Return</code> or right click and select <code>Quick Fix</code>. In the menu that opens, choose <code>Locate declaration in solution explorer</code>.</p>
+<p>To use the code action, locate a string literal and press <code>Alt+Return</code> or right click and select <code>Quick Fix</code>. In the menu that opens, choose <code>Select string span</code>.</p>
 <p><img alt="Invoking the Locate In Solution Explorer from the Quick Fix  or Keyboard Shortcut" src="/img/csharp/code-actions/locate-in-explorer-01.png" /></p>
 <p>MFractor will then locate the project file that owns that type declaration in the solution explorer and expands the project tree to reveal the file.</p>
 <p><img alt="The result of the locate in solution explorer code action" src="/img/csharp/code-actions/locate-in-explorer-02.png" /></p>
@@ -2188,41 +2136,6 @@
       
         
 <footer class="md-footer">
-  
-    <div class="md-footer-nav">
-      <nav class="md-footer-nav__inner md-grid">
-        
-          <a href="../simplify-qualified-types/" title="Simplifying Qualified Types" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
-            <div class="md-flex__cell md-flex__cell--shrink">
-              <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
-            </div>
-            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
-              <span class="md-flex__ellipsis">
-                <span class="md-footer-nav__direction">
-                  Previous
-                </span>
-                Simplifying Qualified Types
-              </span>
-            </div>
-          </a>
-        
-        
-          <a href="../create-lazy-accessor/" title="Create Lazy Accessor" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
-            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
-              <span class="md-flex__ellipsis">
-                <span class="md-footer-nav__direction">
-                  Next
-                </span>
-                Create Lazy Accessor
-              </span>
-            </div>
-            <div class="md-flex__cell md-flex__cell--shrink">
-              <i class="md-icon md-icon--arrow-forward md-footer-nav__button"></i>
-            </div>
-          </a>
-        
-      </nav>
-    </div>
   
   <div class="md-footer-meta md-typeset">
     <div class="md-footer-meta__inner md-grid">
