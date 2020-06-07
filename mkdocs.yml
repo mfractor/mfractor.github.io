@@ -70,6 +70,9 @@ nav:
 - Xamarin.Forms:
   - Overview: xamarin-forms/overview.md
   - Automatic Type Inference: xamarin-forms/automatic-type-inference.md
+  - Analyzers: 
+    - Overview: xamarin-forms/analysis/overview.md
+    - Thickness Analysis: xamarin-forms/analysis/thickness-analysis.md
   - Binding Context Resolution:
     - Overview: xamarin-forms/binding-context-resolution/overview.md
     - Automatic ViewModel Detection: xamarin-forms/binding-context-resolution/automatic-viewmodel-detection.md
