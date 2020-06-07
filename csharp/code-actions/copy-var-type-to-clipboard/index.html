@@ -40,7 +40,7 @@
     
     
       
-        <title>Copy var type to clipboard - MFractor Documentation</title>
+        <title>Copy Var Type To Clipboard - MFractor Documentation</title>
       
     
     
@@ -144,7 +144,7 @@
             </span>
             <span class="md-header-nav__topic">
               
-                Copy var type to clipboard
+                Copy Var Type To Clipboard
               
             </span>
           
@@ -613,10 +613,12 @@
       
       
 
+  
 
-  <li class="md-nav__item md-nav__item--nested">
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-11" type="checkbox" id="nav-11">
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-11" type="checkbox" id="nav-11" checked>
     
     <label class="md-nav__link" for="nav-11">
       C#
@@ -644,10 +646,12 @@
           
           
 
+  
 
-  <li class="md-nav__item md-nav__item--nested">
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-11-2" type="checkbox" id="nav-11-2">
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-11-2" type="checkbox" id="nav-11-2" checked>
     
     <label class="md-nav__link" for="nav-11-2">
       Code Actions
@@ -761,9 +765,68 @@
 
 
   <li class="md-nav__item">
-    <a href="../select-string-span/" title="Generate ReadOnly Constructor" class="md-nav__link">
-      Generate ReadOnly Constructor
+    <a href="../select-string-span/" title="Select String Span" class="md-nav__link">
+      Select String Span
     </a>
+  </li>
+
+        
+          
+          
+          
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        Copy Var Type To Clipboard
+      </label>
+    
+    <a href="./" title="Copy Var Type To Clipboard" class="md-nav__link md-nav__link--active">
+      Copy Var Type To Clipboard
+    </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#introduction" class="md-nav__link">
+    Introduction
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#using-the-code-action" class="md-nav__link">
+    Using The Code Action
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+        <li class="md-nav__item">
+          <a href="#__comments" class="md-nav__link md-nav__link--active">
+            Comments
+          </a>
+        </li>
+      
+    </ul>
+  
+</nav>
+    
   </li>
 
         
@@ -2051,8 +2114,8 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#using-locate-in-solution-explorer" class="md-nav__link">
-    Using Locate In Solution Explorer
+  <a href="#using-the-code-action" class="md-nav__link">
+    Using The Code Action
   </a>
   
 </li>
@@ -2082,28 +2145,20 @@
                   <a href="https://github.com/mfractor/mfractor.github.io/tree/docs/docs/csharp/code-actions/copy-var-type-to-clipboard.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>
                 
                 
-                  <h1>Copy var type to clipboard</h1>
+                  <h1>Copy Var Type To Clipboard</h1>
                 
                 <div class="admonition quote">
-<p class="admonition-title">Select the span of a string literal in the C# code editor</p>
+<p class="admonition-title">Copy the fully qualified type represented by a <code>var</code> to the clipboard</p>
 </div>
 <div class="admonition info">
 <p class="admonition-title">This feature is available in <a href="https://www.mfractor.com/products/mfractor-professional">MFractor Professional</a></p>
 </div>
 <h2 id="introduction">Introduction</h2>
-<p>When editing a string within C# code, sometimes you would
-To make solve this problem, MFractor includes the <code>Locate in solution explorer</code> code action to locate the project file for a class, struct or interface declaration.</p>
-<h2 id="using-locate-in-solution-explorer">Using Locate In Solution Explorer</h2>
-<p>To use the code action, locate a string literal and press <code>Alt+Return</code> or right click and select <code>Quick Fix</code>. In the menu that opens, choose <code>Select string span</code>.</p>
-<p><img alt="Invoking the Locate In Solution Explorer from the Quick Fix  or Keyboard Shortcut" src="/img/csharp/code-actions/locate-in-explorer-01.png" /></p>
-<p>MFractor will then locate the project file that owns that type declaration in the solution explorer and expands the project tree to reveal the file.</p>
-<p><img alt="The result of the locate in solution explorer code action" src="/img/csharp/code-actions/locate-in-explorer-02.png" /></p>
-<p>The <code>Locate declaration in solution explorer</code> supports locating the following syntax elements:</p>
-<ul>
-<li>Classes</li>
-<li>Structs</li>
-<li>Interfaces</li>
-</ul>
+<p>The <code>var</code> keyword is a powerful C# langauge element that removes the need to explicitly declare local variable types, improving the readability and maintainability of your code.</p>
+<p>However, there are sometimes cases when you need to know the type stored by a <code>var</code> in order to reuse it in other parts of your code base.</p>
+<p>To solve this problem, MFractor includes the <code>Copy var type to clipbaord</code> code action to copy the fully qualifed type stored by a <code>var</code> expression to the clipboard..</p>
+<h2 id="using-the-code-action">Using The Code Action</h2>
+<p>To use the code action, locate a <code>var</code> expression and press <code>Alt+Return</code> or right click and select <code>Quick Fix</code>. In the menu that opens, choose <code>Copy type name to clipboard</code>.</p>
                 
                   
                 
@@ -2136,6 +2191,41 @@ To make solve this problem, MFractor includes the <code>Locate in solution explo
       
         
 <footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid">
+        
+          <a href="../select-string-span/" title="Select String Span" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
+            </div>
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Previous
+                </span>
+                Select String Span
+              </span>
+            </div>
+          </a>
+        
+        
+          <a href="../../../xamarin-forms/overview/" title="Overview" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Next
+                </span>
+                Overview
+              </span>
+            </div>
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-forward md-footer-nav__button"></i>
+            </div>
+          </a>
+        
+      </nav>
+    </div>
   
   <div class="md-footer-meta md-typeset">
     <div class="md-footer-meta__inner md-grid">
