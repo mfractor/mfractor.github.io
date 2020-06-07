@@ -1,4 +1,4 @@
-**Detect errors, improvements and maintainability suggestions with**
+!!! quote "Detect errors, improvements and maintainability suggestions with code analysis."
 
 ## Introduction
 
