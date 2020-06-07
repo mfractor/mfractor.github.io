@@ -1443,22 +1443,42 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#adornments-overview" class="md-nav__link">
+    Adornments Overview
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
   <a href="#hex-color-adornments" class="md-nav__link">
     Hex Color Adornments
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
+        
+          <li class="md-nav__item">
   <a href="#named-color-adornments" class="md-nav__link">
     Named Color Adornments
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
+        
+          <li class="md-nav__item">
   <a href="#static-resource-color-adornments" class="md-nav__link">
     Static Resource Color Adornments
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#accessing-the-color-editor" class="md-nav__link">
+    Accessing The Color Editor
   </a>
   
 </li>
@@ -2128,22 +2148,42 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#adornments-overview" class="md-nav__link">
+    Adornments Overview
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
   <a href="#hex-color-adornments" class="md-nav__link">
     Hex Color Adornments
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
+        
+          <li class="md-nav__item">
   <a href="#named-color-adornments" class="md-nav__link">
     Named Color Adornments
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
+        
+          <li class="md-nav__item">
   <a href="#static-resource-color-adornments" class="md-nav__link">
     Static Resource Color Adornments
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#accessing-the-color-editor" class="md-nav__link">
+    Accessing The Color Editor
   </a>
   
 </li>
@@ -2185,15 +2225,19 @@
 <p>By default, color adornments <strong>are not</strong> enabled for the XAML editor. Due to rendering constraints, color adornments can have an adverse impact on IntelliSense performance.</p>
 <p>To enable color adornments, open MFractors <strong>Preferences</strong> and then go to <strong>Settings</strong> -&gt; <strong>Feature Flags</strong> and toggle <strong>Color Adornments</strong>.</p>
 </div>
-<h2 id="hex-color-adornments">Hex Color Adornments</h2>
+<h2 id="adornments-overview">Adornments Overview</h2>
+<h3 id="hex-color-adornments">Hex Color Adornments</h3>
 <p>When MFractor detects a hexadecimal color declaration, it will evaluate that color and inject a small preview of that color:</p>
 <p><img alt="Hexadecimal color adornments" src="/img/xamarin-forms/hex-color-adornments.png" /></p>
-<h2 id="named-color-adornments">Named Color Adornments</h2>
+<h3 id="named-color-adornments">Named Color Adornments</h3>
 <p>When MFractor detects a color attribute that assigns a <a href="https://docs.microsoft.com/en-us/dotnet/api/xamarin.forms.color?view=xamarin-forms#fields">named color constant</a> (such as Red, SlateBlue, Green etc), it will evaluate the named color and inject a small preview of that color:</p>
 <p><img alt="Named color adornments" src="/img/xamarin-forms/named-color-adornments.png" /></p>
-<h2 id="static-resource-color-adornments">Static Resource Color Adornments</h2>
+<h3 id="static-resource-color-adornments">Static Resource Color Adornments</h3>
 <p>When MFractor detects a static resource expression that returns a color resource, it will evaluate the static resource and inject a small preview of the declared color:</p>
 <p><img alt="Hexadecimal color adornments" src="/img/xamarin-forms/color-resource-adornments.png" /></p>
+<h2 id="accessing-the-color-editor">Accessing The Color Editor</h2>
+<p>To make it easier to edit a color declaration, MFractor includes a built-in color editor that you can use to visually create a new color.</p>
+<p>When a color adornment is present in XAML code, click on the color preview square to launch the editor.</p>
                 
                   
                 
