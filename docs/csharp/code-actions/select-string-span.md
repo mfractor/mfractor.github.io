@@ -8,7 +8,7 @@ When editing a string within C# code, sometimes you might need to copy the inner
 
 To make it easier to select the inner contents of a string solve, MFractor includes the `Select string span` code action.
 
-## Using Locate In Solution Explorer
+## Using The Code Action
 
 To use the code action, locate a string literal and press `Alt+Return` or right click and select `Quick Fix`. In the menu that opens, choose `Select string span`.
 

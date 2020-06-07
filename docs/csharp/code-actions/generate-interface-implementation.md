@@ -1,18 +1,18 @@
-!!! quote "Quickly generate a class stub implementation for an interface"
+!!! quote "Generate a class stub implementation for an interface"
 
 !!! info "This feature is available in [MFractor Professional](https://www.mfractor.com/products/mfractor-professional)"
 
 ## Introduction
 
-The _Generate Implementation for Interface_ code action allows you to quickly generate a class implementing stubs for the members of an interface in a convenient and quick way, avoiding the hurdle of having to create a file from the standard interface and having to type the class implementation.
+The _Generate Implementation for Interface_ code action generates a class that implements stubs for the members of an interface in a convenient and quick way, avoiding the hurdle of having to create a file from the standard interface and having to type the class implementation.
 
 ## Using the Code Action
 
-This code action appears on the context menu of Visual Studio code editor when the cursor are placed where the action may take. For this code action, it can be invoked from the interface declaration file when the cusor is over the interface name or it's body, except when you are over a method name or other symbol.
+This code action appears on the context menu of Visual Studio code editor when the cursor are placed where the action may take. This code action can be invoked from an interface declaration, except when you are over a method name or other symbol.
 
-There are several ways you can invoke the code action, you can use the Intellisense Suggestions or the `Option/Alt` + `Enter` keyboard shortcut:
+There are several ways you can invoke the code action, you can use the IntelliSense Suggestions or the `Option/Alt` + `Enter` keyboard shortcut:
 
-![Invoking the Generate Interface Implementation Code Action from the Intellisense Suggestions or Keyboard Shortcut](/img/csharp/code-actions/generate-interface-implementation-01.png)
+![Invoking the Generate Interface Implementation Code Action from the IntelliSense Suggestions or Keyboard Shortcut](/img/csharp/code-actions/generate-interface-implementation-01.png)
 
 Or using the context menu from the right click of the mouse:
 
@@ -34,4 +34,4 @@ In the right-side you can preview the code implementation. The tool will generat
 * **Properties**: provide an auto-property implementation including `get` and/or `set` declarations.
 * **Events**: provides the default event implementation.
 
-When clicking on the `Generate` button the new class will be generated and automatically opened on the code editor.
+When clicking on the `Generate` button the new class will be generated and automatically opened in the code editor.

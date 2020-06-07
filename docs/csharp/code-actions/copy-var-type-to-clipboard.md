@@ -1,24 +1,15 @@
-!!! quote "Select the span of a string literal in the C# code editor"
+!!! quote "Copy the fully qualified type represented by a `var` to the clipboard"
 
 !!! info "This feature is available in [MFractor Professional](https://www.mfractor.com/products/mfractor-professional)"
 
 ## Introduction
 
-When editing a string within C# code, sometimes you would
-To make solve this problem, MFractor includes the `Locate in solution explorer` code action to locate the project file for a class, struct or interface declaration.
+The `var` keyword is a powerful C# langauge element that removes the need to explicitly declare local variable types, improving the readability and maintainability of your code.
 
-## Using Locate In Solution Explorer
+However, there are sometimes cases when you need to know the type stored by a `var` in order to reuse it in other parts of your code base.
 
-To use the code action, locate a string literal and press `Alt+Return` or right click and select `Quick Fix`. In the menu that opens, choose `Select string span`.
+To solve this problem, MFractor includes the `Copy var type to clipbaord` code action to copy the fully qualifed type stored by a `var` expression to the clipboard..
 
-![Invoking the Locate In Solution Explorer from the Quick Fix  or Keyboard Shortcut](/img/csharp/code-actions/locate-in-explorer-01.png)
+## Using The Code Action
 
-MFractor will then locate the project file that owns that type declaration in the solution explorer and expands the project tree to reveal the file.
-
-![The result of the locate in solution explorer code action](/img/csharp/code-actions/locate-in-explorer-02.png)
-
-The `Locate declaration in solution explorer` supports locating the following syntax elements:
-
- * Classes
- * Structs
- * Interfaces
+To use the code action, locate a `var` expression and press `Alt+Return` or right click and select `Quick Fix`. In the menu that opens, choose `Copy type name to clipboard`.

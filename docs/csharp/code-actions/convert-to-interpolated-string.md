@@ -8,7 +8,7 @@ When working with strings in C#, it's common to replace string literal with inte
 
 To speed this up, MFractor includes the `To Interpolated String` code action that transforms a string literal into an interpolated string.
 
-## Using Convert To Interpolated String
+## Using The Code Action
 
 To use the `Convert To Interpolated String` code action, place the cursor over a string literal and press `Alt+Return` or right click and select `Quick Fix`. In the menu that opens, choose `To Interpolated String`.
 

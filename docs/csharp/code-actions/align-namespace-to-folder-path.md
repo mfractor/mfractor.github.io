@@ -26,7 +26,7 @@ namespace MyCompany.MyApp
 
 The namespace in the `AuthenticationService.cs` file is `MyCompany.MyApp`, which differs to the folder path `Services/Login/`.
 
-## Using the Code Action
+## Using The Code Action
 
 This code action appears in quick actions menu when the cursor is placed on a namespace declaration that does not aligned to the **ProjectDefaultNamespace.FolderPath** structure.
 
