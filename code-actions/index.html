@@ -467,53 +467,6 @@
   
 </li>
       
-        <li class="md-nav__item">
-  <a href="#list-of-mfractor-code-actions" class="md-nav__link">
-    List of MFractor Code Actions
-  </a>
-  
-    <nav class="md-nav">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#c-code-actions" class="md-nav__link">
-    C# Code Actions
-  </a>
-  
-    <nav class="md-nav">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#language-code-actions" class="md-nav__link">
-    Language Code Actions
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#xamarinforms-code-actions" class="md-nav__link">
-    Xamarin.Forms Code Actions
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#xaml-code-actions" class="md-nav__link">
-    XAML Code Actions
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
       
       
       
@@ -815,8 +768,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../csharp/code-actions/create-lazy-field-property/" title="Create Lazy Field Property" class="md-nav__link">
-      Create Lazy Field Property
+    <a href="../csharp/code-actions/create-lazy-accessor/" title="Create Lazy Accessor" class="md-nav__link">
+      Create Lazy Accessor
     </a>
   </li>
 
@@ -853,6 +806,18 @@
   <li class="md-nav__item">
     <a href="../csharp/code-actions/invert-event-handler/" title="Invert Event Handler" class="md-nav__link">
       Invert Event Handler
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../csharp/code-actions/generate-readonly-constructor/" title="Generate ReadOnly Constructor" class="md-nav__link">
+      Generate ReadOnly Constructor
     </a>
   </li>
 
@@ -2167,53 +2132,6 @@
   
 </li>
       
-        <li class="md-nav__item">
-  <a href="#list-of-mfractor-code-actions" class="md-nav__link">
-    List of MFractor Code Actions
-  </a>
-  
-    <nav class="md-nav">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#c-code-actions" class="md-nav__link">
-    C# Code Actions
-  </a>
-  
-    <nav class="md-nav">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#language-code-actions" class="md-nav__link">
-    Language Code Actions
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#xamarinforms-code-actions" class="md-nav__link">
-    Xamarin.Forms Code Actions
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#xaml-code-actions" class="md-nav__link">
-    XAML Code Actions
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
       
       
       
@@ -2254,12 +2172,12 @@
 <p>MFractor ships with tons of Code Actions to enhance common .NET and Xamarin development tasks and aids you to avoid writing boilerplate code. They are context sensitive, so it will only be presented in places where it made sense to be applied. Code Actions are available to either C# and XAML code.</p>
 <div class="admonition info">
 <p class="admonition-title">Info</p>
-<p>The section below presents general guidance on how to invoke the Code Actions for different types of source files. Check the documetation of the MFractor Code Action you're interested to use to understand the specific contexts where they can be applied.</p>
+<p>The section below presents general guidance on how to invoke the Code Actions for different types of source files. Check the documentation of the MFractor Code Action you're interested to use to understand the specific contexts where they can be applied.</p>
 </div>
 <h3 id="code-actions-for-c-code">Code Actions for C# Code</h3>
 <p>The C# Code Actions provides refactorings, code generation wizards and utilities to code written in C#. They are context sensitive and there are several ways they can be invoked. From instance, let's take as an example the <a href="../csharp/code-actions/generate-interface-implementation/"><strong>Generate Interface Implementation</strong> Code Action</a>, that allows you to quickly create a new class that implement the interface you're working with. This Code Action appears when you are editing any C# Interface Code File.</p>
 <p>Leave the cursor over the name of the Interface for half a second. Visual Studio will present a little screwdriver icon to the left of the editor, which indicates to the user that there are Code Actions available related to this part of your code. Click the icon and the suggestions will appear:</p>
-<p><img alt="Invoking the Generate Interface Implementation Code Action from the Intellisense Suggestions or Keyboard Shortcut" src="/img/csharp/code-actions/generate-interface-implementation-01.png" /></p>
+<p><img alt="Invoking the Generate Interface Implementation Code Action from the IntelliSense Suggestions or Keyboard Shortcut" src="/img/csharp/code-actions/generate-interface-implementation-01.png" /></p>
 <div class="admonition tip">
 <p class="admonition-title">Tip</p>
 <p>The suggestions menu presented from the screwdriver icon is called <strong>Quick Fix</strong> and  can be opened with the <code>ALT</code> + <code>Enter</code> keyboard shortcut. This shortcut can also be customized from the <em>Key Bindinds</em> section of Visual Studio Preferences.</p>
@@ -2268,34 +2186,9 @@
 <p><img alt="Invoking the Generate Interface Implementation Code Action from the Context Menu" src="/img/csharp/code-actions/generate-interface-implementation-02.png" /></p>
 <h3 id="code-actions-for-xaml-code">Code Actions for XAML Code</h3>
 <p>The XAML Code Actions provide refactorings and code generation wizards and utilities to Xamarin.Forms XAML source files. They are context sensitive, but unlike the C# Code Actions, they aren't easily discoverable since the <em>Quick Fix</em> menu isn't available on the current stable of the new XAML Code Editor on Visual Studio for Mac. For this reason, they are only accessible from the context menu.</p>
-<p>For instance, let's take the <a href="../xamarin-forms/working-with-styles/extracting-styles/"><strong>Extract XAML Style</strong> Code Action</a>, which allows you to extract property declarations on element to style and refactor that element to referece it. If you right-click over an element declaration that contains one or more property declarations, the <code>Extract XAML Style</code> will be available under the <code>Refactor</code> sub-menu:</p>
+<p>For instance, let's take the <a href="../xamarin-forms/working-with-styles/extracting-styles/"><strong>Extract XAML Style</strong> Code Action</a>, which allows you to extract property declarations on element to style and refactor that element to reference it. If you right-click over an element declaration that contains one or more property declarations, the <code>Extract XAML Style</code> will be available under the <code>Refactor</code> sub-menu:</p>
 <p><img alt="How to access the Extract Style Code Action using the context menu of the Code Editor" src="/img/xamarin-forms/extract-style-menu.png" /></p>
 <p>In the example above, the <a href=""><strong>Generate a new View Model for XAML view</strong> Code Action</a> would also be available under the <code>Generate</code> sub-menu, because the context also applies for this action.</p>
-<h2 id="list-of-mfractor-code-actions">List of MFractor Code Actions</h2>
-<div class="admonition warning">
-<p class="admonition-title">Warning</p>
-<p>The complete list of MFractor is still being compiled. Here we show only the currently documented ones.</p>
-</div>
-<h3 id="c-code-actions">C# Code Actions</h3>
-<h4 id="language-code-actions">Language Code Actions</h4>
-<ul>
-<li><a href="../csharp/code-actions/generate-interface-implementation/">Generate Interface Imlementation</a></li>
-<li><a href="../csharp/code-actions/simplify-qualified-types/">Simplify Qualified Types</a></li>
-<li><a href="../csharp/code-actions/locate-in-solution-explorer/">Locate in Solution Explorer</a></li>
-<li><a href="../csharp/code-actions/create-lazy-field-property/">Create Lazy Field Property</a></li>
-<li><a href="../csharp/code-actions/convert-to-interpolated-string/">Convert to Interpolated String</a></li>
-</ul>
-<h4 id="xamarinforms-code-actions">Xamarin.Forms Code Actions</h4>
-<ul>
-<li><a href="../xamarin-forms/custom-controls/bindable-property-wizard/">Create Bindable Property</a></li>
-<li><a href="../xamarin-forms/custom-controls/attached-property-wizard/">Create Attached Property</a></li>
-</ul>
-<h3 id="xaml-code-actions">XAML Code Actions</h3>
-<ul>
-<li><a href="../xamarin-forms/working-with-styles/extracting-styles/">Extract XAML Style</a></li>
-<li><a href="../xamarin-forms/custom-controls/extracting-custom-controls/">Extract Custom Control</a></li>
-<li>Generate a new View Model for XAML view</li>
-</ul>
                 
                   
                 

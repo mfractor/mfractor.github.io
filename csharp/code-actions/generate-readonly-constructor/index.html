@@ -40,7 +40,7 @@
     
     
       
-        <title>Generate readonly constructor - MFractor Documentation</title>
+        <title>Generate ReadOnly Constructor - MFractor Documentation</title>
       
     
     
@@ -118,6 +118,10 @@
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
     <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
     
+      <a href="#introduction" tabindex="1" class="md-skip">
+        Skip to content
+      </a>
+    
     
       <header class="md-header" data-md-component="header">
   <nav class="md-header-nav md-grid">
@@ -140,7 +144,7 @@
             </span>
             <span class="md-header-nav__topic">
               
-                Generate readonly constructor
+                Generate ReadOnly Constructor
               
             </span>
           
@@ -609,10 +613,12 @@
       
       
 
+  
 
-  <li class="md-nav__item md-nav__item--nested">
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-11" type="checkbox" id="nav-11">
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-11" type="checkbox" id="nav-11" checked>
     
     <label class="md-nav__link" for="nav-11">
       C#
@@ -640,10 +646,12 @@
           
           
 
+  
 
-  <li class="md-nav__item md-nav__item--nested">
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-11-2" type="checkbox" id="nav-11-2">
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-11-2" type="checkbox" id="nav-11-2" checked>
     
     <label class="md-nav__link" for="nav-11-2">
       Code Actions
@@ -697,8 +705,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../create-lazy-field-property/" title="Create Lazy Field Property" class="md-nav__link">
-      Create Lazy Field Property
+    <a href="../create-lazy-accessor/" title="Create Lazy Accessor" class="md-nav__link">
+      Create Lazy Accessor
     </a>
   </li>
 
@@ -736,6 +744,65 @@
     <a href="../invert-event-handler/" title="Invert Event Handler" class="md-nav__link">
       Invert Event Handler
     </a>
+  </li>
+
+        
+          
+          
+          
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        Generate ReadOnly Constructor
+      </label>
+    
+    <a href="./" title="Generate ReadOnly Constructor" class="md-nav__link md-nav__link--active">
+      Generate ReadOnly Constructor
+    </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#introduction" class="md-nav__link">
+    Introduction
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#using-the-code-action" class="md-nav__link">
+    Using the Code Action
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+        <li class="md-nav__item">
+          <a href="#__comments" class="md-nav__link md-nav__link--active">
+            Comments
+          </a>
+        </li>
+      
+    </ul>
+  
+</nav>
+    
   </li>
 
         
@@ -2004,6 +2071,48 @@
               </div>
             
             
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary">
+  
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#introduction" class="md-nav__link">
+    Introduction
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#using-the-code-action" class="md-nav__link">
+    Using the Code Action
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+        <li class="md-nav__item">
+          <a href="#__comments" class="md-nav__link md-nav__link--active">
+            Comments
+          </a>
+        </li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
           
           <div class="md-content">
             <article class="md-content__inner md-typeset">
@@ -2012,9 +2121,43 @@
                   <a href="https://github.com/mfractor/mfractor.github.io/tree/docs/docs/csharp/code-actions/generate-readonly-constructor.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>
                 
                 
-                  <h1>Generate readonly constructor</h1>
+                  <h1>Generate ReadOnly Constructor</h1>
                 
-                
+                <div class="admonition quote">
+<p class="admonition-title">Create a constructor to initialise all readonly fields in a class or struct</p>
+</div>
+<div class="admonition info">
+<p class="admonition-title">This feature is available in <a href="https://www.mfractor.com/products/mfractor-professional">MFractor Professional</a></p>
+</div>
+<h2 id="introduction">Introduction</h2>
+<p>In C#, developers can use <em>immutability</em> to prevent the state of objects from changing after initialisation. Immutability is useful as it helps to prevent bugs caused by unexpected state changes and simplifies threading considerations.</p>
+<p>To accomplish immutability in C#, we can use the <code>readonly</code> keyword on fields and use <code>get</code>-only properties.</p>
+<div class="codehilite"><pre><span></span><span class="k">public</span> <span class="k">class</span> <span class="n">MyImmutable</span>
+<span class="err">{</span>
+  <span class="k">public</span> <span class="n">string</span> <span class="n">ImmutableProperty</span> <span class="err">{</span> <span class="k">get</span><span class="p">;</span> <span class="err">}</span>
+  <span class="k">public</span> <span class="n">readonly</span> <span class="n">string</span> <span class="n">immutableField</span><span class="p">;</span>
+
+  <span class="k">public</span> <span class="n">MyImmutable</span><span class="p">(</span><span class="n">string</span> <span class="n">a</span><span class="p">,</span> <span class="n">string</span> <span class="n">b</span><span class="p">)</span>
+  <span class="err">{</span>
+    <span class="n">ImmutableProperty</span> <span class="o">=</span> <span class="n">a</span><span class="p">;</span>
+    <span class="n">immutableField</span> <span class="o">=</span> <span class="n">b</span><span class="p">;</span>
+  <span class="err">}</span>
+<span class="err">}</span>
+
+<span class="n">var</span> <span class="n">instance</span> <span class="o">=</span> <span class="k">new</span> <span class="n">MyImmutable</span><span class="p">(</span><span class="ss">&quot;Hello&quot;</span><span class="p">,</span> <span class="ss">&quot;World&quot;</span><span class="p">);</span> <span class="o">//</span> <span class="k">Valid</span><span class="p">,</span> <span class="k">immutable</span> <span class="n">field</span><span class="o">/</span><span class="n">property</span> <span class="n">setup</span> <span class="k">in</span> <span class="k">constructor</span><span class="p">.</span>
+
+<span class="n">instance</span><span class="p">.</span><span class="n">ImmutableProperty</span> <span class="o">=</span> <span class="ss">&quot;Hello&quot;</span><span class="p">;</span> <span class="o">//</span> <span class="n">Invalid</span><span class="p">,</span> <span class="n">compilation</span> <span class="n">error</span><span class="p">.</span>
+<span class="n">instance</span><span class="p">.</span><span class="n">immutableField</span> <span class="o">=</span> <span class="ss">&quot;World&quot;</span><span class="p">;</span> <span class="o">//</span> <span class="n">Invalid</span><span class="p">,</span> <span class="n">compilation</span> <span class="n">error</span><span class="p">.</span>
+</pre></div>
+
+
+<p>When we build types that are immutable, readonly fields and properties may only be initialised in the types constructor. This means we must create a constructor to initialise all readonly members.</p>
+<p>To assist, MFractor provides the <strong>Generate Readonly Constructor</strong> refactoring to generate a constructor that inclues a parameter for each readonly member that initialises it.</p>
+<h2 id="using-the-code-action">Using the Code Action</h2>
+<p>To use the <code>Generate Readonly Constructor</code> code action, place the cursor over a type declaration and press <code>Alt+Return</code> or right click and select <code>Quick Fix</code>. In the menu that opens, choose <code>Create constructor to initialise all readonly members</code>.</p>
+<p><img alt="Invoking the Generate Readonly Constructor code action" src="/img/csharp/code-actions/create-lazy-accessor.png" /></p>
+<p>MFractor will then create a constructor to initialise each readonly property or field using a constructor argument.</p>
+<p><img alt="The result of the Generate Readonly Constructor code action" src="/img/csharp/code-actions/create-lazy-accessor-result.png" /></p>
                 
                   
                 
@@ -2047,6 +2190,41 @@
       
         
 <footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid">
+        
+          <a href="../invert-event-handler/" title="Invert Event Handler" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
+            </div>
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Previous
+                </span>
+                Invert Event Handler
+              </span>
+            </div>
+          </a>
+        
+        
+          <a href="../../../xamarin-forms/overview/" title="Overview" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Next
+                </span>
+                Overview
+              </span>
+            </div>
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-forward md-footer-nav__button"></i>
+            </div>
+          </a>
+        
+      </nav>
+    </div>
   
   <div class="md-footer-meta md-typeset">
     <div class="md-footer-meta__inner md-grid">

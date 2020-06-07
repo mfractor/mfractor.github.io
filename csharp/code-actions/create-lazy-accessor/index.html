@@ -40,7 +40,7 @@
     
     
       
-        <title>Create Lazy Field Property - MFractor Documentation</title>
+        <title>Create Lazy Accessor - MFractor Documentation</title>
       
     
     
@@ -144,7 +144,7 @@
             </span>
             <span class="md-header-nav__topic">
               
-                Create Lazy Field Property
+                Create Lazy Accessor
               
             </span>
           
@@ -712,11 +712,11 @@
     
     
       <label class="md-nav__link md-nav__link--active" for="__toc">
-        Create Lazy Field Property
+        Create Lazy Accessor
       </label>
     
-    <a href="./" title="Create Lazy Field Property" class="md-nav__link md-nav__link--active">
-      Create Lazy Field Property
+    <a href="./" title="Create Lazy Accessor" class="md-nav__link md-nav__link--active">
+      Create Lazy Accessor
     </a>
     
       
@@ -735,8 +735,8 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#using-create-lazy-field-property" class="md-nav__link">
-    Using Create Lazy Field Property
+  <a href="#using-the-code-action" class="md-nav__link">
+    Using the Code Action
   </a>
   
 </li>
@@ -790,6 +790,18 @@
   <li class="md-nav__item">
     <a href="../invert-event-handler/" title="Invert Event Handler" class="md-nav__link">
       Invert Event Handler
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../generate-readonly-constructor/" title="Generate ReadOnly Constructor" class="md-nav__link">
+      Generate ReadOnly Constructor
     </a>
   </li>
 
@@ -2078,8 +2090,8 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#using-create-lazy-field-property" class="md-nav__link">
-    Using Create Lazy Field Property
+  <a href="#using-the-code-action" class="md-nav__link">
+    Using the Code Action
   </a>
   
 </li>
@@ -2106,39 +2118,44 @@
             <article class="md-content__inner md-typeset">
               
                 
-                  <a href="https://github.com/mfractor/mfractor.github.io/tree/docs/docs/csharp/code-actions/create-lazy-field-property.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>
+                  <a href="https://github.com/mfractor/mfractor.github.io/tree/docs/docs/csharp/code-actions/create-lazy-accessor.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>
                 
                 
-                  <h1>Create Lazy Field Property</h1>
+                  <h1>Create Lazy Accessor</h1>
                 
                 <div class="admonition quote">
-<p class="admonition-title">Create a property to access the inner value of a Lazy&lt;&gt; field</p>
+<p class="admonition-title">Create a property to access the result of a <code>Lazy&lt;T&gt;</code> field</p>
 </div>
 <div class="admonition info">
 <p class="admonition-title">This feature is available in <a href="https://www.mfractor.com/products/mfractor-professional">MFractor Professional</a></p>
 </div>
 <h2 id="introduction">Introduction</h2>
-<p>In .NET, the <code>System.Lazy&lt;T&gt;</code> class can be used to provide <em>lazy initialisation</em>. That is, <code>System.Lazy&lt;T&gt;</code> defers the creation cost of something until the first time it's used.</p>
-<p>Please refer to the <a href="https://docs.microsoft.com/en-us/dotnet/api/system.lazy-1?view=netframework-4.8#examples">System.Lazy documentation</a> for more in-depth documentation.</p>
-<p>Each time we use <code>Lazy&lt;T&gt;</code>, we use the <code>.Value</code> property to retrieve the underlying object. When the <code>Lazy&lt;T&gt;</code> is a field, it's common to create a property that accesses the value.</p>
-<p>For example:</p>
-<div class="codehilite"><pre><span></span><span class="n">readonly</span> <span class="n">Lazy</span><span class="o">&lt;</span><span class="n">IIconService</span><span class="o">&gt;</span> <span class="n">iconService</span><span class="p">;</span>
-<span class="k">public</span> <span class="n">IIconService</span> <span class="n">IconService</span> <span class="o">=&gt;</span> <span class="n">iconService</span><span class="p">.</span><span class="n">Value</span><span class="p">;</span>
+<p>In C#, developers can use the <code>Lazy&lt;T&gt;</code> feature to only initialise objects when they are used. This allows developers to defer the creation or resolution cost of components and make the creation of objects much faster. To access the resultant object of a <code>Lazy&lt;T&gt;</code>, developers use the <code>.Value</code> property.</p>
+<p>When using class fields that use <code>Lazy&lt;T&gt;</code>, MFractor includes the <strong>Create Lazy Accessor</strong> refactoring to simplify the usage of Lazy.</p>
+<p>For example, rather than always using <code>.Value</code> to access the inner object and then perform an action, it is common to provide a helper property that evaluates the lazy field and returns the value.</p>
+<p>Let's consider the following code:</p>
+<div class="codehilite"><pre><span></span><span class="n">readonly</span> <span class="n">Lazy</span><span class="o">&lt;</span><span class="n">INavigation</span><span class="o">&gt;</span> <span class="n">navigation</span><span class="p">;</span>
+
+<span class="o">//</span> <span class="k">Usage</span><span class="p">...</span>
+<span class="n">await</span> <span class="n">navigation</span><span class="p">.</span><span class="n">Value</span><span class="p">.</span><span class="n">PushAsync</span><span class="p">(</span><span class="k">new</span> <span class="n">LoginPage</span><span class="p">());</span>
 </pre></div>
 
 
-<p>We would then use <code>IIconService</code> like so:</p>
-<div class="codehilite"><pre><span></span><span class="n">IconService</span><span class="p">.</span><span class="n">MyMethod</span><span class="p">();</span> <span class="o">//</span> <span class="n">Equates</span> <span class="k">to</span> <span class="n">iconService</span><span class="p">.</span><span class="n">Value</span><span class="p">.</span><span class="n">MyMethod</span><span class="p">().</span>
+<p>Each time the <code>navigation</code> field is used, we then need to invoke the <code>.Value</code> property to call a method on <code>INavigation</code>. While we get the benefits of <code>Lazy&lt;T&gt;</code>, we also pollute our code with the <code>.Value</code> property each time we need to use <code>INavigation</code>.</p>
+<p>We can create a property that accesses the value of <code>navigation</code> and cleanup our code base:</p>
+<div class="codehilite"><pre><span></span><span class="n">readonly</span> <span class="n">Lazy</span><span class="o">&lt;</span><span class="n">INavigation</span><span class="o">&gt;</span> <span class="n">navigation</span><span class="p">;</span>
+<span class="n">INavigation</span> <span class="n">Navigation</span> <span class="o">=&gt;</span> <span class="n">navigation</span><span class="p">.</span><span class="n">Value</span><span class="p">;</span>
+
+<span class="o">//</span> <span class="k">Usage</span><span class="p">...</span>
+<span class="n">await</span> <span class="n">Navigation</span><span class="p">.</span><span class="n">PushAsync</span><span class="p">(</span><span class="k">new</span> <span class="n">LoginPage</span><span class="p">());</span>
 </pre></div>
 
 
-<p>Accessor properties for lazy fields cleanup our code, making it easier to maintain and read as each time we use <code>IIconService</code> we . However, we now need to create a property each time we use a lazy field to ensure our code remains clean.</p>
-<p>To simplify this, MFractor includes the <code>Create Lazy Field Property</code> code action to generate this code for us.</p>
-<h2 id="using-create-lazy-field-property">Using Create Lazy Field Property</h2>
-<p>To use the code action, locate then name of a field whose type is <code>Lazy&lt;T&gt;</code> and press <code>Alt+Return</code> or right click and choose <code>Quick Fix</code> on the name. In the context menu that opens, choose <code>Create a property that access this lazy fields value</code>:</p>
-<p><img alt="Invoking the Create Lazy Field Property from the Quick Fix or Keyboard Shortcut" src="/img/csharp/code-actions/generate-lazy-field-property-01.png" /></p>
-<p>After confirming the code action, MFractor will generate a property to access the fields value:</p>
-<p><img alt="The result of the Create Lazy Field Property code action" src="/img/csharp/code-actions/generate-lazy-field-property-02.png" /></p>
+<h2 id="using-the-code-action">Using the Code Action</h2>
+<p>To use the <code>Create Lazy Accessor</code> code action, place the cursor over a field declaration that uses <code>Lazy&lt;T&gt;</code> press <code>Alt+Return</code> or right click and select <code>Quick Fix</code>. In the menu that opens, choose <code>Create a property that accesses this fields value</code>.</p>
+<p><img alt="Invoking the Create Lazy Accessor code action" src="/img/csharp/code-actions/create-lazy-accessor.png" /></p>
+<p>MFractor will then create a wrapper property that accesses the <code>.Value</code> property of our field.</p>
+<p><img alt="The result of the Create Lazy Accessor code action" src="/img/csharp/code-actions/create-lazy-accessor-result.png" /></p>
                 
                   
                 
