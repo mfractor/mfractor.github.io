@@ -61,7 +61,7 @@ MFractor currently provides 221 features. We have currently documented 34% of th
 | [Convert to Interpolated String](https://docs.mfractor.com/csharp/code-actions/convert-to-interpolated-string/)	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>
 | [Create constructor to initialize all readonly members](https://docs.mfractor.com/csharp/code-actions/generate-readonly-constructor/)	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>
 | [Create Lazy Accessor](https://docs.mfractor.com/csharp/code-actions/create-lazy-accessor/)	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>
-| Select String Span	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i>
+| [Select String Span](https://docs.mfractor.com/csharp/code-actions/select-string-span/)	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i>
 | [Align Namespace To Folder Path](https://docs.mfractor.com/csharp/code-actions/align-namespace-to-folder-path/)	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>
 | [Copy Var Type To Clipboard](https://docs.mfractor.com/csharp/code-actions/copy-var-type-to-clipboard/)	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>
 | [Simplify Qualified Type](https://docs.mfractor.com/csharp/code-actions/simplify-qualified-types/)	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>
@@ -333,3 +333,4 @@ MFractor currently provides 221 features. We have currently documented 34% of th
 
 
 **Last Updated: Sunday 7th of June 2020**
+        
