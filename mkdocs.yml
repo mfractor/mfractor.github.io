@@ -44,7 +44,6 @@ nav:
 - Analysis:
   - Overview: analysis/overview.md
   - Disabling Analysers: analysis/disabling-analysers.md
-  #- Solution Analysis: analysis/solution-analysis.md
 - Image Management:
   - Overview: image-management/overview.md
   - Managing Images Assets: image-management/managing-image-assets.md
@@ -61,11 +60,11 @@ nav:
     - Generate Interface Implementation: csharp/code-actions/generate-interface-implementation.md
     - Simplifying Qualified Types: csharp/code-actions/simplify-qualified-types.md
     - Locate In Solution Explorer: csharp/code-actions/locate-in-solution-explorer.md
-    - Create Lazy Field Property: csharp/code-actions/create-lazy-field-property.md
+    - Create Lazy Accessor: csharp/code-actions/create-lazy-accessor.md
     - Convert To Interpolated String: csharp/code-actions/convert-to-interpolated-string.md
     - Align Namespace To Folder Path: csharp/code-actions/align-namespace-to-folder-path.md
     - Invert Event Handler: csharp/code-actions/invert-event-handler.md
-    #- Generate ReadOnly Constructor: csharp/code-actions/generate-readonly-constructor.md
+    - Generate ReadOnly Constructor: csharp/code-actions/generate-readonly-constructor.md
 - Xamarin.Forms:
   - Overview: xamarin-forms/overview.md
   - Automatic Type Inference: xamarin-forms/automatic-type-inference.md
