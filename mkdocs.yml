@@ -65,6 +65,7 @@ nav:
     - Align Namespace To Folder Path: csharp/code-actions/align-namespace-to-folder-path.md
     - Invert Event Handler: csharp/code-actions/invert-event-handler.md
     - Generate ReadOnly Constructor: csharp/code-actions/generate-readonly-constructor.md
+    - Generate ReadOnly Constructor: csharp/code-actions/select-string-span.md
 - Xamarin.Forms:
   - Overview: xamarin-forms/overview.md
   - Automatic Type Inference: xamarin-forms/automatic-type-inference.md
