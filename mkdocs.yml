@@ -19,6 +19,7 @@ markdown_extensions:
   - attr_list
   - admonition
   - codehilite
+  - meta
 extra_css:
   - css/tabs.css
   - css/all.css
@@ -70,9 +71,6 @@ nav:
 - Xamarin.Forms:
   - Overview: xamarin-forms/overview.md
   - Automatic Type Inference: xamarin-forms/automatic-type-inference.md
-  - Analyzers: 
-    - Overview: xamarin-forms/analysis/overview.md
-    - Thickness Analysis: xamarin-forms/analysis/thickness-analysis.md
   - Binding Context Resolution:
     - Overview: xamarin-forms/binding-context-resolution/overview.md
     - Automatic ViewModel Detection: xamarin-forms/binding-context-resolution/automatic-viewmodel-detection.md
@@ -117,6 +115,10 @@ nav:
     - FontFamily Resolution: xamarin-forms/fonts/font-family-resolution.md
     - Tooltips: xamarin-forms/fonts/tooltips.md
     - Code Completion: xamarin-forms/fonts/code-completion.md
+  - Thicknesses:
+    - Thickness Analysis: xamarin-forms/thicknesses/analysis.md
+    - Consolidate: xamarin-forms/thicknesses/consolidation.md
+    - Validate and Simplify: xamarin-forms/thicknesses/invalid-thickness.md
 - Fonts:
   - Importing Fonts: fonts/importing-fonts.md
   - Generate Font Glyph Code Class: fonts/generate-font-character-code-class.md
