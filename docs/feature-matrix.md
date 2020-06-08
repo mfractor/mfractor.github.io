@@ -4,7 +4,7 @@ This feature matrix presents all the features provided by MFractor.
 
 All features are available in MFractor for Visual Studio for Mac. The third column shows the features available to the Windows version.
 
-MFractor currently provides 223 features. We have currently documented 35% of the product features.
+MFractor currently provides 236 features. We have currently documented 33% of the product features.
 
 
 ## Asset Management
@@ -138,7 +138,7 @@ MFractor currently provides 223 features. We have currently documented 35% of th
 
 ## Xamarin.Forms
 
-### Search and Navigation
+### Navigation
 
 | Feature	| Lite	| Pro	| Platforms
 |---	|---	|---	|---
@@ -146,6 +146,11 @@ MFractor currently provides 223 features. We have currently documented 35% of th
 | Go To Code Behind	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>
 | Go To Xaml View	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>
 | Go To Xaml Symbol	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>
+
+### Search and Navigation
+
+| Feature	| Lite	| Pro	| Platforms
+|---	|---	|---	|---
 | [Find Custom Renderers](https://docs.mfractor.com/xamarin-forms/custom-renderers/find-custom-renderers/)	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>
 
 ## Code Analysis
@@ -320,6 +325,48 @@ MFractor currently provides 223 features. We have currently documented 35% of th
 | Copy Android Package ID To Clipboard	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i>
 | Open Android Manifest	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i>
 
+## General
+
+### Project and Solution Utilities
+
+| Feature	| Lite	| Pro	| Platforms
+|---	|---	|---	|---
+| Copy Resource Id To Clipboard	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i>
+
+### Miscellaneous Scaffolding
+
+| Feature	| Lite	| Pro	| Platforms
+|---	|---	|---	|---
+| FodyWeavers Scaffolder	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i>
+
+### C# Scaffolding
+
+| Feature	| Lite	| Pro	| Platforms
+|---	|---	|---	|---
+| C# Class Scaffolder	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i>
+| C# Contextual Base Class Scaffolder	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>
+| Interface Scaffolder	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>
+| Attribute Scaffolder	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>
+| EventArgs Scaffolder	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>
+
+## Web
+
+### Navigation
+
+| Feature	| Lite	| Pro	| Platforms
+|---	|---	|---	|---
+| Go To Razor File	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i>
+| Go To Razor Code Behind	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i>
+| Go To View Model	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i>
+
+### Scaffolding
+
+| Feature	| Lite	| Pro	| Platforms
+|---	|---	|---	|---
+| Razor Page Scaffolder	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i>
+| Razor Component Scaffolder	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i>
+| ASP.NET Controller Scaffolder	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i>
+
 ## Utilities
 
 ### Project and Solution Utilities
@@ -342,3 +389,4 @@ MFractor currently provides 223 features. We have currently documented 35% of th
 
 
 **Last Updated: Monday 8th of June 2020**
+        
