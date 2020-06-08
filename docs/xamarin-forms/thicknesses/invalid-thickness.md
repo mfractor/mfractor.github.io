@@ -1,4 +1,4 @@
-!!! quote ""
+!!! quote "Avoid typos and simplify declarations for better legibility."
 
 ## Introduction
 
