@@ -4,7 +4,7 @@ This feature matrix presents all the features provided by MFractor.
 
 All features are available in MFractor for Visual Studio for Mac. The third column shows the features available to the Windows version.
 
-MFractor currently provides 221 features. We have currently documented 34% of the product features.
+MFractor currently provides 223 features. We have currently documented 35% of the product features.
 
 
 ## Asset Management
@@ -125,7 +125,7 @@ MFractor currently provides 221 features. We have currently documented 34% of th
 | Rename Duplicate Namespace References	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>
 | [Move Grid Properties To Parent Element](https://docs.mfractor.com/xamarin-forms/grids/analysis/#redundant-row-and-column-analysis)	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>
 | Create Missing Style	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>
-| Consolidate Thicknesses	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i>
+| Consolidate Thicknesses	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>
 | Escape Newline Characters	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>
 | Auto-Correct Embedded Font Reference	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>
 | Move Property To Parent Element	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>
@@ -134,6 +134,7 @@ MFractor currently provides 221 features. We have currently documented 34% of th
 | [Insert Grid Column](https://docs.mfractor.com/xamarin-forms/grids/insert-row-columns/)	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>
 | [Delete Grid Row](https://docs.mfractor.com/xamarin-forms/grids/delete-row-columns/)	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>
 | [Delete Grid Column](https://docs.mfractor.com/xamarin-forms/grids/delete-row-columns/)	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>
+| [View All Duplicate Thickness Usages](https://docs.mfractor.com/xamarin-forms/analysis/thickness-analysis/#view-all-usages)	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i>
 
 ## Xamarin.Forms
 
@@ -310,13 +311,21 @@ MFractor currently provides 221 features. We have currently documented 34% of th
 |---	|---	|---	|---
 | [Scaffolder Overview](https://docs.mfractor.com/scaffolder/)	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i>
 
+## Android
+
+### Utilities
+
+| Feature	| Lite	| Pro	| Platforms
+|---	|---	|---	|---
+| Copy Android Package ID To Clipboard	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i>
+| Open Android Manifest	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i>
+
 ## Utilities
 
 ### Project and Solution Utilities
 
 | Feature	| Lite	| Pro	| Platforms
 |---	|---	|---	|---
-| Copy Android Package ID To Clipboard	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i>
 | [Delete Output Folder](https://docs.mfractor.com/utilities/delete-output-folders/)	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>
 | [Clean and Compress](https://docs.mfractor.com/utilities/clean-and-compress/)	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>
 | [Edit Shared Project Items](https://docs.mfractor.com/utilities/edit-shared-project-items/)	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i>
@@ -332,5 +341,4 @@ MFractor currently provides 221 features. We have currently documented 34% of th
 | Xamarin.Forms Dynamic Resources Search	| <i class="fas fa-check fa-lg"></i>	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i>
 
 
-**Last Updated: Sunday 7th of June 2020**
-        
+**Last Updated: Monday 8th of June 2020**
