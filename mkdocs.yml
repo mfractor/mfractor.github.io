@@ -115,6 +115,7 @@ nav:
     - FontFamily Resolution: xamarin-forms/fonts/font-family-resolution.md
     - Tooltips: xamarin-forms/fonts/tooltips.md
     - Code Completion: xamarin-forms/fonts/code-completion.md
+    - Analysis: xamarin-forms/fonts/analysis.md
   - Thicknesses:
     - Thickness Analysis: xamarin-forms/thicknesses/analysis.md
     - Consolidate: xamarin-forms/thicknesses/consolidation.md

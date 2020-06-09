@@ -32,3 +32,11 @@ MFractor will then insert the escaped unicode character reference:
     MFractor can only provide glyph code completion when the referenced font asset is a web font. Desktop fonts do not contain the meta-data that associates a glyph name to its icon code.
 
     If no glyphs are suggested, please ensure that your font asset is a web font.
+
+## Import Font Completion
+
+MFractor also provides the ability to use the [Font Importer](/fonts/importing-fonts.md) directly from IntelliSense. This allows you to add a font from a `FontFamily` attribute.
+
+To activate the completion, start typing in a `FontFamily` attribute and choose **Import a font into mobile projects**:
+
+![Import font asset completion](/img/fonts/embedded-font-completion.jpeg)
