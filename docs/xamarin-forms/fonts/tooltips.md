@@ -45,6 +45,14 @@ To access font typography tooltips, hover your cursor over a string literal in X
 
 ![Font typography tooltips with MFractor](/img/xamarin-forms/font-text-tooltips.png)
 
+## Embedded Font Tooltips
+
+MFractor includes tooltips summarise the font information for an embedded font. These tooltips include some useful information such as the font name, style, family and postscript name.
+
+MFractor will render an font summary tooltip when you hover over a `FontFamily` value that references an embedded font asset:
+
+![Embedded font summary tooltips with MFractor](/img/xamarin-forms/embedded-font-summary-tooltips.png)
+
 ## NamedSize Font Tooltips
 
 MFractor includes helper tooltips for the `NamedSize` enum for the `FontSize` attribute.
