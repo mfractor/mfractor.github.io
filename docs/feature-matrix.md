@@ -4,7 +4,7 @@ This feature matrix presents all the features provided by MFractor.
 
 All features are available in MFractor for Visual Studio for Mac. The third column shows the features available to the Windows version.
 
-MFractor currently provides 236 features. We have currently documented 36% of the product features.
+MFractor currently provides 236 features. We have currently documented 42% of the product features.
 
 
 ## Asset Management
@@ -27,11 +27,11 @@ MFractor currently provides 236 features. We have currently documented 36% of th
 |---	|---	|---	|---
 | [Import Font](https://docs.mfractor.com/fonts/importing-fonts/)	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>
 | [Generate Font Glyph Code Class](https://docs.mfractor.com/fonts/generate-font-character-code-class/)	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>
-| [Font Glyph Tooltips](https://docs.mfractor.com/xamarin-forms/fonts/tooltips/)	| <i class="fas fa-check fa-lg"></i>	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i>
+| [Font Glyph Tooltips](https://docs.mfractor.com/xamarin-forms/fonts/tooltips/#glyph-tooltip)	| <i class="fas fa-check fa-lg"></i>	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i>
 | [Font Glyph IntelliSense](https://docs.mfractor.com/xamarin-forms/fonts/code-completion/#font-glyph-code-completion)	| <i class="fas fa-check fa-lg"></i>	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i>
 | Font Viewer	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i>
-| Font Text Preview Tooltips	| <i class="fas fa-check fa-lg"></i>	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>
-| Embedded Font Tooltip	| <i class="fas fa-check fa-lg"></i>	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i>
+| [Font Text Preview Tooltips](https://docs.mfractor.com/xamarin-forms/fonts/tooltips/#font-typography-tools)	| <i class="fas fa-check fa-lg"></i>	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>
+| [Embedded Font Tooltip](https://docs.mfractor.com/xamarin-forms/fonts/tooltips/#embedded-font-tooltips)	| <i class="fas fa-check fa-lg"></i>	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i>
 
 ## Wizards
 
@@ -103,8 +103,8 @@ MFractor currently provides 236 features. We have currently documented 36% of th
 | [Replace Hexadecimal Value With Named Color](https://docs.mfractor.com/xamarin-forms/colors/color-analysis/)	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>
 | Generate Event Handler	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>
 | Correct Name To Matching Callback	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>
-| Remove Redundant Grid Properties	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>
-| Autocorrect Invalid FontSize	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>
+| [Remove Redundant Grid Properties](https://docs.mfractor.com/xamarin-forms/grids/analysis/#redundant-row-and-column-analysis)	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>
+| [Autocorrect Invalid FontSize](https://docs.mfractor.com/xamarin-forms/fonts/analysis/#named-font-value-analysis)	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>
 | Correct Property Binding Name	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>
 | Import Value Converter For Binding Type Flow	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>
 | Correct Image Resource name	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>
@@ -127,7 +127,7 @@ MFractor currently provides 236 features. We have currently documented 36% of th
 | Create Missing Style	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>
 | [Consolidate Thicknesses](https://docs.mfractor.com/xamarin-forms/thicknesses/consolidation/#consolidate-into-a-static-resource)	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>
 | Escape Newline Characters	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>
-| Auto-Correct Embedded Font Reference	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>
+| [Auto-Correct Embedded Font Reference](https://docs.mfractor.com/xamarin-forms/fonts/analysis/#unknown-embedded-font)	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>
 | Move Property To Parent Element	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>
 | Migrate Icon To IconImageSource	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>
 | [Insert Grid Row](https://docs.mfractor.com/xamarin-forms/grids/insert-row-columns/)	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>
@@ -142,9 +142,9 @@ MFractor currently provides 236 features. We have currently documented 36% of th
 
 | Feature	| Lite	| Pro	| Platforms
 |---	|---	|---	|---
-| Go To View Model	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>
-| Go To Code Behind	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>
-| Go To Xaml View	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>
+| [Go To View Model](https://docs.mfractor.com/xamarin-forms/working-with-viewmodels/view-viewmodel-navigation/#navigating-to-a-viewmodel)	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>
+| [Go To Code Behind](https://docs.mfractor.com/xamarin-forms/working-with-viewmodels/view-viewmodel-navigation/#navigating-to-a-code-behind)	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>
+| [Go To Xaml View](https://docs.mfractor.com/xamarin-forms/working-with-viewmodels/view-viewmodel-navigation/#navigating-to-a-view)	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>
 | Go To Xaml Symbol	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>
 
 ### Search and Navigation
@@ -169,14 +169,14 @@ MFractor currently provides 236 features. We have currently documented 36% of th
 | Class Does Not Have Attached Property	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>
 | Empty Value Assignment	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>
 | Empty Event Handler Assignment	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>
-| Event Handler Exists In Code Behind Class	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>
+| Verify Event Handler Exists In Code Behind Class	| <i class="fas fa-check fa-lg"></i>	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>
 | Event Handler Signature Mismatch	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>
 | Referenced Code Behind Field Exists	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>
 | Value Converter Input Type Mismatch	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>
 | Value Converter Output Type Mismatch	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>
 | Unresolved .NET Symbols Within Xaml Expression	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>
 | Unresolved Namespace Within Xaml Expression	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>
-| Invalid Named Font Size	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>
+| [Invalid Named Font Size](https://docs.mfractor.com/xamarin-forms/fonts/analysis/#named-font-value-analysis)	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>
 | Generic Usage Is Missing x:TypeArguments	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>
 | x:TypeArguments Used On Non-Generic Class	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>
 | Unknown Type Provided To Generic	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>
@@ -246,11 +246,11 @@ MFractor currently provides 236 features. We have currently documented 36% of th
 | [Hexadecimal Value Matches Named Color](https://docs.mfractor.com/xamarin-forms/colors/color-analysis/#identifying-mispelled-hex-color-formats)	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>
 | [Malformed Hexadecimal Color Value](https://docs.mfractor.com/xamarin-forms/colors/color-analysis/#identifying-mispelled-hex-color-formats)	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>
 | Cell Usage Within CollectionView ItemTemplate	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>
-| Glyph Does Not Exist In Font	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>
+| [Glyph Does Not Exist In Font](https://docs.mfractor.com/xamarin-forms/fonts/analysis/#unknown-font-glyph)	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>
 | [Thickness Value Can Be Consolidated](https://docs.mfractor.com/xamarin-forms/thicknesses/consolidation/#duplicate-thickness-declaration-analysis)	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>
 | Color Value Can Be Consolidated	| <i class="fas fa-check fa-lg"></i>	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>
 | Unescaped Newline In String Literal	| <i class="fas fa-check fa-lg"></i>	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>
-| Unknown Embedded Font Reference	| <i class="fas fa-check fa-lg"></i>	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>
+| [Unknown Embedded Font Reference](https://docs.mfractor.com/xamarin-forms/fonts/analysis/#unknown-embedded-font)	| <i class="fas fa-check fa-lg"></i>	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>
 | Unknown OnPlatform Value	| <i class="fas fa-check fa-lg"></i>	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>
 | RefreshView Content Should Be Scrollable Layout	| <i class="fas fa-check fa-lg"></i>	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>
 
@@ -271,13 +271,13 @@ MFractor currently provides 236 features. We have currently documented 36% of th
 | [Grid Location Completion](https://docs.mfractor.com/xamarin-forms/grids/intellisense/#grid-row-and-column-location-completions)	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>
 | Grid Unit Completion	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>
 | Image Asset Completion	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i>
-| Import Font Asset Completion	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i>
+| [Import Font Asset Completion](https://docs.mfractor.com/xamarin-forms/fonts/code-completion/#import-font-completion)	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i>
 | Property Setter Completion	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>
 | RepeaterView Boilerplate Completion	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>
 | [Row/Column Shorthand Completion](https://docs.mfractor.com/xamarin-forms/grids/intellisense/#grid-row-and-column-shorthand-completions)	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>
 | Setter Shorthand Completion	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>
 | StackLayout Orientation Shorthand Completion	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>
-| Star/Auto Shorthand Completion	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>
+| [Star/Auto Shorthand Completion](https://docs.mfractor.com/xamarin-forms/grids/intellisense/#grid-row-and-column-shorthand-completions)	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>
 | Thickness Attribute Completion	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>
 | ViewModel Data Binding Completion	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>
 
@@ -297,7 +297,7 @@ MFractor currently provides 236 features. We have currently documented 36% of th
 |---	|---	|---	|---
 | [Grid Index Tooltips](https://docs.mfractor.com/xamarin-forms/grids/tooltips/)	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>
 | Color Format Tooltips	| <i class="fas fa-check fa-lg"></i>	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>
-| Named FontSize Platform Values Tooltips	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>
+| [Named FontSize Platform Values Tooltips](https://docs.mfractor.com/xamarin-forms/fonts/tooltips/#namedsize-font-tooltips)	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>
 | Thickness Formats Tooltips	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>
 | [Static Resource Tooltips](https://docs.mfractor.com/xamarin-forms/static-resources/tooltips/)	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>
 | Value Converter Input/Output Type Tootips	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>
@@ -323,7 +323,7 @@ MFractor currently provides 236 features. We have currently documented 36% of th
 | Feature	| Lite	| Pro	| Platforms
 |---	|---	|---	|---
 | Copy Android Package ID To Clipboard	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i>
-| Open Android Manifest	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i>
+| Edit Android Manifest	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i>
 
 ## General
 
@@ -388,5 +388,5 @@ MFractor currently provides 236 features. We have currently documented 36% of th
 | Xamarin.Forms Dynamic Resources Search	| <i class="fas fa-check fa-lg"></i>	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i>
 
 
-**Last Updated: Monday 8th of June 2020**
+**Last Updated: Tuesday 9th of June 2020**
         
