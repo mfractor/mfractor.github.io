@@ -1,4 +1,4 @@
-!!! quote "Quickly switch among the three core components of the MVVM pattern"
+!!! quote "Navigation shortcuts to switch among the three core components of the MVVM pattern"
 
 ## Introduction
 

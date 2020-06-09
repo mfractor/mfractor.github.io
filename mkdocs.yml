@@ -120,6 +120,10 @@ nav:
     - Thickness Analysis: xamarin-forms/thicknesses/analysis.md
     - Consolidate: xamarin-forms/thicknesses/consolidation.md
     - Validate and Simplify: xamarin-forms/thicknesses/invalid-thickness.md
+  - Images:
+    - Analysis: xamarin-forms/images/analysis.md
+    - Code Completion: xamarin-forms/images/code-completion.md
+    - Replace With IconImageSource: xamarin-forms/images/replace-with-icon-image-source.md
 - Fonts:
   - Importing Fonts: fonts/importing-fonts.md
   - Generate Font Glyph Code Class: fonts/generate-font-character-code-class.md
