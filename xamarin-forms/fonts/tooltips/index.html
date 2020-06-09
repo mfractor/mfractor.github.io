@@ -118,7 +118,7 @@
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
     <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
     
-      <a href="#introduction" tabindex="1" class="md-skip">
+      <a href="#glyph-tooltip" tabindex="1" class="md-skip">
         Skip to content
       </a>
     
@@ -1484,22 +1484,42 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#introduction" class="md-nav__link">
-    Introduction
+  <a href="#glyph-tooltip" class="md-nav__link">
+    Glyph Tooltip
   </a>
   
-</li>
-      
-        <li class="md-nav__item">
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
   <a href="#font-glyph-code-tooltips" class="md-nav__link">
     Font Glyph Code Tooltips
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
+        
+          <li class="md-nav__item">
   <a href="#xstatic-constant-tooltips" class="md-nav__link">
     x:Static Constant tooltips
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#font-typography-tools" class="md-nav__link">
+    Font Typography Tools
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#namedsize-font-tooltips" class="md-nav__link">
+    NamedSize Font Tooltips
   </a>
   
 </li>
@@ -1529,6 +1549,18 @@
   <li class="md-nav__item">
     <a href="../code-completion/" title="Code Completion" class="md-nav__link">
       Code Completion
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../analysis/" title="Analysis" class="md-nav__link">
+      Analysis
     </a>
   </li>
 
@@ -2174,22 +2206,42 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#introduction" class="md-nav__link">
-    Introduction
+  <a href="#glyph-tooltip" class="md-nav__link">
+    Glyph Tooltip
   </a>
   
-</li>
-      
-        <li class="md-nav__item">
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
   <a href="#font-glyph-code-tooltips" class="md-nav__link">
     Font Glyph Code Tooltips
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
+        
+          <li class="md-nav__item">
   <a href="#xstatic-constant-tooltips" class="md-nav__link">
     x:Static Constant tooltips
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#font-typography-tools" class="md-nav__link">
+    Font Typography Tools
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#namedsize-font-tooltips" class="md-nav__link">
+    NamedSize Font Tooltips
   </a>
   
 </li>
@@ -2221,10 +2273,7 @@
                 
                   <h1>Tooltips</h1>
                 
-                <div class="admonition quote">
-<p class="admonition-title">Visually previewing glyphs from a font with glyph tooltips</p>
-</div>
-<h2 id="introduction">Introduction</h2>
+                <h2 id="glyph-tooltip">Glyph Tooltip</h2>
 <p>When working with font icons in Xamarin.Forms, one of the challenges is understanding what a particular glyph code references.</p>
 <p>Consider the following XAML code:</p>
 <div class="codehilite"><pre><span></span><span class="o">&lt;</span><span class="n">Label</span> <span class="n">FontFamily</span><span class="o">=</span><span class="ss">&quot;{StaticResource FontAwesome5ProRegular}&quot;</span>
@@ -2242,13 +2291,23 @@
 <p>MFractor can only provide glyph previews when the referenced font asset is a web font. Desktop fonts do not contain the meta-data that associates a glyph name to its icon code.</p>
 <p>If glyph tooltips do not appear, please ensure that your font asset is a web font.</p>
 </div>
-<h2 id="font-glyph-code-tooltips">Font Glyph Code Tooltips</h2>
+<h3 id="font-glyph-code-tooltips">Font Glyph Code Tooltips</h3>
 <p>To access font glyph tooltips, hover over a font glyph code in XAML:</p>
 <p><img alt="Font Glyph Code tooltips with MFractor" src="/img/xamarin-forms/font-glyph-tooltips.png" /></p>
-<h2 id="xstatic-constant-tooltips">x:Static Constant tooltips</h2>
+<h3 id="xstatic-constant-tooltips">x:Static Constant tooltips</h3>
 <p>If you are using a <a href="/fonts/generate-font-character-code-class.md">font named constants class</a> to reference font icons, MFractor can also preview these as tooltips.</p>
 <p>To access, hover over an <code>x:Static</code> expression that references a font character code:
 <img alt="Font Glyph Code tooltips from an x:Static reference" src="/img/xamarin-forms/font-glyph-xstatic-tooltips.png" /></p>
+<h2 id="font-typography-tools">Font Typography Tools</h2>
+<p>When working with fonts in Xamarin.Forms, it's useful to be able to visually preview the typography of a font for a particular block of text.</p>
+<p>To assist with this, MFractor includes font typography tooltips that can render a text block in the font specified for that element.</p>
+<p>To access font typography tooltips, hover your cursor over a string literal in XAML where the elements <code>FontFamily</code> is set:</p>
+<p><img alt="Font typography tooltips with MFractor" src="/img/xamarin-forms/font-text-tooltips.png" /></p>
+<h2 id="namedsize-font-tooltips">NamedSize Font Tooltips</h2>
+<p>MFractor includes helper tooltips for the <code>NamedSize</code> enum for the <code>FontSize</code> attribute.</p>
+<p>When you hover over a <code>NamedSize</code> value, MFractor will render a summary of the platform-specific font sizes that the name maps to:</p>
+<p><img alt="NamedSize font tooltips with MFractor" src="/img/xamarin-forms/named-font-tooltips.png" /></p>
+<p><a href="https://docs.microsoft.com/en-us/xamarin/xamarin-forms/user-interface/text/fonts#named-font-sizes">Please refer to the NamedSize documentation for more information.</a></p>
                 
                   
                 
