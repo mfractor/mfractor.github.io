@@ -4,7 +4,7 @@ This feature matrix presents all the features provided by MFractor.
 
 All features are available in MFractor for Visual Studio for Mac. The third column shows the features available to the Windows version.
 
-MFractor currently provides 236 features. We have currently documented 42% of the product features.
+MFractor currently provides 236 features. We have currently documented 44% of the product features.
 
 
 ## Asset Management
@@ -107,8 +107,8 @@ MFractor currently provides 236 features. We have currently documented 42% of th
 | [Autocorrect Invalid FontSize](https://docs.mfractor.com/xamarin-forms/fonts/analysis/#named-font-value-analysis)	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>
 | Correct Property Binding Name	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>
 | Import Value Converter For Binding Type Flow	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>
-| Correct Image Resource name	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>
-| Import Missing Image Resource	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>
+| [Correct Image Resource name](https://docs.mfractor.com/xamarin-forms/images/analysis/#correcting-an-image-reference)	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>
+| [Import Missing Image Resource](https://docs.mfractor.com/xamarin-forms/images/analysis/#importing-a-missing-image)	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>
 | Encapsulate Scroll View Children With Grid	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>
 | Encapsulate Scroll View Children With StackLayout	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>
 | [Correct Static Resource Name](https://docs.mfractor.com/xamarin-forms/static-resources/analysis/#using-a-nearly-named-resource)	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>
@@ -129,7 +129,7 @@ MFractor currently provides 236 features. We have currently documented 42% of th
 | Escape Newline Characters	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>
 | [Auto-Correct Embedded Font Reference](https://docs.mfractor.com/xamarin-forms/fonts/analysis/#unknown-embedded-font)	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>
 | Move Property To Parent Element	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>
-| Migrate Icon To IconImageSource	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>
+| [Migrate Icon To IconImageSource](https://docs.mfractor.com/xamarin-forms/images/replace-with-icon-image-source/#replace-with-iconimagesource)	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>
 | [Insert Grid Row](https://docs.mfractor.com/xamarin-forms/grids/insert-row-columns/)	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>
 | [Insert Grid Column](https://docs.mfractor.com/xamarin-forms/grids/insert-row-columns/)	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>
 | [Delete Grid Row](https://docs.mfractor.com/xamarin-forms/grids/delete-row-columns/)	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>
@@ -234,7 +234,7 @@ MFractor currently provides 236 features. We have currently documented 42% of th
 | Setter Property Exists	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>
 | Style Or Trigger Has Duplicate Setters	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>
 | [Resource Key Conflict](https://docs.mfractor.com/xamarin-forms/static-resources/analysis/#resource-key-conflict)	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>
-| Detect Missing Image In Linked Projects	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>
+| [Detect Missing Image In Linked Projects](https://docs.mfractor.com/xamarin-forms/images/analysis/#missing-image-detection)	| <i class="fas fa-check fa-lg"></i>	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>
 | Grid Row/Column Setter Is Not A Number	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>
 | No Key Provided To DynamicResource Expression	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>
 | Validate Binding Expressions Return A Property	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>
@@ -270,7 +270,7 @@ MFractor currently provides 236 features. We have currently documented 42% of th
 | [Grid Boilerplate Completion](https://docs.mfractor.com/xamarin-forms/grids/intellisense/#declaring-a-grid-with-boilerplate-code)	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>
 | [Grid Location Completion](https://docs.mfractor.com/xamarin-forms/grids/intellisense/#grid-row-and-column-location-completions)	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>
 | Grid Unit Completion	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>
-| Image Asset Completion	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i>
+| [Image Asset Completion](https://docs.mfractor.com/xamarin-forms/images/code-completion/#image-asset-intellisense)	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i>
 | [Import Font Asset Completion](https://docs.mfractor.com/xamarin-forms/fonts/code-completion/#import-font-completion)	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i>
 | Property Setter Completion	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>
 | RepeaterView Boilerplate Completion	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>
@@ -322,7 +322,7 @@ MFractor currently provides 236 features. We have currently documented 42% of th
 
 | Feature	| Lite	| Pro	| Platforms
 |---	|---	|---	|---
-| Copy Android Package ID To Clipboard	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i>
+| [Copy Android Package ID To Clipboard](https://docs.mfractor.com/android/tools/copy-package-id/)	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i>
 | Edit Android Manifest	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i>
 
 ## General
