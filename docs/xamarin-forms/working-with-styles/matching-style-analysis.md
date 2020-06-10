@@ -29,7 +29,7 @@ Right-click on the element and on the `Fix` menu an option should appear as `App
 
 Applying the fix will replace all the attributes declared in the property to a single attribute `Style` referecing the matching style.
 
-## Disabling this Code Analysis
+## Disabling This Code Analyser
 
 The matching style code analysis can be disabled on MFractor settings. Open the Visual Studio Preferences and on the **Code Analysis** on the MFractor section of the preferences pages, search for `MF1082`:
 

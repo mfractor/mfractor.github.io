@@ -92,6 +92,7 @@ nav:
   - Working with Styles:
     - Extracting Styles: xamarin-forms/working-with-styles/extracting-styles.md
     - Matching Style Analysis: xamarin-forms/working-with-styles/matching-style-analysis.md
+    - Analysis: xamarin-forms/working-with-styles/analysis.md
   - Custom Controls:
     - Extracting Custom Controls: xamarin-forms/custom-controls/extracting-custom-controls.md
     - Bindable Property Wizard: xamarin-forms/custom-controls/bindable-property-wizard.md
