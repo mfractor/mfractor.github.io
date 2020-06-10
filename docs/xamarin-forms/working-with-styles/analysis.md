@@ -32,8 +32,6 @@ We would then apply this style using a `StaticResource` expression:
 
 The `Label` will automatically apply the `FontSize="Large"`, `FontAttributes="Bold"` and `TextColor="TextColor"` properties as specified by the `TitleLabelStyle` style.
 
-Styles are a powerful way to orba
-
 MFractor provides many code inspections and fixes that help make working with styles much easier.
 
 ## Style Is Missing TargetType
@@ -76,7 +74,7 @@ When creating a new style and configuring its `Setters`, MFractor will inspect t
 
 When a style is applied onto an element, and that element initalises a property to the same value as initialised by the style, MFractor will provide a warning that the property initialise is redundant:
 
-![Detecting that a styles ](/img/xamarin-forms/style-missing-target-type.png)
+![Detecting that a property is already initialised by a stye](/img/xamarin-forms/style-redundant-property.png)
 
 MFractor will also offer code fixes to remove all property initialisations that are already set to the same value by the style.
 
