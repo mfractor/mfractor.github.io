@@ -73,6 +73,9 @@ nav:
 - Xamarin.Forms:
   - Overview: xamarin-forms/overview.md
   - Automatic Type Inference: xamarin-forms/automatic-type-inference.md
+  - Analysis:
+      - C# Newline Characters: xamarin-forms/analysis/invalid-newline-characters.md
+      - Code Behind Fields: xamarin-forms/analysis/code-behind-fields.md
   - Binding Context Resolution:
     - Overview: xamarin-forms/binding-context-resolution/overview.md
     - Automatic ViewModel Detection: xamarin-forms/binding-context-resolution/automatic-viewmodel-detection.md
