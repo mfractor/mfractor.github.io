@@ -50,7 +50,7 @@ When declaring new `Style`, each property defined by a `Setter` only needs to be
 
 MFractor inspects a styles `Setter`'s and verifies that only one setter per property is applied:
 
-![Detecting duplicate style setters](/img/xamarin-forms/style-duplicate-setter-analysis.png)
+![Detecting duplicate style setters](/img/xamarin-forms/style-dupliate-setter-analysis.png)
 
 ## Static Resource Style Target Type Is Incompatible
 
