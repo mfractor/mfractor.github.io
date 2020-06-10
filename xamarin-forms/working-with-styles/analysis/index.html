@@ -2488,7 +2488,6 @@
 
 
 <p>The <code>Label</code> will automatically apply the <code>FontSize="Large"</code>, <code>FontAttributes="Bold"</code> and <code>TextColor="TextColor"</code> properties as specified by the <code>TitleLabelStyle</code> style.</p>
-<p>Styles are a powerful way to orba</p>
 <p>MFractor provides many code inspections and fixes that help make working with styles much easier.</p>
 <h2 id="style-is-missing-targettype">Style Is Missing TargetType</h2>
 <p>When you declare a style, it must include a <code>TargetType</code> attribute that specifies type the style applies to. Styles defined without a target type are invalid and will cause a compiler error.</p>
@@ -2510,7 +2509,7 @@
 <p><img alt="Detecting that a setter property is unknown in the target type" src="/img/xamarin-forms/style-unknown-target-type-property.png" /></p>
 <h2 id="property-value-is-already-applied-by-style">Property Value Is Already Applied By Style</h2>
 <p>When a style is applied onto an element, and that element initalises a property to the same value as initialised by the style, MFractor will provide a warning that the property initialise is redundant:</p>
-<p><img alt="Detecting that a styles " src="/img/xamarin-forms/style-missing-target-type.png" /></p>
+<p><img alt="Detecting that a property is already initialised by a stye" src="/img/xamarin-forms/style-redundant-property.png" /></p>
 <p>MFractor will also offer code fixes to remove all property initialisations that are already set to the same value by the style.</p>
 <h2 id="unknown-style-detection">Unknown Style Detection</h2>
 <p>MFractor will inspect <code>StaticResource</code> expressions and verify that the referenced style exists within the application.</p>
