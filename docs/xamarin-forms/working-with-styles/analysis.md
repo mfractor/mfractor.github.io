@@ -56,9 +56,7 @@ MFractor inspects a styles `Setter`'s and verifies that only one setter per prop
 
 When using a `Style`, the `TargetType` of that style must be compatible with the type of the element it is applied onto. If the types are not compatible, your app will crash at runtime.
 
-MFractor inspects the `TargetType` of a styles applied onto elements and verifies that they are type-compatible:
-
-![Detecting that a styles target type is incompatible](/img/xamarin-forms/style-missing-target-type.png)
+MFractor inspects the `TargetType` of a styles applied onto elements and verifies that they are type-compatible.
 
 ## Style TargetType Does Not Match BasedOn TargetType
 
