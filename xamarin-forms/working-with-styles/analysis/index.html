@@ -2500,8 +2500,7 @@
 <p><img alt="Detecting duplicate style setters" src="/img/xamarin-forms/style-dupliate-setter-analysis.png" /></p>
 <h2 id="static-resource-style-target-type-is-incompatible">Static Resource Style Target Type Is Incompatible</h2>
 <p>When using a <code>Style</code>, the <code>TargetType</code> of that style must be compatible with the type of the element it is applied onto. If the types are not compatible, your app will crash at runtime.</p>
-<p>MFractor inspects the <code>TargetType</code> of a styles applied onto elements and verifies that they are type-compatible:</p>
-<p><img alt="Detecting that a styles target type is incompatible" src="/img/xamarin-forms/style-missing-target-type.png" /></p>
+<p>MFractor inspects the <code>TargetType</code> of a styles applied onto elements and verifies that they are type-compatible.</p>
 <h2 id="style-targettype-does-not-match-basedon-targettype">Style TargetType Does Not Match BasedOn TargetType</h2>
 <p>When using the <code>BasedOn</code> and <code>BaseResourceKey</code> to create style inheritance, MFactor will inspect the parent styles <code>TargetType</code> and make sure that the types are compatible.</p>
 <h2 id="property-setter-does-not-exist-in-style-targettype">Property Setter Does Not Exist In Style TargetType</h2>
