@@ -70,6 +70,8 @@ nav:
     - Copy Var Type To Clipboard: csharp/code-actions/copy-var-type-to-clipboard.md
 - Android:
   - Copy Package ID: android/tools/copy-package-id.md
+- iOS:
+  - Copy Bundle ID: ios/tools/copy-bundle-id.md
 - Xamarin.Forms:
   - Overview: xamarin-forms/overview.md
   - Automatic Type Inference: xamarin-forms/automatic-type-inference.md
@@ -139,6 +141,7 @@ nav:
   - Delete Output Folders: utilities/delete-output-folders.md
   - Clean And Compress: utilities/clean-and-compress.md
   - Edit Shared Project Items: utilities/edit-shared-project-items.md
+  - Resync Solution Resources: utilities/resync-mfractor-resources.md
 - Release Notes:
   - Mac:
     - Current Release: release-notes/mac/current.md
