@@ -11,7 +11,7 @@ When developing iOS apps you often need to copy the Bundle Identifier of the app
 
 ![](/img/ios/copy-bundle-id-macos.png) ![](/img/ios/copy-bundle-id-windows.png)
 
-The project Package ID (as defined on the `AndroidManifest.xml` file) will be copied to your clipboard.
+The project Package ID (as defined on the `info.plist` file) will be copied to your clipboard.
 
 !!! tip
     If the option doesn't appear try to [Resync MFractor Solution Resources](/utilities/resync-mfractor-resources).
