@@ -4,7 +4,7 @@ This feature matrix presents all the features provided by MFractor.
 
 All features are available in MFractor for Visual Studio for Mac. The third column shows the features available to the Windows version.
 
-MFractor currently provides 236 features. We have currently documented 51% of the product features.
+MFractor currently provides 237 features. We have currently documented 51% of the product features.
 
 
 ## Asset Management
@@ -367,6 +367,14 @@ MFractor currently provides 236 features. We have currently documented 51% of th
 | Razor Component Scaffolder	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i>
 | ASP.NET Controller Scaffolder	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i>
 
+## iOS
+
+### Utilities
+
+| Feature	| Lite	| Pro	| Platforms
+|---	|---	|---	|---
+| [Copy Bundle ID](https://docs.mfractor.com/ios/tools/copy-bundle-id/)	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>
+
 ## Utilities
 
 ### Project and Solution Utilities
@@ -388,5 +396,5 @@ MFractor currently provides 236 features. We have currently documented 51% of th
 | Xamarin.Forms Dynamic Resources Search	| <i class="fas fa-check fa-lg"></i>	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i>
 
 
-**Last Updated: Wednesday 10th of June 2020**
+**Last Updated: Sunday 14th of June 2020**
         
