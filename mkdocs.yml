@@ -77,8 +77,8 @@ nav:
   - Overview: xamarin-forms/overview.md
   - Automatic Type Inference: xamarin-forms/automatic-type-inference.md
   - Analysis:
-      - C# Newline Characters: xamarin-forms/analysis/invalid-newline-characters.md
-      - Code Behind Fields: xamarin-forms/analysis/code-behind-fields.md
+    - C# Newline Characters: xamarin-forms/analysis/invalid-newline-characters.md
+    - Code Behind Fields: xamarin-forms/analysis/code-behind-fields.md
   - Binding Context Resolution:
     - Overview: xamarin-forms/binding-context-resolution/overview.md
     - Automatic ViewModel Detection: xamarin-forms/binding-context-resolution/automatic-viewmodel-detection.md
@@ -118,8 +118,9 @@ nav:
     - Tooltips: xamarin-forms/static-resources/tooltips.md
     - Analysis: xamarin-forms/static-resources/analysis.md
   - Colors:
-    - Color Analysis: xamarin-forms/colors/color-analysis.md
     - Adornments: xamarin-forms/colors/adornments.md
+    - Color Analysis: xamarin-forms/colors/color-analysis.md
+    - Color Code Actions: xamarin-forms/colors/code-actions.md
   - Fonts:
     - FontFamily Resolution: xamarin-forms/fonts/font-family-resolution.md
     - Tooltips: xamarin-forms/fonts/tooltips.md
