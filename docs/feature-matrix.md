@@ -4,7 +4,7 @@ This feature matrix presents all the features provided by MFractor.
 
 All features are available in MFractor for Visual Studio for Mac. The third column shows the features available to the Windows version.
 
-MFractor currently provides 237 features. We have currently documented 51% of the product features.
+MFractor currently provides 242 features. We have currently documented 51% of the product features.
 
 
 ## Asset Management
@@ -135,6 +135,16 @@ MFractor currently provides 237 features. We have currently documented 51% of th
 | [Delete Grid Row](https://docs.mfractor.com/xamarin-forms/grids/delete-row-columns/)	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>
 | [Delete Grid Column](https://docs.mfractor.com/xamarin-forms/grids/delete-row-columns/)	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>
 | [View All Duplicate Thickness Usages](https://docs.mfractor.com/xamarin-forms/thicknesses/consolidation/#view-all-usages)	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i>
+| Convert Grid Row/Columns To Attribute Format	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>
+| Convert Grid Row/Columns To Node Format	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>
+| [Convert Named Color To Hex](https://docs.mfractor.com/xamarin-forms/colors/code-actions/#convert-named-color-to-hex)	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>
+| [Edit Color Using Color Editor](https://docs.mfractor.com/xamarin-forms/colors/code-actions/#edit-color-using-color-editor)	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>
+
+### XAML
+
+| Feature	| Lite	| Pro	| Platforms
+|---	|---	|---	|---
+| [Add Transparency Channel To Color](https://docs.mfractor.com/xamarin-forms/colors/code-actions/#add-transparency-channel-to-color)	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>
 
 ## Xamarin.Forms
 
@@ -396,5 +406,5 @@ MFractor currently provides 237 features. We have currently documented 51% of th
 | Xamarin.Forms Dynamic Resources Search	| <i class="fas fa-check fa-lg"></i>	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i>
 
 
-**Last Updated: Sunday 14th of June 2020**
+**Last Updated: Thursday 18th of June 2020**
         
