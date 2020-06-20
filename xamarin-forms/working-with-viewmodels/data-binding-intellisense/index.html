@@ -1190,6 +1190,13 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#generating-commands-and-properties" class="md-nav__link">
+    Generating Commands and Properties
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -2608,6 +2615,13 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#generating-commands-and-properties" class="md-nav__link">
+    Generating Commands and Properties
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -2636,12 +2650,72 @@
                   <h1>Data Binding IntelliSense</h1>
                 
                 <div class="admonition quote">
-<p class="admonition-title">Locate ViewModel properties while editing  binding expressions</p>
+<p class="admonition-title">Locate ViewModel properties while editing binding expressions and generate properties and commands</p>
+</div>
+<div class="admonition info">
+<p class="admonition-title">This feature is available in <a href="https://www.mfractor.com/products/mfractor-professional">MFractor Professional</a></p>
 </div>
 <h2 id="introduction">Introduction</h2>
+<p>Data-binding is one of top features of Xamarin.Forms allowing you to easily create reactive components declaratively, and is core to the the MVVM pattern. MFractor enhances Visual Studio by adding powerful intellisense for working with data-binding over XAML files, by providing completions and actions that generate code without the need of going back and forth a View and its View Model.</p>
 <h2 id="using-data-binding-intellisense">Using Data-Binding IntelliSense</h2>
+<p>The data-binding intellisense is available on the XAML editor for Views that have a corresponding View Model class.</p>
+<div class="admonition tip">
+<p class="admonition-title">Check-out the <a href="../binding-context-resolution/binding-context-evaluation/">Automatic View Model Detection</a> docs to understand how MFractor identify View Models.</p>
+</div>
+<p>Those features appears to <a href="https://docs.microsoft.com/en-us/xamarin/xamarin-forms/xaml/bindable-properties">Bindable Properties</a> on the objects you declare to your XAML files and  depending on the context and conditions of your code.</p>
 <h3 id="expression-binding-intellisense">Expression Binding IntelliSense</h3>
+<p>Binding Expressions is a <a href="https://docs.microsoft.com/en-us/xamarin/xamarin-forms/xaml/markup-extensions/">XAML Markup Extensions</a> that allows you to describe how a property is bound. A simple expression just describes to which property of the Binding Context that property should be bound to, such as:</p>
+<div class="codehilite"><pre><span></span><code><span class="nt">&lt;Entry</span>
+    <span class="na">Placeholder=</span><span class="s">&quot;Enter your name&quot;</span>
+    <span class="na">Text=</span><span class="s">&quot;{Binding</span> <span class="err">Name}</span><span class="nt">&gt;</span>
+</code></pre></div>
+
+
+<p>The example above bounds the <code>Text</code> property of the entry field to the <code>Name</code> property of the context. Using the MVVM pattern we normaly set the context to a View Model class specific to that view.</p>
+<p>When a View has a View Model class related to it, MFractor will automatically identify the class properties and suggest them as you type your Binding Expression, like the following example:</p>
+<p><img alt="" src="/img/xamarin-forms/data-binding-intellisense.png" /></p>
+<div class="admonition tip">
+<p class="admonition-title">MFractor also validates your Binding Expressions with the <a href="../data-binding-analysis/">Data-Binding Code Analysis</a> tools.</p>
+</div>
 <h3 id="shorthand-binding-intellisense">Shorthand Binding IntelliSense</h3>
+<p>This is similar to the previous one, but it appears as suggestion when you start typing on any bindable property that doesn't have a Binding Expression declared. In the following example we want to bind the <code>Text</code> property of the <code>Entry</code> component to an <code>Email</code> property that already exists in our View Model:</p>
+<p><img alt="" src="/img/xamarin-forms/data-binding-intellisense-shorthand.png" /></p>
+<p>Notice that the tooltip provides all information about the source of the property and a preview of the code that will be inserted.</p>
+<h3 id="generating-commands-and-properties">Generating Commands and Properties</h3>
+<p>MFractor can generate Commands and Properties to your View Model directly from the XAML editor. This option appears as an Action on the Intellisense menu. When you declare an attribute of a Bindable Property of that object, the following will be presented:</p>
+<p><img alt="" src="/img/xamarin-forms/data-binding-intellisense-generate.png" /></p>
+<p>If the suggestion doesn't appear as you type you can use the <code>CTLR + Space</code> shortcut to show the menu. By selecting this option the following dialog will be presented:</p>
+<p><img alt="" src="/img/xamarin-forms/data-binding-intellisense-generate-dialog.png" /></p>
+<p>Type the name you want for the property and click ok to have it generated on your View Model class, based on the following snippet:</p>
+<div class="codehilite"><pre><span></span><code><span class="k">public</span> <span class="kt">string</span> <span class="n">Name</span> <span class="p">{</span> <span class="k">get</span><span class="p">;</span> <span class="k">set</span><span class="p">;</span> <span class="p">}</span>
+</code></pre></div>
+
+
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+<p>MFractor currently doesn't support custom declaration of View Models properties, such as ones that call <code>OnPropertyChanged</code> method for <code>INotifyPropertyChanged</code> implementors or that relies on base class methods.</p>
+<p>While custom templates for property generation is under consideration for future versions (and we appreciate your comments on our <a href="https://github.com/mfractor/mfractor-feedback/issues">Feedback Page</a>), we've found that most users prefer to use <a href="https://github.com/Fody/PropertyChanged"><code>PropertyChanged.Fody</code></a> package to inject this behavior in their View Model classes.</p>
+<p>Fody is a powerful weaving tool for .NET that allows code to be injected during the compilation, and automates the generation several boilerplate code. For more information <a href="https://github.com/Fody/Home/">check the project repository</a>.</p>
+</div>
+<p>If the Bindable Property is of the type <code>ICommand</code> MFractor will also show an option for generating a Command to the View Model as well:</p>
+<p><img alt="" src="/img/xamarin-forms/data-binding-intellisense-generate-command.png" /></p>
+<p>Just like with the Generate Property, you can force the intellisense options to appear with the <code>CTRL + Space</code> shortcut. Selecting the option will present the Create Command dialog:</p>
+<p><img alt="" src="/img/xamarin-forms/data-binding-intellisense-generate-command-dialog.png" /></p>
+<p>Type the name you want for the command and click ok to have it generated on your View Model class, based on the following snippet:</p>
+<div class="codehilite"><pre><span></span><code><span class="k">public</span> <span class="n">ICommand</span> <span class="n">SignUpCommand</span>
+<span class="p">{</span>
+    <span class="k">get</span>
+    <span class="p">{</span>
+        <span class="k">return</span> <span class="k">new</span> <span class="nf">Command</span><span class="p">(()</span> <span class="p">=&gt;</span>
+        <span class="p">{</span>
+            <span class="k">throw</span> <span class="k">new</span> <span class="nf">NotImplementedException</span><span class="p">();</span>
+        <span class="p">});</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div>
+
+
+<p>Notice that this will also add the required using statements for <code>ICommand</code> and <code>Command</code> types.</p>
                 
               
               
