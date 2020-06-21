@@ -4,7 +4,7 @@ This feature matrix presents all the features provided by MFractor.
 
 All features are available in MFractor for Visual Studio for Mac. The third column shows the features available to the Windows version.
 
-MFractor currently provides 242 features. We have currently documented 51% of the product features.
+MFractor currently provides 242 features. We have currently documented 52% of the product features.
 
 
 ## Asset Management
@@ -273,7 +273,7 @@ MFractor currently provides 242 features. We have currently documented 51% of th
 | x:Name Shorthand Completion	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>
 | x:Key Shorthand Completion	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>
 | Color Value Completion	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>
-| DataBinding Shorthand Completion	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i>
+| [DataBinding Shorthand Completion](https://docs.mfractor.com/xamarin-forms/working-with-viewmodels/data-binding-intellisense/#shorthand-binding-intellisense)	| <i class="fas fa-check fa-lg"></i>	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i>
 | DataTrigger Binding Shorthand Completion	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>
 | Event Handler Completion	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>
 | Font Asset Completion	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>
@@ -289,7 +289,7 @@ MFractor currently provides 242 features. We have currently documented 51% of th
 | StackLayout Orientation Shorthand Completion	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>
 | [Star/Auto Shorthand Completion](https://docs.mfractor.com/xamarin-forms/grids/intellisense/#grid-row-and-column-shorthand-completions)	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>
 | Thickness Attribute Completion	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>
-| ViewModel Data Binding Completion	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>
+| [ViewModel Data Binding Completion](https://docs.mfractor.com/xamarin-forms/working-with-viewmodels/data-binding-intellisense/#expression-binding-intellisense)	| <i class="fas fa-check fa-lg"></i>	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>
 
 ## Xaml Editor
 
@@ -406,5 +406,5 @@ MFractor currently provides 242 features. We have currently documented 51% of th
 | Xamarin.Forms Dynamic Resources Search	| <i class="fas fa-check fa-lg"></i>	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i>
 
 
-**Last Updated: Thursday 18th of June 2020**
+**Last Updated: Saturday 20th of June 2020**
         

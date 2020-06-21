@@ -111,6 +111,7 @@ nav:
     - Convert StackLayout to Grid: xamarin-forms/grids/convert-stacklayout-to-grid.md
     - Tooltips: xamarin-forms/grids/tooltips.md
     - Adornments: xamarin-forms/grids/adornments.md
+    - Shorthand Declaration Refactorings: xamarin-forms/grids/shorthand-declaration-refactorings.md
     - Insert Grid Row/Column: xamarin-forms/grids/insert-row-columns.md
     - Delete Grid Row/Column: xamarin-forms/grids/delete-row-columns.md
   - Static Resources:
