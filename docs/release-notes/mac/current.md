@@ -7,6 +7,7 @@
 
 ### Releases (v4.2)
 
+ * [v4.2.5 - Released on June 22nd 2020](v4/v4.2.md#v425) - Service release to fix users being unable to activate MFractor Lite.
  * [v4.2.4 - Released on June 19th 2020](v4/v4.2.md#v424) - Service release to fix several customer reported issues, support for the new grid shorthand declaration format and more.
  * [v4.2.3 - Released on June 9th 2020](v4/v4.2.md#v423) - Service release to add initial support for Blazor/Razor.
  * [v4.2.2 - Released on June 8th 2020](v4/v4.2.md#v422) - Service release to add initial support for Blazor/Razor.
