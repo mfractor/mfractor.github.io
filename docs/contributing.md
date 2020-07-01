@@ -19,7 +19,7 @@ Contributing to MFractor Documentation is much like any Git hosted open source p
 4. Open a Pull Request to merge your changes to the main repo
     * If your changes are accepted we'll merge it and notify you about it.
     * We may ask you for additional changes or reply with suggestions through comments on the Pull Request.
-    
+
 In case we add suggestions to your Pull Request we will provide a 3 day time-frame for you to review before merging your changes. We may decide to apply the suggestions internally after the merge.
 
 This is the high level diagram of the Contribution Workflow:
@@ -36,14 +36,18 @@ Accepted contributions will be acknowledge on a specific section of the home pag
 
 ## Requirements
 
-This documentation is written using [`mkdocs`](https://www.mkdocs.org/), a popular platform for software documentation sites, and takes advantage of the [`mkdocs-material`](https://squidfunk.github.io/mkdocs-material/) a plugin that adds material design concepts and themes to the site. 
+This documentation is written using [`mkdocs`](https://www.mkdocs.org/), a popular platform for software documentation sites, and takes advantage of the [`mkdocs-material`](https://squidfunk.github.io/mkdocs-material/) a plugin that adds material design concepts and themes to the site.
 
 To contribute you can use the mkdocs-material docker image (preferred) or will need to install a few things:
 
 * Install [Python](https://www.python.org/).
 * Install [pip](https://pip.readthedocs.io/en/stable/installing/).
+* Depending on your terminal shell, configure `PATH` to point to pips binary folder:
+    * For `zsh`, create the file `~\.zshrc` with the contents: `export PATH="$PATH:/Users/matthewrobbins/Library/Python/2.7/bin"`
+    * For `bash`, create the file `~\.bash_profile` with the contents: `export PATH="$PATH:/Users/matthewrobbins/Library/Python/2.7/bin"`
 * Install *mkdocs* from the pip tool `pip install mkdocs`.
 * Install the [Material Theme for mkdocs] from `pip install mkdocs-material`
+*
 
 !!! important
     Make sure to install mkdocs and the material theme both using `pip`. If you install `mkdocs` from Homebrew and them install the material theme from `pip` (the only place where its available as a package) you will get errors trying to compile the docs or running it locally.
@@ -72,8 +76,8 @@ If the Material Theme isn't installed when you try to run the project it won't w
 
 ```
 mkdocs serve
-INFO    -  Building documentation... 
-ERROR   -  Config value: 'theme'. Error: Unrecognised theme name: 'material'. The available installed themes are: readthedocs, mkdocs 
+INFO    -  Building documentation...
+ERROR   -  Config value: 'theme'. Error: Unrecognised theme name: 'material'. The available installed themes are: readthedocs, mkdocs
 ```
 
 Make sure to install mkdocs and material theme from `pip`.
