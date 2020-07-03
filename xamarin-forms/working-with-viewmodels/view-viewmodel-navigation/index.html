@@ -1155,32 +1155,12 @@
     Introduction
   </a>
   
-    <nav class="md-nav" aria-label="Introduction">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#navigating-to-a-view" class="md-nav__link">
-    Navigating to a View
-  </a>
-  
 </li>
-        
-          <li class="md-nav__item">
-  <a href="#navigating-to-a-viewmodel" class="md-nav__link">
-    Navigating to a ViewModel
+      
+        <li class="md-nav__item">
+  <a href="#using-the-navigation-shortcuts" class="md-nav__link">
+    Using the Navigation Shortcuts
   </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#navigating-to-a-code-behind" class="md-nav__link">
-    Navigating to a Code Behind
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
@@ -2597,32 +2577,12 @@
     Introduction
   </a>
   
-    <nav class="md-nav" aria-label="Introduction">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#navigating-to-a-view" class="md-nav__link">
-    Navigating to a View
-  </a>
-  
 </li>
-        
-          <li class="md-nav__item">
-  <a href="#navigating-to-a-viewmodel" class="md-nav__link">
-    Navigating to a ViewModel
+      
+        <li class="md-nav__item">
+  <a href="#using-the-navigation-shortcuts" class="md-nav__link">
+    Using the Navigation Shortcuts
   </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#navigating-to-a-code-behind" class="md-nav__link">
-    Navigating to a Code Behind
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
@@ -2649,39 +2609,53 @@
                   <h1>View-ViewModel Navigation</h1>
                 
                 <div class="admonition quote">
-<p class="admonition-title">Navigation shortcuts to switch among the three core components of the MVVM pattern</p>
+<p class="admonition-title">Navigation shortcuts to switch among the core components of the MVVM pattern</p>
 </div>
 <h2 id="introduction">Introduction</h2>
-<p>The MVVM (Model-View-ViewModel) Pattern is one of the most common architectural patterns of a Xamarin.Forms application.</p>
-<p>By convention, the MVVM pattern is composed by three files:</p>
+<p>The <a href="https://docs.microsoft.com/en-us/xamarin/xamarin-forms/enterprise-application-patterns/mvvm">Model-View-ViewModel (MVVM)</a> is a modern architectural pattern for building applications based on XAML views. It allows us separate Model and View logic from View declaration while keeping the code clean and testable. This pattern is widely used in Xamarin.Forms applications and by convention each View is composed of 3 files:</p>
 <ul>
-<li>The XAML View file (<code>.xaml</code>)</li>
-<li>It's code-behind file (<code>.xaml.cs</code>)</li>
-<li>A View Model that will provide the features of the view (a C# class contained on its own <code>.cs</code> file).</li>
+<li>The <strong>XAML View</strong> (<code>.xaml</code>) file where we describe our UI declaratively</li>
+<li>The View's <strong>code-behind</strong> (<code>.xaml.cs</code>) file </li>
+<li>The <strong>View Model</strong>, a C# class that provide View logic through properties and commands that are bound to the view using the data-binding engine</li>
 </ul>
-<p>The first two files are kept together, the later is usually kept on a <code>ViewModels</code> folders, where all the View Models are declared. Sometimes this makes hard to navigate between those files.</p>
 <div class="admonition important">
 <p class="admonition-title">Important</p>
 <p>Please read the <a href="/xamarin-forms/binding-context-resolution/overview.md">Binding Context Resolution documentation</a> to understand how MFractor associates view models with XAML views.</p>
 </div>
-<h3 id="navigating-to-a-view">Navigating to a View</h3>
-<div class="admonition info">
-<p class="admonition-title">Keyboard Shortcuts</p>
-<p><strong>Mac:</strong> <code>Command+Shift+3</code>
-<strong>Windows:</strong> <code>Alt+3</code></p>
-</div>
-<h3 id="navigating-to-a-viewmodel">Navigating to a ViewModel</h3>
-<div class="admonition info">
-<p class="admonition-title">Keyboard Shortcuts</p>
-<p><strong>Mac:</strong> <code>Command+Shift+1</code>
-<strong>Windows:</strong> <code>Alt+1</code></p>
-</div>
-<p>Highlight shortcut is Command+Shift+1</p>
-<h3 id="navigating-to-a-code-behind">Navigating to a Code Behind</h3>
-<div class="admonition info">
-<p class="admonition-title">Keyboard Shortcuts</p>
-<p><strong>Mac:</strong> <code>Command+Shift+2</code>
-<strong>Windows:</strong> <code>Alt+2</code></p>
+<p>When working on a View you frequently switch back and forth this 3 files. Manually switching from the Solution Explorer or the open tabs is tedious and time-consuming. MFractor adds several shortcuts for navigating among those files.</p>
+<h2 id="using-the-navigation-shortcuts">Using the Navigation Shortcuts</h2>
+<p>The shortcuts becames available contextually when one of the 3 files that compose a group is open and active on the code editor. Shortcuts are available on the context menu of editor:</p>
+<p><img alt="" src="/img/xamarin-forms/mvvm-navigation-mac-context.png" /> <img alt="" src="/img/xamarin-forms/mvvm-navigation-win-context.png" /></p>
+<p>There are also very convenient and easy to remember keyboard shortcuts available:</p>
+<table>
+<thead>
+<tr>
+<th>Navigation Shortcuts</th>
+<th align="center"><i class="fab fa-apple fa-lg"></i></th>
+<th align="center"><i class="fab fa-windows fa-lg"></i></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Go-To View Model</td>
+<td align="center"><strong>⌥ + ⇧ + 1</strong></td>
+<td align="center"><strong>Alt + 1</strong></td>
+</tr>
+<tr>
+<td>Go-To Code-Behind</td>
+<td align="center"><strong>⌥ + ⇧ + 2</strong></td>
+<td align="center"><strong>Alt + 2</strong></td>
+</tr>
+<tr>
+<td>Go-To View</td>
+<td align="center"><strong>⌥ + ⇧ + 3</strong></td>
+<td align="center"><strong>Alt + 3</strong></td>
+</tr>
+</tbody>
+</table>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>Use the <a href="../mvvm-wizard/">MVVM Wizard</a> to create a XAML View with its corresponding code-behind and View Model files all at once, and using standards and conventions that you can set on project basis.</p>
 </div>
                 
               
