@@ -72,6 +72,7 @@ nav:
     - Copy Var Type To Clipboard: csharp/code-actions/copy-var-type-to-clipboard.md
 - Android:
   - Copy Package ID: android/tools/copy-package-id.md
+  - Open Android Manifest: android/tools/open-android-manifest.md
 - iOS:
   - Tools:
     - Copy Bundle ID: ios/tools/copy-bundle-id.md
