@@ -84,4 +84,4 @@ Make sure to install mkdocs and material theme from `pip`.
 
 ## Get in touch
 
-If you need further assistance on contribution please refer to [Matthew Robins](https://twitter.com/matthewrdev) or [Rafael Veronezi](https://twitter.com/ravero) or open an issue. We'll be glas to assist.
+If you need further assistance on contribution please refer to [Matthew Robins](https://twitter.com/matthewrdev) or [Rafael Veronezi](https://twitter.com/ravero) or open an issue. We'll be glad to assist.
