@@ -75,6 +75,8 @@ nav:
     - Copy Bundle ID: ios/tools/copy-bundle-id.md
 - Xamarin.Forms:
   - Overview: xamarin-forms/overview.md
+  - XAML Editor:
+    - XAML IntelliSense: xamarin-forms/xaml-intellisense.md
   - Automatic Type Inference: xamarin-forms/automatic-type-inference.md
   - Analysis:
     - C# Newline Characters: xamarin-forms/analysis/invalid-newline-characters.md

@@ -10,7 +10,7 @@ At a glance, these are the core features in MFractors Xamarin.Forms tool-suite.
 
 ### XAML Editor
 
- * XAML IntelliSense.
+ * [XAML IntelliSense](/xamarin-forms/xaml-intellisense).
  * 80+ XAML inspections.
  * XAML Tooltips.
  * Over 90 code actions for navigation, refactoring and code organisation.
