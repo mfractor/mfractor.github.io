@@ -20,6 +20,8 @@ markdown_extensions:
   - admonition
   - codehilite
   - meta
+  - pymdownx.tabbed
+  - pymdownx.superfences
 extra_css:
   - css/tabs.css
   - css/all.css
