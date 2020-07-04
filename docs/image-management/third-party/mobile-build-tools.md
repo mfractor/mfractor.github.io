@@ -8,6 +8,6 @@ Mobile.BuildTools exposes several useful build tasks to assist in Xamarin.Forms 
 
 MFractor automatically detects solutions that include a Mobile.BuildTools manifest and includes the image generation output into the image management engine.
 
-This activates MFractors image tool-suite (such as IntelliSense, tooltips, analysis etc) in projects that utilise the `ResizetizerNT` build tasks.
+This activates MFractors image tool-suite (such as IntelliSense, tooltips, analysis etc) in projects that utilise the `Mobile.BuildTools` build tasks.
 
 [Learn more about Mobile.BuildTools here.](https://mobilebuildtools.com/images/)
