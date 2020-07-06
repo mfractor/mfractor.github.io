@@ -1,37 +1,32 @@
-!!! quote "Navigation shortcuts to switch among the three core components of the MVVM pattern"
+!!! quote "Navigation shortcuts to switch among the core components of the MVVM pattern"
 
 ## Introduction
 
-The MVVM (Model-View-ViewModel) Pattern is one of the most common architectural patterns of a Xamarin.Forms application.
+The [Model-View-ViewModel (MVVM)](https://docs.microsoft.com/en-us/xamarin/xamarin-forms/enterprise-application-patterns/mvvm) is a modern architectural pattern for building applications based on XAML views. It allows us separate Model and View logic from View declaration while keeping the code clean and testable. This pattern is widely used in Xamarin.Forms applications and by convention each View is composed of 3 files:
 
-By convention, the MVVM pattern is composed by three files:
+* The **XAML View** (`.xaml`) file where we describe our UI declaratively
+* The View's **code-behind** (`.xaml.cs`) file 
+* The **View Model**, a C# class that provide View logic through properties and commands that are bound to the view using the data-binding engine
 
-* The XAML View file (`.xaml`)
-* It's code-behind file (`.xaml.cs`)
-* A View Model that will provide the features of the view (a C# class contained on its own `.cs` file).
-
-The first two files are kept together, the later is usually kept on a `ViewModels` folders, where all the View Models are declared. Sometimes this makes hard to navigate between those files.
-
+The View file and its code-behind are kept together and automatically nested by Visual Studio. View Model are usually kept in a separate folder (commonly named `ViewModels`) for better organization of the project files.  
 !!! important
     Please read the [Binding Context Resolution documentation](/xamarin-forms/binding-context-resolution/overview.md) to understand how MFractor associates view models with XAML views.
 
-### Navigating to a View
+When working on a View you frequently switch back and forth this 3 files. Manually switching from the Solution Explorer or the open tabs is tedious and time-consuming. MFractor adds several shortcuts for navigating among those files.
 
-!!! info "Keyboard Shortcuts"
-    **Mac:** `Command+Shift+3`
-    **Windows:** `Alt+3`
+## Using the Navigation Shortcuts
 
-### Navigating to a ViewModel
+The shortcuts becames available contextually when one of the 3 files that compose a group is open and active on the code editor. Shortcuts are available on the context menu of editor:
 
-!!! info "Keyboard Shortcuts"
-    **Mac:** `Command+Shift+1`
-    **Windows:** `Alt+1`
+![](/img/xamarin-forms/mvvm-navigation-mac-context.png) ![](/img/xamarin-forms/mvvm-navigation-win-context.png)
 
-Highlight shortcut is Command+Shift+1
+There are also very convenient and easy to remember keyboard shortcuts available:
 
-### Navigating to a Code Behind
+Navigation Shortcuts    | <i class="fab fa-apple fa-lg"></i> | <i class="fab fa-windows fa-lg"></i> 
+----------  |:--------:   |:-------:
+Go-To View Model  | **⌥ + ⇧ + 1** | **Alt + 1**
+Go-To Code-Behind  | **⌥ + ⇧ + 2** | **Alt + 2**
+Go-To View    | **⌥ + ⇧ + 3** | **Alt + 3**
 
-
-!!! info "Keyboard Shortcuts"
-    **Mac:** `Command+Shift+2`
-    **Windows:** `Alt+2`
+!!! tip
+    Use the [MVVM Wizard](mvvm-wizard.md) to create a XAML View with its corresponding code-behind and View Model files all at once, and using standards and conventions that you can set on project basis.

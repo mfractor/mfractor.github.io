@@ -16,12 +16,12 @@ Those features appears to [Bindable Properties](https://docs.microsoft.com/en-us
 
 ### Expression Binding IntelliSense
 
-Binding Expressions is a [XAML Markup Extensions](https://docs.microsoft.com/en-us/xamarin/xamarin-forms/xaml/markup-extensions/) that allows you to describe how a property is bound. A simple expression just describes to which property of the Binding Context that property should be bound to, such as:
+Binding Expressions are [XAML Markup Extensions](https://docs.microsoft.com/en-us/xamarin/xamarin-forms/xaml/markup-extensions/) that allows you to describe how a property is bound. A simple expression just describes to which property of the Binding Context that property should be bound to, such as:
 
 ```xml
 <Entry
     Placeholder="Enter your name"
-    Text="{Binding Name}>
+    Text="{Binding Name}" />
 ```
 
 The example above bounds the `Text` property of the entry field to the `Name` property of the context. Using the MVVM pattern we normaly set the context to a View Model class specific to that view.
