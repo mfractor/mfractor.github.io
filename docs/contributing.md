@@ -59,16 +59,19 @@ Local installation is error prone. Consider using the docker image for faster an
 
 ### Extensions
 
-`admonition` and `codehilite` are part of the [material][material] theme.
+`admonition` and `codehilite` are part of the [material][material] theme. The `tabbed` and `superfences` extensions are part of the [PyMdown Extensions][PyMdownExtensions] that are bundled with material theme.
 
 ```yml
 markdown_extensions:
   - attr_list
   - admonition
   - codehilite
+  - pymdownx.tabbed
+  - pymdownx.superfences
 ```
 
 [material]: https://squidfunk.github.io/mkdocs-material/
+[PyMdownExtensions]: https://facelessuser.github.io/pymdown-extensions/
 
 ### Troubleshooting
 
