@@ -11,8 +11,6 @@ When developing Android apps you often need to edit the manifest file of the app
     ![](/img/android/open-android-manifest-macos.png)
 
 === "Windows"
-    !!! warning "Due out soon"
-    
     Right-click on the Android project on the _Solution Explorer_, the `Open Android Manifest` will appear on the second section of the menu.
     ![](/img/android/open-android-manifest-windows.png)
 
