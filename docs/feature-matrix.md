@@ -4,7 +4,7 @@ This feature matrix presents all the features provided by MFractor.
 
 All features are available in MFractor for Visual Studio for Mac. The third column shows the features available to the Windows version.
 
-MFractor currently provides 242 features. We have currently documented 52% of the product features.
+MFractor currently provides 242 features. We have currently documented 55% of the product features.
 
 
 ## Asset Management
@@ -105,7 +105,7 @@ MFractor currently provides 242 features. We have currently documented 52% of th
 | Correct Name To Matching Callback	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>
 | [Remove Redundant Grid Properties](https://docs.mfractor.com/xamarin-forms/grids/analysis/#redundant-row-and-column-analysis)	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>
 | [Autocorrect Invalid FontSize](https://docs.mfractor.com/xamarin-forms/fonts/analysis/#named-font-value-analysis)	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>
-| Correct Property Binding Name	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>
+| [Correct Property Binding Name](https://docs.mfractor.com/xamarin-forms/working-with-viewmodels/data-binding-analysis/#expression-is-against-an-invalid-symbol)	| <i class="fas fa-check fa-lg"></i>	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>
 | Import Value Converter For Binding Type Flow	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>
 | [Correct Image Resource name](https://docs.mfractor.com/xamarin-forms/images/analysis/#correcting-an-image-reference)	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>
 | [Import Missing Image Resource](https://docs.mfractor.com/xamarin-forms/images/analysis/#importing-a-missing-image)	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>
@@ -135,8 +135,8 @@ MFractor currently provides 242 features. We have currently documented 52% of th
 | [Delete Grid Row](https://docs.mfractor.com/xamarin-forms/grids/delete-row-columns/)	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>
 | [Delete Grid Column](https://docs.mfractor.com/xamarin-forms/grids/delete-row-columns/)	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>
 | [View All Duplicate Thickness Usages](https://docs.mfractor.com/xamarin-forms/thicknesses/consolidation/#view-all-usages)	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i>
-| Convert Grid Row/Columns To Attribute Format	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>
-| Convert Grid Row/Columns To Node Format	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>
+| [Convert Grid Row/Columns To Attribute Format](https://docs.mfractor.com/xamarin-forms/grids/shorthand-declaration-refactorings/#convert-to-attribute-format)	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>
+| [Convert Grid Row/Columns To Node Format](https://docs.mfractor.com/xamarin-forms/grids/shorthand-declaration-refactorings/#convert-to-node-format)	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>
 | [Convert Named Color To Hex](https://docs.mfractor.com/xamarin-forms/colors/code-actions/#convert-named-color-to-hex)	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>
 | [Edit Color Using Color Editor](https://docs.mfractor.com/xamarin-forms/colors/code-actions/#edit-color-using-color-editor)	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>
 
@@ -241,16 +241,16 @@ MFractor currently provides 242 features. We have currently documented 52% of th
 | Multiple VisualElements Defined In Shell Content	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>
 | Shell Requires At Least One Shell Item	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>
 | Validate Setter Attached Property Usage	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>
-| Setter Property Exists	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>
+| [Setter Property Exists](https://docs.mfractor.com/xamarin-forms/working-with-styles/analysis/#property-setter-does-not-exist-in-style-targettype)	| <i class="fas fa-check fa-lg"></i>	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>
 | [Style Or Trigger Has Duplicate Setters](https://docs.mfractor.com/xamarin-forms/working-with-styles/analysis/#style-has-duplicate-setters)	| <i class="fas fa-check fa-lg"></i>	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>
 | [Resource Key Conflict](https://docs.mfractor.com/xamarin-forms/static-resources/analysis/#resource-key-conflict)	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>
 | [Detect Missing Image In Linked Projects](https://docs.mfractor.com/xamarin-forms/images/analysis/#missing-image-detection)	| <i class="fas fa-check fa-lg"></i>	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>
 | Grid Row/Column Setter Is Not A Number	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>
 | No Key Provided To DynamicResource Expression	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>
-| Validate Binding Expressions Return A Property	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>
-| Binding Against Non-Public Property	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>
-| Binding Expressions Resolve	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>
-| Binding Expression Return Type Mismatch	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>
+| [Validate Binding Expressions Return A Property](https://docs.mfractor.com/xamarin-forms/working-with-viewmodels/data-binding-analysis/#expression-doesnt-return-a-property)	| <i class="fas fa-check fa-lg"></i>	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>
+| [Binding Against Non-Public Property](https://docs.mfractor.com/xamarin-forms/working-with-viewmodels/data-binding-analysis/#expression-is-against-non-public-property)	| <i class="fas fa-check fa-lg"></i>	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>
+| [Binding Expressions Resolve](https://docs.mfractor.com/xamarin-forms/working-with-viewmodels/data-binding-analysis/#expression-is-against-an-invalid-symbol)	| <i class="fas fa-check fa-lg"></i>	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>
+| [Binding Expression Return Type Mismatch](https://docs.mfractor.com/xamarin-forms/working-with-viewmodels/data-binding-analysis/#expression-doesnt-resolve-to-a-compatible-type)	| <i class="fas fa-check fa-lg"></i>	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>
 | [Color Value Matches Static Resource](https://docs.mfractor.com/xamarin-forms/colors/color-analysis/#applying-an-existing-color-resource)	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>
 | [Color Value Closely Matches Available Static Resource](https://docs.mfractor.com/xamarin-forms/colors/color-analysis/#applying-an-existing-color-resource)	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>
 | [Hexadecimal Value Matches Named Color](https://docs.mfractor.com/xamarin-forms/colors/color-analysis/#identifying-mispelled-hex-color-formats)	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>
@@ -406,5 +406,4 @@ MFractor currently provides 242 features. We have currently documented 52% of th
 | Xamarin.Forms Dynamic Resources Search	| <i class="fas fa-check fa-lg"></i>	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i>
 
 
-**Last Updated: Saturday 20th of June 2020**
-        
+**Last Updated: Wednesday 8th of July 2020**
