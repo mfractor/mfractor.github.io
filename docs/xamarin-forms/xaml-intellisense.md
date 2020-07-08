@@ -51,12 +51,10 @@ There are also [Shorthand Declaration Refactorings](/xamarin-forms/grids/shortha
 
 ### Dynamic Resources
 
-#### Intellisense Completions
-
-#### Global Search Capabilities
-
-#### Tooltips
-
+- [Navigation](/xamarin-forms/dynamic-resources/navigation/)
+- [Intellisense Completions](/xamarin-forms/dynamic-resources/intellisense/)
+- [Global Search Capabilities](/xamarin-forms/dynamic-resources/search/)
+- [Tooltips](/xamarin-forms/dynamic-resources/tooltips/)
 
 ### Images
 
@@ -78,10 +76,13 @@ You can scroll through a handy list of `TextColor`s provided by MFractor:
 
 There are a number a intellisense additions for StackLayout, these include:
 
-- Name
-  - `x:Name=""` 
-- Orientation
-  - `Orientation="Horizontal"` 
-  - `Orientation="Vertical"`
+Name
+
+- `x:Name=""`
+
+Orientation
+
+- `Orientation="Horizontal"` 
+- `Orientation="Vertical"`
 
 ![StackLayout](/img/xamarin-forms/intellisense-stacklayout.png)
