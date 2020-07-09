@@ -333,7 +333,7 @@ MFractor currently provides 242 features. We have currently documented 52% of th
 | Feature	| Lite	| Pro	| Platforms
 |---	|---	|---	|---
 | [Copy Android Package ID To Clipboard](https://docs.mfractor.com/android/tools/copy-package-id/)	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i>
-| Edit Android Manifest	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i>
+| [Edit Android Manifest](https://docs.mfractor.com/android/tools/open-android-manifest/)	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i>
 
 ## General
 
