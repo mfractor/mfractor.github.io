@@ -18,16 +18,13 @@ Add your `Image` tag to your `xaml` file and edit the `Source` attribute to see 
 
 ![XAML image tooltips](/img/image-management/image-tooltips.gif)
 
-### Android
+Even better, image tooltips are also supported on Android resource lookups in C#:
 
-```java
-var dd = Resource.Drawable.mfractor
-```
-
-![Android image tooltips](/img/image-management/android-image-tooltip.png)
-
-### C# #
-
+=== "Android"
+    ```c#
+    var dd = Resource.Drawable.mfractor
+    ```
+    ![Android image tooltips](/img/image-management/android-image-tooltip.png)
 
 ### Links
 

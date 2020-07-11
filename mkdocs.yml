@@ -20,6 +20,8 @@ markdown_extensions:
   - admonition
   - codehilite
   - meta
+  - pymdownx.tabbed
+  - pymdownx.superfences
 extra_css:
   - css/tabs.css
   - css/all.css
@@ -70,11 +72,14 @@ nav:
     - Copy Var Type To Clipboard: csharp/code-actions/copy-var-type-to-clipboard.md
 - Android:
   - Copy Package ID: android/tools/copy-package-id.md
+  - Open Android Manifest: android/tools/open-android-manifest.md
 - iOS:
   - Tools:
     - Copy Bundle ID: ios/tools/copy-bundle-id.md
 - Xamarin.Forms:
   - Overview: xamarin-forms/overview.md
+  - XAML Editor:
+    - XAML IntelliSense: xamarin-forms/xaml-intellisense.md
   - Automatic Type Inference: xamarin-forms/automatic-type-inference.md
   - Analysis:
     - C# Newline Characters: xamarin-forms/analysis/invalid-newline-characters.md
@@ -118,6 +123,11 @@ nav:
     - Refactoring: xamarin-forms/static-resources/refactoring.md
     - Tooltips: xamarin-forms/static-resources/tooltips.md
     - Analysis: xamarin-forms/static-resources/analysis.md
+  #- Dynamic Resources:
+  #  - Navigation: xamarin-forms/dynamic-resources/navigation.md
+  #  - Intellisense Completions: xamarin-forms/dynamic-resources/intellisense.md
+  #  - Global Search Capabilities: xamarin-forms/dynamic-resources/search.md
+  #  - Tooltips: xamarin-forms/dynamic-resources/tooltips.md
   - Colors:
     - Adornments: xamarin-forms/colors/adornments.md
     - Color Analysis: xamarin-forms/colors/color-analysis.md
