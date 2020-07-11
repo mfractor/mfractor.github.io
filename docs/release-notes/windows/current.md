@@ -4,6 +4,7 @@
 
 ### Releases (v4.2)
 
+ * [v4.2.9 - Released on July 12th 2020](v4/v4.2.md#v42) - Service release to fix customer reported bugs.
  * [v4.2.8 - Released on July 7th 2020](v4/v4.2.md#v428) - Service release to improve performance of XAML analysis engine and reduce memory consumption.
  * [v4.2.7 - Released on July 1st 2020](v4/v4.2.md#v427) - Service release to resolve several customer reported bugs and add tooltips for colors/images.
  * [v4.2.6 - Released on June 25th 2020](v4/v4.2.md#v426) - Service release to resolve several customer reported bugs.
