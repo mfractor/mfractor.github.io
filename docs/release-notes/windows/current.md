@@ -3,6 +3,8 @@
 ## Releases (v4)
 
 ### Releases (v4.2)
+
+ * [v4.2.11 - Released on July 20th 2020](v4/v4.2.md#v4211) - Service release to fix exported font bugs.
  * [v4.2.10 - Released on July 14th 2020](v4/v4.2.md#v4210) - Service release to fix customer reported bugs and improve the XAML editor performance.
  * [v4.2.9 - Released on July 12th 2020](v4/v4.2.md#v429) - Service release to fix customer reported bugs.
  * [v4.2.8 - Released on July 7th 2020](v4/v4.2.md#v428) - Service release to improve performance of XAML analysis engine and reduce memory consumption.
