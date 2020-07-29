@@ -36,6 +36,11 @@ This document lists the third party software and libraries used by MFractor.
  * URL: [https://github.com/dnauck/Portable.Licensing](https://github.com/dnauck/Portable.Licensing)
  * License (MIT): [https://github.com/dnauck/Portable.Licensing/blob/develop/LICENSE.md](https://github.com/dnauck/Portable.Licensing/blob/develop/LICENSE.md)
 
+### SkiaSharp
+
+ * URL: [https://github.com/mono/SkiaSharp](https://github.com/mono/SkiaSharp)
+ * License (MIT): [https://github.com/mono/SkiaSharp/blob/master/LICENSE.md](https://github.com/mono/SkiaSharp/blob/master/LICENSE.md)
+
 ### Typography
 
 * URL: [https://github.com/LayoutFarm/Typography](https://github.com/LayoutFarm/Typography)
@@ -45,7 +50,6 @@ This document lists the third party software and libraries used by MFractor.
 
 * URL: [https://github.com/tinify/tinify-net](https://github.com/tinify/tinify-net)
 * License (MIT): [https://github.com/tinify/tinify-net/blob/master/LICENSE](https://github.com/tinify/tinify-net/blob/master/LICENSE)
-
 
 ### WebKit Sharp
 

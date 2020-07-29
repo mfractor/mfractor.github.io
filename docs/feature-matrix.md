@@ -1,12 +1,12 @@
 !!! quote "An overview of all features provided by MFractor"
 
-**Last Updated: Monday 13th of July 2020**
+**Last Updated: Wednesday 29th of July 2020**
 
 This feature matrix presents all the features provided by MFractor.
 
 All features are available in MFractor for Visual Studio for Mac. The third column shows the features available to the Windows version.
 
-MFractor currently provides 242 features. We have currently documented 57% of the product features.
+MFractor currently provides 245 features. We have currently documented 56% of the product features.
 
 
 ## Asset Management
@@ -141,6 +141,7 @@ MFractor currently provides 242 features. We have currently documented 57% of th
 | [Convert Grid Row/Columns To Node Format](https://docs.mfractor.com/xamarin-forms/grids/shorthand-declaration-refactorings/#convert-to-node-format)	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>
 | [Convert Named Color To Hex](https://docs.mfractor.com/xamarin-forms/colors/code-actions/#convert-named-color-to-hex)	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>
 | [Edit Color Using Color Editor](https://docs.mfractor.com/xamarin-forms/colors/code-actions/#edit-color-using-color-editor)	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>
+| Set Font Build Action To Embedded Resource	| <i class="fas fa-check fa-lg"></i>	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>
 
 ### XAML
 
@@ -265,6 +266,7 @@ MFractor currently provides 242 features. We have currently documented 57% of th
 | [Unknown Embedded Font Reference](https://docs.mfractor.com/xamarin-forms/fonts/analysis/#unknown-embedded-font)	| <i class="fas fa-check fa-lg"></i>	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>
 | Unknown OnPlatform Value	| <i class="fas fa-check fa-lg"></i>	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>
 | RefreshView Content Should Be Scrollable Layout	| <i class="fas fa-check fa-lg"></i>	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>
+| Font Reference Is Not Embedded Resource	| <i class="fas fa-check fa-lg"></i>	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>
 
 ## Intellisense
 
@@ -313,6 +315,7 @@ MFractor currently provides 242 features. We have currently documented 57% of th
 | Thickness Formats Tooltips	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>
 | [Static Resource Tooltips](https://docs.mfractor.com/xamarin-forms/static-resources/tooltips/)	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>
 | Value Converter Input/Output Type Tootips	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>
+| SVG Tooltips	| <i class="fas fa-check fa-lg"></i>	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i>
 
 ### Intellisense
 
@@ -406,3 +409,5 @@ MFractor currently provides 242 features. We have currently documented 57% of th
 | Xamarin.Forms Automation Identifiers Search	| <i class="fas fa-check fa-lg"></i>	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i>
 | Xamarin.Forms Static Resources Search	| <i class="fas fa-check fa-lg"></i>	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i>
 | Xamarin.Forms Dynamic Resources Search	| <i class="fas fa-check fa-lg"></i>	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i>
+
+        
