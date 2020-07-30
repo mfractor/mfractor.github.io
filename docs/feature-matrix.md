@@ -1,12 +1,12 @@
 !!! quote "An overview of all features provided by MFractor"
 
-**Last Updated: Wednesday 29th of July 2020**
+**Last Updated: Thursday 30th of July 2020**
 
 This feature matrix presents all the features provided by MFractor.
 
 All features are available in MFractor for Visual Studio for Mac. The third column shows the features available to the Windows version.
 
-MFractor currently provides 245 features. We have currently documented 56% of the product features.
+MFractor currently provides 247 features. We have currently documented 56% of the product features.
 
 
 ## Asset Management
@@ -69,6 +69,7 @@ MFractor currently provides 245 features. We have currently documented 56% of th
 | [Simplify Qualified Type](https://docs.mfractor.com/csharp/code-actions/simplify-qualified-types/)	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>
 | [Simplify All Qualified Types](https://docs.mfractor.com/csharp/code-actions/simplify-qualified-types/#the-simplify-types-wizard)	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>
 | [Invert Event Handler Assignment](https://docs.mfractor.com/csharp/code-actions/invert-event-handler/)	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>
+| Convert To Is Null	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>
 
 ### Xamarin Code Actions
 
@@ -268,9 +269,9 @@ MFractor currently provides 245 features. We have currently documented 56% of th
 | RefreshView Content Should Be Scrollable Layout	| <i class="fas fa-check fa-lg"></i>	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>
 | Font Reference Is Not Embedded Resource	| <i class="fas fa-check fa-lg"></i>	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>
 
-## Intellisense
+## Xaml Editor
 
-### XAML Intellisense Completions
+### Intellisense
 
 | Feature	| Lite	| Pro	| Platforms
 |---	|---	|---	|---
@@ -294,8 +295,7 @@ MFractor currently provides 245 features. We have currently documented 56% of th
 | [Star/Auto Shorthand Completion](https://docs.mfractor.com/xamarin-forms/grids/intellisense/#grid-row-and-column-shorthand-completions)	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>
 | Thickness Attribute Completion	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>
 | [ViewModel Data Binding Completion](https://docs.mfractor.com/xamarin-forms/working-with-viewmodels/data-binding-intellisense/#expression-binding-intellisense)	| <i class="fas fa-check fa-lg"></i>	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>
-
-## Xaml Editor
+| [Embedded Font Asset Completion](https://docs.mfractor.com/xamarin-forms/fonts/code-completion/#embedded-fonts-completion)	| <i class="fas fa-check fa-lg"></i>	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i>
 
 ### Adornments
 
@@ -316,12 +316,7 @@ MFractor currently provides 245 features. We have currently documented 56% of th
 | [Static Resource Tooltips](https://docs.mfractor.com/xamarin-forms/static-resources/tooltips/)	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>
 | Value Converter Input/Output Type Tootips	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>
 | SVG Tooltips	| <i class="fas fa-check fa-lg"></i>	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i>
-
-### Intellisense
-
-| Feature	| Lite	| Pro	| Platforms
-|---	|---	|---	|---
-| [Embedded Font Asset Completion](https://docs.mfractor.com/xamarin-forms/fonts/code-completion/#embedded-fonts-completion)	| <i class="fas fa-check fa-lg"></i>	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i>
+| Localisation Tooltips	| <i class="fas fa-check fa-lg"></i>	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>
 
 ## Scaffolding
 
