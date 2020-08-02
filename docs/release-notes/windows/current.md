@@ -4,6 +4,7 @@
 
 ### Releases (v4.2)
 
+ * [v4.2.12 - Released on August 2nd 2020](v4/v4.2.md#v4212) - Preview release for MFractor 4.3.
  * [v4.2.11 - Released on July 20th 2020](v4/v4.2.md#v4211) - Service release to fix exported font bugs.
  * [v4.2.10 - Released on July 14th 2020](v4/v4.2.md#v4210) - Service release to fix customer reported bugs and improve the XAML editor performance.
  * [v4.2.9 - Released on July 12th 2020](v4/v4.2.md#v429) - Service release to fix customer reported bugs.
