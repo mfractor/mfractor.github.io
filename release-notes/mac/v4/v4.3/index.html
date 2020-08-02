@@ -2618,19 +2618,27 @@
 <li><strong>Navigation Tooltip Links:</strong> When MFractor can perform a navigation action for the current element, the new <code>Navigate To</code> link will appear in the tooltip.</li>
 <li><strong>Code Analysis Help Links</strong>: When a code inspection has a help file available, you can now click on the Help link in the tooltip window to learn more about it.</li>
 <li><strong>SVG Tooltips:</strong> Hover over an SVG file reference or SVG path data and MFractor will now show you a preview of that svg. (Mac Only)</li>
-<li><strong>Localistation Tooltsip:</strong> Hover over an <code>x:Static</code> expression that resolves to a localisation lookup and MFractor will display a summary of all localisations for that key.</li>
+<li><strong>Localisation Tooltips for C# and XAML:</strong> When a property maps to a <code>.resx</code> localisation lookup, MFractor will display a summary of all localisations for that key.</li>
 </ul>
 <p><strong>Issues Fixed:</strong></p>
 <ul>
 <li>Fixed: Add support for the <code>XmlnsDefinition</code> attribute <a href="https://github.com/mfractor/mfractor-feedback/issues/98">#98</a></li>
 <li>Fixed: The Create new Style code action should trigger the Create New Style window instead of a blank one. <a href="https://github.com/mfractor/mfractor-feedback/issues/277">#277</a></li>
 <li>Fixed: Unable to find Carousel <code>IndicatorView</code> (false warning). <a href="https://github.com/mfractor/mfractor-feedback/issues/289">#289</a></li>
-<li>Various ongoing performance and memory improvements:<ul>
+<li>Fixed: The NavigateToFileSpansWorkUnitHandler is not implemented (breaks go to custom renderer). <a href="https://github.com/mfractor/mfractor-feedback/issues/245">#245</a></li>
+<li>Fixed: Enhancement localistion tool. <a href="https://github.com/mfractor/mfractor-feedback/issues/134">#134</a><ul>
+<li>When over a localisation expression, show localisation values summary in a tooltip.</li>
+<li>Go to definition support for localisation expressions.</li>
+<li>Code action to move a string literal to a RESX file (new or existing).</li>
+</ul>
+</li>
+<li>Ongoing performance and memory improvements:<ul>
 <li>Removing (most) usages of <code>Task.Run</code> to prevent MFractor generating unnecessary threads.</li>
 <li>Pre-caching/pre-populating as much state as possible when performing XAML analysis.</li>
 <li>More use of <code>Lazy&lt;T&gt;</code> to defer or avoid the cost of expensive resolution operations.</li>
 </ul>
 </li>
+<li>XAML Localisation: Removed dependency on deprecated ILocalise methodology and move to <code>.resx</code> files.</li>
 </ul>
                 
               
