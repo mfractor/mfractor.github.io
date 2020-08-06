@@ -4,7 +4,7 @@
 
 ### Releases (v4.3)
 
- * [v4.3.0 - Released on August 7th 2020](v4/v4.3.md#v430) - MFractor 4.3 is a major release that adds includes several new features for tooltips plus lots of bug fixes and overall product improvements.
+ * [v4.3.0 - Released on August 6th 2020](v4/v4.3.md#v430) - MFractor 4.3 is a major release that adds includes several new features for tooltips plus lots of bug fixes and overall product improvements.
 
 ### Releases (v4.2)
 
