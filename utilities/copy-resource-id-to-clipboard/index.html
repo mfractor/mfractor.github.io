@@ -19,7 +19,7 @@
     
     
       
-        <title>Copy resource id to clipboard - MFractor Documentation</title>
+        <title>Copy Resource ID To Clipboard - MFractor Documentation</title>
       
     
     
@@ -97,7 +97,7 @@
           </span>
           <span class="md-header-nav__topic md-ellipsis">
             
-              Copy resource id to clipboard
+              Copy Resource ID To Clipboard
             
           </span>
         </div>
@@ -966,6 +966,18 @@
   </li>
 
         
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../xamarin-forms/adornments/" title="Adornments" class="md-nav__link">
+      Adornments
+    </a>
+  </li>
+
+        
       </ul>
     </nav>
   </li>
@@ -1028,6 +1040,30 @@
   <li class="md-nav__item">
     <a href="../../xamarin-forms/analysis/code-behind-fields/" title="Code Behind Fields" class="md-nav__link">
       Code Behind Fields
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../xamarin-forms/analysis/collection-view/" title="CollectionView" class="md-nav__link">
+      CollectionView
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../xamarin-forms/analysis/slider/" title="Slider" class="md-nav__link">
+      Slider
     </a>
   </li>
 
@@ -2012,10 +2048,12 @@
       
       
 
+  
 
-  <li class="md-nav__item md-nav__item--nested">
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
     
-      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-16" type="checkbox" id="nav-16">
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-16" type="checkbox" id="nav-16" checked>
     
     <label class="md-nav__link" for="nav-16">
       Utilities
@@ -2066,6 +2104,63 @@
     <a href="../edit-shared-project-items/" title="Edit Shared Project Items" class="md-nav__link">
       Edit Shared Project Items
     </a>
+  </li>
+
+        
+          
+          
+          
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        Copy Resource ID To Clipboard
+        <span class="md-nav__icon md-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 9h14V7H3v2m0 4h14v-2H3v2m0 4h14v-2H3v2m16 0h2v-2h-2v2m0-10v2h2V7h-2m0 6h2v-2h-2v2z"/></svg>
+        </span>
+      </label>
+    
+    <a href="./" title="Copy Resource ID To Clipboard" class="md-nav__link md-nav__link--active">
+      Copy Resource ID To Clipboard
+    </a>
+    
+      
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#introduction" class="md-nav__link">
+    Introduction
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#using-copy-resource-id-to-clipboard" class="md-nav__link">
+    Using Copy Resource ID To Clipboard
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+    
   </li>
 
         
@@ -2609,8 +2704,8 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#example" class="md-nav__link">
-    Example
+  <a href="#using-copy-resource-id-to-clipboard" class="md-nav__link">
+    Using Copy Resource ID To Clipboard
   </a>
   
 </li>
@@ -2635,15 +2730,31 @@
                   
                 
                 
-                  <h1>Copy resource id to clipboard</h1>
+                  <h1>Copy Resource ID To Clipboard</h1>
                 
                 <div class="admonition quote">
 <p class="admonition-title">Copy the identifier an embedded resource to the clipboard</p>
 </div>
 <h2 id="introduction">Introduction</h2>
-<p>When we use embedded resources in our .NET projects, we </p>
-<h2 id="example">Example</h2>
+<p>In .NET, we can bundled assets into our assemblies through embedded resources. Embedded resources can be retrieved at runtime as a stream usings it's <strong>Resource ID</strong>.</p>
+<p>Consider the following code snippet:</p>
+<div class="highlight"><pre><span></span><code>var assembly = Assembly.GetExecutingAssembly();
+var resourceName = &quot;MyCompany.MyProduct.MyEmbeddedResource.txt&quot;;
+
+using (Stream stream = assembly.GetManifestResourceStream(resourceName))
+using (StreamReader reader = new StreamReader(stream))
+{
+    string result = reader.ReadToEnd();
+}
+</code></pre></div>
+
+<p>In this example, we are retrieving the resource with the <strong>Resource ID</strong> of <code>"MyCompany.MyProduct.MyEmbeddedResource.txt"</code> from the current assembly. This resource ID is specified in a project items <strong>Properties</strong>, located in the</p>
+<p>To locate the resource ID for a given embedded resource, we need to open the solution items <strong>Property Explorer</strong> and locate the resource ID field.</p>
+<p>To make it easier to retrieve the resource ID for an embedded resource, MFractor provides the <strong>Tools</strong> menu shortcut <strong>Copy Resource ID To Clipboard</strong>.</p>
+<h2 id="using-copy-resource-id-to-clipboard">Using Copy Resource ID To Clipboard</h2>
+<p>To access the <strong>Copy Resource ID To Clipboard</strong> shortcut, right click on a file that is an embedded resource in the solution explorer, navigate to the <strong>Tools</strong> menu and choose <strong>Copy Resource ID To Clipboard</strong>.</p>
 <p><img alt="Using the Copy Resource ID to clipboard shortcut" src="/img/utilities/copy-resource-id-to-clipboard.png" /></p>
+<p>The resource ID for that project file is copied to your clipboard, ready for use in code.</p>
                 
               
               
@@ -2662,6 +2773,41 @@
       
         
 <footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid" aria-label="Footer">
+        
+          <a href="../edit-shared-project-items/" title="Edit Shared Project Items" class="md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-footer-nav__button md-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+            </div>
+            <div class="md-footer-nav__title">
+              <div class="md-ellipsis">
+                <span class="md-footer-nav__direction">
+                  Previous
+                </span>
+                Edit Shared Project Items
+              </div>
+            </div>
+          </a>
+        
+        
+          <a href="../resync-mfractor-resources/" title="Resync Solution Resources" class="md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-footer-nav__title">
+              <div class="md-ellipsis">
+                <span class="md-footer-nav__direction">
+                  Next
+                </span>
+                Resync Solution Resources
+              </div>
+            </div>
+            <div class="md-footer-nav__button md-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    </div>
   
   <div class="md-footer-meta md-typeset">
     <div class="md-footer-meta__inner md-grid">
