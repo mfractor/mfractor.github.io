@@ -85,11 +85,11 @@ nav:
   - Overview: xamarin-forms/overview.md
   - XAML Editor:
     - XAML IntelliSense: xamarin-forms/xaml-intellisense.md
+    - Adornments: xamarin-forms/adornments.md
   - Automatic Type Inference: xamarin-forms/automatic-type-inference.md
   - Analysis:
     - C# Newline Characters: xamarin-forms/analysis/invalid-newline-characters.md
     - Code Behind Fields: xamarin-forms/analysis/code-behind-fields.md
-    - Thickness: xamarin-forms/analysis/thickness.md
     - CollectionView: xamarin-forms/analysis/collection-view.md
     - Slider: xamarin-forms/analysis/slider.md
   - Binding Context Resolution:
