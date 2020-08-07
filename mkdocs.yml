@@ -138,6 +138,7 @@ nav:
   #  - Tooltips: xamarin-forms/dynamic-resources/tooltips.md
   - Colors:
     - Adornments: xamarin-forms/colors/adornments.md
+    - Tooltips: xamarin-forms/colors/tooltips.md
     - Color Analysis: xamarin-forms/colors/color-analysis.md
     - Color Code Actions: xamarin-forms/colors/code-actions.md
   - Fonts:
@@ -146,6 +147,7 @@ nav:
     - Code Completion: xamarin-forms/fonts/code-completion.md
     - Analysis: xamarin-forms/fonts/analysis.md
   - Thicknesses:
+    - Tooltips: xamarin-forms/thicknesses/tooltips.md
     - Thickness Analysis: xamarin-forms/thicknesses/analysis.md
     - Consolidate: xamarin-forms/thicknesses/consolidation.md
     - Validate and Simplify: xamarin-forms/thicknesses/invalid-thickness.md
