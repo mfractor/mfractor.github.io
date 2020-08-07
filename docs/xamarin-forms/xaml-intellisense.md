@@ -1,5 +1,4 @@
-
-TODO: An overview of MFractors XAML intellisense integration.
+!!! quote "An overview of MFractors XAML code completion features."
 
 ## Introduction
 
@@ -52,7 +51,7 @@ There are also [Shorthand Declaration Refactorings](/xamarin-forms/grids/shortha
 ### Dynamic Resources
 
 - [Navigation](/xamarin-forms/dynamic-resources/navigation/)
-- [Intellisense Completions](/xamarin-forms/dynamic-resources/intellisense/)
+- [IntelliSense Completions](/xamarin-forms/dynamic-resources/intellisense/)
 - [Global Search Capabilities](/xamarin-forms/dynamic-resources/search/)
 - [Tooltips](/xamarin-forms/dynamic-resources/tooltips/)
 
@@ -82,7 +81,7 @@ Name
 
 Orientation
 
-- `Orientation="Horizontal"` 
+- `Orientation="Horizontal"`
 - `Orientation="Vertical"`
 
 ![StackLayout](/img/xamarin-forms/intellisense-stacklayout.png)

@@ -89,6 +89,9 @@ nav:
   - Analysis:
     - C# Newline Characters: xamarin-forms/analysis/invalid-newline-characters.md
     - Code Behind Fields: xamarin-forms/analysis/code-behind-fields.md
+    - Thickness: xamarin-forms/analysis/thickness.md
+    - CollectionView: xamarin-forms/analysis/collection-view.md
+    - Slider: xamarin-forms/analysis/slider.md
   - Binding Context Resolution:
     - Overview: xamarin-forms/binding-context-resolution/overview.md
     - Automatic ViewModel Detection: xamarin-forms/binding-context-resolution/automatic-viewmodel-detection.md
@@ -159,6 +162,7 @@ nav:
   - Delete Output Folders: utilities/delete-output-folders.md
   - Clean And Compress: utilities/clean-and-compress.md
   - Edit Shared Project Items: utilities/edit-shared-project-items.md
+  - Copy Resource ID To Clipboard: utilities/copy-resource-id-to-clipboard.md
   - Resync Solution Resources: utilities/resync-mfractor-resources.md
 - Release Notes:
   - Mac:

@@ -14,6 +14,6 @@ MFractor will inspect string literal in your XAML and check for C# style newline
 
 ## Correcting Invalid Newlines
 
-When MFractor detects C# style newlines, you can also use the **Escape newline characters** code fix to change all occurances of `\n` to `&#10;`:
+When MFractor detects C# style newlines, you can also use the **Escape newline characters** code fix to change all occurrences of `\n` to `&#10;`:
 
 ![C# Style newline code fix](/img/xamarin-forms/newline-code-fix.png)
