@@ -1891,6 +1891,13 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#fonts-build-action-is-not-embedded-resource" class="md-nav__link">
+    Font's Build Action Is Not Embedded Resource
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#unknown-font-glyph" class="md-nav__link">
     Unknown Font Glyph
   </a>
@@ -2763,6 +2770,13 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#fonts-build-action-is-not-embedded-resource" class="md-nav__link">
+    Font's Build Action Is Not Embedded Resource
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#unknown-font-glyph" class="md-nav__link">
     Unknown Font Glyph
   </a>
@@ -2808,6 +2822,11 @@
 <p>To assist, MFractor inspects <code>FontFamily</code> occurances and verifies that the font declaration is defined in the current assembly:</p>
 <p><img alt="Unknown embedded font reference analysis" src="/img/xamarin-forms/embedded-font-reference-analysis.png" /></p>
 <p>If able, MFractor will also suggest auto-corrections to change the unknown named font size to a closely matching named value.</p>
+<h2 id="fonts-build-action-is-not-embedded-resource">Font's Build Action Is Not Embedded Resource</h2>
+<p>When referencing embedded font assets in Xamarin.Forms, it is possible to add a font asset to your project, export it and forget to set it's build action to <code>EmbeddedResource</code>.</p>
+<p>When MFractor encounters a <code>FontFamily</code> reference to an exported font where it's build action is not <code>EmbeddedResource</code>, it will warn you that the fonts build action is incorrect.</p>
+<p><img alt="Embedded font is not an embedded resource analysis" src="/img/xamarin-forms/font-is-not-embedded-resource.png" /></p>
+<p>To resolve the issue, MFractor can change the fonts build action to <code>EmbeddedResource</code>.</p>
 <h2 id="unknown-font-glyph">Unknown Font Glyph</h2>
 <p>When using the icon fonts in XAML and using a unicode character to lookup a particular icon, it is possible to reference a glyph that does not exist in that font asset.</p>
 <p>To assist, MFractor detects unicode characters defined in XAML and, when a custom font is reference,  inspect the font asset to see if the font glyph exists in the font asset:</p>
