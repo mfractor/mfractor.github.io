@@ -92,6 +92,7 @@ nav:
     - Code Behind Fields: xamarin-forms/analysis/code-behind-fields.md
     - CollectionView: xamarin-forms/analysis/collection-view.md
     - Slider: xamarin-forms/analysis/slider.md
+    - Events: xamarin-forms/analysis/events.md
   - Binding Context Resolution:
     - Overview: xamarin-forms/binding-context-resolution/overview.md
     - Automatic ViewModel Detection: xamarin-forms/binding-context-resolution/automatic-viewmodel-detection.md

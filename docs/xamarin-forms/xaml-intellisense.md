@@ -73,11 +73,7 @@ You can scroll through a handy list of `TextColor`s provided by MFractor:
 
 ### StackLayout's
 
-There are a number a intellisense additions for StackLayout, these include:
-
-Name
-
-- `x:Name=""`
+There are a number a IntelliSense additions for StackLayout, these include:
 
 Orientation
 
@@ -85,3 +81,5 @@ Orientation
 - `Orientation="Vertical"`
 
 ![StackLayout](/img/xamarin-forms/intellisense-stacklayout.png)
+
+### Event Handlers
