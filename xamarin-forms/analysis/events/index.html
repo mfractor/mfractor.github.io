@@ -2792,8 +2792,12 @@
 <p><img alt="The empty event handler inspection" src="/img/xamarin-forms/empty-event-handler.png" /></p>
 <h2 id="verify-event-handler-exists-in-code-behind-class">Verify Event Handler Exists In Code Behind Class</h2>
 <p>This code inspection checks that an event callback referenced referenced by an attribute value exists in the code behind class.</p>
-<p><img alt="The unknown event handler inspection" src="/img/xamarin-forms/unknown-event-handler.png" /></p>
-<p>MFractor will also provide a code fix that you can use to generate the missing event handler.</p>
+<p><img alt="The unknown event handler inspection" src="/img/xamarin-forms/missing-event-handler.png" /></p>
+<p>MFractor will also provide code fixes where you can:</p>
+<ul>
+<li>Fix the event handler reference using a closely named method in the code-behind class.</li>
+<li>Generate a new event handler callback method in the code-behind class.</li>
+</ul>
 <h2 id="event-handler-signature-mismatch">Event Handler Signature Mismatch</h2>
 <p>This code inspection checks that the signature for the event callback in the code behind class matches the expected signature for the event it is bound to.</p>
 <p><img alt="Event handler binding mismatch" src="/img/xamarin-forms/event-handler-arg-mismatch.png" /></p>
