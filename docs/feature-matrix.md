@@ -35,9 +35,9 @@ MFractor currently provides 247 features. We have currently documented 62% of th
 | [Font Text Preview Tooltips](https://docs.mfractor.com/xamarin-forms/fonts/tooltips/#font-typography-tools)	| <i class="fas fa-check fa-lg"></i>	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>
 | [Embedded Font Tooltip](https://docs.mfractor.com/xamarin-forms/fonts/tooltips/#embedded-font-tooltips)	| <i class="fas fa-check fa-lg"></i>	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>
 
-## Wizards
+## Xamarin.Forms
 
-### Xamarin.Forms
+### Wizards
 
 | Feature	| Lite	| Pro	| Platforms
 |---	|---	|---	|---
@@ -45,15 +45,28 @@ MFractor currently provides 247 features. We have currently documented 62% of th
 | [MVVM Wizard](https://docs.mfractor.com/xamarin-forms/working-with-viewmodels/mvvm-wizard/)	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>
 | [Value Converter Wizard](https://docs.mfractor.com/xamarin-forms/value-converters/value-converter-wizard/)	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>
 
-### C# Wizards
+### Code Actions
 
 | Feature	| Lite	| Pro	| Platforms
 |---	|---	|---	|---
-| [Create Class From Clipboard](https://docs.mfractor.com/csharp/create-class-from-clipboard/)	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>
+| Exclude Symbol from Linker	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>
+| [Create Bindable Property](https://docs.mfractor.com/xamarin-forms/custom-controls/bindable-property-wizard/)	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>
+| [Create Attached Property](https://docs.mfractor.com/xamarin-forms/custom-controls/attached-property-wizard/)	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>
+| [Generate Custom Renderers](https://docs.mfractor.com/xamarin-forms/custom-renderers/generate-custom-renderers/)	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>
 
-## Code Actions
+### Navigation
 
-### C# Language Code Actions
+| Feature	| Lite	| Pro	| Platforms
+|---	|---	|---	|---
+| [Go To View Model](https://docs.mfractor.com/xamarin-forms/working-with-viewmodels/view-viewmodel-navigation/#navigating-to-a-viewmodel)	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>
+| [Go To Code Behind](https://docs.mfractor.com/xamarin-forms/working-with-viewmodels/view-viewmodel-navigation/#navigating-to-a-code-behind)	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>
+| [Go To Xaml View](https://docs.mfractor.com/xamarin-forms/working-with-viewmodels/view-viewmodel-navigation/#navigating-to-a-view)	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>
+| Go To Xaml Symbol	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>
+| [Find Custom Renderers](https://docs.mfractor.com/xamarin-forms/custom-renderers/find-custom-renderers/)	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>
+
+## C#
+
+### Code Actions
 
 | Feature	| Lite	| Pro	| Platforms
 |---	|---	|---	|---
@@ -71,19 +84,27 @@ MFractor currently provides 247 features. We have currently documented 62% of th
 | [Invert Event Handler Assignment](https://docs.mfractor.com/csharp/code-actions/invert-event-handler/)	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>
 | Convert To Is Null	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>
 
-### Xamarin Code Actions
+### Wizards
 
 | Feature	| Lite	| Pro	| Platforms
 |---	|---	|---	|---
-| Exclude Symbol from Linker	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>
+| [Create Class From Clipboard](https://docs.mfractor.com/csharp/create-class-from-clipboard/)	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>
 
-### Xamarin.Forms Code Actions
+### Scaffolding
 
 | Feature	| Lite	| Pro	| Platforms
 |---	|---	|---	|---
-| [Create Bindable Property](https://docs.mfractor.com/xamarin-forms/custom-controls/bindable-property-wizard/)	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>
-| [Create Attached Property](https://docs.mfractor.com/xamarin-forms/custom-controls/attached-property-wizard/)	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>
-| [Generate Custom Renderers](https://docs.mfractor.com/xamarin-forms/custom-renderers/generate-custom-renderers/)	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>
+| C# Class Scaffolder	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>
+| C# Contextual Base Class Scaffolder	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>
+| Interface Scaffolder	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>
+| Attribute Scaffolder	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>
+| EventArgs Scaffolder	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>
+
+### Tooltips
+
+| Feature	| Lite	| Pro	| Platforms
+|---	|---	|---	|---
+| DateTime Format Preview Tooltips	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>
 
 ## Xaml Editor
 
@@ -195,7 +216,7 @@ MFractor currently provides 247 features. We have currently documented 62% of th
 | [Style Is Missing TargetType](https://docs.mfractor.com/xamarin-forms/working-with-styles/analysis/#style-is-missing-targettype)	| <i class="fas fa-check fa-lg"></i>	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>
 | [Property Setter Does Not Exist In Style TargetType](https://docs.mfractor.com/xamarin-forms/working-with-styles/analysis/#property-setter-does-not-exist-in-style-targettype)	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>
 | [Invalid Thickness Attribute Value](https://docs.mfractor.com/xamarin-forms/thicknesses/invalid-thickness/#invalid-values)	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>
-| Unknown Field Modifier	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>
+| Unknown Field Modifier	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>	
 | Unknown Static Property Value	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>
 | Validate Value Types	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>
 | Duplicate Namespace Declaration	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>
@@ -293,23 +314,6 @@ MFractor currently provides 247 features. We have currently documented 62% of th
 | SVG Tooltips	| <i class="fas fa-check fa-lg"></i>	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i>
 | Localisation Tooltips	| <i class="fas fa-check fa-lg"></i>	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>
 
-## Xamarin.Forms
-
-### Navigation
-
-| Feature	| Lite	| Pro	| Platforms
-|---	|---	|---	|---
-| [Go To View Model](https://docs.mfractor.com/xamarin-forms/working-with-viewmodels/view-viewmodel-navigation/#navigating-to-a-viewmodel)	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>
-| [Go To Code Behind](https://docs.mfractor.com/xamarin-forms/working-with-viewmodels/view-viewmodel-navigation/#navigating-to-a-code-behind)	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>
-| [Go To Xaml View](https://docs.mfractor.com/xamarin-forms/working-with-viewmodels/view-viewmodel-navigation/#navigating-to-a-view)	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>
-| Go To Xaml Symbol	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>
-
-### Search and Navigation
-
-| Feature	| Lite	| Pro	| Platforms
-|---	|---	|---	|---
-| [Find Custom Renderers](https://docs.mfractor.com/xamarin-forms/custom-renderers/find-custom-renderers/)	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>
-
 ## Scaffolding
 
 ### General
@@ -374,16 +378,6 @@ MFractor currently provides 247 features. We have currently documented 62% of th
 |---	|---	|---	|---
 | FodyWeavers Scaffolder	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>
 
-### C# Scaffolding
-
-| Feature	| Lite	| Pro	| Platforms
-|---	|---	|---	|---
-| C# Class Scaffolder	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>
-| C# Contextual Base Class Scaffolder	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>
-| Interface Scaffolder	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>
-| Attribute Scaffolder	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>
-| EventArgs Scaffolder	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>
-
 ## iOS
 
 ### Utilities
@@ -391,11 +385,3 @@ MFractor currently provides 247 features. We have currently documented 62% of th
 | Feature	| Lite	| Pro	| Platforms
 |---	|---	|---	|---
 | [Copy Bundle ID](https://docs.mfractor.com/ios/tools/copy-bundle-id/)	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>
-
-## C# Editor
-
-### Tooltips
-
-| Feature	| Lite	| Pro	| Platforms
-|---	|---	|---	|---
-| DateTime Format Preview Tooltips	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>
