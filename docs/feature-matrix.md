@@ -64,6 +64,14 @@ MFractor currently provides 247 features. We have currently documented 62% of th
 | Go To Xaml Symbol	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>
 | [Find Custom Renderers](https://docs.mfractor.com/xamarin-forms/custom-renderers/find-custom-renderers/)	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>
 
+### Search
+
+| Feature	| Lite	| Pro	| Platforms
+|---	|---	|---	|---
+| Xamarin.Forms Automation Identifiers Search	| <i class="fas fa-check fa-lg"></i>	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i>
+| Xamarin.Forms Static Resources Search	| <i class="fas fa-check fa-lg"></i>	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i>
+| Xamarin.Forms Dynamic Resources Search	| <i class="fas fa-check fa-lg"></i>	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i>
+
 ## C#
 
 ### Code Actions
@@ -216,7 +224,7 @@ MFractor currently provides 247 features. We have currently documented 62% of th
 | [Style Is Missing TargetType](https://docs.mfractor.com/xamarin-forms/working-with-styles/analysis/#style-is-missing-targettype)	| <i class="fas fa-check fa-lg"></i>	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>
 | [Property Setter Does Not Exist In Style TargetType](https://docs.mfractor.com/xamarin-forms/working-with-styles/analysis/#property-setter-does-not-exist-in-style-targettype)	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>
 | [Invalid Thickness Attribute Value](https://docs.mfractor.com/xamarin-forms/thicknesses/invalid-thickness/#invalid-values)	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>
-| Unknown Field Modifier	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>	
+| Unknown Field Modifier	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>
 | Unknown Static Property Value	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>
 | Validate Value Types	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>
 | Duplicate Namespace Declaration	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>
@@ -314,13 +322,25 @@ MFractor currently provides 247 features. We have currently documented 62% of th
 | SVG Tooltips	| <i class="fas fa-check fa-lg"></i>	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i>
 | Localisation Tooltips	| <i class="fas fa-check fa-lg"></i>	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>
 
-## Scaffolding
+## General
 
-### General
+### Scaffolding
 
 | Feature	| Lite	| Pro	| Platforms
 |---	|---	|---	|---
 | [Scaffolder Overview](https://docs.mfractor.com/scaffolder/)	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>
+| FodyWeavers Scaffolder	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>
+
+### Utilities
+
+| Feature	| Lite	| Pro	| Platforms
+|---	|---	|---	|---
+| [Copy Resource Id To Clipboard](https://docs.mfractor.com/utilities/copy-resource-id-to-clipboard/)	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i>
+| [Delete Output Folder](https://docs.mfractor.com/utilities/delete-output-folders/)	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>
+| [Clean and Compress](https://docs.mfractor.com/utilities/clean-and-compress/)	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>
+| [Edit Shared Project Items](https://docs.mfractor.com/utilities/edit-shared-project-items/)	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i>
+| MFractor Commands Search	| <i class="fas fa-check fa-lg"></i>	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i>
+| ResX Localisation Search	| <i class="fas fa-check fa-lg"></i>	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i>
 
 ## Android
 
@@ -329,28 +349,7 @@ MFractor currently provides 247 features. We have currently documented 62% of th
 | Feature	| Lite	| Pro	| Platforms
 |---	|---	|---	|---
 | [Copy Android Package ID To Clipboard](https://docs.mfractor.com/android/tools/copy-package-id/)	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i>
-| [Open Android Manifest](https://docs.mfractor.com/android/tools/open-android-manifest/)	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i>
-
-## Utilities
-
-### Project and Solution Utilities
-
-| Feature	| Lite	| Pro	| Platforms
-|---	|---	|---	|---
-| [Copy Resource Id To Clipboard](https://docs.mfractor.com/utilities/copy-resource-id-to-clipboard/)	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i>
-| [Delete Output Folder](https://docs.mfractor.com/utilities/delete-output-folders/)	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>
-| [Clean and Compress](https://docs.mfractor.com/utilities/clean-and-compress/)	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>
-| [Edit Shared Project Items](https://docs.mfractor.com/utilities/edit-shared-project-items/)	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i>
-
-### Search Categories
-
-| Feature	| Lite	| Pro	| Platforms
-|---	|---	|---	|---
-| MFractor Commands Search	| <i class="fas fa-check fa-lg"></i>	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i>
-| ResX Localisation Search	| <i class="fas fa-check fa-lg"></i>	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i>
-| Xamarin.Forms Automation Identifiers Search	| <i class="fas fa-check fa-lg"></i>	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i>
-| Xamarin.Forms Static Resources Search	| <i class="fas fa-check fa-lg"></i>	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i>
-| Xamarin.Forms Dynamic Resources Search	| <i class="fas fa-check fa-lg"></i>	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i>
+| [Open Android Manifest](https://docs.mfractor.com/android/tools/open-android-manifest/)	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i>	
 
 ## Web
 
@@ -369,14 +368,6 @@ MFractor currently provides 247 features. We have currently documented 62% of th
 | Razor Page Scaffolder	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>
 | Razor Component Scaffolder	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>
 | ASP.NET Controller Scaffolder	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>
-
-## General
-
-### Miscellaneous Scaffolding
-
-| Feature	| Lite	| Pro	| Platforms
-|---	|---	|---	|---
-| FodyWeavers Scaffolder	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>
 
 ## iOS
 
