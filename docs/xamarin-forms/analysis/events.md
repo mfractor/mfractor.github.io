@@ -10,9 +10,12 @@ This code inspection checks that the callback method  event handler assignment i
 
 This code inspection checks that an event callback referenced referenced by an attribute value exists in the code behind class.
 
-![The unknown event handler inspection](/img/xamarin-forms/unknown-event-handler.png)
+![The unknown event handler inspection](/img/xamarin-forms/missing-event-handler.png)
 
-MFractor will also provide a code fix that you can use to generate the missing event handler.
+MFractor will also provide code fixes where you can:
+
+ * Fix the event handler reference using a closely named method in the code-behind class.
+ * Generate a new event handler callback method in the code-behind class.
 
 ## Event Handler Signature Mismatch
 

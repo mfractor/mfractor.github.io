@@ -10,7 +10,7 @@ Color analysers helps you with the following types of issues and enhancements:
 * Check for mispelled color values.
 * Identify colors declared as static resources.
 
-## Identifying mispelled hex color formats
+## Identifying Mispelled Hex Color Formats
 
 Xamarin.Forms Color Type allows passing a hexadecimal color value in several different formats:
 
@@ -33,7 +33,7 @@ The picker will try to identify an existing named color (one of the static read-
 
 By setting a color in the picker and clicking choose, MFractor will set the new value to the property. If the value represents one of the named colors this value will be used instead of the hex value.
 
->**Example**: type brown on the **Color** field and the picker channels will be automatically set to red 165, Green 42, Blue 42 and Alpha 255 that represents [`Color.Brown` field](https://docs.microsoft.com/en-us/dotnet/api/xamarin.forms.color.brown?view=xamarin-forms) value of `#FFA52A2A`.
+>**Example**: Enter the text `brown` on the **Color** field and the picker channels will be automatically set to red 165, Green 42, Blue 42 and Alpha 255 that represents [`Color.Brown` field](https://docs.microsoft.com/en-us/dotnet/api/xamarin.forms.color.brown?view=xamarin-forms) value of `#FFA52A2A`.
 
 ## Fixing Mispelled Named Colors
 
@@ -45,9 +45,9 @@ Suppose you have a color property with value of **Blu**. This is an invalid colo
 
 By hovering over the typo, the code analysis tooltip will show suggestions of names that closely match the mispelled one. Just click the link to have an instant fix.
 
-## Applying Named Color to Equivalent hex value
+## Applying Named Color to Equivalent Hex Value
 
-Hex values are a useful way of representing and sharing color value, but you can't easily figure a color value just by looking at it (unless you're a very experienced designer). For this reason, its useful to have named colors when they apply, so we can quickly identify what the color value is.
+Hex values are a useful way of representing and sharing color value, but you can't easily figure a color value just by looking at it. For this reason, its useful to have named colors when they apply, so we can quickly identify what the color value is.
 
 This code analysis will check Color properties that has hex values declared to verify if they match one of the [named colors](https://docs.microsoft.com/en-us/dotnet/api/xamarin.forms.color?view=xamarin-forms) available.
 
@@ -83,3 +83,15 @@ The color value will be replaced with the reference to the static resource:
 ```xml
 <BoxView Color="{StaticResource primaryColor}" />
 ```
+
+## Consolidate Duplicate Colors
+
+As we develop out app, it is probable that we will re-use the same selection of color literals (either as hex values or named colors) thorughout our app.
+
+Eventually, we come to a point where we would like to convert a duplicate color reference into a static resource to cleanup our source code and to add branding consistency.
+
+MFractor will detect the color values used within your XAML source code and let you know when the same color is used multiple times.
+
+![Using the consolidate colors inspection and code fix](/img/xamarin-forms/consolidate-colors.png)
+
+We can then **View All Usages** of that color value to understand how the color is being used and then use **Consolidate all colors** to convert the color literal into a static resource and replace all usages with a `{StaticResource MyColor}` expression.
