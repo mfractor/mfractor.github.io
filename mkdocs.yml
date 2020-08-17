@@ -37,21 +37,18 @@ extra_javascript:
 
 nav:
 - Home: index.md
-- General:
-  - Support: support.md
-  - Licensing: licensing.md
-  - ReSharper Compatibility: resharper-compatibility.md
-  - FAQ: faq.md
-  - Contributing: contributing.md
 - Feature Matrix: feature-matrix.md
 - Installation And Setup: installation-and-setup.md
 - Quickstart - Windows: quickstart-windows.md
 - Quickstart - Mac: quickstart-mac.md
 - Scaffolder: scaffolder.md
 - Code Actions: code-actions.md
-- Analysis:
-  - Overview: analysis/overview.md
-  - Disabling Analysers: analysis/disabling-analysers.md
+- General:
+  - Support: support.md
+  - Licensing: licensing.md
+  - ReSharper Compatibility: resharper-compatibility.md
+  - FAQ: faq.md
+  - Contributing: contributing.md
 - Image Management:
   - Overview: image-management/overview.md
   - Managing Images Assets: image-management/managing-image-assets.md
@@ -88,6 +85,8 @@ nav:
     - Adornments: xamarin-forms/adornments.md
   - Automatic Type Inference: xamarin-forms/automatic-type-inference.md
   - Analysis:
+    - Overview: xamarin-forms/analysis/overview.md
+    - Disabling Analysers: xamarin-forms/analysis/disabling-analysers.md
     - C# Newline Characters: xamarin-forms/analysis/invalid-newline-characters.md
     - Code Behind Fields: xamarin-forms/analysis/code-behind-fields.md
     - CollectionView: xamarin-forms/analysis/collection-view.md
