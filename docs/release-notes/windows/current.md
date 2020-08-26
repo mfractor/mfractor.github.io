@@ -4,6 +4,7 @@
 
 ### Releases (v4.3)
 
+ * [v4.3.1 - Released on August 26th 2020](v4/v4.3.md#v431) - Service release to add `xcasset` catalog support and stabilise text view events.
  * [v4.3.0 - Released on August 6th 2020](v4/v4.3.md#v430) - MFractor 4.3 is a major release that adds includes several new features for tooltips plus lots of bug fixes and overall product improvements.
 
 ### Releases (v4.2)
