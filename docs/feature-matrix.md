@@ -1,12 +1,12 @@
 !!! quote "An overview of all features provided by MFractor"
 
-**Last Updated: Sunday 9th of August 2020**
+**Last Updated: Monday 7th of September 2020**
 
 This feature matrix presents all the features provided by MFractor.
 
 All features are available in MFractor for Visual Studio for Mac. The third column shows the features available to the Windows version.
 
-MFractor currently provides 247 features. We have currently documented 62% of the product features.
+MFractor currently provides 249 features. We have currently documented 61% of the product features.
 
 
 ## Asset Management
@@ -274,6 +274,8 @@ MFractor currently provides 247 features. We have currently documented 62% of th
 | RefreshView Content Should Be Scrollable Layout	| <i class="fas fa-check fa-lg"></i>	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>
 | [CollectionView Requires IsGrouped](https://docs.mfractor.com/xamarin-forms/analysis/collection-view/#collectionview-requires-isgrouped)	| <i class="fas fa-check fa-lg"></i>	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>
 | [Font Reference Is Not Embedded Resource](https://docs.mfractor.com/xamarin-forms/fonts/analysis/#fonts-build-action-is-not-embedded-resource)	| <i class="fas fa-check fa-lg"></i>	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>
+| VisualState Setter TargetName Does Not Exist	| <i class="fas fa-check fa-lg"></i>	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>
+| Grid Axis Definition Can Be Simplified	| <i class="fas fa-check fa-lg"></i>	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>
 
 ### Intellisense
 
@@ -349,7 +351,7 @@ MFractor currently provides 247 features. We have currently documented 62% of th
 | Feature	| Lite	| Pro	| Platforms
 |---	|---	|---	|---
 | [Copy Android Package ID To Clipboard](https://docs.mfractor.com/android/tools/copy-package-id/)	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i>
-| [Open Android Manifest](https://docs.mfractor.com/android/tools/open-android-manifest/)	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i>	
+| [Open Android Manifest](https://docs.mfractor.com/android/tools/open-android-manifest/)	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i>
 
 ## Web
 
