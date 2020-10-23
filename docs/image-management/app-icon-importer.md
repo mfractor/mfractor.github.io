@@ -11,16 +11,20 @@ The **App Icon Importer** utility allows you to easily import the Application La
 
 The importer tool is presented as a dialog that can be invoked from several places in Visual Studio IDE. The more straighforward is from the MFractor main menu:
 
-![](/img/image-management/app-icon-importer-menu.png)
+![](/img/image-management/app-icon-importer-menu-vsmac.png) ![](/img/image-management/app-icon-importer-menu-vswin.png)
 
 !!! tip "Important"
     The MFractor App Icon Importer tool menu option will only be available if the solution has at least one Xamarin.Android or Xamarin.iOS project.
 
 The tool can also be invoked from the context menu of an Android or iOS project, in the `Add` submenu you should find the option for `App Icon`:
 
-![](/img/image-management/app-icon-importer-project.png)
+![](/img/image-management/app-icon-importer-project-vsmac.png) ![](/img/image-management/app-icon-importer-project-vswin.png)
 
-The App Icon Importer dialog Window allows you to load the single image that you use to generate all the required files for the Application icon. There are a few requirements that should be met to be able to import and get the best results:
+The App Icon Importer dialog Window allows you to load the single image that you use to generate all the required files for the Application icon. 
+
+![](/img/image-management/app-icon-importer-main-window.png)
+
+There are a few requirements that should be met to be able to import and get the best results:
 
 * **The image must be a square ratio (1:1)**: the icons for either platform are in square ratio, which means that they have the same width and height. The tool cannot import images that are in this ratio because resizing it would squash its contents. 
 * **The image must be at least 1024x1024**: although you can use a smaller image, using one that is at least 1024 pixels wide and tall ensures that all the images are downscaled without loss of quality. Also, it fits the higher image size on iOS (App Store icon).
