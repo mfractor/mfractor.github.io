@@ -5,6 +5,10 @@
 
 ## Releases (v4)
 
+### Releases (v4.4)
+
+* [v4.4.0 - Released on November 10th 2020](v4/v4.4.md#v440) - MFractor 4.4 is a major release that adds the new App Icon Importer Feature, allowing you to easily import application icons into your projects.
+
 ### Releases (v4.3)
 
  * [v4.3.3 - Released on September 24th 2020](v4/v4.3.md#v433) - Fixes a bug where links within tooltips sometimes would not clickable.

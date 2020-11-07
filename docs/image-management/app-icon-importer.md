@@ -54,7 +54,14 @@ Cleanup rules varies from platform:
 The App Icon Importer uses standard conventions for naming and placing the image files of the application icon. This varies depending on the platform:
 
 * **Android launcher icons** are imported to the `mipmap` Resources folders for the `ldpi`, `mdpi`, `hdpi`, `xhdpi`, `xxhdpi` and `xxxhdpi` density folders with the file name `icon.png`.
-* **iOS App Icons** are imported to the default Asset Catalog (at `[root project folder]/Assets.xcassets`) on the `AppIcon.appiconset` folder. Each icon are named with the prefix `appicon-` with the device and idiom identifier appended to the name.
+
+!!! note
+    Android adaptive launcher icons are currently not supported on this first iteration of the icon importer. We're planning on adding it support on future versions of MFractor.
+
+* **iOS App Icons** are imported to the default Asset Catalog (at `[root project folder]/Assets.xcassets`) on the `AppIcon.appiconset` folder. Each icon are named with the prefix `appicon-` with the device and idiom identifier appended to the name. For additional information on App Icons check out:
+    * [App Icon - Icons and Images - iOS Human Interface Guidelines](https://developer.apple.com/design/human-interface-guidelines/ios/icons-and-images/app-icon/): design guidelines and principles for designers on creating App Icons for iOS.
+    * [App Icons on iPhone, iPad and Apple Watch (Technical QA1686)](https://developer.apple.com/library/archive/qa/qa1686/_index.html): an in-depth technical specs for setting up App Icons for Apple platforms.
 
 !!! note
     We've chosen to simplify the app icon importer implementation by using standard conventions. If you find you need further customization please leave a feedback at our [GitHub issues page](https://github.com/mfractor/mfractor-feedback/issues), so we can consider future improvements for this feature.
+
