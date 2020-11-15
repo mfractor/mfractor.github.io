@@ -4,11 +4,11 @@
 
 ### Releases (v4.4)
 
-* [v4.4.0 - Released on November 10th 2020](v4/v4.4.md#v440) - MFractor 4.4 is a major release that adds the new App Icon Importer Feature, allowing you to easily import application icons into your projects.
+* [v4.4.0 - Released on November 16th 2020](v4/v4.4.md#v440) - MFractor 4.4 is a major release that adds the new App Icon Importer Feature, allowing you to easily import application icons into your projects.
 
 ### Releases (v4.3)
 
- * [v4.3.3 - Released on September 24th 2020](v4/v4.3.md#v433) - Version alignment with Visual Studio Mac. 
+ * [v4.3.3 - Released on September 24th 2020](v4/v4.3.md#v433) - Version alignment with Visual Studio Mac.
  * [v4.3.2 - Released on September 8th 2020](v4/v4.3.md#v432) - Fixes a bug in binding context resolution.
  * [v4.3.1 - Released on August 26th 2020](v4/v4.3.md#v431) - Service release to add `xcasset` catalog support and stabilise text view events.
  * [v4.3.0 - Released on August 6th 2020](v4/v4.3.md#v430) - MFractor 4.3 is a major release that adds includes several new features for tooltips plus lots of bug fixes and overall product improvements.
