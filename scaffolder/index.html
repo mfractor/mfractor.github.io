@@ -1,4 +1,6 @@
 
+
+
 <!doctype html>
 <html lang="en" class="no-js">
   <head>
@@ -13,7 +15,7 @@
         <meta name="author" content="MFractor Pty Ltd">
       
       <link rel="shortcut icon" href="../images/favicon.ico">
-      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-6.1.0">
+      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-5.4.0">
     
     
       
@@ -21,21 +23,19 @@
       
     
     
-      <link rel="stylesheet" href="../assets/stylesheets/main.bc7e593a.min.css">
+      <link rel="stylesheet" href="../assets/stylesheets/main.fe0cca5b.min.css">
+      
+        <link rel="stylesheet" href="../assets/stylesheets/palette.a46bcfb3.min.css">
+      
       
         
-        <link rel="stylesheet" href="../assets/stylesheets/palette.ab28b872.min.css">
         
-          
-          
-          <meta name="theme-color" content="#2094f3">
-        
+        <meta name="theme-color" content="#2196f3">
       
     
     
     
       
-        
         <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&display=fallback">
         <style>body,input{font-family:"Roboto",-apple-system,BlinkMacSystemFont,Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono",SFMono-Regular,Consolas,Menlo,monospace}</style>
@@ -50,7 +50,7 @@
     
       
         
-<script>window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)},ga.l=+new Date,ga("create","UA-71910290-3","docs.mfractor.com"),ga("set","anonymizeIp",!0),ga("send","pageview"),document.addEventListener("DOMContentLoaded",function(){document.forms.search&&document.forms.search.query.addEventListener("blur",function(){if(this.value){var e=document.location.pathname;ga("send","pageview",e+"?q="+this.value)}})}),document.addEventListener("DOMContentSwitch",function(){ga("send","pageview",document.location.pathname)})</script>
+<script>window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)},ga.l=+new Date,ga("create","UA-71910290-3","docs.mfractor.com"),ga("set","anonymizeIp",!0),ga("send","pageview"),document.addEventListener("DOMContentLoaded",function(){document.forms.search&&document.forms.search.query.addEventListener("blur",function(){if(this.value){var e=document.location.pathname;ga("send","pageview",e+"?q="+this.value)}})}),document.addEventListener("DOMContentSwitch",function(){ga("send","pageview")})</script>
 <script async src="https://www.google-analytics.com/analytics.js"></script>
       
     
@@ -61,11 +61,9 @@
     
     
     
-    
-    
     <body dir="ltr" data-md-color-scheme="" data-md-color-primary="blue" data-md-color-accent="">
-      
   
+    
     <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
     <label class="md-overlay" for="__drawer"></label>
@@ -81,9 +79,7 @@
       
     </div>
     
-      
-
-<header class="md-header" data-md-component="header">
+      <header class="md-header" data-md-component="header">
   <nav class="md-header-nav md-grid" aria-label="Header">
     <a href=".." title="MFractor Documentation" class="md-header-nav__button md-logo" aria-label="MFractor Documentation">
       
@@ -157,6 +153,8 @@
     
     <div class="md-container" data-md-component="container">
       
+        
+      
       
         
       
@@ -167,9 +165,7 @@
               <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
                 <div class="md-sidebar__scrollwrap">
                   <div class="md-sidebar__inner">
-                    
-
-<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+                    <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
     <a href=".." title="MFractor Documentation" class="md-nav__button md-logo" aria-label="MFractor Documentation">
       
@@ -200,7 +196,7 @@
 
 
   <li class="md-nav__item">
-    <a href=".." class="md-nav__link">
+    <a href=".." title="Home" class="md-nav__link">
       Home
     </a>
   </li>
@@ -212,7 +208,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../feature-matrix/" class="md-nav__link">
+    <a href="../feature-matrix/" title="Feature Matrix" class="md-nav__link">
       Feature Matrix
     </a>
   </li>
@@ -224,7 +220,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../installation-and-setup/" class="md-nav__link">
+    <a href="../installation-and-setup/" title="Installation And Setup" class="md-nav__link">
       Installation And Setup
     </a>
   </li>
@@ -236,7 +232,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../quickstart-windows/" class="md-nav__link">
+    <a href="../quickstart-windows/" title="Quickstart - Windows" class="md-nav__link">
       Quickstart - Windows
     </a>
   </li>
@@ -248,7 +244,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../quickstart-mac/" class="md-nav__link">
+    <a href="../quickstart-mac/" title="Quickstart - Mac" class="md-nav__link">
       Quickstart - Mac
     </a>
   </li>
@@ -268,10 +264,12 @@
     
       <label class="md-nav__link md-nav__link--active" for="__toc">
         Scaffolder
-        <span class="md-nav__icon md-icon"></span>
+        <span class="md-nav__icon md-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 9h14V7H3v2m0 4h14v-2H3v2m0 4h14v-2H3v2m16 0h2v-2h-2v2m0-10v2h2V7h-2m0 6h2v-2h-2v2z"/></svg>
+        </span>
       </label>
     
-    <a href="./" class="md-nav__link md-nav__link--active">
+    <a href="./" title="Scaffolder" class="md-nav__link md-nav__link--active">
       Scaffolder
     </a>
     
@@ -281,7 +279,9 @@
   
   
     <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
+      <span class="md-nav__icon md-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </span>
       Table of contents
     </label>
     <ul class="md-nav__list" data-md-scrollfix>
@@ -354,7 +354,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../code-actions/" class="md-nav__link">
+    <a href="../code-actions/" title="Code Actions" class="md-nav__link">
       Code Actions
     </a>
   </li>
@@ -371,11 +371,15 @@
     
     <label class="md-nav__link" for="nav-8">
       General
-      <span class="md-nav__icon md-icon"></span>
+      <span class="md-nav__icon md-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8.59 16.58L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.42z"/></svg>
+      </span>
     </label>
     <nav class="md-nav" aria-label="General" data-md-level="1">
       <label class="md-nav__title" for="nav-8">
-        <span class="md-nav__icon md-icon"></span>
+        <span class="md-nav__icon md-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+        </span>
         General
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
@@ -387,7 +391,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../support/" class="md-nav__link">
+    <a href="../support/" title="Support" class="md-nav__link">
       Support
     </a>
   </li>
@@ -399,7 +403,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../licensing/" class="md-nav__link">
+    <a href="../licensing/" title="Licensing" class="md-nav__link">
       Licensing
     </a>
   </li>
@@ -411,7 +415,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../resharper-compatibility/" class="md-nav__link">
+    <a href="../resharper-compatibility/" title="ReSharper Compatibility" class="md-nav__link">
       ReSharper Compatibility
     </a>
   </li>
@@ -423,7 +427,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../faq/" class="md-nav__link">
+    <a href="../faq/" title="FAQ" class="md-nav__link">
       FAQ
     </a>
   </li>
@@ -435,7 +439,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../contributing/" class="md-nav__link">
+    <a href="../contributing/" title="Contributing" class="md-nav__link">
       Contributing
     </a>
   </li>
@@ -457,11 +461,15 @@
     
     <label class="md-nav__link" for="nav-9">
       Image Management
-      <span class="md-nav__icon md-icon"></span>
+      <span class="md-nav__icon md-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8.59 16.58L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.42z"/></svg>
+      </span>
     </label>
     <nav class="md-nav" aria-label="Image Management" data-md-level="1">
       <label class="md-nav__title" for="nav-9">
-        <span class="md-nav__icon md-icon"></span>
+        <span class="md-nav__icon md-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+        </span>
         Image Management
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
@@ -473,7 +481,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../image-management/overview/" class="md-nav__link">
+    <a href="../image-management/overview/" title="Overview" class="md-nav__link">
       Overview
     </a>
   </li>
@@ -485,7 +493,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../image-management/managing-image-assets/" class="md-nav__link">
+    <a href="../image-management/managing-image-assets/" title="Managing Images Assets" class="md-nav__link">
       Managing Images Assets
     </a>
   </li>
@@ -497,7 +505,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../image-management/image-importer/" class="md-nav__link">
+    <a href="../image-management/image-importer/" title="Importing Images" class="md-nav__link">
       Importing Images
     </a>
   </li>
@@ -509,7 +517,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../image-management/app-icon-importer/" class="md-nav__link">
+    <a href="../image-management/app-icon-importer/" title="Importing App Icon" class="md-nav__link">
       Importing App Icon
     </a>
   </li>
@@ -521,7 +529,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../image-management/deleting-image-assets/" class="md-nav__link">
+    <a href="../image-management/deleting-image-assets/" title="Deleting Image Assets" class="md-nav__link">
       Deleting Image Assets
     </a>
   </li>
@@ -533,7 +541,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../image-management/optimising-image-assets/" class="md-nav__link">
+    <a href="../image-management/optimising-image-assets/" title="Optimising Image Assets" class="md-nav__link">
       Optimising Image Assets
     </a>
   </li>
@@ -545,7 +553,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../image-management/image-tooltips/" class="md-nav__link">
+    <a href="../image-management/image-tooltips/" title="Image Tooltips" class="md-nav__link">
       Image Tooltips
     </a>
   </li>
@@ -562,11 +570,15 @@
     
     <label class="md-nav__link" for="nav-9-8">
       Third Party
-      <span class="md-nav__icon md-icon"></span>
+      <span class="md-nav__icon md-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8.59 16.58L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.42z"/></svg>
+      </span>
     </label>
     <nav class="md-nav" aria-label="Third Party" data-md-level="2">
       <label class="md-nav__title" for="nav-9-8">
-        <span class="md-nav__icon md-icon"></span>
+        <span class="md-nav__icon md-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+        </span>
         Third Party
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
@@ -578,7 +590,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../image-management/third-party/mobile-build-tools/" class="md-nav__link">
+    <a href="../image-management/third-party/mobile-build-tools/" title="Mobile.BuildTools" class="md-nav__link">
       Mobile.BuildTools
     </a>
   </li>
@@ -590,7 +602,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../image-management/third-party/resizetizer/" class="md-nav__link">
+    <a href="../image-management/third-party/resizetizer/" title="ResizetizerNT" class="md-nav__link">
       ResizetizerNT
     </a>
   </li>
@@ -617,11 +629,15 @@
     
     <label class="md-nav__link" for="nav-10">
       C#
-      <span class="md-nav__icon md-icon"></span>
+      <span class="md-nav__icon md-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8.59 16.58L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.42z"/></svg>
+      </span>
     </label>
     <nav class="md-nav" aria-label="C#" data-md-level="1">
       <label class="md-nav__title" for="nav-10">
-        <span class="md-nav__icon md-icon"></span>
+        <span class="md-nav__icon md-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+        </span>
         C#
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
@@ -633,7 +649,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../csharp/create-class-from-clipboard/" class="md-nav__link">
+    <a href="../csharp/create-class-from-clipboard/" title="Create Class From Clipboard" class="md-nav__link">
       Create Class From Clipboard
     </a>
   </li>
@@ -650,11 +666,15 @@
     
     <label class="md-nav__link" for="nav-10-2">
       Code Actions
-      <span class="md-nav__icon md-icon"></span>
+      <span class="md-nav__icon md-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8.59 16.58L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.42z"/></svg>
+      </span>
     </label>
     <nav class="md-nav" aria-label="Code Actions" data-md-level="2">
       <label class="md-nav__title" for="nav-10-2">
-        <span class="md-nav__icon md-icon"></span>
+        <span class="md-nav__icon md-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+        </span>
         Code Actions
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
@@ -666,7 +686,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../csharp/code-actions/generate-interface-implementation/" class="md-nav__link">
+    <a href="../csharp/code-actions/generate-interface-implementation/" title="Generate Interface Implementation" class="md-nav__link">
       Generate Interface Implementation
     </a>
   </li>
@@ -678,7 +698,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../csharp/code-actions/simplify-qualified-types/" class="md-nav__link">
+    <a href="../csharp/code-actions/simplify-qualified-types/" title="Simplifying Qualified Types" class="md-nav__link">
       Simplifying Qualified Types
     </a>
   </li>
@@ -690,7 +710,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../csharp/code-actions/locate-in-solution-explorer/" class="md-nav__link">
+    <a href="../csharp/code-actions/locate-in-solution-explorer/" title="Locate In Solution Explorer" class="md-nav__link">
       Locate In Solution Explorer
     </a>
   </li>
@@ -702,7 +722,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../csharp/code-actions/create-lazy-accessor/" class="md-nav__link">
+    <a href="../csharp/code-actions/create-lazy-accessor/" title="Create Lazy Accessor" class="md-nav__link">
       Create Lazy Accessor
     </a>
   </li>
@@ -714,7 +734,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../csharp/code-actions/convert-to-interpolated-string/" class="md-nav__link">
+    <a href="../csharp/code-actions/convert-to-interpolated-string/" title="Convert To Interpolated String" class="md-nav__link">
       Convert To Interpolated String
     </a>
   </li>
@@ -726,7 +746,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../csharp/code-actions/align-namespace-to-folder-path/" class="md-nav__link">
+    <a href="../csharp/code-actions/align-namespace-to-folder-path/" title="Align Namespace To Folder Path" class="md-nav__link">
       Align Namespace To Folder Path
     </a>
   </li>
@@ -738,7 +758,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../csharp/code-actions/invert-event-handler/" class="md-nav__link">
+    <a href="../csharp/code-actions/invert-event-handler/" title="Invert Event Handler" class="md-nav__link">
       Invert Event Handler
     </a>
   </li>
@@ -750,7 +770,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../csharp/code-actions/generate-readonly-constructor/" class="md-nav__link">
+    <a href="../csharp/code-actions/generate-readonly-constructor/" title="Generate ReadOnly Constructor" class="md-nav__link">
       Generate ReadOnly Constructor
     </a>
   </li>
@@ -762,7 +782,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../csharp/code-actions/select-string-span/" class="md-nav__link">
+    <a href="../csharp/code-actions/select-string-span/" title="Select String Span" class="md-nav__link">
       Select String Span
     </a>
   </li>
@@ -774,7 +794,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../csharp/code-actions/copy-var-type-to-clipboard/" class="md-nav__link">
+    <a href="../csharp/code-actions/copy-var-type-to-clipboard/" title="Copy Var Type To Clipboard" class="md-nav__link">
       Copy Var Type To Clipboard
     </a>
   </li>
@@ -801,11 +821,15 @@
     
     <label class="md-nav__link" for="nav-11">
       Android
-      <span class="md-nav__icon md-icon"></span>
+      <span class="md-nav__icon md-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8.59 16.58L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.42z"/></svg>
+      </span>
     </label>
     <nav class="md-nav" aria-label="Android" data-md-level="1">
       <label class="md-nav__title" for="nav-11">
-        <span class="md-nav__icon md-icon"></span>
+        <span class="md-nav__icon md-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+        </span>
         Android
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
@@ -817,7 +841,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../android/tools/copy-package-id/" class="md-nav__link">
+    <a href="../android/tools/copy-package-id/" title="Copy Package ID" class="md-nav__link">
       Copy Package ID
     </a>
   </li>
@@ -829,7 +853,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../android/tools/open-android-manifest/" class="md-nav__link">
+    <a href="../android/tools/open-android-manifest/" title="Open Android Manifest" class="md-nav__link">
       Open Android Manifest
     </a>
   </li>
@@ -851,11 +875,15 @@
     
     <label class="md-nav__link" for="nav-12">
       iOS
-      <span class="md-nav__icon md-icon"></span>
+      <span class="md-nav__icon md-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8.59 16.58L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.42z"/></svg>
+      </span>
     </label>
     <nav class="md-nav" aria-label="iOS" data-md-level="1">
       <label class="md-nav__title" for="nav-12">
-        <span class="md-nav__icon md-icon"></span>
+        <span class="md-nav__icon md-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+        </span>
         iOS
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
@@ -872,11 +900,15 @@
     
     <label class="md-nav__link" for="nav-12-1">
       Tools
-      <span class="md-nav__icon md-icon"></span>
+      <span class="md-nav__icon md-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8.59 16.58L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.42z"/></svg>
+      </span>
     </label>
     <nav class="md-nav" aria-label="Tools" data-md-level="2">
       <label class="md-nav__title" for="nav-12-1">
-        <span class="md-nav__icon md-icon"></span>
+        <span class="md-nav__icon md-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+        </span>
         Tools
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
@@ -888,7 +920,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../ios/tools/copy-bundle-id/" class="md-nav__link">
+    <a href="../ios/tools/copy-bundle-id/" title="Copy Bundle ID" class="md-nav__link">
       Copy Bundle ID
     </a>
   </li>
@@ -915,11 +947,15 @@
     
     <label class="md-nav__link" for="nav-13">
       Xamarin.Forms
-      <span class="md-nav__icon md-icon"></span>
+      <span class="md-nav__icon md-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8.59 16.58L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.42z"/></svg>
+      </span>
     </label>
     <nav class="md-nav" aria-label="Xamarin.Forms" data-md-level="1">
       <label class="md-nav__title" for="nav-13">
-        <span class="md-nav__icon md-icon"></span>
+        <span class="md-nav__icon md-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+        </span>
         Xamarin.Forms
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
@@ -931,7 +967,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../xamarin-forms/overview/" class="md-nav__link">
+    <a href="../xamarin-forms/overview/" title="Overview" class="md-nav__link">
       Overview
     </a>
   </li>
@@ -948,11 +984,15 @@
     
     <label class="md-nav__link" for="nav-13-2">
       XAML Editor
-      <span class="md-nav__icon md-icon"></span>
+      <span class="md-nav__icon md-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8.59 16.58L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.42z"/></svg>
+      </span>
     </label>
     <nav class="md-nav" aria-label="XAML Editor" data-md-level="2">
       <label class="md-nav__title" for="nav-13-2">
-        <span class="md-nav__icon md-icon"></span>
+        <span class="md-nav__icon md-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+        </span>
         XAML Editor
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
@@ -964,7 +1004,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../xamarin-forms/xaml-intellisense/" class="md-nav__link">
+    <a href="../xamarin-forms/xaml-intellisense/" title="XAML IntelliSense" class="md-nav__link">
       XAML IntelliSense
     </a>
   </li>
@@ -976,7 +1016,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../xamarin-forms/adornments/" class="md-nav__link">
+    <a href="../xamarin-forms/adornments/" title="Adornments" class="md-nav__link">
       Adornments
     </a>
   </li>
@@ -993,7 +1033,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../xamarin-forms/automatic-type-inference/" class="md-nav__link">
+    <a href="../xamarin-forms/automatic-type-inference/" title="Automatic Type Inference" class="md-nav__link">
       Automatic Type Inference
     </a>
   </li>
@@ -1010,11 +1050,15 @@
     
     <label class="md-nav__link" for="nav-13-4">
       Analysis
-      <span class="md-nav__icon md-icon"></span>
+      <span class="md-nav__icon md-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8.59 16.58L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.42z"/></svg>
+      </span>
     </label>
     <nav class="md-nav" aria-label="Analysis" data-md-level="2">
       <label class="md-nav__title" for="nav-13-4">
-        <span class="md-nav__icon md-icon"></span>
+        <span class="md-nav__icon md-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+        </span>
         Analysis
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
@@ -1026,7 +1070,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../xamarin-forms/analysis/overview/" class="md-nav__link">
+    <a href="../xamarin-forms/analysis/overview/" title="Overview" class="md-nav__link">
       Overview
     </a>
   </li>
@@ -1038,7 +1082,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../xamarin-forms/analysis/disabling-analysers/" class="md-nav__link">
+    <a href="../xamarin-forms/analysis/disabling-analysers/" title="Disabling Analysers" class="md-nav__link">
       Disabling Analysers
     </a>
   </li>
@@ -1050,7 +1094,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../xamarin-forms/analysis/invalid-newline-characters/" class="md-nav__link">
+    <a href="../xamarin-forms/analysis/invalid-newline-characters/" title="C# Newline Characters" class="md-nav__link">
       C# Newline Characters
     </a>
   </li>
@@ -1062,7 +1106,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../xamarin-forms/analysis/code-behind-fields/" class="md-nav__link">
+    <a href="../xamarin-forms/analysis/code-behind-fields/" title="Code Behind Fields" class="md-nav__link">
       Code Behind Fields
     </a>
   </li>
@@ -1074,7 +1118,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../xamarin-forms/analysis/collection-view/" class="md-nav__link">
+    <a href="../xamarin-forms/analysis/collection-view/" title="CollectionView" class="md-nav__link">
       CollectionView
     </a>
   </li>
@@ -1086,7 +1130,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../xamarin-forms/analysis/slider/" class="md-nav__link">
+    <a href="../xamarin-forms/analysis/slider/" title="Slider" class="md-nav__link">
       Slider
     </a>
   </li>
@@ -1098,7 +1142,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../xamarin-forms/analysis/events/" class="md-nav__link">
+    <a href="../xamarin-forms/analysis/events/" title="Events" class="md-nav__link">
       Events
     </a>
   </li>
@@ -1120,11 +1164,15 @@
     
     <label class="md-nav__link" for="nav-13-5">
       Binding Context Resolution
-      <span class="md-nav__icon md-icon"></span>
+      <span class="md-nav__icon md-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8.59 16.58L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.42z"/></svg>
+      </span>
     </label>
     <nav class="md-nav" aria-label="Binding Context Resolution" data-md-level="2">
       <label class="md-nav__title" for="nav-13-5">
-        <span class="md-nav__icon md-icon"></span>
+        <span class="md-nav__icon md-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+        </span>
         Binding Context Resolution
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
@@ -1136,7 +1184,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../xamarin-forms/binding-context-resolution/overview/" class="md-nav__link">
+    <a href="../xamarin-forms/binding-context-resolution/overview/" title="Overview" class="md-nav__link">
       Overview
     </a>
   </li>
@@ -1148,7 +1196,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../xamarin-forms/binding-context-resolution/automatic-viewmodel-detection/" class="md-nav__link">
+    <a href="../xamarin-forms/binding-context-resolution/automatic-viewmodel-detection/" title="Automatic ViewModel Detection" class="md-nav__link">
       Automatic ViewModel Detection
     </a>
   </li>
@@ -1160,7 +1208,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../xamarin-forms/binding-context-resolution/binding-context-evaluation/" class="md-nav__link">
+    <a href="../xamarin-forms/binding-context-resolution/binding-context-evaluation/" title="BindingContext Evaluation" class="md-nav__link">
       BindingContext Evaluation
     </a>
   </li>
@@ -1172,7 +1220,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../xamarin-forms/binding-context-resolution/data-template-binding-context-resolution/" class="md-nav__link">
+    <a href="../xamarin-forms/binding-context-resolution/data-template-binding-context-resolution/" title="DataTemplate Binding Context Resolution" class="md-nav__link">
       DataTemplate Binding Context Resolution
     </a>
   </li>
@@ -1184,7 +1232,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../xamarin-forms/binding-context-resolution/design-time-binding-context-attribute/" class="md-nav__link">
+    <a href="../xamarin-forms/binding-context-resolution/design-time-binding-context-attribute/" title="Using The DesignTimeBindingContextAttribute" class="md-nav__link">
       Using The DesignTimeBindingContextAttribute
     </a>
   </li>
@@ -1196,7 +1244,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../xamarin-forms/binding-context-resolution/cross-project-binding-context-resolution/" class="md-nav__link">
+    <a href="../xamarin-forms/binding-context-resolution/cross-project-binding-context-resolution/" title="Cross Project Binding Context Resolution" class="md-nav__link">
       Cross Project Binding Context Resolution
     </a>
   </li>
@@ -1218,11 +1266,15 @@
     
     <label class="md-nav__link" for="nav-13-6">
       Working With ViewModels
-      <span class="md-nav__icon md-icon"></span>
+      <span class="md-nav__icon md-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8.59 16.58L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.42z"/></svg>
+      </span>
     </label>
     <nav class="md-nav" aria-label="Working With ViewModels" data-md-level="2">
       <label class="md-nav__title" for="nav-13-6">
-        <span class="md-nav__icon md-icon"></span>
+        <span class="md-nav__icon md-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+        </span>
         Working With ViewModels
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
@@ -1234,7 +1286,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../xamarin-forms/working-with-viewmodels/view-viewmodel-navigation/" class="md-nav__link">
+    <a href="../xamarin-forms/working-with-viewmodels/view-viewmodel-navigation/" title="View-ViewModel Navigation" class="md-nav__link">
       View-ViewModel Navigation
     </a>
   </li>
@@ -1246,7 +1298,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../xamarin-forms/working-with-viewmodels/data-binding-intellisense/" class="md-nav__link">
+    <a href="../xamarin-forms/working-with-viewmodels/data-binding-intellisense/" title="Data Binding IntelliSense" class="md-nav__link">
       Data Binding IntelliSense
     </a>
   </li>
@@ -1258,7 +1310,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../xamarin-forms/working-with-viewmodels/data-binding-analysis/" class="md-nav__link">
+    <a href="../xamarin-forms/working-with-viewmodels/data-binding-analysis/" title="Data Binding Analysis" class="md-nav__link">
       Data Binding Analysis
     </a>
   </li>
@@ -1270,7 +1322,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../xamarin-forms/working-with-viewmodels/generating-properties-and-commands/" class="md-nav__link">
+    <a href="../xamarin-forms/working-with-viewmodels/generating-properties-and-commands/" title="Generating Properties/Commands" class="md-nav__link">
       Generating Properties/Commands
     </a>
   </li>
@@ -1282,7 +1334,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../xamarin-forms/working-with-viewmodels/mvvm-wizard/" class="md-nav__link">
+    <a href="../xamarin-forms/working-with-viewmodels/mvvm-wizard/" title="MVVM Wizard" class="md-nav__link">
       MVVM Wizard
     </a>
   </li>
@@ -1304,11 +1356,15 @@
     
     <label class="md-nav__link" for="nav-13-7">
       Working with Styles
-      <span class="md-nav__icon md-icon"></span>
+      <span class="md-nav__icon md-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8.59 16.58L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.42z"/></svg>
+      </span>
     </label>
     <nav class="md-nav" aria-label="Working with Styles" data-md-level="2">
       <label class="md-nav__title" for="nav-13-7">
-        <span class="md-nav__icon md-icon"></span>
+        <span class="md-nav__icon md-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+        </span>
         Working with Styles
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
@@ -1320,7 +1376,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../xamarin-forms/working-with-styles/extracting-styles/" class="md-nav__link">
+    <a href="../xamarin-forms/working-with-styles/extracting-styles/" title="Extracting Styles" class="md-nav__link">
       Extracting Styles
     </a>
   </li>
@@ -1332,7 +1388,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../xamarin-forms/working-with-styles/matching-style-analysis/" class="md-nav__link">
+    <a href="../xamarin-forms/working-with-styles/matching-style-analysis/" title="Matching Style Analysis" class="md-nav__link">
       Matching Style Analysis
     </a>
   </li>
@@ -1344,7 +1400,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../xamarin-forms/working-with-styles/analysis/" class="md-nav__link">
+    <a href="../xamarin-forms/working-with-styles/analysis/" title="Analysis" class="md-nav__link">
       Analysis
     </a>
   </li>
@@ -1366,11 +1422,15 @@
     
     <label class="md-nav__link" for="nav-13-8">
       Custom Controls
-      <span class="md-nav__icon md-icon"></span>
+      <span class="md-nav__icon md-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8.59 16.58L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.42z"/></svg>
+      </span>
     </label>
     <nav class="md-nav" aria-label="Custom Controls" data-md-level="2">
       <label class="md-nav__title" for="nav-13-8">
-        <span class="md-nav__icon md-icon"></span>
+        <span class="md-nav__icon md-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+        </span>
         Custom Controls
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
@@ -1382,7 +1442,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../xamarin-forms/custom-controls/extracting-custom-controls/" class="md-nav__link">
+    <a href="../xamarin-forms/custom-controls/extracting-custom-controls/" title="Extracting Custom Controls" class="md-nav__link">
       Extracting Custom Controls
     </a>
   </li>
@@ -1394,7 +1454,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../xamarin-forms/custom-controls/bindable-property-wizard/" class="md-nav__link">
+    <a href="../xamarin-forms/custom-controls/bindable-property-wizard/" title="Bindable Property Wizard" class="md-nav__link">
       Bindable Property Wizard
     </a>
   </li>
@@ -1406,7 +1466,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../xamarin-forms/custom-controls/attached-property-wizard/" class="md-nav__link">
+    <a href="../xamarin-forms/custom-controls/attached-property-wizard/" title="Attached Property Wizard" class="md-nav__link">
       Attached Property Wizard
     </a>
   </li>
@@ -1428,11 +1488,15 @@
     
     <label class="md-nav__link" for="nav-13-9">
       Custom Renderers
-      <span class="md-nav__icon md-icon"></span>
+      <span class="md-nav__icon md-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8.59 16.58L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.42z"/></svg>
+      </span>
     </label>
     <nav class="md-nav" aria-label="Custom Renderers" data-md-level="2">
       <label class="md-nav__title" for="nav-13-9">
-        <span class="md-nav__icon md-icon"></span>
+        <span class="md-nav__icon md-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+        </span>
         Custom Renderers
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
@@ -1444,7 +1508,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../xamarin-forms/custom-renderers/generate-custom-renderers/" class="md-nav__link">
+    <a href="../xamarin-forms/custom-renderers/generate-custom-renderers/" title="Generate Custom Renderers" class="md-nav__link">
       Generate Custom Renderers
     </a>
   </li>
@@ -1456,7 +1520,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../xamarin-forms/custom-renderers/find-custom-renderers/" class="md-nav__link">
+    <a href="../xamarin-forms/custom-renderers/find-custom-renderers/" title="Find Custom Renderers" class="md-nav__link">
       Find Custom Renderers
     </a>
   </li>
@@ -1478,11 +1542,15 @@
     
     <label class="md-nav__link" for="nav-13-10">
       Value Converters
-      <span class="md-nav__icon md-icon"></span>
+      <span class="md-nav__icon md-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8.59 16.58L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.42z"/></svg>
+      </span>
     </label>
     <nav class="md-nav" aria-label="Value Converters" data-md-level="2">
       <label class="md-nav__title" for="nav-13-10">
-        <span class="md-nav__icon md-icon"></span>
+        <span class="md-nav__icon md-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+        </span>
         Value Converters
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
@@ -1494,7 +1562,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../xamarin-forms/value-converters/value-converter-wizard/" class="md-nav__link">
+    <a href="../xamarin-forms/value-converters/value-converter-wizard/" title="Value Converter Wizard" class="md-nav__link">
       Value Converter Wizard
     </a>
   </li>
@@ -1516,11 +1584,15 @@
     
     <label class="md-nav__link" for="nav-13-11">
       Grids
-      <span class="md-nav__icon md-icon"></span>
+      <span class="md-nav__icon md-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8.59 16.58L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.42z"/></svg>
+      </span>
     </label>
     <nav class="md-nav" aria-label="Grids" data-md-level="2">
       <label class="md-nav__title" for="nav-13-11">
-        <span class="md-nav__icon md-icon"></span>
+        <span class="md-nav__icon md-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+        </span>
         Grids
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
@@ -1532,7 +1604,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../xamarin-forms/grids/intellisense/" class="md-nav__link">
+    <a href="../xamarin-forms/grids/intellisense/" title="Grid Intellisense Commands" class="md-nav__link">
       Grid Intellisense Commands
     </a>
   </li>
@@ -1544,7 +1616,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../xamarin-forms/grids/analysis/" class="md-nav__link">
+    <a href="../xamarin-forms/grids/analysis/" title="Grid Analysis" class="md-nav__link">
       Grid Analysis
     </a>
   </li>
@@ -1556,7 +1628,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../xamarin-forms/grids/convert-stacklayout-to-grid/" class="md-nav__link">
+    <a href="../xamarin-forms/grids/convert-stacklayout-to-grid/" title="Convert StackLayout to Grid" class="md-nav__link">
       Convert StackLayout to Grid
     </a>
   </li>
@@ -1568,7 +1640,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../xamarin-forms/grids/tooltips/" class="md-nav__link">
+    <a href="../xamarin-forms/grids/tooltips/" title="Tooltips" class="md-nav__link">
       Tooltips
     </a>
   </li>
@@ -1580,7 +1652,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../xamarin-forms/grids/adornments/" class="md-nav__link">
+    <a href="../xamarin-forms/grids/adornments/" title="Adornments" class="md-nav__link">
       Adornments
     </a>
   </li>
@@ -1592,7 +1664,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../xamarin-forms/grids/shorthand-declaration-refactorings/" class="md-nav__link">
+    <a href="../xamarin-forms/grids/shorthand-declaration-refactorings/" title="Shorthand Declaration Refactorings" class="md-nav__link">
       Shorthand Declaration Refactorings
     </a>
   </li>
@@ -1604,7 +1676,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../xamarin-forms/grids/insert-row-columns/" class="md-nav__link">
+    <a href="../xamarin-forms/grids/insert-row-columns/" title="Insert Grid Row/Column" class="md-nav__link">
       Insert Grid Row/Column
     </a>
   </li>
@@ -1616,7 +1688,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../xamarin-forms/grids/delete-row-columns/" class="md-nav__link">
+    <a href="../xamarin-forms/grids/delete-row-columns/" title="Delete Grid Row/Column" class="md-nav__link">
       Delete Grid Row/Column
     </a>
   </li>
@@ -1638,11 +1710,15 @@
     
     <label class="md-nav__link" for="nav-13-12">
       Static Resources
-      <span class="md-nav__icon md-icon"></span>
+      <span class="md-nav__icon md-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8.59 16.58L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.42z"/></svg>
+      </span>
     </label>
     <nav class="md-nav" aria-label="Static Resources" data-md-level="2">
       <label class="md-nav__title" for="nav-13-12">
-        <span class="md-nav__icon md-icon"></span>
+        <span class="md-nav__icon md-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+        </span>
         Static Resources
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
@@ -1654,7 +1730,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../xamarin-forms/static-resources/refactoring/" class="md-nav__link">
+    <a href="../xamarin-forms/static-resources/refactoring/" title="Refactoring" class="md-nav__link">
       Refactoring
     </a>
   </li>
@@ -1666,7 +1742,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../xamarin-forms/static-resources/tooltips/" class="md-nav__link">
+    <a href="../xamarin-forms/static-resources/tooltips/" title="Tooltips" class="md-nav__link">
       Tooltips
     </a>
   </li>
@@ -1678,7 +1754,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../xamarin-forms/static-resources/analysis/" class="md-nav__link">
+    <a href="../xamarin-forms/static-resources/analysis/" title="Analysis" class="md-nav__link">
       Analysis
     </a>
   </li>
@@ -1700,11 +1776,15 @@
     
     <label class="md-nav__link" for="nav-13-13">
       Colors
-      <span class="md-nav__icon md-icon"></span>
+      <span class="md-nav__icon md-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8.59 16.58L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.42z"/></svg>
+      </span>
     </label>
     <nav class="md-nav" aria-label="Colors" data-md-level="2">
       <label class="md-nav__title" for="nav-13-13">
-        <span class="md-nav__icon md-icon"></span>
+        <span class="md-nav__icon md-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+        </span>
         Colors
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
@@ -1716,7 +1796,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../xamarin-forms/colors/adornments/" class="md-nav__link">
+    <a href="../xamarin-forms/colors/adornments/" title="Adornments" class="md-nav__link">
       Adornments
     </a>
   </li>
@@ -1728,7 +1808,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../xamarin-forms/colors/tooltips/" class="md-nav__link">
+    <a href="../xamarin-forms/colors/tooltips/" title="Tooltips" class="md-nav__link">
       Tooltips
     </a>
   </li>
@@ -1740,7 +1820,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../xamarin-forms/colors/color-analysis/" class="md-nav__link">
+    <a href="../xamarin-forms/colors/color-analysis/" title="Color Analysis" class="md-nav__link">
       Color Analysis
     </a>
   </li>
@@ -1752,7 +1832,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../xamarin-forms/colors/code-actions/" class="md-nav__link">
+    <a href="../xamarin-forms/colors/code-actions/" title="Color Code Actions" class="md-nav__link">
       Color Code Actions
     </a>
   </li>
@@ -1774,11 +1854,15 @@
     
     <label class="md-nav__link" for="nav-13-14">
       Fonts
-      <span class="md-nav__icon md-icon"></span>
+      <span class="md-nav__icon md-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8.59 16.58L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.42z"/></svg>
+      </span>
     </label>
     <nav class="md-nav" aria-label="Fonts" data-md-level="2">
       <label class="md-nav__title" for="nav-13-14">
-        <span class="md-nav__icon md-icon"></span>
+        <span class="md-nav__icon md-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+        </span>
         Fonts
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
@@ -1790,7 +1874,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../xamarin-forms/fonts/font-family-resolution/" class="md-nav__link">
+    <a href="../xamarin-forms/fonts/font-family-resolution/" title="FontFamily Resolution" class="md-nav__link">
       FontFamily Resolution
     </a>
   </li>
@@ -1802,7 +1886,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../xamarin-forms/fonts/tooltips/" class="md-nav__link">
+    <a href="../xamarin-forms/fonts/tooltips/" title="Tooltips" class="md-nav__link">
       Tooltips
     </a>
   </li>
@@ -1814,7 +1898,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../xamarin-forms/fonts/code-completion/" class="md-nav__link">
+    <a href="../xamarin-forms/fonts/code-completion/" title="Code Completion" class="md-nav__link">
       Code Completion
     </a>
   </li>
@@ -1826,7 +1910,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../xamarin-forms/fonts/analysis/" class="md-nav__link">
+    <a href="../xamarin-forms/fonts/analysis/" title="Analysis" class="md-nav__link">
       Analysis
     </a>
   </li>
@@ -1848,11 +1932,15 @@
     
     <label class="md-nav__link" for="nav-13-15">
       Thicknesses
-      <span class="md-nav__icon md-icon"></span>
+      <span class="md-nav__icon md-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8.59 16.58L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.42z"/></svg>
+      </span>
     </label>
     <nav class="md-nav" aria-label="Thicknesses" data-md-level="2">
       <label class="md-nav__title" for="nav-13-15">
-        <span class="md-nav__icon md-icon"></span>
+        <span class="md-nav__icon md-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+        </span>
         Thicknesses
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
@@ -1864,7 +1952,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../xamarin-forms/thicknesses/tooltips/" class="md-nav__link">
+    <a href="../xamarin-forms/thicknesses/tooltips/" title="Tooltips" class="md-nav__link">
       Tooltips
     </a>
   </li>
@@ -1876,7 +1964,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../xamarin-forms/thicknesses/analysis/" class="md-nav__link">
+    <a href="../xamarin-forms/thicknesses/analysis/" title="Thickness Analysis" class="md-nav__link">
       Thickness Analysis
     </a>
   </li>
@@ -1888,7 +1976,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../xamarin-forms/thicknesses/consolidation/" class="md-nav__link">
+    <a href="../xamarin-forms/thicknesses/consolidation/" title="Consolidate" class="md-nav__link">
       Consolidate
     </a>
   </li>
@@ -1900,7 +1988,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../xamarin-forms/thicknesses/invalid-thickness/" class="md-nav__link">
+    <a href="../xamarin-forms/thicknesses/invalid-thickness/" title="Validate and Simplify" class="md-nav__link">
       Validate and Simplify
     </a>
   </li>
@@ -1922,11 +2010,15 @@
     
     <label class="md-nav__link" for="nav-13-16">
       Images
-      <span class="md-nav__icon md-icon"></span>
+      <span class="md-nav__icon md-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8.59 16.58L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.42z"/></svg>
+      </span>
     </label>
     <nav class="md-nav" aria-label="Images" data-md-level="2">
       <label class="md-nav__title" for="nav-13-16">
-        <span class="md-nav__icon md-icon"></span>
+        <span class="md-nav__icon md-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+        </span>
         Images
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
@@ -1938,7 +2030,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../xamarin-forms/images/analysis/" class="md-nav__link">
+    <a href="../xamarin-forms/images/analysis/" title="Analysis" class="md-nav__link">
       Analysis
     </a>
   </li>
@@ -1950,7 +2042,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../xamarin-forms/images/code-completion/" class="md-nav__link">
+    <a href="../xamarin-forms/images/code-completion/" title="Code Completion" class="md-nav__link">
       Code Completion
     </a>
   </li>
@@ -1962,7 +2054,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../xamarin-forms/images/replace-with-icon-image-source/" class="md-nav__link">
+    <a href="../xamarin-forms/images/replace-with-icon-image-source/" title="Replace With IconImageSource" class="md-nav__link">
       Replace With IconImageSource
     </a>
   </li>
@@ -1989,11 +2081,15 @@
     
     <label class="md-nav__link" for="nav-14">
       Fonts
-      <span class="md-nav__icon md-icon"></span>
+      <span class="md-nav__icon md-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8.59 16.58L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.42z"/></svg>
+      </span>
     </label>
     <nav class="md-nav" aria-label="Fonts" data-md-level="1">
       <label class="md-nav__title" for="nav-14">
-        <span class="md-nav__icon md-icon"></span>
+        <span class="md-nav__icon md-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+        </span>
         Fonts
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
@@ -2005,7 +2101,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../fonts/importing-fonts/" class="md-nav__link">
+    <a href="../fonts/importing-fonts/" title="Importing Fonts" class="md-nav__link">
       Importing Fonts
     </a>
   </li>
@@ -2017,7 +2113,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../fonts/generate-font-character-code-class/" class="md-nav__link">
+    <a href="../fonts/generate-font-character-code-class/" title="Generate Font Glyph Code Class" class="md-nav__link">
       Generate Font Glyph Code Class
     </a>
   </li>
@@ -2029,7 +2125,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../fonts/uiappfonts-plist-entry/" class="md-nav__link">
+    <a href="../fonts/uiappfonts-plist-entry/" title="UIAppFonts Entry" class="md-nav__link">
       UIAppFonts Entry
     </a>
   </li>
@@ -2041,7 +2137,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../fonts/fontfamily-xaml-entry/" class="md-nav__link">
+    <a href="../fonts/fontfamily-xaml-entry/" title="FontFamily XAML Entry" class="md-nav__link">
       FontFamily XAML Entry
     </a>
   </li>
@@ -2063,11 +2159,15 @@
     
     <label class="md-nav__link" for="nav-15">
       Utilities
-      <span class="md-nav__icon md-icon"></span>
+      <span class="md-nav__icon md-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8.59 16.58L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.42z"/></svg>
+      </span>
     </label>
     <nav class="md-nav" aria-label="Utilities" data-md-level="1">
       <label class="md-nav__title" for="nav-15">
-        <span class="md-nav__icon md-icon"></span>
+        <span class="md-nav__icon md-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+        </span>
         Utilities
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
@@ -2079,7 +2179,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../utilities/delete-output-folders/" class="md-nav__link">
+    <a href="../utilities/delete-output-folders/" title="Delete Output Folders" class="md-nav__link">
       Delete Output Folders
     </a>
   </li>
@@ -2091,7 +2191,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../utilities/clean-and-compress/" class="md-nav__link">
+    <a href="../utilities/clean-and-compress/" title="Clean And Compress" class="md-nav__link">
       Clean And Compress
     </a>
   </li>
@@ -2103,7 +2203,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../utilities/edit-shared-project-items/" class="md-nav__link">
+    <a href="../utilities/edit-shared-project-items/" title="Edit Shared Project Items" class="md-nav__link">
       Edit Shared Project Items
     </a>
   </li>
@@ -2115,7 +2215,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../utilities/copy-resource-id-to-clipboard/" class="md-nav__link">
+    <a href="../utilities/copy-resource-id-to-clipboard/" title="Copy Resource ID To Clipboard" class="md-nav__link">
       Copy Resource ID To Clipboard
     </a>
   </li>
@@ -2127,7 +2227,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../utilities/resync-mfractor-resources/" class="md-nav__link">
+    <a href="../utilities/resync-mfractor-resources/" title="Resync Solution Resources" class="md-nav__link">
       Resync Solution Resources
     </a>
   </li>
@@ -2149,11 +2249,15 @@
     
     <label class="md-nav__link" for="nav-16">
       Release Notes
-      <span class="md-nav__icon md-icon"></span>
+      <span class="md-nav__icon md-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8.59 16.58L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.42z"/></svg>
+      </span>
     </label>
     <nav class="md-nav" aria-label="Release Notes" data-md-level="1">
       <label class="md-nav__title" for="nav-16">
-        <span class="md-nav__icon md-icon"></span>
+        <span class="md-nav__icon md-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+        </span>
         Release Notes
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
@@ -2170,11 +2274,15 @@
     
     <label class="md-nav__link" for="nav-16-1">
       Mac
-      <span class="md-nav__icon md-icon"></span>
+      <span class="md-nav__icon md-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8.59 16.58L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.42z"/></svg>
+      </span>
     </label>
     <nav class="md-nav" aria-label="Mac" data-md-level="2">
       <label class="md-nav__title" for="nav-16-1">
-        <span class="md-nav__icon md-icon"></span>
+        <span class="md-nav__icon md-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+        </span>
         Mac
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
@@ -2186,7 +2294,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../release-notes/mac/current/" class="md-nav__link">
+    <a href="../release-notes/mac/current/" title="Current Release" class="md-nav__link">
       Current Release
     </a>
   </li>
@@ -2203,11 +2311,15 @@
     
     <label class="md-nav__link" for="nav-16-1-2">
       v4
-      <span class="md-nav__icon md-icon"></span>
+      <span class="md-nav__icon md-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8.59 16.58L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.42z"/></svg>
+      </span>
     </label>
     <nav class="md-nav" aria-label="v4" data-md-level="3">
       <label class="md-nav__title" for="nav-16-1-2">
-        <span class="md-nav__icon md-icon"></span>
+        <span class="md-nav__icon md-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+        </span>
         v4
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
@@ -2219,7 +2331,19 @@
 
 
   <li class="md-nav__item">
-    <a href="../release-notes/mac/v4/v4.3/" class="md-nav__link">
+    <a href="../release-notes/mac/v4/v4.4/" title="v4.4" class="md-nav__link">
+      v4.4
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../release-notes/mac/v4/v4.3/" title="v4.3" class="md-nav__link">
       v4.3
     </a>
   </li>
@@ -2231,7 +2355,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../release-notes/mac/v4/v4.2/" class="md-nav__link">
+    <a href="../release-notes/mac/v4/v4.2/" title="v4.2" class="md-nav__link">
       v4.2
     </a>
   </li>
@@ -2243,7 +2367,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../release-notes/mac/v4/v4.1/" class="md-nav__link">
+    <a href="../release-notes/mac/v4/v4.1/" title="v4.1" class="md-nav__link">
       v4.1
     </a>
   </li>
@@ -2255,7 +2379,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../release-notes/mac/v4/v4.0/" class="md-nav__link">
+    <a href="../release-notes/mac/v4/v4.0/" title="v4.0" class="md-nav__link">
       v4.0
     </a>
   </li>
@@ -2277,11 +2401,15 @@
     
     <label class="md-nav__link" for="nav-16-1-3">
       v3
-      <span class="md-nav__icon md-icon"></span>
+      <span class="md-nav__icon md-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8.59 16.58L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.42z"/></svg>
+      </span>
     </label>
     <nav class="md-nav" aria-label="v3" data-md-level="3">
       <label class="md-nav__title" for="nav-16-1-3">
-        <span class="md-nav__icon md-icon"></span>
+        <span class="md-nav__icon md-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+        </span>
         v3
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
@@ -2293,7 +2421,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../release-notes/mac/v3/v3.10/" class="md-nav__link">
+    <a href="../release-notes/mac/v3/v3.10/" title="v3.10" class="md-nav__link">
       v3.10
     </a>
   </li>
@@ -2305,7 +2433,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../release-notes/mac/v3/v3.9/" class="md-nav__link">
+    <a href="../release-notes/mac/v3/v3.9/" title="v3.9" class="md-nav__link">
       v3.9
     </a>
   </li>
@@ -2332,11 +2460,15 @@
     
     <label class="md-nav__link" for="nav-16-2">
       Windows
-      <span class="md-nav__icon md-icon"></span>
+      <span class="md-nav__icon md-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8.59 16.58L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.42z"/></svg>
+      </span>
     </label>
     <nav class="md-nav" aria-label="Windows" data-md-level="2">
       <label class="md-nav__title" for="nav-16-2">
-        <span class="md-nav__icon md-icon"></span>
+        <span class="md-nav__icon md-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+        </span>
         Windows
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
@@ -2348,7 +2480,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../release-notes/windows/current/" class="md-nav__link">
+    <a href="../release-notes/windows/current/" title="Current Release" class="md-nav__link">
       Current Release
     </a>
   </li>
@@ -2365,11 +2497,15 @@
     
     <label class="md-nav__link" for="nav-16-2-2">
       v4
-      <span class="md-nav__icon md-icon"></span>
+      <span class="md-nav__icon md-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8.59 16.58L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.42z"/></svg>
+      </span>
     </label>
     <nav class="md-nav" aria-label="v4" data-md-level="3">
       <label class="md-nav__title" for="nav-16-2-2">
-        <span class="md-nav__icon md-icon"></span>
+        <span class="md-nav__icon md-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+        </span>
         v4
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
@@ -2381,7 +2517,19 @@
 
 
   <li class="md-nav__item">
-    <a href="../release-notes/windows/v4/v4.3/" class="md-nav__link">
+    <a href="../release-notes/windows/v4/v4.4/" title="v4.4" class="md-nav__link">
+      v4.4
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../release-notes/windows/v4/v4.3/" title="v4.3" class="md-nav__link">
       v4.3
     </a>
   </li>
@@ -2393,7 +2541,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../release-notes/windows/v4/v4.2/" class="md-nav__link">
+    <a href="../release-notes/windows/v4/v4.2/" title="v4.2" class="md-nav__link">
       v4.2
     </a>
   </li>
@@ -2405,7 +2553,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../release-notes/windows/v4/v4.1/" class="md-nav__link">
+    <a href="../release-notes/windows/v4/v4.1/" title="v4.1" class="md-nav__link">
       v4.1
     </a>
   </li>
@@ -2417,7 +2565,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../release-notes/windows/v4/v4.0/" class="md-nav__link">
+    <a href="../release-notes/windows/v4/v4.0/" title="v4.0" class="md-nav__link">
       v4.0
     </a>
   </li>
@@ -2439,11 +2587,15 @@
     
     <label class="md-nav__link" for="nav-16-2-3">
       v0
-      <span class="md-nav__icon md-icon"></span>
+      <span class="md-nav__icon md-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8.59 16.58L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.42z"/></svg>
+      </span>
     </label>
     <nav class="md-nav" aria-label="v0" data-md-level="3">
       <label class="md-nav__title" for="nav-16-2-3">
-        <span class="md-nav__icon md-icon"></span>
+        <span class="md-nav__icon md-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+        </span>
         v0
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
@@ -2455,7 +2607,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../release-notes/windows/v0/v0.6/" class="md-nav__link">
+    <a href="../release-notes/windows/v0/v0.6/" title="v0.6" class="md-nav__link">
       v0.6
     </a>
   </li>
@@ -2467,7 +2619,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../release-notes/windows/v0/v0.5/" class="md-nav__link">
+    <a href="../release-notes/windows/v0/v0.5/" title="v0.5" class="md-nav__link">
       v0.5
     </a>
   </li>
@@ -2479,7 +2631,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../release-notes/windows/v0/v0.4/" class="md-nav__link">
+    <a href="../release-notes/windows/v0/v0.4/" title="v0.4" class="md-nav__link">
       v0.4
     </a>
   </li>
@@ -2491,7 +2643,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../release-notes/windows/v0/v0.3/" class="md-nav__link">
+    <a href="../release-notes/windows/v0/v0.3/" title="v0.3" class="md-nav__link">
       v0.3
     </a>
   </li>
@@ -2503,7 +2655,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../release-notes/windows/v0/v0.2/" class="md-nav__link">
+    <a href="../release-notes/windows/v0/v0.2/" title="v0.2" class="md-nav__link">
       v0.2
     </a>
   </li>
@@ -2515,7 +2667,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../release-notes/windows/v0/v0.1/" class="md-nav__link">
+    <a href="../release-notes/windows/v0/v0.1/" title="v0.1" class="md-nav__link">
       v0.1
     </a>
   </li>
@@ -2547,11 +2699,15 @@
     
     <label class="md-nav__link" for="nav-17">
       Legal
-      <span class="md-nav__icon md-icon"></span>
+      <span class="md-nav__icon md-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8.59 16.58L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.42z"/></svg>
+      </span>
     </label>
     <nav class="md-nav" aria-label="Legal" data-md-level="1">
       <label class="md-nav__title" for="nav-17">
-        <span class="md-nav__icon md-icon"></span>
+        <span class="md-nav__icon md-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+        </span>
         Legal
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
@@ -2563,7 +2719,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../legal/third-party-software/" class="md-nav__link">
+    <a href="../legal/third-party-software/" title="Third Party Software" class="md-nav__link">
       Third Party Software
     </a>
   </li>
@@ -2575,7 +2731,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../legal/privacy-policy.pdf" class="md-nav__link">
+    <a href="../legal/privacy-policy.pdf" title="Privacy Policy" class="md-nav__link">
       Privacy Policy
     </a>
   </li>
@@ -2587,7 +2743,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../legal/end-user-license.pdf" class="md-nav__link">
+    <a href="../legal/end-user-license.pdf" title="End User License" class="md-nav__link">
       End User License
     </a>
   </li>
@@ -2614,7 +2770,9 @@
   
   
     <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
+      <span class="md-nav__icon md-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </span>
       Table of contents
     </label>
     <ul class="md-nav__list" data-md-scrollfix>
@@ -2689,6 +2847,9 @@
                   <a href="https://github.com/mfractor/mfractor.github.io/tree/docs/docs/scaffolder.md" title="Edit this page" class="md-content__button md-icon">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25z"/></svg>
                   </a>
+                
+                
+                  
                 
                 
                   <h1>Scaffolder</h1>
@@ -2819,7 +2980,7 @@
 
   <h2 id="__comments">Comments</h2>
   <div id="disqus_thread"></div>
-  <script>var disqus_config=function(){this.page.url="None",this.page.identifier="None"};window.addEventListener("load",function(){var e=document,i=e.createElement("script");i.src="//mfractor.disqus.com/embed.js",i.setAttribute("data-timestamp",+new Date),(e.head||e.body).appendChild(i)})</script>
+  <script>var disqus_config=function(){this.page.url="None",this.page.identifier="None"};!function(){var e=document,i=e.createElement("script");i.src="//mfractor.disqus.com/embed.js",i.setAttribute("data-timestamp",+new Date),(e.head||e.body).appendChild(i)}()</script>
 
               
             </article>
@@ -2833,7 +2994,7 @@
     <div class="md-footer-nav">
       <nav class="md-footer-nav__inner md-grid" aria-label="Footer">
         
-          <a href="../quickstart-mac/" class="md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+          <a href="../quickstart-mac/" title="Quickstart - Mac" class="md-footer-nav__link md-footer-nav__link--prev" rel="prev">
             <div class="md-footer-nav__button md-icon">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
             </div>
@@ -2848,7 +3009,7 @@
           </a>
         
         
-          <a href="../code-actions/" class="md-footer-nav__link md-footer-nav__link--next" rel="next">
+          <a href="../code-actions/" title="Code Actions" class="md-footer-nav__link md-footer-nav__link--next" rel="next">
             <div class="md-footer-nav__title">
               <div class="md-ellipsis">
                 <span class="md-footer-nav__direction">
@@ -2885,15 +3046,15 @@
       
     </div>
     
-      <script src="../assets/javascripts/vendor.6a3d08fc.min.js"></script>
-      <script src="../assets/javascripts/bundle.71201edf.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}</script>
+      <script src="../assets/javascripts/vendor.d710d30a.min.js"></script>
+      <script src="../assets/javascripts/bundle.b39636ac.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents"}</script>
       
       <script>
         app = initialize({
           base: "..",
           features: [],
           search: Object.assign({
-            worker: "../assets/javascripts/worker/search.4ac00218.min.js"
+            worker: "../assets/javascripts/worker/search.a68abb33.min.js"
           }, typeof search !== "undefined" && search)
         })
       </script>
