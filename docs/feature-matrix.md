@@ -1,12 +1,12 @@
 !!! quote "An overview of all features provided by MFractor"
 
-**Last Updated: Monday 7th of September 2020**
+**Last Updated: Monday 7th of December 2020**
 
 This feature matrix presents all the features provided by MFractor.
 
 All features are available in MFractor for Visual Studio for Mac. The third column shows the features available to the Windows version.
 
-MFractor currently provides 249 features. We have currently documented 61% of the product features.
+MFractor currently provides 251 features. We have currently documented 61% of the product features.
 
 
 ## Asset Management
@@ -22,6 +22,7 @@ MFractor currently provides 249 features. We have currently documented 61% of th
 | [Image Tooltips](https://docs.mfractor.com/image-management/image-tooltips)	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>
 | [Mobile.BuildTools Support](https://docs.mfractor.com/image-management/third-party/mobile-build-tools/)	| <i class="fas fa-check fa-lg"></i>	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>
 | [ResizetizerNT Support](https://docs.mfractor.com/image-management/third-party/resizetizer/)	| <i class="fas fa-check fa-lg"></i>	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i>
+| [App Icon Importer](https://docs.mfractor.com/image-management/app-icon-importer/)	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>
 
 ### Font Management
 
@@ -323,6 +324,7 @@ MFractor currently provides 249 features. We have currently documented 61% of th
 | Value Converter Input/Output Type Tootips	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>
 | SVG Tooltips	| <i class="fas fa-check fa-lg"></i>	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i>
 | Localisation Tooltips	| <i class="fas fa-check fa-lg"></i>	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>
+| Thickness Preview Tooltips	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>
 
 ## General
 
@@ -378,3 +380,5 @@ MFractor currently provides 249 features. We have currently documented 61% of th
 | Feature	| Lite	| Pro	| Platforms
 |---	|---	|---	|---
 | [Copy Bundle ID](https://docs.mfractor.com/ios/tools/copy-bundle-id/)	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>
+
+        
