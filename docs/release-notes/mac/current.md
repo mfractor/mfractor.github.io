@@ -7,7 +7,7 @@
 
 ### Releases (v4.4)
 
-* [v4.4.2 - Released on November 19th 2020](v4/v4.4.md#v443) - Insert and delete grid row/column refactorings by hovering over a row or column definition.
+* [v4.4.2 - Released on December 7th 2020](v4/v4.4.md#v443) - Insert and delete grid row/column refactorings by hovering over a row or column definition.
 * [v4.4.2 - Released on December 1st 2020](v4/v4.4.md#v442) - Fixes a critical bug in the image importer for iOS image sets.
 * [v4.4.1 - Released on November 19th 2020](v4/v4.4.md#v441) - Fixes a critical bug in the image importer for iOS image sets.
 * [v4.4.0 - Released on November 10th 2020](v4/v4.4.md#v440) - MFractor 4.4 is a major release that adds the new App Icon Importer Feature, allowing you to easily import application icons into your projects.
