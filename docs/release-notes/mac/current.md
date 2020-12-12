@@ -7,6 +7,8 @@
 
 ### Releases (v4.4)
 
+* [v4.4.5 - Released on December 11th 2020](v4/v4.4.md#v445) - Fix import image button on Windows.
+* [v4.4.4 - Released on December 9th 2020](v4/v4.4.md#v444) - New tooltips to help preview thickness values.
 * [v4.4.3 - Released on December 7th 2020](v4/v4.4.md#v443) - Insert and delete grid row/column refactorings by hovering over a row or column definition.
 * [v4.4.2 - Released on December 1st 2020](v4/v4.4.md#v442) - Fixes a critical bug in the image importer for iOS image sets.
 * [v4.4.1 - Released on November 19th 2020](v4/v4.4.md#v441) - Fixes a critical bug in the image importer for iOS image sets.
