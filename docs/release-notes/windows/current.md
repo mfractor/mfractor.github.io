@@ -4,6 +4,7 @@
 
 ### Releases (v4.4)
 
+* [v4.4.6 - Released on December 21st 2020](v4/v4.4.md#v446) - Several fixes to data binding analysis.
 * [v4.4.5 - Released on December 11th 2020](v4/v4.4.md#v445) - Fix import image button on Windows.
 * [v4.4.4 - Released on December 9th 2020](v4/v4.4.md#v444) - New tooltips to help preview thickness values.
 * [v4.4.2 - Released on December 7th 2020](v4/v4.4.md#v443) - Insert and delete grid row/column refactorings by hovering over a row or column definition.
