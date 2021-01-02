@@ -1,5 +1,5 @@
 site_name: MFractor Documentation
-copyright: Copyright &copy; 2015-2020 <a href="https://www.mfractor.com">MFractor Pty Ltd</a>
+copyright: Copyright &copy; 2015-2021 <a href="https://www.mfractor.com">MFractor Pty Ltd</a>
 site_author: "MFractor Pty Ltd"
 site_description: "Documentation for MFractor, a powerful productivity tool for Xamarin developers"
 repo_url: "https://github.com/mfractor/mfractor.github.io"
@@ -62,6 +62,8 @@ nav:
     - ResizetizerNT: image-management/third-party/resizetizer.md
 - C#:
   - Create Class From Clipboard: csharp/create-class-from-clipboard.md
+  - Convert Project to C# 9.0: csharp/convert-project-to-csharp9.md
+  - Record Type Template: csharp/record-template.md
   - Code Actions:
     - Generate Interface Implementation: csharp/code-actions/generate-interface-implementation.md
     - Simplifying Qualified Types: csharp/code-actions/simplify-qualified-types.md
