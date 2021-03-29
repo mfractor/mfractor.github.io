@@ -7,7 +7,7 @@
 
 ### Releases (v4.4)
 
-* [v4.4.7 - Released on March 29th 2021](v4/v4.4.md#v448) - Adds support for Visual Studio Mac 8.9.
+* [v4.4.8 - Released on March 29th 2021](v4/v4.4.md#v448) - Adds support for Visual Studio Mac 8.9.
 * [v4.4.7 - Released on February 10th 2021](v4/v4.4.md#v447) - Adds Convert to C# 9.0 tool and fixes several bugs.
 * [v4.4.6 - Released on December 21st 2020](v4/v4.4.md#v446) - Several fixes to data binding analysis.
 * [v4.4.5 - Released on December 11th 2020](v4/v4.4.md#v445) - Fix import image button on Windows.
