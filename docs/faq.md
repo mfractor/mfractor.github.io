@@ -10,7 +10,7 @@ An MFractor license works in both MFractor for Windows and Mac.
 
 The latest version of MFractor for Visual Studio Mac can be found at:
 
-http://addins.monodevelop.com/Project/Index/300
+https://github.com/mfractor/mfractor.releases
 
 ### Visual Studio Windows
 
@@ -91,7 +91,7 @@ MFractor is usually found in the Gallery tab of the Extension Manager under **ID
 
 If you are unable to see MFractor in the Extension Manager, firstly, please check that you are on the stable channel of Visual Studio Mac.
 
-If you are on the stable channel and are unable to locate MFractor, please download a suitable release from the [Extensions Site](http://addins.monodevelop.com/Project/Index/300) and then [install from file](/installation-and-setup);
+If you are on the stable channel and are unable to locate MFractor, please download a suitable release from the [Extensions Site](https://github.com/mfractor/mfractor.releases) and then [install from file](/installation-and-setup);
 
 ## I'd like to write a blog about MFractor.
 
