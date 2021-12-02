@@ -6,7 +6,6 @@ repo_url: "https://github.com/mfractor/mfractor.github.io"
 edit_uri: tree/docs/docs
 remote_branch: "master"
 google_analytics: ['UA-71910290-3', 'docs.mfractor.com']
-strict: true
 theme:
   name: 'material'
   logo: 'images/logo.svg'
