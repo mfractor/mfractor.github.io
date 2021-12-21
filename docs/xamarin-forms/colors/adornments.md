@@ -2,7 +2,9 @@
 
 ## Introduction
 
-One of the challenges of working with colors in Xamarin.Forms
+One of the challenges of working with colors in Xamarin.Forms is understanding what color will be shown when hex strings, named colors or static resources are used in XAML.
+
+To make colors easier to understand, MFractor includes several color adornments to visually show what a color will be next to its usage.
 
 !!! warning "Color Adornments Performance Impacts"
     By default, color adornments **are not** enabled for the XAML editor. Due to rendering constraints, color adornments can have an adverse impact on IntelliSense performance.

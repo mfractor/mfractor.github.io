@@ -149,6 +149,7 @@ nav:
     - Code Completion: xamarin-forms/fonts/code-completion.md
     - Analysis: xamarin-forms/fonts/analysis.md
   - Thicknesses:
+    - Adornments: xamarin-forms/thicknesses/adornments.md
     - Tooltips: xamarin-forms/thicknesses/tooltips.md
     - Thickness Analysis: xamarin-forms/thicknesses/analysis.md
     - Consolidate: xamarin-forms/thicknesses/consolidation.md
