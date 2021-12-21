@@ -1,12 +1,12 @@
 !!! quote "An overview of all features provided by MFractor"
 
-**Last Updated: Monday 7th of December 2020**
+**Last Updated: Tuesday 21th of December 2021**
 
 This feature matrix presents all the features provided by MFractor.
 
 All features are available in MFractor for Visual Studio for Mac. The third column shows the features available to the Windows version.
 
-MFractor currently provides 251 features. We have currently documented 61% of the product features.
+MFractor currently provides 252 features. We have currently documented 62% of the product features.
 
 
 ## Asset Management
@@ -311,6 +311,7 @@ MFractor currently provides 251 features. We have currently documented 61% of th
 | [Grid Index Adornments](https://docs.mfractor.com/xamarin-forms/grids/adornments/)	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>
 | [Color Adornments](https://docs.mfractor.com/xamarin-forms/colors/adornments/)	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>
 | [Escaped Characters Adornments](https://docs.mfractor.com/xamarin-forms/adornments/#escaped-characters-adornments)	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>
+| [Thickness Adornments](https://docs.mfractor.com/xamarin-forms/thicknesses/adornments/)	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i>
 
 ### Tooltips
 
@@ -380,5 +381,3 @@ MFractor currently provides 251 features. We have currently documented 61% of th
 | Feature	| Lite	| Pro	| Platforms
 |---	|---	|---	|---
 | [Copy Bundle ID](https://docs.mfractor.com/ios/tools/copy-bundle-id/)	|  	| <i class="fas fa-check fa-lg"></i>	| <i class="fab fa-apple fa-lg"></i> <i class="fab fa-windows fa-lg"></i>
-
-        

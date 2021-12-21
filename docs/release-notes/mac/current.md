@@ -7,6 +7,7 @@
 
 ### Releases (v4.4)
 
+* [v4.4.10 - Released on December 21st 2021](v4/v4.4.md#v4410) - Thickness adornments and several bug fixes.
 * [v4.4.9 - Released on December 2nd 2021](v4/v4.4.md#v449) - Adds support for Visual Studio Mac 8.10 + hotfix of crash on macOS Monterey.
 * [v4.4.8 - Released on March 29th 2021](v4/v4.4.md#v448) - Adds support for Visual Studio Mac 8.9.
 * [v4.4.7 - Released on February 10th 2021](v4/v4.4.md#v447) - Adds Convert to C# 9.0 tool and fixes several bugs.
