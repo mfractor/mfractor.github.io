@@ -4,6 +4,7 @@
 
 ### Releases (v4.4)
 
+* [v4.4.10 - Released on March 18th 2022](v4/v4.4.md#v4410) - Visual Studio 2022 support.
 * [v4.4.7 - Released on February 10th 2021](v4/v4.4.md#v447) - Adds Convert to C# 9.0 tool and fixes several bugs.
 * [v4.4.6 - Released on December 21st 2020](v4/v4.4.md#v446) - Several fixes to data binding analysis.
 * [v4.4.5 - Released on December 11th 2020](v4/v4.4.md#v445) - Fix import image button on Windows.
